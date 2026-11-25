@@ -1,6 +1,8 @@
 # Handoff
 
-**E4.2 is E4_2_READY_FOR_HUMAN_MATERIAL_REVIEW.** M1 Controlled and M2 Art-Directed share the exact B1 silhouette and 20 preserved part masks. M2 is recommended for the native-size scene review. The material and game-ready decisions remain with the Project Owner. [Material gallery](docs/LumaSprite-Engine-E4.2-Report.html) · [Score sheet](benchmarks/results/e42/review.md) · [QA](docs/e42-test-report.md) · [PR draft](docs/e42-pr.md)
+**E4.3 is E4_3_READY_FOR_HUMAN_GAME_ART_REVIEW.** M2P keeps the B1 lock and improves the lantern read at 1×. Forest Courier is a separate technical pilot. Both portable packages round-trip through Studio, including restore and stale-save protection. The Project Owner's game-art decision precedes E4.4 final character acceptance. [Gallery](docs/LumaSprite-Engine-E4.3-Report.html) · [Owner review](benchmarks/results/e43/review.md) · [QA](docs/e43-test-report.md) · [PR draft](docs/e43-pr.md)
+
+The owner selected E4.2 M2 Art-Directed Materials with limitations as the E4.3 material baseline. M1 stays a control. [E4.2 material gallery](docs/LumaSprite-Engine-E4.2-Report.html) · [E4.3 art audit](docs/art-quality/e43-game-art-audit.md)
 
 E4.1R B1 Grounded Surveyor was approved with notes as the geometry source for this material pass. B2 remains a motion reference. The E4.1R benchmark is frozen. [B1 Shape Lock](benchmarks/results/e42/b1-shape-lock.json) · [E4.1R gallery](docs/LumaSprite-Engine-E4.1R-Report.html)
 

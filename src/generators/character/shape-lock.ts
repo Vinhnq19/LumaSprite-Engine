@@ -15,7 +15,8 @@ export function makeShapeLock(review: Review, checkpoint: string, candidate: str
   const { w, h } = silhouette;
   const outline = alphaPlane(silhouette);
   const masks = Object.fromEntries(plan.parts.map(({ id }) => [id, alphaPlane(layers[id])]));
-  const [gx, gy] = plan.landmarks['grip-anchor'].point;
+  const grip = plan.landmarks['grip-anchor']?.point;
+  const [gx, gy] = grip ?? [0, 0];
   const hip = plan.landmarks.pelvis.point;
   const kneeY = Math.max(spec.pose.near.knee[1], spec.pose.far.knee[1]);
   const mask = (select: (x: number, y: number, i: number) => boolean) =>
@@ -34,7 +35,7 @@ export function makeShapeLock(review: Review, checkpoint: string, candidate: str
     silhouetteAlphaSha256: sha256(outline),
     landmarks: structuredClone(plan.landmarks),
     links: structuredClone(plan.links),
-    gripAnchor: [...plan.landmarks['grip-anchor'].point],
+    gripAnchor: grip ? [...grip] : null,
     groundPivot: [...plan.pivot],
     projectedGround: structuredClone(plan.projectedGround ?? null),
     layerOrder: plan.parts.map(({ id }) => id),
@@ -45,8 +46,8 @@ export function makeShapeLock(review: Review, checkpoint: string, candidate: str
       format: 'uint8-alpha-row-major',
       silhouette: regionRef(outline),
       lowerLegClearance: regionRef(mask((x, y, i) => y >= kneeY && y < plan.pivot[1] && Math.abs(x - hip[0]) < spec.proportions.hips / 2 && !outline[i])),
-      gripContact: regionRef(mask((_x, _y, i) => !!masks['near-hand'][i] && !!masks.lantern[i])),
-      handleOpening: regionRef(mask((x, y, i) => Math.abs(x - gx) <= 1 && y >= gy + 2 && y < gy + 5 && !outline[i])),
+      gripContact: regionRef(mask((_x, _y, i) => !!masks['near-hand'][i] && !!masks.lantern?.[i])),
+      handleOpening: regionRef(mask((x, y, i) => !!grip && Math.abs(x - gx) <= 1 && y >= gy + 2 && y < gy + 5 && !outline[i])),
       bootSoles: regionRef(mask((_x, y, i) => (['near', 'far'] as const).some(side =>
         y === (plan.projectedGround?.[side] ?? plan.pivot[1]) - 2 && !!masks[side + '-boot'][i]))),
     },

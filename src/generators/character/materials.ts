@@ -6,11 +6,11 @@ import { paletteColorsSchema } from '../../specs/palette.ts';
 import { productionProjectPalette } from '../terrain/project-palette.ts';
 import type { characterReview } from './export.ts';
 import { characterColors } from './geometry.ts';
-import { characterRamps, materialPlanes, type Surface } from './material-planes.ts';
+import { characterRamps, materialPlanes, russetMossRamps, type Surface } from './material-planes.ts';
 import { renderCharacter } from './render.ts';
 import { alphaPlane, requireShapeLock, type ShapeLock } from './shape-lock.ts';
 
-export const materialStyles = ['m1', 'm2'] as const;
+export const materialStyles = ['m1', 'm2', 'm2p'] as const;
 export type MaterialStyle = (typeof materialStyles)[number];
 const selection = z.discriminatedUnion('mode', [
   z.strictObject({ mode: z.literal('authored') }),
@@ -33,7 +33,7 @@ const flatBrim = pack(characterColors.brim), flatFar = pack(characterColors.farC
 function surfaceFor(part: string, ink: number, u: number, v: number): Surface {
   if (part === 'head') return (u < .25 && v < .7) || (u < .48 && v < .33) ? 'hair' : 'skin';
   if (part === 'neck' || part.endsWith('hand')) return 'skin';
-  if (part === 'cap') return ink === flatBrim ? 'brim' : 'cap';
+  if (part === 'cap' || part === 'hood') return ink === flatBrim ? 'brim' : 'cap';
   if (part === 'lantern') return ink === flatGlass ? 'glass' : 'metal';
   if (part === 'satchel' || part === 'strap' || part.endsWith('boot')) return 'leather';
   if (part === 'hips' || part.endsWith('thigh') || part.endsWith('shin')) {
@@ -49,15 +49,20 @@ function boundsFor(pixels: number[], width: number): SurfaceBounds {
 }
 
 export function renderCharacterMaterials(review: Review, lock: ShapeLock, style: MaterialStyle, policy: unknown = { mode: 'authored' }) {
-  if (!materialStyles.includes(style)) throw new Error('Expected material style m1 or m2.');
+  if (!materialStyles.includes(style)) throw new Error('Expected material style m1, m2 or m2p.');
   requireShapeLock(review, lock);
   const choice = selection.parse(policy);
-  const palette = choice.mode === 'locked' ? choice.colors : choice.mode === 'project' ? characterProjectPalette : authoredPalette;
-  const ramps = Object.fromEntries(Object.entries(characterRamps).map(([key, colors]) =>
+  const surfaceRamps = review.spec.version === 3 && review.spec.outfit.cloth === 'russet-moss'
+    ? { ...characterRamps, ...russetMossRamps } : characterRamps;
+  const defaultPalette = surfaceRamps === characterRamps ? authoredPalette
+    : [...new Set([outlineColor, ...Object.values(surfaceRamps).flatMap(ramp => Object.values(ramp))])];
+  const palette = choice.mode === 'locked' ? choice.colors : choice.mode === 'project'
+    ? [...new Set([...productionProjectPalette, ...defaultPalette])] : defaultPalette;
+  const ramps = Object.fromEntries(Object.entries(surfaceRamps).map(([key, colors]) =>
     [key, mapPalette(colors, palette)])) as Record<Surface, Record<keyof typeof characterRamps.skin, number>>;
   const contour = mapPalette({ outline: outlineColor }, palette).outline;
   const { w, h } = review.flat;
-  const directed = style === 'm2';
+  const directed = style !== 'm1';
   const sourceLayers = review.spec.palette.mode === 'authored' ? review.layers
     : renderCharacter({ ...review.spec, palette: { mode: 'authored' } }).layers;
   const visibleRegions: (Surface | undefined)[] = Array(w * h).fill(undefined);
@@ -80,7 +85,7 @@ export function renderCharacterMaterials(review: Review, lock: ShapeLock, style:
     for (const [surface, pixels] of groups) {
       const frame = surface === 'glass' ? boundsFor(pixels, w) : bounds;
       const ramp = ramps[surface];
-      paintSurface(layer, pixels, frame, ramp.base, ramp, materialPlanes(id, surface, directed));
+      paintSurface(layer, pixels, frame, ramp.base, ramp, materialPlanes(id, surface, directed, style === 'm2p'));
       for (const pixel of pixels) final.rgba.writeUInt32BE(layer.rgba.readUInt32BE(pixel * 4), pixel * 4);
     }
     if (!alphaPlane(layer).equals(alphaPlane(review.layers[id]))) throw new Error('Material paint escaped the ' + id + ' mask.');
@@ -114,7 +119,7 @@ export function renderCharacterMaterials(review: Review, lock: ShapeLock, style:
     const name = visibleRegions[i] ?? 'contour';
     coverage[name] = (coverage[name] ?? 0) + 1;
   }
-  const families = ['skin', 'coat', 'trousers', 'leather', 'metal', 'glass'] as const;
+  const families = (['skin', 'coat', 'trousers', 'leather', 'metal', 'glass'] as const).filter(role => coverage[role]);
   const warnings: { code: string; regions: string[] }[] = [];
   for (const role of families) {
     const { shadow, base, light } = ramps[role];

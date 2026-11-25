@@ -9,18 +9,7 @@ import { canonicalMask, grassTileId } from '../src/generators/terrain/adjacency.
 import { verifyBakedTerrain } from '../src/generators/terrain/baked.ts';
 import { renderTerrain, renderTileGrid } from '../src/generators/terrain/render.ts';
 import { sha256 } from '../src/quality/raster.ts';
-
-function backupInputs(files: { path: string; data: Buffer }[]) {
-  const manifest = JSON.parse(files.find(file => file.path === 'pxl.project.json')!.data.toString('utf8'));
-  const blobs: Record<string, string> = {}, resources: Record<string, string> = {};
-  for (const file of files) {
-    const cel = /^\.pxl\/cels\/([a-f0-9]{64})\.rgba\.z$/.exec(file.path);
-    const resource = /^\.pxl\/resources\/([a-f0-9]{64})\.(rgba|mask|tile-index)\.z$/.exec(file.path);
-    if (cel) blobs[cel[1]] = file.data.toString('base64');
-    if (resource) resources[resource[2] + ':' + resource[1]] = file.data.toString('base64');
-  }
-  return { document: manifest.document, blobs, resources };
-}
+import { backupInputs } from './studio-backup.ts';
 
 test('Studio preserves the baked RGBA and separately round-trips the static editable atlas', async t => {
   const studio = resolve(process.env.LUMASPRITE_STUDIO_ROOT ?? '../LumaSprite-Studio');

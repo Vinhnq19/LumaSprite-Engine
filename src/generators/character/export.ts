@@ -15,7 +15,7 @@ export function characterReview(input: unknown) {
   if (errors.length) throw new Error('Character geometry failed: ' + [...new Set(errors)].join(', '));
   const metadata = {
     version: 1, kind: 'lumasprite-character-geometry', technical: 'PASS',
-    artistic: render.spec.version === 2 ? 'VISUAL_REVIEW_PENDING' : 'PENDING_SHAPE_REVIEW',
+    artistic: render.spec.version === 1 ? 'PENDING_SHAPE_REVIEW' : 'VISUAL_REVIEW_PENDING',
     spec: render.spec, bodyPlan: render.plan, palette: render.palette, diagnostics: geometry,
     images: { flatPngSha256: sha256(flat), silhouettePngSha256: sha256(silhouette) },
   };

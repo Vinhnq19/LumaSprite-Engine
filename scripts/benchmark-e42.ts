@@ -6,7 +6,7 @@ import { blit, makeRaster, nearestNeighbor, type Raster } from '../src/core/pixe
 import { encodePng } from '../src/core/renderer/png.ts';
 import { characterReview, writeCharacterReview } from '../src/generators/character/export.ts';
 import { characterMaterialReview } from '../src/generators/character/material-export.ts';
-import { materialMaskLegend, materialStyles } from '../src/generators/character/materials.ts';
+import { materialMaskLegend } from '../src/generators/character/materials.ts';
 import { surveyorRefinements } from '../src/generators/character/presets.ts';
 import { makeShapeLock } from '../src/generators/character/shape-lock.ts';
 import { bakeTerrain, verifyBakedTerrain } from '../src/generators/terrain/baked.ts';
@@ -63,7 +63,7 @@ const palettes = [
 ] as const;
 const qa = [];
 
-for (const style of materialStyles) {
+for (const style of ['m1', 'm2'] as const) {
   const review = characterMaterialReview(geometry, lock, style);
   await writeCharacterReview(join(out, style), review);
   const scene = { ...ground, rgba: Buffer.from(ground.rgba) };

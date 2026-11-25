@@ -45,5 +45,13 @@ const characterSpecV2 = characterSpecV1.extend({
   }),
 });
 
-export const characterSpecSchema = z.discriminatedUnion('version', [characterSpecV1, characterSpecV2]);
+const characterSpecV3 = characterSpecV2.extend({
+  version: z.literal(3),
+  kind: z.literal('humanoid-traveler'),
+  proportions: characterSpecV2.shape.proportions.omit({ lantern: true }),
+  pose: characterSpecV2.shape.pose.extend({ kind: z.literal('standing-free') }),
+  outfit: z.strictObject({ headwear: z.literal('hood'), satchel: z.literal('crossbody'), cloth: z.enum(['teal', 'russet-moss']) }),
+});
+
+export const characterSpecSchema = z.discriminatedUnion('version', [characterSpecV1, characterSpecV2, characterSpecV3]);
 export type CharacterSpec = z.infer<typeof characterSpecSchema>;

@@ -45,8 +45,10 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
   const w = spec.canvas.w, h = spec.canvas.h;
   const order = plan.parts.map(({ id }) => id);
   const depth = new Map(order.map((id, i) => [id, i]));
-  for (const [back, front] of [['far-hand', 'jacket'], ['satchel', 'jacket'], ['jacket', 'near-forearm'],
-    ['near-forearm', 'lantern'], ['lantern', 'near-hand'], ['head', 'cap']]) {
+  const outfit = spec.version === 3;
+  const accessoryDepth = outfit ? [['jacket', 'strap'], ['strap', 'satchel'], ['head', 'hood']]
+    : [['satchel', 'jacket'], ['near-forearm', 'lantern'], ['lantern', 'near-hand'], ['head', 'cap']];
+  for (const [back, front] of [['far-hand', 'jacket'], ['jacket', 'near-forearm'], ...accessoryDepth]) {
     if (!depth.has(back) || !depth.has(front) || depth.get(back)! >= depth.get(front)!) errors.add('PART_DEPTH');
   }
   for (let offset = 0; offset < flat.rgba.length; offset += 4) {
@@ -62,7 +64,8 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
   for (const [id, { components }] of Object.entries(parts)) if (components !== 1) errors.add('COMPONENTS/' + id);
 
   const attachments = [
-    ['head', 'neck'], ['cap', 'head'], ['neck', 'jacket'], ['hips', 'jacket'], ['satchel', 'jacket'], ['strap', 'jacket'],
+    ['head', 'neck'], [outfit ? 'hood' : 'cap', 'head'], ['neck', 'jacket'], ['hips', 'jacket'], ['satchel', 'jacket'], ['strap', 'jacket'],
+    ...(outfit ? [['strap', 'satchel']] : []),
   ];
   const joints: Record<string, number> = {};
   for (const side of ['near', 'far'] as const) {
@@ -124,24 +127,26 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
   }
   if (legGapRows < 2) errors.add('LEG_GAP');
 
-  const [gx, gy] = plan.landmarks['grip-anchor'].point;
-  const grip = layers['near-hand'], lamp = layers.lantern;
-  const gripPixels = overlap(grip, lamp);
-  if (!visible(grip, gx, gy) || !visible(lamp, gx, gy) || gripPixels < 2) errors.add('GRIP_CONTACT');
-  if (plan.parts.at(-1)?.id !== 'near-hand' || at(flat, [gx, gy]) !== at(grip, [gx, gy])) errors.add('GRIP_DEPTH');
-  let lampGapRows = 0;
-  for (let y = gy + 3; y <= parts.lantern.bottom; y++) {
-    let firstLamp = -1;
-    for (let x = 0; x < w; x++) {
-      if (!visible(lamp, x, y)) continue;
-      if (firstLamp < 0) firstLamp = x;
-      if (Object.entries(layers).some(([id, layer]) => id !== 'lantern' && visible(layer, x, y))) errors.add('PROP_INTERSECTION');
+  let gripPixels = 0, lampGapRows = 0;
+  if (!outfit) {
+    const [gx, gy] = plan.landmarks['grip-anchor'].point;
+    const grip = layers['near-hand'], lamp = layers.lantern;
+    gripPixels = overlap(grip, lamp);
+    if (!visible(grip, gx, gy) || !visible(lamp, gx, gy) || gripPixels < 2) errors.add('GRIP_CONTACT');
+    if (plan.parts.at(-1)?.id !== 'near-hand' || at(flat, [gx, gy]) !== at(grip, [gx, gy])) errors.add('GRIP_DEPTH');
+    for (let y = gy + 3; y <= parts.lantern.bottom; y++) {
+      let firstLamp = -1;
+      for (let x = 0; x < w; x++) {
+        if (!visible(lamp, x, y)) continue;
+        if (firstLamp < 0) firstLamp = x;
+        if (Object.entries(layers).some(([id, layer]) => id !== 'lantern' && visible(layer, x, y))) errors.add('PROP_INTERSECTION');
+      }
+      if (firstLamp > 2 && !visible(silhouette, firstLamp - 2, y)) lampGapRows++;
     }
-    if (firstLamp > 2 && !visible(silhouette, firstLamp - 2, y)) lampGapRows++;
+    if (lampGapRows < 2) errors.add('PROP_CLEARANCE');
   }
-  if (lampGapRows < 2) errors.add('PROP_CLEARANCE');
   const poseErrors = new Set(['BELOW_GROUND', 'GROUND_CONTACT', 'LEG_GAP', 'PROP_CLEARANCE', 'POSE_CHAIN/near', 'POSE_CHAIN/far']);
-  const pose = spec.version === 2 ? checkRefinedPose(spec, plan, layers, flat, bounds, parts, centerX) : undefined;
+  const pose = spec.version !== 1 ? checkRefinedPose(spec, plan, layers, flat, bounds, parts, centerX) : undefined;
   const structure = [...errors].every(code => poseErrors.has(code));
   const constraints = pose && !pose.errors.length && [...errors].every(code => !poseErrors.has(code));
   return {
@@ -155,7 +160,7 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
 }
 
 function checkRefinedPose(
-  spec: Extract<CharacterRender['spec'], { version: 2 }>, plan: CharacterRender['plan'], layers: CharacterRender['layers'],
+  spec: Exclude<CharacterRender['spec'], { version: 1 }>, plan: CharacterRender['plan'], layers: CharacterRender['layers'],
   flat: Raster, bounds: ReturnType<typeof shapeStats>, parts: Record<string, ReturnType<typeof shapeStats>>, centerX: number,
 ) {
   const { pose, proportions } = spec;
@@ -206,6 +211,9 @@ function checkRefinedPose(
     const bend = kx - (hx + (ax - hx) * (ky - hy) / (ay - hy));
     kneeBends[side] = bend;
     if (bend < -1 || bend > proportions.leg[0] * .75) errors.push('KNEE_DIRECTION/' + side);
+  }
+  if (spec.version === 3) {
+    return { errors, intent: pose.kind, headroom, feet, shoulderDrop, hipDrop, kneeBends, openHandleRows: 0, armTorsoGapRows: 0, lampBodyGap: 0 };
   }
   const { elbow: [ex, ey], wrist: [wx, wy], palm: [mx, my] } = pose.near;
   if (ex < joint('near-shoulder')[0] || wx <= ex || (wx - ex) * (mx - wx) + (wy - ey) * (my - wy) <= 0) {

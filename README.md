@@ -33,6 +33,8 @@ npm run benchmark:e41r
 npm run report:e41r
 npm run benchmark:e42
 npm run report:e42
+npm run benchmark:e43
+npm run report:e43
 npm run serve -- --port 4399
 ```
 
@@ -49,6 +51,8 @@ For TerrainSpec v4, the Project Owner selected Art-Directed Terrain for Authored
 Select `b1` for Grounded Surveyor or `b2` for Forward-Step Surveyor on the same CLI. Their CharacterSpec v2 records the pose intent, torso turn and projected ground offset, and their diagnostic bundle separates structure, pose constraints and visual review. [E4.1R review](docs/LumaSprite-Engine-E4.1R-Report.html)
 
 Use `npm run character -- --material m2 --shape-lock benchmarks/results/e42/b1-shape-lock.json` for the B1 material review bundle. M1 uses `--material m1`. [Material architecture](docs/architecture/character-materials.md) · [E4.2 review](docs/LumaSprite-Engine-E4.2-Report.html)
+
+E4.3 includes the M2P Surveyor and Forest Courier production packages. Verify either with `npm run character -- --verify-package <package-directory>`. [Review gallery](docs/LumaSprite-Engine-E4.3-Report.html) · [Package contract](docs/architecture/character-production.md)
 
 ## Verify
 

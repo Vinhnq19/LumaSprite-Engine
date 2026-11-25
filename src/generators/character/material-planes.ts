@@ -15,11 +15,39 @@ export const characterRamps = {
   glass: { shadow: '#935630', base: '#e0a051', light: '#ffe3a0', accent: '#f6bd68' },
 } as const;
 export type Surface = keyof typeof characterRamps;
+export const russetMossRamps = {
+  coat: { shadow: '#6b4139', base: '#a36146', light: '#d79768', accent: '#86503d' },
+  'far-coat': { shadow: '#512f32', base: '#71453d', light: '#a36146', accent: '#6b4139' },
+  trousers: { shadow: '#303d41', base: '#535e51', light: '#88927a', accent: '#465046' },
+  'far-trousers': { shadow: '#30383c', base: '#465046', light: '#535e51', accent: '#303d41' },
+};
 type Tone = keyof typeof characterRamps.skin;
 const area = (tone: Tone, ...points: Point[]): SurfacePatch<Tone> => ({ tone, points });
 const band = (tone: Tone, l: number, t: number, r: number, b: number) => area(tone, [l, t], [r, t], [r, b], [l, b]);
 
-export function materialPlanes(part: string, surface: Surface, directed: boolean): SurfacePatch<Tone>[] {
+export function materialPlanes(part: string, surface: Surface, directed: boolean, polish = false): SurfacePatch<Tone>[] {
+  if (polish) {
+    if (surface === 'glass') return [
+      band('shadow', .80, 0, 1, 1), band('accent', .13, .06, .8, .93),
+      area('light', [.12, .2], [.63, .12], [.81, .36], [.7, .83], [.2, .86]),
+    ];
+    if (surface === 'metal') return [
+      area('shadow', [.72, .1], [1, .14], [1, 1], [0, 1], [0, .86], [.69, .79]),
+      area('accent', [0, .53], [.53, .49], [.65, .58], [.52, .82], [.08, .85]),
+      area('light', [.08, .52], [.65, .48], [.81, .54], [.36, .61], [.22, .73], [.05, .74]),
+      band('light', .12, .15, .32, .28),
+    ];
+    if (surface === 'coat' && part === 'jacket') return [
+      area('shadow', [.51, .09], [.72, .3], [.63, .73], [.89, .87], [.76, 1], [.17, 1], [.3, .82]),
+      area('light', [.12, .19], [.49, .06], [.64, .19], [.48, .42], [.48, .6], [.27, .73], [.15, .58]),
+      area('accent', [.23, .58], [.46, .56], [.57, .69], [.33, .77], [.2, .71]),
+    ];
+    if (surface === 'coat' && part === 'near-forearm') return [
+      area('shadow', [0, .58], [.43, .63], [.72, .64], [.8, .43], [1, .43], [1, 1], [0, 1]),
+      area('light', [0, .43], [.51, .14], [.76, .21], [.68, .44], [.22, .55]),
+      area('accent', [.81, .29], [.92, .22], [.85, .75], [.76, .72]),
+    ];
+  }
   switch (surface) {
     case 'skin':
       if (part === 'head') return directed ? [

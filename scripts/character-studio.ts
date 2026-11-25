@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdir, mkdtemp, readFile, rm } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { join, resolve, sep } from 'node:path';
 import { test } from 'node:test';
 import { pathToFileURL } from 'node:url';
@@ -9,7 +9,12 @@ import { decodePng } from '../src/core/renderer/png.ts';
 import { characterReview } from '../src/generators/character/export.ts';
 import { characterMaterialReview } from '../src/generators/character/material-export.ts';
 import { surveyorRefinements, surveyors } from '../src/generators/character/presets.ts';
+import { unpackPartMask, verifyCharacterProductionPackage } from '../src/generators/character/production.ts';
 import type { ShapeLock } from '../src/generators/character/shape-lock.ts';
+import { sha256 } from '../src/quality/raster.ts';
+import { backupInputs } from './studio-backup.ts';
+
+type Production = Awaited<ReturnType<typeof verifyCharacterProductionPackage>>;
 
 test('Studio validates and reopens geometry and material draft profiles with exact RGBA and part masks', async t => {
   const studio = resolve(process.env.LUMASPRITE_STUDIO_ROOT ?? '../LumaSprite-Studio');
@@ -28,16 +33,27 @@ test('Studio validates and reopens geometry and material draft profiles with exa
   const store = new PixelStore(root);
   const samples = Object.entries({ ...surveyors, ...surveyorRefinements }).map(([id, spec]) => {
     const review = characterReview(spec);
-    return { id, spec, review, image: review.flat, png: review.files.get('flat.png')!, palette: [...review.palette], layers: review.layers };
+    return { id, spec: review.spec, review, image: review.flat, png: review.files.get('flat.png')!, palette: [...review.palette],
+      layers: review.layers, production: undefined as Production | undefined };
   });
   const lock = JSON.parse(await readFile('benchmarks/results/e42/b1-shape-lock.json', 'utf8')) as ShapeLock;
   const b1 = characterReview(surveyorRefinements.b1);
   for (const id of ['m1', 'm2'] as const) {
     const paint = characterMaterialReview(b1, lock, id);
     samples.push({ id, spec: surveyorRefinements.b1, review: b1, image: paint.final, png: paint.files.get('final.png')!,
-      palette: paint.usedColors, layers: paint.layers });
+      palette: paint.usedColors, layers: paint.layers, production: undefined });
   }
-  for (const { id, spec, review, image, png, palette, layers } of samples) {
+  for (const id of ['m2p', 'courier']) {
+    const production = await verifyCharacterProductionPackage('benchmarks/results/e43/packages/' + id);
+    const { geometry, material } = production;
+    samples.push({ id, spec: geometry.spec, review: geometry, image: material.final, png: production.files.get('final.png')!,
+      palette: material.usedColors, layers: material.layers, production });
+  }
+  const output = process.env.LUMASPRITE_CAPTURE_CHARACTER_PRODUCTION === '1'
+    ? 'benchmarks/results/e43/studio' : 'benchmarks/results/run/e43-studio';
+  await mkdir(output, { recursive: true });
+  const proofs = [];
+  for (const { id, spec, review, image, png, palette, layers, production } of samples) {
     const { w, h, rgba } = image;
     const pixels: Uint32Array | undefined = await readStudioPng(new Blob([Uint8Array.from(png)]), w, h);
     assert.ok(pixels);
@@ -45,12 +61,19 @@ test('Studio validates and reopens geometry and material draft profiles with exa
     const doc = newDocument(spec.name, w, h);
     const asset = doc.assets[0];
     asset.palette = [0, ...palette.map(pack)];
+    if (production) asset.provenance = {
+      kind: 'generated', palette: asset.palette,
+      batch: { batchId: 'e43-' + production.manifest.lineage.checkpoint, candidateId: id,
+        manifest: { version: 1, palette: { name: production.manifest.style + ' CharacterSpec v' + spec.version, colors: palette },
+          materials: Object.entries(production.material.diagnostics.ramps).map(([name, colors]) => ({ name, colors })) } },
+    };
     const [x, y] = review.plan.pivot;
     asset.metadata.pivot = { x: x / w, y: y / h };
     const frameId = asset.frames[0].id;
     celFor(asset, asset.layers[0].id, frameId, true).data = pixels;
     const masks = Object.fromEntries(Object.entries(layers).map(([key, layer]) => [
-      'part-' + key, { version: 1, kind: 'mask', w, h, data: Uint32Array.from({ length: w * h }, (_, i) => Number(layer.rgba[i * 4 + 3] === 255)) },
+      'part-' + key, { version: 1, kind: 'mask', w, h, data: production ? unpackPartMask(production.masks[key], w * h)
+        : Uint32Array.from({ length: w * h }, (_, i) => Number(layer.rgba[i * 4 + 3] === 255)) },
     ]));
     const profile = {
       id: 'field-surveyor-' + id, version: 1, name: spec.name, approved: false,
@@ -67,16 +90,41 @@ test('Studio validates and reopens geometry and material draft profiles with exa
     const { id: projectId } = store.create(doc.name, w, h, 0, doc);
     const stored = store.load(projectId, true);
     store.save(projectId, stored.revision, stored, 'Reopen geometry draft');
-    const reopened = store.load(projectId, true);
-    const result = validateCharacterProfile(reopened.studio.characters[profile.id], profile.id, reopened);
-    assert.deepEqual(result, profile);
-    assert.equal(checkCharacterReadiness({ profile: result }).status, 'unapproved');
-    assert.deepEqual(store.resource(projectId, 'flat-source').data, pixels);
-    for (const [key, expected] of Object.entries(masks)) {
-      assert.deepEqual(store.resource(projectId, key).data, expected.data);
+
+    function verifyStore(project: string) {
+      const reopened = store.load(project, true);
+      const result = validateCharacterProfile(reopened.studio.characters[profile.id], profile.id, reopened);
+      assert.deepEqual(result, profile);
+      assert.equal(checkCharacterReadiness({ profile: result }).status, 'unapproved');
+      assert.deepEqual(reopened.assets[0].provenance, asset.provenance);
+      assert.deepEqual(reopened.assets[0].metadata.pivot, asset.metadata.pivot);
+      assert.deepEqual(store.resource(project, 'flat-source').data, pixels);
+      for (const [key, expected] of Object.entries(masks)) {
+        assert.deepEqual(store.resource(project, key).data, expected.data);
+      }
+      const exported = Buffer.from(exportPixel({ document: reopened, assetId: asset.id, format: 'png' }).data);
+      assert.deepEqual(decodePng(exported), image);
+      return exported;
     }
-    const exported = exportPixel({ document: reopened, assetId: asset.id, format: 'png' });
-    assert.deepEqual(decodePng(Buffer.from(exported.data)), image);
+    verifyStore(projectId);
+    if (production) {
+      assert.throws(() => store.save(projectId, stored.revision, { ...stored, name: 'Stale change' }),
+        error => {
+          const issue = error as { status?: number; diagnostic?: { code?: string } };
+          return issue.status === 409 && issue.diagnostic?.code === 'STALE_REVISION';
+        });
+      assert.equal(store.load(projectId).name, spec.name);
+      const backup = backupInputs(store.backupFiles(projectId));
+      const restored = store.importBackup(spec.name, backup.document, backup.blobs, backup.history, backup.resources);
+      const exported = verifyStore(restored.id);
+      const rgbaSha256 = sha256(decodePng(exported).rgba);
+      assert.equal(rgbaSha256, production.manifest.rgbaSha256);
+      await writeFile(join(output, id + '-restored.png'), exported);
+      proofs.push({ id, studioProfileVersion: profile.version, characterSpecVersion: spec.version, style: production.manifest.style,
+        saveReopen: 'PASS', restore: 'PASS', staleRevision: 'REJECTED', masks: Object.keys(masks).length, pivot: [x, y], rgbaSha256,
+        engineManifestSha256: sha256(production.files.get('manifest.json')!) });
+    }
   }
-  t.diagnostic('Studio ' + revision + ' validated A, B, B1, B2, M1 and M2 profiles, masks, pivots, links and RGBA.');
+  await writeFile(join(output, 'parity.json'), JSON.stringify({ studioRevision: revision, results: proofs }, null, 2) + '\n');
+  t.diagnostic('Studio ' + revision + ' validated eight draft profiles and restored both production packages with exact RGBA.');
 });
