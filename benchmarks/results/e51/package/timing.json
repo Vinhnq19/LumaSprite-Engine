@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "lumasprite-animation-timing",
+  "name": "Field Surveyor Idle",
+  "image": "spritesheet.png",
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "sampling": "nearest",
+  "pivot": [
+    30,
+    59
+  ],
+  "loop": "repeat",
+  "totalDurationMs": 1800,
+  "frames": [
+    {
+      "phase": "neutral",
+      "durationMs": 360,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e"
+    },
+    {
+      "phase": "inhale",
+      "durationMs": 480,
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "ae571bb34dd5dc861843fac62bd0046ee63adff13f3b381c8fd6a548cd183428"
+    },
+    {
+      "phase": "return",
+      "durationMs": 360,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e"
+    },
+    {
+      "phase": "recovery",
+      "durationMs": 600,
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "c60d02f3fee9a254b86a82b0699a32637751a877c5aa7f91d7ca3f4ec8f9b578"
+    }
+  ]
+}

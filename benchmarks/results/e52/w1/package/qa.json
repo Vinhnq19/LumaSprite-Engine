@@ -1,0 +1,1956 @@
+{
+  "version": 2,
+  "technical": "PASS",
+  "artistic": "VISUAL_REVIEW_PENDING",
+  "root": [
+    30,
+    59
+  ],
+  "layerOrder": [
+    "far-thigh",
+    "far-shin",
+    "far-boot",
+    "far-upper-arm",
+    "far-forearm",
+    "far-hand",
+    "near-thigh",
+    "near-shin",
+    "near-boot",
+    "satchel",
+    "hips",
+    "jacket",
+    "strap",
+    "neck",
+    "head",
+    "cap",
+    "near-upper-arm",
+    "near-forearm",
+    "lantern",
+    "near-hand"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase": "contact",
+      "lead": "far",
+      "rootX": 0,
+      "advancePx": 3,
+      "feet": {
+        "near": {
+          "state": "planted",
+          "canvas": [
+            29,
+            59
+          ],
+          "world": [
+            29,
+            59
+          ],
+          "groundY": 59,
+          "clearance": 0,
+          "solePixels": 9,
+          "ankle": [
+            25,
+            54
+          ],
+          "knee": [
+            27,
+            46
+          ]
+        },
+        "far": {
+          "state": "planted",
+          "canvas": [
+            43,
+            58
+          ],
+          "world": [
+            43,
+            58
+          ],
+          "groundY": 58,
+          "clearance": 0,
+          "solePixels": 8,
+          "ankle": [
+            39,
+            53
+          ],
+          "knee": [
+            38,
+            44
+          ]
+        }
+      },
+      "bodyBob": 0,
+      "centerX": 31.300970873786408,
+      "hip": [
+        31,
+        37
+      ],
+      "crown": [
+        34,
+        13
+      ],
+      "nearShoulder": [
+        25,
+        24
+      ],
+      "farPalm": [
+        30,
+        36
+      ],
+      "grip": [
+        49,
+        33
+      ],
+      "gripPixels": 7,
+      "openHandleRows": 2,
+      "lampBodyGap": 5,
+      "lanternSway": 0,
+      "alphaPixels": 1062,
+      "alphaSha256": "9985a6213e4235b1da0549b9f376ae60526feba99c4b11a00b76b79f2ceaf46a",
+      "partMasks": {
+        "far-thigh": "78478c942442592093d5ce764a820341da77f42211eac4d15b95d3e143d07f68",
+        "far-shin": "8a4c972ebb733157e640c8c81d5d69a77ddccd333336dfd463deb9f8746b6227",
+        "far-boot": "629d211d3eaafdcf93ca52379a6b5a4c5a0fdadbaba0a8d44a66390e91e1f832",
+        "far-upper-arm": "755cf2f748108c8a53bf8c7939e29b7c635cd6537f336865666fd04921c72398",
+        "far-forearm": "d98009cd46df5adb00dbafb07f5ed70a02193e0acaec1883af36ccb0c4b4b692",
+        "far-hand": "28b701c42ae7731faff4adc6eb020bb8df809dc3f7c20384e1a87bc644286eba",
+        "near-thigh": "a69fbb1895ad921e9b7317d8574bb267a1639e77fc3b9cb16f295edf1fa929ae",
+        "near-shin": "628910aa8344851fff1c08eba6a743e8ce9e60b9230ab15bbed8400223e89c98",
+        "near-boot": "e3035002549441c6758d14ce99ac51f14d3f1e418ca10fc25a7c106a761df6f3",
+        "satchel": "e2fa85f24abd584f921ba47b2e3f1525d373c8a4f3c335cfe3904c4f456d04f7",
+        "hips": "40671a45919ca88f8f9c866da59ec8872fe410e62f9eb5ca7524d6580bd0a54e",
+        "jacket": "23c89261aee507cc7655ebca6b1813cadcb933ab1dad0472cb22f93d12d08396",
+        "strap": "5d71f35c31dbc90bf690f9b70782f58e00c6a4653f8c5de3b794a2e21fd282e6",
+        "neck": "4cfea8096d40a311cb18fdaff4a75e45711bc88b487ba525223c8c6240ca2cbf",
+        "head": "160c4f882d99afbf162b9dfc7c2fee1f8ad596fbb611a5b07548d7df4a06dd1c",
+        "cap": "af902fd5180474e1edbdff36fcbd982139e46ffa600b00b58df38a1b346fa2e2",
+        "near-upper-arm": "aecddbfbcd39529ad806438b9e74c4732d529df1c3476f805595ae08eb46b671",
+        "near-forearm": "1d037c2ad28ff129614ca8c10d06e35dc5e460443e9283aa38b74995d0d57af0",
+        "lantern": "92112a9302cf847db00866bcd3c144386ed47adb928319835cc38ae150262f47",
+        "near-hand": "ea133b33b03e24e807954d3ea48f5747ff1aca9011c426f5e657a557b180005f"
+      },
+      "geometrySha256": "4e8e94d104ddc11f399373157c2b1174460588c2434d2f29612530c51cfe0e7a",
+      "rgbaSha256": "b403d535e0bc6a0e45eb86362c345e5157a41d056a1a299944640d1854a00ae0",
+      "joints": {
+        "near-shoulder": 96,
+        "near-elbow": 21,
+        "near-wrist": 12,
+        "near-hip": 31,
+        "near-knee": 28,
+        "near-ankle": 22,
+        "far-shoulder": 39,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 31,
+        "far-knee": 21,
+        "far-ankle": 16
+      },
+      "kneeBends": {
+        "near": 1,
+        "far": 1.117647058823529
+      }
+    },
+    {
+      "index": 1,
+      "phase": "down",
+      "lead": "far",
+      "rootX": 3,
+      "advancePx": 4,
+      "feet": {
+        "near": {
+          "state": "swing",
+          "canvas": [
+            27,
+            57
+          ],
+          "world": [
+            30,
+            57
+          ],
+          "groundY": 59,
+          "clearance": 2,
+          "solePixels": 9,
+          "ankle": [
+            23,
+            52
+          ],
+          "knee": [
+            27,
+            46
+          ]
+        },
+        "far": {
+          "state": "planted",
+          "canvas": [
+            40,
+            58
+          ],
+          "world": [
+            43,
+            58
+          ],
+          "groundY": 58,
+          "clearance": 0,
+          "solePixels": 8,
+          "ankle": [
+            36,
+            53
+          ],
+          "knee": [
+            38,
+            45
+          ]
+        }
+      },
+      "bodyBob": 2,
+      "centerX": 31.944309927360774,
+      "hip": [
+        31,
+        39
+      ],
+      "crown": [
+        35,
+        15
+      ],
+      "nearShoulder": [
+        26,
+        26
+      ],
+      "farPalm": [
+        32,
+        38
+      ],
+      "grip": [
+        49,
+        33
+      ],
+      "gripPixels": 7,
+      "openHandleRows": 2,
+      "lampBodyGap": 5,
+      "lanternSway": 0,
+      "alphaPixels": 1024,
+      "alphaSha256": "3fd8c9b5a00af2f34845ca0773639412c241509fab02ccbf491e7943ea5a0007",
+      "partMasks": {
+        "far-thigh": "447a0c998cae667a1d2cf6112e63a2b11ada57d19dad420aaa6ca9d4652179ab",
+        "far-shin": "2669cf698a955cf7c67d3381a0e680a7919d2ca84644667881a9e8782f048215",
+        "far-boot": "660cc8a27a5cf020a96a3bdaa264d44d103b5194d740f9331658c037b1938c37",
+        "far-upper-arm": "93481b1915648b68ec1c002459d31340781eb0749e485184abb0c5481035aa4b",
+        "far-forearm": "7dba8fcc3e8a48b77e2eca369a0e611ab2f2084774e9b037eb4f71ba26319eb2",
+        "far-hand": "0a984614a27c9e9cd82185e2e92b670bd6c1851c6445fbb4c91ec2fb1ad28994",
+        "near-thigh": "17cf045ba8cfb7b307f12e6ecc1578f2e49f46c486c1e87994424b1c3534347a",
+        "near-shin": "a809551e2973af00866a661ee39b3f6d84e2061163b68119779a3cc4a4c47bb4",
+        "near-boot": "b47db9881099194aaad6d54f011c92f2ca2e47dbce4e2aebafeaab646adb98a4",
+        "satchel": "4b7884ba7d16dd8dc35973fb9b81e89dec03866d150cedb462f9082b9dbed5b2",
+        "hips": "415057662e4c74d6eefa6ad45172552a162e50c6951fd23c9e22144675161d32",
+        "jacket": "6b1c9f3698dd595ced5af6572651db93acb63b3e7b4a3437aff949b13b477cd0",
+        "strap": "3c75f569f4095583a6006ecc40ac6cb3207752b6190de3a206095fcdaa4f969f",
+        "neck": "9fe1c68979ed61bb64e86d9c15172c6ef324291fdb46789cf5a2c420dfbe585c",
+        "head": "9c888e585f8ec8ec758931a39eb21cbb07f15fe9bfab20d3944b6cf0e5906bd3",
+        "cap": "73bf4cda4180c960e8d5cb1b3ee8dec424a2c2c65e3ee2aa33065214db3a8349",
+        "near-upper-arm": "c354e946375a375b950adabfb2f725ba9b9bf18315086e60dc5bc08c424d5b74",
+        "near-forearm": "f9a3048af1dcf6ba2b6d594d82e2298dc1fea435e7e312f7396c6678084e1c56",
+        "lantern": "92112a9302cf847db00866bcd3c144386ed47adb928319835cc38ae150262f47",
+        "near-hand": "ea133b33b03e24e807954d3ea48f5747ff1aca9011c426f5e657a557b180005f"
+      },
+      "geometrySha256": "da85da1aef9af0ffbe7b9ef069773c6dbe796f1b0daeefd6edd2c82651581add",
+      "rgbaSha256": "a160f9d2194b1859e51a7fab67ad7ab7c43279380385b8871dd4fd0641b3ef22",
+      "joints": {
+        "near-shoulder": 87,
+        "near-elbow": 21,
+        "near-wrist": 12,
+        "near-hip": 31,
+        "near-knee": 28,
+        "near-ankle": 22,
+        "far-shoulder": 39,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 31,
+        "far-knee": 21,
+        "far-ankle": 15
+      },
+      "kneeBends": {
+        "near": 2,
+        "far": 2.5333333333333314
+      }
+    },
+    {
+      "index": 2,
+      "phase": "passing",
+      "lead": "far",
+      "rootX": 7,
+      "advancePx": 5,
+      "feet": {
+        "near": {
+          "state": "swing",
+          "canvas": [
+            36,
+            52
+          ],
+          "world": [
+            43,
+            52
+          ],
+          "groundY": 59,
+          "clearance": 7,
+          "solePixels": 9,
+          "ankle": [
+            32,
+            47
+          ],
+          "knee": [
+            33,
+            43
+          ]
+        },
+        "far": {
+          "state": "planted",
+          "canvas": [
+            36,
+            58
+          ],
+          "world": [
+            43,
+            58
+          ],
+          "groundY": 58,
+          "clearance": 0,
+          "solePixels": 8,
+          "ankle": [
+            32,
+            53
+          ],
+          "knee": [
+            35,
+            45
+          ]
+        }
+      },
+      "bodyBob": 1,
+      "centerX": 31.300970873786408,
+      "hip": [
+        31,
+        38
+      ],
+      "crown": [
+        34,
+        14
+      ],
+      "nearShoulder": [
+        25,
+        25
+      ],
+      "farPalm": [
+        36,
+        37
+      ],
+      "grip": [
+        49,
+        33
+      ],
+      "gripPixels": 7,
+      "openHandleRows": 2,
+      "lampBodyGap": 5,
+      "lanternSway": 0,
+      "alphaPixels": 946,
+      "alphaSha256": "202d556d8f3dff761db8bd051b9050ee69df52813402c93c008235e193306fed",
+      "partMasks": {
+        "far-thigh": "2eba71e225e9f40288fce9f2357f3b434012df6b24f0b316dbacd653a09ff5f0",
+        "far-shin": "09bd71700dbfc1a1853947383347d3b09e9f02be2bea948d6a83033cd5f03a06",
+        "far-boot": "4f737f2115dff3f1eda0311a0952849dae416ca541f00e7148e84c8eb4ac49d1",
+        "far-upper-arm": "5ec6a5719adbaee1dae5a8a60b8b24dced82158312b6ee13645b7265fd141754",
+        "far-forearm": "cc1e0bc1134d1e5020956b7dbd2da6f9c122e19f8afd068df5a8abc0a29887a9",
+        "far-hand": "b8b3a3705bd936a3c29afeba2d06338dc2b1b0694b8d4cf3098a92917f8f37bc",
+        "near-thigh": "6841d7bfd11b6528e3615911fc538354e430f731c55a5201e93d8d6f1cf43918",
+        "near-shin": "554ef87986139510cd1b4689db71b793bed41f1766b5713b8a690f34af6a0271",
+        "near-boot": "270ff738017ac8c7682beb97f83c135f60ca471acdfcb14e7dc13b268e74c719",
+        "satchel": "2ccd5b9401a6cee2498155817846575be367fe9f39ab7d70cc5d8c5e1a88df55",
+        "hips": "289c4c0076413bfb52c169038d9e5885a7bf7aabdf2a353c2f00da375fa6599c",
+        "jacket": "1e400d150a9f982c3b00af2386dc350de9debffceedbf1bddb7aef3ec5ec345e",
+        "strap": "04155b4a74a6e0407fd5c1875665b4f47b5d08f759498eb6cfa722d0a6521c38",
+        "neck": "f977a4cb5fd8c9743f04c382259b98078e99118be99022cd0f2e131914f10c11",
+        "head": "c816443fcb5120c6420d2efd671c6692b0409d389b2c6fbf98624b7e59d2e0fb",
+        "cap": "7a7d7fb76550defbabd11689881a0ed0d590a9f9ec65c6d0fdc7d5fb7647a953",
+        "near-upper-arm": "61d2bbc2eeaacfb85b2f6c350ecd1f90bd8b9bb6308c0aa14e11a88917b3077e",
+        "near-forearm": "1d037c2ad28ff129614ca8c10d06e35dc5e460443e9283aa38b74995d0d57af0",
+        "lantern": "92112a9302cf847db00866bcd3c144386ed47adb928319835cc38ae150262f47",
+        "near-hand": "ea133b33b03e24e807954d3ea48f5747ff1aca9011c426f5e657a557b180005f"
+      },
+      "geometrySha256": "b7a4d7db49287a813a45f0b64d27feef43f052f986b8961e8a04cedb6c1cfc62",
+      "rgbaSha256": "6616b0043f1dad2a91800894bcd4f02ab86780941b72a5c70a346cbe86ce1ee1",
+      "joints": {
+        "near-shoulder": 91,
+        "near-elbow": 21,
+        "near-wrist": 12,
+        "near-hip": 43,
+        "near-knee": 29,
+        "near-ankle": 22,
+        "far-shoulder": 30,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 31,
+        "far-knee": 21,
+        "far-ankle": 15
+      },
+      "kneeBends": {
+        "near": 3.5,
+        "far": 1.5
+      }
+    },
+    {
+      "index": 3,
+      "phase": "contact",
+      "lead": "near",
+      "rootX": 12,
+      "advancePx": 3,
+      "feet": {
+        "near": {
+          "state": "planted",
+          "canvas": [
+            41,
+            59
+          ],
+          "world": [
+            53,
+            59
+          ],
+          "groundY": 59,
+          "clearance": 0,
+          "solePixels": 9,
+          "ankle": [
+            37,
+            54
+          ],
+          "knee": [
+            33,
+            46
+          ]
+        },
+        "far": {
+          "state": "planted",
+          "canvas": [
+            31,
+            58
+          ],
+          "world": [
+            43,
+            58
+          ],
+          "groundY": 58,
+          "clearance": 0,
+          "solePixels": 8,
+          "ankle": [
+            27,
+            53
+          ],
+          "knee": [
+            32,
+            44
+          ]
+        }
+      },
+      "bodyBob": 0,
+      "centerX": 31.300970873786408,
+      "hip": [
+        31,
+        37
+      ],
+      "crown": [
+        34,
+        13
+      ],
+      "nearShoulder": [
+        25,
+        24
+      ],
+      "farPalm": [
+        42,
+        36
+      ],
+      "grip": [
+        49,
+        33
+      ],
+      "gripPixels": 7,
+      "openHandleRows": 2,
+      "lampBodyGap": 5,
+      "lanternSway": 0,
+      "alphaPixels": 1066,
+      "alphaSha256": "41851c962c093963ff4c139b708a2fe8bf7955c967d5b6c7512a87de237e7326",
+      "partMasks": {
+        "far-thigh": "fbcc4c1423bbd0a8234e55b1e50cf524c8436154e6006f347ec20e5213b2c34c",
+        "far-shin": "e659123a096a061c2eb1efb740fdb8413534967f7983ed26f7f2706a078909ae",
+        "far-boot": "fcf117899ccd17c4815fbfa061d8e29bafbceb8b5b7ce7e4e6846583b1c6affc",
+        "far-upper-arm": "6d6743839c0a7ba090693bad58b3c811a6d3bf0a1efa85d68ef2a7d683fcb3a6",
+        "far-forearm": "a5befc4afe2349f4f1ead3228a1364dd09b5b3e8139fbd822ee45d2b092cc8ac",
+        "far-hand": "f7d7c35bf6fb670eb0b710a76e56486c136e3dae679c522661cc1bbbd4790c54",
+        "near-thigh": "82bbf4058f7f9c87988bdee672aa268502e05cbe2c37aba09f4d7a438dc18015",
+        "near-shin": "e10a6074ee3c03a54d6e1f9303652d123efcee15a22a973e910ab9379b3ea356",
+        "near-boot": "3d0daf21a25c19ce3c4cd2b205234fe9ecbfc09be52bdfe7f0291e656d814627",
+        "satchel": "e2fa85f24abd584f921ba47b2e3f1525d373c8a4f3c335cfe3904c4f456d04f7",
+        "hips": "40671a45919ca88f8f9c866da59ec8872fe410e62f9eb5ca7524d6580bd0a54e",
+        "jacket": "23c89261aee507cc7655ebca6b1813cadcb933ab1dad0472cb22f93d12d08396",
+        "strap": "5d71f35c31dbc90bf690f9b70782f58e00c6a4653f8c5de3b794a2e21fd282e6",
+        "neck": "4cfea8096d40a311cb18fdaff4a75e45711bc88b487ba525223c8c6240ca2cbf",
+        "head": "160c4f882d99afbf162b9dfc7c2fee1f8ad596fbb611a5b07548d7df4a06dd1c",
+        "cap": "af902fd5180474e1edbdff36fcbd982139e46ffa600b00b58df38a1b346fa2e2",
+        "near-upper-arm": "aecddbfbcd39529ad806438b9e74c4732d529df1c3476f805595ae08eb46b671",
+        "near-forearm": "1d037c2ad28ff129614ca8c10d06e35dc5e460443e9283aa38b74995d0d57af0",
+        "lantern": "92112a9302cf847db00866bcd3c144386ed47adb928319835cc38ae150262f47",
+        "near-hand": "ea133b33b03e24e807954d3ea48f5747ff1aca9011c426f5e657a557b180005f"
+      },
+      "geometrySha256": "3cf6033056c7b7170f8681063e52f48ef4d44e12b9a2516a3abcded341e93f35",
+      "rgbaSha256": "4521508b4fc3a595c3ef2723d90c567522e01a95bae3aafb9d0e744bf3fc949c",
+      "joints": {
+        "near-shoulder": 96,
+        "near-elbow": 21,
+        "near-wrist": 12,
+        "near-hip": 35,
+        "near-knee": 28,
+        "near-ankle": 24,
+        "far-shoulder": 24,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 36,
+        "far-knee": 21,
+        "far-ankle": 15
+      },
+      "kneeBends": {
+        "near": 1,
+        "far": 0.764705882352942
+      }
+    },
+    {
+      "index": 4,
+      "phase": "down",
+      "lead": "near",
+      "rootX": 15,
+      "advancePx": 4,
+      "feet": {
+        "near": {
+          "state": "planted",
+          "canvas": [
+            38,
+            59
+          ],
+          "world": [
+            53,
+            59
+          ],
+          "groundY": 59,
+          "clearance": 0,
+          "solePixels": 9,
+          "ankle": [
+            34,
+            54
+          ],
+          "knee": [
+            33,
+            47
+          ]
+        },
+        "far": {
+          "state": "swing",
+          "canvas": [
+            28,
+            56
+          ],
+          "world": [
+            43,
+            56
+          ],
+          "groundY": 58,
+          "clearance": 2,
+          "solePixels": 8,
+          "ankle": [
+            24,
+            51
+          ],
+          "knee": [
+            32,
+            44
+          ]
+        }
+      },
+      "bodyBob": 2,
+      "centerX": 31.944309927360774,
+      "hip": [
+        31,
+        39
+      ],
+      "crown": [
+        35,
+        15
+      ],
+      "nearShoulder": [
+        26,
+        26
+      ],
+      "farPalm": [
+        40,
+        38
+      ],
+      "grip": [
+        49,
+        33
+      ],
+      "gripPixels": 7,
+      "openHandleRows": 2,
+      "lampBodyGap": 5,
+      "lanternSway": 0,
+      "alphaPixels": 1020,
+      "alphaSha256": "6704f8d0445bd2324de6711ad40ddff89f88ae969b7261e9e9ccf0de306a88d3",
+      "partMasks": {
+        "far-thigh": "fe7e11f8fd56b74250ce68facf8b88e97527ee1e3d782f08fc53c1412cb72a4d",
+        "far-shin": "bc009ed7e628053eb9c6fd4aae1e16b1d7ed850ae4bb2ee7e81c2293a2aa76ba",
+        "far-boot": "0b71e179d6f2bb435cd9160e15935f0624ebbf080cb4ccb887b4e438586db85f",
+        "far-upper-arm": "81d18290a050ca497e3f44c7e0507917877f579bb0e12d53763c8ff35cc0abdc",
+        "far-forearm": "dd6779ed85a56cfbccda7491010d127879d2eaee1063c28f628a00e2787aa20d",
+        "far-hand": "dd3294cc2b2d183d6d7bb9fb67048b226c123b7fef6be0cfeea569367bedaed4",
+        "near-thigh": "345adf21cb24be1bb574ff26ab929355141fdf2e8855ab1d9875270013408f4e",
+        "near-shin": "8e78cc8eeeded322bb5c896bedb95e9083e130e992a46064ac294e5db974a598",
+        "near-boot": "2ab640325f310b6a8daaaf68fda48981c3f4cc17b99a96b1d5fe9271f5dc79a5",
+        "satchel": "4b7884ba7d16dd8dc35973fb9b81e89dec03866d150cedb462f9082b9dbed5b2",
+        "hips": "415057662e4c74d6eefa6ad45172552a162e50c6951fd23c9e22144675161d32",
+        "jacket": "6b1c9f3698dd595ced5af6572651db93acb63b3e7b4a3437aff949b13b477cd0",
+        "strap": "3c75f569f4095583a6006ecc40ac6cb3207752b6190de3a206095fcdaa4f969f",
+        "neck": "9fe1c68979ed61bb64e86d9c15172c6ef324291fdb46789cf5a2c420dfbe585c",
+        "head": "9c888e585f8ec8ec758931a39eb21cbb07f15fe9bfab20d3944b6cf0e5906bd3",
+        "cap": "73bf4cda4180c960e8d5cb1b3ee8dec424a2c2c65e3ee2aa33065214db3a8349",
+        "near-upper-arm": "c354e946375a375b950adabfb2f725ba9b9bf18315086e60dc5bc08c424d5b74",
+        "near-forearm": "f9a3048af1dcf6ba2b6d594d82e2298dc1fea435e7e312f7396c6678084e1c56",
+        "lantern": "92112a9302cf847db00866bcd3c144386ed47adb928319835cc38ae150262f47",
+        "near-hand": "ea133b33b03e24e807954d3ea48f5747ff1aca9011c426f5e657a557b180005f"
+      },
+      "geometrySha256": "91b52d96a7a236d4f4f4f985bf9bc6b1c50d7580085a10d63708f9e4f81f63d1",
+      "rgbaSha256": "3c7ef9c073ee43d55af47c5e34f81b4063536e6b0a7b520f3076c3c5eaa7322f",
+      "joints": {
+        "near-shoulder": 87,
+        "near-elbow": 21,
+        "near-wrist": 12,
+        "near-hip": 36,
+        "near-knee": 28,
+        "near-ankle": 22,
+        "far-shoulder": 27,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 37,
+        "far-knee": 21,
+        "far-ankle": 15
+      },
+      "kneeBends": {
+        "near": 2.5,
+        "far": 2.0769230769230766
+      }
+    },
+    {
+      "index": 5,
+      "phase": "passing",
+      "lead": "near",
+      "rootX": 19,
+      "advancePx": 5,
+      "feet": {
+        "near": {
+          "state": "planted",
+          "canvas": [
+            34,
+            59
+          ],
+          "world": [
+            53,
+            59
+          ],
+          "groundY": 59,
+          "clearance": 0,
+          "solePixels": 9,
+          "ankle": [
+            30,
+            54
+          ],
+          "knee": [
+            30,
+            46
+          ]
+        },
+        "far": {
+          "state": "swing",
+          "canvas": [
+            38,
+            52
+          ],
+          "world": [
+            57,
+            52
+          ],
+          "groundY": 58,
+          "clearance": 6,
+          "solePixels": 8,
+          "ankle": [
+            34,
+            47
+          ],
+          "knee": [
+            38,
+            42
+          ]
+        }
+      },
+      "bodyBob": 1,
+      "centerX": 31.300970873786408,
+      "hip": [
+        31,
+        38
+      ],
+      "crown": [
+        34,
+        14
+      ],
+      "nearShoulder": [
+        25,
+        25
+      ],
+      "farPalm": [
+        36,
+        37
+      ],
+      "grip": [
+        49,
+        33
+      ],
+      "gripPixels": 7,
+      "openHandleRows": 2,
+      "lampBodyGap": 5,
+      "lanternSway": 0,
+      "alphaPixels": 999,
+      "alphaSha256": "4682d33aeea9074027b90d5921fda0452be78f16ee3bbb70e59b3de229c46143",
+      "partMasks": {
+        "far-thigh": "7e9646596d13afe5b9251c126c0771f255a1e77fcd9b69fc52988f58354090ff",
+        "far-shin": "cebd357057fcd3d2b6edde7f3e645925421b1725aae23aa567c68c7d2d207f73",
+        "far-boot": "77c2f45a86ef6d6c3845f9d37d507ed9da6ec91d029ca0067c4672573cf1e34f",
+        "far-upper-arm": "5ec6a5719adbaee1dae5a8a60b8b24dced82158312b6ee13645b7265fd141754",
+        "far-forearm": "cc1e0bc1134d1e5020956b7dbd2da6f9c122e19f8afd068df5a8abc0a29887a9",
+        "far-hand": "b8b3a3705bd936a3c29afeba2d06338dc2b1b0694b8d4cf3098a92917f8f37bc",
+        "near-thigh": "009cb34678f03982a516237971b23ef814f6303c4ad494617be626ddb95ecfd8",
+        "near-shin": "f0d9c1432b15bba5d0b5b70b39c6a0da0e1344e471331762d9f30fa6d14a73ff",
+        "near-boot": "4a68e1f2642b6b393349f92a0aca5144d9d10ee460906a5f0b5c3683af590d8b",
+        "satchel": "2ccd5b9401a6cee2498155817846575be367fe9f39ab7d70cc5d8c5e1a88df55",
+        "hips": "289c4c0076413bfb52c169038d9e5885a7bf7aabdf2a353c2f00da375fa6599c",
+        "jacket": "1e400d150a9f982c3b00af2386dc350de9debffceedbf1bddb7aef3ec5ec345e",
+        "strap": "04155b4a74a6e0407fd5c1875665b4f47b5d08f759498eb6cfa722d0a6521c38",
+        "neck": "f977a4cb5fd8c9743f04c382259b98078e99118be99022cd0f2e131914f10c11",
+        "head": "c816443fcb5120c6420d2efd671c6692b0409d389b2c6fbf98624b7e59d2e0fb",
+        "cap": "7a7d7fb76550defbabd11689881a0ed0d590a9f9ec65c6d0fdc7d5fb7647a953",
+        "near-upper-arm": "61d2bbc2eeaacfb85b2f6c350ecd1f90bd8b9bb6308c0aa14e11a88917b3077e",
+        "near-forearm": "1d037c2ad28ff129614ca8c10d06e35dc5e460443e9283aa38b74995d0d57af0",
+        "lantern": "92112a9302cf847db00866bcd3c144386ed47adb928319835cc38ae150262f47",
+        "near-hand": "ea133b33b03e24e807954d3ea48f5747ff1aca9011c426f5e657a557b180005f"
+      },
+      "geometrySha256": "a2df64fafef85cd00f9ee2b1d2c36dde10137de53db29775acb4428977309519",
+      "rgbaSha256": "0457f6b6d8cadf0dea8a45adec24232e294bcf4e7dcd3f48b39491bfae7c3625",
+      "joints": {
+        "near-shoulder": 91,
+        "near-elbow": 21,
+        "near-wrist": 12,
+        "near-hip": 33,
+        "near-knee": 28,
+        "near-ankle": 22,
+        "far-shoulder": 30,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 30,
+        "far-knee": 22,
+        "far-ankle": 15
+      },
+      "kneeBends": {
+        "near": 1.6000000000000014,
+        "far": 3.5
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "wrap": false,
+      "contacts": [
+        {
+          "side": "near",
+          "from": "planted",
+          "to": "swing",
+          "plantedDelta": null
+        },
+        {
+          "side": "far",
+          "from": "planted",
+          "to": "planted",
+          "plantedDelta": [
+            0,
+            0
+          ]
+        }
+      ],
+      "displacement": {
+        "crown": [
+          1,
+          2
+        ],
+        "neck": [
+          1,
+          2
+        ],
+        "chest": [
+          1,
+          2
+        ],
+        "pelvis": [
+          0,
+          2
+        ],
+        "far-shoulder": [
+          1,
+          2
+        ],
+        "far-elbow": [
+          1,
+          2
+        ],
+        "far-wrist": [
+          2,
+          2
+        ],
+        "far-palm": [
+          2,
+          2
+        ],
+        "far-hip": [
+          0,
+          2
+        ],
+        "far-knee": [
+          0,
+          1
+        ],
+        "far-ankle": [
+          -3,
+          0
+        ],
+        "far-ground": [
+          -3,
+          0
+        ],
+        "near-shoulder": [
+          1,
+          2
+        ],
+        "near-elbow": [
+          0,
+          1
+        ],
+        "near-wrist": [
+          0,
+          0
+        ],
+        "near-palm": [
+          0,
+          0
+        ],
+        "near-hip": [
+          0,
+          2
+        ],
+        "near-knee": [
+          0,
+          0
+        ],
+        "near-ankle": [
+          -2,
+          -2
+        ],
+        "near-ground": [
+          -2,
+          -2
+        ],
+        "grip-anchor": [
+          0,
+          0
+        ]
+      },
+      "comparedParts": 11,
+      "flicker": [],
+      "maxJointStepPx": 3
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "wrap": false,
+      "contacts": [
+        {
+          "side": "near",
+          "from": "swing",
+          "to": "swing",
+          "plantedDelta": null
+        },
+        {
+          "side": "far",
+          "from": "planted",
+          "to": "planted",
+          "plantedDelta": [
+            0,
+            0
+          ]
+        }
+      ],
+      "displacement": {
+        "crown": [
+          -1,
+          -1
+        ],
+        "neck": [
+          -1,
+          -1
+        ],
+        "chest": [
+          -1,
+          -1
+        ],
+        "pelvis": [
+          0,
+          -1
+        ],
+        "far-shoulder": [
+          -1,
+          -1
+        ],
+        "far-elbow": [
+          2,
+          -1
+        ],
+        "far-wrist": [
+          4,
+          -1
+        ],
+        "far-palm": [
+          4,
+          -1
+        ],
+        "far-hip": [
+          0,
+          -1
+        ],
+        "far-knee": [
+          -3,
+          0
+        ],
+        "far-ankle": [
+          -4,
+          0
+        ],
+        "far-ground": [
+          -4,
+          0
+        ],
+        "near-shoulder": [
+          -1,
+          -1
+        ],
+        "near-elbow": [
+          0,
+          -1
+        ],
+        "near-wrist": [
+          0,
+          0
+        ],
+        "near-palm": [
+          0,
+          0
+        ],
+        "near-hip": [
+          0,
+          -1
+        ],
+        "near-knee": [
+          6,
+          -3
+        ],
+        "near-ankle": [
+          9,
+          -5
+        ],
+        "near-ground": [
+          9,
+          -5
+        ],
+        "grip-anchor": [
+          0,
+          0
+        ]
+      },
+      "comparedParts": 10,
+      "flicker": [],
+      "maxJointStepPx": 9
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "wrap": false,
+      "contacts": [
+        {
+          "side": "near",
+          "from": "swing",
+          "to": "planted",
+          "plantedDelta": null
+        },
+        {
+          "side": "far",
+          "from": "planted",
+          "to": "planted",
+          "plantedDelta": [
+            0,
+            0
+          ]
+        }
+      ],
+      "displacement": {
+        "crown": [
+          0,
+          -1
+        ],
+        "neck": [
+          0,
+          -1
+        ],
+        "chest": [
+          0,
+          -1
+        ],
+        "pelvis": [
+          0,
+          -1
+        ],
+        "far-shoulder": [
+          0,
+          -1
+        ],
+        "far-elbow": [
+          3,
+          -1
+        ],
+        "far-wrist": [
+          6,
+          -1
+        ],
+        "far-palm": [
+          6,
+          -1
+        ],
+        "far-hip": [
+          0,
+          -1
+        ],
+        "far-knee": [
+          -3,
+          -1
+        ],
+        "far-ankle": [
+          -5,
+          0
+        ],
+        "far-ground": [
+          -5,
+          0
+        ],
+        "near-shoulder": [
+          0,
+          -1
+        ],
+        "near-elbow": [
+          0,
+          0
+        ],
+        "near-wrist": [
+          0,
+          0
+        ],
+        "near-palm": [
+          0,
+          0
+        ],
+        "near-hip": [
+          0,
+          -1
+        ],
+        "near-knee": [
+          0,
+          3
+        ],
+        "near-ankle": [
+          5,
+          7
+        ],
+        "near-ground": [
+          5,
+          7
+        ],
+        "grip-anchor": [
+          0,
+          0
+        ]
+      },
+      "comparedParts": 13,
+      "flicker": [],
+      "maxJointStepPx": 7
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "wrap": false,
+      "contacts": [
+        {
+          "side": "near",
+          "from": "planted",
+          "to": "planted",
+          "plantedDelta": [
+            0,
+            0
+          ]
+        },
+        {
+          "side": "far",
+          "from": "planted",
+          "to": "swing",
+          "plantedDelta": null
+        }
+      ],
+      "displacement": {
+        "crown": [
+          1,
+          2
+        ],
+        "neck": [
+          1,
+          2
+        ],
+        "chest": [
+          1,
+          2
+        ],
+        "pelvis": [
+          0,
+          2
+        ],
+        "far-shoulder": [
+          1,
+          2
+        ],
+        "far-elbow": [
+          -1,
+          2
+        ],
+        "far-wrist": [
+          -2,
+          2
+        ],
+        "far-palm": [
+          -2,
+          2
+        ],
+        "far-hip": [
+          0,
+          2
+        ],
+        "far-knee": [
+          0,
+          0
+        ],
+        "far-ankle": [
+          -3,
+          -2
+        ],
+        "far-ground": [
+          -3,
+          -2
+        ],
+        "near-shoulder": [
+          1,
+          2
+        ],
+        "near-elbow": [
+          0,
+          1
+        ],
+        "near-wrist": [
+          0,
+          0
+        ],
+        "near-palm": [
+          0,
+          0
+        ],
+        "near-hip": [
+          0,
+          2
+        ],
+        "near-knee": [
+          0,
+          1
+        ],
+        "near-ankle": [
+          -3,
+          0
+        ],
+        "near-ground": [
+          -3,
+          0
+        ],
+        "grip-anchor": [
+          0,
+          0
+        ]
+      },
+      "comparedParts": 10,
+      "flicker": [],
+      "maxJointStepPx": 3
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "wrap": false,
+      "contacts": [
+        {
+          "side": "near",
+          "from": "planted",
+          "to": "planted",
+          "plantedDelta": [
+            0,
+            0
+          ]
+        },
+        {
+          "side": "far",
+          "from": "swing",
+          "to": "swing",
+          "plantedDelta": null
+        }
+      ],
+      "displacement": {
+        "crown": [
+          -1,
+          -1
+        ],
+        "neck": [
+          -1,
+          -1
+        ],
+        "chest": [
+          -1,
+          -1
+        ],
+        "pelvis": [
+          0,
+          -1
+        ],
+        "far-shoulder": [
+          -1,
+          -1
+        ],
+        "far-elbow": [
+          -2,
+          -1
+        ],
+        "far-wrist": [
+          -4,
+          -1
+        ],
+        "far-palm": [
+          -4,
+          -1
+        ],
+        "far-hip": [
+          0,
+          -1
+        ],
+        "far-knee": [
+          6,
+          -2
+        ],
+        "far-ankle": [
+          10,
+          -4
+        ],
+        "far-ground": [
+          10,
+          -4
+        ],
+        "near-shoulder": [
+          -1,
+          -1
+        ],
+        "near-elbow": [
+          0,
+          -1
+        ],
+        "near-wrist": [
+          0,
+          0
+        ],
+        "near-palm": [
+          0,
+          0
+        ],
+        "near-hip": [
+          0,
+          -1
+        ],
+        "near-knee": [
+          -3,
+          -1
+        ],
+        "near-ankle": [
+          -4,
+          0
+        ],
+        "near-ground": [
+          -4,
+          0
+        ],
+        "grip-anchor": [
+          0,
+          0
+        ]
+      },
+      "comparedParts": 10,
+      "flicker": [],
+      "maxJointStepPx": 10
+    },
+    {
+      "from": 5,
+      "to": 0,
+      "wrap": true,
+      "contacts": [
+        {
+          "side": "near",
+          "from": "planted",
+          "to": "planted",
+          "plantedDelta": [
+            0,
+            0
+          ]
+        },
+        {
+          "side": "far",
+          "from": "swing",
+          "to": "planted",
+          "plantedDelta": null
+        }
+      ],
+      "displacement": {
+        "crown": [
+          0,
+          -1
+        ],
+        "neck": [
+          0,
+          -1
+        ],
+        "chest": [
+          0,
+          -1
+        ],
+        "pelvis": [
+          0,
+          -1
+        ],
+        "far-shoulder": [
+          0,
+          -1
+        ],
+        "far-elbow": [
+          -3,
+          -1
+        ],
+        "far-wrist": [
+          -6,
+          -1
+        ],
+        "far-palm": [
+          -6,
+          -1
+        ],
+        "far-hip": [
+          0,
+          -1
+        ],
+        "far-knee": [
+          0,
+          2
+        ],
+        "far-ankle": [
+          5,
+          6
+        ],
+        "far-ground": [
+          5,
+          6
+        ],
+        "near-shoulder": [
+          0,
+          -1
+        ],
+        "near-elbow": [
+          0,
+          0
+        ],
+        "near-wrist": [
+          0,
+          0
+        ],
+        "near-palm": [
+          0,
+          0
+        ],
+        "near-hip": [
+          0,
+          -1
+        ],
+        "near-knee": [
+          -3,
+          0
+        ],
+        "near-ankle": [
+          -5,
+          0
+        ],
+        "near-ground": [
+          -5,
+          0
+        ],
+        "grip-anchor": [
+          0,
+          0
+        ]
+      },
+      "comparedParts": 13,
+      "flicker": [],
+      "maxJointStepPx": 6
+    }
+  ],
+  "rootMotion": {
+    "mode": "frame-stepped",
+    "cyclePx": 24,
+    "axis": "+x",
+    "frames": [
+      {
+        "index": 0,
+        "phase": "contact",
+        "lead": "far",
+        "rootX": 0,
+        "advancePx": 3,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              29,
+              59
+            ],
+            "world": [
+              29,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              25,
+              54
+            ],
+            "knee": [
+              27,
+              46
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              43,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              39,
+              53
+            ],
+            "knee": [
+              38,
+              44
+            ]
+          }
+        }
+      },
+      {
+        "index": 1,
+        "phase": "down",
+        "lead": "far",
+        "rootX": 3,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "swing",
+            "canvas": [
+              27,
+              57
+            ],
+            "world": [
+              30,
+              57
+            ],
+            "groundY": 59,
+            "clearance": 2,
+            "solePixels": 9,
+            "ankle": [
+              23,
+              52
+            ],
+            "knee": [
+              27,
+              46
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              40,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              36,
+              53
+            ],
+            "knee": [
+              38,
+              45
+            ]
+          }
+        }
+      },
+      {
+        "index": 2,
+        "phase": "passing",
+        "lead": "far",
+        "rootX": 7,
+        "advancePx": 5,
+        "feet": {
+          "near": {
+            "state": "swing",
+            "canvas": [
+              36,
+              52
+            ],
+            "world": [
+              43,
+              52
+            ],
+            "groundY": 59,
+            "clearance": 7,
+            "solePixels": 9,
+            "ankle": [
+              32,
+              47
+            ],
+            "knee": [
+              33,
+              43
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              36,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              32,
+              53
+            ],
+            "knee": [
+              35,
+              45
+            ]
+          }
+        }
+      },
+      {
+        "index": 3,
+        "phase": "contact",
+        "lead": "near",
+        "rootX": 12,
+        "advancePx": 3,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              41,
+              59
+            ],
+            "world": [
+              53,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              37,
+              54
+            ],
+            "knee": [
+              33,
+              46
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              31,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              27,
+              53
+            ],
+            "knee": [
+              32,
+              44
+            ]
+          }
+        }
+      },
+      {
+        "index": 4,
+        "phase": "down",
+        "lead": "near",
+        "rootX": 15,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              38,
+              59
+            ],
+            "world": [
+              53,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              34,
+              54
+            ],
+            "knee": [
+              33,
+              47
+            ]
+          },
+          "far": {
+            "state": "swing",
+            "canvas": [
+              28,
+              56
+            ],
+            "world": [
+              43,
+              56
+            ],
+            "groundY": 58,
+            "clearance": 2,
+            "solePixels": 8,
+            "ankle": [
+              24,
+              51
+            ],
+            "knee": [
+              32,
+              44
+            ]
+          }
+        }
+      },
+      {
+        "index": 5,
+        "phase": "passing",
+        "lead": "near",
+        "rootX": 19,
+        "advancePx": 5,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              34,
+              59
+            ],
+            "world": [
+              53,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              30,
+              54
+            ],
+            "knee": [
+              30,
+              46
+            ]
+          },
+          "far": {
+            "state": "swing",
+            "canvas": [
+              38,
+              52
+            ],
+            "world": [
+              57,
+              52
+            ],
+            "groundY": 58,
+            "clearance": 6,
+            "solePixels": 8,
+            "ankle": [
+              34,
+              47
+            ],
+            "knee": [
+              38,
+              42
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "entryExit": {
+    "durationMs": 110,
+    "support": "far",
+    "stationaryFarAnkle": [
+      39,
+      53
+    ],
+    "transitions": [
+      {
+        "displacement": {
+          "crown": [
+            0,
+            0
+          ],
+          "neck": [
+            0,
+            0
+          ],
+          "chest": [
+            0,
+            0
+          ],
+          "pelvis": [
+            0,
+            0
+          ],
+          "far-shoulder": [
+            0,
+            0
+          ],
+          "far-elbow": [
+            -1,
+            0
+          ],
+          "far-wrist": [
+            -3,
+            0
+          ],
+          "far-palm": [
+            -3,
+            0
+          ],
+          "far-hip": [
+            0,
+            0
+          ],
+          "far-knee": [
+            0,
+            0
+          ],
+          "far-ankle": [
+            0,
+            0
+          ],
+          "far-ground": [
+            4,
+            0
+          ],
+          "near-shoulder": [
+            0,
+            0
+          ],
+          "near-elbow": [
+            0,
+            0
+          ],
+          "near-wrist": [
+            0,
+            0
+          ],
+          "near-palm": [
+            0,
+            0
+          ],
+          "near-hip": [
+            0,
+            0
+          ],
+          "near-knee": [
+            0,
+            -1
+          ],
+          "near-ankle": [
+            -1,
+            -2
+          ],
+          "near-ground": [
+            3,
+            -2
+          ],
+          "grip-anchor": [
+            0,
+            0
+          ]
+        },
+        "comparedParts": 16,
+        "flicker": [],
+        "maxJointStepPx": 4
+      },
+      {
+        "displacement": {
+          "crown": [
+            0,
+            0
+          ],
+          "neck": [
+            0,
+            0
+          ],
+          "chest": [
+            0,
+            0
+          ],
+          "pelvis": [
+            0,
+            0
+          ],
+          "far-shoulder": [
+            0,
+            0
+          ],
+          "far-elbow": [
+            -2,
+            0
+          ],
+          "far-wrist": [
+            -3,
+            0
+          ],
+          "far-palm": [
+            -3,
+            0
+          ],
+          "far-hip": [
+            0,
+            0
+          ],
+          "far-knee": [
+            0,
+            -1
+          ],
+          "far-ankle": [
+            0,
+            0
+          ],
+          "far-ground": [
+            0,
+            0
+          ],
+          "near-shoulder": [
+            0,
+            0
+          ],
+          "near-elbow": [
+            0,
+            0
+          ],
+          "near-wrist": [
+            0,
+            0
+          ],
+          "near-palm": [
+            0,
+            0
+          ],
+          "near-hip": [
+            0,
+            0
+          ],
+          "near-knee": [
+            -1,
+            2
+          ],
+          "near-ankle": [
+            -1,
+            2
+          ],
+          "near-ground": [
+            -1,
+            2
+          ],
+          "grip-anchor": [
+            0,
+            0
+          ]
+        },
+        "comparedParts": 15,
+        "flicker": [],
+        "maxJointStepPx": 3
+      }
+    ]
+  }
+}

@@ -4,30 +4,17 @@ LumaSprite Engine is an offline-first pixel art backend. The first vertical slic
 
 ## Run locally
 
-Use Node.js 24 LTS or newer.
+Use Node.js 24 or newer.
 
-```sh
+```powershell
 npm ci
 npm run build
 npm run generate
-npm run generate -- --design barrel-wide
-npm run generate -- --design travel --seed 43 --out benchmarks/results/run/chest-43.png
-npm run generate -- --spec benchmarks/results/sample/chest-42.json
-npm run benchmark
-npm run benchmark:e2
-npm run benchmark:e23
-npm run benchmark:e24
-npm run terrain
-npm run benchmark:e3
-npm run report:e3
-npm run benchmark:e32
-npm run report:e32
-npm run benchmark:e33
-npm run report:e33
-npm run benchmark:e34
-npm run report:e34
-npm run serve -- --port 4399
+npm run benchmark:e52
 ```
+
+[Documentation index](docs/README.md) · [R0 audit and cleanup](docs/r0-project-audit.md) · [R&D preparation](research/open-source/README.md)
+
 
 Generation and benchmarks write into `benchmarks/results/run/` by default. The [E2.4 game-scene gallery](benchmarks/results/e24/README.md) shows the six props and the three native-size benchmark scenes in both palettes. The [E2.3 gallery](benchmarks/results/e23/README.md) shows two barrel proportions and the refined chest and crate designs with locked-palette and game-scene previews. The [E2.1/E2.2 gallery](benchmarks/results/e2/README.md) preserves their first versions. The [baseline gallery](benchmarks/results/sample/README.md) preserves the original Seed 42 and 43 renders.
 
@@ -35,7 +22,17 @@ The [unified E2–E3.1 report](docs/LumaSprite-Engine-Report.html) contains the 
 
 The terrain CLI defaults to TerrainSpec v3. Supply a saved v1 or v2 spec to reproduce that edition. Pass `--map` with rows and a tile origin for world-space variation. Add `--bake` for a package that includes the canonical atlas, map PNG, layout and integrity hashes. Run `npm run terrain -- --verify <directory>` to check a package. [E3.3 single-file report](docs/LumaSprite-Engine-E3.3-Report.html) · [Studio import and parity](docs/integration/studio-terrain-production.md) · [E3.2 offline report](docs/LumaSprite-Engine-E3.2-Report.html)
 
-E3.4 offers two explicit TerrainSpec v4 inputs. Use `--spec` with a candidate and keep v3 as the default during the owner's review. [Conservative spec](benchmarks/results/e34/a-spec.json) · [Art-directed spec](benchmarks/results/e34/b-spec.json) · [E3.4 offline report](docs/LumaSprite-Engine-E3.4-Report.html)
+For TerrainSpec v4, the Project Owner selected Art-Directed Terrain for Authored/Project and baked raster. Pass it with `--spec` or use Conservative Polish as an optional preset. [Art-directed spec](benchmarks/results/e34/b-spec.json) · [Conservative spec](benchmarks/results/e34/a-spec.json) · [E3 final acceptance](docs/e3-final-acceptance.md)
+
+`npm run character -- --candidate a` produces a flat PNG, silhouette and geometry JSON for E4.1 review. Select `b` for Taller Surveyor or pass `--spec` with a CharacterSpec v1 JSON. [E4.1 shape gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Character architecture](docs/architecture/character-geometry.md)
+
+Select `b1` for Grounded Surveyor or `b2` for Forward-Step Surveyor on the same CLI. Their CharacterSpec v2 records the pose intent, torso turn and projected ground offset, and their diagnostic bundle separates structure, pose constraints and visual review. [E4.1R review](docs/LumaSprite-Engine-E4.1R-Report.html)
+
+Use `npm run character -- --material m2 --shape-lock benchmarks/results/e42/b1-shape-lock.json` for the B1 material review bundle. M1 uses `--material m1`. [Material architecture](docs/architecture/character-materials.md) · [E4.2 review](docs/LumaSprite-Engine-E4.2-Report.html)
+
+E4 closed with Surveyor R2 + M2P and the E4.4 revised Forest Courier as approved single-view baselines. Verify a character package with `npm run character -- --verify-package <package-directory>`. [E4 final acceptance](docs/e4-final-acceptance.md) · [Character package index](benchmarks/results/e44/README.md)
+
+E5.1 is the approved subtle idle baseline. E5.2 adds W1 and W2 with AnimationSpec v2, exact strip/timing export and frame-stepped root and contact tracks. Run `npm run benchmark:e52` or use the animation CLI after building. [Idle acceptance](docs/e51-idle-acceptance.md) · [Walk gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk motion contract](docs/architecture/e52-walk-motion.md)
 
 ## Verify
 

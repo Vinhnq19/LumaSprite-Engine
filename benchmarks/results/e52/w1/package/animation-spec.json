@@ -1,0 +1,147 @@
+{
+  "version": 2,
+  "kind": "humanoid-animation",
+  "source": {
+    "checkpoint": "aa54b4a",
+    "characterSpecVersion": 2,
+    "geometryRevision": 2,
+    "productionManifestSha256": "0450bd63ca1a7238d077a6e27cfe9ae60113ed3b306ef01d5aa5c2fc1c8b014a",
+    "characterSpecSha256": "17c430de356e8e77d2bb0d9559699624159d998e4c1e843d5285b9da31d4c6c9",
+    "shapeLockSha256": "0b617f360f073a3b6dc8379dabf04b999baa0056b3ea420e8fb059a0939543b6"
+  },
+  "name": "W1 Conservative Walk",
+  "intent": "walk-hold",
+  "frameCount": 6,
+  "loop": "repeat",
+  "pivot": [
+    30,
+    59
+  ],
+  "layerOrder": [
+    "far-thigh",
+    "far-shin",
+    "far-boot",
+    "far-upper-arm",
+    "far-forearm",
+    "far-hand",
+    "near-thigh",
+    "near-shin",
+    "near-boot",
+    "satchel",
+    "hips",
+    "jacket",
+    "strap",
+    "neck",
+    "head",
+    "cap",
+    "near-upper-arm",
+    "near-forearm",
+    "lantern",
+    "near-hand"
+  ],
+  "seed": 42,
+  "contact": {
+    "feet": "alternate",
+    "equipment": "held-lantern",
+    "root": "frame-stepped"
+  },
+  "keyPoses": [
+    {
+      "lead": "far",
+      "phase": "contact",
+      "durationMs": 90,
+      "advancePx": 3,
+      "bob": 0,
+      "swingX": 0,
+      "swingLift": 0,
+      "armSwing": 3,
+      "gripShift": [
+        0,
+        0
+      ],
+      "sway": 0
+    },
+    {
+      "lead": "far",
+      "phase": "down",
+      "durationMs": 135,
+      "advancePx": 4,
+      "bob": 2,
+      "swingX": -8,
+      "swingLift": 2,
+      "armSwing": 2,
+      "gripShift": [
+        0,
+        0
+      ],
+      "sway": 0
+    },
+    {
+      "lead": "far",
+      "phase": "passing",
+      "durationMs": 165,
+      "advancePx": 5,
+      "bob": 1,
+      "swingX": 1,
+      "swingLift": 6,
+      "armSwing": 0,
+      "gripShift": [
+        0,
+        0
+      ],
+      "sway": 0
+    },
+    {
+      "lead": "near",
+      "phase": "contact",
+      "durationMs": 90,
+      "advancePx": 3,
+      "bob": 0,
+      "swingX": 0,
+      "swingLift": 0,
+      "armSwing": 3,
+      "gripShift": [
+        0,
+        0
+      ],
+      "sway": 0
+    },
+    {
+      "lead": "near",
+      "phase": "down",
+      "durationMs": 135,
+      "advancePx": 4,
+      "bob": 2,
+      "swingX": -9,
+      "swingLift": 2,
+      "armSwing": 2,
+      "gripShift": [
+        0,
+        0
+      ],
+      "sway": 0
+    },
+    {
+      "lead": "near",
+      "phase": "passing",
+      "durationMs": 165,
+      "advancePx": 5,
+      "bob": 1,
+      "swingX": 1,
+      "swingLift": 6,
+      "armSwing": 0,
+      "gripShift": [
+        0,
+        0
+      ],
+      "sway": 0
+    }
+  ],
+  "output": {
+    "frameWidth": 64,
+    "frameHeight": 64,
+    "layout": "horizontal-strip",
+    "background": "transparent"
+  },
+  "stepPx": 12
+}

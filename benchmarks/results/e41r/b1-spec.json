@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "kind": "humanoid-surveyor",
+  "name": "Grounded Surveyor",
+  "canvas": {
+    "w": 64,
+    "h": 64,
+    "background": "transparent"
+  },
+  "view": "three-quarter-right",
+  "seed": 42,
+  "palette": {
+    "mode": "authored"
+  },
+  "proportions": {
+    "head": [
+      14,
+      14
+    ],
+    "jacket": [
+      16,
+      16
+    ],
+    "hips": 13,
+    "arm": [
+      6,
+      4
+    ],
+    "leg": [
+      7,
+      5
+    ],
+    "boot": [
+      10,
+      4
+    ],
+    "satchel": [
+      7,
+      10
+    ],
+    "lantern": [
+      7,
+      10
+    ]
+  },
+  "pose": {
+    "kind": "standing-hold",
+    "hip": [
+      31,
+      37
+    ],
+    "lean": 0,
+    "pivot": [
+      30,
+      59
+    ],
+    "support": "near",
+    "near": {
+      "elbow": [
+        32,
+        34
+      ],
+      "wrist": [
+        45,
+        32
+      ],
+      "palm": [
+        48,
+        32
+      ],
+      "knee": [
+        29,
+        45
+      ],
+      "ankle": [
+        27,
+        54
+      ]
+    },
+    "far": {
+      "elbow": [
+        38,
+        26
+      ],
+      "wrist": [
+        37,
+        34
+      ],
+      "palm": [
+        36,
+        36
+      ],
+      "knee": [
+        40,
+        45
+      ],
+      "ankle": [
+        39,
+        53
+      ]
+    },
+    "turn": 2,
+    "secondaryGroundOffset": -1
+  }
+}

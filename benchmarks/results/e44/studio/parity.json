@@ -1,0 +1,85 @@
+{
+  "studioRevision": "bb5c384",
+  "results": [
+    {
+      "id": "m2p",
+      "studioProfileVersion": 1,
+      "characterSpecVersion": 2,
+      "style": "m2p",
+      "saveReopen": "PASS",
+      "restore": "PASS",
+      "staleRevision": "REJECTED",
+      "masks": 20,
+      "pivot": [
+        30,
+        59
+      ],
+      "rgbaSha256": "5e6dad7d6a35e5502d15d548aa54daa8814830fcca735c4f90ba61a1ae29ff03",
+      "engineManifestSha256": "1d3aa09e906a5f149ac28cadb78913eba8899a1ff44ed14c022ebb5707415a40"
+    },
+    {
+      "id": "courier",
+      "studioProfileVersion": 1,
+      "characterSpecVersion": 3,
+      "style": "m2",
+      "saveReopen": "PASS",
+      "restore": "PASS",
+      "staleRevision": "REJECTED",
+      "masks": 19,
+      "pivot": [
+        32,
+        58
+      ],
+      "rgbaSha256": "06c822cd8b2d893754e47dff61e1aa59edbf22d8382a3c9cd3741975b6fc5b18",
+      "engineManifestSha256": "753156453987c94e2cdd28a7b356abae8beda5c8673f2c291e723e9760dc5c9e"
+    },
+    {
+      "id": "r1",
+      "studioProfileVersion": 1,
+      "characterSpecVersion": 2,
+      "style": "m2p",
+      "saveReopen": "PASS",
+      "restore": "PASS",
+      "staleRevision": "REJECTED",
+      "masks": 20,
+      "pivot": [
+        30,
+        59
+      ],
+      "rgbaSha256": "e1341bddb9c38e8bcf27089940f1c29e36390927b72cc13518ac865209bc25d3",
+      "engineManifestSha256": "3edc563a4b53dc2416ce58764bc01bb911d5e313ef69d04fcaa701884ac7e9ac"
+    },
+    {
+      "id": "r2",
+      "studioProfileVersion": 1,
+      "characterSpecVersion": 2,
+      "style": "m2p",
+      "saveReopen": "PASS",
+      "restore": "PASS",
+      "staleRevision": "REJECTED",
+      "masks": 20,
+      "pivot": [
+        30,
+        59
+      ],
+      "rgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e",
+      "engineManifestSha256": "0450bd63ca1a7238d077a6e27cfe9ae60113ed3b306ef01d5aa5c2fc1c8b014a"
+    },
+    {
+      "id": "courier-rev",
+      "studioProfileVersion": 1,
+      "characterSpecVersion": 3,
+      "style": "m2",
+      "saveReopen": "PASS",
+      "restore": "PASS",
+      "staleRevision": "REJECTED",
+      "masks": 19,
+      "pivot": [
+        32,
+        58
+      ],
+      "rgbaSha256": "7c3de890678aac4e1a986a3b7bb585cfe8341a8cb27b80aa2eb192e029ff6205",
+      "engineManifestSha256": "d91c049a4a751f57471186da3548b31d2bee3e438ce93ce93eabd9fc31fa2e23"
+    }
+  ]
+}

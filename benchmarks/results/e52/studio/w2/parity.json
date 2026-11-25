@@ -1,0 +1,123 @@
+{
+  "studioRevision": "bb5c384",
+  "import": "ENGINE_RESULT_V1",
+  "exactRgba": true,
+  "pivot": [
+    30,
+    59
+  ],
+  "normalizedPivot": {
+    "x": 0.46875,
+    "y": 0.921875
+  },
+  "direction": "forward",
+  "loop": true,
+  "timingMs": [
+    120,
+    115,
+    95,
+    110,
+    120,
+    115,
+    95,
+    110
+  ],
+  "totalDurationMs": 880,
+  "frames": [
+    {
+      "phase": "contact",
+      "durationMs": 120,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "2d7193b7e5425a889a791927b108dda924fd4eaa4e138fefb866abea73bf1e7f"
+    },
+    {
+      "phase": "down",
+      "durationMs": 115,
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "8b4f4f629bd1b57880aabe56d8aac3ff05aff572835bbe35b2e63e3a45b92414"
+    },
+    {
+      "phase": "passing",
+      "durationMs": 95,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "0c42dd49fcac1be1071291cca988bd048f673ec5ef69b25ec4f65b4ab6961821"
+    },
+    {
+      "phase": "up",
+      "durationMs": 110,
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "9c95a40a508bfece524049c80a3d3d7f42717997d954062ceb3eacb857eac6b9"
+    },
+    {
+      "phase": "contact",
+      "durationMs": 120,
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "eee40e6b2cf1f0dffa57d20fc509854c811aa1b99a478be003d5a08a6a406eff"
+    },
+    {
+      "phase": "down",
+      "durationMs": 115,
+      "rect": {
+        "x": 320,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "84a087def26471bfbbb1c504907d3d9d74ca936838b21824cb28e50e1e75be57"
+    },
+    {
+      "phase": "passing",
+      "durationMs": 95,
+      "rect": {
+        "x": 384,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "5dfcc365cb9ba5f20cc89f40490cc7f213b161fea7f484ddd9738c62f2f7d1e3"
+    },
+    {
+      "phase": "up",
+      "durationMs": 110,
+      "rect": {
+        "x": 448,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "2b5102501abd109f8308195136f6161bb5312f27712afc1ffa371e7b1c23e57f"
+    }
+  ],
+  "rootMotion": "ENGINE_TIMING_SIDECAR",
+  "saveReopen": "PASS",
+  "backupRestore": "PASS",
+  "stripPngJson": "PASS",
+  "staleRevision": "REJECTED",
+  "engineManifestSha256": "93b0deb6b10ceb24212b54c0c56f204115c83a753fab9c4cbb7af9046173f904",
+  "studioStripPngSha256": "9dae9685e0edcf7bbe0b3c74c447f59287aed98a3fba2ea2159c7a1467d636f9"
+}

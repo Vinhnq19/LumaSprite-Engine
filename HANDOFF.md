@@ -1,6 +1,24 @@
 # Handoff
 
-**E3.4 is E3_4_READY_FOR_HUMAN_ART_REVIEW.** TerrainSpec v4 candidates A and B use the same autotile geometry, with different Micro/Meso/Macro detail. The gallery compares both candidates on five matching scenes. Start with B at 1× for the larger grass rest areas and packed-dirt regions, then score both. The final E3 artistic decision belongs to the Project Owner. [Single-file report](docs/LumaSprite-Engine-E3.4-Report.html) · [Review sheet](benchmarks/results/e34/review.md)
+**R0 is R0_CLEANUP_READY_FOR_RND.** Local generated duplicates were removed by checksum, and the milestone archive remains pinned. Use the documentation index for current workflows and historical galleries. [R0 audit](docs/r0-project-audit.md) · [Regression](docs/r0-regression.md) · [Documentation index](docs/README.md) · [R&D preparation](research/open-source/README.md)
+
+The Project Owner approved E5.2 engineering and selected W2 Expressive Walk as the R&D baseline, with W1 Conservative Walk as the control. Walk Game-Ready Final Acceptance and target-game runtime validation remain pending. [Motion and package contract](docs/architecture/e52-walk-motion.md)
+
+Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. E5.3 awaits the owner's decision. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
+
+The Project Owner approved E5.0 architecture and E5.1 as a subtle idle with limitations. The four 64 × 64 frame slots and 1,800 ms loop stay frozen. Target-game runtime is still pending. [Idle acceptance](docs/e51-idle-acceptance.md) · [E5.1 gallery](docs/LumaSprite-Engine-E5.1-Report.html)
+
+**E4 is closed with artistic limitations.** The Project Owner approved E4 engineering and selected Field Surveyor R2 + M2P and the E4.4 revised Forest Courier as the single-view 64 × 64 baseline. The views favor the right-facing side and Courier still has limited coat-to-leather contrast in dark scenes. [Final acceptance](docs/e4-final-acceptance.md) · [E4.4 gallery](docs/LumaSprite-Engine-E4.4-Report.html) · [Owner decision](benchmarks/results/e44/review.md)
+
+The Project Owner approved E4.3 engineering and the Forest Courier technical pilot and selected Surveyor M2P as the material baseline. The E4.3 packages remain frozen comparison assets. [E4.3 gallery](docs/LumaSprite-Engine-E4.3-Report.html) · [E4.3 QA](docs/e43-test-report.md)
+
+The owner selected E4.2 M2 Art-Directed Materials with limitations as the E4.3 material baseline. M1 stays a control. [E4.2 material gallery](docs/LumaSprite-Engine-E4.2-Report.html) · [E4.3 art audit](docs/art-quality/e43-game-art-audit.md)
+
+E4.1R B1 Grounded Surveyor was approved with notes as the geometry source for this material pass. B2 remains a motion reference. The E4.1R benchmark is frozen. [B1 Shape Lock](benchmarks/results/e42/b1-shape-lock.json) · [E4.1R gallery](docs/LumaSprite-Engine-E4.1R-Report.html)
+
+E4.1 engineering is approved. The independent art assessment requested revision and chose Taller Surveyor as the starting point. A and B remain locked controls from `a1fcd76`. [Original gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Baseline SHA-256](docs/e41-baseline-sha256.txt)
+
+**E3 is closed.** The Project Owner approved engineering and selected E3.4 Candidate B with limitations for Authored/Project and baked raster backgrounds. Candidate A remains an optional preset. TerrainSpec v3 stays the CLI default. [Final acceptance](docs/e3-final-acceptance.md) · [Review sheet](benchmarks/results/e34/review.md)
 
 All ten E3.4 bake packages preserve RGBA through Studio save/reopen and backup/restore. Editable Studio maps use the static atlas. Editable world detail is deferred to E8. [E3.4 QA](docs/e34-test-report.md) · [PR draft](docs/e34-pr.md)
 
@@ -16,4 +34,4 @@ TerrainSpec v3 is the current CLI default. Run `npm run build`, then `npm run te
 
 Rebuild the E3.2 gallery with `npm run benchmark:e32` and the standalone HTML with `npm run report:e32`. Run `npm run build` then `npm run terrain -- --spec benchmarks/results/e32/terrain-spec.json --map benchmarks/results/e32/map-input.json` to export the atlas and scene B with world detail. Studio reads the static atlas preview through the existing backup workflow. [Studio compatibility and preview](docs/integration/studio-terrain-variation.md)
 
-E4 remains gated on Project Owner review. DeepSeek runtime work stays deferred until after E8 and explicit owner approval for E9. [Terrain and material audit](docs/art-quality/e32-audit.md) · [QA](docs/e32-test-report.md) · [Draft PR](docs/e32-pr.md)
+E4 character geometry is authorized. DeepSeek runtime work stays deferred until after E8 and explicit owner approval for E9. [Terrain and material audit](docs/art-quality/e32-audit.md) · [QA](docs/e32-test-report.md) · [Draft PR](docs/e32-pr.md)

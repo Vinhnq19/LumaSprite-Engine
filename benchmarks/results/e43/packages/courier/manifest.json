@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kind": "lumasprite-character-production",
+  "style": "m2",
+  "review": "VISUAL_REVIEW_PENDING",
+  "characterSpecVersion": 3,
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "groundPivot": [
+    32,
+    58
+  ],
+  "lineage": {
+    "checkpoint": "67875ec",
+    "reference": "E4.3 Forest Courier pilot geometry",
+    "referenceSha256": "340b7586c14e1ae0c5afcb21c1355e692e884a283fe64a56588732e014b85fa1"
+  },
+  "silhouetteAlphaSha256": "08f8695365b7bfb981500d856a3b84a53b0d13e26bffceaff2c2ffe6f58f6190",
+  "rgbaSha256": "06c822cd8b2d893754e47dff61e1aa59edbf22d8382a3c9cd3741975b6fc5b18",
+  "files": {
+    "final.png": "77b7356840bbc8366b2f6f275837a4da2fc28943d505ee4a5f3bcb32528f96af",
+    "silhouette.png": "34bd8935d1135fa7b342964a902a9cb68e082566c1e3a9a8343b53367e3492bf",
+    "material-mask.png": "2410a86bf47546e4b5b3ff7d1150d81760a87cb9b7f3038134cb193d7bd09eca",
+    "material.json": "c98d4edfd831d911cc4f4d62e314b10d8259aba14d6dfb7b47d14d9cb5985def",
+    "character-spec.json": "fe0690f88d3ba9deb8de39fb38ec2ff2d08dd0355dc35803468a7feef3821340",
+    "shape-lock.json": "189c23247b71204607269eaf926c8a35b1966da207bb3efcbd39020993e1bfe5",
+    "part-masks.json": "2ca5d4e2cfcd3c07ef59e3c45ee4991456f670d2b371521d5370f37f59eaa85a"
+  }
+}

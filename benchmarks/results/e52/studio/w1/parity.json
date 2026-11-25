@@ -1,0 +1,99 @@
+{
+  "studioRevision": "bb5c384",
+  "import": "ENGINE_RESULT_V1",
+  "exactRgba": true,
+  "pivot": [
+    30,
+    59
+  ],
+  "normalizedPivot": {
+    "x": 0.46875,
+    "y": 0.921875
+  },
+  "direction": "forward",
+  "loop": true,
+  "timingMs": [
+    90,
+    135,
+    165,
+    90,
+    135,
+    165
+  ],
+  "totalDurationMs": 780,
+  "frames": [
+    {
+      "phase": "contact",
+      "durationMs": 90,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "b403d535e0bc6a0e45eb86362c345e5157a41d056a1a299944640d1854a00ae0"
+    },
+    {
+      "phase": "down",
+      "durationMs": 135,
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "a160f9d2194b1859e51a7fab67ad7ab7c43279380385b8871dd4fd0641b3ef22"
+    },
+    {
+      "phase": "passing",
+      "durationMs": 165,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "6616b0043f1dad2a91800894bcd4f02ab86780941b72a5c70a346cbe86ce1ee1"
+    },
+    {
+      "phase": "contact",
+      "durationMs": 90,
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "4521508b4fc3a595c3ef2723d90c567522e01a95bae3aafb9d0e744bf3fc949c"
+    },
+    {
+      "phase": "down",
+      "durationMs": 135,
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "3c7ef9c073ee43d55af47c5e34f81b4063536e6b0a7b520f3076c3c5eaa7322f"
+    },
+    {
+      "phase": "passing",
+      "durationMs": 165,
+      "rect": {
+        "x": 320,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "0457f6b6d8cadf0dea8a45adec24232e294bcf4e7dcd3f48b39491bfae7c3625"
+    }
+  ],
+  "rootMotion": "ENGINE_TIMING_SIDECAR",
+  "saveReopen": "PASS",
+  "backupRestore": "PASS",
+  "stripPngJson": "PASS",
+  "staleRevision": "REJECTED",
+  "engineManifestSha256": "e45d9f84c675d0df34dda964660d12943f77c4bec98e05f814587a767f855288",
+  "studioStripPngSha256": "4a6eca2e468eecdc38910251bb6972b5d6f2104f120fcc81035683d9b3906ac8"
+}

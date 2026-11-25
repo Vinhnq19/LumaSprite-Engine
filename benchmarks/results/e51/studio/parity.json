@@ -1,0 +1,74 @@
+{
+  "studioRevision": "bb5c384",
+  "import": "ENGINE_RESULT_V1",
+  "exactRgba": true,
+  "pivot": [
+    30,
+    59
+  ],
+  "normalizedPivot": {
+    "x": 0.46875,
+    "y": 0.921875
+  },
+  "direction": "forward",
+  "loop": true,
+  "timingMs": [
+    360,
+    480,
+    360,
+    600
+  ],
+  "totalDurationMs": 1800,
+  "frames": [
+    {
+      "phase": "neutral",
+      "durationMs": 360,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e"
+    },
+    {
+      "phase": "inhale",
+      "durationMs": 480,
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "ae571bb34dd5dc861843fac62bd0046ee63adff13f3b381c8fd6a548cd183428"
+    },
+    {
+      "phase": "return",
+      "durationMs": 360,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e"
+    },
+    {
+      "phase": "recovery",
+      "durationMs": 600,
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "c60d02f3fee9a254b86a82b0699a32637751a877c5aa7f91d7ca3f4ec8f9b578"
+    }
+  ],
+  "saveReopen": "PASS",
+  "backupRestore": "PASS",
+  "stripPngJson": "PASS",
+  "staleRevision": "REJECTED",
+  "engineManifestSha256": "e404b44dcb71a04edb1bf4f30cd828c4915cb3a0f11d5198e541e337d96a62cd",
+  "studioStripPngSha256": "91c9b2f9a0c141a64897ebfec18f89711d69595b292f8891c0373c4dc893c520"
+}

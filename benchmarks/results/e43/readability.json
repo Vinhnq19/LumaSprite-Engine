@@ -1,0 +1,243 @@
+{
+  "authored": [
+    {
+      "style": "m1",
+      "coatPlanes": {
+        "nearLuma": 99.79,
+        "farLuma": 73.36,
+        "nearMinusFar": 26.43
+      },
+      "lantern": {
+        "glassPixels": 15,
+        "brightGlassPixels": 3,
+        "glassLuma": 156,
+        "frameLuma": 80.44,
+        "glassMinusFrame": 75.56,
+        "frameMinusFarTrousers": 19.66
+      },
+      "finalPngSha256": "5e0c5e7f736ef904bfa8d85d698a05b10f725c9a330d7869a136b90b2f50dcb5",
+      "finalRgbaSha256": "8f982dc394ce0c9bdc4953f6c18dee06347aa86e602c6ffddc4b6a0f4e4712f5",
+      "maskPngSha256": "50215aef47f4daab980c2bf2e12e5acc1efbefd99ffc2274f29d93fb7cfb1d30",
+      "alphaSha256": "a8ff259bbaed7dc87ee1a32d0271bf6fc533bc3c60aefcf7efe98a5ec62ef9dc",
+      "silhouettePngSha256": "6fc4255147efd87a422bfafd07110f6fd2d328aacb02a91556f3758f600abac7"
+    },
+    {
+      "style": "m2",
+      "coatPlanes": {
+        "nearLuma": 104.39,
+        "farLuma": 60.55,
+        "nearMinusFar": 43.85
+      },
+      "lantern": {
+        "glassPixels": 15,
+        "brightGlassPixels": 4,
+        "glassLuma": 153,
+        "frameLuma": 84.89,
+        "glassMinusFrame": 68.11,
+        "frameMinusFarTrousers": 23.94
+      },
+      "finalPngSha256": "9f09dc1cb254866c0ccf364125da084fbbdd762a9692d76b52e39d9c66aee384",
+      "finalRgbaSha256": "656e99d97fb007a3e73effc441f2d6501f53c79ad4a02544ba8d48ab09a21945",
+      "maskPngSha256": "50215aef47f4daab980c2bf2e12e5acc1efbefd99ffc2274f29d93fb7cfb1d30",
+      "alphaSha256": "a8ff259bbaed7dc87ee1a32d0271bf6fc533bc3c60aefcf7efe98a5ec62ef9dc",
+      "silhouettePngSha256": "6fc4255147efd87a422bfafd07110f6fd2d328aacb02a91556f3758f600abac7"
+    },
+    {
+      "style": "m2p",
+      "coatPlanes": {
+        "nearLuma": 105.31,
+        "farLuma": 60.55,
+        "nearMinusFar": 44.76
+      },
+      "lantern": {
+        "glassPixels": 15,
+        "brightGlassPixels": 10,
+        "glassLuma": 173,
+        "frameLuma": 91.2,
+        "glassMinusFrame": 81.8,
+        "frameMinusFarTrousers": 30.25
+      },
+      "finalPngSha256": "81b444435d7c32bfe0f32e83713a12f9db15c92aff7ebf354078cadbe4f3d8ea",
+      "finalRgbaSha256": "5e6dad7d6a35e5502d15d548aa54daa8814830fcca735c4f90ba61a1ae29ff03",
+      "maskPngSha256": "50215aef47f4daab980c2bf2e12e5acc1efbefd99ffc2274f29d93fb7cfb1d30",
+      "alphaSha256": "a8ff259bbaed7dc87ee1a32d0271bf6fc533bc3c60aefcf7efe98a5ec62ef9dc",
+      "silhouettePngSha256": "6fc4255147efd87a422bfafd07110f6fd2d328aacb02a91556f3758f600abac7"
+    }
+  ],
+  "locked": {
+    "policy": {
+      "mode": "locked",
+      "status": "PALETTE_LIMITED",
+      "warnings": [
+        {
+          "code": "RAMP_COMPRESSED",
+          "regions": [
+            "skin"
+          ]
+        },
+        {
+          "code": "RAMP_COMPRESSED",
+          "regions": [
+            "coat"
+          ]
+        },
+        {
+          "code": "RAMP_COMPRESSED",
+          "regions": [
+            "trousers"
+          ]
+        },
+        {
+          "code": "BASE_INK_COLLISION",
+          "regions": [
+            "skin",
+            "glass"
+          ]
+        },
+        {
+          "code": "BASE_INK_COLLISION",
+          "regions": [
+            "coat",
+            "trousers"
+          ]
+        },
+        {
+          "code": "BASE_INK_COLLISION",
+          "regions": [
+            "coat",
+            "leather"
+          ]
+        },
+        {
+          "code": "BASE_INK_COLLISION",
+          "regions": [
+            "coat",
+            "metal"
+          ]
+        },
+        {
+          "code": "BASE_INK_COLLISION",
+          "regions": [
+            "trousers",
+            "leather"
+          ]
+        },
+        {
+          "code": "BASE_INK_COLLISION",
+          "regions": [
+            "trousers",
+            "metal"
+          ]
+        },
+        {
+          "code": "BASE_INK_COLLISION",
+          "regions": [
+            "leather",
+            "metal"
+          ]
+        }
+      ],
+      "ramps": {
+        "skin": [
+          "#536da0",
+          "#f7ba5b",
+          "#f7ba5b",
+          "#1c2434"
+        ],
+        "hair": [
+          "#1c2434",
+          "#1c2434",
+          "#536da0",
+          "#1c2434"
+        ],
+        "cap": [
+          "#1c2434",
+          "#536da0",
+          "#536da0",
+          "#1c2434"
+        ],
+        "brim": [
+          "#1c2434",
+          "#1c2434",
+          "#536da0",
+          "#1c2434"
+        ],
+        "coat": [
+          "#1c2434",
+          "#536da0",
+          "#536da0",
+          "#536da0"
+        ],
+        "far-coat": [
+          "#1c2434",
+          "#536da0",
+          "#536da0",
+          "#1c2434"
+        ],
+        "trousers": [
+          "#1c2434",
+          "#536da0",
+          "#536da0",
+          "#536da0"
+        ],
+        "far-trousers": [
+          "#1c2434",
+          "#536da0",
+          "#536da0",
+          "#1c2434"
+        ],
+        "leather": [
+          "#1c2434",
+          "#536da0",
+          "#f7ba5b",
+          "#1c2434"
+        ],
+        "metal": [
+          "#1c2434",
+          "#536da0",
+          "#f7ba5b",
+          "#536da0"
+        ],
+        "glass": [
+          "#536da0",
+          "#f7ba5b",
+          "#eaf1f7",
+          "#f7ba5b"
+        ]
+      }
+    },
+    "measured": {
+      "coatPlanes": {
+        "nearLuma": 79.43,
+        "farLuma": 54.64,
+        "nearMinusFar": 24.8
+      },
+      "lantern": {
+        "glassPixels": 15,
+        "brightGlassPixels": 5,
+        "glassLuma": 179.67,
+        "frameLuma": 94.13,
+        "glassMinusFrame": 85.54,
+        "frameMinusFarTrousers": 26.08
+      }
+    }
+  },
+  "courier": {
+    "geometry": {
+      "left": 16,
+      "right": 46,
+      "top": 6,
+      "bottom": 57,
+      "area": 978,
+      "components": 1
+    },
+    "measured": {
+      "coatPlanes": {
+        "nearLuma": 117.8,
+        "farLuma": 66.61,
+        "nearMinusFar": 51.19
+      },
+      "lantern": null
+    }
+  }
+}

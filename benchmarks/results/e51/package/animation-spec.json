@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "kind": "humanoid-animation",
+  "source": {
+    "checkpoint": "aa54b4a",
+    "characterSpecVersion": 2,
+    "geometryRevision": 2,
+    "productionManifestSha256": "0450bd63ca1a7238d077a6e27cfe9ae60113ed3b306ef01d5aa5c2fc1c8b014a",
+    "characterSpecSha256": "17c430de356e8e77d2bb0d9559699624159d998e4c1e843d5285b9da31d4c6c9",
+    "shapeLockSha256": "0b617f360f073a3b6dc8379dabf04b999baa0056b3ea420e8fb059a0939543b6"
+  },
+  "name": "Field Surveyor Idle",
+  "intent": "standing-idle",
+  "frameCount": 4,
+  "loop": "repeat",
+  "pivot": [
+    30,
+    59
+  ],
+  "layerOrder": [
+    "far-thigh",
+    "far-shin",
+    "far-boot",
+    "far-upper-arm",
+    "far-forearm",
+    "far-hand",
+    "near-thigh",
+    "near-shin",
+    "near-boot",
+    "satchel",
+    "hips",
+    "jacket",
+    "strap",
+    "neck",
+    "head",
+    "cap",
+    "near-upper-arm",
+    "near-forearm",
+    "lantern",
+    "near-hand"
+  ],
+  "seed": 42,
+  "contact": {
+    "feet": "planted",
+    "equipment": "preserve-source",
+    "jointStepPx": 1
+  },
+  "keyPoses": [
+    {
+      "phase": "neutral",
+      "durationMs": 360,
+      "joints": {
+        "nearElbow": [
+          0,
+          0
+        ],
+        "farElbow": [
+          0,
+          0
+        ]
+      },
+      "body": {
+        "jacketWidth": 0,
+        "jacketHeight": 0
+      }
+    },
+    {
+      "phase": "inhale",
+      "durationMs": 480,
+      "joints": {
+        "nearElbow": [
+          0,
+          -1
+        ],
+        "farElbow": [
+          0,
+          0
+        ]
+      },
+      "body": {
+        "jacketWidth": 1,
+        "jacketHeight": 0
+      }
+    },
+    {
+      "phase": "return",
+      "durationMs": 360,
+      "joints": {
+        "nearElbow": [
+          0,
+          0
+        ],
+        "farElbow": [
+          0,
+          0
+        ]
+      },
+      "body": {
+        "jacketWidth": 0,
+        "jacketHeight": 0
+      }
+    },
+    {
+      "phase": "recovery",
+      "durationMs": 600,
+      "joints": {
+        "nearElbow": [
+          0,
+          0
+        ],
+        "farElbow": [
+          0,
+          0
+        ]
+      },
+      "body": {
+        "jacketWidth": 0,
+        "jacketHeight": -1
+      }
+    }
+  ],
+  "output": {
+    "frameWidth": 64,
+    "frameHeight": 64,
+    "layout": "horizontal-strip",
+    "background": "transparent"
+  }
+}

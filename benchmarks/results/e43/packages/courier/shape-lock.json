@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "kind": "lumasprite-character-shape-lock",
+  "candidate": "courier",
+  "checkpoint": "67875ec",
+  "characterSpecVersion": 3,
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "poseIntent": "standing-free",
+  "source": {
+    "geometrySha256": "340b7586c14e1ae0c5afcb21c1355e692e884a283fe64a56588732e014b85fa1",
+    "specSha256": "4c50bc928811a2989b6ccff85a6e23a4bc997d11f1318c6bcd930697929be515",
+    "flatPngSha256": "4d9e8ab24808794ab672a8ce6581aa28e4aac86289f4d0f3ab5a02b52748ac58",
+    "silhouettePngSha256": "34bd8935d1135fa7b342964a902a9cb68e082566c1e3a9a8343b53367e3492bf",
+    "flatRgbaSha256": "adfec19da91eff876827d747a82696937d6a11a3a4c16eea13987dda4e83054c"
+  },
+  "silhouetteAlphaSha256": "08f8695365b7bfb981500d856a3b84a53b0d13e26bffceaff2c2ffe6f58f6190",
+  "landmarks": {
+    "crown": {
+      "point": [
+        36,
+        16
+      ],
+      "partId": "head"
+    },
+    "neck": {
+      "point": [
+        34,
+        22
+      ],
+      "partId": "neck"
+    },
+    "chest": {
+      "point": [
+        33,
+        27
+      ],
+      "partId": "jacket"
+    },
+    "pelvis": {
+      "point": [
+        34,
+        37
+      ],
+      "partId": "hips"
+    },
+    "far-shoulder": {
+      "point": [
+        37,
+        23
+      ],
+      "partId": "far-upper-arm"
+    },
+    "far-elbow": {
+      "point": [
+        42,
+        31
+      ],
+      "partId": "far-forearm"
+    },
+    "far-wrist": {
+      "point": [
+        41,
+        36
+      ],
+      "partId": "far-forearm"
+    },
+    "far-palm": {
+      "point": [
+        39,
+        38
+      ],
+      "partId": "far-hand"
+    },
+    "far-hip": {
+      "point": [
+        38,
+        36
+      ],
+      "partId": "far-thigh"
+    },
+    "far-knee": {
+      "point": [
+        42,
+        44
+      ],
+      "partId": "far-shin"
+    },
+    "far-ankle": {
+      "point": [
+        40,
+        52
+      ],
+      "partId": "far-boot"
+    },
+    "far-ground": {
+      "point": [
+        40,
+        55
+      ],
+      "partId": "far-boot"
+    },
+    "near-shoulder": {
+      "point": [
+        27,
+        27
+      ],
+      "partId": "near-upper-arm"
+    },
+    "near-elbow": {
+      "point": [
+        22,
+        34
+      ],
+      "partId": "near-forearm"
+    },
+    "near-wrist": {
+      "point": [
+        19,
+        40
+      ],
+      "partId": "near-forearm"
+    },
+    "near-palm": {
+      "point": [
+        20,
+        42
+      ],
+      "partId": "near-hand"
+    },
+    "near-hip": {
+      "point": [
+        30,
+        38
+      ],
+      "partId": "near-thigh"
+    },
+    "near-knee": {
+      "point": [
+        31,
+        45
+      ],
+      "partId": "near-shin"
+    },
+    "near-ankle": {
+      "point": [
+        30,
+        53
+      ],
+      "partId": "near-boot"
+    },
+    "near-ground": {
+      "point": [
+        30,
+        56
+      ],
+      "partId": "near-boot"
+    }
+  },
+  "links": [
+    {
+      "from": "crown",
+      "to": "neck"
+    },
+    {
+      "from": "neck",
+      "to": "chest"
+    },
+    {
+      "from": "chest",
+      "to": "pelvis"
+    },
+    {
+      "from": "chest",
+      "to": "far-shoulder"
+    },
+    {
+      "from": "far-shoulder",
+      "to": "far-elbow"
+    },
+    {
+      "from": "far-elbow",
+      "to": "far-wrist"
+    },
+    {
+      "from": "far-wrist",
+      "to": "far-palm"
+    },
+    {
+      "from": "pelvis",
+      "to": "far-hip"
+    },
+    {
+      "from": "far-hip",
+      "to": "far-knee"
+    },
+    {
+      "from": "far-knee",
+      "to": "far-ankle"
+    },
+    {
+      "from": "far-ankle",
+      "to": "far-ground"
+    },
+    {
+      "from": "chest",
+      "to": "near-shoulder"
+    },
+    {
+      "from": "near-shoulder",
+      "to": "near-elbow"
+    },
+    {
+      "from": "near-elbow",
+      "to": "near-wrist"
+    },
+    {
+      "from": "near-wrist",
+      "to": "near-palm"
+    },
+    {
+      "from": "pelvis",
+      "to": "near-hip"
+    },
+    {
+      "from": "near-hip",
+      "to": "near-knee"
+    },
+    {
+      "from": "near-knee",
+      "to": "near-ankle"
+    },
+    {
+      "from": "near-ankle",
+      "to": "near-ground"
+    }
+  ],
+  "gripAnchor": null,
+  "groundPivot": [
+    32,
+    58
+  ],
+  "projectedGround": {
+    "near": 58,
+    "far": 57
+  },
+  "layerOrder": [
+    "far-thigh",
+    "far-shin",
+    "far-boot",
+    "far-upper-arm",
+    "far-forearm",
+    "far-hand",
+    "near-thigh",
+    "near-shin",
+    "near-boot",
+    "hips",
+    "jacket",
+    "strap",
+    "satchel",
+    "neck",
+    "head",
+    "hood",
+    "near-upper-arm",
+    "near-forearm",
+    "near-hand"
+  ],
+  "bodyParts": {
+    "far-thigh": {
+      "geometrySha256": "2017106a77e65b783f698d512912a917db56767a48c94ce9324d654180134557",
+      "sourceRgbaSha256": "e6a8ea4ca3d956509b06315a5780d5a38c02bbd644b78bfc51df903c9f969929",
+      "alphaSha256": "b48034278a936bb9042a925047c194e2e51c2075783172d49d8a8ef628d46a7f",
+      "pixels": 74
+    },
+    "far-shin": {
+      "geometrySha256": "845cb2008d69f3e7b2a4f75c5933abe47b175b16aaf56df3357e919d0895d476",
+      "sourceRgbaSha256": "ade39bdd5756f99e4b2dcf3d64902865581f2cb8e0cfd1b91f8fb6c1a7034565",
+      "alphaSha256": "4acd0fc9b1104d39a061387b70ee16fea52f1f9615dab765081f5edda26b75b2",
+      "pixels": 53
+    },
+    "far-boot": {
+      "geometrySha256": "9d13a7ebda15d3bb3af99313699fb879236d512a4064d65a417722e2d0d6fbd4",
+      "sourceRgbaSha256": "334982634067af5e8136bf903acb83faef0e488e99972a27095657f1805dad6b",
+      "alphaSha256": "397dd4f78d1ae99a735a74f1e8c728f25144bf1eb8db7e1d3f2908422f4f7401",
+      "pixels": 37
+    },
+    "far-upper-arm": {
+      "geometrySha256": "b3113f2709246d25aa821b8b1122bda7352bfa0654056811e653c7c910a4cb1e",
+      "sourceRgbaSha256": "22f8b51397e33c97ef2ce63180b73ae4d166a2c551311836edc072b41d725396",
+      "alphaSha256": "394519dcc520377a7a642d456a0792f7eee441fe18560bf5e400046968938f07",
+      "pixels": 58
+    },
+    "far-forearm": {
+      "geometrySha256": "d758064d0a6f2a9bb1dfc6e6c4b47286b35443650f8235fdd8f12467cc976530",
+      "sourceRgbaSha256": "64e720f6cb041fe8344c7008e1f4ad2a2f6b3b0c5112581fdb14f3698d31065f",
+      "alphaSha256": "237a63a25ee3bd10050bbe15e9c9f01651795c0e7077bc8ca302536461c5c2a8",
+      "pixels": 30
+    },
+    "far-hand": {
+      "geometrySha256": "a8a94d4632a798fdd50af15afd32c860dd880a26f6daedb5ea5246848fe1b387",
+      "sourceRgbaSha256": "67f1374b3eb9b18364411885a02a2b654e05983854d2ce5f1fcf878de9d0eea6",
+      "alphaSha256": "5add7103bc733aa5d6e2598db6a62ff71c365dd0427f832d32260bbc3f1c665d",
+      "pixels": 19
+    },
+    "near-thigh": {
+      "geometrySha256": "bb3f5e460f41d5f168d338c1c178a1f11ca550d41bcd7629fefd715b8ee4f445",
+      "sourceRgbaSha256": "3ad331aef3f62a9f1baea0c006b951d8a3ec355190bb56d42c93ee998006c9e4",
+      "alphaSha256": "3c78823979ff0b1c61f683ec2dc439d1107c1c68b51e4af61e61b0b1aa34db92",
+      "pixels": 77
+    },
+    "near-shin": {
+      "geometrySha256": "2ed223807da351cef6d8621df871498c4749a777e75e6f526cb85c8fce3b6cb8",
+      "sourceRgbaSha256": "a3f1edfafef6dfe57c9f7c0d3a0113f5cd0b580e7af1d2698f24344a832f3caf",
+      "alphaSha256": "9381ceebf82be763709259b0bdee7663cb7ddccee84b5f1cc7ca5d76e62c8f8e",
+      "pixels": 71
+    },
+    "near-boot": {
+      "geometrySha256": "3aabc8555f781286192b785ef308e4327cf422e550899454710cf7c7962ab7d9",
+      "sourceRgbaSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+      "alphaSha256": "fd094e297b25791997375a79270cfbf07f3bfc31531bb28c4ffbd35594d4750b",
+      "pixels": 40
+    },
+    "hips": {
+      "geometrySha256": "4abca70a711d545a6dd7bac8e438a0e883758af3a2b24a63b35eae776e15b0ad",
+      "sourceRgbaSha256": "244dd25c5a2a7584f7546ef7359d9717e9904adfc299aec3607c73037db2506d",
+      "alphaSha256": "b4347fad8e3fdd4bf0c84c0bf5060f38d648708ac741ac13a92f557422bf95b3",
+      "pixels": 91
+    },
+    "jacket": {
+      "geometrySha256": "cc5ac33412a551aa02886ed4a6dc5abff51e7104857bc3adf134762627e31fd7",
+      "sourceRgbaSha256": "fdef497c560f1ab4afe3040ad6b4683d93fdf1aef6572fbf440709a8df6ae715",
+      "alphaSha256": "8437b348ade1a77d6e73a26ec64843a54ec33aaf82b594953cb3f081385f3914",
+      "pixels": 216
+    },
+    "strap": {
+      "geometrySha256": "748bb513e90e3427092a2676fbec937647152df3fd285aa1fe7c50254143c1dc",
+      "sourceRgbaSha256": "f3f4e56edd0fc9c06db1fbc53e83b304bf6909c2d22c8fc59c3d2d92e84f8435",
+      "alphaSha256": "0fa7dac8cee8c2350049e4120cbba0bef4adf016b2c72f5097bf2d1c8cdbe12c",
+      "pixels": 31
+    },
+    "satchel": {
+      "geometrySha256": "1d177b12851decde788615008bf22292122b02410b9257d7b49ccdecc8184646",
+      "sourceRgbaSha256": "dd86f6da9a2d87aa3c00b063d8b15c8260e8a472b4eb9db21ccf1641a8f5469a",
+      "alphaSha256": "55f515d9dd1489865109888596e6c514ff4be11cb8f9974ba47388f90e0426fe",
+      "pixels": 76
+    },
+    "neck": {
+      "geometrySha256": "9c1ca3942054fc29caca254e07a01347e7702e9a4a8ec8a1e4e21d1b6c6a6447",
+      "sourceRgbaSha256": "5e40403a4ad630a70f8d0bfa83db402fdefe76135a715d90b78800b94fe97c58",
+      "alphaSha256": "83d121601876d7d9b2d44bd98c51c5c1c2c3f3393ccdaf293b06e449956a1682",
+      "pixels": 34
+    },
+    "head": {
+      "geometrySha256": "7e981bab8ff90815e1f9e0baa3aec88e0f7576098d69d30d7e4d4551bc8e5c36",
+      "sourceRgbaSha256": "eaf1809416efa356e11a963569b8519acfcf90b1121ef3adccfc574f27267799",
+      "alphaSha256": "9c142fd228c078ee0c4676927b15f1c14c98ea77fa510e455d5e389d0711f6be",
+      "pixels": 151
+    },
+    "hood": {
+      "geometrySha256": "95542ae04d73babc9b8715df0e69d933b89837c393346c6ce8460b3c3b301075",
+      "sourceRgbaSha256": "98a681e7202616d74b63084d025999aa4cdd1eeb1f882278c731d5f839e07224",
+      "alphaSha256": "bdb5c0fcfe391a7c057fd12cac19ae1f5b94da5349a012ef390f3f1dca52c9a0",
+      "pixels": 203
+    },
+    "near-upper-arm": {
+      "geometrySha256": "3ffdb2871c88c7ed3bbc3fa880ca822a22ba3cc68d137c9e35fce607f4ba9e28",
+      "sourceRgbaSha256": "7f72640d7d880217700e31c13ba712aad1caceb38c12d921470681051d573e8c",
+      "alphaSha256": "5cfbe4ab612f80bb50788ff10afac2485c3cbf6ee8e06125b9686e89f9921c1c",
+      "pixels": 73
+    },
+    "near-forearm": {
+      "geometrySha256": "36489dcf93d89d71da8a00e8ffffd31d1f12c0826ec52f0e80b59d0bfa63ce70",
+      "sourceRgbaSha256": "96888f788de326ff7b388cc7e551ff62a24706a6984dfade11420bc49b056754",
+      "alphaSha256": "d96bd265f67a77ae1735f6e8fab99e264a13e4b119354062c8b063aa91df9ad9",
+      "pixels": 46
+    },
+    "near-hand": {
+      "geometrySha256": "c39e1b847e732ed5ada5327a9f20aa302507f4e861443a0b47f2c465603b9f41",
+      "sourceRgbaSha256": "f00027cbbd29e88ac020cbc00ef7bdbe5d345d6ba2c015a34119fdc34a8d2093",
+      "alphaSha256": "6f5512433b2f111aeede63feec3d448a9080ee1c6dd9b1238d8bba4f61448c5e",
+      "pixels": 21
+    }
+  },
+  "lockedRegions": {
+    "format": "uint8-alpha-row-major",
+    "silhouette": {
+      "alphaSha256": "08f8695365b7bfb981500d856a3b84a53b0d13e26bffceaff2c2ffe6f58f6190",
+      "pixels": 978
+    },
+    "lowerLegClearance": {
+      "alphaSha256": "32d524b0644e885638286896d976cec2e2519686ff4bf3b220268f3a25639c95",
+      "pixels": 31
+    },
+    "gripContact": {
+      "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "pixels": 0
+    },
+    "handleOpening": {
+      "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "pixels": 0
+    },
+    "bootSoles": {
+      "alphaSha256": "21d08bb85dadda9487903dc7b9b5be79ed2babe9b026d185860b34cae7497678",
+      "pixels": 15
+    }
+  }
+}

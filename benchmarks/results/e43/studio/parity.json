@@ -1,0 +1,37 @@
+{
+  "studioRevision": "bb5c384",
+  "results": [
+    {
+      "id": "m2p",
+      "studioProfileVersion": 1,
+      "characterSpecVersion": 2,
+      "style": "m2p",
+      "saveReopen": "PASS",
+      "restore": "PASS",
+      "staleRevision": "REJECTED",
+      "masks": 20,
+      "pivot": [
+        30,
+        59
+      ],
+      "rgbaSha256": "5e6dad7d6a35e5502d15d548aa54daa8814830fcca735c4f90ba61a1ae29ff03",
+      "engineManifestSha256": "1d3aa09e906a5f149ac28cadb78913eba8899a1ff44ed14c022ebb5707415a40"
+    },
+    {
+      "id": "courier",
+      "studioProfileVersion": 1,
+      "characterSpecVersion": 3,
+      "style": "m2",
+      "saveReopen": "PASS",
+      "restore": "PASS",
+      "staleRevision": "REJECTED",
+      "masks": 19,
+      "pivot": [
+        32,
+        58
+      ],
+      "rgbaSha256": "06c822cd8b2d893754e47dff61e1aa59edbf22d8382a3c9cd3741975b6fc5b18",
+      "engineManifestSha256": "753156453987c94e2cdd28a7b356abae8beda5c8673f2c291e723e9760dc5c9e"
+    }
+  ]
+}

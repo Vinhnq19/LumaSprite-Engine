@@ -1,0 +1,31 @@
+{
+  "package": "benchmarks/results/e34/packages/b-organic",
+  "mapPngSha256": "a997f85aad36e906f3a03c7a1da59760992389e1e1c220f084f4539832ab481a",
+  "props": [
+    {
+      "id": "compact",
+      "left": 109,
+      "top": 158,
+      "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf",
+      "provenance": "Approved E2.4 authored prop compact"
+    },
+    {
+      "id": "crate",
+      "left": 281,
+      "top": 173,
+      "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6",
+      "provenance": "Approved E2.4 authored prop crate"
+    },
+    {
+      "id": "barrel-wide",
+      "left": 318,
+      "top": 164,
+      "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7",
+      "provenance": "Approved E2.4 authored prop barrel-wide"
+    }
+  ],
+  "pivot": [
+    240,
+    158
+  ]
+}

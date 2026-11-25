@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kind": "lumasprite-character-production",
+  "style": "m2",
+  "review": "VISUAL_REVIEW_PENDING",
+  "characterSpecVersion": 3,
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "groundPivot": [
+    32,
+    58
+  ],
+  "lineage": {
+    "checkpoint": "0294a98",
+    "reference": "E4.3 Forest Courier shape-lock.json",
+    "referenceSha256": "189c23247b71204607269eaf926c8a35b1966da207bb3efcbd39020993e1bfe5"
+  },
+  "silhouetteAlphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+  "rgbaSha256": "7c3de890678aac4e1a986a3b7bb585cfe8341a8cb27b80aa2eb192e029ff6205",
+  "files": {
+    "final.png": "d47d35079483f53bfc2f30b741ef3fbbe83561904895e8b24c99eff922549738",
+    "silhouette.png": "3706280322d3b6c84d08dd295a95487e0c1df7f6f59b462fd1bb1632f2d7d0f9",
+    "material-mask.png": "b5a40109ce530260455b43a2d88cb8616bfdbdb94a604ea783d21b52a9f95288",
+    "material.json": "32cc470acb2249655f6eb01e61558a7437d2a15dcde0293cc302f83f531d814b",
+    "character-spec.json": "4607cbe1a09f65aefbad4b1dafb29cca54cb00348203c7bf80738ee1298f6b49",
+    "shape-lock.json": "6f735bdd393b29334f4e26d8af6d69a012f6db1121c8413088815d7cd4ae46db",
+    "part-masks.json": "c857023a6005067a8ed24ba41298d610831a52c6855612a96e5ca5b4f40fc4f6"
+  }
+}
