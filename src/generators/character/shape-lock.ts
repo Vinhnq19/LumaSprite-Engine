@@ -24,6 +24,7 @@ export function makeShapeLock(review: Review, checkpoint: string, candidate: str
   const regionRef = (plane: Buffer) => ({ alphaSha256: sha256(plane), pixels: plane.reduce((count, a) => count + Number(a === 255), 0) });
   return {
     version: 1, kind: 'lumasprite-character-shape-lock', candidate, checkpoint, characterSpecVersion: spec.version,
+    ...(spec.version !== 1 && spec.geometryRevision ? { geometryRevision: spec.geometryRevision.number } : {}),
     canvas: { w, h }, poseIntent: spec.pose.kind,
     source: {
       geometrySha256: sha256(review.files.get('geometry.json')!),

@@ -43,14 +43,19 @@ test('Studio validates and reopens geometry and material draft profiles with exa
     samples.push({ id, spec: surveyorRefinements.b1, review: b1, image: paint.final, png: paint.files.get('final.png')!,
       palette: paint.usedColors, layers: paint.layers, production: undefined });
   }
-  for (const id of ['m2p', 'courier']) {
-    const production = await verifyCharacterProductionPackage('benchmarks/results/e43/packages/' + id);
+  const edition = process.env.LUMASPRITE_CHARACTER_EDITION ?? '43';
+  const packages = ['e43/packages/m2p', 'e43/packages/courier'];
+  if (edition === '44') packages.push('e44/packages/r1', 'e44/packages/r2', 'e44/packages/courier-rev');
+  else if (edition !== '43') throw new Error('Character Studio edition must be 43 or 44.');
+  for (const path of packages) {
+    const id = path.slice(path.lastIndexOf('/') + 1);
+    const production = await verifyCharacterProductionPackage('benchmarks/results/' + path);
     const { geometry, material } = production;
     samples.push({ id, spec: geometry.spec, review: geometry, image: material.final, png: production.files.get('final.png')!,
       palette: material.usedColors, layers: material.layers, production });
   }
   const output = process.env.LUMASPRITE_CAPTURE_CHARACTER_PRODUCTION === '1'
-    ? 'benchmarks/results/e43/studio' : 'benchmarks/results/run/e43-studio';
+    ? 'benchmarks/results/e' + edition + '/studio' : 'benchmarks/results/run/e' + edition + '-studio';
   await mkdir(output, { recursive: true });
   const proofs = [];
   for (const { id, spec, review, image, png, palette, layers, production } of samples) {
@@ -63,8 +68,11 @@ test('Studio validates and reopens geometry and material draft profiles with exa
     asset.palette = [0, ...palette.map(pack)];
     if (production) asset.provenance = {
       kind: 'generated', palette: asset.palette,
-      batch: { batchId: 'e43-' + production.manifest.lineage.checkpoint, candidateId: id,
-        manifest: { version: 1, palette: { name: production.manifest.style + ' CharacterSpec v' + spec.version, colors: palette },
+      batch: { batchId: 'e' + edition + '-' + production.manifest.lineage.checkpoint, candidateId: id,
+        manifest: { version: 1, palette: {
+          name: production.manifest.style + ' CharacterSpec v' + spec.version + (production.lock.geometryRevision ? ' r' + production.lock.geometryRevision : ''),
+          colors: palette,
+        },
           materials: Object.entries(production.material.diagnostics.ramps).map(([name, colors]) => ({ name, colors })) } },
     };
     const [x, y] = review.plan.pivot;
@@ -126,5 +134,5 @@ test('Studio validates and reopens geometry and material draft profiles with exa
     }
   }
   await writeFile(join(output, 'parity.json'), JSON.stringify({ studioRevision: revision, results: proofs }, null, 2) + '\n');
-  t.diagnostic('Studio ' + revision + ' validated eight draft profiles and restored both production packages with exact RGBA.');
+  t.diagnostic('Studio ' + revision + ' validated ' + samples.length + ' draft profiles and restored ' + proofs.length + ' production packages with exact RGBA.');
 });

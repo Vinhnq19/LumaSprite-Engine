@@ -4,7 +4,7 @@ import { characterReview, writeCharacterReview } from '../generators/character/e
 import { characterMaterialReview } from '../generators/character/material-export.ts';
 import { verifyCharacterProductionPackage } from '../generators/character/production.ts';
 import type { ShapeLock } from '../generators/character/shape-lock.ts';
-import { forestCourier, surveyorRefinements, surveyors } from '../generators/character/presets.ts';
+import { forestCourier, forestCourierRevision, surveyorGeometryRevisions, surveyorRefinements, surveyors } from '../generators/character/presets.ts';
 
 try {
   const { values } = parseArgs({ options: {
@@ -32,8 +32,8 @@ async function generate(values: { candidate?: string; spec?: string; out?: strin
   if (style && !lockFile) throw new Error('A material render requires --shape-lock.');
   if (!style && (lockFile || paletteFile)) throw new Error('Use --material with --shape-lock or --material-palette.');
   const candidate = values.candidate ?? (style ? 'b1' : 'a');
-  const presets = { ...surveyors, ...surveyorRefinements, courier: forestCourier };
-  if (!Object.hasOwn(presets, candidate)) throw new Error('Candidate must be a, b, b1, b2 or courier.');
+  const presets = { ...surveyors, ...surveyorRefinements, ...surveyorGeometryRevisions, courier: forestCourier, 'courier-rev': forestCourierRevision };
+  if (!Object.hasOwn(presets, candidate)) throw new Error('Candidate must be ' + Object.keys(presets).join(', ') + '.');
   const input: unknown = values.spec ? JSON.parse(await readFile(values.spec, 'utf8')) : presets[candidate as keyof typeof presets];
   const geometry = characterReview(input);
   const review = style && lockFile ? characterMaterialReview(geometry, JSON.parse(await readFile(lockFile, 'utf8')) as ShapeLock, style,

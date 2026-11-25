@@ -1,6 +1,8 @@
 # Handoff
 
-**E4.3 is E4_3_READY_FOR_HUMAN_GAME_ART_REVIEW.** M2P keeps the B1 lock and improves the lantern read at 1×. Forest Courier is a separate technical pilot. Both portable packages round-trip through Studio, including restore and stale-save protection. The Project Owner's game-art decision precedes E4.4 final character acceptance. [Gallery](docs/LumaSprite-Engine-E4.3-Report.html) · [Owner review](benchmarks/results/e43/review.md) · [QA](docs/e43-test-report.md) · [PR draft](docs/e43-pr.md)
+**E4.4 is E4_4_READY_FOR_FINAL_HUMAN_ART_REVIEW.** Surveyor R1, R2 and the Courier revision each have their own geometry lock. The five packages passed Studio round-trip and backup restore checks. E4 Final Acceptance awaits the Project Owner's decisions for Surveyor and Courier. [Gallery](docs/LumaSprite-Engine-E4.4-Report.html) · [Review sheet](benchmarks/results/e44/review.md) · [QA](docs/e44-test-report.md) · [PR draft](docs/e44-pr.md)
+
+The Project Owner approved E4.3 engineering and the Forest Courier technical pilot and selected Surveyor M2P as the material baseline. The E4.3 packages remain frozen comparison assets. [E4.3 gallery](docs/LumaSprite-Engine-E4.3-Report.html) · [E4.3 QA](docs/e43-test-report.md)
 
 The owner selected E4.2 M2 Art-Directed Materials with limitations as the E4.3 material baseline. M1 stays a control. [E4.2 material gallery](docs/LumaSprite-Engine-E4.2-Report.html) · [E4.3 art audit](docs/art-quality/e43-game-art-audit.md)
 

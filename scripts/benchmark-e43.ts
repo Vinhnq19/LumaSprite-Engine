@@ -4,17 +4,15 @@ import { join, resolve, sep } from 'node:path';
 import { parseArgs } from 'node:util';
 import { pack } from '../src/core/palette/colors.ts';
 import { blit, makeRaster, nearestNeighbor, type Raster } from '../src/core/pixels/raster.ts';
-import { decodePng, encodePng } from '../src/core/renderer/png.ts';
+import { encodePng } from '../src/core/renderer/png.ts';
 import { characterReview, writeCharacterReview } from '../src/generators/character/export.ts';
 import { characterMaterialReview } from '../src/generators/character/material-export.ts';
 import { materialMaskLegend } from '../src/generators/character/materials.ts';
 import { forestCourier, surveyorRefinements } from '../src/generators/character/presets.ts';
 import { characterProductionPackage, verifyCharacterProductionPackage } from '../src/generators/character/production.ts';
 import { makeShapeLock, type ShapeLock } from '../src/generators/character/shape-lock.ts';
-import { bakeTerrain, verifyBakedTerrain } from '../src/generators/terrain/baked.ts';
-import { renderTerrain } from '../src/generators/terrain/render.ts';
+import { characterGameScenes } from './character-scenes.ts';
 import { measureMaterialReadability } from '../src/quality/character-materials.ts';
-import { sha256 } from '../src/quality/raster.ts';
 import { onBackground } from './game-preview.ts';
 
 const { values } = parseArgs({ options: { out: { type: 'string', default: 'benchmarks/results/run/e43' } } });
@@ -53,49 +51,10 @@ await save('courier-flat-1x', courier.flat);
 await save('courier-4x', nearestNeighbor(courierPackage.material.final, 4));
 await json('courier-geometry-qa', courier.metadata.diagnostics);
 
-async function terrainScene(name: string) {
-  const directory = 'benchmarks/results/e34/packages/b-' + name;
-  const reference = await verifyBakedTerrain(directory);
-  const overlays = await Promise.all(reference.overlays.filter(layer => layer.id !== 'traveler').map(async layer => {
-    const png = await readFile(join(directory, layer.file));
-    assert.equal(sha256(png), layer.pngSha256);
-    return { id: layer.id, left: layer.left, top: layer.top, provenance: layer.provenance, png };
-  }));
-  return {
-    raster: bakeTerrain(renderTerrain(reference.spec), reference.map, overlays).raster,
-    source: { package: directory, mapPngSha256: reference.image.pngSha256,
-      props: overlays.map(({ id, left, top, png, provenance }) => ({ id, left, top, pngSha256: sha256(png), provenance })) },
-  };
-}
-const [outdoor, gameplay] = await Promise.all([terrainScene('organic'), terrainScene('outdoor')]);
-const wall = ['dungeon-wall', 'dungeon-floor', 'dungeon-floor-detail'] as const;
-const tileFiles = await Promise.all(wall.map(async id => {
-  const file = 'benchmarks/fixtures/e24/' + id + '.png';
-  const png = await readFile(file);
-  return { file, raster: decodePng(png), sha256: sha256(png) };
-}));
-const dungeon = makeRaster(320, 176);
-for (let y = 0; y < 11; y++) for (let x = 0; x < 20; x++) {
-  const tile = tileFiles[y === 0 ? 0 : (x * 5 + y * 7 + x * y * 3) % 13 === 0 ? 2 : 1].raster;
-  assert.ok(tile.w === 16 && tile.h === 16);
-  blit(dungeon, tile, x * 16, y * 16);
-}
-const dungeonProps = await Promise.all([
-  ['compact', 39, 32], ['barrel-tall', 92, 36], ['crate', 208, 50], ['travel', 253, 86],
-].map(async ([id, x, y]) => {
-  const file = 'benchmarks/results/e24/' + id + '-1x.png';
-  const png = await readFile(file);
-  blit(dungeon, decodePng(png), Number(x), Number(y));
-  return { file, x, y, sha256: sha256(png) };
-}));
+const { scenes, source: sceneSources } = await characterGameScenes();
 
 const lineup = onBackground(makeRaster(240, 88), '#8d8b85');
 const styles = [['m1', m1], ['m2', m2], ['m2p', polish.material]] as const;
-const scenes = [
-  { id: 'outdoor', base: outdoor.raster, pivot: [240, 158] },
-  { id: 'dungeon', base: dungeon, pivot: [153, 112] },
-  { id: 'gameplay', base: gameplay.raster, pivot: [244, 136] },
-] as const;
 const measurements = [];
 for (const [index, [style, art]] of styles.entries()) {
   for (const { id, base, pivot } of scenes) {
@@ -138,8 +97,7 @@ await json('readability', {
   courier: { geometry: courier.metadata.diagnostics.bounds, measured: measureMaterialReadability(courierPackage.material.final, courierPackage.material.mask) },
 });
 await json('scene-sources', {
-  outdoor: { ...outdoor.source, pivot: [240, 158] }, gameplay: { ...gameplay.source, pivot: [244, 136] },
-  dungeon: { tiles: tileFiles.map(({ file, sha256 }) => ({ file, sha256 })), license: 'CC0 1.0', props: dungeonProps, pivot: [153, 112] },
+  ...sceneSources,
   lineup: { pivots: [[40, 73], [120, 73], [200, 73]], background: '#8d8b85' },
 });
 console.log('E4.3 production benchmark written to ' + out);

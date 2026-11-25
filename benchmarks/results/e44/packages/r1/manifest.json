@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kind": "lumasprite-character-production",
+  "style": "m2p",
+  "review": "VISUAL_REVIEW_PENDING",
+  "characterSpecVersion": 2,
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "groundPivot": [
+    30,
+    59
+  ],
+  "lineage": {
+    "checkpoint": "0294a98",
+    "reference": "E4.3 B1 M2P shape-lock.json",
+    "referenceSha256": "fa30f79bd33605947d8e198e9e08af471c31d975d71728d2a8899f2784f7d69e"
+  },
+  "silhouetteAlphaSha256": "dca61a1020a493565d2b3dd90561a44641ebc9b3748ced280224a48ac0e5c632",
+  "rgbaSha256": "e1341bddb9c38e8bcf27089940f1c29e36390927b72cc13518ac865209bc25d3",
+  "files": {
+    "final.png": "91da2907dee0201c00a2d451dc08f3a949547e1928041919908b4d8c4ddf3110",
+    "silhouette.png": "58b1f8a2d9870481294e8dd3761a4c9ed8ceeaf159d2b1d36d19edd93a0ab2b6",
+    "material-mask.png": "b43960561a067ef70149562c9503b3e70a44165462ab4a9942456f60c670a461",
+    "material.json": "4c946bb04c74cc23ca6bf8e191946e169f7d7c47addc7ef34169bd652317c345",
+    "character-spec.json": "9b645026c77717164b427d3e3a562d0926703f80f17a9eddb0bcfdace90b32b9",
+    "shape-lock.json": "2ba732e996a5807271b3c07993dd24c47aaa98ffbf9c8188120fa550cfe30318",
+    "part-masks.json": "4b0c34b001c1a0b6c372afd4cea9f43e04026da77a8f11d8e390e5e21e44f950"
+  }
+}

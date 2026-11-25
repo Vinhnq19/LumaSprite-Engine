@@ -33,6 +33,8 @@
     "report:e42": "node scripts/report-e42.ts",
     "benchmark:e43": "node scripts/benchmark-e43.ts",
     "report:e43": "node scripts/report-e43.ts",
+    "benchmark:e44": "node scripts/benchmark-e44.ts",
+    "report:e44": "node scripts/report-e44.ts",
     "test:character-studio": "node --test scripts/character-studio.ts",
     "test:terrain-production-studio": "node --test scripts/terrain-production-studio.ts",
     "report:e32": "node scripts/report-e32.ts",

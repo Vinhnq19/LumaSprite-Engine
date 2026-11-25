@@ -51,4 +51,6 @@ E4.1R refines the Taller Surveyor silhouette into B1 for standing and B2 for a f
 
 E4.2 uses the approved-with-notes B1 geometry for two material treatments. The owner can choose a material candidate before E4.3 scale, scene and export validation. [E4.2 review](LumaSprite-Engine-E4.2-Report.html)
 
-The owner selected M2 with limitations. E4.3 delivers M2P and the Forest Courier technical pilot, compares native game scenes and verifies both packages through Studio backup/restore. E4.4 records final character acceptance after the game-art review. [E4.3 gallery](LumaSprite-Engine-E4.3-Report.html)
+The owner selected M2 with limitations. E4.3 delivered M2P and the Forest Courier technical pilot. The Project Owner approved E4.3 engineering and the Courier pilot and selected M2P as the Surveyor material baseline. [E4.3 gallery](LumaSprite-Engine-E4.3-Report.html)
+
+E4.4 delivers two Surveyor geometry revisions and one Forest Courier revision with native comparisons and independently verified Studio packages. The Project Owner's final art decision precedes E4 closeout and any E5 work. [E4.4 gallery](LumaSprite-Engine-E4.4-Report.html) · [Human review](../benchmarks/results/e44/review.md)

@@ -56,6 +56,22 @@ export const surveyorRefinements = {
   },
 } satisfies Record<string, CharacterSpec>;
 
+const b1 = surveyorRefinements.b1;
+const r1 = {
+  ...b1,
+  geometryRevision: { number: 1 },
+  pose: { ...b1.pose, near: { ...b1.pose.near, elbow: [32, 36] } },
+} satisfies CharacterSpec;
+
+export const surveyorGeometryRevisions = {
+  r1,
+  r2: {
+    ...r1,
+    geometryRevision: { number: 2, headOpening: 2, torsoPlaneOffset: 2 },
+    pose: { ...r1.pose, turn: 3, near: { ...r1.pose.near, knee: [28, 45] }, far: { ...r1.pose.far, knee: [38, 45] } },
+  },
+} satisfies Record<string, CharacterSpec>;
+
 export const forestCourier = {
   ...shared,
   version: 3, kind: 'humanoid-traveler', name: 'Forest Courier', seed: 73,
@@ -65,5 +81,16 @@ export const forestCourier = {
     kind: 'standing-free', hip: [34, 37], lean: -1, turn: 3, pivot: [32, 58], support: 'near', secondaryGroundOffset: -1,
     near: { elbow: [22, 34], wrist: [19, 40], palm: [20, 42], knee: [31, 45], ankle: [30, 53] },
     far: { elbow: [42, 31], wrist: [41, 36], palm: [39, 38], knee: [42, 44], ankle: [40, 52] },
+  },
+} satisfies CharacterSpec;
+
+export const forestCourierRevision = {
+  ...forestCourier,
+  geometryRevision: { number: 1, headOpening: 2, torsoPlaneOffset: 1, satchelOffset: [-2, 2], satchelFlap: true },
+  proportions: { ...forestCourier.proportions, satchel: [9, 10] },
+  pose: {
+    ...forestCourier.pose,
+    near: { ...forestCourier.pose.near, elbow: [23, 34], wrist: [21, 40], palm: [22, 42], knee: [30, 45] },
+    far: { ...forestCourier.pose.far, elbow: [43, 32], wrist: [45, 37], palm: [44, 40], knee: [41, 44] },
   },
 } satisfies CharacterSpec;

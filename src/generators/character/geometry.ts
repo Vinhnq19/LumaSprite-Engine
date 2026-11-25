@@ -34,6 +34,10 @@ export function planCharacter(spec: CharacterSpec) {
   const { proportions: p, pose } = spec;
   const turn = spec.version === 1 ? 0 : spec.pose.turn;
   const outfit = spec.version === 3 ? spec.outfit : undefined;
+  const revision = spec.version === 1 ? undefined : spec.geometryRevision;
+  const opening = revision?.headOpening ?? 0;
+  const torsoPlaneOffset = revision?.torsoPlaneOffset ?? 0;
+  const [bagDx, bagDy] = spec.version === 3 ? spec.geometryRevision?.satchelOffset ?? [0, 0] : [0, 0];
   const [cx, hipY] = pose.hip;
   const [shoulderWidth, bodyHeight] = p.jacket;
   const sy = hipY - bodyHeight;
@@ -93,8 +97,8 @@ export function planCharacter(spec: CharacterSpec) {
   })) as Record<'far' | 'near', { arm: Part[]; leg: Part[] }>;
 
   const [bagW, bagH] = p.satchel;
-  const bagX = outfit?.satchel === 'crossbody' ? cx - Math.floor(bagW * .6) : shoulders.near[0] - Math.floor(bagW * .68) + (turn ? 1 : 0);
-  const bagY = outfit?.satchel === 'crossbody' ? hipY - 5 : sy + (turn ? 5 : 3);
+  const bagX = outfit?.satchel === 'crossbody' ? cx - Math.floor(bagW * .6) + bagDx : shoulders.near[0] - Math.floor(bagW * .68) + (turn ? 1 : 0);
+  const bagY = outfit?.satchel === 'crossbody' ? hipY - 5 + bagDy : sy + (turn ? 5 : 3);
   const [gx, gy] = shift(pose.near.palm, turn ? 1 : 0, turn ? 1 : 0);
   const [inward, outward] = [-Math.floor(shoulderWidth / 2), Math.ceil(shoulderWidth / 2)];
   const waist = Math.ceil(p.hips / 2);
@@ -105,8 +109,8 @@ export function planCharacter(spec: CharacterSpec) {
   const jacket = polygon('jacket', [sx + inward + 2, sy + (turn ? 1 : 0)], [sx + outward - 2, sy - 1 - Math.floor(turn / 2)],
     [sx + outward, sy + 4], [cx + waist - 1, hipY - 2], [cx + waist + 1, hipY + 2 - (turn ? 1 : 0)],
     [cx - waist + 1, hipY + 3], [cx - waist - 1, hipY - 2], [sx + inward, sy + 5]);
-  const jacketPlane = polygon('farCoat', [sx + 1, sy + 1], [sx + outward - 2, sy - 1 - Math.floor(turn / 2)],
-    [sx + outward, sy + 4], [cx + waist - 1, hipY - 2], [cx + waist + 1, hipY + 1], [cx + 2, hipY + 2]);
+  const jacketPlane = polygon('farCoat', [sx + 1 + torsoPlaneOffset, sy + 1], [sx + outward - 2, sy - 1 - Math.floor(turn / 2)],
+    [sx + outward, sy + 4], [cx + waist - 1, hipY - 2], [cx + waist + 1, hipY + 1], [cx + 2 + torsoPlaneOffset, hipY + 2]);
   let held: Part[] = [];
   if (spec.version !== 3) {
     const [lampW, lampH] = spec.proportions.lantern;
@@ -125,20 +129,25 @@ export function planCharacter(spec: CharacterSpec) {
   }
   const bag = part('satchel', polygon('leather', [bagX + 2, bagY], [bagX + bagW - 1, bagY + 1], [bagX + bagW, bagY + bagH - 3],
     [bagX + bagW - 3, bagY + bagH], [bagX + 1, bagY + bagH - 1], [bagX, bagY + 4]));
+  if (spec.version === 3 && spec.geometryRevision?.satchelFlap) {
+    const flap = bagX + Math.floor(bagW / 2);
+    bag.shapes.push(polygon('contour', [bagX + 1, bagY + 3], [flap, bagY + 4], [bagX + bagW - 1, bagY + 2],
+      [bagX + bagW - 1, bagY + 3], [flap, bagY + 6], [bagX + 1, bagY + 4]));
+  }
   const strap = outfit?.satchel === 'crossbody'
     ? part('strap', ...segment('leather', [sx + 5, sy + 1], [bagX + 2, bagY + 4], 2, 2))
     : part('strap', ...segment('leather', [sx - 5, sy + 1], [cx + 4, hipY - 2], 2, 2));
   const headwear = outfit?.headwear === 'hood' ? part('hood', polygon('cap',
     [headLeft - 2, headY], [headLeft, topOfCap + 4], [headLeft + 4, topOfCap + 1], [headX + 1, topOfCap],
-    [headRight - 3, topOfCap + 4], [headRight, headY - 2], [headRight - 2, headY + 1], [headX + 3, headY - 1],
-    [headX - 2, headY + 1], [headLeft + 4, headY + 5], [headX - 1, jaw], [headX + 1, jaw + 4],
+    [headRight - 3, topOfCap + 4], [headRight, headY - 2], [headRight - 2, headY + 1 - opening], [headX + 3, headY - 1 - opening],
+    [headX - 2 - opening, headY + 1 - opening], [headLeft + 4 - opening, headY + 5], [headX - 1, jaw], [headX + 1, jaw + 4],
     [headLeft, jaw + 2], [headLeft - 2, headY + 5]),
     polygon('brim', [headLeft - 1, jaw - 1], [headX - 2, jaw - 1], [headX + 2, jaw + 1], [headX, jaw + 4], [headLeft + 2, jaw + 4]))
     : part('cap', polygon('cap', [headLeft - 1, headY - 1], [headLeft, topOfCap + 5],
       [headLeft + 3, topOfCap + 1 + trim], [headLeft + 7, topOfCap], [headRight - 4, topOfCap + 1],
       [headRight - 1, topOfCap + 4], [headRight, headY - 2]),
-    polygon('brim', [headLeft, headY - 2], [headRight - 1, headY - 3], [headRight + 4, headY - 1],
-      [headRight + 2, headY + 1], [headLeft + 3, headY + 1]));
+    polygon('brim', [headLeft, headY - 2], [headRight - 1, headY - 3], [headRight + 4 - opening, headY - 1],
+      [headRight + 2 - opening, headY + 1 - opening], [headLeft + 3, headY + 1]));
   const parts = [
     ...limbs.far.leg, ...limbs.far.arm, ...limbs.near.leg,
     ...(outfit ? [] : [bag]),
@@ -147,8 +156,9 @@ export function planCharacter(spec: CharacterSpec) {
     strap, ...(outfit ? [bag] : []),
     part('neck', oval('face', neck, 6, 8)),
     part('head', polygon('face', [headLeft + 1, headY - 3], [headX + 5, headY - 4],
-      [headRight - 2, headY - 2], [headRight, headY + 1], [headRight - 1, headY + 3],
-      [headRight - 2, jaw - 1], [headX + 1, jaw + 1], [headLeft + 3, jaw - 1], [headLeft, headY + 2])),
+      [headRight - 2, headY - 2], [headRight, headY + 1 + Math.floor(opening / 2)], [headRight - 1, headY + 3],
+      [headRight - 2, jaw - 1], [headX + 1 + Math.floor(opening / 2), jaw + 1],
+      [headLeft + 3 - opening, jaw - 1], [headLeft, headY + 2 + opening])),
     headwear,
     ...limbs.near.arm.slice(0, 2),
     ...held,

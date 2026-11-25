@@ -30,6 +30,7 @@ const surfaceLabels = {
 export const materialMaskLegend = surfaceLabels;
 
 const flatBrim = pack(characterColors.brim), flatFar = pack(characterColors.farCoat), flatGlass = pack(characterColors.lantern);
+const flatSeam = pack(characterColors.contour);
 function surfaceFor(part: string, ink: number, u: number, v: number): Surface {
   if (part === 'head') return (u < .25 && v < .7) || (u < .48 && v < .33) ? 'hair' : 'skin';
   if (part === 'neck' || part.endsWith('hand')) return 'skin';
@@ -86,7 +87,11 @@ export function renderCharacterMaterials(review: Review, lock: ShapeLock, style:
       const frame = surface === 'glass' ? boundsFor(pixels, w) : bounds;
       const ramp = ramps[surface];
       paintSurface(layer, pixels, frame, ramp.base, ramp, materialPlanes(id, surface, directed, style === 'm2p'));
-      for (const pixel of pixels) final.rgba.writeUInt32BE(layer.rgba.readUInt32BE(pixel * 4), pixel * 4);
+      for (const pixel of pixels) {
+        const offset = pixel * 4;
+        if (surface === 'leather' && original.rgba.readUInt32BE(offset) === flatSeam) layer.rgba.writeUInt32BE(ramp.shadow, offset);
+        final.rgba.writeUInt32BE(layer.rgba.readUInt32BE(offset), offset);
+      }
     }
     if (!alphaPlane(layer).equals(alphaPlane(review.layers[id]))) throw new Error('Material paint escaped the ' + id + ' mask.');
     layers[id] = layer;

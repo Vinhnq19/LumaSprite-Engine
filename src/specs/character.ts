@@ -36,8 +36,15 @@ const characterSpecV1 = z.strictObject({
   }),
 });
 
+const geometryRevision = z.strictObject({
+  number: size(1, 255),
+  headOpening: size(1, 3).optional(),
+  torsoPlaneOffset: size(-2, 2).optional(),
+});
+
 const characterSpecV2 = characterSpecV1.extend({
   version: z.literal(2),
+  geometryRevision: geometryRevision.optional(),
   pose: characterSpecV1.shape.pose.extend({
     kind: z.enum(['standing-hold', 'forward-step-hold']),
     turn: size(1, 3),
@@ -48,6 +55,10 @@ const characterSpecV2 = characterSpecV1.extend({
 const characterSpecV3 = characterSpecV2.extend({
   version: z.literal(3),
   kind: z.literal('humanoid-traveler'),
+  geometryRevision: geometryRevision.extend({
+    satchelOffset: extent(-3, 3, -3, 3).optional(),
+    satchelFlap: z.literal(true).optional(),
+  }).optional(),
   proportions: characterSpecV2.shape.proportions.omit({ lantern: true }),
   pose: characterSpecV2.shape.pose.extend({ kind: z.literal('standing-free') }),
   outfit: z.strictObject({ headwear: z.literal('hood'), satchel: z.literal('crossbody'), cloth: z.enum(['teal', 'russet-moss']) }),
