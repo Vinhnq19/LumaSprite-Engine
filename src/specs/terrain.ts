@@ -23,9 +23,11 @@ export const terrainSpecV2 = terrainSpecV1.extend({
   variation: z.enum(['atlas', 'world']),
 });
 
-export const terrainSpecSchema = z.discriminatedUnion('version', [terrainSpecV1, terrainSpecV2]);
+export const terrainSpecV3 = terrainSpecV2.extend({ version: z.literal(3) });
+export const terrainSpecSchema = z.discriminatedUnion('version', [terrainSpecV1, terrainSpecV2, terrainSpecV3]);
 export type TerrainSpecV1 = z.infer<typeof terrainSpecV1>;
 export type TerrainSpecV2 = z.infer<typeof terrainSpecV2>;
+export type TerrainSpecV3 = z.infer<typeof terrainSpecV3>;
 export type TerrainSpec = z.infer<typeof terrainSpecSchema>;
 
 export const defaultTerrainSpec = {
@@ -36,6 +38,8 @@ export const defaultTerrainSpec = {
 export const naturalTerrainSpec = {
   ...defaultTerrainSpec, version: 2, surface: 'standard', variation: 'world',
 } satisfies TerrainSpecV2;
+
+export const productionTerrainSpec = { ...naturalTerrainSpec, version: 3 } satisfies TerrainSpecV3;
 
 export const terrainMapSpec = z.strictObject({
   rows: z.array(z.string().min(1).max(128).regex(/^[#.]+$/)).min(1).max(128),

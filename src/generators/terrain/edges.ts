@@ -5,7 +5,21 @@ import { terrainBits } from './adjacency.ts';
 const horizontalSteps = [0, 0, 1, 1, 0, -1, -1, -1, 0, 0, 1, 1, 1, 0, 0, 0];
 const verticalSteps = [0, 0, 0, -1, -1, 0, 1, 1, 1, 0, 0, -1, -1, 0, 0, 0];
 
-export function boundaryDistance(mask: number | null, x: number, y: number, size: number, inset: number, natural = false) {
+const banks = [
+  [0, 0, 0, 1, 1, 1, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0],
+  [0, 0, 0, -1, -1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+];
+type BankProfile = readonly [horizontal: readonly number[], vertical: readonly number[]];
+const originalProfile: BankProfile = [horizontalSteps, verticalSteps];
+
+export function productionBanks(choice: number): BankProfile {
+  return [banks[choice & 1], banks[(choice >>> 1) & 1]];
+}
+
+export function boundaryDistance(
+  mask: number | null, x: number, y: number, size: number, inset: number, natural = false,
+  [horizontalProfile, verticalProfile]: BankProfile = originalProfile,
+) {
   if (mask === null) return -Infinity;
   const right = x >= size / 2, bottom = y >= size / 2;
   const u = right ? size - 1 - x : x, v = bottom ? size - 1 - y : y;
@@ -14,8 +28,8 @@ export function boundaryDistance(mask: number | null, x: number, y: number, size
   const diagonal = bottom ? (right ? terrainBits.SE : terrainBits.SW) : (right ? terrainBits.NE : terrainBits.NW);
 
   const interiorProfile = natural && u > 0 && v > 0;
-  const shiftedU = u + (interiorProfile ? verticalSteps[y] : 0);
-  const shiftedV = v + (interiorProfile ? horizontalSteps[x] : 0);
+  const shiftedU = u + (interiorProfile ? verticalProfile[y] : 0);
+  const shiftedV = v + (interiorProfile ? horizontalProfile[x] : 0);
   if (!horizontal && !vertical) return Math.min(shiftedU, shiftedV, u + v - inset - (interiorProfile ? 2 : 1));
   if (!horizontal) return shiftedU;
   if (!vertical) return shiftedV;

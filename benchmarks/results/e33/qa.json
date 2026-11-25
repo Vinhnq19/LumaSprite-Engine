@@ -1,0 +1,244 @@
+{
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "masks": 47,
+  "rawMasks": 256,
+  "authored": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "junctions": {
+      "neighborhoods": 65536,
+      "pixelsCompared": 262144
+    },
+    "palette": {
+      "mode": "authored",
+      "status": "FULL_RAMP",
+      "warnings": [],
+      "midtoneGap": 11,
+      "authoredMidtoneGap": 11,
+      "ramps": {
+        "grass": [
+          "#4b6940",
+          "#68864c",
+          "#7f9858"
+        ],
+        "dirt": [
+          "#936f53",
+          "#9f795c",
+          "#a68061",
+          "#b58f6f"
+        ]
+      }
+    },
+    "pngSha256": "1403b7ab5181b780be6d2a36f4ef1c5e20db7334b3bcf8e12d637ab1b582fe09"
+  },
+  "project": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "junctions": {
+      "neighborhoods": 65536,
+      "pixelsCompared": 262144
+    },
+    "palette": {
+      "mode": "project",
+      "status": "FULL_RAMP",
+      "warnings": [],
+      "midtoneGap": 12,
+      "authoredMidtoneGap": 11,
+      "ramps": {
+        "grass": [
+          "#48643e",
+          "#63804c",
+          "#799052"
+        ],
+        "dirt": [
+          "#8e6c51",
+          "#9f795c",
+          "#a17c5e",
+          "#b0896d"
+        ]
+      }
+    },
+    "pngSha256": "9e2dc9318f36e05b93f805b27b6f770fb0525393a5dab74a8bd89eef5bf8d62a"
+  },
+  "locked": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "junctions": {
+      "neighborhoods": 65536,
+      "pixelsCompared": 262144
+    },
+    "palette": {
+      "mode": "locked",
+      "status": "PALETTE_LIMITED",
+      "warnings": [
+        {
+          "code": "GRASS_RAMP_COMPRESSED",
+          "material": "grass"
+        },
+        {
+          "code": "DIRT_RAMP_COMPRESSED",
+          "material": "dirt"
+        },
+        {
+          "code": "GRASS_DIRT_INK_COLLISION",
+          "material": "grass/dirt"
+        },
+        {
+          "code": "GRASS_DIRT_CONTRAST_LOSS",
+          "material": "grass/dirt"
+        }
+      ],
+      "midtoneGap": 0,
+      "authoredMidtoneGap": 11,
+      "ramps": {
+        "grass": [
+          "#536da0",
+          "#536da0",
+          "#536da0"
+        ],
+        "dirt": [
+          "#536da0",
+          "#536da0",
+          "#536da0",
+          "#f7ba5b"
+        ]
+      }
+    },
+    "pngSha256": "769a50961eb941befa212d9cf2f0f122b98bf6fa84acadeee828a70b5ac9a974"
+  },
+  "measured": {
+    "e32": {
+      "grass": {
+        "distinct": 333,
+        "pairs": 624,
+        "repeats": 0
+      },
+      "dirt": {
+        "distinct": 335,
+        "pairs": 630,
+        "repeats": 0
+      }
+    },
+    "e33": {
+      "grass": {
+        "distinct": 333,
+        "pairs": 624,
+        "repeats": 0
+      },
+      "dirt": {
+        "distinct": 329,
+        "pairs": 630,
+        "repeats": 0
+      }
+    }
+  },
+  "scenes": [
+    {
+      "scene": "outdoor",
+      "package": "packages/outdoor/map.json",
+      "image": {
+        "file": "map.png",
+        "width": 416,
+        "height": 224,
+        "pngSha256": "4f7ba85fa8ddc9e2971e60cb1695798a58cf787a5712bd780d3de53db9360dc4",
+        "rgbaSha256": "e0d9a8eb7d80ccc3cd80784a6305c2a9a0bad8c74357d97d926b287b6381354e"
+      },
+      "overlays": [
+        {
+          "id": "compact",
+          "left": 20,
+          "top": 111,
+          "provenance": "Approved E2.4 authored prop compact",
+          "file": "overlay-1.png",
+          "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        },
+        {
+          "id": "travel",
+          "left": 82,
+          "top": 108,
+          "provenance": "Approved E2.4 authored prop travel",
+          "file": "overlay-2.png",
+          "pngSha256": "36d9e060c449eea52bd852c29a096ea0c9b3264730cc15a28c39d70191b054ef"
+        },
+        {
+          "id": "crate",
+          "left": 141,
+          "top": 93,
+          "provenance": "Approved E2.4 authored prop crate",
+          "file": "overlay-3.png",
+          "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        },
+        {
+          "id": "barrel-wide",
+          "left": 200,
+          "top": 90,
+          "provenance": "Approved E2.4 authored prop barrel-wide",
+          "file": "overlay-4.png",
+          "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        },
+        {
+          "id": "barrel-tall",
+          "left": 265,
+          "top": 113,
+          "provenance": "Approved E2.4 authored prop barrel-tall",
+          "file": "overlay-5.png",
+          "pngSha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+        },
+        {
+          "id": "traveler",
+          "left": 329,
+          "top": 117,
+          "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+          "file": "overlay-6.png",
+          "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+        }
+      ]
+    },
+    {
+      "scene": "large",
+      "package": "packages/large/map.json",
+      "image": {
+        "file": "map.png",
+        "width": 576,
+        "height": 336,
+        "pngSha256": "ea2ab668746f2f30f5c16f5cfc0fb86382b7885bd3c8ca37dc35404dcdc10980",
+        "rgbaSha256": "dc9f47faf2386a4164953a27e244ace7bd34ef6458651d334617f1248ca9544d"
+      },
+      "overlays": []
+    },
+    {
+      "scene": "stress",
+      "package": "packages/stress/map.json",
+      "image": {
+        "file": "map.png",
+        "width": 288,
+        "height": 176,
+        "pngSha256": "6786c45db1693824014320dd103dfb571eb608ab974e0ef6b2230395d27f52ce",
+        "rgbaSha256": "8f6901720915955016c9b5d645d91447c9718c3aa62d21098760e2e8050ca21f"
+      },
+      "overlays": []
+    },
+    {
+      "scene": "regions",
+      "package": "packages/regions/map.json",
+      "image": {
+        "file": "map.png",
+        "width": 512,
+        "height": 288,
+        "pngSha256": "ab7687d6f5f04c28bb4dfc868719b53ddc5a5107369b9d20fb053f9cadb9aeac",
+        "rgbaSha256": "a757723dc74e345e1d169c59aa72d01efb5aff658a0f2af24c957831dc4ecc63"
+      },
+      "overlays": []
+    }
+  ]
+}

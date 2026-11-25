@@ -34,3 +34,7 @@ The existing E0 provider scaffold remains disabled. Planner, vision, refinement,
 The Project Owner approved E3.1 engineering at `ad7cdbc` and requested terrain art refinement. E3.2 adds stepped banks, material densities and world-space texture previews while preserving the Studio atlas contract. E3.2 engineering passes and its art remains pending review. [Review report](LumaSprite-Engine-E3.2-Report.html)
 
 Wait for the owner's terrain review before E4. DeepSeek development remains deferred through E8. E9 requires completion of the local Engine stages and explicit Project Owner approval.
+
+## E3.3 checkpoint update
+
+ChatGPT recommended the E3.2 artistic baseline in Authored/Project palettes. E3.3 can ship world-space texture as a verifiable baked PNG and retains the canonical atlas for editable Studio maps. The candidate is ready for final art review. The Project Owner's E3 decision still gates E4. [E3.3 review gallery](LumaSprite-Engine-E3.3-Report.html)

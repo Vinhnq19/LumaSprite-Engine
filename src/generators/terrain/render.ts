@@ -1,10 +1,10 @@
 import { cluster, type Span } from '../../core/geometry/shapes.ts';
 import { blit, makeRaster, put, type Raster } from '../../core/pixels/raster.ts';
-import { terrainSpecSchema, type TerrainSpecV1, type TerrainSpecV2 } from '../../specs/terrain.ts';
+import { terrainSpecSchema, type TerrainSpecV1, type TerrainSpecV2, type TerrainSpecV3 } from '../../specs/terrain.ts';
 import { atlasColumns, atlasRows, canonicalMasks, dirtTileId, mapTileId } from './adjacency.ts';
 import { terrainMaterials } from './materials.ts';
-import { boundaryDistance } from './edges.ts';
-import { paintMaterialDetails, type TileOrigin } from './detail.ts';
+import { boundaryDistance, productionBanks } from './edges.ts';
+import { coordinateHash, paintMaterialDetails, type TileOrigin } from './detail.ts';
 
 function renderTile(spec: TerrainSpecV1, mask: number | null, inks: ReturnType<typeof terrainMaterials>['inks']) {
   const { tileSize: size, edgeInset: inset, seed } = spec;
@@ -34,11 +34,12 @@ function renderTile(spec: TerrainSpecV1, mask: number | null, inks: ReturnType<t
 }
 
 function renderNaturalTile(
-  spec: TerrainSpecV2, mask: number | null, inks: ReturnType<typeof terrainMaterials>['inks'], origin: TileOrigin,
+  spec: TerrainSpecV2 | TerrainSpecV3, mask: number | null, inks: ReturnType<typeof terrainMaterials>['inks'], origin: TileOrigin,
 ) {
   const { tileSize: size, edgeInset: inset } = spec;
   const raster = makeRaster(size, size);
-  const distance = (x: number, y: number) => boundaryDistance(mask, x, y, size, inset, true);
+  const profile = spec.version === 3 ? productionBanks(coordinateHash(spec.seed, origin[0], origin[1], 11)) : undefined;
+  const distance = (x: number, y: number) => boundaryDistance(mask, x, y, size, inset, true, profile);
   for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
     const d = distance(x, y);
     const exposed = d === inset - 1 && d < boundaryDistance(mask, x, y, size, inset);
@@ -52,7 +53,7 @@ function renderNaturalTile(
 export function renderTerrain(input: unknown) {
   const spec = terrainSpecSchema.parse(input);
   const { tileSize } = spec;
-  const material = terrainMaterials(spec.palette);
+  const material = terrainMaterials(spec.palette, spec.version === 3);
   const atlas = makeRaster(atlasColumns * tileSize, atlasRows * tileSize);
   const tiles = [...canonicalMasks, null].map((mask, i) => {
     const raster = spec.version === 1
@@ -75,7 +76,7 @@ export function renderTileGrid(terrain: TerrainAtlas, ids: readonly (readonly nu
   for (const [y, row] of ids.entries()) for (const [x, id] of row.entries()) {
     if (!Number.isInteger(id) || id < 1 || id > dirtTileId) throw new RangeError('Unknown terrain tile ID.');
     const tile = terrain.tiles[id - 1];
-    const raster = origin && terrain.spec.version === 2 && terrain.spec.variation === 'world'
+    const raster = origin && terrain.spec.version !== 1 && terrain.spec.variation === 'world'
       ? renderNaturalTile(terrain.spec, tile.mask, terrain.material.inks, [origin[0] + x, origin[1] + y])
       : tile.raster;
     blit(result, raster, x * size, y * size);
