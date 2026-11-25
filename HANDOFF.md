@@ -1,6 +1,8 @@
 # Handoff
 
-**E4.4 is E4_4_READY_FOR_FINAL_HUMAN_ART_REVIEW.** Surveyor R1, R2 and the Courier revision each have their own geometry lock. The five packages passed Studio round-trip and backup restore checks. E4 Final Acceptance awaits the Project Owner's decisions for Surveyor and Courier. [Gallery](docs/LumaSprite-Engine-E4.4-Report.html) · [Review sheet](benchmarks/results/e44/review.md) · [QA](docs/e44-test-report.md) · [PR draft](docs/e44-pr.md)
+**E5.1 is E5_1_READY_FOR_HUMAN_ANIMATION_REVIEW.** Surveyor R2 has a four-frame idle at 64 × 64. Engine and Studio preserve the exact frames, 1,800 ms timing, pivot and looping export. Target-game runtime validation is pending. The Project Owner's idle decision gates E5.2. [Offline loop gallery](docs/LumaSprite-Engine-E5.1-Report.html) · [Human review](benchmarks/results/e51/review.md) · [QA](docs/e51-test-report.md) · [PR draft](docs/e51-pr.md)
+
+**E4 is closed with artistic limitations.** The Project Owner approved E4 engineering and selected Field Surveyor R2 + M2P and the E4.4 revised Forest Courier as the single-view 64 × 64 baseline. The views favor the right-facing side and Courier still has limited coat-to-leather contrast in dark scenes. [Final acceptance](docs/e4-final-acceptance.md) · [E4.4 gallery](docs/LumaSprite-Engine-E4.4-Report.html) · [Owner decision](benchmarks/results/e44/review.md)
 
 The Project Owner approved E4.3 engineering and the Forest Courier technical pilot and selected Surveyor M2P as the material baseline. The E4.3 packages remain frozen comparison assets. [E4.3 gallery](docs/LumaSprite-Engine-E4.3-Report.html) · [E4.3 QA](docs/e43-test-report.md)
 

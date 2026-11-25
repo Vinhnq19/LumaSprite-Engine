@@ -1,6 +1,6 @@
 # E4.4 Project Owner art review
 
-**VISUAL_REVIEW_PENDING**. Compare all candidates at 1× before inspecting the geometry at 4×. Score applicable criteria from 1 to 5. The target is at least 4/5 for silhouette, 3/4 orientation, anatomy, grip, materials and game readiness, with no serious geometry issue. [Offline gallery](../../../docs/LumaSprite-Engine-E4.4-Report.html)
+**APPROVED_WITH_LIMITATIONS**. The Project Owner selected Surveyor R2 + M2P and the E4.4 revised Courier as 64 × 64 single-view stylized RPG baselines. The table preserves the original rubric. [Final acceptance](../../../docs/e4-final-acceptance.md) · [Offline gallery](../../../docs/LumaSprite-Engine-E4.4-Report.html)
 
 | Criterion | B1 M2P | R1 M2P | R2 M2P | Courier E4.3 | Courier E4.4 | What to inspect |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -15,10 +15,6 @@
 | Outline | | | | | | Face/hood, arm-to-body gap and boots on dark floor. |
 | Game readiness | | | | | | Read in all four 1× contexts and record palette and target scale. |
 
-Surveyor decision · B1 M2P, R1, R2 or another review
-
-Courier decision · Original, revised or another review
-
-Palette, scale and outstanding notes ·
-
-Record the owner decision and any palette or import limitations for E4 Final Acceptance. A target-game runtime smoke test can confirm the final production choice and the intended filtering.
+- Surveyor · R2 geometry, M2P materials.
+- Courier · E4.4 revised geometry and M2 materials.
+- Scope · 64 × 64, one right-biased view. Both three-quarter reads remain limited. Courier's satchel has low contrast against the coat in dark scenes. Target-game runtime validation is pending.

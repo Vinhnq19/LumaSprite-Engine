@@ -31,6 +31,12 @@ try {
     'benchmarks/results/e42/b1-shape-lock.json', '--out', material], { encoding: 'utf8' });
   assert.equal(JSON.parse(materialRun).technical, 'PASS');
   assert.deepEqual(readFileSync(join(material, 'silhouette.png')), readFileSync('benchmarks/results/e41r/b1/silhouette.png'));
+  const source = 'benchmarks/results/e44/packages/r2';
+  const idle = join(temp, 'surveyor-idle');
+  execFileSync(process.execPath, ['dist/cli/animation.js', '--source', source, '--spec', 'benchmarks/fixtures/e51/surveyor-idle.json', '--out', idle]);
+  const verified = execFileSync(process.execPath, ['dist/cli/animation.js', '--source', source, '--verify', idle], { encoding: 'utf8' });
+  assert.equal(JSON.parse(verified).frameCount, 4);
+  assert.deepEqual(readFileSync(join(idle, 'timing.json')), readFileSync('benchmarks/results/e51/package/timing.json'));
   console.log('CLI smoke passed.');
 } finally {
   rmSync(temp, { recursive: true, force: true });

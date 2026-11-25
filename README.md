@@ -52,7 +52,9 @@ Select `b1` for Grounded Surveyor or `b2` for Forward-Step Surveyor on the same 
 
 Use `npm run character -- --material m2 --shape-lock benchmarks/results/e42/b1-shape-lock.json` for the B1 material review bundle. M1 uses `--material m1`. [Material architecture](docs/architecture/character-materials.md) · [E4.2 review](docs/LumaSprite-Engine-E4.2-Report.html)
 
-E4.4 compares the two frozen E4.3 assets with Surveyor R1, R2 and one Courier revision. Verify any package with `npm run character -- --verify-package <package-directory>`. [E4.4 offline gallery](docs/LumaSprite-Engine-E4.4-Report.html) · [Package index](benchmarks/results/e44/README.md) · [Package contract](docs/architecture/character-production.md)
+E4 closed with Surveyor R2 + M2P and the E4.4 revised Forest Courier as approved single-view baselines. Verify a character package with `npm run character -- --verify-package <package-directory>`. [E4 final acceptance](docs/e4-final-acceptance.md) · [Character package index](benchmarks/results/e44/README.md)
+
+E5.1 adds a four-frame Surveyor idle, AnimationSpec v1 and verified PNG strip/timing export. Run `npm run benchmark:e51` or use the animation CLI after building. [Idle gallery](docs/LumaSprite-Engine-E5.1-Report.html) · [Animation architecture](docs/architecture/animation-foundation.md)
 
 ## Verify
 

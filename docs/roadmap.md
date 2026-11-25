@@ -53,4 +53,6 @@ E4.2 uses the approved-with-notes B1 geometry for two material treatments. The o
 
 The owner selected M2 with limitations. E4.3 delivered M2P and the Forest Courier technical pilot. The Project Owner approved E4.3 engineering and the Courier pilot and selected M2P as the Surveyor material baseline. [E4.3 gallery](LumaSprite-Engine-E4.3-Report.html)
 
-E4.4 delivers two Surveyor geometry revisions and one Forest Courier revision with native comparisons and independently verified Studio packages. The Project Owner's final art decision precedes E4 closeout and any E5 work. [E4.4 gallery](LumaSprite-Engine-E4.4-Report.html) · [Human review](../benchmarks/results/e44/review.md)
+E4 is closed with engineering approval. The owner selected Surveyor R2 + M2P and the E4.4 revised Courier for 64 × 64 single-view art with recorded limitations. [E4 final acceptance](e4-final-acceptance.md) · [Human review](../benchmarks/results/e44/review.md)
+
+E5.0 defines the versioned idle schema and shared frame pipeline. E5.1 ships the verified four-frame Surveyor idle for owner review. E5.2 is the proposed walk cycle after the idle decision. [E5.1 loop gallery](LumaSprite-Engine-E5.1-Report.html) · [Animation architecture and next milestones](architecture/animation-foundation.md)
