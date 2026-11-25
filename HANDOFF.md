@@ -1,11 +1,19 @@
 # Handoff
 
-The E0–E1 baseline is `368c8eb`. The E2.1/E2.2 checkpoint is `bcd47ca`. The E2.3 checkpoint is `659b717`. Both earlier comparison sets remain in the repository. [E2.3 gallery](benchmarks/results/e23/README.md)
+**E3.4 is E3_4_READY_FOR_HUMAN_ART_REVIEW.** TerrainSpec v4 candidates A and B use the same autotile geometry, with different Micro/Meso/Macro detail. The gallery compares both candidates on five matching scenes. Start with B at 1× for the larger grass rest areas and packed-dirt regions, then score both. The final E3 artistic decision belongs to the Project Owner. [Single-file report](docs/LumaSprite-Engine-E3.4-Report.html) · [Review sheet](benchmarks/results/e34/review.md)
 
-## Owner review
+All ten E3.4 bake packages preserve RGBA through Studio save/reopen and backup/restore. Editable Studio maps use the static atlas. Editable world detail is deferred to E8. [E3.4 QA](docs/e34-test-report.md) · [PR draft](docs/e34-pr.md)
 
-Start with the [E2.4 gallery](benchmarks/results/e24/README.md) at native size. Inspect Barrel Tall's rim and upper hoop first, then Barrel Wide's body and Travel's front rail on the dark scene. Compare the six props together in the neutral scene and score each asset. Engineering validation has passed and art stays **PENDING_HUMAN_REVIEW**. [Owner score sheet](benchmarks/results/e24/review.md)
+**E3.3 engineering and static-background production bake are APPROVED. E3.3 final art was NOT APPROVED.** The Project Owner authorized the bounded E3.4 refinement. The E3.3 PNGs and report stay available for comparison. [E3.3 report](docs/LumaSprite-Engine-E3.3-Report.html)
 
-Run `npm run benchmark:e24` from the Engine checkout to rebuild the scenes and props. Default CLI and Studio jobs use the latest finishes. Archived specs keep their previous render behavior. The fixture license and the future Studio preset are included. [Fixture notice](benchmarks/fixtures/e24/README.md) · [Wood & Iron swatches and preset](benchmarks/results/e24/README.md#palette-validation)
+TerrainSpec v3 is the current CLI default. Run `npm run build`, then `npm run terrain -- --bake --spec benchmarks/results/e33/terrain-spec.json --map benchmarks/results/e33/map-input.json`. Verify with `npm run terrain -- --verify benchmarks/results/run/e33-terrain`. Studio editable maps still sample the canonical atlas. [Studio compatibility](docs/integration/studio-terrain-production.md) · [QA](docs/e33-test-report.md) · [Draft PR and push command](docs/e33-pr.md)
 
-Use the owner decision to choose which variants carry into E3. Treat E4's runtime integration as a separate decision after the terrain and palette evidence. [Art and geometry audit](docs/art-quality/e24-audit.md) · [Test evidence](docs/e24-test-report.md) · [Draft PR and publishing commands](docs/e24-pr.md)
+**E2 engineering and the six E2.4 props are approved for authored palette at 32×32.** The four-ink Studio palette stays **PALETTE_LIMITED**. [Owner review record](docs/art-quality/e2-owner-review.md)
+
+**E3.1 engineering is APPROVED and its art is NEEDS_REFINEMENT.** The Project Owner approved E3.2 after reviewing the original HTML and maps. Checkpoint `ad7cdbc` retains the reference PNG, mapping, QA and report. [E3.1 report](docs/LumaSprite-Engine-Report.html)
+
+**E3.2 engineering is APPROVED.** ChatGPT recommended approval for art with Authored/Project palettes, with Standard as the default. The historical single-file report compares A/B/C/D, three densities and palette modes. [E3.2 report](docs/LumaSprite-Engine-E3.2-Report.html) · [Review sheet](benchmarks/results/e32/review.md)
+
+Rebuild the E3.2 gallery with `npm run benchmark:e32` and the standalone HTML with `npm run report:e32`. Run `npm run build` then `npm run terrain -- --spec benchmarks/results/e32/terrain-spec.json --map benchmarks/results/e32/map-input.json` to export the atlas and scene B with world detail. Studio reads the static atlas preview through the existing backup workflow. [Studio compatibility and preview](docs/integration/studio-terrain-variation.md)
+
+E4 remains gated on Project Owner review. DeepSeek runtime work stays deferred until after E8 and explicit owner approval for E9. [Terrain and material audit](docs/art-quality/e32-audit.md) · [QA](docs/e32-test-report.md) · [Draft PR](docs/e32-pr.md)

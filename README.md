@@ -17,10 +17,25 @@ npm run benchmark
 npm run benchmark:e2
 npm run benchmark:e23
 npm run benchmark:e24
+npm run terrain
+npm run benchmark:e3
+npm run report:e3
+npm run benchmark:e32
+npm run report:e32
+npm run benchmark:e33
+npm run report:e33
+npm run benchmark:e34
+npm run report:e34
 npm run serve -- --port 4399
 ```
 
 Generation and benchmarks write into `benchmarks/results/run/` by default. The [E2.4 game-scene gallery](benchmarks/results/e24/README.md) shows the six props and the three native-size benchmark scenes in both palettes. The [E2.3 gallery](benchmarks/results/e23/README.md) shows two barrel proportions and the refined chest and crate designs with locked-palette and game-scene previews. The [E2.1/E2.2 gallery](benchmarks/results/e2/README.md) preserves their first versions. The [baseline gallery](benchmarks/results/sample/README.md) preserves the original Seed 42 and 43 renders.
+
+The [unified E2–E3.1 report](docs/LumaSprite-Engine-Report.html) contains the E2 owner decision, the terrain atlas, native map previews, palette comparisons and QA. The standalone `npm run terrain` command writes a PNG atlas and JSON manifest. Pass `--spec` with a TerrainSpec JSON object to override the default seed, palette or surface. [Studio tilemap workflow](docs/integration/studio-tilemap-contract.md)
+
+The terrain CLI defaults to TerrainSpec v3. Supply a saved v1 or v2 spec to reproduce that edition. Pass `--map` with rows and a tile origin for world-space variation. Add `--bake` for a package that includes the canonical atlas, map PNG, layout and integrity hashes. Run `npm run terrain -- --verify <directory>` to check a package. [E3.3 single-file report](docs/LumaSprite-Engine-E3.3-Report.html) · [Studio import and parity](docs/integration/studio-terrain-production.md) · [E3.2 offline report](docs/LumaSprite-Engine-E3.2-Report.html)
+
+E3.4 offers two explicit TerrainSpec v4 inputs. Use `--spec` with a candidate and keep v3 as the default during the owner's review. [Conservative spec](benchmarks/results/e34/a-spec.json) · [Art-directed spec](benchmarks/results/e34/b-spec.json) · [E3.4 offline report](docs/LumaSprite-Engine-E3.4-Report.html)
 
 ## Verify
 

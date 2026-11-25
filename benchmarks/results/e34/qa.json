@@ -1,0 +1,404 @@
+{
+  "engineering": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "canonicalMasks": 47,
+  "rawMasks": 256,
+  "storageWallSourceSha256": "0d4f0c82ffb4c4158342fc0d7fc95cef22ff509003d711e84ec3b5ba3cee21f6",
+  "straightInternalBoundaryTiles": {
+    "outdoor": 8,
+    "large": 8,
+    "stress": 6,
+    "organic": 9,
+    "storage": 0
+  },
+  "organicRoad": {
+    "connectedDirtTiles": 181,
+    "exits": [
+      "north",
+      "west",
+      "east"
+    ]
+  },
+  "baselineCoverage": {
+    "grass": {
+      "tiles": 333,
+      "painted": 6000,
+      "resting": 0,
+      "micro": 401,
+      "meso": 465,
+      "larger": 0,
+      "distinct": 333
+    },
+    "dirt": {
+      "tiles": 335,
+      "painted": 7612,
+      "resting": 0,
+      "micro": 0,
+      "meso": 734,
+      "larger": 0,
+      "distinct": 329
+    }
+  },
+  "candidates": [
+    {
+      "id": "a",
+      "direction": "conservative",
+      "diagnostics": {
+        "authored": {
+          "mode": "authored",
+          "status": "FULL_RAMP",
+          "warnings": [],
+          "midtoneGap": 11,
+          "authoredMidtoneGap": 11,
+          "ramps": {
+            "grass": [
+              "#4b6940",
+              "#68864c",
+              "#7f9858"
+            ],
+            "dirt": [
+              "#936f53",
+              "#9f795c",
+              "#a68061",
+              "#b58f6f"
+            ]
+          },
+          "atlasPngSha256": "0139afc8ea6a4c2d8eb5cec5c72533c185490f0fc899dfb9071396a2af784a1f",
+          "seams": {
+            "horizontal": 4096,
+            "vertical": 4096,
+            "matchedBorderPixels": 131072
+          },
+          "junctions": {
+            "neighborhoods": 65536,
+            "pixelsCompared": 262144
+          }
+        },
+        "project": {
+          "mode": "project",
+          "status": "FULL_RAMP",
+          "warnings": [],
+          "midtoneGap": 12,
+          "authoredMidtoneGap": 11,
+          "ramps": {
+            "grass": [
+              "#48643e",
+              "#63804c",
+              "#799052"
+            ],
+            "dirt": [
+              "#8e6c51",
+              "#9f795c",
+              "#a17c5e",
+              "#b0896d"
+            ]
+          },
+          "atlasPngSha256": "806b545a3df6fd3ec8c32ee51ade034f17af8859a58870d3289bafcbc6d30d31",
+          "seams": {
+            "horizontal": 4096,
+            "vertical": 4096,
+            "matchedBorderPixels": 131072
+          },
+          "junctions": {
+            "neighborhoods": 65536,
+            "pixelsCompared": 262144
+          }
+        },
+        "locked": {
+          "mode": "locked",
+          "status": "PALETTE_LIMITED",
+          "warnings": [
+            {
+              "code": "GRASS_RAMP_COMPRESSED",
+              "material": "grass"
+            },
+            {
+              "code": "DIRT_RAMP_COMPRESSED",
+              "material": "dirt"
+            },
+            {
+              "code": "GRASS_DIRT_INK_COLLISION",
+              "material": "grass/dirt"
+            },
+            {
+              "code": "GRASS_DIRT_CONTRAST_LOSS",
+              "material": "grass/dirt"
+            }
+          ],
+          "midtoneGap": 0,
+          "authoredMidtoneGap": 11,
+          "ramps": {
+            "grass": [
+              "#536da0",
+              "#536da0",
+              "#536da0"
+            ],
+            "dirt": [
+              "#536da0",
+              "#536da0",
+              "#536da0",
+              "#f7ba5b"
+            ]
+          },
+          "atlasPngSha256": "b501c60c3346b8b40d5f164c3da27bbf4f97c84862961ff5d334827de777419d",
+          "seams": {
+            "horizontal": 4096,
+            "vertical": 4096,
+            "matchedBorderPixels": 131072
+          },
+          "junctions": {
+            "neighborhoods": 65536,
+            "pixelsCompared": 262144
+          }
+        }
+      },
+      "coverage": {
+        "grass": {
+          "tiles": 333,
+          "painted": 3350,
+          "resting": 84,
+          "micro": 67,
+          "meso": 303,
+          "larger": 0,
+          "distinct": 217
+        },
+        "dirt": {
+          "tiles": 335,
+          "painted": 3927,
+          "resting": 87,
+          "micro": 87,
+          "meso": 314,
+          "larger": 0,
+          "distinct": 227
+        }
+      },
+      "maps": [
+        {
+          "id": "outdoor",
+          "package": "packages/a-outdoor/map.json",
+          "file": "map.png",
+          "width": 416,
+          "height": 224,
+          "pngSha256": "827f55dda778f9508349942df04e9f0b0f89661630ade96f480ccd30a2db0160",
+          "rgbaSha256": "049341ab181a4199a1ed2feb4a734fcaeacebf6f918fdf80a7df65c4f373aa00"
+        },
+        {
+          "id": "large",
+          "package": "packages/a-large/map.json",
+          "file": "map.png",
+          "width": 576,
+          "height": 336,
+          "pngSha256": "ffad64d0b281e63b5f4127ff5ab45c3a087b7da5180bcedba3ca63d1da72bbef",
+          "rgbaSha256": "325c663cb8bea2c57db31680ebf8c1ada880a222a58f01043066554f93b9aecd"
+        },
+        {
+          "id": "stress",
+          "package": "packages/a-stress/map.json",
+          "file": "map.png",
+          "width": 288,
+          "height": 176,
+          "pngSha256": "3b8a369411d824e25a5e5b2b4fd282fdc0396eaa2fff11a8c7df3eb88851c4d9",
+          "rgbaSha256": "7c3252b25dd7c7602fe73ee9639d7e34b4343bc2243d0e94c535eb1a6f7c0916"
+        },
+        {
+          "id": "organic",
+          "package": "packages/a-organic/map.json",
+          "file": "map.png",
+          "width": 496,
+          "height": 304,
+          "pngSha256": "572072e36e34b6129409ad18659889aa369c7fa2e1e882f265ac37ced68b174b",
+          "rgbaSha256": "23b76621377e33e972a20a585699e2446e8c049ab02b4d3cd06f3fd0cc0654c3"
+        },
+        {
+          "id": "storage",
+          "package": "packages/a-storage/map.json",
+          "file": "map.png",
+          "width": 256,
+          "height": 144,
+          "pngSha256": "7b63edbb70cc60e246db61b86f34a8c1e7c0b59d1e50a36657bf58c9f6744476",
+          "rgbaSha256": "b564aa5f53c8cfb59346059eca13f8b1993ce39e20f299c2fe740ab01e34bab4"
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "direction": "art-directed",
+      "diagnostics": {
+        "authored": {
+          "mode": "authored",
+          "status": "FULL_RAMP",
+          "warnings": [],
+          "midtoneGap": 11,
+          "authoredMidtoneGap": 11,
+          "ramps": {
+            "grass": [
+              "#4b6940",
+              "#68864c",
+              "#7f9858"
+            ],
+            "dirt": [
+              "#936f53",
+              "#9f795c",
+              "#a68061",
+              "#b58f6f"
+            ]
+          },
+          "atlasPngSha256": "be7f121ce723dc9df1c8ecefc778685ae1e8cf3e933718c8d2bb091b2d68a82a",
+          "seams": {
+            "horizontal": 4096,
+            "vertical": 4096,
+            "matchedBorderPixels": 131072
+          },
+          "junctions": {
+            "neighborhoods": 65536,
+            "pixelsCompared": 262144
+          }
+        },
+        "project": {
+          "mode": "project",
+          "status": "FULL_RAMP",
+          "warnings": [],
+          "midtoneGap": 12,
+          "authoredMidtoneGap": 11,
+          "ramps": {
+            "grass": [
+              "#48643e",
+              "#63804c",
+              "#799052"
+            ],
+            "dirt": [
+              "#8e6c51",
+              "#9f795c",
+              "#a17c5e",
+              "#b0896d"
+            ]
+          },
+          "atlasPngSha256": "7fb0a0a83d6f886ee00b858ec94848c22128923f0133753fa3ba2d11a761de04",
+          "seams": {
+            "horizontal": 4096,
+            "vertical": 4096,
+            "matchedBorderPixels": 131072
+          },
+          "junctions": {
+            "neighborhoods": 65536,
+            "pixelsCompared": 262144
+          }
+        },
+        "locked": {
+          "mode": "locked",
+          "status": "PALETTE_LIMITED",
+          "warnings": [
+            {
+              "code": "GRASS_RAMP_COMPRESSED",
+              "material": "grass"
+            },
+            {
+              "code": "DIRT_RAMP_COMPRESSED",
+              "material": "dirt"
+            },
+            {
+              "code": "GRASS_DIRT_INK_COLLISION",
+              "material": "grass/dirt"
+            },
+            {
+              "code": "GRASS_DIRT_CONTRAST_LOSS",
+              "material": "grass/dirt"
+            }
+          ],
+          "midtoneGap": 0,
+          "authoredMidtoneGap": 11,
+          "ramps": {
+            "grass": [
+              "#536da0",
+              "#536da0",
+              "#536da0"
+            ],
+            "dirt": [
+              "#536da0",
+              "#536da0",
+              "#536da0",
+              "#f7ba5b"
+            ]
+          },
+          "atlasPngSha256": "b501c60c3346b8b40d5f164c3da27bbf4f97c84862961ff5d334827de777419d",
+          "seams": {
+            "horizontal": 4096,
+            "vertical": 4096,
+            "matchedBorderPixels": 131072
+          },
+          "junctions": {
+            "neighborhoods": 65536,
+            "pixelsCompared": 262144
+          }
+        }
+      },
+      "coverage": {
+        "grass": {
+          "tiles": 333,
+          "painted": 3498,
+          "resting": 127,
+          "micro": 198,
+          "meso": 280,
+          "larger": 0,
+          "distinct": 189
+        },
+        "dirt": {
+          "tiles": 335,
+          "painted": 4969,
+          "resting": 78,
+          "micro": 53,
+          "meso": 258,
+          "larger": 0,
+          "distinct": 231
+        }
+      },
+      "maps": [
+        {
+          "id": "outdoor",
+          "package": "packages/b-outdoor/map.json",
+          "file": "map.png",
+          "width": 416,
+          "height": 224,
+          "pngSha256": "6c75c549f0496354b857589fc16dde8f6e5c1f22db95d5aa9de8560cda158f88",
+          "rgbaSha256": "10cf3f8dae6d00e459111c89a4653b50c8ce70be6897c2864612d5554492c909"
+        },
+        {
+          "id": "large",
+          "package": "packages/b-large/map.json",
+          "file": "map.png",
+          "width": 576,
+          "height": 336,
+          "pngSha256": "4e188b9969da27380332dd3da71cc09f9855e4847d66a4108ec318e1297a78de",
+          "rgbaSha256": "59fb1992be744cc4431dd53b7f4d8a40494fa366f2f05f1a349d60e976ac16c6"
+        },
+        {
+          "id": "stress",
+          "package": "packages/b-stress/map.json",
+          "file": "map.png",
+          "width": 288,
+          "height": 176,
+          "pngSha256": "487b1376c3cc4c2e7268c7df7df888d8c61dfa16f45796a89f5c11dd2430eedb",
+          "rgbaSha256": "4c425494690080224a2fc3942d25d6d3dafccdcd1fbf37c78d48f30091c1f437"
+        },
+        {
+          "id": "organic",
+          "package": "packages/b-organic/map.json",
+          "file": "map.png",
+          "width": 496,
+          "height": 304,
+          "pngSha256": "a997f85aad36e906f3a03c7a1da59760992389e1e1c220f084f4539832ab481a",
+          "rgbaSha256": "81ccf217eca6b7216e8e3d83f998262f04e862531c3d062ab829523847d1f292"
+        },
+        {
+          "id": "storage",
+          "package": "packages/b-storage/map.json",
+          "file": "map.png",
+          "width": 256,
+          "height": 144,
+          "pngSha256": "aaebc409f4e7535b527b568ec525e054e5578ea78e1fb7365a761f4c270e0ad7",
+          "rgbaSha256": "2771813fc3ed01ceec0f2c6f2ee009d5d0c7339ec47e7bda2294db4238b710b5"
+        }
+      ]
+    }
+  ]
+}

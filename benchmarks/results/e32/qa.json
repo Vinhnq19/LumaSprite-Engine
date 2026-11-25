@@ -1,0 +1,136 @@
+{
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "masks": 47,
+  "authored": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "junctions": {
+      "neighborhoods": 65536,
+      "pixelsCompared": 262144
+    },
+    "mode": "authored",
+    "status": "FULL_RAMP",
+    "warnings": [],
+    "midtoneGap": 11,
+    "authoredMidtoneGap": 11,
+    "ramps": {
+      "grass": [
+        "#4b6940",
+        "#68864c",
+        "#7f9858"
+      ],
+      "dirt": [
+        "#936f53",
+        "#a68061",
+        "#b58f6f"
+      ]
+    }
+  },
+  "project": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "junctions": {
+      "neighborhoods": 65536,
+      "pixelsCompared": 262144
+    },
+    "mode": "project",
+    "status": "FULL_RAMP",
+    "warnings": [],
+    "midtoneGap": 12,
+    "authoredMidtoneGap": 11,
+    "ramps": {
+      "grass": [
+        "#48643e",
+        "#63804c",
+        "#799052"
+      ],
+      "dirt": [
+        "#8e6c51",
+        "#a17c5e",
+        "#b0896d"
+      ]
+    }
+  },
+  "locked": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "junctions": {
+      "neighborhoods": 65536,
+      "pixelsCompared": 262144
+    },
+    "mode": "locked",
+    "status": "PALETTE_LIMITED",
+    "warnings": [
+      {
+        "code": "GRASS_RAMP_COMPRESSED",
+        "material": "grass"
+      },
+      {
+        "code": "DIRT_RAMP_COMPRESSED",
+        "material": "dirt"
+      },
+      {
+        "code": "GRASS_DIRT_INK_COLLISION",
+        "material": "grass/dirt"
+      },
+      {
+        "code": "GRASS_DIRT_CONTRAST_LOSS",
+        "material": "grass/dirt"
+      }
+    ],
+    "midtoneGap": 0,
+    "authoredMidtoneGap": 11,
+    "ramps": {
+      "grass": [
+        "#536da0",
+        "#536da0",
+        "#536da0"
+      ],
+      "dirt": [
+        "#536da0",
+        "#536da0",
+        "#f7ba5b"
+      ]
+    }
+  },
+  "repetition": {
+    "before": {
+      "grass": {
+        "tiles": 333,
+        "distinctTextures": 1,
+        "neighborPairs": 624,
+        "exactRepeatsAt16px": 624
+      },
+      "dirt": {
+        "tiles": 335,
+        "distinctTextures": 1,
+        "neighborPairs": 630,
+        "exactRepeatsAt16px": 630
+      }
+    },
+    "after": {
+      "grass": {
+        "tiles": 333,
+        "distinctTextures": 333,
+        "neighborPairs": 624,
+        "exactRepeatsAt16px": 0
+      },
+      "dirt": {
+        "tiles": 335,
+        "distinctTextures": 335,
+        "neighborPairs": 630,
+        "exactRepeatsAt16px": 0
+      }
+    }
+  }
+}

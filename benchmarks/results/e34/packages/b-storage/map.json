@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "kind": "lumasprite-baked-terrain",
+  "coordinateUnit": "tile",
+  "renderMode": "world-baked-raster",
+  "editableAtlas": {
+    "manifest": "atlas.json",
+    "png": "atlas.png",
+    "pngSha256": "be7f121ce723dc9df1c8ecefc778685ae1e8cf3e933718c8d2bb091b2d68a82a",
+    "manifestSha256": "6399bf2e7c30d87cae49d635d17adf8c5e3d79bffaed8dce1ffafc92022b00c7"
+  },
+  "image": {
+    "file": "map.png",
+    "width": 256,
+    "height": 144,
+    "pngSha256": "aaebc409f4e7535b527b568ec525e054e5578ea78e1fb7365a761f4c270e0ad7",
+    "rgbaSha256": "2771813fc3ed01ceec0f2c6f2ee009d5d0c7339ec47e7bda2294db4238b710b5"
+  },
+  "spec": {
+    "version": 4,
+    "kind": "grass-dirt",
+    "tileSize": 16,
+    "seed": 42,
+    "palette": {
+      "mode": "authored"
+    },
+    "surface": "standard",
+    "edgeInset": 2,
+    "adjacency": "pxl-blob47",
+    "output": "png-json",
+    "variation": "world",
+    "direction": "art-directed"
+  },
+  "map": {
+    "rows": [
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................"
+    ],
+    "origin": [
+      -17,
+      24
+    ]
+  },
+  "cells": [
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ]
+  ],
+  "overlays": [
+    {
+      "id": "wall",
+      "left": 0,
+      "top": 0,
+      "provenance": "Kenney Tiny Dungeon CC0 wall repeated at 1×, benchmarks/fixtures/e24",
+      "file": "overlay-1.png",
+      "pngSha256": "bfb03f32da3f98dbdf1e5ba74353107ec9bb84da6cf97a41f6093bf15ee79b0d"
+    },
+    {
+      "id": "barrel-tall",
+      "left": 15,
+      "top": 18,
+      "provenance": "Approved E2.4 authored prop barrel-tall",
+      "file": "overlay-2.png",
+      "pngSha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+    },
+    {
+      "id": "barrel-wide",
+      "left": 49,
+      "top": 21,
+      "provenance": "Approved E2.4 authored prop barrel-wide",
+      "file": "overlay-3.png",
+      "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+    },
+    {
+      "id": "crate",
+      "left": 177,
+      "top": 18,
+      "provenance": "Approved E2.4 authored prop crate",
+      "file": "overlay-4.png",
+      "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+    },
+    {
+      "id": "compact",
+      "left": 211,
+      "top": 27,
+      "provenance": "Approved E2.4 authored prop compact",
+      "file": "overlay-5.png",
+      "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+    },
+    {
+      "id": "traveler",
+      "left": 110,
+      "top": 77,
+      "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+      "file": "overlay-6.png",
+      "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+    }
+  ],
+  "paletteDiagnostics": {
+    "mode": "authored",
+    "status": "FULL_RAMP",
+    "warnings": [],
+    "midtoneGap": 11,
+    "authoredMidtoneGap": 11,
+    "ramps": {
+      "grass": [
+        "#4b6940",
+        "#68864c",
+        "#7f9858"
+      ],
+      "dirt": [
+        "#936f53",
+        "#9f795c",
+        "#a68061",
+        "#b58f6f"
+      ]
+    }
+  }
+}

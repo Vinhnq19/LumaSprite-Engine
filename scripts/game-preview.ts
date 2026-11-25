@@ -1,24 +1,13 @@
 import { rect } from '../src/core/geometry/faces.ts';
 import { fillPolygon } from '../src/core/geometry/shapes.ts';
 import { pack } from '../src/core/palette/colors.ts';
-import { makeRaster, type Raster } from '../src/core/pixels/raster.ts';
+import { blit, makeRaster, type Raster } from '../src/core/pixels/raster.ts';
 
 function block(raster: Raster, x: number, y: number, w: number, h: number, hex: string) {
   fillPolygon(raster, rect(x, y, x + w, y + h), pack(hex));
 }
 
-export function placeSprite(scene: Raster, asset: Raster, left: number, top: number) {
-  if (left < 0 || top < 0 || left + asset.w > scene.w || top + asset.h > scene.h) {
-    throw new Error('Sprite lies outside the preview canvas.');
-  }
-  for (let y = 0; y < asset.h; y++) {
-    for (let x = 0; x < asset.w; x++) {
-      const offset = (y * asset.w + x) * 4;
-      if (!asset.rgba[offset + 3]) continue;
-      scene.rgba.writeUInt32BE(asset.rgba.readUInt32BE(offset), ((top + y) * scene.w + left + x) * 4);
-    }
-  }
-}
+export const placeSprite = blit;
 
 export function onBackground(asset: Raster, hex: string) {
   const result = makeRaster(asset.w, asset.h);

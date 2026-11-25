@@ -1,0 +1,50 @@
+[
+  {
+    "prop": "compact",
+    "originX": 16,
+    "originY": 64,
+    "center": 32,
+    "baselineY": 92,
+    "palette": "E2 authored"
+  },
+  {
+    "prop": "travel",
+    "originX": 62,
+    "originY": 71,
+    "center": 78,
+    "baselineY": 100,
+    "palette": "E2 authored"
+  },
+  {
+    "prop": "crate",
+    "originX": 109,
+    "originY": 56,
+    "center": 125,
+    "baselineY": 85,
+    "palette": "E2 authored"
+  },
+  {
+    "prop": "barrel-wide",
+    "originX": 156,
+    "originY": 63,
+    "center": 172,
+    "baselineY": 91,
+    "palette": "E2 authored"
+  },
+  {
+    "prop": "barrel-tall",
+    "originX": 209,
+    "originY": 69,
+    "center": 225,
+    "baselineY": 100,
+    "palette": "E2 authored"
+  },
+  {
+    "prop": "rpg-traveler",
+    "originX": 244,
+    "originY": 46,
+    "center": 260,
+    "baselineY": 78,
+    "palette": "CC0 reference"
+  }
+]
