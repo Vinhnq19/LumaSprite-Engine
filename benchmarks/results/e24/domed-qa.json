@@ -1,0 +1,92 @@
+{
+  "seed": 42,
+  "authored": {
+    "technical": "TECHNICALLY_VALID",
+    "artistic": "PENDING_HUMAN_REVIEW",
+    "rgbaSha256": "b0364fbdf59e23e017c6ec23ebac89cd642affb708da79fa5744bf29c2c47a13",
+    "pngSha256": "75dcca132877c28349961937e8aa564e9fa72f5ef48f3743be26d6f043b5cd90",
+    "bounds": {
+      "left": 1,
+      "top": 6,
+      "right": 29,
+      "bottom": 27
+    },
+    "palette": {
+      "status": "FULL_RAMP",
+      "warnings": [],
+      "metrics": {
+        "woodDistinct": 5,
+        "ironDistinct": 3,
+        "woodIronMidtoneGap": 17,
+        "authoredWoodIronMidtoneGap": 17
+      },
+      "ramps": {
+        "wood": [
+          "#4a2927",
+          "#723e2c",
+          "#a15a36",
+          "#ca8248",
+          "#eea761"
+        ],
+        "iron": [
+          "#343344",
+          "#51546a",
+          "#777d8b"
+        ]
+      }
+    }
+  },
+  "locked": {
+    "technical": "TECHNICALLY_VALID",
+    "artistic": "PENDING_HUMAN_REVIEW",
+    "rgbaSha256": "66e496046c21723db96cea29a96192782cd6d704578d667c81b8903e6766d525",
+    "pngSha256": "35cffb16ab7ac57871a1815c86f88affc6aa1cf59642752fabddc65c8ca846f1",
+    "bounds": {
+      "left": 1,
+      "top": 6,
+      "right": 29,
+      "bottom": 27
+    },
+    "palette": {
+      "status": "PALETTE_LIMITED",
+      "warnings": [
+        {
+          "code": "WOOD_RAMP_COMPRESSED",
+          "material": "wood"
+        },
+        {
+          "code": "IRON_RAMP_COMPRESSED",
+          "material": "iron"
+        },
+        {
+          "code": "WOOD_IRON_INK_COLLISION",
+          "material": "wood/iron"
+        },
+        {
+          "code": "WOOD_IRON_CONTRAST_LOSS",
+          "material": "wood/iron"
+        }
+      ],
+      "metrics": {
+        "woodDistinct": 3,
+        "ironDistinct": 2,
+        "woodIronMidtoneGap": 0,
+        "authoredWoodIronMidtoneGap": 17
+      },
+      "ramps": {
+        "wood": [
+          "#1c2434",
+          "#1c2434",
+          "#536da0",
+          "#f7ba5b",
+          "#f7ba5b"
+        ],
+        "iron": [
+          "#1c2434",
+          "#536da0",
+          "#536da0"
+        ]
+      }
+    }
+  }
+}

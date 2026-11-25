@@ -1,0 +1,110 @@
+{
+  "width": 216,
+  "height": 48,
+  "scale": 1,
+  "groundY": 38,
+  "placements": [
+    {
+      "key": "compact",
+      "origin": {
+        "x": 2,
+        "y": 10
+      },
+      "pivot": {
+        "x": 16,
+        "y": 28
+      },
+      "bounds": {
+        "left": 2,
+        "top": 10,
+        "right": 28,
+        "bottom": 27
+      }
+    },
+    {
+      "key": "domed",
+      "origin": {
+        "x": 38,
+        "y": 10
+      },
+      "pivot": {
+        "x": 16,
+        "y": 28
+      },
+      "bounds": {
+        "left": 1,
+        "top": 6,
+        "right": 29,
+        "bottom": 27
+      }
+    },
+    {
+      "key": "travel",
+      "origin": {
+        "x": 74,
+        "y": 9
+      },
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "bounds": {
+        "left": 1,
+        "top": 6,
+        "right": 30,
+        "bottom": 28
+      }
+    },
+    {
+      "key": "crate",
+      "origin": {
+        "x": 110,
+        "y": 9
+      },
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "bounds": {
+        "left": 2,
+        "top": 6,
+        "right": 29,
+        "bottom": 28
+      }
+    },
+    {
+      "key": "barrel-wide",
+      "origin": {
+        "x": 146,
+        "y": 10
+      },
+      "pivot": {
+        "x": 16,
+        "y": 28
+      },
+      "bounds": {
+        "left": 2,
+        "top": 3,
+        "right": 29,
+        "bottom": 27
+      }
+    },
+    {
+      "key": "barrel-tall",
+      "origin": {
+        "x": 182,
+        "y": 7
+      },
+      "pivot": {
+        "x": 16,
+        "y": 31
+      },
+      "bounds": {
+        "left": 5,
+        "top": 0,
+        "right": 26,
+        "bottom": 30
+      }
+    }
+  ]
+}

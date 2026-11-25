@@ -22,14 +22,19 @@ export function renderBarrel(spec: BarrelSpec) {
   const bottom = Math.floor((h + height) / 2);
   const top = bottom - height;
   const { cap, wall } = projectRoundVolume(cx, top, bottom, rimWidth, width, rimDepth);
-  const hoopCenters = [top + Math.round(height * 0.26), top + Math.round(height * 0.67)];
+  const refined = spec.prop.finish === 'e24';
+  const tall = height > width;
+  const hoopPositions = refined ? (tall ? [0.35, 0.72] : [0.26, 0.70]) : [0.26, 0.67];
+  const hoopCenters = hoopPositions.map(fraction => top + Math.round(height * fraction));
+  const hoopLastRow = refined ? 1 : 2;
+  const staveCount = refined && tall ? 5 : 7;
 
   for (const [y, left, right] of wall) {
     let previousStave = -1;
     for (let x = left; x <= right; x++) {
       const u = Math.max(-1, Math.min(1, (x + 0.5 - cx) * 2 / (right - left + 1)));
       const arc = Math.sqrt(Math.max(0, 1 - u * u));
-      const stave = Math.floor((Math.asin(u) / Math.PI + 0.5) * 7);
+      const stave = Math.floor((Math.asin(u) / Math.PI + 0.5) * staveCount);
       const darkSide = u > 0.38 || u < -0.83;
       const lit = u >= -0.65 && u < -0.14;
       let ink = darkSide ? side : lit ? frontLight : front;
@@ -40,9 +45,10 @@ export function renderBarrel(spec: BarrelSpec) {
 
       for (const center of hoopCenters) {
         const row = y - center - Math.round(arc * rimDepth * 0.36);
-        if (row < 0 || row > 2) continue;
-        const face = row === 2 || darkSide ? iron.shadow : iron.base;
-        put(hoops, x, y, row === 0 && u > -0.6 && u < -0.16 ? iron.light : face);
+        if (row < 0 || row > hoopLastRow) continue;
+        const face = row === hoopLastRow || darkSide ? iron.shadow : iron.base;
+        const glint = row === 0 && u > (refined ? -0.53 : -0.6) && u < (refined ? -0.27 : -0.16);
+        put(hoops, x, y, glint ? iron.light : face);
       }
     }
   }
@@ -52,7 +58,7 @@ export function renderBarrel(spec: BarrelSpec) {
   cluster(lid, crown, inner);
   for (const [i, [y, left, right]] of inner.entries()) {
     if (i === 0 && right > left) cluster(lid, crownLight, [[y, left, Math.floor((left + right) / 2)]]);
-    if (i === Math.floor(inner.length / 2) && right - left >= 6) {
+    if (!(refined && tall) && i === Math.floor(inner.length / 2) && right - left >= 6) {
       const end = right - 2 - spec.seed % 3;
       cluster(lid, crownGrain, [[y, left + 2, end]]);
     }

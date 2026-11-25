@@ -1,0 +1,76 @@
+{
+  "width": 160,
+  "height": 80,
+  "scale": 1,
+  "groundY": 64,
+  "placements": [
+    {
+      "key": "barrel-tall",
+      "origin": {
+        "x": 4,
+        "y": 33
+      },
+      "pivot": {
+        "x": 16,
+        "y": 31
+      },
+      "bounds": {
+        "left": 5,
+        "top": 0,
+        "right": 26,
+        "bottom": 30
+      }
+    },
+    {
+      "key": "domed",
+      "origin": {
+        "x": 44,
+        "y": 36
+      },
+      "pivot": {
+        "x": 16,
+        "y": 28
+      },
+      "bounds": {
+        "left": 1,
+        "top": 6,
+        "right": 29,
+        "bottom": 27
+      }
+    },
+    {
+      "key": "travel",
+      "origin": {
+        "x": 84,
+        "y": 35
+      },
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "bounds": {
+        "left": 1,
+        "top": 6,
+        "right": 30,
+        "bottom": 28
+      }
+    },
+    {
+      "key": "crate",
+      "origin": {
+        "x": 124,
+        "y": 35
+      },
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "bounds": {
+        "left": 2,
+        "top": 6,
+        "right": 29,
+        "bottom": 28
+      }
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 # Handoff
 
-E0–E1 remains at `368c8eb`. E2.1/E2.2 and its review artifacts are checkpointed locally at `bcd47ca` on `codex/e2-prop-quality`. The Project Owner selected C Travel as the lead for refinement and kept A, B and Crate for comparison. [E0–E1 gallery](benchmarks/results/sample/README.md) · [E2.1/E2.2 gallery](benchmarks/results/e2/README.md)
+The E0–E1 baseline is `368c8eb`. The E2.1/E2.2 checkpoint is `bcd47ca`. The E2.3 checkpoint is `659b717`. Both earlier comparison sets remain in the repository. [E2.3 gallery](benchmarks/results/e23/README.md)
 
-## Review E2.3
+## Owner review
 
-Start with Travel and the wide and tall barrels in the [E2.3 gallery](benchmarks/results/e23/README.md). Its 1×, 4×, light/dark and game scene previews use the same raster and scale. The comparisons retain the original Seed 42 and the earlier A/B/C/Crate renders. Use the [owner review sheet](benchmarks/results/e23/review.md) to record scores and revisions. All E2.3 variants are **PENDING_HUMAN_REVIEW**.
+Start with the [E2.4 gallery](benchmarks/results/e24/README.md) at native size. Inspect Barrel Tall's rim and upper hoop first, then Barrel Wide's body and Travel's front rail on the dark scene. Compare the six props together in the neutral scene and score each asset. Engineering validation has passed and art stays **PENDING_HUMAN_REVIEW**. [Owner score sheet](benchmarks/results/e24/review.md)
 
-Run `npm run benchmark:e23` to regenerate into the ignored run directory. Use `npm run generate -- --design barrel-wide`, `barrel-tall`, `travel`, `compact`, `domed` or `crate` for a single PNG. The CLI still loads saved AssetSpecs through `--spec`.
+Run `npm run benchmark:e24` from the Engine checkout to rebuild the scenes and props. Default CLI and Studio jobs use the latest finishes. Archived specs keep their previous render behavior. The fixture license and the future Studio preset are included. [Fixture notice](benchmarks/fixtures/e24/README.md) · [Wood & Iron swatches and preset](benchmarks/results/e24/README.md#palette-validation)
 
-Review Travel on dark ground and the tall barrel's rim at native size before advancing to E2.4. Palette selection and swatches are the next Studio integration proposal. [Geometry and art audit](docs/art-quality/e23-geometry.md) · [Technical validation](docs/e23-test-report.md)
+Use the owner decision to choose which variants carry into E3. Treat E4's runtime integration as a separate decision after the terrain and palette evidence. [Art and geometry audit](docs/art-quality/e24-audit.md) · [Test evidence](docs/e24-test-report.md) · [Draft PR and publishing commands](docs/e24-pr.md)

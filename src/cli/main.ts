@@ -3,9 +3,10 @@ import { dirname } from 'node:path';
 import { parseArgs } from 'node:util';
 import { encodePng } from '../core/renderer/png.ts';
 import { renderAsset } from '../generators/props/render.ts';
-import { makeBarrelSpec, makePropSpec } from '../generators/props/presets.ts';
+import { makeCurrentPropSpec } from '../generators/props/presets.ts';
 import { propDesigns, type PropDesign } from '../specs/prop-shape.ts';
 import { barrelDesigns } from '../specs/barrel-shape.ts';
+import { assessPropPalette } from '../quality/prop-palette.ts';
 import { inspectPng, sha256, validateRaster } from '../quality/raster.ts';
 
 try {
@@ -23,7 +24,7 @@ try {
   }
   const seed = Number(values.seed ?? '42');
   const spec: unknown = values.spec === undefined
-    ? barrel ? makeBarrelSpec(barrel, seed) : makePropSpec(design as PropDesign, seed, undefined, 'refined')
+    ? makeCurrentPropSpec(barrel ?? design as PropDesign, seed)
     : JSON.parse(await readFile(values.spec, 'utf8'));
   const asset = renderAsset(spec);
   const png = encodePng(asset.final);
@@ -35,7 +36,11 @@ try {
   const out = values.out ?? 'benchmarks/results/run/chest.png';
   await mkdir(dirname(out), { recursive: true });
   await writeFile(out, png);
-  console.log(JSON.stringify({ out, seed: asset.spec.seed, rgbaSha256: sha256(asset.final.rgba), technical: 'PASS', paletteWarnings: asset.paletteDiagnostics?.codes ?? [] }));
+  const palette = asset.paletteDiagnostics ? assessPropPalette(asset.paletteDiagnostics) : undefined;
+  console.log(JSON.stringify({
+    out, seed: asset.spec.seed, rgbaSha256: sha256(asset.final.rgba), technical: 'PASS',
+    paletteWarnings: palette?.warnings.map(warning => warning.code) ?? [], palette,
+  }));
 } catch (error) {
   console.error(error instanceof Error ? error.message : error);
   process.exitCode = 1;

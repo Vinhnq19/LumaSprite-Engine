@@ -12,7 +12,7 @@ type ComposedSpec = AssetSpecV1 & { prop: Extract<AssetSpecV1['prop'], { design:
 
 export function renderComposedProp(spec: ComposedSpec) {
   const { design, composition, finish } = spec.prop;
-  const refined = finish === 'refined';
+  const refined = finish !== undefined;
   const { frontWidth, sideDepth, bodyHeight, lidRise, bandSpacing, lockOffset } = composition;
   const { w, h } = spec.canvas;
   const { seed } = spec;
@@ -78,12 +78,14 @@ export function renderComposedProp(spec: ComposedSpec) {
       const foot = rect(x0 - 2, baseY - 3, x0 + 3, baseY + 1);
       ironPlate(fittings, foot, iron, true);
       if (refined && design === 'travel') fillFacePatch(fittings, foot, iron.base, 0, 0.45, 0.66, 1);
+      if (finish === 'e24') fillFacePatch(fittings, foot, iron.light, 0, 0.43, 0.36, 0.77);
     }
   }
 
   if (design === 'travel') {
     fillFacePatch(fittings, side, iron.shadow, 0.04, 0.77, 1, 0.9);
     fillFacePatch(fittings, front, refined ? iron.base : iron.shadow, 0.02, 0.77, 0.98, 0.9);
+    if (finish === 'e24') fillFacePatch(fittings, front, iron.light, 0.21, 0.77, 0.64, 0.84);
     const handle: Face = [facePoint(side, 0.14, 0.26), facePoint(side, 0.9, 0.26),
       facePoint(side, 0.9, 0.49), facePoint(side, 0.14, 0.49)];
     ironPlate(fittings, handle, iron, true);

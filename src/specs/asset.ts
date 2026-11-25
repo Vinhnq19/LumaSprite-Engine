@@ -25,13 +25,16 @@ export const assetSpecV1 = z.strictObject({
   ]),
   prop: z.discriminatedUnion('design', [
     z.strictObject({ design: z.literal('supply-chest') }),
-    z.strictObject({ design: z.enum(propDesigns), composition: compositionSchema, finish: z.literal('refined').optional() }).superRefine(({ design, composition }, context) => {
+    z.strictObject({ design: z.enum(propDesigns), composition: compositionSchema, finish: z.enum(['refined', 'e24']).optional() }).superRefine(({ design, composition, finish }, context) => {
+      if (finish === 'e24' && design !== 'travel') context.addIssue({
+        code: 'custom', path: ['finish'], message: 'E2.4 finish is available for Travel and Barrel.',
+      });
       const minimum = design === 'domed' ? 5 : design === 'travel' ? 4 : 3;
       if (composition.lidRise < minimum) context.addIssue({
         code: 'custom', path: ['composition', 'lidRise'], message: 'Lid rise is too low for this profile.',
       });
     }),
-    z.strictObject({ design: z.literal('barrel'), composition: barrelCompositionSchema }),
+    z.strictObject({ design: z.literal('barrel'), composition: barrelCompositionSchema, finish: z.literal('e24').optional() }),
   ]),
 }).superRefine(({ prop, layers }, context) => {
   if ((prop.design === 'barrel') !== (layers.length === barrelLayers.length)) context.addIssue({
