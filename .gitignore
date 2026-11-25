@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.cache/
+*.log
+.env
+.env.*
+!.env.example
+.npmrc
+.agents/
+.codex/
+.aws/
+benchmarks/results/run/
+graphify-out/
+*.tmp
