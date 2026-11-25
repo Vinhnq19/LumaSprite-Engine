@@ -1,0 +1,77 @@
+{
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "masks": 47,
+  "slots": 48,
+  "authored": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "palette": {
+      "mode": "authored",
+      "status": "FULL_RAMP",
+      "warnings": [],
+      "midtoneGap": 11,
+      "authoredMidtoneGap": 11,
+      "ramps": {
+        "grass": [
+          "#4b6940",
+          "#68864c",
+          "#7f9858"
+        ],
+        "dirt": [
+          "#936f53",
+          "#a68061",
+          "#b58f6f"
+        ]
+      }
+    },
+    "pngSha256": "fc58cf83ef209ac785281db44b1906fece6fc1f339b5f31099415ab77c0cc5cf"
+  },
+  "locked": {
+    "seams": {
+      "horizontal": 4096,
+      "vertical": 4096,
+      "matchedBorderPixels": 131072
+    },
+    "palette": {
+      "mode": "locked",
+      "status": "PALETTE_LIMITED",
+      "warnings": [
+        {
+          "code": "GRASS_RAMP_COMPRESSED",
+          "material": "grass"
+        },
+        {
+          "code": "DIRT_RAMP_COMPRESSED",
+          "material": "dirt"
+        },
+        {
+          "code": "GRASS_DIRT_INK_COLLISION",
+          "material": "grass/dirt"
+        },
+        {
+          "code": "GRASS_DIRT_CONTRAST_LOSS",
+          "material": "grass/dirt"
+        }
+      ],
+      "midtoneGap": 0,
+      "authoredMidtoneGap": 11,
+      "ramps": {
+        "grass": [
+          "#536da0",
+          "#536da0",
+          "#536da0"
+        ],
+        "dirt": [
+          "#536da0",
+          "#536da0",
+          "#f7ba5b"
+        ]
+      }
+    },
+    "pngSha256": "7baa1aeda6efa814bb65666ac50853a071e49e3cba20e7886b9d0b1ab3b35c67"
+  }
+}

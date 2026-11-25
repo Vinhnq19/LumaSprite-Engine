@@ -26,3 +26,12 @@ export function nearestInk(hex: string, palette: readonly number[]): number {
   };
   return palette.reduce((best, ink) => distance(ink) < distance(best) ? ink : best);
 }
+
+export function mapPalette<Role extends string>(roles: Record<Role, string>, palette: readonly string[]) {
+  const inks = palette.map(pack);
+  return Object.fromEntries(Object.entries(roles).map(([role, color]) => [role, nearestInk(color as string, inks)])) as Record<Role, number>;
+}
+
+export function inkLuma(ink: number) {
+  return Math.round(((ink >>> 24) * 2126 + ((ink >>> 16) & 255) * 7152 + ((ink >>> 8) & 255) * 722) / 10000);
+}

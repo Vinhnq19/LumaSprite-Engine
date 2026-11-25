@@ -48,3 +48,14 @@ export function nearestNeighbor(raster: Raster, scale: number): Raster {
   }
   return result;
 }
+
+export function blit(destination: Raster, source: Raster, left: number, top: number) {
+  if (!Number.isInteger(left) || !Number.isInteger(top) || left < 0 || top < 0 ||
+      left + source.w > destination.w || top + source.h > destination.h) {
+    throw new RangeError('Source lies outside the destination raster.');
+  }
+  for (let y = 0; y < source.h; y++) for (let x = 0; x < source.w; x++) {
+    const ink = source.rgba.readUInt32BE((y * source.w + x) * 4);
+    if ((ink & 255) !== 0) destination.rgba.writeUInt32BE(ink, ((top + y) * destination.w + left + x) * 4);
+  }
+}

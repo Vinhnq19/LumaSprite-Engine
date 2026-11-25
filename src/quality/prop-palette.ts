@@ -1,15 +1,9 @@
 import type { diagnosePalette } from '../core/materials/faces.ts';
-import { chestColors } from '../core/palette/colors.ts';
+import { chestColors, inkLuma, pack } from '../core/palette/colors.ts';
 
 type RampMapping = ReturnType<typeof diagnosePalette>;
 
-const luminance = (color: string) => {
-  const r = parseInt(color.slice(1, 3), 16);
-  const g = parseInt(color.slice(3, 5), 16);
-  const b = parseInt(color.slice(5, 7), 16);
-  return Math.round((r * 2126 + g * 7152 + b * 722) / 10000);
-};
-const midtoneGap = (wood: string, iron: string) => Math.abs(luminance(wood) - luminance(iron));
+const midtoneGap = (wood: string, iron: string) => Math.abs(inkLuma(pack(wood)) - inkLuma(pack(iron)));
 const authoredMidtoneGap = midtoneGap(chestColors.wood, chestColors.iron);
 
 export function assessPropPalette(mapping: RampMapping) {

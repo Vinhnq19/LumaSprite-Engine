@@ -1,13 +1,12 @@
-import { chestColors, nearestInk, pack } from '../palette/colors.ts';
+import { chestColors, mapPalette } from '../palette/colors.ts';
 import type { AssetSpecV1 } from '../../specs/asset.ts';
 
 export function materialRamps(spec: AssetSpecV1) {
-  const palette = spec.palette.map(pack);
-  const color = (role: keyof typeof chestColors) => nearestInk(chestColors[role], palette);
+  const inks = mapPalette(chestColors, spec.palette);
   return {
-    contour: color('contour'),
-    wood: { shadow: color('woodShadow'), dark: color('woodDark'), base: color('wood'), light: color('woodLight'), glint: color('woodGlint') },
-    iron: { shadow: color('ironShadow'), base: color('iron'), light: color('ironLight') },
-    brass: { shadow: color('brassShadow'), base: color('brass'), light: color('brassLight') },
+    contour: inks.contour,
+    wood: { shadow: inks.woodShadow, dark: inks.woodDark, base: inks.wood, light: inks.woodLight, glint: inks.woodGlint },
+    iron: { shadow: inks.ironShadow, base: inks.iron, light: inks.ironLight },
+    brass: { shadow: inks.brassShadow, base: inks.brass, light: inks.brassLight },
   };
 }

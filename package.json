@@ -17,6 +17,10 @@
     "benchmark:e2": "node scripts/benchmark-e2.ts",
     "benchmark:e23": "node scripts/benchmark-e2.ts --e23",
     "benchmark:e24": "node scripts/benchmark-e24.ts",
+    "terrain": "node dist/cli/terrain.js",
+    "benchmark:e3": "node scripts/benchmark-e3.ts",
+    "report:e3": "node scripts/report-e3.ts",
+    "test:terrain-studio": "node --test scripts/terrain-studio.ts",
     "serve": "node dist/server/main.js",
     "test:studio": "node --test scripts/studio-preview.ts"
   },
