@@ -54,9 +54,9 @@ test('Studio HTTP receives a candidate and verifies pixels, selection, receipt a
   assert.deepEqual(discover.capabilities.versions, [1]);
   assert.deepEqual(discover.capabilities.assetTypes, ['prop']);
 
-  async function preview(region: object | null) {
+  async function preview(region: object | null, brief = supplyChestBrief) {
     const started = await call(base + '/jobs', {
-      revision: saved.revision, assetType: 'prop', w: 32, h: 32, brief: supplyChestBrief, source: region,
+      revision: saved.revision, assetType: 'prop', w: 32, h: 32, brief, source: region,
     }, 201);
     const path = base + '/' + started.id;
     let job = started;
@@ -93,6 +93,10 @@ test('Studio HTTP receives a candidate and verifies pixels, selection, receipt a
   const expected = new Uint32Array(sourcePixels);
   expected[selected] = masked.candidate.rgba[selected];
   assert.deepEqual(masked.candidate.rgba, expected);
+  const barrel = await preview(null, 'Tall wooden barrel');
+  assert.ok(barrel.candidate.rgba.some((ink: number) => ink !== 0));
+  assert.ok(barrel.candidate.rgba.every((ink: number) => source.palette.includes(ink)));
+  assert.notDeepEqual(barrel.candidate.rgba, normal.candidate.rgba);
   const before = await call(project);
   assert.equal(before.revision, saved.revision);
   assert.equal(before.assets.length, 1);

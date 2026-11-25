@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { unpack } from '../../core/palette/colors.ts';
-import { supportsSupplyChest } from '../../providers/mock/planner.ts';
+import { supportsBarrelBrief, supportsSupplyChest } from '../../providers/mock/planner.ts';
 import { chestSize } from '../../specs/asset.ts';
 
 const features = ['previews', 'progress', 'masks'] as const;
@@ -22,7 +22,7 @@ const requestSchema = z.strictObject({
   ),
   assetType: z.literal('prop'),
   brief: z.string().trim().min(1).max(2000).refine(
-    supportsSupplyChest, 'Supported brief: wooden supply chest.',
+    brief => supportsSupplyChest(brief) || supportsBarrelBrief(brief), 'Supported briefs: wooden supply chest or wooden barrel.',
   ),
   canvas: z.strictObject({ w: z.literal(chestSize), h: z.literal(chestSize) }),
   frameDurationsMs: z.tuple([z.number().int().min(1).max(60000)]),

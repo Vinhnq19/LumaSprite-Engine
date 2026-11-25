@@ -25,3 +25,9 @@ The jobs module owns candidate lifecycle and request receipts. Studio HTTP valid
 ## E2 prop composition
 
 Saved AssetSpec v1 documents keep the original `supply-chest` design. E2 adds four design values with validated dimensions in `prop.composition`. The composed renderer projects the front, side and lid from a shared seam and fills them with face-relative materials. The CLI defaults to the domed preset. HTTP applies the same geometry using the frozen palette and optional mask. [E2 audit](../art-quality/e2-audit.md)
+
+## E2.3 prop geometry
+
+The validated prop renderer dispatches to a legacy chest, a projected box composition or a round barrel composition. Shared geometry returns attachment faces, stepped profile strips and integer curved-wall spans. The box and round renderers share outline composition and material ramps. The individual prop renderers define the placement of locks, braces, staves and hoops.
+
+A box spec can choose the refined finish. A barrel spec has an independent width, height, rim width and rim depth with body, iron and rim layer order. Saved first-generation specs retain their original path. [E2.3 geometry audit](../art-quality/e23-geometry.md)

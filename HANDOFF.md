@@ -1,11 +1,11 @@
 # Handoff
 
-E0–E1 engineering baseline `368c8eb` is approved. Its art is marked **NEEDS_REFINEMENT** by the Project Owner. Seed 42 was selected as the comparison baseline and Seed 43 is the control. [Original gallery](benchmarks/results/sample/README.md)
+E0–E1 remains at `368c8eb`. E2.1/E2.2 and its review artifacts are checkpointed locally at `bcd47ca` on `codex/e2-prop-quality`. The Project Owner selected C Travel as the lead for refinement and kept A, B and Crate for comparison. [E0–E1 gallery](benchmarks/results/sample/README.md) · [E2.1/E2.2 gallery](benchmarks/results/e2/README.md)
 
-## Review E2
+## Review E2.3
 
-Compare A Compact, B Domed and C Travel at 1×, then use the 4× and tile previews to inspect shape and material. The gallery includes the Seed 42 before/after, the shared-material crate and the Studio locked-palette previews. Record which design should advance and the revisions it needs. E2 candidates are **PENDING_HUMAN_REVIEW**. [E2 gallery](benchmarks/results/e2/README.md) · [Owner review sheet](benchmarks/results/e2/review.md)
+Start with Travel and the wide and tall barrels in the [E2.3 gallery](benchmarks/results/e23/README.md). Its 1×, 4×, light/dark and game scene previews use the same raster and scale. The comparisons retain the original Seed 42 and the earlier A/B/C/Crate renders. Use the [owner review sheet](benchmarks/results/e23/review.md) to record scores and revisions. All E2.3 variants are **PENDING_HUMAN_REVIEW**.
 
-Regenerate through `npm run benchmark:e2`. Use `npm run generate -- --design compact --seed 42` for an individual prop. Design options are `compact`, `domed`, `travel` and `crate`. Saved E0–E1 JSON still renders through `--spec`.
+Run `npm run benchmark:e23` to regenerate into the ignored run directory. Use `npm run generate -- --design barrel-wide`, `barrel-tall`, `travel`, `compact`, `domed` or `crate` for a single PNG. The CLI still loads saved AssetSpecs through `--spec`.
 
-The next E2 round can refine the selected silhouette and test a user-selectable wood-and-iron palette preset in Studio. Confirm locked-palette diagnostics before proposing a protocol change. [Shape and material audit](docs/art-quality/e2-audit.md) · [E2 test evidence](docs/e2-test-report.md)
+Review Travel on dark ground and the tall barrel's rim at native size before advancing to E2.4. Palette selection and swatches are the next Studio integration proposal. [Geometry and art audit](docs/art-quality/e23-geometry.md) · [Technical validation](docs/e23-test-report.md)

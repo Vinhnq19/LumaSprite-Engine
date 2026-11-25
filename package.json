@@ -15,6 +15,7 @@
     "generate": "node dist/cli/main.js",
     "benchmark": "node dist/cli/benchmark.js",
     "benchmark:e2": "node scripts/benchmark-e2.ts",
+    "benchmark:e23": "node scripts/benchmark-e2.ts --e23",
     "serve": "node dist/server/main.js",
     "test:studio": "node --test scripts/studio-preview.ts"
   },

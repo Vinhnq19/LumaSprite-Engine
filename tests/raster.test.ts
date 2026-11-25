@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import { fillPolygon } from '../src/core/geometry/shapes.ts';
 import { makeRaster, nearestNeighbor, put } from '../src/core/pixels/raster.ts';
 import { decodePng, encodePng } from '../src/core/renderer/png.ts';
-import { renderAsset } from '../src/generators/props/supply-chest.ts';
+import { renderAsset } from '../src/generators/props/render.ts';
 import { mockPlanner, supplyChestBrief } from '../src/providers/mock/planner.ts';
 import { inspectPng, validateRaster } from '../src/quality/raster.ts';
 

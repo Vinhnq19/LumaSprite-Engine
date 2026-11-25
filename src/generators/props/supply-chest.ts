@@ -1,12 +1,9 @@
 import { cluster, fillPolygon, outlinedPolygon, type Point, type Span } from '../../core/geometry/shapes.ts';
 import { materialRamps } from '../../core/materials/ramps.ts';
 import { composite, makeRaster, silhouette } from '../../core/pixels/raster.ts';
-import { parseAssetSpec } from '../../specs/asset.ts';
-import { renderComposedProp } from './composed-prop.ts';
+import type { AssetSpecV1 } from '../../specs/asset.ts';
 
-export function renderAsset(input: unknown) {
-  const spec = parseAssetSpec(input);
-  if (spec.prop.design !== 'supply-chest') return renderComposedProp({ ...spec, prop: spec.prop });
+export function renderSupplyChest(spec: AssetSpecV1) {
   const { w, h } = spec.canvas;
   const { contour, wood, iron, brass } = materialRamps(spec);
   const [body, lid, bands, lock] = spec.layers.map(() => makeRaster(w, h));

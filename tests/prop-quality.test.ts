@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { encodePng } from '../src/core/renderer/png.ts';
 import { makePropSpec } from '../src/generators/props/presets.ts';
-import { renderAsset } from '../src/generators/props/supply-chest.ts';
+import { renderAsset } from '../src/generators/props/render.ts';
 import { inspectPng, sha256, validateRaster } from '../src/quality/raster.ts';
 import { propDesigns } from '../src/specs/prop-shape.ts';
 

@@ -1,8 +1,9 @@
 import { randomUUID } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
 import type { StudioInput, StudioResult } from '../adapters/studio/contract.ts';
-import { renderAsset } from '../generators/props/supply-chest.ts';
-import { makePropSpec } from '../generators/props/presets.ts';
+import { renderAsset } from '../generators/props/render.ts';
+import { makeBarrelSpec, makePropSpec } from '../generators/props/presets.ts';
+import { supportsBarrelBrief } from '../providers/mock/planner.ts';
 import { sha256, validateRaster } from '../quality/raster.ts';
 
 type State = 'queued' | 'running' | 'ready' | 'failed' | 'canceled';
@@ -78,14 +79,16 @@ export class JobManager {
       job.state = 'running';
       const seed = Number.parseInt(sha256(request.brief).slice(0, 8), 16);
       const design = /\btravel\b/i.test(request.brief) ? 'travel' : /\bcompact\b/i.test(request.brief) ? 'compact' : 'domed';
-      const spec = makePropSpec(design, seed, palette);
+      const spec = supportsBarrelBrief(request.brief)
+        ? makeBarrelSpec(/\btall\b/i.test(request.brief) ? 'barrel-tall' : 'barrel-wide', seed, palette)
+        : makePropSpec(design, seed, palette, 'refined');
       job.completed = 1;
       await delay(75, undefined, { signal });
       signal.throwIfAborted();
 
       const asset = renderAsset(spec);
       const { final } = asset;
-      if ('paletteDiagnostics' in asset && asset.paletteDiagnostics.codes.length) {
+      if (asset.paletteDiagnostics?.codes.length) {
         console.warn('Palette for job %s: %s', job.id, asset.paletteDiagnostics.codes.join(', '));
       }
       if (protection) {

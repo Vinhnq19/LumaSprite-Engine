@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { nearestNeighbor } from '../core/pixels/raster.ts';
 import { encodePng } from '../core/renderer/png.ts';
-import { renderAsset } from '../generators/props/supply-chest.ts';
+import { renderAsset } from '../generators/props/render.ts';
 import { mockPlanner, supplyChestBrief } from '../providers/mock/planner.ts';
 import type { ArtisticReview } from '../quality/artistic.ts';
 import { inspectPng, sha256, validateRaster } from '../quality/raster.ts';

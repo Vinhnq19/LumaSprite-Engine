@@ -7,10 +7,15 @@ import type { materialRamps } from './ramps.ts';
 type Ramps = ReturnType<typeof materialRamps>;
 type Lighting = 'top' | 'front' | 'side';
 
-export function woodFace(target: Raster, face: Face, wood: Ramps['wood'], lighting: Lighting, seed: number) {
+export function woodPlaneTones(wood: Ramps['wood'], lighting: Lighting) {
   const base = lighting === 'top' ? wood.light : lighting === 'front' ? wood.base : wood.dark;
   const upper = lighting === 'top' ? wood.glint : lighting === 'front' ? wood.light : wood.base;
   const lower = lighting === 'top' ? wood.base : lighting === 'front' ? wood.dark : wood.shadow;
+  return { base, upper, lower };
+}
+
+export function woodFace(target: Raster, face: Face, wood: Ramps['wood'], lighting: Lighting, seed: number) {
+  const { base, upper, lower } = woodPlaneTones(wood, lighting);
   fillPolygon(target, face, base);
   fillFacePatch(target, face, lower, 0, 0.74, 1, 1);
   fillFacePatch(target, face, upper, 0.04, 0, 0.78, 0.18);

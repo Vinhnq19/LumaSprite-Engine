@@ -1,15 +1,18 @@
-import { facePoint, fillFacePatch, outline, rect, type Face } from '../../core/geometry/faces.ts';
+import { facePoint, fillFacePatch, rect, type Face } from '../../core/geometry/faces.ts';
 import { fillPolygon, type Point } from '../../core/geometry/shapes.ts';
 import { diagnosePalette, ironPlate, woodFace } from '../../core/materials/faces.ts';
 import { materialRamps } from '../../core/materials/ramps.ts';
-import { composite, makeRaster, put, silhouette } from '../../core/pixels/raster.ts';
+import { makeRaster, put, silhouette } from '../../core/pixels/raster.ts';
 import type { AssetSpecV1 } from '../../specs/asset.ts';
-import { riseForDepth } from '../../specs/prop-shape.ts';
+import { projectBox, projectProfile } from '../../core/geometry/projection.ts';
+import { renderOutlinedLayers } from '../../core/renderer/layers.ts';
+import type { PropDesign } from '../../specs/prop-shape.ts';
 
-type ComposedSpec = AssetSpecV1 & { prop: Exclude<AssetSpecV1['prop'], { design: 'supply-chest' }> };
+type ComposedSpec = AssetSpecV1 & { prop: Extract<AssetSpecV1['prop'], { design: PropDesign }> };
 
 export function renderComposedProp(spec: ComposedSpec) {
-  const { design, composition } = spec.prop;
+  const { design, composition, finish } = spec.prop;
+  const refined = finish === 'refined';
   const { frontWidth, sideDepth, bodyHeight, lidRise, bandSpacing, lockOffset } = composition;
   const { w, h } = spec.canvas;
   const { seed } = spec;
@@ -21,19 +24,13 @@ export function renderComposedProp(spec: ComposedSpec) {
   const seam = baseY - bodyHeight;
   const left = Math.floor((w - frontWidth - sideDepth) / 2);
   const right = left + frontWidth;
-  const rise = riseForDepth(sideDepth);
   const center = Math.floor((left + right) / 2);
-  const footInset = design === 'travel' ? 2 : 0;
-  const a: Point = [left, seam];
-  const b: Point = [right, seam];
-  const c: Point = [right + sideDepth, seam - rise];
-  const d: Point = [right - footInset, baseY];
-  const e: Point = [right + sideDepth, baseY - rise - footInset];
-  const front: Face = [a, b, d, [left + footInset, baseY]];
-  const side: Face = [b, c, e, d];
+  const taper = design === 'travel' ? 2 : 0;
+  const { front, side, top } = projectBox({ left, top: seam, width: frontWidth, depth: sideDepth, bottom: baseY, taper });
 
   woodFace(body, side, wood, 'side', seed);
   woodFace(body, front, wood, 'front', seed);
+  if (refined && design === 'crate') fillFacePatch(body, side, wood.shadow, 0.62, 0, 1, 1);
   fillFacePatch(body, front, wood.shadow, 0, 1 - 2 / bodyHeight, 1, 1);
   fillFacePatch(body, side, wood.shadow, 0, 1 - 2 / bodyHeight, 1, 1);
   fillPolygon(flatBody, side, wood.dark);
@@ -42,26 +39,17 @@ export function renderComposedProp(spec: ComposedSpec) {
   fillFacePatch(body, side, wood.shadow, 0, 0, 1 / sideDepth, 1);
 
   const frontRise = design === 'domed' || design === 'travel' ? 2 : lidRise;
-  const profile = design === 'domed'
-    ? [[0, frontRise], [0.25, lidRise - 2], [0.55, lidRise], [0.78, lidRise - 1], [1, lidRise - 3]]
+  const profile: Point[] = design === 'domed'
+    ? refined
+      ? [[0, frontRise], [0.25, lidRise - 3], [0.5, lidRise - 1], [0.75, lidRise - 1], [1, lidRise - 3]]
+      : [[0, frontRise], [0.25, lidRise - 2], [0.55, lidRise], [0.78, lidRise - 1], [1, lidRise - 3]]
     : design === 'travel' ? [[0, frontRise], [0.4, lidRise], [1, lidRise]] : [[0, lidRise], [1, lidRise]];
-  const roofAt = (x: number, step: number): Point => {
-    const [distance, elevation] = profile[step];
-    return [x + Math.round(sideDepth * distance), seam - Math.round(rise * distance) - elevation];
-  };
-  const end = profile.length - 1;
-  const lidSide: Point[] = [b, c, ...profile.map((_, i) => roofAt(right, i)).reverse()];
+  const { strips, lip, side: lidSide } = projectProfile(top, profile);
   fillPolygon(lid, lidSide, wood.dark);
   fillPolygon(flatLid, lidSide, wood.dark);
-
-  const strips: Face[] = [];
-  for (let i = 0; i < end; i++) {
-    const strip: Face = [roofAt(left, i + 1), roofAt(right, i + 1), roofAt(right, i), roofAt(left, i)];
-    strips.push(strip);
-  }
   for (let i = strips.length - 1; i >= 0; i--) {
     const strip = strips[i];
-    const ink = design === 'domed' && i === 0 ? wood.base : i === 1 ? wood.glint : wood.light;
+    const ink = design === 'domed' && i === 0 ? wood.base : i === 1 && !(refined && design === 'domed') ? wood.glint : wood.light;
     fillPolygon(lid, strip, ink);
     fillPolygon(flatLid, strip, wood.light);
     if (strips.length === 1) {
@@ -69,10 +57,10 @@ export function renderComposedProp(spec: ComposedSpec) {
       fillFacePatch(lid, strip, wood.base, 0.24, 0.56, 0.95, 0.79);
     }
   }
-  const lip: Face = [roofAt(left, 0), roofAt(right, 0), b, a];
   fillPolygon(lid, lip, wood.light);
   fillPolygon(flatLid, lip, wood.light);
   fillFacePatch(lid, lip, wood.shadow, 0, 1 - 1 / frontRise, 1, 1);
+  if (refined && design === 'compact') fillFacePatch(lid, lip, wood.glint, 0.05, 0, 0.95, 1 / frontRise);
 
   for (const x of [center - bandSpacing, center + bandSpacing]) {
     const u = (x - left) / frontWidth;
@@ -87,13 +75,15 @@ export function renderComposedProp(spec: ComposedSpec) {
     if (design === 'travel' || design === 'crate') {
       const [footX] = facePoint(front, u, 1);
       const x0 = Math.floor(footX);
-      ironPlate(fittings, rect(x0 - 2, baseY - 3, x0 + 3, baseY + 1), iron, true);
+      const foot = rect(x0 - 2, baseY - 3, x0 + 3, baseY + 1);
+      ironPlate(fittings, foot, iron, true);
+      if (refined && design === 'travel') fillFacePatch(fittings, foot, iron.base, 0, 0.45, 0.66, 1);
     }
   }
 
   if (design === 'travel') {
     fillFacePatch(fittings, side, iron.shadow, 0.04, 0.77, 1, 0.9);
-    fillFacePatch(fittings, front, iron.shadow, 0.02, 0.77, 0.98, 0.9);
+    fillFacePatch(fittings, front, refined ? iron.base : iron.shadow, 0.02, 0.77, 0.98, 0.9);
     const handle: Face = [facePoint(side, 0.14, 0.26), facePoint(side, 0.9, 0.26),
       facePoint(side, 0.9, 0.49), facePoint(side, 0.14, 0.49)];
     ironPlate(fittings, handle, iron, true);
@@ -103,21 +93,19 @@ export function renderComposedProp(spec: ComposedSpec) {
       facePoint(front, 0.89, 0.12), facePoint(front, 0.33, 0.85)];
     fillPolygon(latch, brace, wood.dark);
     fillPolygon(flatBrace, brace, wood.dark);
-    fillFacePatch(latch, brace, wood.light, 0, 0, 0.6, 1);
+    fillFacePatch(latch, brace, wood.light, 0, 0, refined ? 0.44 : 0.6, 1);
   } else {
     const x = center + lockOffset;
     fillPolygon(latch, [[x - 2, seam - 2], [x + 3, seam - 2], [x + 3, seam + 2],
       [x + 1, seam + 4], [x, seam + 4], [x - 2, seam + 2]], brass.shadow);
     fillPolygon(latch, rect(x - 1, seam - 1, x + 2, seam + 2), brass.base);
     put(latch, x - 1, seam - 1, brass.light);
+    if (refined && design === 'compact') put(latch, x, seam - 1, brass.light);
     put(latch, x, seam + 1, contour);
   }
 
   const layers = [body, lid, fittings, latch];
-  const filled = composite(layers);
-  const edge = outline(filled, contour);
   const flatFocal = design === 'crate' ? flatBrace : silhouette(latch, brass.base);
-  const flat = composite([edge, flatBody, flatLid, silhouette(fittings, iron.base), flatFocal]);
-  const final = composite([edge, ...layers]);
-  return { spec, flat, final, silhouette: silhouette(final, contour), paletteDiagnostics: diagnosePalette(ramps) };
+  const flatLayers = [flatBody, flatLid, silhouette(fittings, iron.base), flatFocal];
+  return { spec, ...renderOutlinedLayers(layers, flatLayers, contour), paletteDiagnostics: diagnosePalette(ramps) };
 }

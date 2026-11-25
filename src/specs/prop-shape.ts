@@ -1,9 +1,8 @@
 import { z } from 'zod';
+import { riseForDepth } from '../core/geometry/projection.ts';
 
 export const propDesigns = ['compact', 'domed', 'travel', 'crate'] as const;
 export type PropDesign = (typeof propDesigns)[number];
-
-export const riseForDepth = (depth: number) => Math.ceil(depth / 2);
 
 export const compositionSchema = z.strictObject({
   frontWidth: z.number().int().min(18).max(24),
