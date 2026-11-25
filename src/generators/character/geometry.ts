@@ -30,7 +30,15 @@ function segment(ink: Ink, from: Point, to: Point, w0: number, w1: number): Shap
   ];
 }
 
-export function planCharacter(spec: CharacterSpec) {
+export type GaitPose = {
+  phase: 'contact' | 'down' | 'passing' | 'up' | 'transition';
+  planted: Record<'near' | 'far', boolean>;
+  ground: Record<'near' | 'far', number>;
+  pushOff: 'near' | 'far' | null;
+  lanternSway: number;
+};
+
+export function planCharacter(spec: CharacterSpec, gait?: GaitPose) {
   const { proportions: p, pose } = spec;
   const turn = spec.version === 1 ? 0 : spec.pose.turn;
   const outfit = spec.version === 3 ? spec.outfit : undefined;
@@ -70,10 +78,11 @@ export function planCharacter(spec: CharacterSpec) {
     const heel = ax - Math.floor(bootWidth * .33);
     const toe = heel + bootWidth;
     const pitch = pose.kind === 'forward-step-hold' && side !== pose.support ? Math.ceil(p.boot[1] / 2) : 0;
+    const pushing = gait?.pushOff === side;
     for (const [joint, point, name] of [
       ['shoulder', shoulder, 'upper-arm'], ['elbow', elbow, 'forearm'], ['wrist', wrist, 'forearm'], ['palm', palm, 'hand'],
       ['hip', hip, 'thigh'], ['knee', knee, 'shin'], ['ankle', ankle, 'boot'],
-      ['ground', [pitch ? heel + 1 : ax, sole - 1], 'boot'],
+      ['ground', [gait ? ax + 4 : pitch ? heel + 1 : ax, sole - 1], 'boot'],
     ] as const) landmarks[side + '-' + joint] = { point, partId: side + '-' + name };
     for (const chain of [['chest', 'shoulder', 'elbow', 'wrist', 'palm'], ['pelvis', 'hip', 'knee', 'ankle', 'ground']]) {
       for (let i = 1; i < chain.length; i++) {
@@ -91,7 +100,8 @@ export function planCharacter(spec: CharacterSpec) {
         part(side + '-shin', ...segment(pants, knee, ankle, p.leg[1] + 1 - dims, p.leg[1] - dims)),
         part(side + '-boot', polygon('sole', [heel, ay - 2], [ax + 2, ay - 2], [ax + 3, ay],
           [toe - 1, ay + 1 - pitch], [toe, ay + 3 - pitch], [toe - 1, sole - pitch],
-          ...(pitch ? [[ax, sole] as const] : []), [heel, sole])),
+          ...(pushing ? [[ax + 2, sole] as const] : []), ...(pitch ? [[ax, sole] as const] : []),
+          [heel, sole - (pushing ? 2 : 0)])),
       ],
     }];
   })) as Record<'far' | 'near', { arm: Part[]; leg: Part[] }>;
@@ -114,11 +124,14 @@ export function planCharacter(spec: CharacterSpec) {
   let held: Part[] = [];
   if (spec.version !== 3) {
     const [lampW, lampH] = spec.proportions.lantern;
-    const left = gx - Math.floor(lampW / 2), top = gy + (turn ? 5 : 4), right = left + lampW, bottom = top + lampH;
+    const sway = gait?.lanternSway ?? 0;
+    const left = gx - Math.floor(lampW / 2) + sway, top = gy + (turn ? 5 : 4), right = left + lampW, bottom = top + lampH;
+    const rail = (x: number) => sway ? polygon('iron', [x, gy], [x + 1, gy], [x + 1, gy + 4],
+      [x + 1 + sway, top + 2], [x + sway, top + 2], [x, gy + 4]) : box('iron', x, gy, x + 1, top + 2);
     const handle = turn ? [
       box('iron', gx - 2, gy - 1, gx + 3, gy + 1),
-      box('iron', gx - 2, gy, gx - 1, top + 2),
-      box('iron', gx + 2, gy, gx + 3, top + 2),
+      rail(gx - 2),
+      rail(gx + 2),
     ] : [polygon('iron', [gx, gy - 1], [gx + 2, gy], [gx + 2, top + 1], [gx, top + 1])];
     landmarks['grip-anchor'] = { point: [gx, gy], partId: 'lantern' };
     links.push({ from: 'near-wrist', to: 'grip-anchor' });
@@ -167,7 +180,8 @@ export function planCharacter(spec: CharacterSpec) {
   ];
 
   return { parts, landmarks, links, pivot: pose.pivot, support: pose.support, facing: spec.view,
-    ...(spec.version !== 1 ? { poseIntent: spec.pose.kind, projectedGround: {
+    ...(gait ? { gait } : {}),
+    ...(spec.version !== 1 ? { poseIntent: spec.pose.kind, projectedGround: gait?.ground ?? {
       near: pose.pivot[1] + (pose.support === 'near' ? 0 : spec.pose.secondaryGroundOffset),
       far: pose.pivot[1] + (pose.support === 'far' ? 0 : spec.pose.secondaryGroundOffset),
     } } : {}),

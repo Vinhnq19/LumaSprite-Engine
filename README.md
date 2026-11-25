@@ -54,7 +54,7 @@ Use `npm run character -- --material m2 --shape-lock benchmarks/results/e42/b1-s
 
 E4 closed with Surveyor R2 + M2P and the E4.4 revised Forest Courier as approved single-view baselines. Verify a character package with `npm run character -- --verify-package <package-directory>`. [E4 final acceptance](docs/e4-final-acceptance.md) · [Character package index](benchmarks/results/e44/README.md)
 
-E5.1 adds a four-frame Surveyor idle, AnimationSpec v1 and verified PNG strip/timing export. Run `npm run benchmark:e51` or use the animation CLI after building. [Idle gallery](docs/LumaSprite-Engine-E5.1-Report.html) · [Animation architecture](docs/architecture/animation-foundation.md)
+E5.1 is the approved subtle idle baseline. E5.2 adds W1 and W2 with AnimationSpec v2, exact strip/timing export and frame-stepped root and contact tracks. Run `npm run benchmark:e52` or use the animation CLI after building. [Idle acceptance](docs/e51-idle-acceptance.md) · [Walk gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk motion contract](docs/architecture/e52-walk-motion.md)
 
 ## Verify
 

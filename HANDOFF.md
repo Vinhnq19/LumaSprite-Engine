@@ -1,6 +1,8 @@
 # Handoff
 
-**E5.1 is E5_1_READY_FOR_HUMAN_ANIMATION_REVIEW.** Surveyor R2 has a four-frame idle at 64 × 64. Engine and Studio preserve the exact frames, 1,800 ms timing, pivot and looping export. Target-game runtime validation is pending. The Project Owner's idle decision gates E5.2. [Offline loop gallery](docs/LumaSprite-Engine-E5.1-Report.html) · [Human review](benchmarks/results/e51/review.md) · [QA](docs/e51-test-report.md) · [PR draft](docs/e51-pr.md)
+**E5.2 is E5_2_READY_FOR_HUMAN_WALK_REVIEW.** Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. E5.3 awaits the owner's decision. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
+
+The Project Owner approved E5.0 architecture and E5.1 as a subtle idle with limitations. The four 64 × 64 frame slots and 1,800 ms loop stay frozen. Target-game runtime is still pending. [Idle acceptance](docs/e51-idle-acceptance.md) · [E5.1 gallery](docs/LumaSprite-Engine-E5.1-Report.html)
 
 **E4 is closed with artistic limitations.** The Project Owner approved E4 engineering and selected Field Surveyor R2 + M2P and the E4.4 revised Forest Courier as the single-view 64 × 64 baseline. The views favor the right-facing side and Courier still has limited coat-to-leather contrast in dark scenes. [Final acceptance](docs/e4-final-acceptance.md) · [E4.4 gallery](docs/LumaSprite-Engine-E4.4-Report.html) · [Owner decision](benchmarks/results/e44/review.md)
 

@@ -3,11 +3,12 @@ import { join } from 'node:path';
 import { encodePng } from '../../core/renderer/png.ts';
 import { checkCharacter } from '../../quality/character.ts';
 import { inspectPng, sha256 } from '../../quality/raster.ts';
+import type { GaitPose } from './geometry.ts';
 import { renderCharacter } from './render.ts';
 
-export function characterReview(input: unknown) {
-  const render = renderCharacter(input);
-  const rerender = renderCharacter(render.spec);
+export function characterReview(input: unknown, gait?: GaitPose) {
+  const render = renderCharacter(input, gait);
+  const rerender = renderCharacter(render.spec, gait);
   const geometry = checkCharacter(render);
   const flat = encodePng(render.flat), silhouette = encodePng(render.silhouette);
   const errors = [...geometry.errors, ...inspectPng(render.flat, flat, rerender.flat),

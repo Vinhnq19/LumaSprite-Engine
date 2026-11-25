@@ -65,7 +65,7 @@ export function renderCharacterMaterials(review: Review, lock: ShapeLock, style:
   const { w, h } = review.flat;
   const directed = style !== 'm1';
   const sourceLayers = review.spec.palette.mode === 'authored' ? review.layers
-    : renderCharacter({ ...review.spec, palette: { mode: 'authored' } }).layers;
+    : renderCharacter({ ...review.spec, palette: { mode: 'authored' } }, review.plan.gait).layers;
   const visibleRegions: (Surface | undefined)[] = Array(w * h).fill(undefined);
   const final = makeRaster(w, h), mask = makeRaster(w, h);
   const layers: Record<string, Raster> = {};

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "lumasprite-animation-production",
+  "source": {
+    "checkpoint": "aa54b4a",
+    "characterSpecVersion": 2,
+    "geometryRevision": 2,
+    "productionManifestSha256": "0450bd63ca1a7238d077a6e27cfe9ae60113ed3b306ef01d5aa5c2fc1c8b014a",
+    "characterSpecSha256": "17c430de356e8e77d2bb0d9559699624159d998e4c1e843d5285b9da31d4c6c9",
+    "shapeLockSha256": "0b617f360f073a3b6dc8379dabf04b999baa0056b3ea420e8fb059a0939543b6"
+  },
+  "material": "m2p",
+  "name": "W2 Expressive Walk",
+  "frameCount": 8,
+  "loop": "repeat",
+  "pivot": [
+    30,
+    59
+  ],
+  "files": {
+    "animation-spec.json": "7949744a61b877aa58fb17c76e974d4c4d0f457d0dd1dbbbce6b09acb875355f",
+    "spritesheet.png": "c53d40c7632a13da1c1884bbbde7731357aba6f85c14c2cb03f457d5989f07c7",
+    "timing.json": "1315fd6c0c06675d467eb344c5fc579cd704f8a9f348fbe06cd0dfdb3c0e82cb",
+    "qa.json": "81c94325f51ece584a51b239e0f13cd7e60e40527befeb6fd02f346fdd452929"
+  }
+}

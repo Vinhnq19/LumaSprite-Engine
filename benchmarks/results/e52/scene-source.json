@@ -1,0 +1,80 @@
+{
+  "outdoor": {
+    "package": "benchmarks/results/e34/packages/b-organic",
+    "mapPngSha256": "a997f85aad36e906f3a03c7a1da59760992389e1e1c220f084f4539832ab481a",
+    "props": [
+      {
+        "id": "compact",
+        "left": 109,
+        "top": 158,
+        "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf",
+        "provenance": "Approved E2.4 authored prop compact"
+      },
+      {
+        "id": "crate",
+        "left": 281,
+        "top": 173,
+        "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6",
+        "provenance": "Approved E2.4 authored prop crate"
+      },
+      {
+        "id": "barrel-wide",
+        "left": 318,
+        "top": 164,
+        "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7",
+        "provenance": "Approved E2.4 authored prop barrel-wide"
+      }
+    ],
+    "pivot": [
+      240,
+      158
+    ]
+  },
+  "dungeon": {
+    "tiles": [
+      {
+        "file": "benchmarks/fixtures/e24/dungeon-wall.png",
+        "sha256": "0d4f0c82ffb4c4158342fc0d7fc95cef22ff509003d711e84ec3b5ba3cee21f6"
+      },
+      {
+        "file": "benchmarks/fixtures/e24/dungeon-floor.png",
+        "sha256": "ebf91e6638d484dc6bdaec5f30e91589252125146b70c2911f11fac7ebe17090"
+      },
+      {
+        "file": "benchmarks/fixtures/e24/dungeon-floor-detail.png",
+        "sha256": "dddf38ef416861eb38c499eaf8fdeb62051b577d5e33699fd42b46a198bec5f9"
+      }
+    ],
+    "license": "CC0 1.0",
+    "props": [
+      {
+        "file": "benchmarks/results/e24/compact-1x.png",
+        "x": 39,
+        "y": 32,
+        "sha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+      },
+      {
+        "file": "benchmarks/results/e24/barrel-tall-1x.png",
+        "x": 92,
+        "y": 36,
+        "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+      },
+      {
+        "file": "benchmarks/results/e24/crate-1x.png",
+        "x": 208,
+        "y": 50,
+        "sha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+      },
+      {
+        "file": "benchmarks/results/e24/travel-1x.png",
+        "x": 253,
+        "y": 86,
+        "sha256": "36d9e060c449eea52bd852c29a096ea0c9b3264730cc15a28c39d70191b054ef"
+      }
+    ],
+    "pivot": [
+      153,
+      112
+    ]
+  }
+}

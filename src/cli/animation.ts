@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
-import { buildIdleAnimation, verifyAnimationPackage } from '../generators/character/animation.ts';
+import { buildAnimation, verifyAnimationPackage } from '../generators/character/animation.ts';
 import { writeCharacterReview } from '../generators/character/export.ts';
 import { verifyCharacterProductionPackage } from '../generators/character/production.ts';
 
@@ -15,7 +15,7 @@ try {
   } else {
     if (!values.spec || !values.out) throw new Error('Provide --spec <file> and --out <animation-package>.');
     const [source, bytes] = await Promise.all([verifyCharacterProductionPackage(values.source), readFile(values.spec, 'utf8')]);
-    const animation = buildIdleAnimation(source, JSON.parse(bytes));
+    const animation = buildAnimation(source, JSON.parse(bytes));
     await writeCharacterReview(values.out, animation);
     console.log(JSON.stringify(animation.manifest));
   }

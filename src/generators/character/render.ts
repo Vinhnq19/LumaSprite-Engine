@@ -3,11 +3,11 @@ import { cluster, fillPolygon } from '../../core/geometry/shapes.ts';
 import { makeRaster } from '../../core/pixels/raster.ts';
 import { renderOutlinedLayers } from '../../core/renderer/layers.ts';
 import { characterSpecSchema } from '../../specs/character.ts';
-import { characterColors, planCharacter } from './geometry.ts';
+import { characterColors, planCharacter, type GaitPose } from './geometry.ts';
 
-export function renderCharacter(input: unknown) {
+export function renderCharacter(input: unknown, gait?: GaitPose) {
   const spec = characterSpecSchema.parse(input);
-  const plan = planCharacter(spec);
+  const plan = planCharacter(spec, gait);
   const { w, h } = spec.canvas;
   const palette = spec.palette.mode === 'authored' ? Object.values(characterColors) : spec.palette.colors;
   const inks = mapPalette(characterColors, palette);

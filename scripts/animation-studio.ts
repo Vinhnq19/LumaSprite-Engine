@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { join, resolve, sep } from 'node:path';
-import { test } from 'node:test';
+import { test, type TestContext } from 'node:test';
 import { pathToFileURL } from 'node:url';
 import { pack } from '../src/core/palette/colors.ts';
 import { decodePng } from '../src/core/renderer/png.ts';
@@ -24,7 +24,13 @@ function readStripExport(bytes: Buffer) {
   return { png: entries.get('image.png')!, metadata: JSON.parse(entries.get('image.json')!.toString('utf8')) };
 }
 
-test('Studio materializes the animation PNG and timing, plays the tag and exports the restored exact strip', async t => {
+const edition = process.env.LUMASPRITE_ANIMATION_EDITION ?? '51';
+if (edition !== '51' && edition !== '52') throw new Error('Animation edition must be 51 or 52.');
+for (const candidate of edition === '52' ? ['w1', 'w2'] : ['']) {
+  test('Studio preserves animation transport, timeline and restored strip · ' + (candidate || 'idle'), t => verifyStudioAnimation(candidate, t));
+}
+
+async function verifyStudioAnimation(candidate: string, t: TestContext) {
   const studio = resolve(process.env.LUMASPRITE_STUDIO_ROOT ?? '../LumaSprite-Studio');
   const revision = execFileSync('git', ['rev-parse', '--short=7', 'HEAD'], { cwd: studio, encoding: 'utf8' }).trim();
   const url = (path: string) => pathToFileURL(join(studio, path)).href;
@@ -35,10 +41,12 @@ test('Studio materializes the animation PNG and timing, plays the tag and export
   const { PixelStore } = await import(url('src/node/studio/pixel-store.ts'));
   const { exportPixel } = await import(url('src/node/studio/pixel-render.ts'));
 
-  const directory = 'benchmarks/results/e51/package';
+  const published = 'benchmarks/results/e' + edition;
+  const directory = join(published, candidate, 'package');
   const animation = await verifyAnimationPackage(directory, 'benchmarks/results/e44/packages/r2');
   const sheetPng = await readFile(join(directory, 'spritesheet.png'));
-  const { timing } = animation;
+  const timing = JSON.parse(await readFile(join(directory, 'timing.json'), 'utf8')) as typeof animation.timing;
+  assert.deepEqual(timing, animation.timing);
   const { w, h } = timing.canvas, sheetWidth = w * timing.frames.length;
   const decoded: Uint32Array | undefined = await readStudioPng(new Blob([Uint8Array.from(sheetPng)]), sheetWidth, h);
   assert.ok(decoded);
@@ -56,7 +64,7 @@ test('Studio materializes the animation PNG and timing, plays the tag and export
     version: 1, requestId: 'e51-idle', assetType: 'animation', brief: timing.name,
     canvas: { w, h }, frameDurationsMs: timings, loop: timing.loop === 'repeat', alpha: 'binary', palette,
   };
-  assert.equal(negotiateEngineV1({ versions: [1], assetTypes: ['animation'], features: [], limits: { width: 64, height: 64, frames: 4 } }, request), 1);
+  assert.equal(negotiateEngineV1({ versions: [1], assetTypes: ['animation'], features: [], limits: { width: 64, height: 64, frames: 8 } }, request), 1);
   const asset = materializeEngineResultV1({
     version: 1, jobId: 'idle-job', versionId: 'idle-final', name: timing.name, w, h, loop: request.loop, frames,
   }, request, 'idle-job', 'idle-final');
@@ -124,14 +132,16 @@ test('Studio materializes the animation PNG and timing, plays the tag and export
   const backup = backupInputs(store.backupFiles(id));
   const restored = store.importBackup(timing.name, backup.document, backup.blobs, backup.history, backup.resources);
   const png = verifyStored(restored.id);
-  const output = process.env.LUMASPRITE_CAPTURE_ANIMATION === '1' ? 'benchmarks/results/e51/studio' : 'benchmarks/results/run/e51-studio';
+  const capture = process.env.LUMASPRITE_CAPTURE_ANIMATION === '1';
+  const output = join(capture ? published + '/studio' : 'benchmarks/results/run/e' + edition + '-studio', candidate);
   await mkdir(output, { recursive: true });
   await writeFile(join(output, 'restored-strip.png'), png);
   await writeFile(join(output, 'parity.json'), JSON.stringify({
     studioRevision: revision, import: 'ENGINE_RESULT_V1', exactRgba: true, pivot: timing.pivot, normalizedPivot: asset.metadata.pivot,
     direction: 'forward', loop: true, timingMs: timings, totalDurationMs: timing.totalDurationMs, frames: timing.frames,
+    ...('rootMotion' in timing ? { rootMotion: 'ENGINE_TIMING_SIDECAR' } : {}),
     saveReopen: 'PASS', backupRestore: 'PASS', stripPngJson: 'PASS', staleRevision: 'REJECTED',
     engineManifestSha256: sha256(animation.files.get('manifest.json')!), studioStripPngSha256: sha256(png),
   }, null, 2) + '\n');
-  t.diagnostic('Studio ' + revision + ' preserved the four frame cells, pivot, loop and ' + timings.join('/') + ' ms delays.');
-});
+  t.diagnostic('Studio ' + revision + ' preserved ' + frames.length + ' frame cells, pivot, loop and ' + timings.join('/') + ' ms delays.');
+}

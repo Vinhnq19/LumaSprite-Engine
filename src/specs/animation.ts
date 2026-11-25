@@ -11,7 +11,7 @@ const keyPose = z.strictObject({
   body: z.strictObject({ jacketWidth: integer(-1, 1), jacketHeight: integer(-1, 1) }),
 });
 
-export const animationSpecSchema = z.strictObject({
+const animationSchema = z.strictObject({
   version: z.literal(1),
   kind: z.literal('humanoid-animation'),
   source: z.strictObject({
@@ -32,7 +32,9 @@ export const animationSpecSchema = z.strictObject({
   contact: z.strictObject({ feet: z.literal('planted'), equipment: z.literal('preserve-source'), jointStepPx: z.literal(1) }),
   keyPoses: z.array(keyPose).min(2).max(4),
   output: z.strictObject({ frameWidth: z.literal(64), frameHeight: z.literal(64), layout: z.literal('horizontal-strip'), background: z.literal('transparent') }),
-}).superRefine((spec, ctx) => {
+});
+
+export const animationSpecSchema = animationSchema.superRefine((spec, ctx) => {
   const fail = (message: string, path: string) => ctx.addIssue({ code: 'custom', path: [path], message });
   if (spec.frameCount !== spec.keyPoses.length) fail('Frame count must equal the key-pose count.', 'frameCount');
   if (new Set(spec.layerOrder).size !== spec.layerOrder.length) fail('Layer IDs must be unique.', 'layerOrder');
@@ -49,3 +51,42 @@ export const animationSpecSchema = z.strictObject({
 });
 
 export type AnimationSpec = z.infer<typeof animationSpecSchema>;
+
+const walkPhases = ['contact', 'down', 'passing', 'up'] as const;
+const walkKey = z.strictObject({
+  lead: z.enum(['far', 'near']),
+  phase: z.enum(walkPhases),
+  durationMs: integer(60, 200),
+  advancePx: integer(2, 5),
+  bob: integer(0, 3),
+  swingX: integer(-10, 9),
+  swingLift: integer(0, 7),
+  armSwing: integer(-3, 4),
+  gripShift: offset,
+  sway: integer(-1, 1),
+});
+export const walkSpecSchema = animationSchema.extend({
+  version: z.literal(2),
+  intent: z.literal('walk-hold'),
+  frameCount: z.union([z.literal(6), z.literal(8)]),
+  contact: z.strictObject({ feet: z.literal('alternate'), equipment: z.literal('held-lantern'), root: z.literal('frame-stepped') }),
+  keyPoses: z.array(walkKey).min(6).max(8),
+  stepPx: integer(12, 16),
+}).superRefine((spec, ctx) => {
+  const fail = (message: string) => ctx.addIssue({ code: 'custom', path: ['keyPoses'], message });
+  if (spec.frameCount !== spec.keyPoses.length || spec.stepPx % 2) fail('Walk requires the declared frame count and an even step length.');
+  const phasesPerFoot = spec.frameCount / 2;
+  for (const [i, key] of spec.keyPoses.entries()) {
+    if (key.lead !== (i < phasesPerFoot ? 'far' : 'near') || key.phase !== walkPhases[i % phasesPerFoot]) {
+      fail('Walk phases must alternate far and near contact, down, passing and optional up.');
+    }
+    if (key.phase === 'contact' ? key.bob !== 0 || key.swingLift !== 0 : key.swingLift < 1) fail('Contact and swing require their stated ground heights.');
+  }
+  const left = spec.keyPoses.slice(0, phasesPerFoot);
+  const right = spec.keyPoses.slice(phasesPerFoot);
+  if ([left, right].some(keys => keys.reduce((px, key) => px + key.advancePx, 0) !== spec.stepPx)) {
+    fail('Each half-cycle must advance by exactly one step length.');
+  }
+});
+
+export type WalkSpec = z.infer<typeof walkSpecSchema>;

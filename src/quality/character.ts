@@ -73,7 +73,8 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
     const point = (joint: string) => plan.landmarks[side + '-' + joint].point;
     const [, shoulderY] = point('shoulder'), [, hipY] = point('hip');
     const [kx, ky] = limb.knee, [ax, ay] = limb.ankle;
-    if (limb.elbow[1] - shoulderY < 3 || ky - hipY < 4 || ay - ky < 4 || Math.abs(kx - ax) > 6) {
+    const minLegRise = plan.gait ? 3 : 4;
+    if (limb.elbow[1] - shoulderY < 3 || ky - hipY < minLegRise || ay - ky < minLegRise || Math.abs(kx - ax) > (plan.gait ? 9 : 6)) {
       errors.add('POSE_CHAIN/' + side);
     }
     for (const [joint, a, b] of [
@@ -101,8 +102,8 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
       errors.add('BELOW_GROUND');
     }
   }
-  if (support.bottom + 2 !== py || (spec.version === 1 && lifted.bottom >= support.bottom) || !visible(flat, px, py - 1) ||
-      !visible(layers[spec.pose.support + '-boot'], px, py - 2)) errors.add('GROUND_CONTACT');
+  if (!plan.gait && (support.bottom + 2 !== py || (spec.version === 1 && lifted.bottom >= support.bottom) || !visible(flat, px, py - 1) ||
+      !visible(layers[spec.pose.support + '-boot'], px, py - 2))) errors.add('GROUND_CONTACT');
   let torsoMass = 0, torsoSum = 0;
   for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
     if (['head', 'jacket', 'hips'].some(id => visible(layers[id], x, y))) {
@@ -125,7 +126,7 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
     if (gap >= 2) legGapRows++;
     maxGap = Math.max(maxGap, gap);
   }
-  if (legGapRows < 2) errors.add('LEG_GAP');
+  if (!plan.gait && legGapRows < 2) errors.add('LEG_GAP');
 
   let gripPixels = 0, lampGapRows = 0;
   if (!outfit) {
@@ -185,14 +186,29 @@ function checkRefinedPose(
   }));
   const planted = feet[support], other = feet[secondary];
   if (headroom < Math.max(2, Math.ceil(proportions.head[1] / 5))) errors.push('HEADROOM');
-  if (planted.clearance !== 0 || planted.solePixels < minContact || planted.toeRise > 1) errors.push('PLANTED_SOLE');
-  if (stepping) {
+  if (plan.gait) {
+    const gait = plan.gait;
+    if (!gait.planted[support]) errors.push('WALK_SUPPORT');
+    for (const side of ['near', 'far'] as const) {
+      const { clearance, solePixels, soleBand, toeRise } = feet[side];
+      const [anchorX] = plan.landmarks[side + '-ground'].point;
+      const pushes = gait.pushOff === side;
+      if (gait.planted[side] ? clearance !== 0 || solePixels < (pushes ? 2 : minContact) || toeRise > 1 ||
+          anchorX < soleBand[0] || anchorX > soleBand[1] : clearance < 1 || clearance > 8) errors.push('WALK_CONTACT/' + side);
+    }
+    if (gait.phase === 'passing' && (centerX < planted.soleBand[0] - 1 || centerX > planted.soleBand[1] + 1)) {
+      errors.push('WALK_WEIGHT_TRANSFER');
+    }
+  } else if (planted.clearance !== 0 || planted.solePixels < minContact || planted.toeRise > 1) {
+    errors.push('PLANTED_SOLE');
+  }
+  if (!plan.gait && stepping) {
     if (other.clearance < 1 || other.clearance > proportions.boot[1] || other.toeRise < 1) errors.push('STEP_FOOT_CLEARANCE');
     const stride = pose[secondary].ankle[0] - pose[support].ankle[0];
     if (stride < proportions.hips || pose.lean < 1 || centerX <= pose[support].ankle[0] || centerX >= pose[secondary].ankle[0]) {
       errors.push('STEP_WEIGHT_TRANSFER');
     }
-  } else {
+  } else if (!plan.gait) {
     if (other.clearance !== 0 || other.solePixels < minContact || other.toeRise > 1) errors.push('SECONDARY_SOLE');
     if (centerX < planted.soleBand[0] || centerX > planted.soleBand[1]) errors.push('STANDING_BALANCE');
   }
