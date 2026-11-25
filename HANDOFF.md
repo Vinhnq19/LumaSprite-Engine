@@ -1,6 +1,8 @@
 # Handoff
 
-**E4.1R is E4_1R_READY_FOR_HUMAN_SHAPE_REVIEW.** Both v2 refinements pass structure and pose constraints. B1 Grounded Surveyor is recommended for idle silhouette review. B2 Forward-Step Surveyor illustrates an intentional step. The Project Owner's shape decision precedes E4.2 materials. [Four-way gallery](docs/LumaSprite-Engine-E4.1R-Report.html) · [Owner sheet](benchmarks/results/e41r/review.md) · [QA](docs/e41r-test-report.md) · [PR draft](docs/e41r-pr.md)
+**E4.2 is E4_2_READY_FOR_HUMAN_MATERIAL_REVIEW.** M1 Controlled and M2 Art-Directed share the exact B1 silhouette and 20 preserved part masks. M2 is recommended for the native-size scene review. The material and game-ready decisions remain with the Project Owner. [Material gallery](docs/LumaSprite-Engine-E4.2-Report.html) · [Score sheet](benchmarks/results/e42/review.md) · [QA](docs/e42-test-report.md) · [PR draft](docs/e42-pr.md)
+
+E4.1R B1 Grounded Surveyor was approved with notes as the geometry source for this material pass. B2 remains a motion reference. The E4.1R benchmark is frozen. [B1 Shape Lock](benchmarks/results/e42/b1-shape-lock.json) · [E4.1R gallery](docs/LumaSprite-Engine-E4.1R-Report.html)
 
 E4.1 engineering is approved. The independent art assessment requested revision and chose Taller Surveyor as the starting point. A and B remain locked controls from `a1fcd76`. [Original gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Baseline SHA-256](docs/e41-baseline-sha256.txt)
 

@@ -29,6 +29,8 @@
     "report:e41": "node scripts/report-e41.ts",
     "benchmark:e41r": "node scripts/benchmark-e41.ts --refined",
     "report:e41r": "node scripts/report-e41r.ts",
+    "benchmark:e42": "node scripts/benchmark-e42.ts",
+    "report:e42": "node scripts/report-e42.ts",
     "test:character-studio": "node --test scripts/character-studio.ts",
     "test:terrain-production-studio": "node --test scripts/terrain-production-studio.ts",
     "report:e32": "node scripts/report-e32.ts",

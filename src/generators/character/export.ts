@@ -26,7 +26,7 @@ export function characterReview(input: unknown) {
   return { ...render, metadata, files };
 }
 
-export async function writeCharacterReview(directory: string, review: ReturnType<typeof characterReview>) {
+export async function writeCharacterReview(directory: string, review: Pick<ReturnType<typeof characterReview>, 'files'>) {
   await mkdir(directory, { recursive: true });
   const present = await readdir(directory);
   if (present.length) {

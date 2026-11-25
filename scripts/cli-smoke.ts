@@ -26,6 +26,11 @@ try {
   assert.equal(surveyor.w, 64);
   assert.equal(surveyor.h, 64);
   assert.equal(surveyor.rgba.readUInt32BE(0), 0);
+  const material = join(temp, 'surveyor-material');
+  const materialRun = execFileSync(process.execPath, ['dist/cli/character.js', '--material', 'm2', '--shape-lock',
+    'benchmarks/results/e42/b1-shape-lock.json', '--out', material], { encoding: 'utf8' });
+  assert.equal(JSON.parse(materialRun).technical, 'PASS');
+  assert.deepEqual(readFileSync(join(material, 'silhouette.png')), readFileSync('benchmarks/results/e41r/b1/silhouette.png'));
   console.log('CLI smoke passed.');
 } finally {
   rmSync(temp, { recursive: true, force: true });
