@@ -23,6 +23,9 @@ export function terrainExport(terrain: TerrainAtlas, stem = 'atlas') {
     pngSha256: sha256(png),
     rgbaSha256: sha256(atlas.rgba),
     spec,
+    ...(spec.version === 2 ? {
+      renderPolicy: { atlasPlacement: 'static', mapPlacement: spec.variation, coordinateUnit: 'tile', edgeProfile: 'stepped' },
+    } : {}),
     palette: material.palette,
     diagnostics: material.diagnostics,
     tiles: tiles.map(({ id, mask, x, y, collision }) => ({ id, mask, x, y, collision })),

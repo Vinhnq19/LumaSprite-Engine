@@ -37,3 +37,17 @@ export function checkTerrainPixels({ atlas, spec, material }: TerrainAtlas) {
     }
   }
 }
+
+export function checkTerrainJunctions(terrain: TerrainAtlas) {
+  const size = terrain.spec.tileSize;
+  const at = (id: number, x: number, y: number) => terrain.tiles[id - 1].raster.rgba.readUInt32BE((y * size + x) * 4);
+  for (let layout = 0; layout < 1 << 16; layout++) {
+    const grass = (x: number, y: number) => (layout & (1 << (y * 4 + x))) !== 0;
+    const nw = at(mapTileId(grass, 1, 1), size - 1, size - 1);
+    const ne = at(mapTileId(grass, 2, 1), 0, size - 1);
+    const sw = at(mapTileId(grass, 1, 2), size - 1, 0);
+    const se = at(mapTileId(grass, 2, 2), 0, 0);
+    if (nw !== ne || nw !== sw || nw !== se) throw new Error('Corner junction mismatch at neighborhood ' + layout);
+  }
+  return { neighborhoods: 65536, pixelsCompared: 65536 * 4 };
+}

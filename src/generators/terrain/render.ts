@@ -1,23 +1,12 @@
 import { cluster, type Span } from '../../core/geometry/shapes.ts';
 import { blit, makeRaster, put, type Raster } from '../../core/pixels/raster.ts';
-import { terrainSpecV1, type TerrainSpec } from '../../specs/terrain.ts';
-import { atlasColumns, atlasRows, canonicalMasks, dirtTileId, mapTileId, terrainBits } from './adjacency.ts';
+import { terrainSpecSchema, type TerrainSpecV1, type TerrainSpecV2 } from '../../specs/terrain.ts';
+import { atlasColumns, atlasRows, canonicalMasks, dirtTileId, mapTileId } from './adjacency.ts';
 import { terrainMaterials } from './materials.ts';
+import { boundaryDistance } from './edges.ts';
+import { paintMaterialDetails, type TileOrigin } from './detail.ts';
 
-function boundaryDistance(mask: number | null, x: number, y: number, size: number, inset: number) {
-  if (mask === null) return -Infinity;
-  const right = x >= size / 2, bottom = y >= size / 2;
-  const u = right ? size - 1 - x : x, v = bottom ? size - 1 - y : y;
-  const horizontal = (mask & (right ? terrainBits.E : terrainBits.W)) !== 0;
-  const vertical = (mask & (bottom ? terrainBits.S : terrainBits.N)) !== 0;
-  const diagonal = bottom ? (right ? terrainBits.SE : terrainBits.SW) : (right ? terrainBits.NE : terrainBits.NW);
-  if (!horizontal && !vertical) return Math.min(u, v, u + v - inset - 1);
-  if (!horizontal) return u;
-  if (!vertical) return v;
-  return (mask & diagonal) !== 0 ? Infinity : u + v;
-}
-
-function renderTile(spec: TerrainSpec, mask: number | null, inks: ReturnType<typeof terrainMaterials>['inks']) {
+function renderTile(spec: TerrainSpecV1, mask: number | null, inks: ReturnType<typeof terrainMaterials>['inks']) {
   const { tileSize: size, edgeInset: inset, seed } = spec;
   const raster = makeRaster(size, size);
   const distance = (x: number, y: number) => boundaryDistance(mask, x, y, size, inset);
@@ -44,13 +33,31 @@ function renderTile(spec: TerrainSpec, mask: number | null, inks: ReturnType<typ
   return raster;
 }
 
+function renderNaturalTile(
+  spec: TerrainSpecV2, mask: number | null, inks: ReturnType<typeof terrainMaterials>['inks'], origin: TileOrigin,
+) {
+  const { tileSize: size, edgeInset: inset } = spec;
+  const raster = makeRaster(size, size);
+  const distance = (x: number, y: number) => boundaryDistance(mask, x, y, size, inset, true);
+  for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
+    const d = distance(x, y);
+    const exposed = d === inset - 1 && d < boundaryDistance(mask, x, y, size, inset);
+    const ink = d < inset ? (exposed ? inks.dirtShade : inks.dirt) : d === inset ? inks.grassShade : inks.grass;
+    put(raster, x, y, ink);
+  }
+  paintMaterialDetails(raster, spec, inks, distance, origin);
+  return raster;
+}
+
 export function renderTerrain(input: unknown) {
-  const spec = terrainSpecV1.parse(input);
+  const spec = terrainSpecSchema.parse(input);
   const { tileSize } = spec;
   const material = terrainMaterials(spec.palette);
   const atlas = makeRaster(atlasColumns * tileSize, atlasRows * tileSize);
   const tiles = [...canonicalMasks, null].map((mask, i) => {
-    const raster = renderTile(spec, mask, material.inks);
+    const raster = spec.version === 1
+      ? renderTile(spec, mask, material.inks)
+      : renderNaturalTile(spec, mask, material.inks, [0, 0]);
     const x = (i % atlasColumns) * tileSize, y = Math.floor(i / atlasColumns) * tileSize;
     blit(atlas, raster, x, y);
     return { id: i + 1, mask, x, y, collision: 'empty' as const, raster };
@@ -59,7 +66,7 @@ export function renderTerrain(input: unknown) {
 }
 export type TerrainAtlas = ReturnType<typeof renderTerrain>;
 
-export function renderTileGrid(terrain: TerrainAtlas, ids: readonly (readonly number[])[]): Raster {
+export function renderTileGrid(terrain: TerrainAtlas, ids: readonly (readonly number[])[], origin?: TileOrigin): Raster {
   const width = ids[0]?.length ?? 0, size = terrain.spec.tileSize;
   if (!width || ids.some(row => row.length !== width) || width > 128 || ids.length > 128) {
     throw new RangeError('Expected a rectangular tile grid of 1–128 cells per axis.');
@@ -67,7 +74,11 @@ export function renderTileGrid(terrain: TerrainAtlas, ids: readonly (readonly nu
   const result = makeRaster(width * size, ids.length * size);
   for (const [y, row] of ids.entries()) for (const [x, id] of row.entries()) {
     if (!Number.isInteger(id) || id < 1 || id > dirtTileId) throw new RangeError('Unknown terrain tile ID.');
-    blit(result, terrain.tiles[id - 1].raster, x * size, y * size);
+    const tile = terrain.tiles[id - 1];
+    const raster = origin && terrain.spec.version === 2 && terrain.spec.variation === 'world'
+      ? renderNaturalTile(terrain.spec, tile.mask, terrain.material.inks, [origin[0] + x, origin[1] + y])
+      : tile.raster;
+    blit(result, raster, x * size, y * size);
   }
   return result;
 }

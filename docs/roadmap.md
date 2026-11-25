@@ -28,3 +28,9 @@ The table above records the original plan. The Project Owner approved E2 enginee
 | E9 | DeepSeek integration after the local Engine is mature and the Project Owner authorizes it |
 
 The existing E0 provider scaffold remains disabled. Planner, vision, refinement, retry, API cost and orchestration work are deferred to E9.
+
+## E3.2 checkpoint update
+
+The Project Owner approved E3.1 engineering at `ad7cdbc` and requested terrain art refinement. E3.2 adds stepped banks, material densities and world-space texture previews while preserving the Studio atlas contract. E3.2 engineering passes and its art remains pending review. [Review report](LumaSprite-Engine-E3.2-Report.html)
+
+Wait for the owner's terrain review before E4. DeepSeek development remains deferred through E8. E9 requires completion of the local Engine stages and explicit Project Owner approval.

@@ -20,12 +20,16 @@ npm run benchmark:e24
 npm run terrain
 npm run benchmark:e3
 npm run report:e3
+npm run benchmark:e32
+npm run report:e32
 npm run serve -- --port 4399
 ```
 
 Generation and benchmarks write into `benchmarks/results/run/` by default. The [E2.4 game-scene gallery](benchmarks/results/e24/README.md) shows the six props and the three native-size benchmark scenes in both palettes. The [E2.3 gallery](benchmarks/results/e23/README.md) shows two barrel proportions and the refined chest and crate designs with locked-palette and game-scene previews. The [E2.1/E2.2 gallery](benchmarks/results/e2/README.md) preserves their first versions. The [baseline gallery](benchmarks/results/sample/README.md) preserves the original Seed 42 and 43 renders.
 
 The [unified E2–E3.1 report](docs/LumaSprite-Engine-Report.html) contains the E2 owner decision, the terrain atlas, native map previews, palette comparisons and QA. The standalone `npm run terrain` command writes a PNG atlas and JSON manifest. Pass `--spec` with a TerrainSpec JSON object to override the default seed, palette or surface. [Studio tilemap workflow](docs/integration/studio-tilemap-contract.md)
+
+The [E3.2 offline report](docs/LumaSprite-Engine-E3.2-Report.html) compares the new banks and procedural clusters with E3.1 on the same layouts. The terrain CLI defaults to TerrainSpec v2. Supply a saved v1 spec to reproduce the old atlas. Pass `--map` with rows and a tile origin to export Engine world-space variation. [Example TerrainSpec](benchmarks/results/e32/terrain-spec.json) · [Example map](benchmarks/results/e32/map-input.json) · [Studio static atlas compatibility](docs/integration/studio-terrain-variation.md)
 
 ## Verify
 

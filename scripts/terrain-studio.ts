@@ -17,7 +17,8 @@ test('Studio registers the exported atlas, resolves all masks, and round-trips a
   const { PixelStore } = await import(sourceUrl('node/studio/pixel-store.ts'));
   const { zipFiles } = await import(sourceUrl('node/studio/zip.ts'));
 
-  const artifact = 'benchmarks/results/e3';
+  const natural = process.env.LUMASPRITE_TERRAIN_EDITION === '32';
+  const artifact = natural ? 'benchmarks/results/e32' : 'benchmarks/results/e3';
   const mapping = JSON.parse(await readFile(join(artifact, 'atlas.json'), 'utf8'));
   const png = await readFile(join(artifact, 'atlas.png'));
   assert.equal(sha256(png), mapping.pngSha256);
@@ -48,7 +49,7 @@ test('Studio registers the exported atlas, resolves all masks, and round-trips a
   const reader = new MapStroke(doc, mapId, layer, true);
   for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) assert.equal(reader.get(x, y), cells[y][x]);
   reader.cancel();
-  const expected = decodePng(await readFile(join(artifact, 'transition-1x.png')));
+  const expected = decodePng(await readFile(join(artifact, natural ? 'transition-atlas-1x.png' : 'transition-1x.png')));
   const checkImage = (image: { w: number; h: number; data: Uint32Array }) => {
     assert.equal(image.w, expected.w);
     assert.equal(image.h, expected.h);
@@ -79,7 +80,7 @@ test('Studio registers the exported atlas, resolves all masks, and round-trips a
   }
   checkImage(renderMapCells(hydrated, mapId));
   if (process.env.LUMASPRITE_CAPTURE_TERRAIN_BACKUP === '1') {
-    const path = 'benchmarks/results/run/e3-studio.zip';
+    const path = natural ? 'benchmarks/results/run/e32-studio.zip' : 'benchmarks/results/run/e3-studio.zip';
     await mkdir('benchmarks/results/run', { recursive: true });
     await writeFile(path, zipFiles(files));
     console.log('Studio import fixture written to ' + resolve(path));
