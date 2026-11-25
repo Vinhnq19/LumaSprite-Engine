@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "prop",
+  "name": "Domed-lid fantasy chest",
+  "canvas": {
+    "w": 32,
+    "h": 32
+  },
+  "seed": 42,
+  "palette": [
+    "#201a24",
+    "#4a2927",
+    "#723e2c",
+    "#a15a36",
+    "#ca8248",
+    "#eea761",
+    "#343344",
+    "#51546a",
+    "#777d8b",
+    "#935630",
+    "#e0a051",
+    "#ffe3a0"
+  ],
+  "artDirection": {
+    "light": "upper-left"
+  },
+  "layers": [
+    "body",
+    "lid",
+    "iron",
+    "lock"
+  ],
+  "prop": {
+    "design": "domed",
+    "composition": {
+      "frontWidth": 19,
+      "sideDepth": 8,
+      "bodyHeight": 11,
+      "lidRise": 7,
+      "bandSpacing": 6,
+      "lockOffset": 0
+    },
+    "finish": "refined"
+  }
+}

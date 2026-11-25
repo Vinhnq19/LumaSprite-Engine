@@ -10,13 +10,17 @@ Use Node.js 24 LTS or newer.
 npm ci
 npm run build
 npm run generate
-npm run generate -- --seed 43 --out benchmarks/results/run/chest-43.png
+npm run generate -- --design barrel-wide
+npm run generate -- --design travel --seed 43 --out benchmarks/results/run/chest-43.png
 npm run generate -- --spec benchmarks/results/sample/chest-42.json
 npm run benchmark
+npm run benchmark:e2
+npm run benchmark:e23
+npm run benchmark:e24
 npm run serve -- --port 4399
 ```
 
-Generation and benchmarks write into `benchmarks/results/run/` by default. The [review gallery](benchmarks/results/sample/README.md) shows seeds 42 and 43 at 1× and 4×.
+Generation and benchmarks write into `benchmarks/results/run/` by default. The [E2.4 game-scene gallery](benchmarks/results/e24/README.md) shows the six props and the three native-size benchmark scenes in both palettes. The [E2.3 gallery](benchmarks/results/e23/README.md) shows two barrel proportions and the refined chest and crate designs with locked-palette and game-scene previews. The [E2.1/E2.2 gallery](benchmarks/results/e2/README.md) preserves their first versions. The [baseline gallery](benchmarks/results/sample/README.md) preserves the original Seed 42 and 43 renders.
 
 ## Verify
 

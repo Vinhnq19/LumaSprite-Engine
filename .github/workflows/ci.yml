@@ -18,3 +18,6 @@ jobs:
       - run: npm test
       - run: npm run smoke
       - run: npm run benchmark
+      - run: npm run benchmark:e2
+      - run: npm run benchmark:e23
+      - run: npm run benchmark:e24

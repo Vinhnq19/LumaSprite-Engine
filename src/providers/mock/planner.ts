@@ -25,3 +25,7 @@ export const mockPlanner: AssetPlanner = {
     });
   },
 }
+
+export function supportsBarrelBrief(brief: string) {
+  return /\bbarrel\b/iu.test(brief);
+}

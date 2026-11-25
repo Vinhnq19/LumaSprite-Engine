@@ -114,3 +114,16 @@ test('updates a selected pixel with locked ink, preserving every other RGBA byte
   original.writeUInt32BE(ink, selected * 4);
   assert.deepEqual(out, original);
 });
+
+test('publishes a tall barrel through the existing Studio v1 prop result', async t => {
+  const { api, ready } = await connect(t);
+  const job = await api('jobs', { ...request, brief: 'Tall wooden barrel', requestId: 'barrel-fixture' }, 201);
+  const done = await ready(job.id);
+  const result = await api('jobs/' + job.id + '/results/' + done.finalVersionId);
+  assert.deepEqual(Object.keys(result).sort(), ['frames', 'h', 'jobId', 'loop', 'name', 'version', 'versionId', 'w']);
+  assert.match(result.name, /barrel.*tall/i);
+  const [frame] = result.frames;
+  const rgba = Buffer.from(frame.rgba, 'base64');
+  assert.equal(frame.sha256, createHash('sha256').update(rgba).digest('hex'));
+  for (let i = 0; i < rgba.length; i += 4) assert.ok(request.palette.includes(rgba.readUInt32BE(i)));
+});

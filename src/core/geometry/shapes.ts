@@ -10,8 +10,8 @@ export function cluster(raster: Raster, ink: number, spans: readonly Span[]) {
 }
 
 export function fillPolygon(raster: Raster, vertices: readonly Point[], ink: number) {
-  const top = Math.min(...vertices.map(([, y]) => y));
-  const bottom = Math.max(...vertices.map(([, y]) => y));
+  const top = Math.ceil(Math.min(...vertices.map(([, y]) => y)) - 0.5);
+  const bottom = Math.ceil(Math.max(...vertices.map(([, y]) => y)) - 0.5);
   for (let y = top; y < bottom; y++) {
     const sampleY = y + 0.5;
     const crossings: number[] = [];

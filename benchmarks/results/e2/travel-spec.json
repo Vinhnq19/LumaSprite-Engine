@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "prop",
+  "name": "Reinforced travel chest",
+  "canvas": {
+    "w": 32,
+    "h": 32
+  },
+  "seed": 42,
+  "palette": [
+    "#201a24",
+    "#4a2927",
+    "#723e2c",
+    "#a15a36",
+    "#ca8248",
+    "#eea761",
+    "#343344",
+    "#51546a",
+    "#777d8b",
+    "#935630",
+    "#e0a051",
+    "#ffe3a0"
+  ],
+  "artDirection": {
+    "light": "upper-left"
+  },
+  "layers": [
+    "body",
+    "lid",
+    "iron",
+    "lock"
+  ],
+  "prop": {
+    "design": "travel",
+    "composition": {
+      "frontWidth": 23,
+      "sideDepth": 5,
+      "bodyHeight": 12,
+      "lidRise": 5,
+      "bandSpacing": 8,
+      "lockOffset": 1
+    }
+  }
+}

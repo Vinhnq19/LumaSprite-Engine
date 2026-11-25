@@ -1,8 +1,10 @@
 import { randomUUID } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
 import type { StudioInput, StudioResult } from '../adapters/studio/contract.ts';
-import { renderAsset } from '../generators/props/supply-chest.ts';
-import { mockPlanner } from '../providers/mock/planner.ts';
+import { renderAsset } from '../generators/props/render.ts';
+import { makeCurrentPropSpec } from '../generators/props/presets.ts';
+import { supportsBarrelBrief } from '../providers/mock/planner.ts';
+import { assessPropPalette } from '../quality/prop-palette.ts';
 import { sha256, validateRaster } from '../quality/raster.ts';
 
 type State = 'queued' | 'running' | 'ready' | 'failed' | 'canceled';
@@ -77,12 +79,20 @@ export class JobManager {
       signal.throwIfAborted();
       job.state = 'running';
       const seed = Number.parseInt(sha256(request.brief).slice(0, 8), 16);
-      const spec = await mockPlanner.plan({ brief: request.brief, palette, seed });
+      const brief = request.brief;
+      const chest = /\btravel\b/i.test(brief) ? 'travel' : /\bcompact\b/i.test(brief) ? 'compact' : 'domed';
+      const barrel = /\btall\b/i.test(brief) ? 'barrel-tall' : 'barrel-wide';
+      const spec = makeCurrentPropSpec(supportsBarrelBrief(brief) ? barrel : chest, seed, palette);
       job.completed = 1;
       await delay(75, undefined, { signal });
       signal.throwIfAborted();
 
-      const { final } = renderAsset(spec);
+      const asset = renderAsset(spec);
+      const { final } = asset;
+      const assessment = asset.paletteDiagnostics ? assessPropPalette(asset.paletteDiagnostics) : undefined;
+      if (assessment?.status === 'PALETTE_LIMITED') {
+        console.warn('Palette for job %s: %s', job.id, JSON.stringify(assessment));
+      }
       if (protection) {
         for (let i = 0; i < protection.editable.length; i++) {
           const offset = i * 4;
