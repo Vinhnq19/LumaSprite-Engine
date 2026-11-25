@@ -29,6 +29,8 @@ npm run report:e34
 npm run character -- --candidate a
 npm run benchmark:e41
 npm run report:e41
+npm run benchmark:e41r
+npm run report:e41r
 npm run serve -- --port 4399
 ```
 
@@ -41,6 +43,8 @@ The terrain CLI defaults to TerrainSpec v3. Supply a saved v1 or v2 spec to repr
 For TerrainSpec v4, the Project Owner selected Art-Directed Terrain for Authored/Project and baked raster. Pass it with `--spec` or use Conservative Polish as an optional preset. [Art-directed spec](benchmarks/results/e34/b-spec.json) · [Conservative spec](benchmarks/results/e34/a-spec.json) · [E3 final acceptance](docs/e3-final-acceptance.md)
 
 `npm run character -- --candidate a` produces a flat PNG, silhouette and geometry JSON for E4.1 review. Select `b` for Taller Surveyor or pass `--spec` with a CharacterSpec v1 JSON. [E4.1 shape gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Character architecture](docs/architecture/character-geometry.md)
+
+Select `b1` for Grounded Surveyor or `b2` for Forward-Step Surveyor on the same CLI. Their CharacterSpec v2 records the pose intent, torso turn and projected ground offset, and their diagnostic bundle separates structure, pose constraints and visual review. [E4.1R review](docs/LumaSprite-Engine-E4.1R-Report.html)
 
 ## Verify
 

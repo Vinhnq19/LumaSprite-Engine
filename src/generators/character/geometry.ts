@@ -32,6 +32,7 @@ function segment(ink: Ink, from: Point, to: Point, w0: number, w1: number): Shap
 
 export function planCharacter(spec: CharacterSpec) {
   const { proportions: p, pose } = spec;
+  const turn = spec.version === 2 ? spec.pose.turn : 0;
   const [cx, hipY] = pose.hip;
   const [shoulderWidth, bodyHeight] = p.jacket;
   const sy = hipY - bodyHeight;
@@ -42,8 +43,9 @@ export function planCharacter(spec: CharacterSpec) {
   const [headX, headY] = crown;
   const shoulderInset = Math.floor(shoulderWidth * .36);
   const hipInset = Math.floor(p.hips / 3);
-  const shoulders = { near: [sx - shoulderInset, sy + 1], far: [sx + shoulderInset, sy] } as const;
-  const hips = { near: [cx - hipInset, hipY + 1], far: [cx + hipInset, hipY] } as const;
+  const shoulders = { near: [sx - shoulderInset - (turn ? 1 : 0), sy + (turn || 1)],
+    far: [sx + shoulderInset - (turn ? 1 : 0), sy - Math.floor(turn / 2)] } as const;
+  const hips = { near: [cx - hipInset, hipY + 1], far: [cx + hipInset, hipY - Math.floor(turn / 2)] } as const;
   const landmarks: Record<string, Landmark> = {
     crown: { point: crown, partId: 'head' }, neck: { point: neck, partId: 'neck' },
     chest: { point: [sx, sy + 3], partId: 'jacket' }, pelvis: { point: pose.hip, partId: 'hips' },
@@ -62,10 +64,11 @@ export function planCharacter(spec: CharacterSpec) {
     const sole = ay + p.boot[1];
     const heel = ax - Math.floor(bootWidth * .33);
     const toe = heel + bootWidth;
+    const pitch = pose.kind === 'forward-step-hold' && side !== pose.support ? Math.ceil(p.boot[1] / 2) : 0;
     for (const [joint, point, name] of [
       ['shoulder', shoulder, 'upper-arm'], ['elbow', elbow, 'forearm'], ['wrist', wrist, 'forearm'], ['palm', palm, 'hand'],
       ['hip', hip, 'thigh'], ['knee', knee, 'shin'], ['ankle', ankle, 'boot'],
-      ['ground', [ax, sole - 1], 'boot'],
+      ['ground', [pitch ? heel + 1 : ax, sole - 1], 'boot'],
     ] as const) landmarks[side + '-' + joint] = { point, partId: side + '-' + name };
     for (const chain of [['chest', 'shoulder', 'elbow', 'wrist', 'palm'], ['pelvis', 'hip', 'knee', 'ankle', 'ground']]) {
       for (let i = 1; i < chain.length; i++) {
@@ -82,17 +85,18 @@ export function planCharacter(spec: CharacterSpec) {
         part(side + '-thigh', ...segment(pants, hip, knee, p.leg[0] - dims, p.leg[1] + 1 - dims)),
         part(side + '-shin', ...segment(pants, knee, ankle, p.leg[1] + 1 - dims, p.leg[1] - dims)),
         part(side + '-boot', polygon('sole', [heel, ay - 2], [ax + 2, ay - 2], [ax + 3, ay],
-          [toe - 1, ay + 1], [toe, ay + 3], [toe - 1, sole], [heel, sole])),
+          [toe - 1, ay + 1 - pitch], [toe, ay + 3 - pitch], [toe - 1, sole - pitch],
+          ...(pitch ? [[ax, sole] as const] : []), [heel, sole])),
       ],
     }];
   })) as Record<'far' | 'near', { arm: Part[]; leg: Part[] }>;
 
   const [bagW, bagH] = p.satchel;
-  const bagX = shoulders.near[0] - Math.floor(bagW * .68);
-  const bagY = sy + 3;
-  const [gx, gy] = pose.near.palm;
+  const bagX = shoulders.near[0] - Math.floor(bagW * .68) + (turn ? 1 : 0);
+  const bagY = sy + (turn ? 5 : 3);
+  const [gx, gy] = shift(pose.near.palm, turn ? 1 : 0, turn ? 1 : 0);
   const [lampW, lampH] = p.lantern;
-  const left = gx - Math.floor(lampW / 2), top = gy + 4, right = left + lampW, bottom = top + lampH;
+  const left = gx - Math.floor(lampW / 2), top = gy + (turn ? 5 : 4), right = left + lampW, bottom = top + lampH;
   landmarks['grip-anchor'] = { point: [gx, gy], partId: 'lantern' };
   links.push({ from: 'near-wrist', to: 'grip-anchor' });
   const [inward, outward] = [-Math.floor(shoulderWidth / 2), Math.ceil(shoulderWidth / 2)];
@@ -101,14 +105,22 @@ export function planCharacter(spec: CharacterSpec) {
   const topOfCap = headY - Math.floor(headH / 2) - 2;
   const headLeft = headX - Math.floor(headW / 2), headRight = headLeft + headW;
   const trim = (spec.seed ^ (spec.seed >>> 7)) & 1;
+  const jacket = polygon('jacket', [sx + inward + 2, sy + (turn ? 1 : 0)], [sx + outward - 2, sy - 1 - Math.floor(turn / 2)],
+    [sx + outward, sy + 4], [cx + waist - 1, hipY - 2], [cx + waist + 1, hipY + 2 - (turn ? 1 : 0)],
+    [cx - waist + 1, hipY + 3], [cx - waist - 1, hipY - 2], [sx + inward, sy + 5]);
+  const jacketPlane = polygon('farCoat', [sx + 1, sy + 1], [sx + outward - 2, sy - 1 - Math.floor(turn / 2)],
+    [sx + outward, sy + 4], [cx + waist - 1, hipY - 2], [cx + waist + 1, hipY + 1], [cx + 2, hipY + 2]);
+  const handle = turn ? [
+    box('iron', gx - 2, gy - 1, gx + 3, gy + 1),
+    box('iron', gx - 2, gy, gx - 1, top + 2),
+    box('iron', gx + 2, gy, gx + 3, top + 2),
+  ] : [polygon('iron', [gx, gy - 1], [gx + 2, gy], [gx + 2, top + 1], [gx, top + 1])];
   const parts = [
     ...limbs.far.leg, ...limbs.far.arm, ...limbs.near.leg,
     part('satchel', polygon('leather', [bagX + 2, bagY], [bagX + bagW - 1, bagY + 1], [bagX + bagW, bagY + bagH - 3],
       [bagX + bagW - 3, bagY + bagH], [bagX + 1, bagY + bagH - 1], [bagX, bagY + 4])),
     part('hips', oval('trousers', pose.hip, p.hips + 2, 7)),
-    part('jacket', polygon('jacket', [sx + inward + 2, sy], [sx + outward - 2, sy - 1],
-      [sx + outward, sy + 4], [cx + waist - 1, hipY - 2], [cx + waist + 1, hipY + 2],
-      [cx - waist + 1, hipY + 3], [cx - waist - 1, hipY - 2], [sx + inward, sy + 5])),
+    part('jacket', jacket, ...(turn ? [jacketPlane] : [])),
     part('strap', ...segment('leather', [sx - 5, sy + 1], [cx + 4, hipY - 2], 2, 2)),
     part('neck', oval('face', neck, 6, 8)),
     part('head', polygon('face', [headLeft + 1, headY - 3], [headX + 5, headY - 4],
@@ -120,13 +132,18 @@ export function planCharacter(spec: CharacterSpec) {
     polygon('brim', [headLeft, headY - 2], [headRight - 1, headY - 3], [headRight + 4, headY - 1],
       [headRight + 2, headY + 1], [headLeft + 3, headY + 1])),
     ...limbs.near.arm.slice(0, 2),
-    part('lantern',
-      polygon('iron', [gx, gy - 1], [gx + 2, gy], [gx + 2, top + 1], [gx, top + 1]),
+    part('lantern', ...handle,
       polygon('iron', [left + 2, top], [right - 2, top], [right, top + 3],
         [right - 1, bottom - 1], [right - 3, bottom], [left + 1, bottom], [left, top + 3]),
       box('lantern', left + 2, top + 3, right - 2, bottom - 2)),
-    limbs.near.arm[2],
+    turn ? part('near-hand', ...limbs.near.arm[2].shapes,
+      oval('face', shift(pose.near.palm, 1, -1), 3, 3)) : limbs.near.arm[2],
   ];
 
-  return { parts, landmarks, links, pivot: pose.pivot, support: pose.support, facing: spec.view };
+  return { parts, landmarks, links, pivot: pose.pivot, support: pose.support, facing: spec.view,
+    ...(spec.version === 2 ? { poseIntent: spec.pose.kind, projectedGround: {
+      near: pose.pivot[1] + (pose.support === 'near' ? 0 : spec.pose.secondaryGroundOffset),
+      far: pose.pivot[1] + (pose.support === 'far' ? 0 : spec.pose.secondaryGroundOffset),
+    } } : {}),
+  };
 }

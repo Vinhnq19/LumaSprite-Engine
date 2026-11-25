@@ -7,9 +7,9 @@ import { pathToFileURL } from 'node:url';
 import { pack } from '../src/core/palette/colors.ts';
 import { decodePng } from '../src/core/renderer/png.ts';
 import { characterReview } from '../src/generators/character/export.ts';
-import { surveyors } from '../src/generators/character/presets.ts';
+import { surveyorRefinements, surveyors } from '../src/generators/character/presets.ts';
 
-test('Studio validates and reopens both unapproved character profiles with exact RGBA and part masks', async t => {
+test('Studio validates and reopens the E4.1 and E4.1R unapproved profiles with exact RGBA and part masks', async t => {
   const studio = resolve(process.env.LUMASPRITE_STUDIO_ROOT ?? '../LumaSprite-Studio');
   const revision = execFileSync('git', ['rev-parse', '--short=7', 'HEAD'], { cwd: studio, encoding: 'utf8' }).trim();
   const url = (path: string) => pathToFileURL(join(studio, path)).href;
@@ -24,7 +24,7 @@ test('Studio validates and reopens both unapproved character profiles with exact
   assert.ok(resolve(root).startsWith(sandbox + sep));
   t.after(() => rm(root, { recursive: true, force: true }));
   const store = new PixelStore(root);
-  for (const [id, spec] of Object.entries(surveyors)) {
+  for (const [id, spec] of Object.entries({ ...surveyors, ...surveyorRefinements })) {
     const review = characterReview(spec);
     const png = review.files.get('flat.png')!;
     const { w, h, rgba } = review.flat;
@@ -55,7 +55,7 @@ test('Studio validates and reopens both unapproved character profiles with exact
     assert.deepEqual(validateCharacterProfile(profile, profile.id, doc), profile);
     const { id: projectId } = store.create(doc.name, w, h, 0, doc);
     const stored = store.load(projectId, true);
-    store.save(projectId, stored.revision, stored, 'Reopen E4.1 geometry');
+    store.save(projectId, stored.revision, stored, 'Reopen geometry draft');
     const reopened = store.load(projectId, true);
     const result = validateCharacterProfile(reopened.studio.characters[profile.id], profile.id, reopened);
     assert.deepEqual(result, profile);
@@ -67,5 +67,5 @@ test('Studio validates and reopens both unapproved character profiles with exact
     const exported = exportPixel({ document: reopened, assetId: asset.id, format: 'png' });
     assert.deepEqual(decodePng(Buffer.from(exported.data)), review.flat);
   }
-  t.diagnostic('Studio ' + revision + ' validated both 64×64 profiles, all part masks, pivots, links and RGBA.');
+  t.diagnostic('Studio ' + revision + ' validated A, B, B1 and B2 profiles, all part masks, pivots, links and RGBA.');
 });

@@ -1,0 +1,488 @@
+[
+  {
+    "candidate": "b1",
+    "technical": "PASS",
+    "artistic": "VISUAL_REVIEW_PENDING",
+    "diagnostics": {
+      "errors": [],
+      "bounds": {
+        "left": 21,
+        "right": 53,
+        "top": 3,
+        "bottom": 58,
+        "area": 1086,
+        "components": 1
+      },
+      "parts": {
+        "far-thigh": {
+          "left": 32,
+          "right": 42,
+          "top": 33,
+          "bottom": 47,
+          "area": 81,
+          "components": 1
+        },
+        "far-shin": {
+          "left": 37,
+          "right": 42,
+          "top": 43,
+          "bottom": 54,
+          "area": 51,
+          "components": 1
+        },
+        "far-boot": {
+          "left": 37,
+          "right": 45,
+          "top": 51,
+          "bottom": 56,
+          "area": 40,
+          "components": 1
+        },
+        "far-upper-arm": {
+          "left": 33,
+          "right": 40,
+          "top": 18,
+          "bottom": 27,
+          "area": 46,
+          "components": 1
+        },
+        "far-forearm": {
+          "left": 36,
+          "right": 40,
+          "top": 24,
+          "bottom": 35,
+          "area": 41,
+          "components": 1
+        },
+        "far-hand": {
+          "left": 35,
+          "right": 38,
+          "top": 33,
+          "bottom": 37,
+          "area": 16,
+          "components": 1
+        },
+        "near-thigh": {
+          "left": 24,
+          "right": 32,
+          "top": 35,
+          "bottom": 47,
+          "area": 78,
+          "components": 1
+        },
+        "near-shin": {
+          "left": 25,
+          "right": 32,
+          "top": 42,
+          "bottom": 56,
+          "area": 76,
+          "components": 1
+        },
+        "near-boot": {
+          "left": 24,
+          "right": 33,
+          "top": 52,
+          "bottom": 57,
+          "area": 46,
+          "components": 1
+        },
+        "satchel": {
+          "left": 22,
+          "right": 28,
+          "top": 26,
+          "bottom": 35,
+          "area": 50,
+          "components": 1
+        },
+        "hips": {
+          "left": 24,
+          "right": 38,
+          "top": 34,
+          "bottom": 40,
+          "area": 85,
+          "components": 1
+        },
+        "jacket": {
+          "left": 23,
+          "right": 38,
+          "top": 19,
+          "bottom": 39,
+          "area": 268,
+          "components": 1
+        },
+        "strap": {
+          "left": 25,
+          "right": 36,
+          "top": 21,
+          "bottom": 35,
+          "area": 35,
+          "components": 1
+        },
+        "neck": {
+          "left": 29,
+          "right": 35,
+          "top": 15,
+          "bottom": 22,
+          "area": 34,
+          "components": 1
+        },
+        "head": {
+          "left": 27,
+          "right": 40,
+          "top": 9,
+          "bottom": 20,
+          "area": 122,
+          "components": 1
+        },
+        "cap": {
+          "left": 26,
+          "right": 43,
+          "top": 4,
+          "bottom": 13,
+          "area": 119,
+          "components": 1
+        },
+        "near-upper-arm": {
+          "left": 22,
+          "right": 34,
+          "top": 20,
+          "bottom": 36,
+          "area": 97,
+          "components": 1
+        },
+        "near-forearm": {
+          "left": 30,
+          "right": 47,
+          "top": 30,
+          "bottom": 36,
+          "area": 76,
+          "components": 1
+        },
+        "lantern": {
+          "left": 46,
+          "right": 52,
+          "top": 32,
+          "bottom": 47,
+          "area": 76,
+          "components": 1
+        },
+        "near-hand": {
+          "left": 43,
+          "right": 50,
+          "top": 30,
+          "bottom": 33,
+          "area": 27,
+          "components": 1
+        }
+      },
+      "joints": {
+        "near-shoulder": 87,
+        "near-elbow": 21,
+        "near-wrist": 12,
+        "near-hip": 31,
+        "near-knee": 28,
+        "near-ankle": 22,
+        "far-shoulder": 30,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 31,
+        "far-knee": 21,
+        "far-ankle": 15
+      },
+      "centerX": 31.357843137254903,
+      "plantedFoot": "near",
+      "legGapRows": 9,
+      "maxGap": 5,
+      "gripPixels": 7,
+      "lampGapRows": 12,
+      "structure": "STRUCTURAL_VALID",
+      "constraints": "POSE_CONSTRAINTS_VALID",
+      "visual": "VISUAL_REVIEW_PENDING",
+      "pose": {
+        "errors": [],
+        "intent": "standing-hold",
+        "headroom": 3,
+        "feet": {
+          "near": {
+            "projectedGroundY": 59,
+            "lowestContourY": 58,
+            "clearance": 0,
+            "solePixels": 9,
+            "soleBand": [
+              24,
+              32
+            ],
+            "toeRise": 0
+          },
+          "far": {
+            "projectedGroundY": 58,
+            "lowestContourY": 57,
+            "clearance": 0,
+            "solePixels": 8,
+            "soleBand": [
+              37,
+              44
+            ],
+            "toeRise": 0
+          }
+        },
+        "shoulderDrop": 3,
+        "hipDrop": 2,
+        "kneeBends": {
+          "near": 2,
+          "far": 2.882352941176471
+        },
+        "openHandleRows": 2,
+        "armTorsoGapRows": 4,
+        "lampBodyGap": 4
+      }
+    },
+    "images": {
+      "flatPngSha256": "9d95564b985f70537b3573d63f602621ea4758f7fd83e41d1aa4b256bd4a5899",
+      "silhouettePngSha256": "6fc4255147efd87a422bfafd07110f6fd2d328aacb02a91556f3758f600abac7"
+    }
+  },
+  {
+    "candidate": "b2",
+    "technical": "PASS",
+    "artistic": "VISUAL_REVIEW_PENDING",
+    "diagnostics": {
+      "errors": [],
+      "bounds": {
+        "left": 22,
+        "right": 55,
+        "top": 3,
+        "bottom": 58,
+        "area": 1054,
+        "components": 1
+      },
+      "parts": {
+        "far-thigh": {
+          "left": 35,
+          "right": 46,
+          "top": 33,
+          "bottom": 45,
+          "area": 77,
+          "components": 1
+        },
+        "far-shin": {
+          "left": 42,
+          "right": 46,
+          "top": 41,
+          "bottom": 52,
+          "area": 56,
+          "components": 1
+        },
+        "far-boot": {
+          "left": 42,
+          "right": 50,
+          "top": 49,
+          "bottom": 54,
+          "area": 37,
+          "components": 1
+        },
+        "far-upper-arm": {
+          "left": 38,
+          "right": 44,
+          "top": 18,
+          "bottom": 28,
+          "area": 48,
+          "components": 1
+        },
+        "far-forearm": {
+          "left": 39,
+          "right": 44,
+          "top": 25,
+          "bottom": 35,
+          "area": 37,
+          "components": 1
+        },
+        "far-hand": {
+          "left": 38,
+          "right": 41,
+          "top": 33,
+          "bottom": 37,
+          "area": 16,
+          "components": 1
+        },
+        "near-thigh": {
+          "left": 25,
+          "right": 33,
+          "top": 35,
+          "bottom": 48,
+          "area": 86,
+          "components": 1
+        },
+        "near-shin": {
+          "left": 24,
+          "right": 31,
+          "top": 43,
+          "bottom": 56,
+          "area": 70,
+          "components": 1
+        },
+        "near-boot": {
+          "left": 23,
+          "right": 32,
+          "top": 52,
+          "bottom": 57,
+          "area": 46,
+          "components": 1
+        },
+        "satchel": {
+          "left": 27,
+          "right": 33,
+          "top": 26,
+          "bottom": 35,
+          "area": 50,
+          "components": 1
+        },
+        "hips": {
+          "left": 27,
+          "right": 41,
+          "top": 34,
+          "bottom": 40,
+          "area": 85,
+          "components": 1
+        },
+        "jacket": {
+          "left": 26,
+          "right": 43,
+          "top": 19,
+          "bottom": 39,
+          "area": 268,
+          "components": 1
+        },
+        "strap": {
+          "left": 30,
+          "right": 39,
+          "top": 21,
+          "bottom": 35,
+          "area": 33,
+          "components": 1
+        },
+        "neck": {
+          "left": 34,
+          "right": 40,
+          "top": 15,
+          "bottom": 22,
+          "area": 34,
+          "components": 1
+        },
+        "head": {
+          "left": 32,
+          "right": 45,
+          "top": 9,
+          "bottom": 20,
+          "area": 122,
+          "components": 1
+        },
+        "cap": {
+          "left": 31,
+          "right": 48,
+          "top": 4,
+          "bottom": 13,
+          "area": 119,
+          "components": 1
+        },
+        "near-upper-arm": {
+          "left": 27,
+          "right": 37,
+          "top": 20,
+          "bottom": 34,
+          "area": 81,
+          "components": 1
+        },
+        "near-forearm": {
+          "left": 33,
+          "right": 49,
+          "top": 24,
+          "bottom": 34,
+          "area": 78,
+          "components": 1
+        },
+        "lantern": {
+          "left": 48,
+          "right": 54,
+          "top": 25,
+          "bottom": 40,
+          "area": 76,
+          "components": 1
+        },
+        "near-hand": {
+          "left": 45,
+          "right": 52,
+          "top": 23,
+          "bottom": 27,
+          "area": 28,
+          "components": 1
+        }
+      },
+      "joints": {
+        "near-shoulder": 71,
+        "near-elbow": 22,
+        "near-wrist": 12,
+        "near-hip": 31,
+        "near-knee": 28,
+        "near-ankle": 22,
+        "far-shoulder": 36,
+        "far-elbow": 12,
+        "far-wrist": 9,
+        "far-hip": 30,
+        "far-knee": 21,
+        "far-ankle": 17
+      },
+      "centerX": 35.6421568627451,
+      "plantedFoot": "near",
+      "legGapRows": 7,
+      "maxGap": 11,
+      "gripPixels": 8,
+      "lampGapRows": 11,
+      "structure": "STRUCTURAL_VALID",
+      "constraints": "POSE_CONSTRAINTS_VALID",
+      "visual": "VISUAL_REVIEW_PENDING",
+      "pose": {
+        "errors": [],
+        "intent": "forward-step-hold",
+        "headroom": 3,
+        "feet": {
+          "near": {
+            "projectedGroundY": 59,
+            "lowestContourY": 58,
+            "clearance": 0,
+            "solePixels": 9,
+            "soleBand": [
+              23,
+              31
+            ],
+            "toeRise": 0
+          },
+          "far": {
+            "projectedGroundY": 58,
+            "lowestContourY": 55,
+            "clearance": 2,
+            "solePixels": 3,
+            "soleBand": [
+              42,
+              44
+            ],
+            "toeRise": 1
+          }
+        },
+        "shoulderDrop": 3,
+        "hipDrop": 2,
+        "kneeBends": {
+          "near": 0,
+          "far": 3.200000000000003
+        },
+        "openHandleRows": 2,
+        "armTorsoGapRows": 6,
+        "lampBodyGap": 4
+      }
+    },
+    "images": {
+      "flatPngSha256": "0533073ef52a58e9d0d5992a1776498b2c1aeeffcda674269ab1642e5a7ccb30",
+      "silhouettePngSha256": "39cbc847e55dbdf15b7b4d59f204e3a0354432bcd7b3cbf023707697d58ef3d5"
+    }
+  }
+]

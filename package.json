@@ -27,6 +27,8 @@
     "character": "node dist/cli/character.js",
     "benchmark:e41": "node scripts/benchmark-e41.ts",
     "report:e41": "node scripts/report-e41.ts",
+    "benchmark:e41r": "node scripts/benchmark-e41.ts --refined",
+    "report:e41r": "node scripts/report-e41r.ts",
     "test:character-studio": "node --test scripts/character-studio.ts",
     "test:terrain-production-studio": "node --test scripts/terrain-production-studio.ts",
     "report:e32": "node scripts/report-e32.ts",

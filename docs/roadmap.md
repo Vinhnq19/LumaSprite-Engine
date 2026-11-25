@@ -46,3 +46,5 @@ The Project Owner approved E3.3 engineering and static-background production bak
 ## E3 closeout and E4.1 shape review
 
 The Project Owner selected E3.4 B under Authored/Project for static baked raster backgrounds. E3 is closed with the recorded art limitations. E4.1 delivers two validated Field Surveyor poses. The next E4.2 material pass depends on the owner's silhouette decision. [E3 decision](e3-final-acceptance.md) · [E4.1 shape gallery](LumaSprite-Engine-E4.1-Report.html)
+
+E4.1R refines the Taller Surveyor silhouette into B1 for standing and B2 for a forward step. The owner can compare both with the original A/B checkpoint before choosing a silhouette for materials. [E4.1R review](LumaSprite-Engine-E4.1R-Report.html)

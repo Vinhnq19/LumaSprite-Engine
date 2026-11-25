@@ -1,0 +1,2022 @@
+{
+  "version": 1,
+  "kind": "lumasprite-character-geometry",
+  "technical": "PASS",
+  "artistic": "VISUAL_REVIEW_PENDING",
+  "spec": {
+    "version": 2,
+    "kind": "humanoid-surveyor",
+    "name": "Grounded Surveyor",
+    "canvas": {
+      "w": 64,
+      "h": 64,
+      "background": "transparent"
+    },
+    "view": "three-quarter-right",
+    "seed": 42,
+    "palette": {
+      "mode": "authored"
+    },
+    "proportions": {
+      "head": [
+        14,
+        14
+      ],
+      "jacket": [
+        16,
+        16
+      ],
+      "hips": 13,
+      "arm": [
+        6,
+        4
+      ],
+      "leg": [
+        7,
+        5
+      ],
+      "boot": [
+        10,
+        4
+      ],
+      "satchel": [
+        7,
+        10
+      ],
+      "lantern": [
+        7,
+        10
+      ]
+    },
+    "pose": {
+      "kind": "standing-hold",
+      "hip": [
+        31,
+        37
+      ],
+      "lean": 0,
+      "pivot": [
+        30,
+        59
+      ],
+      "support": "near",
+      "near": {
+        "elbow": [
+          32,
+          34
+        ],
+        "wrist": [
+          45,
+          32
+        ],
+        "palm": [
+          48,
+          32
+        ],
+        "knee": [
+          29,
+          45
+        ],
+        "ankle": [
+          27,
+          54
+        ]
+      },
+      "far": {
+        "elbow": [
+          38,
+          26
+        ],
+        "wrist": [
+          37,
+          34
+        ],
+        "palm": [
+          36,
+          36
+        ],
+        "knee": [
+          40,
+          45
+        ],
+        "ankle": [
+          39,
+          53
+        ]
+      },
+      "turn": 2,
+      "secondaryGroundOffset": -1
+    }
+  },
+  "bodyPlan": {
+    "parts": [
+      {
+        "id": "far-thigh",
+        "shapes": [
+          {
+            "ink": "farTrousers",
+            "polygon": [
+              [
+                32.87752817163539,
+                37.956928793535894
+              ],
+              [
+                38.31460680969616,
+                46.71410732794658
+              ],
+              [
+                42.68539319030384,
+                44.28589267205342
+              ],
+              [
+                38.12247182836461,
+                35.043071206464106
+              ]
+            ]
+          },
+          {
+            "ink": "farTrousers",
+            "spans": [
+              [
+                33,
+                35,
+                35
+              ],
+              [
+                34,
+                33,
+                37
+              ],
+              [
+                35,
+                33,
+                37
+              ],
+              [
+                36,
+                32,
+                38
+              ],
+              [
+                37,
+                33,
+                37
+              ],
+              [
+                38,
+                33,
+                37
+              ]
+            ]
+          },
+          {
+            "ink": "farTrousers",
+            "spans": [
+              [
+                43,
+                39,
+                41
+              ],
+              [
+                44,
+                38,
+                42
+              ],
+              [
+                45,
+                38,
+                42
+              ],
+              [
+                46,
+                38,
+                42
+              ],
+              [
+                47,
+                39,
+                41
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "far-shin",
+        "shapes": [
+          {
+            "ink": "farTrousers",
+            "polygon": [
+              [
+                38.019305308215834,
+                45.18991316352698
+              ],
+              [
+                37.51544424657266,
+                53.25193053082158
+              ],
+              [
+                41.48455575342734,
+                53.74806946917842
+              ],
+              [
+                42.980694691784166,
+                45.81008683647302
+              ]
+            ]
+          },
+          {
+            "ink": "farTrousers",
+            "spans": [
+              [
+                43,
+                39,
+                41
+              ],
+              [
+                44,
+                38,
+                42
+              ],
+              [
+                45,
+                38,
+                42
+              ],
+              [
+                46,
+                38,
+                42
+              ],
+              [
+                47,
+                39,
+                41
+              ]
+            ]
+          },
+          {
+            "ink": "farTrousers",
+            "spans": [
+              [
+                51,
+                39,
+                39
+              ],
+              [
+                52,
+                38,
+                40
+              ],
+              [
+                53,
+                37,
+                41
+              ],
+              [
+                54,
+                38,
+                40
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "far-boot",
+        "shapes": [
+          {
+            "ink": "sole",
+            "polygon": [
+              [
+                37,
+                51
+              ],
+              [
+                41,
+                51
+              ],
+              [
+                42,
+                53
+              ],
+              [
+                45,
+                54
+              ],
+              [
+                46,
+                56
+              ],
+              [
+                45,
+                57
+              ],
+              [
+                37,
+                57
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "far-upper-arm",
+        "shapes": [
+          {
+            "ink": "farCoat",
+            "polygon": [
+              [
+                33.263932022500214,
+                21.618033988749893
+              ],
+              [
+                36.71114561800017,
+                27.394427190999917
+              ],
+              [
+                40.28885438199983,
+                25.605572809000083
+              ],
+              [
+                37.736067977499786,
+                19.381966011250107
+              ]
+            ]
+          },
+          {
+            "ink": "farCoat",
+            "spans": [
+              [
+                18,
+                34,
+                36
+              ],
+              [
+                19,
+                33,
+                37
+              ],
+              [
+                20,
+                33,
+                37
+              ],
+              [
+                21,
+                33,
+                37
+              ],
+              [
+                22,
+                34,
+                36
+              ]
+            ]
+          },
+          {
+            "ink": "farCoat",
+            "spans": [
+              [
+                24,
+                38,
+                38
+              ],
+              [
+                25,
+                37,
+                39
+              ],
+              [
+                26,
+                36,
+                40
+              ],
+              [
+                27,
+                37,
+                39
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "far-forearm",
+        "shapes": [
+          {
+            "ink": "farCoat",
+            "polygon": [
+              [
+                36.51544424657266,
+                26.251930530821582
+              ],
+              [
+                36.0115831849295,
+                34.31394789811619
+              ],
+              [
+                38.9884168150705,
+                34.68605210188381
+              ],
+              [
+                40.48455575342734,
+                26.748069469178418
+              ]
+            ]
+          },
+          {
+            "ink": "farCoat",
+            "spans": [
+              [
+                24,
+                38,
+                38
+              ],
+              [
+                25,
+                37,
+                39
+              ],
+              [
+                26,
+                36,
+                40
+              ],
+              [
+                27,
+                37,
+                39
+              ]
+            ]
+          },
+          {
+            "ink": "farCoat",
+            "spans": [
+              [
+                33,
+                36,
+                38
+              ],
+              [
+                34,
+                36,
+                38
+              ],
+              [
+                35,
+                36,
+                38
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "far-hand",
+        "shapes": [
+          {
+            "ink": "face",
+            "polygon": [
+              [
+                36.15835921350013,
+                33.82917960675006
+              ],
+              [
+                35.15835921350013,
+                35.82917960675006
+              ],
+              [
+                37.84164078649987,
+                37.17082039324994
+              ],
+              [
+                38.84164078649987,
+                35.17082039324994
+              ]
+            ]
+          },
+          {
+            "ink": "face",
+            "spans": [
+              [
+                33,
+                36,
+                38
+              ],
+              [
+                34,
+                36,
+                38
+              ],
+              [
+                35,
+                36,
+                38
+              ]
+            ]
+          },
+          {
+            "ink": "face",
+            "spans": [
+              [
+                35,
+                35,
+                37
+              ],
+              [
+                36,
+                35,
+                37
+              ],
+              [
+                37,
+                35,
+                37
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "near-thigh",
+        "shapes": [
+          {
+            "ink": "trousers",
+            "polygon": [
+              [
+                24.13466618325712,
+                39.46152394764082
+              ],
+              [
+                26.61542815707753,
+                46.32416338369213
+              ],
+              [
+                32.38457184292247,
+                44.67583661630787
+              ],
+              [
+                30.86533381674288,
+                37.53847605235918
+              ]
+            ]
+          },
+          {
+            "ink": "trousers",
+            "spans": [
+              [
+                35,
+                26,
+                28
+              ],
+              [
+                36,
+                25,
+                29
+              ],
+              [
+                37,
+                24,
+                30
+              ],
+              [
+                38,
+                24,
+                30
+              ],
+              [
+                39,
+                24,
+                30
+              ],
+              [
+                40,
+                25,
+                29
+              ],
+              [
+                41,
+                26,
+                28
+              ]
+            ]
+          },
+          {
+            "ink": "trousers",
+            "spans": [
+              [
+                42,
+                29,
+                29
+              ],
+              [
+                43,
+                27,
+                31
+              ],
+              [
+                44,
+                27,
+                31
+              ],
+              [
+                45,
+                26,
+                32
+              ],
+              [
+                46,
+                27,
+                31
+              ],
+              [
+                47,
+                27,
+                31
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "near-shin",
+        "shapes": [
+          {
+            "ink": "trousers",
+            "polygon": [
+              [
+                26.571438819448144,
+                44.84920862654403
+              ],
+              [
+                25.05953234954012,
+                53.95767385545336
+              ],
+              [
+                29.94046765045988,
+                55.04232614454664
+              ],
+              [
+                32.42856118055186,
+                46.15079137345597
+              ]
+            ]
+          },
+          {
+            "ink": "trousers",
+            "spans": [
+              [
+                42,
+                29,
+                29
+              ],
+              [
+                43,
+                27,
+                31
+              ],
+              [
+                44,
+                27,
+                31
+              ],
+              [
+                45,
+                26,
+                32
+              ],
+              [
+                46,
+                27,
+                31
+              ],
+              [
+                47,
+                27,
+                31
+              ]
+            ]
+          },
+          {
+            "ink": "trousers",
+            "spans": [
+              [
+                52,
+                26,
+                28
+              ],
+              [
+                53,
+                25,
+                29
+              ],
+              [
+                54,
+                25,
+                29
+              ],
+              [
+                55,
+                25,
+                29
+              ],
+              [
+                56,
+                26,
+                28
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "near-boot",
+        "shapes": [
+          {
+            "ink": "sole",
+            "polygon": [
+              [
+                24,
+                52
+              ],
+              [
+                29,
+                52
+              ],
+              [
+                30,
+                54
+              ],
+              [
+                33,
+                55
+              ],
+              [
+                34,
+                57
+              ],
+              [
+                33,
+                58
+              ],
+              [
+                24,
+                58
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "satchel",
+        "shapes": [
+          {
+            "ink": "leather",
+            "polygon": [
+              [
+                24,
+                26
+              ],
+              [
+                28,
+                27
+              ],
+              [
+                29,
+                33
+              ],
+              [
+                26,
+                36
+              ],
+              [
+                23,
+                35
+              ],
+              [
+                22,
+                30
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hips",
+        "shapes": [
+          {
+            "ink": "trousers",
+            "spans": [
+              [
+                34,
+                28,
+                34
+              ],
+              [
+                35,
+                25,
+                37
+              ],
+              [
+                36,
+                24,
+                38
+              ],
+              [
+                37,
+                24,
+                38
+              ],
+              [
+                38,
+                24,
+                38
+              ],
+              [
+                39,
+                25,
+                37
+              ],
+              [
+                40,
+                28,
+                34
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "jacket",
+        "shapes": [
+          {
+            "ink": "jacket",
+            "polygon": [
+              [
+                25,
+                22
+              ],
+              [
+                37,
+                19
+              ],
+              [
+                39,
+                25
+              ],
+              [
+                37,
+                35
+              ],
+              [
+                39,
+                38
+              ],
+              [
+                25,
+                40
+              ],
+              [
+                23,
+                35
+              ],
+              [
+                23,
+                26
+              ]
+            ]
+          },
+          {
+            "ink": "farCoat",
+            "polygon": [
+              [
+                32,
+                22
+              ],
+              [
+                37,
+                19
+              ],
+              [
+                39,
+                25
+              ],
+              [
+                37,
+                35
+              ],
+              [
+                39,
+                38
+              ],
+              [
+                33,
+                39
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "strap",
+        "shapes": [
+          {
+            "ink": "leather",
+            "polygon": [
+              [
+                25.67780780835622,
+                23.069209978830308
+              ],
+              [
+                34.67780780835622,
+                36.06920997883031
+              ],
+              [
+                36.32219219164378,
+                34.93079002116969
+              ],
+              [
+                27.32219219164378,
+                21.930790021169692
+              ]
+            ]
+          },
+          {
+            "ink": "leather",
+            "spans": [
+              [
+                21,
+                26,
+                26
+              ],
+              [
+                22,
+                25,
+                27
+              ]
+            ]
+          },
+          {
+            "ink": "leather",
+            "spans": [
+              [
+                34,
+                35,
+                35
+              ],
+              [
+                35,
+                34,
+                36
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "neck",
+        "shapes": [
+          {
+            "ink": "face",
+            "spans": [
+              [
+                15,
+                32,
+                32
+              ],
+              [
+                16,
+                31,
+                33
+              ],
+              [
+                17,
+                30,
+                34
+              ],
+              [
+                18,
+                30,
+                34
+              ],
+              [
+                19,
+                29,
+                35
+              ],
+              [
+                20,
+                30,
+                34
+              ],
+              [
+                21,
+                30,
+                34
+              ],
+              [
+                22,
+                31,
+                33
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "head",
+        "shapes": [
+          {
+            "ink": "face",
+            "polygon": [
+              [
+                28,
+                10
+              ],
+              [
+                39,
+                9
+              ],
+              [
+                39,
+                11
+              ],
+              [
+                41,
+                14
+              ],
+              [
+                40,
+                16
+              ],
+              [
+                39,
+                19
+              ],
+              [
+                35,
+                21
+              ],
+              [
+                30,
+                19
+              ],
+              [
+                27,
+                15
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cap",
+        "shapes": [
+          {
+            "ink": "cap",
+            "polygon": [
+              [
+                26,
+                12
+              ],
+              [
+                27,
+                9
+              ],
+              [
+                30,
+                5
+              ],
+              [
+                34,
+                4
+              ],
+              [
+                37,
+                5
+              ],
+              [
+                40,
+                8
+              ],
+              [
+                41,
+                11
+              ]
+            ]
+          },
+          {
+            "ink": "brim",
+            "polygon": [
+              [
+                27,
+                11
+              ],
+              [
+                40,
+                10
+              ],
+              [
+                45,
+                12
+              ],
+              [
+                43,
+                14
+              ],
+              [
+                30,
+                14
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "near-upper-arm",
+        "shapes": [
+          {
+            "ink": "jacket",
+            "polygon": [
+              [
+                22.969015536803678,
+                25.110626476579476
+              ],
+              [
+                30.39084628066973,
+                35.842188730482896
+              ],
+              [
+                34.609153719330266,
+                33.157811269517104
+              ],
+              [
+                28.030984463196322,
+                21.889373523420524
+              ]
+            ]
+          },
+          {
+            "ink": "jacket",
+            "spans": [
+              [
+                20,
+                25,
+                25
+              ],
+              [
+                21,
+                23,
+                27
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                23,
+                22,
+                28
+              ],
+              [
+                24,
+                23,
+                27
+              ],
+              [
+                25,
+                23,
+                27
+              ]
+            ]
+          },
+          {
+            "ink": "jacket",
+            "spans": [
+              [
+                32,
+                31,
+                33
+              ],
+              [
+                33,
+                30,
+                34
+              ],
+              [
+                34,
+                30,
+                34
+              ],
+              [
+                35,
+                30,
+                34
+              ],
+              [
+                36,
+                31,
+                33
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "near-forearm",
+        "shapes": [
+          {
+            "ink": "jacket",
+            "polygon": [
+              [
+                32.880142960634856,
+                36.970929244126545
+              ],
+              [
+                45.80411436850788,
+                34.476743395301234
+              ],
+              [
+                45.19588563149212,
+                30.523256604698766
+              ],
+              [
+                32.119857039365144,
+                32.029070755873455
+              ]
+            ]
+          },
+          {
+            "ink": "jacket",
+            "spans": [
+              [
+                32,
+                31,
+                33
+              ],
+              [
+                33,
+                30,
+                34
+              ],
+              [
+                34,
+                30,
+                34
+              ],
+              [
+                35,
+                30,
+                34
+              ],
+              [
+                36,
+                31,
+                33
+              ]
+            ]
+          },
+          {
+            "ink": "jacket",
+            "spans": [
+              [
+                30,
+                45,
+                45
+              ],
+              [
+                31,
+                44,
+                46
+              ],
+              [
+                32,
+                43,
+                47
+              ],
+              [
+                33,
+                44,
+                46
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lantern",
+        "shapes": [
+          {
+            "ink": "iron",
+            "polygon": [
+              [
+                47,
+                32
+              ],
+              [
+                52,
+                32
+              ],
+              [
+                52,
+                34
+              ],
+              [
+                47,
+                34
+              ]
+            ]
+          },
+          {
+            "ink": "iron",
+            "polygon": [
+              [
+                47,
+                33
+              ],
+              [
+                48,
+                33
+              ],
+              [
+                48,
+                40
+              ],
+              [
+                47,
+                40
+              ]
+            ]
+          },
+          {
+            "ink": "iron",
+            "polygon": [
+              [
+                51,
+                33
+              ],
+              [
+                52,
+                33
+              ],
+              [
+                52,
+                40
+              ],
+              [
+                51,
+                40
+              ]
+            ]
+          },
+          {
+            "ink": "iron",
+            "polygon": [
+              [
+                48,
+                38
+              ],
+              [
+                51,
+                38
+              ],
+              [
+                53,
+                41
+              ],
+              [
+                52,
+                47
+              ],
+              [
+                50,
+                48
+              ],
+              [
+                47,
+                48
+              ],
+              [
+                46,
+                41
+              ]
+            ]
+          },
+          {
+            "ink": "lantern",
+            "polygon": [
+              [
+                48,
+                41
+              ],
+              [
+                51,
+                41
+              ],
+              [
+                51,
+                46
+              ],
+              [
+                48,
+                46
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "near-hand",
+        "shapes": [
+          {
+            "ink": "face",
+            "polygon": [
+              [
+                45.5,
+                34.5
+              ],
+              [
+                48.5,
+                34.5
+              ],
+              [
+                48.5,
+                30.5
+              ],
+              [
+                45.5,
+                30.5
+              ]
+            ]
+          },
+          {
+            "ink": "face",
+            "spans": [
+              [
+                30,
+                45,
+                45
+              ],
+              [
+                31,
+                44,
+                46
+              ],
+              [
+                32,
+                43,
+                47
+              ],
+              [
+                33,
+                44,
+                46
+              ]
+            ]
+          },
+          {
+            "ink": "face",
+            "spans": [
+              [
+                30,
+                48,
+                48
+              ],
+              [
+                31,
+                47,
+                49
+              ],
+              [
+                32,
+                46,
+                50
+              ],
+              [
+                33,
+                47,
+                49
+              ]
+            ]
+          },
+          {
+            "ink": "face",
+            "spans": [
+              [
+                30,
+                48,
+                50
+              ],
+              [
+                31,
+                48,
+                50
+              ],
+              [
+                32,
+                48,
+                50
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "landmarks": {
+      "crown": {
+        "point": [
+          34,
+          13
+        ],
+        "partId": "head"
+      },
+      "neck": {
+        "point": [
+          32,
+          19
+        ],
+        "partId": "neck"
+      },
+      "chest": {
+        "point": [
+          31,
+          24
+        ],
+        "partId": "jacket"
+      },
+      "pelvis": {
+        "point": [
+          31,
+          37
+        ],
+        "partId": "hips"
+      },
+      "far-shoulder": {
+        "point": [
+          35,
+          20
+        ],
+        "partId": "far-upper-arm"
+      },
+      "far-elbow": {
+        "point": [
+          38,
+          26
+        ],
+        "partId": "far-forearm"
+      },
+      "far-wrist": {
+        "point": [
+          37,
+          34
+        ],
+        "partId": "far-forearm"
+      },
+      "far-palm": {
+        "point": [
+          36,
+          36
+        ],
+        "partId": "far-hand"
+      },
+      "far-hip": {
+        "point": [
+          35,
+          36
+        ],
+        "partId": "far-thigh"
+      },
+      "far-knee": {
+        "point": [
+          40,
+          45
+        ],
+        "partId": "far-shin"
+      },
+      "far-ankle": {
+        "point": [
+          39,
+          53
+        ],
+        "partId": "far-boot"
+      },
+      "far-ground": {
+        "point": [
+          39,
+          56
+        ],
+        "partId": "far-boot"
+      },
+      "near-shoulder": {
+        "point": [
+          25,
+          23
+        ],
+        "partId": "near-upper-arm"
+      },
+      "near-elbow": {
+        "point": [
+          32,
+          34
+        ],
+        "partId": "near-forearm"
+      },
+      "near-wrist": {
+        "point": [
+          45,
+          32
+        ],
+        "partId": "near-forearm"
+      },
+      "near-palm": {
+        "point": [
+          48,
+          32
+        ],
+        "partId": "near-hand"
+      },
+      "near-hip": {
+        "point": [
+          27,
+          38
+        ],
+        "partId": "near-thigh"
+      },
+      "near-knee": {
+        "point": [
+          29,
+          45
+        ],
+        "partId": "near-shin"
+      },
+      "near-ankle": {
+        "point": [
+          27,
+          54
+        ],
+        "partId": "near-boot"
+      },
+      "near-ground": {
+        "point": [
+          27,
+          57
+        ],
+        "partId": "near-boot"
+      },
+      "grip-anchor": {
+        "point": [
+          49,
+          33
+        ],
+        "partId": "lantern"
+      }
+    },
+    "links": [
+      {
+        "from": "crown",
+        "to": "neck"
+      },
+      {
+        "from": "neck",
+        "to": "chest"
+      },
+      {
+        "from": "chest",
+        "to": "pelvis"
+      },
+      {
+        "from": "chest",
+        "to": "far-shoulder"
+      },
+      {
+        "from": "far-shoulder",
+        "to": "far-elbow"
+      },
+      {
+        "from": "far-elbow",
+        "to": "far-wrist"
+      },
+      {
+        "from": "far-wrist",
+        "to": "far-palm"
+      },
+      {
+        "from": "pelvis",
+        "to": "far-hip"
+      },
+      {
+        "from": "far-hip",
+        "to": "far-knee"
+      },
+      {
+        "from": "far-knee",
+        "to": "far-ankle"
+      },
+      {
+        "from": "far-ankle",
+        "to": "far-ground"
+      },
+      {
+        "from": "chest",
+        "to": "near-shoulder"
+      },
+      {
+        "from": "near-shoulder",
+        "to": "near-elbow"
+      },
+      {
+        "from": "near-elbow",
+        "to": "near-wrist"
+      },
+      {
+        "from": "near-wrist",
+        "to": "near-palm"
+      },
+      {
+        "from": "pelvis",
+        "to": "near-hip"
+      },
+      {
+        "from": "near-hip",
+        "to": "near-knee"
+      },
+      {
+        "from": "near-knee",
+        "to": "near-ankle"
+      },
+      {
+        "from": "near-ankle",
+        "to": "near-ground"
+      },
+      {
+        "from": "near-wrist",
+        "to": "grip-anchor"
+      }
+    ],
+    "pivot": [
+      30,
+      59
+    ],
+    "support": "near",
+    "facing": "three-quarter-right",
+    "poseIntent": "standing-hold",
+    "projectedGround": {
+      "near": 59,
+      "far": 58
+    }
+  },
+  "palette": [
+    "#262334",
+    "#437a76",
+    "#36535b",
+    "#525768",
+    "#424654",
+    "#8e624a",
+    "#51433d",
+    "#e0af82",
+    "#4d5e5c",
+    "#39454c",
+    "#525869",
+    "#edc17d"
+  ],
+  "diagnostics": {
+    "errors": [],
+    "bounds": {
+      "left": 21,
+      "right": 53,
+      "top": 3,
+      "bottom": 58,
+      "area": 1086,
+      "components": 1
+    },
+    "parts": {
+      "far-thigh": {
+        "left": 32,
+        "right": 42,
+        "top": 33,
+        "bottom": 47,
+        "area": 81,
+        "components": 1
+      },
+      "far-shin": {
+        "left": 37,
+        "right": 42,
+        "top": 43,
+        "bottom": 54,
+        "area": 51,
+        "components": 1
+      },
+      "far-boot": {
+        "left": 37,
+        "right": 45,
+        "top": 51,
+        "bottom": 56,
+        "area": 40,
+        "components": 1
+      },
+      "far-upper-arm": {
+        "left": 33,
+        "right": 40,
+        "top": 18,
+        "bottom": 27,
+        "area": 46,
+        "components": 1
+      },
+      "far-forearm": {
+        "left": 36,
+        "right": 40,
+        "top": 24,
+        "bottom": 35,
+        "area": 41,
+        "components": 1
+      },
+      "far-hand": {
+        "left": 35,
+        "right": 38,
+        "top": 33,
+        "bottom": 37,
+        "area": 16,
+        "components": 1
+      },
+      "near-thigh": {
+        "left": 24,
+        "right": 32,
+        "top": 35,
+        "bottom": 47,
+        "area": 78,
+        "components": 1
+      },
+      "near-shin": {
+        "left": 25,
+        "right": 32,
+        "top": 42,
+        "bottom": 56,
+        "area": 76,
+        "components": 1
+      },
+      "near-boot": {
+        "left": 24,
+        "right": 33,
+        "top": 52,
+        "bottom": 57,
+        "area": 46,
+        "components": 1
+      },
+      "satchel": {
+        "left": 22,
+        "right": 28,
+        "top": 26,
+        "bottom": 35,
+        "area": 50,
+        "components": 1
+      },
+      "hips": {
+        "left": 24,
+        "right": 38,
+        "top": 34,
+        "bottom": 40,
+        "area": 85,
+        "components": 1
+      },
+      "jacket": {
+        "left": 23,
+        "right": 38,
+        "top": 19,
+        "bottom": 39,
+        "area": 268,
+        "components": 1
+      },
+      "strap": {
+        "left": 25,
+        "right": 36,
+        "top": 21,
+        "bottom": 35,
+        "area": 35,
+        "components": 1
+      },
+      "neck": {
+        "left": 29,
+        "right": 35,
+        "top": 15,
+        "bottom": 22,
+        "area": 34,
+        "components": 1
+      },
+      "head": {
+        "left": 27,
+        "right": 40,
+        "top": 9,
+        "bottom": 20,
+        "area": 122,
+        "components": 1
+      },
+      "cap": {
+        "left": 26,
+        "right": 43,
+        "top": 4,
+        "bottom": 13,
+        "area": 119,
+        "components": 1
+      },
+      "near-upper-arm": {
+        "left": 22,
+        "right": 34,
+        "top": 20,
+        "bottom": 36,
+        "area": 97,
+        "components": 1
+      },
+      "near-forearm": {
+        "left": 30,
+        "right": 47,
+        "top": 30,
+        "bottom": 36,
+        "area": 76,
+        "components": 1
+      },
+      "lantern": {
+        "left": 46,
+        "right": 52,
+        "top": 32,
+        "bottom": 47,
+        "area": 76,
+        "components": 1
+      },
+      "near-hand": {
+        "left": 43,
+        "right": 50,
+        "top": 30,
+        "bottom": 33,
+        "area": 27,
+        "components": 1
+      }
+    },
+    "joints": {
+      "near-shoulder": 87,
+      "near-elbow": 21,
+      "near-wrist": 12,
+      "near-hip": 31,
+      "near-knee": 28,
+      "near-ankle": 22,
+      "far-shoulder": 30,
+      "far-elbow": 12,
+      "far-wrist": 9,
+      "far-hip": 31,
+      "far-knee": 21,
+      "far-ankle": 15
+    },
+    "centerX": 31.357843137254903,
+    "plantedFoot": "near",
+    "legGapRows": 9,
+    "maxGap": 5,
+    "gripPixels": 7,
+    "lampGapRows": 12,
+    "structure": "STRUCTURAL_VALID",
+    "constraints": "POSE_CONSTRAINTS_VALID",
+    "visual": "VISUAL_REVIEW_PENDING",
+    "pose": {
+      "errors": [],
+      "intent": "standing-hold",
+      "headroom": 3,
+      "feet": {
+        "near": {
+          "projectedGroundY": 59,
+          "lowestContourY": 58,
+          "clearance": 0,
+          "solePixels": 9,
+          "soleBand": [
+            24,
+            32
+          ],
+          "toeRise": 0
+        },
+        "far": {
+          "projectedGroundY": 58,
+          "lowestContourY": 57,
+          "clearance": 0,
+          "solePixels": 8,
+          "soleBand": [
+            37,
+            44
+          ],
+          "toeRise": 0
+        }
+      },
+      "shoulderDrop": 3,
+      "hipDrop": 2,
+      "kneeBends": {
+        "near": 2,
+        "far": 2.882352941176471
+      },
+      "openHandleRows": 2,
+      "armTorsoGapRows": 4,
+      "lampBodyGap": 4
+    }
+  },
+  "images": {
+    "flatPngSha256": "9d95564b985f70537b3573d63f602621ea4758f7fd83e41d1aa4b256bd4a5899",
+    "silhouettePngSha256": "6fc4255147efd87a422bfafd07110f6fd2d328aacb02a91556f3758f600abac7"
+  }
+}

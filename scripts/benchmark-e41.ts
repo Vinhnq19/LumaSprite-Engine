@@ -7,14 +7,16 @@ import type { Point } from '../src/core/geometry/shapes.ts';
 import { blit, makeRaster, nearestNeighbor, put, type Raster } from '../src/core/pixels/raster.ts';
 import { encodePng } from '../src/core/renderer/png.ts';
 import { characterReview, writeCharacterReview } from '../src/generators/character/export.ts';
-import { surveyors } from '../src/generators/character/presets.ts';
+import { surveyorRefinements, surveyors } from '../src/generators/character/presets.ts';
 import { bakeTerrain, verifyBakedTerrain } from '../src/generators/terrain/baked.ts';
 import { renderTerrain } from '../src/generators/terrain/render.ts';
 import { sha256 } from '../src/quality/raster.ts';
 
-const { values } = parseArgs({ options: { out: { type: 'string', default: 'benchmarks/results/run/e41' } } });
-const out = resolve(values.out);
-for (const edition of ['sample', 'e2', 'e23', 'e24', 'e3', 'e32', 'e33', 'e34']) {
+const { values } = parseArgs({ options: { out: { type: 'string' }, refined: { type: 'boolean' } } });
+const out = resolve(values.out ?? (values.refined ? 'benchmarks/results/run/e41r' : 'benchmarks/results/run/e41'));
+const lockedEditions = ['sample', 'e2', 'e23', 'e24', 'e3', 'e32', 'e33', 'e34'];
+lockedEditions.push(values.refined ? 'e41' : 'e41r');
+for (const edition of lockedEditions) {
   const locked = resolve('benchmarks/results', edition).toLowerCase();
   if (out.toLowerCase() === locked || out.toLowerCase().startsWith(locked + sep)) {
     throw new Error('Choose a separate character review directory.');
@@ -46,6 +48,12 @@ function outlineMarks({ flat, plan }: ReturnType<typeof characterReview>) {
   const [x, y] = plan.pivot;
   drawLine([Math.max(0, x * 4 - 24), y * 4], [x * 4 + 28, y * 4], pack('#ffe294'));
   drawLine([x * 4, y * 4 - 3], [x * 4, y * 4 + 3], pack('#ffe294'));
+  if (plan.projectedGround) {
+    const secondary = plan.support === 'near' ? 'far' : 'near';
+    const [footX] = plan.landmarks[secondary + '-ground'].point;
+    const floorY = plan.projectedGround[secondary] * 4;
+    drawLine([footX * 4 - 13, floorY], [footX * 4 + 24, floorY], pack('#d6a5ed'));
+  }
   return raster;
 }
 
@@ -67,7 +75,7 @@ const props = await Promise.all(reference.overlays.filter(layer => layer.id !== 
 const ground = bakeTerrain(renderTerrain(reference.spec), reference.map, props).raster;
 const scenePivot = [240, 158] as const;
 const qa = [];
-for (const [id, spec] of Object.entries(surveyors)) {
+for (const [id, spec] of Object.entries(values.refined ? surveyorRefinements : surveyors)) {
   const review = characterReview(spec);
   await json(id + '-spec', review.spec);
   await writeCharacterReview(join(out, id), review);
@@ -80,7 +88,8 @@ for (const [id, spec] of Object.entries(surveyors)) {
     save(id + '-silhouette-4x', nearestNeighbor(silhouette, 4)),
     save(id + '-landmarks-4x', outlineMarks(review)),
     save(id + '-grip-6x', crop(flat, gx - 9, gy - 7, gx + 8, metadata.diagnostics.parts.lantern.bottom + 3)),
-    save(id + '-stance-6x', crop(flat, Math.min(near.ankle[0], far.ankle[0]) - 7, near.knee[1] - 2,
+    save(id + '-stance-6x', crop(flat, Math.min(near.ankle[0], far.ankle[0]) - 7,
+      spec.version === 2 ? Math.min(near.knee[1], far.knee[1]) - 3 : near.knee[1] - 2,
       Math.max(near.ankle[0], far.ankle[0]) + 11, plan.pivot[1] + 1)),
     save(id + '-scene-1x', scene),
   ]);
@@ -90,4 +99,4 @@ await json('qa', qa.map(({ candidate, technical, artistic, diagnostics, images }
 await json('scene', { source: backdrop, sourcePngSha256: reference.image.pngSha256, overlays: props.map(({ id, provenance, png }) => ({
   id, provenance, pngSha256: sha256(png),
 })), groundPivot: scenePivot });
-console.log('E4.1 geometry benchmark written to ' + out);
+console.log((values.refined ? 'E4.1R' : 'E4.1') + ' geometry benchmark written to ' + out);

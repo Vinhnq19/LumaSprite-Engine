@@ -94,9 +94,11 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
   const lifted = parts[(spec.pose.support === 'near' ? 'far' : 'near') + '-boot'];
   const [px, py] = plan.pivot;
   for (let at = 0; at < flat.rgba.length; at += 4) {
-    if (flat.rgba[at + 3] && Math.floor(at / 4 / w) >= py) errors.add('BELOW_GROUND');
+    if (flat.rgba[at + 3] && Math.floor(at / 4 / w) >= Math.max(py, plan.projectedGround?.near ?? py, plan.projectedGround?.far ?? py)) {
+      errors.add('BELOW_GROUND');
+    }
   }
-  if (support.bottom + 2 !== py || lifted.bottom >= support.bottom || !visible(flat, px, py - 1) ||
+  if (support.bottom + 2 !== py || (spec.version === 1 && lifted.bottom >= support.bottom) || !visible(flat, px, py - 1) ||
       !visible(layers[spec.pose.support + '-boot'], px, py - 2)) errors.add('GROUND_CONTACT');
   let torsoMass = 0, torsoSum = 0;
   for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
@@ -106,13 +108,13 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
     }
   }
   const centerX = torsoSum / torsoMass;
-  if (centerX < support.left || centerX > support.right) errors.add('BALANCE');
+  if (spec.version === 1 && (centerX < support.left || centerX > support.right)) errors.add('BALANCE');
 
   let legGapRows = 0;
   const leg = (side: string, x: number, y: number) =>
     ['shin', 'boot'].some(name => visible(layers[side + '-' + name], x, y));
   let maxGap = 0;
-  for (let y = Math.max(spec.pose.near.knee[1], spec.pose.far.knee[1]) + 2; y <= lifted.bottom; y++) {
+  for (let y = Math.max(spec.pose.near.knee[1], spec.pose.far.knee[1]) + 2; y <= Math.min(lifted.bottom, support.bottom); y++) {
     const xs = Array.from({ length: w }, (_, x) => x);
     const near = xs.findLast(x => leg('near', x, y)), far = xs.find(x => leg('far', x, y));
     if (near === undefined || far === undefined) continue;
@@ -138,5 +140,102 @@ export function checkCharacter({ spec, plan, layers, flat, silhouette, palette }
     if (firstLamp > 2 && !visible(silhouette, firstLamp - 2, y)) lampGapRows++;
   }
   if (lampGapRows < 2) errors.add('PROP_CLEARANCE');
-  return { errors: [...errors], bounds, parts, joints, centerX, plantedFoot: spec.pose.support, legGapRows, maxGap, gripPixels, lampGapRows };
+  const poseErrors = new Set(['BELOW_GROUND', 'GROUND_CONTACT', 'LEG_GAP', 'PROP_CLEARANCE', 'POSE_CHAIN/near', 'POSE_CHAIN/far']);
+  const pose = spec.version === 2 ? checkRefinedPose(spec, plan, layers, flat, bounds, parts, centerX) : undefined;
+  const structure = [...errors].every(code => poseErrors.has(code));
+  const constraints = pose && !pose.errors.length && [...errors].every(code => !poseErrors.has(code));
+  return {
+    errors: [...errors, ...(pose?.errors ?? [])], bounds, parts, joints, centerX, plantedFoot: spec.pose.support, legGapRows, maxGap, gripPixels, lampGapRows,
+    ...(pose ? {
+      structure: structure ? 'STRUCTURAL_VALID' : 'STRUCTURAL_INVALID',
+      constraints: constraints ? 'POSE_CONSTRAINTS_VALID' : 'POSE_CONSTRAINTS_INVALID',
+      visual: 'VISUAL_REVIEW_PENDING', pose,
+    } : {}),
+  };
+}
+
+function checkRefinedPose(
+  spec: Extract<CharacterRender['spec'], { version: 2 }>, plan: CharacterRender['plan'], layers: CharacterRender['layers'],
+  flat: Raster, bounds: ReturnType<typeof shapeStats>, parts: Record<string, ReturnType<typeof shapeStats>>, centerX: number,
+) {
+  const { pose, proportions } = spec;
+  const errors: string[] = [];
+  const support = pose.support;
+  const secondary = support === 'near' ? 'far' : 'near';
+  const stepping = pose.kind === 'forward-step-hold';
+  const headroom = bounds.top;
+  const xs = Array.from({ length: flat.w }, (_, x) => x);
+  const minContact = Math.floor(proportions.boot[0] / 3);
+  const feet = Object.fromEntries((['near', 'far'] as const).map(side => {
+    const id = side + '-boot';
+    const mask = layers[id], bottom = parts[id].bottom;
+    const depth = plan.projectedGround![side];
+    const contact = xs.filter(x => visible(mask, x, bottom) && visible(flat, x, bottom + 1));
+    const [ax] = pose[side].ankle;
+    const toe = Math.max(...xs.flatMap(x => x > ax + 2 ? Array.from({ length: mask.h }, (_, y) => y).filter(y => visible(mask, x, y)) : []));
+    return [side, {
+      projectedGroundY: depth, lowestContourY: bottom + 1, clearance: depth - bottom - 2,
+      solePixels: contact.length, soleBand: [contact[0], contact.at(-1)!], toeRise: bottom - toe,
+    }];
+  }));
+  const planted = feet[support], other = feet[secondary];
+  if (headroom < Math.max(2, Math.ceil(proportions.head[1] / 5))) errors.push('HEADROOM');
+  if (planted.clearance !== 0 || planted.solePixels < minContact || planted.toeRise > 1) errors.push('PLANTED_SOLE');
+  if (stepping) {
+    if (other.clearance < 1 || other.clearance > proportions.boot[1] || other.toeRise < 1) errors.push('STEP_FOOT_CLEARANCE');
+    const stride = pose[secondary].ankle[0] - pose[support].ankle[0];
+    if (stride < proportions.hips || pose.lean < 1 || centerX <= pose[support].ankle[0] || centerX >= pose[secondary].ankle[0]) {
+      errors.push('STEP_WEIGHT_TRANSFER');
+    }
+  } else {
+    if (other.clearance !== 0 || other.solePixels < minContact || other.toeRise > 1) errors.push('SECONDARY_SOLE');
+    if (centerX < planted.soleBand[0] || centerX > planted.soleBand[1]) errors.push('STANDING_BALANCE');
+  }
+  if (overlap(layers['near-boot'], layers['far-boot'])) errors.push('BOOT_OVERLAP');
+
+  const joint = (name: string) => plan.landmarks[name].point;
+  const shoulderDrop = joint('near-shoulder')[1] - joint('far-shoulder')[1];
+  const hipDrop = joint('near-hip')[1] - joint('far-hip')[1];
+  if (shoulderDrop < 1 || hipDrop < 1 || Math.abs(joint('chest')[0] - pose.hip[0]) > proportions.jacket[0] / 3) {
+    errors.push('TORSO_ALIGNMENT');
+  }
+  const kneeBends: Record<string, number> = {};
+  for (const side of ['near', 'far'] as const) {
+    const [hx, hy] = joint(side + '-hip');
+    const { knee: [kx, ky], ankle: [ax, ay] } = pose[side];
+    const bend = kx - (hx + (ax - hx) * (ky - hy) / (ay - hy));
+    kneeBends[side] = bend;
+    if (bend < -1 || bend > proportions.leg[0] * .75) errors.push('KNEE_DIRECTION/' + side);
+  }
+  const { elbow: [ex, ey], wrist: [wx, wy], palm: [mx, my] } = pose.near;
+  if (ex < joint('near-shoulder')[0] || wx <= ex || (wx - ex) * (mx - wx) + (wy - ey) * (my - wy) <= 0) {
+    errors.push('HOLDING_ARM_DIRECTION');
+  }
+  const [gx, gy] = joint('grip-anchor');
+  let openHandleRows = 0, armTorsoGapRows = 0;
+  for (let y = gy + 2; y < gy + 5; y++) {
+    if (visible(layers.lantern, gx - 2, y) && visible(layers.lantern, gx + 2, y) && !visible(flat, gx, y)) openHandleRows++;
+  }
+  for (let y = Math.max(ey + 2, gy + 2); y <= parts.jacket.bottom; y++) {
+    const torsoRight = xs.findLast(x => visible(layers.jacket, x, y) || visible(layers['far-hand'], x, y));
+    const lampLeft = xs.find(x => visible(layers.lantern, x, y));
+    if (torsoRight !== undefined && lampLeft !== undefined && xs.some(x => x > torsoRight && x < lampLeft && !visible(flat, x, y))) {
+      armTorsoGapRows++;
+    }
+  }
+  const actorLayers = Object.entries(layers).filter(([id]) => id !== 'lantern').map(([, layer]) => layer);
+  const actor = [], lampBody = [];
+  for (let y = bounds.top; y <= bounds.bottom; y++) for (let x = bounds.left; x <= bounds.right; x++) {
+    if (actorLayers.some(layer => visible(layer, x, y))) actor.push([x, y]);
+    if (y >= gy + 5 && visible(layers.lantern, x, y)) lampBody.push([x, y]);
+  }
+  let lampBodyGap = flat.w + flat.h;
+  for (const [x, y] of lampBody) for (const [ax, ay] of actor) {
+    lampBodyGap = Math.min(lampBodyGap, Math.abs(x - ax) + Math.abs(y - ay));
+  }
+  if (!openHandleRows) errors.push('HANDLE_OPENING');
+  // A one-pixel contour on each region still leaves a transparent pixel between them.
+  if (!lampBody.length || lampBodyGap < 4) errors.push('LAMP_BODY_CLEARANCE');
+  if (armTorsoGapRows < Math.ceil(proportions.arm[1] / 2)) errors.push('ARM_TORSO_CLEARANCE');
+  return { errors, intent: pose.kind, headroom, feet, shoulderDrop, hipDrop, kneeBends, openHandleRows, armTorsoGapRows, lampBodyGap };
 }

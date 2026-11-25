@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "kind": "humanoid-surveyor",
+  "name": "Forward-Step Surveyor",
+  "canvas": {
+    "w": 64,
+    "h": 64,
+    "background": "transparent"
+  },
+  "view": "three-quarter-right",
+  "seed": 42,
+  "palette": {
+    "mode": "authored"
+  },
+  "proportions": {
+    "head": [
+      14,
+      14
+    ],
+    "jacket": [
+      16,
+      16
+    ],
+    "hips": 13,
+    "arm": [
+      6,
+      4
+    ],
+    "leg": [
+      7,
+      5
+    ],
+    "boot": [
+      10,
+      4
+    ],
+    "satchel": [
+      7,
+      10
+    ],
+    "lantern": [
+      7,
+      10
+    ]
+  },
+  "pose": {
+    "kind": "forward-step-hold",
+    "hip": [
+      34,
+      37
+    ],
+    "lean": 2,
+    "pivot": [
+      29,
+      59
+    ],
+    "support": "near",
+    "near": {
+      "elbow": [
+        35,
+        32
+      ],
+      "wrist": [
+        47,
+        26
+      ],
+      "palm": [
+        50,
+        25
+      ],
+      "knee": [
+        28,
+        46
+      ],
+      "ankle": [
+        26,
+        54
+      ]
+    },
+    "far": {
+      "elbow": [
+        42,
+        27
+      ],
+      "wrist": [
+        40,
+        34
+      ],
+      "palm": [
+        39,
+        36
+      ],
+      "knee": [
+        44,
+        43
+      ],
+      "ankle": [
+        44,
+        51
+      ]
+    },
+    "turn": 2,
+    "secondaryGroundOffset": -1
+  }
+}

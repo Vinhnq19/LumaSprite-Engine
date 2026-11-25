@@ -1,6 +1,8 @@
 # Handoff
 
-**E4.1 engineering passes. The Project Owner's shape decision is pending.** The pilot includes A Compact Explorer and B Taller Surveyor at 64 × 64 with flat regions, landmarks, separate grips and an E3.4 terrain scene. Use the offline gallery at 1× and record A, B or requested revisions. E4.2 materials follow the approved shape. [Shape gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Owner sheet](benchmarks/results/e41/review.md) · [Engineering](docs/e41-test-report.md) · [PR draft](docs/e41-pr.md)
+**E4.1R is E4_1R_READY_FOR_HUMAN_SHAPE_REVIEW.** Both v2 refinements pass structure and pose constraints. B1 Grounded Surveyor is recommended for idle silhouette review. B2 Forward-Step Surveyor illustrates an intentional step. The Project Owner's shape decision precedes E4.2 materials. [Four-way gallery](docs/LumaSprite-Engine-E4.1R-Report.html) · [Owner sheet](benchmarks/results/e41r/review.md) · [QA](docs/e41r-test-report.md) · [PR draft](docs/e41r-pr.md)
+
+E4.1 engineering is approved. The independent art assessment requested revision and chose Taller Surveyor as the starting point. A and B remain locked controls from `a1fcd76`. [Original gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Baseline SHA-256](docs/e41-baseline-sha256.txt)
 
 **E3 is closed.** The Project Owner approved engineering and selected E3.4 Candidate B with limitations for Authored/Project and baked raster backgrounds. Candidate A remains an optional preset. TerrainSpec v3 stays the CLI default. [Final acceptance](docs/e3-final-acceptance.md) · [Review sheet](benchmarks/results/e34/review.md)
 

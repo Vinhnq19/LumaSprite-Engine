@@ -7,7 +7,7 @@ const extent = (minW: number, maxW: number, minH: number, maxH: number) =>
 const point = extent(2, 61, 2, 61);
 const limbPose = z.strictObject({ elbow: point, wrist: point, palm: point, knee: point, ankle: point });
 
-export const characterSpecSchema = z.strictObject({
+const characterSpecV1 = z.strictObject({
   version: z.literal(1),
   kind: z.literal('humanoid-surveyor'),
   name: z.string().trim().min(1).max(80),
@@ -36,4 +36,14 @@ export const characterSpecSchema = z.strictObject({
   }),
 });
 
+const characterSpecV2 = characterSpecV1.extend({
+  version: z.literal(2),
+  pose: characterSpecV1.shape.pose.extend({
+    kind: z.enum(['standing-hold', 'forward-step-hold']),
+    turn: size(1, 3),
+    secondaryGroundOffset: size(-3, 3),
+  }),
+});
+
+export const characterSpecSchema = z.discriminatedUnion('version', [characterSpecV1, characterSpecV2]);
 export type CharacterSpec = z.infer<typeof characterSpecSchema>;

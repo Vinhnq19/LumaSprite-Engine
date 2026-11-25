@@ -28,3 +28,30 @@ export const surveyors = {
     },
   },
 } satisfies Record<string, CharacterSpec>;
+
+const surveyorV2 = {
+  ...shared,
+  version: 2,
+  proportions: { ...surveyors.b.proportions, jacket: [16, 16], satchel: [7, 10] },
+} satisfies Omit<Extract<CharacterSpec, { version: 2 }>, 'name' | 'pose'>;
+
+export const surveyorRefinements = {
+  b1: {
+    ...surveyorV2,
+    name: 'Grounded Surveyor',
+    pose: {
+      kind: 'standing-hold', hip: [31, 37], lean: 0, turn: 2, pivot: [30, 59], support: 'near', secondaryGroundOffset: -1,
+      near: { elbow: [32, 34], wrist: [45, 32], palm: [48, 32], knee: [29, 45], ankle: [27, 54] },
+      far: { elbow: [38, 26], wrist: [37, 34], palm: [36, 36], knee: [40, 45], ankle: [39, 53] },
+    },
+  },
+  b2: {
+    ...surveyorV2,
+    name: 'Forward-Step Surveyor',
+    pose: {
+      kind: 'forward-step-hold', hip: [34, 37], lean: 2, turn: 2, pivot: [29, 59], support: 'near', secondaryGroundOffset: -1,
+      near: { elbow: [35, 32], wrist: [47, 26], palm: [50, 25], knee: [28, 46], ankle: [26, 54] },
+      far: { elbow: [42, 27], wrist: [40, 34], palm: [39, 36], knee: [44, 43], ankle: [44, 51] },
+    },
+  },
+} satisfies Record<string, CharacterSpec>;
