@@ -38,3 +38,7 @@ Wait for the owner's terrain review before E4. DeepSeek development remains defe
 ## E3.3 checkpoint update
 
 ChatGPT recommended the E3.2 artistic baseline in Authored/Project palettes. E3.3 can ship world-space texture as a verifiable baked PNG and retains the canonical atlas for editable Studio maps. The candidate is ready for final art review. The Project Owner's E3 decision still gates E4. [E3.3 review gallery](LumaSprite-Engine-E3.3-Report.html)
+
+## E3.4 checkpoint update
+
+The Project Owner approved E3.3 engineering and static-background production bake, and requested a bounded final art refinement. E3.4 delivers two candidate treatments for review. The owner's final E3 decision still gates E4. Editable world detail in Studio remains part of E8. [E3.4 review gallery](LumaSprite-Engine-E3.4-Report.html)

@@ -1,0 +1,400 @@
+{
+  "studioRevision": "bb5c384",
+  "canonicalMasks": 47,
+  "rawMasks": 256,
+  "variation": "ENGINE_VARIATION_PASS / STUDIO_VARIATION_NOT_SUPPORTED",
+  "results": [
+    {
+      "scene": "a-outdoor",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 416,
+      "height": 224,
+      "bakedRgbaSha256": "049341ab181a4199a1ed2feb4a734fcaeacebf6f918fdf80a7df65c4f373aa00",
+      "editableRgbaSha256": "8a250a9c062ad2f9294977c7f2c6ee98f291465fa645d91df7d3ef467d633b25",
+      "worldTerrainPixelsOutsideStaticParity": 7908,
+      "overlays": [
+        {
+          "id": "compact",
+          "left": 20,
+          "top": 111,
+          "provenance": "Approved E2.4 authored prop compact",
+          "file": "overlay-1.png",
+          "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        },
+        {
+          "id": "travel",
+          "left": 82,
+          "top": 108,
+          "provenance": "Approved E2.4 authored prop travel",
+          "file": "overlay-2.png",
+          "pngSha256": "36d9e060c449eea52bd852c29a096ea0c9b3264730cc15a28c39d70191b054ef"
+        },
+        {
+          "id": "crate",
+          "left": 141,
+          "top": 93,
+          "provenance": "Approved E2.4 authored prop crate",
+          "file": "overlay-3.png",
+          "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        },
+        {
+          "id": "barrel-wide",
+          "left": 200,
+          "top": 90,
+          "provenance": "Approved E2.4 authored prop barrel-wide",
+          "file": "overlay-4.png",
+          "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        },
+        {
+          "id": "barrel-tall",
+          "left": 265,
+          "top": 113,
+          "provenance": "Approved E2.4 authored prop barrel-tall",
+          "file": "overlay-5.png",
+          "pngSha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+        },
+        {
+          "id": "traveler",
+          "left": 329,
+          "top": 117,
+          "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+          "file": "overlay-6.png",
+          "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+        }
+      ]
+    },
+    {
+      "scene": "b-outdoor",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 416,
+      "height": 224,
+      "bakedRgbaSha256": "10cf3f8dae6d00e459111c89a4653b50c8ce70be6897c2864612d5554492c909",
+      "editableRgbaSha256": "e4f02d6dc94643fdac65ee895ff6e096f674e470b595c77fc7e48990cd761773",
+      "worldTerrainPixelsOutsideStaticParity": 10442,
+      "overlays": [
+        {
+          "id": "compact",
+          "left": 20,
+          "top": 111,
+          "provenance": "Approved E2.4 authored prop compact",
+          "file": "overlay-1.png",
+          "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        },
+        {
+          "id": "travel",
+          "left": 82,
+          "top": 108,
+          "provenance": "Approved E2.4 authored prop travel",
+          "file": "overlay-2.png",
+          "pngSha256": "36d9e060c449eea52bd852c29a096ea0c9b3264730cc15a28c39d70191b054ef"
+        },
+        {
+          "id": "crate",
+          "left": 141,
+          "top": 93,
+          "provenance": "Approved E2.4 authored prop crate",
+          "file": "overlay-3.png",
+          "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        },
+        {
+          "id": "barrel-wide",
+          "left": 200,
+          "top": 90,
+          "provenance": "Approved E2.4 authored prop barrel-wide",
+          "file": "overlay-4.png",
+          "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        },
+        {
+          "id": "barrel-tall",
+          "left": 265,
+          "top": 113,
+          "provenance": "Approved E2.4 authored prop barrel-tall",
+          "file": "overlay-5.png",
+          "pngSha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+        },
+        {
+          "id": "traveler",
+          "left": 329,
+          "top": 117,
+          "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+          "file": "overlay-6.png",
+          "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+        }
+      ]
+    },
+    {
+      "scene": "a-large",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 576,
+      "height": 336,
+      "bakedRgbaSha256": "325c663cb8bea2c57db31680ebf8c1ada880a222a58f01043066554f93b9aecd",
+      "editableRgbaSha256": "ce52588169705f87b4472a177b7f0c5ccedf14d7a78efa903cb331430a42aa1d",
+      "worldTerrainPixelsOutsideStaticParity": 16606,
+      "overlays": []
+    },
+    {
+      "scene": "b-large",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 576,
+      "height": 336,
+      "bakedRgbaSha256": "59fb1992be744cc4431dd53b7f4d8a40494fa366f2f05f1a349d60e976ac16c6",
+      "editableRgbaSha256": "d96c175fed7a862a5204197cea7f30e81f2638c6fe9ebc3e778e47b2d78e47fe",
+      "worldTerrainPixelsOutsideStaticParity": 22777,
+      "overlays": []
+    },
+    {
+      "scene": "a-stress",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 288,
+      "height": 176,
+      "bakedRgbaSha256": "7c3252b25dd7c7602fe73ee9639d7e34b4343bc2243d0e94c535eb1a6f7c0916",
+      "editableRgbaSha256": "95b04441eaa3de12ffb10faec47d1b5e8a312e0fb7697111d3ac08476607fcfd",
+      "worldTerrainPixelsOutsideStaticParity": 4760,
+      "overlays": []
+    },
+    {
+      "scene": "b-stress",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 288,
+      "height": 176,
+      "bakedRgbaSha256": "4c425494690080224a2fc3942d25d6d3dafccdcd1fbf37c78d48f30091c1f437",
+      "editableRgbaSha256": "fde48feaea55a0b28c7400ae6aa04a9c8e4f78d410e9593f878bfb5d16f395f2",
+      "worldTerrainPixelsOutsideStaticParity": 5722,
+      "overlays": []
+    },
+    {
+      "scene": "a-organic",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 496,
+      "height": 304,
+      "bakedRgbaSha256": "23b76621377e33e972a20a585699e2446e8c049ab02b4d3cd06f3fd0cc0654c3",
+      "editableRgbaSha256": "0e06501d8dbef9082ca834ba776842ec6f54e5711ad7194a75ddbd896c7cd683",
+      "worldTerrainPixelsOutsideStaticParity": 13330,
+      "overlays": [
+        {
+          "id": "compact",
+          "left": 109,
+          "top": 158,
+          "provenance": "Approved E2.4 authored prop compact",
+          "file": "overlay-1.png",
+          "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        },
+        {
+          "id": "crate",
+          "left": 281,
+          "top": 173,
+          "provenance": "Approved E2.4 authored prop crate",
+          "file": "overlay-2.png",
+          "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        },
+        {
+          "id": "barrel-wide",
+          "left": 318,
+          "top": 164,
+          "provenance": "Approved E2.4 authored prop barrel-wide",
+          "file": "overlay-3.png",
+          "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        },
+        {
+          "id": "traveler",
+          "left": 229,
+          "top": 135,
+          "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+          "file": "overlay-4.png",
+          "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+        }
+      ]
+    },
+    {
+      "scene": "b-organic",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 496,
+      "height": 304,
+      "bakedRgbaSha256": "81ccf217eca6b7216e8e3d83f998262f04e862531c3d062ab829523847d1f292",
+      "editableRgbaSha256": "656db7da5454055e415d48e9dce9609e200a7a71726422bdce5f10182714dd9b",
+      "worldTerrainPixelsOutsideStaticParity": 18023,
+      "overlays": [
+        {
+          "id": "compact",
+          "left": 109,
+          "top": 158,
+          "provenance": "Approved E2.4 authored prop compact",
+          "file": "overlay-1.png",
+          "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        },
+        {
+          "id": "crate",
+          "left": 281,
+          "top": 173,
+          "provenance": "Approved E2.4 authored prop crate",
+          "file": "overlay-2.png",
+          "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        },
+        {
+          "id": "barrel-wide",
+          "left": 318,
+          "top": 164,
+          "provenance": "Approved E2.4 authored prop barrel-wide",
+          "file": "overlay-3.png",
+          "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        },
+        {
+          "id": "traveler",
+          "left": 229,
+          "top": 135,
+          "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+          "file": "overlay-4.png",
+          "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+        }
+      ]
+    },
+    {
+      "scene": "a-storage",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 256,
+      "height": 144,
+      "bakedRgbaSha256": "b564aa5f53c8cfb59346059eca13f8b1993ce39e20f299c2fe740ab01e34bab4",
+      "editableRgbaSha256": "9ff1adefa9d62eb2e2274a6f5e8561054a7980ef4622b0d30c998d05595b5011",
+      "worldTerrainPixelsOutsideStaticParity": 3067,
+      "overlays": [
+        {
+          "id": "wall",
+          "left": 0,
+          "top": 0,
+          "provenance": "Kenney Tiny Dungeon CC0 wall repeated at 1×, benchmarks/fixtures/e24",
+          "file": "overlay-1.png",
+          "pngSha256": "bfb03f32da3f98dbdf1e5ba74353107ec9bb84da6cf97a41f6093bf15ee79b0d"
+        },
+        {
+          "id": "barrel-tall",
+          "left": 15,
+          "top": 18,
+          "provenance": "Approved E2.4 authored prop barrel-tall",
+          "file": "overlay-2.png",
+          "pngSha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+        },
+        {
+          "id": "barrel-wide",
+          "left": 49,
+          "top": 21,
+          "provenance": "Approved E2.4 authored prop barrel-wide",
+          "file": "overlay-3.png",
+          "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        },
+        {
+          "id": "crate",
+          "left": 177,
+          "top": 18,
+          "provenance": "Approved E2.4 authored prop crate",
+          "file": "overlay-4.png",
+          "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        },
+        {
+          "id": "compact",
+          "left": 211,
+          "top": 27,
+          "provenance": "Approved E2.4 authored prop compact",
+          "file": "overlay-5.png",
+          "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        },
+        {
+          "id": "traveler",
+          "left": 110,
+          "top": 77,
+          "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+          "file": "overlay-6.png",
+          "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+        }
+      ]
+    },
+    {
+      "scene": "b-storage",
+      "baked": "BAKED_MAP_RGBA_PARITY_PASS",
+      "editable": "STATIC_ATLAS_RGBA_MATCH",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "width": 256,
+      "height": 144,
+      "bakedRgbaSha256": "2771813fc3ed01ceec0f2c6f2ee009d5d0c7339ec47e7bda2294db4238b710b5",
+      "editableRgbaSha256": "9bba0f4e206a2b9866c1efc4508f4d769b0d434c951f338b0b41445b90c75beb",
+      "worldTerrainPixelsOutsideStaticParity": 4022,
+      "overlays": [
+        {
+          "id": "wall",
+          "left": 0,
+          "top": 0,
+          "provenance": "Kenney Tiny Dungeon CC0 wall repeated at 1×, benchmarks/fixtures/e24",
+          "file": "overlay-1.png",
+          "pngSha256": "bfb03f32da3f98dbdf1e5ba74353107ec9bb84da6cf97a41f6093bf15ee79b0d"
+        },
+        {
+          "id": "barrel-tall",
+          "left": 15,
+          "top": 18,
+          "provenance": "Approved E2.4 authored prop barrel-tall",
+          "file": "overlay-2.png",
+          "pngSha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+        },
+        {
+          "id": "barrel-wide",
+          "left": 49,
+          "top": 21,
+          "provenance": "Approved E2.4 authored prop barrel-wide",
+          "file": "overlay-3.png",
+          "pngSha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        },
+        {
+          "id": "crate",
+          "left": 177,
+          "top": 18,
+          "provenance": "Approved E2.4 authored prop crate",
+          "file": "overlay-4.png",
+          "pngSha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        },
+        {
+          "id": "compact",
+          "left": 211,
+          "top": 27,
+          "provenance": "Approved E2.4 authored prop compact",
+          "file": "overlay-5.png",
+          "pngSha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        },
+        {
+          "id": "traveler",
+          "left": 110,
+          "top": 77,
+          "provenance": "Eldiran CC0 fixture, benchmarks/fixtures/e24",
+          "file": "overlay-6.png",
+          "pngSha256": "8a6452bd54f3dfea9915436a93226c9a7d0b949f98ff40ed4060027a8c33bdfd"
+        }
+      ]
+    }
+  ]
+}

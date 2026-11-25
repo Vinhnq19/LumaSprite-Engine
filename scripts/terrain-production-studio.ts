@@ -22,7 +22,7 @@ function backupInputs(files: { path: string; data: Buffer }[]) {
   return { document: manifest.document, blobs, resources };
 }
 
-test('real Studio import and export preserve four baked maps, while editable autotiling draws the static atlas', async t => {
+test('Studio preserves the baked RGBA and separately round-trips the static editable atlas', async t => {
   const studio = resolve(process.env.LUMASPRITE_STUDIO_ROOT ?? '../LumaSprite-Studio');
   const studioRevision = execFileSync('git', ['rev-parse', '--short=7', 'HEAD'], { cwd: studio, encoding: 'utf8' }).trim();
   const studioUrl = (path: string) => pathToFileURL(join(studio, path)).href;
@@ -44,10 +44,15 @@ test('real Studio import and export preserve four baked maps, while editable aut
   assert.ok(resolve(root).startsWith(sandbox + sep));
   t.after(() => rm(root, { recursive: true, force: true }));
   const store = new PixelStore(root);
-  const artifact = 'benchmarks/results/e33';
+  const edition = process.env.LUMASPRITE_TERRAIN_EDITION === '34' ? '34' : '33';
+  const tag = 'e' + edition;
+  const cases = edition === '34'
+    ? ['outdoor', 'large', 'stress', 'organic', 'storage'].flatMap(scene => ['a-' + scene, 'b-' + scene])
+    : ['large', 'stress', 'outdoor', 'regions'];
+  const artifact = 'benchmarks/results/' + tag;
   const capturing = process.env.LUMASPRITE_CAPTURE_PRODUCTION_PARITY === '1';
   const runs = 'benchmarks/results/run';
-  const output = capturing ? join(artifact, 'studio') : join(runs, 'e33-studio');
+  const output = capturing ? join(artifact, 'studio') : join(runs, tag + '-studio');
   await mkdir(output, { recursive: true });
   if (capturing) await mkdir(runs, { recursive: true });
   const results = [];
@@ -62,13 +67,13 @@ test('real Studio import and export preserve four baked maps, while editable aut
     return asset;
   }
 
-  for (const name of ['large', 'stress', 'outdoor', 'regions']) {
+  for (const name of cases) {
     const directory = join(artifact, 'packages', name);
     const manifest = await verifyBakedTerrain(directory);
     const baked = await readFile(join(directory, 'map.png'));
     const editableReference = decodePng(await readFile(join(artifact, name + '-editable-reference-1x.png')));
     const atlasMapping = JSON.parse(await readFile(join(directory, 'atlas.json'), 'utf8'));
-    const doc = newDocument('E3.3 ' + name, 128, 96);
+    const doc = newDocument('E3.' + edition[1] + ' ' + name, 128, 96);
     const atlas = await pngAsset('Editable tilemap atlas', await readFile(join(directory, 'atlas.png')));
     const background = await pngAsset('Baked terrain raster', baked);
     doc.assets = [atlas, background];
@@ -83,7 +88,7 @@ test('real Studio import and export preserve four baked maps, while editable aut
     assert.equal(stroke.commit(), true);
     const stored = store.create(doc.name, atlas.w, atlas.h, 0, doc);
     const reopened = store.load(stored.id);
-    const saved = store.save(stored.id, reopened.revision, reopened, 'Verify E3.3 save and reopen');
+    const saved = store.save(stored.id, reopened.revision, reopened, 'Verify terrain save and reopen');
 
     function verifySaved(id: string) {
       const loaded = store.load(id, true);
@@ -128,7 +133,7 @@ test('real Studio import and export preserve four baked maps, while editable aut
 
     await writeFile(join(output, name + '-baked-1x.png'), exports.bakedPng);
     await writeFile(join(output, name + '-editable-1x.png'), exports.editablePng);
-    if (capturing) await writeFile(join(runs, 'e33-studio-' + name + '.zip'), zipFiles(files));
+    if (capturing) await writeFile(join(runs, tag + '-studio-' + name + '.zip'), zipFiles(files));
     results.push({
       scene: name, baked: 'BAKED_MAP_RGBA_PARITY_PASS', editable: 'STATIC_ATLAS_RGBA_MATCH',
       saveReopen: 'PASS', backupRestore: 'PASS', width: manifest.image.width, height: manifest.image.height,

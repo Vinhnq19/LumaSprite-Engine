@@ -1,6 +1,10 @@
 # Handoff
 
-**E3.3 is E3_READY_FOR_FINAL_ART_REVIEW.** The PNG bake preserves world detail through Studio, and the editable tilemap matches the static atlas. All four fixtures passed save/reopen and backup/restore. The Project Owner's final art decision remains pending. [Single-file report](docs/LumaSprite-Engine-E3.3-Report.html) · [Review sheet](benchmarks/results/e33/review.md)
+**E3.4 is E3_4_READY_FOR_HUMAN_ART_REVIEW.** TerrainSpec v4 candidates A and B use the same autotile geometry, with different Micro/Meso/Macro detail. The gallery compares both candidates on five matching scenes. Start with B at 1× for the larger grass rest areas and packed-dirt regions, then score both. The final E3 artistic decision belongs to the Project Owner. [Single-file report](docs/LumaSprite-Engine-E3.4-Report.html) · [Review sheet](benchmarks/results/e34/review.md)
+
+All ten E3.4 bake packages preserve RGBA through Studio save/reopen and backup/restore. Editable Studio maps use the static atlas. Editable world detail is deferred to E8. [E3.4 QA](docs/e34-test-report.md) · [PR draft](docs/e34-pr.md)
+
+**E3.3 engineering and static-background production bake are APPROVED. E3.3 final art was NOT APPROVED.** The Project Owner authorized the bounded E3.4 refinement. The E3.3 PNGs and report stay available for comparison. [E3.3 report](docs/LumaSprite-Engine-E3.3-Report.html)
 
 TerrainSpec v3 is the current CLI default. Run `npm run build`, then `npm run terrain -- --bake --spec benchmarks/results/e33/terrain-spec.json --map benchmarks/results/e33/map-input.json`. Verify with `npm run terrain -- --verify benchmarks/results/run/e33-terrain`. Studio editable maps still sample the canonical atlas. [Studio compatibility](docs/integration/studio-terrain-production.md) · [QA](docs/e33-test-report.md) · [Draft PR and push command](docs/e33-pr.md)
 

@@ -24,7 +24,7 @@ export function terrainExport(terrain: TerrainAtlas, stem = 'atlas') {
     rgbaSha256: sha256(atlas.rgba),
     spec,
     ...(spec.version !== 1 ? {
-      renderPolicy: { atlasPlacement: 'static', mapPlacement: spec.variation, coordinateUnit: 'tile', edgeProfile: spec.version === 3 ? 'stepped-variants' : 'stepped' },
+      renderPolicy: { atlasPlacement: 'static', mapPlacement: spec.variation, coordinateUnit: 'tile', edgeProfile: spec.version >= 3 ? 'stepped-variants' : 'stepped' },
     } : {}),
     palette: material.palette,
     diagnostics: material.diagnostics,

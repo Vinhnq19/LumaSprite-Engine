@@ -24,10 +24,15 @@ export const terrainSpecV2 = terrainSpecV1.extend({
 });
 
 export const terrainSpecV3 = terrainSpecV2.extend({ version: z.literal(3) });
-export const terrainSpecSchema = z.discriminatedUnion('version', [terrainSpecV1, terrainSpecV2, terrainSpecV3]);
+export const terrainSpecV4 = terrainSpecV3.extend({
+  version: z.literal(4),
+  direction: z.enum(['conservative', 'art-directed']),
+});
+export const terrainSpecSchema = z.discriminatedUnion('version', [terrainSpecV1, terrainSpecV2, terrainSpecV3, terrainSpecV4]);
 export type TerrainSpecV1 = z.infer<typeof terrainSpecV1>;
 export type TerrainSpecV2 = z.infer<typeof terrainSpecV2>;
 export type TerrainSpecV3 = z.infer<typeof terrainSpecV3>;
+export type TerrainSpecV4 = z.infer<typeof terrainSpecV4>;
 export type TerrainSpec = z.infer<typeof terrainSpecSchema>;
 
 export const defaultTerrainSpec = {

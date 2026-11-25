@@ -1,0 +1,15 @@
+{
+  "version": 4,
+  "kind": "grass-dirt",
+  "tileSize": 16,
+  "seed": 42,
+  "palette": {
+    "mode": "authored"
+  },
+  "surface": "standard",
+  "edgeInset": 2,
+  "adjacency": "pxl-blob47",
+  "output": "png-json",
+  "variation": "world",
+  "direction": "art-directed"
+}

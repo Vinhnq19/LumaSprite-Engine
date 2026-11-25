@@ -22,6 +22,8 @@
     "benchmark:e32": "node scripts/benchmark-e32.ts",
     "benchmark:e33": "node scripts/benchmark-e33.ts",
     "report:e33": "node scripts/report-e33.ts",
+    "benchmark:e34": "node scripts/benchmark-e34.ts",
+    "report:e34": "node scripts/report-e34.ts",
     "test:terrain-production-studio": "node --test scripts/terrain-production-studio.ts",
     "report:e32": "node scripts/report-e32.ts",
     "report:e3": "node scripts/report-e3.ts",
