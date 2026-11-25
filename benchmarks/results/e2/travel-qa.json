@@ -1,0 +1,66 @@
+{
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "rgbaSha256": "49e0245a2ca1c98134520f2483dca2f6b8f3564f9b31af2ff1efd3161d21e75c",
+  "authored": {
+    "diagnostics": [],
+    "palette": [
+      "#201a24",
+      "#4a2927",
+      "#723e2c",
+      "#a15a36",
+      "#ca8248",
+      "#eea761",
+      "#343344",
+      "#51546a",
+      "#777d8b",
+      "#935630",
+      "#e0a051",
+      "#ffe3a0"
+    ],
+    "mapping": {
+      "codes": [],
+      "wood": [
+        "#4a2927",
+        "#723e2c",
+        "#a15a36",
+        "#ca8248",
+        "#eea761"
+      ],
+      "iron": [
+        "#343344",
+        "#51546a",
+        "#777d8b"
+      ]
+    }
+  },
+  "locked": {
+    "diagnostics": [],
+    "palette": [
+      "#1c2434",
+      "#536da0",
+      "#f7ba5b",
+      "#eaf1f7"
+    ],
+    "rgbaSha256": "4862367eddb9caa95f68d9d394a255768757d56b7ce9ad59dc076f6aadbd99c8",
+    "mapping": {
+      "codes": [
+        "WOOD_RAMP_COMPRESSED",
+        "IRON_RAMP_COMPRESSED",
+        "WOOD_IRON_INK_COLLISION"
+      ],
+      "wood": [
+        "#1c2434",
+        "#1c2434",
+        "#536da0",
+        "#f7ba5b",
+        "#f7ba5b"
+      ],
+      "iron": [
+        "#1c2434",
+        "#536da0",
+        "#536da0"
+      ]
+    }
+  }
+}

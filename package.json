@@ -14,6 +14,7 @@
     "smoke": "node scripts/cli-smoke.ts",
     "generate": "node dist/cli/main.js",
     "benchmark": "node dist/cli/benchmark.js",
+    "benchmark:e2": "node scripts/benchmark-e2.ts",
     "serve": "node dist/server/main.js",
     "test:studio": "node --test scripts/studio-preview.ts"
   },

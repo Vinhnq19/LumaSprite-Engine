@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
 import type { StudioInput, StudioResult } from '../adapters/studio/contract.ts';
 import { renderAsset } from '../generators/props/supply-chest.ts';
-import { mockPlanner } from '../providers/mock/planner.ts';
+import { makePropSpec } from '../generators/props/presets.ts';
 import { sha256, validateRaster } from '../quality/raster.ts';
 
 type State = 'queued' | 'running' | 'ready' | 'failed' | 'canceled';
@@ -77,12 +77,17 @@ export class JobManager {
       signal.throwIfAborted();
       job.state = 'running';
       const seed = Number.parseInt(sha256(request.brief).slice(0, 8), 16);
-      const spec = await mockPlanner.plan({ brief: request.brief, palette, seed });
+      const design = /\btravel\b/i.test(request.brief) ? 'travel' : /\bcompact\b/i.test(request.brief) ? 'compact' : 'domed';
+      const spec = makePropSpec(design, seed, palette);
       job.completed = 1;
       await delay(75, undefined, { signal });
       signal.throwIfAborted();
 
-      const { final } = renderAsset(spec);
+      const asset = renderAsset(spec);
+      const { final } = asset;
+      if ('paletteDiagnostics' in asset && asset.paletteDiagnostics.codes.length) {
+        console.warn('Palette for job %s: %s', job.id, asset.paletteDiagnostics.codes.join(', '));
+      }
       if (protection) {
         for (let i = 0; i < protection.editable.length; i++) {
           const offset = i * 4;

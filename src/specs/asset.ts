@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { compositionSchema, propDesigns } from './prop-shape.ts';
 
 export const chestLayers = ['body', 'lid', 'iron', 'lock'] as const;
 export const chestSize = 32;
@@ -17,7 +18,15 @@ export const assetSpecV1 = z.strictObject({
   ),
   artDirection: z.strictObject({ light: z.literal('upper-left') }),
   layers: z.tuple([z.literal('body'), z.literal('lid'), z.literal('iron'), z.literal('lock')]),
-  prop: z.strictObject({ design: z.literal('supply-chest') }),
+  prop: z.discriminatedUnion('design', [
+    z.strictObject({ design: z.literal('supply-chest') }),
+    z.strictObject({ design: z.enum(propDesigns), composition: compositionSchema }).superRefine(({ design, composition }, context) => {
+      const minimum = design === 'domed' ? 5 : design === 'travel' ? 4 : 3;
+      if (composition.lidRise < minimum) context.addIssue({
+        code: 'custom', path: ['composition', 'lidRise'], message: 'Lid rise is too low for this profile.',
+      });
+    }),
+  ]),
 });
 export type AssetSpecV1 = z.infer<typeof assetSpecV1>;
 

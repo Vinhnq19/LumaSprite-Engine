@@ -21,3 +21,7 @@ A future asset kind can introduce its own validated extension and generator whil
 Pixel Core draws geometric shapes by sampling integer raster cells. Filled contours, spans and material ramps supply the chest's outlines and surface details. Layers composite in RGBA8 with alpha 0 or 255. Transparent pixels are all zero. Palette locking maps each material role to the nearest opaque ink before drawing. Export writes RGBA PNG and the benchmark scales the final raster using nearest-neighbor.
 
 The jobs module owns candidate lifecycle and request receipts. Studio HTTP validates the incoming wire shape, converts colors and optional masks, and serves the QA-checked raster. The DeepSeek scaffold shares the planner interface and exercises response validation and cost accounting with injected test replies. Real calls are disabled with a limit of zero. Its configuration checks for the presence of an environment key and keeps the key out of usage records.
+
+## E2 prop composition
+
+Saved AssetSpec v1 documents keep the original `supply-chest` design. E2 adds four design values with validated dimensions in `prop.composition`. The composed renderer projects the front, side and lid from a shared seam and fills them with face-relative materials. The CLI defaults to the domed preset. HTTP applies the same geometry using the frozen palette and optional mask. [E2 audit](../art-quality/e2-audit.md)

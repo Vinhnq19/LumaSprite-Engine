@@ -81,7 +81,7 @@ test('Studio HTTP receives a candidate and verifies pixels, selection, receipt a
   const raster: Raster = { w: 32, h: 32, rgba: Buffer.alloc(4096) };
   normal.candidate.rgba.forEach((ink: number, i: number) => raster.rgba.writeUInt32BE(ink, i * 4));
   if (process.env.LUMASPRITE_CAPTURE_STUDIO_PREVIEW === '1') {
-    const dir = 'benchmarks/results/sample';
+    const dir = 'benchmarks/results/run/e2-studio';
     mkdirSync(dir, { recursive: true });
     writeFileSync(join(dir, 'studio-locked-1x.png'), encodePng(raster));
     writeFileSync(join(dir, 'studio-locked-4x.png'), encodePng(nearestNeighbor(raster, 4)));
