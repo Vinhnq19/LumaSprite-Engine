@@ -25,3 +25,4 @@ jobs:
       - run: npm run benchmark:e32
       - run: npm run benchmark:e33
       - run: npm run benchmark:e34
+      - run: npm run benchmark:e41

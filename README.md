@@ -26,6 +26,9 @@ npm run benchmark:e33
 npm run report:e33
 npm run benchmark:e34
 npm run report:e34
+npm run character -- --candidate a
+npm run benchmark:e41
+npm run report:e41
 npm run serve -- --port 4399
 ```
 
@@ -35,7 +38,9 @@ The [unified E2–E3.1 report](docs/LumaSprite-Engine-Report.html) contains the 
 
 The terrain CLI defaults to TerrainSpec v3. Supply a saved v1 or v2 spec to reproduce that edition. Pass `--map` with rows and a tile origin for world-space variation. Add `--bake` for a package that includes the canonical atlas, map PNG, layout and integrity hashes. Run `npm run terrain -- --verify <directory>` to check a package. [E3.3 single-file report](docs/LumaSprite-Engine-E3.3-Report.html) · [Studio import and parity](docs/integration/studio-terrain-production.md) · [E3.2 offline report](docs/LumaSprite-Engine-E3.2-Report.html)
 
-E3.4 offers two explicit TerrainSpec v4 inputs. Use `--spec` with a candidate and keep v3 as the default during the owner's review. [Conservative spec](benchmarks/results/e34/a-spec.json) · [Art-directed spec](benchmarks/results/e34/b-spec.json) · [E3.4 offline report](docs/LumaSprite-Engine-E3.4-Report.html)
+For TerrainSpec v4, the Project Owner selected Art-Directed Terrain for Authored/Project and baked raster. Pass it with `--spec` or use Conservative Polish as an optional preset. [Art-directed spec](benchmarks/results/e34/b-spec.json) · [Conservative spec](benchmarks/results/e34/a-spec.json) · [E3 final acceptance](docs/e3-final-acceptance.md)
+
+`npm run character -- --candidate a` produces a flat PNG, silhouette and geometry JSON for E4.1 review. Select `b` for Taller Surveyor or pass `--spec` with a CharacterSpec v1 JSON. [E4.1 shape gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Character architecture](docs/architecture/character-geometry.md)
 
 ## Verify
 

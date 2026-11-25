@@ -1,5 +1,7 @@
 # Handoff
 
+**E4.1 engineering passes. The Project Owner's shape decision is pending.** The pilot includes A Compact Explorer and B Taller Surveyor at 64 × 64 with flat regions, landmarks, separate grips and an E3.4 terrain scene. Use the offline gallery at 1× and record A, B or requested revisions. E4.2 materials follow the approved shape. [Shape gallery](docs/LumaSprite-Engine-E4.1-Report.html) · [Owner sheet](benchmarks/results/e41/review.md) · [Engineering](docs/e41-test-report.md) · [PR draft](docs/e41-pr.md)
+
 **E3 is closed.** The Project Owner approved engineering and selected E3.4 Candidate B with limitations for Authored/Project and baked raster backgrounds. Candidate A remains an optional preset. TerrainSpec v3 stays the CLI default. [Final acceptance](docs/e3-final-acceptance.md) · [Review sheet](benchmarks/results/e34/review.md)
 
 All ten E3.4 bake packages preserve RGBA through Studio save/reopen and backup/restore. Editable Studio maps use the static atlas. Editable world detail is deferred to E8. [E3.4 QA](docs/e34-test-report.md) · [PR draft](docs/e34-pr.md)

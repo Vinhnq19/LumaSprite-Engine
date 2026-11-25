@@ -42,3 +42,7 @@ ChatGPT recommended the E3.2 artistic baseline in Authored/Project palettes. E3.
 ## E3.4 checkpoint update
 
 The Project Owner approved E3.3 engineering and static-background production bake, and requested a bounded final art refinement. E3.4 delivers two candidate treatments for review. The owner's final E3 decision still gates E4. Editable world detail in Studio remains part of E8. [E3.4 review gallery](LumaSprite-Engine-E3.4-Report.html)
+
+## E3 closeout and E4.1 shape review
+
+The Project Owner selected E3.4 B under Authored/Project for static baked raster backgrounds. E3 is closed with the recorded art limitations. E4.1 delivers two validated Field Surveyor poses. The next E4.2 material pass depends on the owner's silhouette decision. [E3 decision](e3-final-acceptance.md) · [E4.1 shape gallery](LumaSprite-Engine-E4.1-Report.html)

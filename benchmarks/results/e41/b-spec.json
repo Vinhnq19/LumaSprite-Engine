@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "kind": "humanoid-surveyor",
+  "name": "Taller Surveyor",
+  "canvas": {
+    "w": 64,
+    "h": 64,
+    "background": "transparent"
+  },
+  "view": "three-quarter-right",
+  "seed": 42,
+  "palette": {
+    "mode": "authored"
+  },
+  "proportions": {
+    "head": [
+      14,
+      14
+    ],
+    "jacket": [
+      15,
+      18
+    ],
+    "hips": 13,
+    "arm": [
+      6,
+      4
+    ],
+    "leg": [
+      7,
+      5
+    ],
+    "boot": [
+      10,
+      4
+    ],
+    "satchel": [
+      9,
+      14
+    ],
+    "lantern": [
+      7,
+      10
+    ]
+  },
+  "pose": {
+    "kind": "standing-hold",
+    "hip": [
+      31,
+      37
+    ],
+    "lean": -1,
+    "pivot": [
+      30,
+      60
+    ],
+    "support": "near",
+    "near": {
+      "elbow": [
+        29,
+        28
+      ],
+      "wrist": [
+        45,
+        25
+      ],
+      "palm": [
+        48,
+        24
+      ],
+      "knee": [
+        26,
+        46
+      ],
+      "ankle": [
+        26,
+        55
+      ]
+    },
+    "far": {
+      "elbow": [
+        39,
+        25
+      ],
+      "wrist": [
+        38,
+        33
+      ],
+      "palm": [
+        37,
+        35
+      ],
+      "knee": [
+        39,
+        43
+      ],
+      "ankle": [
+        41,
+        50
+      ]
+    }
+  }
+}

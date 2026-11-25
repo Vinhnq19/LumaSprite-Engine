@@ -18,6 +18,14 @@ try {
   assert.equal(failed.status, 1);
   assert.match(failed.stderr.toString(), /seed/);
   assert.deepEqual(decodePng(readFileSync(out)), image);
+  const characterOut = join(temp, 'surveyor');
+  const characterRun = execFileSync(process.execPath, ['dist/cli/character.js', '--candidate', 'b', '--out', characterOut], { encoding: 'utf8' });
+  assert.equal(JSON.parse(characterRun).technical, 'PASS');
+  assert.equal(JSON.parse(characterRun).artistic, 'PENDING_SHAPE_REVIEW');
+  const surveyor = decodePng(readFileSync(join(characterOut, 'silhouette.png')));
+  assert.equal(surveyor.w, 64);
+  assert.equal(surveyor.h, 64);
+  assert.equal(surveyor.rgba.readUInt32BE(0), 0);
   console.log('CLI smoke passed.');
 } finally {
   rmSync(temp, { recursive: true, force: true });
