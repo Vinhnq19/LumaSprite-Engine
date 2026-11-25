@@ -4,39 +4,17 @@ LumaSprite Engine is an offline-first pixel art backend. The first vertical slic
 
 ## Run locally
 
-Use Node.js 24 LTS or newer.
+Use Node.js 24 or newer.
 
-```sh
+```powershell
 npm ci
 npm run build
 npm run generate
-npm run generate -- --design barrel-wide
-npm run generate -- --design travel --seed 43 --out benchmarks/results/run/chest-43.png
-npm run generate -- --spec benchmarks/results/sample/chest-42.json
-npm run benchmark
-npm run benchmark:e2
-npm run benchmark:e23
-npm run benchmark:e24
-npm run terrain
-npm run benchmark:e3
-npm run report:e3
-npm run benchmark:e32
-npm run report:e32
-npm run benchmark:e33
-npm run report:e33
-npm run benchmark:e34
-npm run report:e34
-npm run character -- --candidate a
-npm run benchmark:e41
-npm run report:e41
-npm run benchmark:e41r
-npm run report:e41r
-npm run benchmark:e42
-npm run report:e42
-npm run benchmark:e43
-npm run report:e43
-npm run serve -- --port 4399
+npm run benchmark:e52
 ```
+
+[Documentation index](docs/README.md) · [R0 audit and cleanup](docs/r0-project-audit.md) · [R&D preparation](research/open-source/README.md)
+
 
 Generation and benchmarks write into `benchmarks/results/run/` by default. The [E2.4 game-scene gallery](benchmarks/results/e24/README.md) shows the six props and the three native-size benchmark scenes in both palettes. The [E2.3 gallery](benchmarks/results/e23/README.md) shows two barrel proportions and the refined chest and crate designs with locked-palette and game-scene previews. The [E2.1/E2.2 gallery](benchmarks/results/e2/README.md) preserves their first versions. The [baseline gallery](benchmarks/results/sample/README.md) preserves the original Seed 42 and 43 renders.
 

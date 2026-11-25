@@ -1,0 +1,153 @@
+Path	Bytes	Reason	Disposition
+.cache/compact.png	896	unique local output	review before deletion
+.cache/e24-dungeon-catalog.png	18887	source art evidence	review before deletion
+.cache/e24-dungeon-ground-options.png	930	source art evidence	review before deletion
+.cache/e24-rpg-characters.png	52335	source art evidence	review before deletion
+.cache/e24-tiny-dungeon.zip	98530	backup or source archive	review before deletion
+.cache/e24-tiny-town.zip	182243	backup or source archive	review before deletion
+.cache/e24-town-catalog.png	18458	source art evidence	review before deletion
+.cache/e44/lineup-4x.png	12891	unique local output	review before deletion
+.cache/e44/lineup.png	8627	unique local output	review before deletion
+.cache/e51/pose-strip.png	14122	unique local output	review before deletion
+.cache/e52/w1-native.png	9643	unique local output	review before deletion
+.cache/e52/w2-native.png	13065	unique local output	review before deletion
+.cache/e52/w2-zoom.png	16566	unique local output	review before deletion
+.cache/e52/walk-6.png	8928	unique local output	review before deletion
+.cache/e52/walk-8.png	16456	unique local output	review before deletion
+.cache/terrain-studio-FvDPjE/3097355d-9f27-4445-bcfa-dca4c56924a1/.pxl/cels/e424bf0af53d307e5172456f49b334faf95cdf4c04928e87cdd4cfb534bb0316.rgba.z	876	project store and blobs	review before deletion
+.cache/terrain-studio-FvDPjE/3097355d-9f27-4445-bcfa-dca4c56924a1/.pxl/pixel-history/1795593092643-1b86b694-84fa-4a79-9762-df2e05eb96af.json	4155	project store and blobs	review before deletion
+.cache/terrain-studio-FvDPjE/3097355d-9f27-4445-bcfa-dca4c56924a1/.pxl/resources/814f5560e23bb09dc8be763dd03e118b757c80e3c333fbc48e3b4446b21a908a.tile-index.z	79	project store and blobs	review before deletion
+.cache/terrain-studio-FvDPjE/3097355d-9f27-4445-bcfa-dca4c56924a1/pxl.project.json	10347	project store and blobs	review before deletion
+.cache/terrain-studio-FvDPjE/a1e650ff-dac3-4974-983b-7f4519836cf9/.pxl/cels/e424bf0af53d307e5172456f49b334faf95cdf4c04928e87cdd4cfb534bb0316.rgba.z	876	project store and blobs	review before deletion
+.cache/terrain-studio-FvDPjE/a1e650ff-dac3-4974-983b-7f4519836cf9/.pxl/pixel-history/1795593092816-4b31761c-74f6-4384-8d6b-e363ca99203d.json	4157	project store and blobs	review before deletion
+.cache/terrain-studio-FvDPjE/a1e650ff-dac3-4974-983b-7f4519836cf9/.pxl/resources/814f5560e23bb09dc8be763dd03e118b757c80e3c333fbc48e3b4446b21a908a.tile-index.z	79	project store and blobs	review before deletion
+.cache/terrain-studio-FvDPjE/a1e650ff-dac3-4974-983b-7f4519836cf9/pxl.project.json	10348	project store and blobs	review before deletion
+.cache/travel.png	1176	unique local output	review before deletion
+benchmarks/results/run/e3-studio.zip	16309	backup or source archive	review before deletion
+benchmarks/results/run/e32-studio.zip	16854	backup or source archive	review before deletion
+benchmarks/results/run/e32-terrain/map.json	9181	unique local output	review before deletion
+benchmarks/results/run/e33-studio-large.zip	43106	backup or source archive	review before deletion
+benchmarks/results/run/e33-studio-outdoor.zip	35198	backup or source archive	review before deletion
+benchmarks/results/run/e33-studio-regions.zip	38859	backup or source archive	review before deletion
+benchmarks/results/run/e33-studio-stress.zip	30083	backup or source archive	review before deletion
+benchmarks/results/run/e34-draft/a-dense-1x.png	41976	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-dense-4x.png	65425	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-large-4x.png	55943	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-large-editable-reference-1x.png	24712	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-organic-4x.png	53005	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-organic-editable-reference-1x.png	24137	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-outdoor-4x.png	36247	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-outdoor-editable-reference-1x.png	15412	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-palette-authored-1x.png	11814	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-palette-authored-4x.png	20430	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-palette-locked-1x.png	650	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-palette-locked-4x.png	4515	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-palette-project-1x.png	12224	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-palette-project-4x.png	20772	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-sparse-1x.png	22501	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-sparse-4x.png	40490	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-standard-1x.png	31012	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-standard-4x.png	53005	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-storage-4x.png	14244	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-storage-editable-reference-1x.png	4006	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-stress-4x.png	20430	unique local output	review before deletion
+benchmarks/results/run/e34-draft/a-stress-editable-reference-1x.png	12479	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-dense-1x.png	49284	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-dense-4x.png	70416	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-large-4x.png	60806	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-large-editable-reference-1x.png	39000	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-organic-4x.png	56016	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-organic-editable-reference-1x.png	34879	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-outdoor-4x.png	37001	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-outdoor-editable-reference-1x.png	21893	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-palette-authored-1x.png	11082	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-palette-authored-4x.png	19318	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-palette-locked-1x.png	597	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-palette-locked-4x.png	4439	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-palette-project-1x.png	11459	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-palette-project-4x.png	19597	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-sparse-1x.png	21135	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-sparse-4x.png	37942	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-standard-1x.png	35556	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-standard-4x.png	56016	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-storage-4x.png	13115	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-storage-editable-reference-1x.png	5447	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-stress-4x.png	19318	unique local output	review before deletion
+benchmarks/results/run/e34-draft/b-stress-editable-reference-1x.png	14315	unique local output	review before deletion
+benchmarks/results/run/e34-draft/e33-organic-1x.png	45513	unique local output	review before deletion
+benchmarks/results/run/e34-draft/e33-organic-4x.png	70498	unique local output	review before deletion
+benchmarks/results/run/e34-draft/organic-layout.json	1986	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-large/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-large/atlas.png	4645	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-large/map.json	10180	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-large/map.png	29946	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-organic/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-organic/atlas.png	4645	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-organic/map.json	9310	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-organic/map.png	31012	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-outdoor/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-outdoor/atlas.png	4645	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-outdoor/map.json	7226	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-outdoor/map.png	21854	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-storage/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-storage/atlas.png	4645	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-storage/map.json	4722	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-storage/map.png	8766	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-stress/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-stress/atlas.png	4645	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-stress/map.json	3806	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/a-stress/map.png	11814	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-large/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-large/atlas.png	5305	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-large/map.json	10180	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-large/map.png	36840	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-organic/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-organic/atlas.png	5305	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-organic/map.json	9310	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-organic/map.png	35556	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-outdoor/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-outdoor/atlas.png	5305	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-outdoor/map.json	7226	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-outdoor/map.png	23586	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-storage/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-storage/atlas.png	5305	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-storage/map.json	4722	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-storage/map.png	7968	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-stress/atlas.json	6379	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-stress/atlas.png	5305	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-stress/map.json	3806	unique local output	review before deletion
+benchmarks/results/run/e34-draft/packages/b-stress/map.png	11082	unique local output	review before deletion
+benchmarks/results/run/e34-draft/qa.json	11185	unique local output	review before deletion
+benchmarks/results/run/e34-studio-a-large.zip	36962	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-a-organic.zip	36963	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-a-outdoor.zip	32436	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-a-storage.zip	27789	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-a-stress.zip	28558	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-b-large.zip	37026	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-b-organic.zip	36945	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-b-outdoor.zip	32218	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-b-storage.zip	27287	backup or source archive	review before deletion
+benchmarks/results/run/e34-studio-b-stress.zip	27954	backup or source archive	review before deletion
+benchmarks/results/run/e41-draft/a-flat-4x.png	1831	unique local output	review before deletion
+benchmarks/results/run/e41-draft/a-flat.png	1089	unique local output	review before deletion
+benchmarks/results/run/e41-draft/a-silhouette-4x.png	1126	unique local output	review before deletion
+benchmarks/results/run/e41-draft/a-silhouette.png	463	unique local output	review before deletion
+benchmarks/results/run/e41-draft/b-flat-4x.png	2110	unique local output	review before deletion
+benchmarks/results/run/e41r-draft/b1-flat-4x.png	1997	unique local output	review before deletion
+benchmarks/results/run/e41r-draft/b2-flat-4x.png	2034	unique local output	review before deletion
+benchmarks/results/run/e41r-draft/b2-flat.png	1233	unique local output	review before deletion
+benchmarks/results/run/e41r-draft/b2-silhouette.png	567	unique local output	review before deletion
+benchmarks/results/run/e42-locked-cli/material.json	3748	unique local output	review before deletion
+benchmarks/results/run/e43-draft/courier-flat-4x.png	2053	unique local output	review before deletion
+benchmarks/results/run/e43-draft/courier-silhouette-4x.png	1210	unique local output	review before deletion
+benchmarks/results/run/e43-studio-http.log	1877	historical log	review before deletion
+benchmarks/results/run/e43-terrain-studio.log	339	historical log	review before deletion
+benchmarks/results/run/e43-tests.log	6994	historical log	review before deletion
+benchmarks/results/run/e44-character-studio.log	436	historical log	review before deletion
+benchmarks/results/run/e44-prop-studio.log	1877	historical log	review before deletion
+benchmarks/results/run/e44-terrain-studio.log	340	historical log	review before deletion
+benchmarks/results/run/e44-tests.log	7467	historical log	review before deletion
+benchmarks/results/run/e5-preflight.log	7454	historical log	review before deletion
+benchmarks/results/run/e51-animation-studio.log	433	historical log	review before deletion
+benchmarks/results/run/e51-tests.log	7931	historical log	review before deletion
+benchmarks/results/run/e52-tests.log	8233	historical log	review before deletion

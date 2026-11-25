@@ -1,6 +1,10 @@
 # Handoff
 
-**E5.2 is E5_2_READY_FOR_HUMAN_WALK_REVIEW.** Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. E5.3 awaits the owner's decision. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
+**R0 is R0_CLEANUP_READY_FOR_RND.** Local generated duplicates were removed by checksum, and the milestone archive remains pinned. Use the documentation index for current workflows and historical galleries. [R0 audit](docs/r0-project-audit.md) · [Regression](docs/r0-regression.md) · [Documentation index](docs/README.md) · [R&D preparation](research/open-source/README.md)
+
+The Project Owner approved E5.2 engineering and selected W2 Expressive Walk as the R&D baseline, with W1 Conservative Walk as the control. Walk Game-Ready Final Acceptance and target-game runtime validation remain pending. [Motion and package contract](docs/architecture/e52-walk-motion.md)
+
+Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. E5.3 awaits the owner's decision. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
 
 The Project Owner approved E5.0 architecture and E5.1 as a subtle idle with limitations. The four 64 × 64 frame slots and 1,800 ms loop stay frozen. Target-game runtime is still pending. [Idle acceptance](docs/e51-idle-acceptance.md) · [E5.1 gallery](docs/LumaSprite-Engine-E5.1-Report.html)
 
