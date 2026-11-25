@@ -1,6 +1,6 @@
 # Handoff
 
-**E3.4 is E3_4_READY_FOR_HUMAN_ART_REVIEW.** TerrainSpec v4 candidates A and B use the same autotile geometry, with different Micro/Meso/Macro detail. The gallery compares both candidates on five matching scenes. Start with B at 1× for the larger grass rest areas and packed-dirt regions, then score both. The final E3 artistic decision belongs to the Project Owner. [Single-file report](docs/LumaSprite-Engine-E3.4-Report.html) · [Review sheet](benchmarks/results/e34/review.md)
+**E3 is closed.** The Project Owner approved engineering and selected E3.4 Candidate B with limitations for Authored/Project and baked raster backgrounds. Candidate A remains an optional preset. TerrainSpec v3 stays the CLI default. [Final acceptance](docs/e3-final-acceptance.md) · [Review sheet](benchmarks/results/e34/review.md)
 
 All ten E3.4 bake packages preserve RGBA through Studio save/reopen and backup/restore. Editable Studio maps use the static atlas. Editable world detail is deferred to E8. [E3.4 QA](docs/e34-test-report.md) · [PR draft](docs/e34-pr.md)
 
@@ -16,4 +16,4 @@ TerrainSpec v3 is the current CLI default. Run `npm run build`, then `npm run te
 
 Rebuild the E3.2 gallery with `npm run benchmark:e32` and the standalone HTML with `npm run report:e32`. Run `npm run build` then `npm run terrain -- --spec benchmarks/results/e32/terrain-spec.json --map benchmarks/results/e32/map-input.json` to export the atlas and scene B with world detail. Studio reads the static atlas preview through the existing backup workflow. [Studio compatibility and preview](docs/integration/studio-terrain-variation.md)
 
-E4 remains gated on Project Owner review. DeepSeek runtime work stays deferred until after E8 and explicit owner approval for E9. [Terrain and material audit](docs/art-quality/e32-audit.md) · [QA](docs/e32-test-report.md) · [Draft PR](docs/e32-pr.md)
+E4 character geometry is authorized. DeepSeek runtime work stays deferred until after E8 and explicit owner approval for E9. [Terrain and material audit](docs/art-quality/e32-audit.md) · [QA](docs/e32-test-report.md) · [Draft PR](docs/e32-pr.md)
