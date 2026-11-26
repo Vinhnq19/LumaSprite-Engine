@@ -1,8 +1,10 @@
 # Handoff
 
-**E7.2-B is E7_2B_READY_FOR_HUMAN_STONE_MATERIAL_REVIEW.** S0 reproduces the production wall material. S1 adds plane-aware weathering on the same walls in R1, H1 and frozen H3. H3 Night loses some side-plane separation. Artistic acceptance is pending. Implementation `f1494699077aeb4bd697d1e00f6ca3aa5aa423a0`. [Portable stone report, QA and PR draft](docs/reports/E7.2-B-PORTABLE-ART-REVIEW.html) · [Evidence manifest](benchmarks/results/e72b/benchmark.json) · [Reporting Standard v1](docs/reports/REPORTING-STANDARD.md) · [Report Index](docs/reports/INDEX.md)
+**E7.2-R is E7_2_READY_FOR_FINAL_OWNER_ART_REVIEW.** S2 restores shape-bearing clusters on locked production planes. R1 east wall and H3 upper wall recover some side depth. H4 Seepstone Terrace uses the frozen rule and needs an independent art decision. Implementation `3d28b8067fe83ed669e30fe59307248523c8c457`. [Portable S0/S1/S2](docs/reports/E7.2-R-PORTABLE-ART-REVIEW.html) · [Evidence and SHA-256](benchmarks/results/e72r/benchmark.json) · [Report Index](docs/reports/INDEX.md)
 
-**E7.2-A technical QA is APPROVED.** M1 is selected for human visual review. Relay and Receiver keep their box-like shapes. Both portable review sheets start with blank scores. [Portable Relay report](docs/reports/E7.2-A-PORTABLE-ART-REVIEW.html)
+**E7.2 artistic closeout.** The Owner approved Relay/Receiver M1 as an art reference and S1 with limitations. Production uses its locked renderer and S0. H3 Night exposed the missing side-plane cues. [Artistic Decision Record](docs/reports/e72-artistic-decision.md) · [Portable Relay](docs/reports/E7.2-A-PORTABLE-ART-REVIEW.html) · [Portable S0/S1](docs/reports/E7.2-B-PORTABLE-ART-REVIEW.html)
+
+**E7.3 design only.** The proposal covers shared profile roles, family boundaries and one character/prop/environment test brief. Implementation awaits Owner authorization. [Architecture proposal](docs/reports/e73-cross-asset-architecture.md)
 
 **E7.1R engineering is APPROVED and Bonded Fracture is RESEARCH_ONLY.** R1 shows local improvement, H1 is the fracture research reference and H2 did not establish useful generalization. S0/S1 use Production Geometry. [Human Review Pack](docs/reports/e71r-human-review.md)
 

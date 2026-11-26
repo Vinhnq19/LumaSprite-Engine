@@ -4,12 +4,14 @@
 
 | Cần xem | Báo cáo |
 | --- | --- |
-| E7.1R · Duyệt hình khối ở 1× và 4× | [Gallery offline](E7.1R-Ruin-Structure.html) · [Geometry audit, QA và đề xuất E7.2](e71r-structure-and-qa.md) |
+| E7.2-R · S0/S1/S2 và H4 | [Portable Art Review](E7.2-R-PORTABLE-ART-REVIEW.html) · [Evidence manifest](../../benchmarks/results/e72r/benchmark.json) |
+| E7.2 · Quyết định của Owner | [Artistic Decision Record](e72-artistic-decision.md) |
+| E7.3 · Chuẩn bị thiết kế | [Architecture Proposal](e73-cross-asset-architecture.md) |
 | E7.1 · Quyết định của Project Owner | [Artistic Decision Record](e71-artistic-decision.md) |
 | Engine · Handoff | [HANDOFF hiện hành](../../HANDOFF.md) · [Roadmap](../roadmap.md) · [Coordination ENGINE-STATUS](../../../LumaSprite-Coordination/ENGINE-STATUS.md) |
 | Engine + Studio · Status | [Unified Report](../../../LumaSprite-Coordination/LUMASPRITE-UNIFIED-REPORT.md) · [Coordination handoff](../../../LumaSprite-Coordination/CHATGPT-HANDOFF.md) |
 
-Các link Coordination mở từ bố cục các repo cùng cấp trên máy làm việc. Gallery đọc PNG gốc từ checkout Engine.
+Các link Coordination mở từ bố cục các repo cùng cấp trên máy làm việc. Các báo cáo portable nhúng PNG gốc. Để kiểm SHA của Index trong catalog E7.1R, đọc blob tại `git show ff101af:docs/reports/INDEX.md`. Catalog lịch sử vẫn giữ SHA gốc.
 
 ## HISTORICAL
 
@@ -24,6 +26,8 @@ Các link Coordination mở từ bố cục các repo cùng cấp trên máy là
 | E6.1–E6.3 · Environment | [E6.1R acceptance](../e61r-artistic-acceptance.md) · [E6.2 closeout](../e62-artistic-closeout.md) · [E6.3 acceptance](../e63-artistic-acceptance.md) |
 | E6.4 · Pixel UI/VFX | [Acceptance](../e64-artistic-acceptance.md) · [E6.4 gallery](../LumaSprite-Engine-E6.4-Report.html) |
 | E7.0–E7.1 · Structure & Silhouette | [Quality Contract](../art-quality/quality-contract-v1.md) · [Root-cause audit](../art-quality/e7-root-cause.md) · [E7.1 gallery](../LumaSprite-Engine-E7.1-Report.html) |
+| E7.1R · Ruin structure | [Gallery](E7.1R-Ruin-Structure.html) · [Geometry audit](e71r-structure-and-qa.md) |
+| E7.2-A/B · M0/M1 và S0/S1 | [Portable Relay](E7.2-A-PORTABLE-ART-REVIEW.html) · [Portable Stone](E7.2-B-PORTABLE-ART-REVIEW.html) |
 
 ## TEMPORARY / DUPLICATE
 
