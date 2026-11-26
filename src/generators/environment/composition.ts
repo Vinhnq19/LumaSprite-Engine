@@ -30,7 +30,7 @@ export async function loadComposition(raw: unknown) {
   assert.equal(base.terrain.sha256,spec.source.terrainSha256,'Terrain source provenance mismatch.');
   assert.ok(spec.props.every(item=>item.ref==='workbench' || base.assetRefs.some(ref=>ref.kind==='prop'&&ref.id===item.ref)),
     'Composition props must come from the pinned kit or E2.4.');
-  assert.ok(spec.props.some(p=>p.ref==='workbench'),'The pinned survey bench anchors an interaction.');
+  assert.ok(spec.ruins || spec.props.some(p=>p.ref==='workbench'),'The pinned survey bench anchors an interaction.');
   assert.ok(spec.props.every(p=>!['surveyor','courier','station-shell','entry'].includes(p.id)),'Reserved placement ID.');
   const environment=await loadEnvironment({
     ...base, name:spec.name, seed:spec.seed, terrain:{...base.terrain,map:spec.terrain},
@@ -95,9 +95,9 @@ function summarizeTexture(scene: Scene, mask: Raster) {
   return {samples,edges,per100:samples?Number((edges*100/samples).toFixed(1)):null};
 }
 
-export function renderComposition(input: Composition, light: EnvironmentLight) {
+export function renderComposition(input: Composition, light: EnvironmentLight, flat = false) {
   const {spec,environment}=input;
-  const scene=renderEnvironment(environment,'B',light,{composition:spec,kitSeed:input.kitSeed});
+  const scene=renderEnvironment(environment,'B',light,{composition:spec,kitSeed:input.kitSeed,flat});
   const {w,h}=scene.raster;
   const walkable=region(w,h,spec.walkable);
   for(let i=0;i<walkable.rgba.length;i+=4) if(scene.collisionPlane.rgba[i+3]) walkable.rgba.writeUInt32BE(0,i);
@@ -128,8 +128,8 @@ export function renderComposition(input: Composition, light: EnvironmentLight) {
   const has = (role: SceneCompositionSpec['zones'][number]['role'],x: number,y: number) =>
     spec.zones.some(zone=>zone.role===role&&covered(region(w,h,[zone.points]),x,y));
   assert.ok(has('primary',px,py-12),'Primary focus must contain the entrance.');
-  const bench=spec.props.find(p=>p.ref==='workbench')!;
-  assert.ok(has('secondary',bench.at[0],bench.at[1]-5),'Secondary focus must contain the survey bench.');
+  const device=spec.ruins?.modules.find(m=>m.kind==='signal') ?? spec.props.find(p=>p.ref==='workbench')!;
+  assert.ok(has('secondary',device.at[0],device.at[1]-5),'Secondary focus must contain the interaction fixture.');
   assert.ok(hierarchy.filter(z=>z.role==='rest').every(z=>z.samples>=300),'Rest areas need a real material surface.');
   for(const spawn of spec.spawns) {
     assert.ok(has('readability',...spawn.at),spawn.actor+' spawn leaves readability zone.');
@@ -138,7 +138,8 @@ export function renderComposition(input: Composition, light: EnvironmentLight) {
   const interactions=spec.interactions.map(zone=>{
     const mask=region(w,h,[zone.points]);
     stain(focalOverlay,mask,pack('#f4e69b'));
-    const at=zone.target==='entry'?[px,py+5] as const:spec.props.find(p=>p.id===zone.target)!.at;
+    const target=spec.props.find(p=>p.id===zone.target) ?? spec.ruins?.modules.find(m=>m.id===zone.target);
+    const at=zone.target==='entry'?[px,py+5] as const:target!.at;
     let open=0, nearest=Infinity;
     for(let y=0;y<h;y++) for(let x=0;x<w;x++) if(covered(mask,x,y) && covered(walkable,x,y)){
       open++;

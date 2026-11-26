@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "kind": "lumasprite-scene-composition",
+  "id": "r1-signal-entrance",
+  "light": "night",
+  "source": {
+    "checkpoint": "24b8ca6",
+    "kit": "front-court",
+    "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+    "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "scene.png": "7ff1b8cb5f6d64b991a18ccbe87abf3d8eb27e1afbb232dc985d49338553e917",
+    "layer-overlay.png": "d45fe803d71ec896a41d24549015a146c387cc0ec846bc8416128992f7dccb70",
+    "material-mask.png": "eee4d64bcc3ac4d316b23c9dd9d106d8a45ecb2c9825aa23b028c2e39152a12d",
+    "collision-mask.png": "6604521aee278c4149e5fe2e200a9b49e26757977df7b6d7c9e11bcda96ec2b2",
+    "collision-overlay.png": "576839bec9cbe2be9c4f957af82376167c4fff40ddb6bf5f739fcbcb08be9585",
+    "walkable-mask.png": "0362748c9b192e308cc24e7048b2157626dfb1b476818e1c6e7df4c83da85f1e",
+    "route-overlay.png": "9db2dd45e2f4d026f985824fde57a65803edd8f504078e4dc38a76d56f2777de",
+    "focal-overlay.png": "b5e0e92846909e88dee4e5a446262381e1efb444a41c2be2c895e4b913aa67e7",
+    "kit.png": "ef7c7615584b7c01ac7f76e3e42ad1f7badf69f45428635a77981bb38a47413b",
+    "kit-material-mask.png": "19e69d45daf792fa5c88800d91e2d7d54ca8b9d3cf2c85f71cdc76c4f39b902a",
+    "night-light.png": "62430c2ad9708f33522d289e39f6ed597e047c6cb4e9f14b5817fa144f361736",
+    "scene-4x.png": "d643846707336422de44df36ec6382b302fd7eeecc4e0989d1b65ead806fd04c",
+    "flat-geometry.png": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90",
+    "architecture-silhouette.png": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7",
+    "composition-spec.json": "0dd0a04cb1703bb125db2b80f3472e15a8e599d9d52db19750dbaf99870490a9",
+    "kit.json": "040ee3cd5961a7fce57a11045495f57d016b374437fdbf02c4128513bb4cdee1",
+    "qa.json": "acbaa09b387eb4e02ed6a5c6e85f5d7326ec5f28bbd156e1dafee455627e67a0"
+  }
+}

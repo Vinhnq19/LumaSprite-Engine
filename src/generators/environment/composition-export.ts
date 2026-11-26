@@ -12,6 +12,11 @@ const json=(value: unknown)=>Buffer.from(JSON.stringify(value,null,2)+'\n');
 export function compositionPackage(input: Composition, light: EnvironmentLight) {
   const view=renderComposition(input,light), repeat=renderComposition(input,light);
   const files=new Map<string,Buffer>();
+  const flat=input.spec.ruins ? renderComposition(input,'day',true).scene : undefined;
+  if(flat){
+    assert.deepEqual(flat.architectureSilhouette,view.scene.architectureSilhouette,'Material pass changes the approved structural silhouette.');
+    assert.deepEqual(flat.collisionPlane,view.scene.collisionPlane,'Material pass changes structural collision.');
+  }
   const images = {
     'scene.png':view.scene.raster,
     'layer-overlay.png':view.scene.layerOverlay,
@@ -25,6 +30,7 @@ export function compositionPackage(input: Composition, light: EnvironmentLight) 
     'kit-material-mask.png':view.scene.atlasMaterials,
     ...(view.scene.nightLight?{'night-light.png':view.scene.nightLight}:{}),
     'scene-4x.png':nearestNeighbor(view.scene.raster,4),
+    ...(flat?{'flat-geometry.png':flat.raster,'architecture-silhouette.png':flat.architectureSilhouette!}:{}),
   };
   assert.deepEqual(view,repeat,'Composition render and diagnostics must be deterministic.');
   for(const [path,raster] of Object.entries(images)){

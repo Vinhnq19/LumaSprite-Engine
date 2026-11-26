@@ -1,0 +1,146 @@
+{
+  "cells": [
+    {
+      "id": "fallen-wall",
+      "at": [
+        3,
+        3
+      ],
+      "size": [
+        75,
+        36
+      ],
+      "pivot": [
+        0,
+        36
+      ],
+      "rgbaSha256": "8f6f4f61ba7cb8113473ed4c605be7081cee4f23b55a69b9b4908c40ac6f09bf",
+      "alphaSha256": "16f8fef209d76ea19d48b0509f9358d6eecd49fb5ed6cd67ade7c91df8854456"
+    },
+    {
+      "id": "upper-wall",
+      "at": [
+        81,
+        3
+      ],
+      "size": [
+        82,
+        49
+      ],
+      "pivot": [
+        0,
+        49
+      ],
+      "rgbaSha256": "7ea5b024fc746be3aaeda35ea8a445e401bfc1d8fa7c9be3ba1dd351a396c701",
+      "alphaSha256": "8a23c51ad78d3e28f4fc7a88dfcf7c1c745b1fcf807ea9d1fb9fca77c5977f16"
+    },
+    {
+      "id": "signal-terrace",
+      "at": [
+        166,
+        3
+      ],
+      "size": [
+        92,
+        22
+      ],
+      "pivot": [
+        0,
+        22
+      ],
+      "rgbaSha256": "366de831072f9ba6d9ff9171257889d474f8f9815ca1cd968c237867253f3c3d",
+      "alphaSha256": "6eb7f8d6a68a356a4a6341946997b24eb5399c7b13353579c0cab5fbad39d726"
+    },
+    {
+      "id": "signal-pedestal",
+      "at": [
+        261,
+        3
+      ],
+      "size": [
+        36,
+        42
+      ],
+      "pivot": [
+        0,
+        42
+      ],
+      "rgbaSha256": "33a0097062480b90cbd12aed72ee4b18193d666d6e267aebd021baf6f545eb79",
+      "alphaSha256": "ee4e24f0678f2e347c79b93635578d45a1e618ce171b2d948d2a1d4bde781fbc"
+    },
+    {
+      "id": "upper-column",
+      "at": [
+        300,
+        3
+      ],
+      "size": [
+        25,
+        30
+      ],
+      "pivot": [
+        0,
+        30
+      ],
+      "rgbaSha256": "963837239846e7b4f1547276c17fabc822aa7f4537d5ec9306b57161075854f6",
+      "alphaSha256": "5fdeabf0cd4514d99b36d753a0a7d240c2425ef39bf342b85cf81dbd1c5917d0"
+    },
+    {
+      "id": "near-column",
+      "at": [
+        328,
+        3
+      ],
+      "size": [
+        31,
+        36
+      ],
+      "pivot": [
+        0,
+        36
+      ],
+      "rgbaSha256": "662a05948fe748cb03413d806d4253ca88ec28a90f4a676803d0512831f6364c",
+      "alphaSha256": "3a9e3e6c4ea0f35e3e96c544545401ee1f3de0fbdecb2f35818334def008eb7f"
+    },
+    {
+      "id": "signal-gateway",
+      "at": [
+        362,
+        3
+      ],
+      "size": [
+        68,
+        75
+      ],
+      "pivot": [
+        0,
+        75
+      ],
+      "rgbaSha256": "edebbb67fbe6cd57930423075caf61ef3d0ecef85bd2d25990a7085bc7be1582",
+      "alphaSha256": "cdb30358d3b6f4a974f136b3bcd74ea91d25cf048f175e44ceb23ba17ce96344"
+    }
+  ],
+  "materialLegend": {
+    "stone": "#8bb4ce",
+    "wood": "#bc8862",
+    "roof": "#789e94",
+    "paving": "#cfbb83",
+    "metal": "#98a0be",
+    "amber": "#f9bb51",
+    "contour": "#48425e",
+    "grass": "#68864c",
+    "dirt": "#9d795c",
+    "prop": "#c28291",
+    "actor": "#94e4bd",
+    "shadow": "#292d42",
+    "moss": "#82a456"
+  },
+  "layerLegend": {
+    "terrain": "#364950",
+    "path": "#8c735a",
+    "shadow": "#3b2c55",
+    "building": "#81aeba",
+    "prop": "#dc9f64",
+    "actor": "#98e2c4"
+  }
+}

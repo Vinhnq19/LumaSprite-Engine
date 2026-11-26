@@ -79,6 +79,35 @@ export const environmentSpecSchema = z.discriminatedUnion('version', [
   if (rows.length < 10 || rows.length > 24 || rows[0].length < 14 || rows[0].length > 32 ||
       rows.some(row => row.length !== rows[0].length)) error('The scene needs a bounded rectangular tile map.', 'terrain');
 });
+const ruinWidth = z.number().int().min(12).max(96);
+const ruinHeight = z.number().int().min(12).max(88);
+const ruinDepth = z.number().int().min(6).max(20);
+const ruinPlacement = { id, at: point, width: ruinWidth, height: ruinHeight, depth: ruinDepth };
+const ruinModules = z.discriminatedUnion('kind', [
+  z.strictObject({ ...ruinPlacement, kind:z.literal('wall'), fracture:z.enum(['left','right']), moss:z.number().int().min(0).max(2) }),
+  z.strictObject({ ...ruinPlacement, kind:z.literal('gateway'), opening:z.number().int().min(26).max(42), crown:z.enum(['round','stepped']) }),
+  z.strictObject({ ...ruinPlacement, kind:z.literal('column'), moss:z.number().int().min(0).max(2) }),
+  z.strictObject({ ...ruinPlacement, kind:z.literal('platform') }),
+  z.strictObject({ ...ruinPlacement, kind:z.literal('signal'), lit:z.boolean() }),
+]);
+export const ruinSiteSpec = z.strictObject({ version:z.literal(1), modules:z.array(ruinModules).min(5).max(11) })
+  .superRefine(({modules},ctx)=>{
+    const report=(message:string)=>ctx.addIssue({code:'custom',path:['modules'],message});
+    if(new Set(modules.map(m=>m.id)).size!==modules.length)report('Duplicate ruin module.');
+    if(!['gateway','signal'].every(kind=>modules.filter(m=>m.kind===kind).length===1) ||
+       !['wall','column','platform'].every(kind=>modules.some(m=>m.kind===kind)))report('A ruin needs one gateway, one signal, wall, column and platform.');
+    for(const m of modules){
+      if(m.kind==='gateway' && (m.width-m.opening<22 || m.height<69 || m.width%2 || m.opening%2))
+        report('Gateway needs two load-bearing piers and an even opening with native actor clearance.');
+      if(m.kind==='platform' && (m.width<32 || m.height!==12))report('Platform must span two tiles with a 12 px slab module.');
+      if(m.kind==='wall' && (m.width<28 || m.height<18))report('Broken wall is too small for its bonded silhouette.');
+      if(m.kind==='column' && (m.width<14 || m.height<20))report('Column requires a plinth and broken shaft.');
+      if(m.kind==='signal' && (m.width<20 || m.height<26))report('Signal requires a pedestal and space for the fixture.');
+    }
+  });
+export type RuinSite = z.infer<typeof ruinSiteSpec>;
+export type RuinModule = RuinSite['modules'][number];
+
 export type EnvironmentSpec = z.infer<typeof environmentSpecSchema>;
 export type StyleProfile = z.infer<typeof artStyleProfileSchema>;
 export type EnvironmentLight = keyof StyleProfile['illumination'];

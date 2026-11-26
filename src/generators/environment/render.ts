@@ -8,9 +8,10 @@ import { artStyleProfileSchema, environmentSpecSchema, type EnvironmentFinish, t
 import type { SceneCompositionSpec } from '../../specs/scene-composition.ts';
 import { sha256 } from '../../quality/raster.ts';
 import { renderTerrain, renderTileGrid, tileIdsForMap } from '../terrain/render.ts';
-import { environmentKit, materialLegend, wallReturnPx, wallRisePx } from './kit.ts';
+import { environmentKit, materialLegend, mossInk, wallReturnPx, wallRisePx } from './kit.ts';
 
 import { covered, lanternLight, quietTerrain, readActorScale } from './refinement.ts';
+import { buildRuins,canopyGround,connectedPixels } from './ruins.ts';
 
 type Footprint = { id: string; kind: 'architecture' | 'prop'; points: readonly Point[] };
 type Piece = ReturnType<typeof environmentKit>['wall'];
@@ -66,8 +67,10 @@ export async function loadEnvironment(input: unknown) {
 }
 
 export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironment>>, finish: EnvironmentFinish,
-  illumination: EnvironmentLight, options?: { composition: SceneCompositionSpec; kitSeed: number; probe?: string }) {
+  illumination: EnvironmentLight, options?: { composition: SceneCompositionSpec; kitSeed: number; probe?: string; flat?: boolean }) {
   const composition = options?.composition;
+  const site = composition?.ruins;
+  const flat = !!(site && options?.flat);
   const { spec, style, ground, terrain, assets } = input;
   const { w, h } = ground;
   const { seed } = spec;
@@ -76,6 +79,7 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   const architecture = spec.version === 2 ? spec.architecture : undefined;
   requireThat(!architecture || varied, 'Revised architecture requires finish B.');
   const kit = environmentKit(style, finish, illumination, options?.kitSeed ?? seed, architecture);
+  const ruins = site ? buildRuins(site,style,illumination,seed,flat) : undefined;
   const blank = () => makeRaster(w, h);
   const testPoint = ([x,y]: Point) => x >= 0 && y >= 0 && x <= w && y <= h;
   const indexAt = (x: number, y: number) => ((y * w) + x) * 4;
@@ -93,188 +97,254 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   for (let at = 0; at < ground.rgba.length; at += 4) {
     const from = terrainInks.get(ground.rgba.readUInt32BE(at));
     requireThat(from !== undefined, 'Terrain uses an unmapped role.');
-    paintGround.rgba.writeUInt32BE(from[0], at);
+    const ink = flat ? pack(from[1] === pack(materialLegend.grass) ? theme.grass[1] : theme.dirt[1]) : from[0];
+    paintGround.rgba.writeUInt32BE(ink, at);
     groundMask.rgba.writeUInt32BE(from[1], at);
     groundOwners.rgba.writeUInt32BE(pack(ownerColors.terrain), at);
   }
 
   requireThat(!architecture || architecture.terrainRest.every(poly => poly.every(testPoint)), 'Terrain rest region exceeds scene.');
   const quietedTerrainPixels = architecture ? quietTerrain(paintGround,groundMask,architecture.terrainRest,theme) : 0;
-  const { at: [bx, by], bays, signBay } = spec.building;
-  const doorIndex = bays.indexOf('door');
-  const doorWidth = kit.door.raster.w;
-  const wallHeight = kit.wall.raster.h;
-  const doorHeight = architecture?.doorHeight ?? 24;
-  const jamb = architecture?.jamb ?? 3;
-  const bayX = (index: number) => bx + index * style.tilePx + (index > doorIndex ? doorWidth-style.tilePx : 0);
-  const right = bayX(bays.length), width = right-bx, door = bayX(doorIndex);
-  requireThat(bx >= 12 && by >= wallHeight+40 && right + 26 < w && by + 25 < h, 'Building exceeds native scene.');
-  const portal: Point = [door + doorWidth/2, by];
-  const entry = rect(door + jamb, by - 4, door + doorWidth-jamb, by + 4);
-  const pathOnly = blank();
-  solid(pathOnly, '#ffffff', spec.path);
-  requireThat(coverage(pathOnly, portal[0], by + 12), 'Approach path does not reach the door.');
-  const pad = [[bx - 13, by + 3], [bx + 16, by - 18], [right + 23, by - 18],
-    [right + 20, by + 10], [right + 3, by + 22], [bx - 8, by + 22]] as const;
-  if (composition) {
-    for (const paving of composition.paving) {
-      solid(paintGround,theme.surfaces.paving[paving.role === 'activity' ? 2 : 1],paving.points);
-      solid(groundMask,materialLegend.paving,paving.points);
-      solid(groundOwners,ownerColors.path,paving.points);
-    }
-  }
-  solid(paintGround, theme.surfaces.paving[1], spec.path);
-  solid(groundMask, materialLegend.paving, spec.path);
-  solid(groundOwners, ownerColors.path, spec.path);
-  solid(paintGround, theme.surfaces.paving[0], pad);
-  solid(paintGround, theme.surfaces.paving[2], pad.map(([x,y]) => [x,y - 2] as Point));
-  solid(groundMask, materialLegend.paving, pad.map(([x,y]) => [x,y - 2] as Point));
-  solid(groundMask, materialLegend.paving, pad);
-  solid(groundOwners, ownerColors.path, pad.map(([x,y]) => [x,y - 2] as Point));
-  solid(groundOwners, ownerColors.path, pad);
-  if (varied && !architecture) {
-    for (let row = 0; row < 3; row++) {
-      const y = by + 3 + row * 5;
-      for (let x = bx - 9 + (row % 2) * 6; x < right + 9; x += 13) {
-        if (groundMask.rgba.readUInt32BE(indexAt(x, y)) !== pack(materialLegend.paving)) continue;
-        for (let i = 0; i < style.detailSpan && x + i < w; i++) {
-          if (groundMask.rgba.readUInt32BE(indexAt(x + i, y)) === pack(materialLegend.paving)) {
-            paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[i < 2 ? 3 : 1]), indexAt(x + i, y));
-          }
-        }
-      }
-    }
-    for (let y = by + 29; y < h - 2; y += 12) {
-      const left = Array.from({ length: w }, (_, x) => x).find(x => coverage(pathOnly, x, y));
-      if (left === undefined) continue;
-      for (let i = 2; i < 2 + style.detailSpan && left + i < w; i++) {
-        if (coverage(pathOnly, left + i, y)) {
-          paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[2]), indexAt(left + i, y));
-        }
-      }
-    }
-    if (illumination === 'night') {
-      solid(paintGround, theme.surfaces.wood[2], [[door-9,by+3],[door+2,by+3],[door+5,by+7],[door-7,by+7]]);
-    }
-  }
-  if (architecture) {
-    // Sparse, staggered clusters along the landing rather than a regular tiling grid.
-    for (const [dx,dy,length] of [[-25,7,7],[-19,8,5],[-14,17,8],[-2,13,4],[14,15,8],[33,8,5],[37,7,9],[51,14,8]]) {
-      for (let x=door+dx;x<door+dx+length;x++) {
-        const at=indexAt(x,by+dy);
-        if (x>=0 && x<w && groundMask.rgba.readUInt32BE(at) === pack(materialLegend.paving)) {
-          paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[1]),at);
-        }
-      }
-    }
-  }
-  const tread = rect(door + 1, by, door + doorWidth-1, by + 5);
-  solid(paintGround, theme.surfaces.paving[1], tread);
-  solid(paintGround, theme.surfaces.paving[3], rect(door + 1, by + 3, door + doorWidth-1, by + 4));
-  solid(groundMask, materialLegend.paving, tread);
-  solid(groundOwners, ownerColors.path, tread);
-
-  if (composition) {
-    const work=composition.props.find(p=>p.ref==='workbench');
-    if (work) {
-      const [x,y]=work.at;
-      for (const [dx,dy,length] of [[-14,5,7],[4,8,8],[-19,15,6],[10,17,11]]) {
-        for (let u=x+dx;u<x+dx+length;u++) if (u>=0 && u<w && y+dy<h) {
-          const i=indexAt(u,y+dy);
-          if (groundMask.rgba.readUInt32BE(i)===pack(materialLegend.paving)) {
-            paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[1]),i);
-          }
-        }
-      }
-    }
-  }
-  const ambient = composition && illumination === 'night' ? blank() : undefined;
-  if (ambient && composition) {
-    for (const fill of composition.lighting.fill) {
-      const mask = blank();
-      solid(mask,'#ffffff',fill.points);
-      const role = pack(materialLegend[fill.role]);
-      const ink = pack(fill.role === 'paving' ? theme.surfaces.paving[fill.tone] : theme[fill.role][fill.tone] ?? theme.grass[2]);
-      for (let i=0;i<mask.rgba.length;i+=4) if (mask.rgba[i+3] && groundMask.rgba.readUInt32BE(i)===role && paintGround.rgba.readUInt32BE(i)!==ink) {
-        paintGround.rgba.writeUInt32BE(ink,i);
-        ambient.rgba.writeUInt32BE(ink,i);
-      }
-    }
-  }
-
-  const wallRaster = blank(), wallMaterials = blank();
+  if(site && !flat)canopyGround(paintGround,groundMask,composition.zones.filter(z=>z.role==='background').map(z=>z.points),theme,seed);
   const place = (target: Raster, mask: Raster, piece: Piece, [x, y]: Point) => {
     blit(target, piece.raster, x - piece.origin[0], y - piece.origin[1]);
     blit(mask, piece.material, x - piece.origin[0], y - piece.origin[1]);
   };
-  bays.forEach((bay, index) => place(wallRaster, wallMaterials, kit[bay], [bayX(index), by]));
-  place(wallRaster, wallMaterials, kit.corner, [right, by]);
-  let seamSamples = 0;
-  for (let i = 1; i <= bays.length; i++) for (let y = by - wallHeight + 2; y < by; y++) {
-    requireThat(coverage(wallRaster, bayX(i) - 1, y) && coverage(wallRaster, bayX(i), y), 'Open seam at front or corner.');
-    seamSamples++;
-  }
-  const roof = kit.roof(width);
-  const mounts = { sign: [bayX(signBay) + 8, by - (architecture ? 27 : 21)] as Point,
-    lamp: [door - 5, by - (architecture ? 42 : 24)] as Point,
-    nearestPost: [bx + 2, by] as Point, farPost: [right - 2, by] as Point, eave: [bx, by - wallHeight + 3] as Point };
-  if (architecture) {
-    for (let y=by-doorHeight;y<by;y++) for (let x=door+jamb;x<door+doorWidth-jamb;x++) {
-      requireThat(!coverage(wallRaster,x,y), 'Revised entrance aperture is painted shut.');
+  const paintPaving = () => {
+    if(!composition)return;
+    for(const paving of composition.paving){
+      solid(paintGround,theme.surfaces.paving[paving.role==='activity'?2:1],paving.points);
+      solid(groundMask,materialLegend.paving,paving.points);
+      solid(groundOwners,ownerColors.path,paving.points);
     }
-  }
-  place(wallRaster, wallMaterials, kit.post, mounts.nearestPost);
-  place(wallRaster, wallMaterials, kit.post, mounts.farPost);
-  place(wallRaster, wallMaterials, roof, mounts.eave);
-  if (architecture) {
-    const row = roof.origin[1]-2;
-    for (let x=bx;x<right;x++) {
-      requireThat(covered(roof.raster,x-bx+roof.origin[0],row), 'Roof eave lifts away from the wall.');
+  };
+  const fillGroundLight = () => {
+    const ambient = composition && !flat && illumination === 'night' ? blank() : undefined;
+    if (ambient && composition) {
+      for (const fill of composition.lighting.fill) {
+        const mask = blank();
+        solid(mask,'#ffffff',fill.points);
+        const role = pack(materialLegend[fill.role]);
+        const ink = pack(fill.role === 'paving' ? theme.surfaces.paving[fill.tone] : theme[fill.role][fill.tone] ?? theme.grass[2]);
+        for (let i=0;i<mask.rgba.length;i+=4) if (mask.rgba[i+3] && groundMask.rgba.readUInt32BE(i)===role && paintGround.rgba.readUInt32BE(i)!==ink) {
+          paintGround.rgba.writeUInt32BE(ink,i);
+          ambient.rgba.writeUInt32BE(ink,i);
+        }
+      }
+    }
+    return ambient;
+  };
+  function outpostPlan() {
+    const { at: [bx, by], bays, signBay } = spec.building;
+    const doorIndex = bays.indexOf('door');
+    const doorWidth = kit.door.raster.w;
+    const wallHeight = kit.wall.raster.h;
+    const doorHeight = architecture?.doorHeight ?? 24;
+    const jamb = architecture?.jamb ?? 3;
+    const bayX = (index: number) => bx + index * style.tilePx + (index > doorIndex ? doorWidth-style.tilePx : 0);
+    const right = bayX(bays.length), width = right-bx, door = bayX(doorIndex);
+    requireThat(bx >= 12 && by >= wallHeight+40 && right + 26 < w && by + 25 < h, 'Building exceeds native scene.');
+    const portal: Point = [door + doorWidth/2, by];
+    const entry = rect(door + jamb, by - 4, door + doorWidth-jamb, by + 4);
+    const pathOnly = blank();
+    solid(pathOnly, '#ffffff', spec.path);
+    requireThat(coverage(pathOnly, portal[0], by + 12), 'Approach path does not reach the door.');
+    const pad = [[bx - 13, by + 3], [bx + 16, by - 18], [right + 23, by - 18],
+      [right + 20, by + 10], [right + 3, by + 22], [bx - 8, by + 22]] as const;
+    paintPaving();
+    solid(paintGround, theme.surfaces.paving[1], spec.path);
+    solid(groundMask, materialLegend.paving, spec.path);
+    solid(groundOwners, ownerColors.path, spec.path);
+    solid(paintGround, theme.surfaces.paving[0], pad);
+    solid(paintGround, theme.surfaces.paving[2], pad.map(([x,y]) => [x,y - 2] as Point));
+    solid(groundMask, materialLegend.paving, pad.map(([x,y]) => [x,y - 2] as Point));
+    solid(groundMask, materialLegend.paving, pad);
+    solid(groundOwners, ownerColors.path, pad.map(([x,y]) => [x,y - 2] as Point));
+    solid(groundOwners, ownerColors.path, pad);
+    if (varied && !architecture) {
+      for (let row = 0; row < 3; row++) {
+        const y = by + 3 + row * 5;
+        for (let x = bx - 9 + (row % 2) * 6; x < right + 9; x += 13) {
+          if (groundMask.rgba.readUInt32BE(indexAt(x, y)) !== pack(materialLegend.paving)) continue;
+          for (let i = 0; i < style.detailSpan && x + i < w; i++) {
+            if (groundMask.rgba.readUInt32BE(indexAt(x + i, y)) === pack(materialLegend.paving)) {
+              paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[i < 2 ? 3 : 1]), indexAt(x + i, y));
+            }
+          }
+        }
+      }
+      for (let y = by + 29; y < h - 2; y += 12) {
+        const left = Array.from({ length: w }, (_, x) => x).find(x => coverage(pathOnly, x, y));
+        if (left === undefined) continue;
+        for (let i = 2; i < 2 + style.detailSpan && left + i < w; i++) {
+          if (coverage(pathOnly, left + i, y)) {
+            paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[2]), indexAt(left + i, y));
+          }
+        }
+      }
+      if (illumination === 'night') {
+        solid(paintGround, theme.surfaces.wood[2], [[door-9,by+3],[door+2,by+3],[door+5,by+7],[door-7,by+7]]);
+      }
+    }
+    if (architecture) {
+      // Sparse, staggered clusters along the landing rather than a regular tiling grid.
+      for (const [dx,dy,length] of [[-25,7,7],[-19,8,5],[-14,17,8],[-2,13,4],[14,15,8],[33,8,5],[37,7,9],[51,14,8]]) {
+        for (let x=door+dx;x<door+dx+length;x++) {
+          const at=indexAt(x,by+dy);
+          if (x>=0 && x<w && groundMask.rgba.readUInt32BE(at) === pack(materialLegend.paving)) {
+            paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[1]),at);
+          }
+        }
+      }
+    }
+    const tread = rect(door + 1, by, door + doorWidth-1, by + 5);
+    solid(paintGround, theme.surfaces.paving[1], tread);
+    solid(paintGround, theme.surfaces.paving[3], rect(door + 1, by + 3, door + doorWidth-1, by + 4));
+    solid(groundMask, materialLegend.paving, tread);
+    solid(groundOwners, ownerColors.path, tread);
+
+    if (composition) {
+      const work=composition.props.find(p=>p.ref==='workbench');
+      if (work) {
+        const [x,y]=work.at;
+        for (const [dx,dy,length] of [[-14,5,7],[4,8,8],[-19,15,6],[10,17,11]]) {
+          for (let u=x+dx;u<x+dx+length;u++) if (u>=0 && u<w && y+dy<h) {
+            const i=indexAt(u,y+dy);
+            if (groundMask.rgba.readUInt32BE(i)===pack(materialLegend.paving)) {
+              paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[1]),i);
+            }
+          }
+        }
+      }
+    }
+    const ambient = fillGroundLight();
+
+    const wallRaster = blank(), wallMaterials = blank();
+    bays.forEach((bay, index) => place(wallRaster, wallMaterials, kit[bay], [bayX(index), by]));
+    place(wallRaster, wallMaterials, kit.corner, [right, by]);
+    let seamSamples = 0;
+    for (let i = 1; i <= bays.length; i++) for (let y = by - wallHeight + 2; y < by; y++) {
+      requireThat(coverage(wallRaster, bayX(i) - 1, y) && coverage(wallRaster, bayX(i), y), 'Open seam at front or corner.');
       seamSamples++;
     }
-  }
-  place(wallRaster, wallMaterials, kit.sign, mounts.sign);
-  const bench = spec.placements.find(item=>item.ref === 'workbench');
-  const lights = architecture && illumination === 'night' ? lanternLight(paintGround,wallRaster,wallMaterials,groundMask,theme,
-    { x: door, y: by, width: doorWidth, top: by-doorHeight, jamb }, mounts.lamp,
-    bays.flatMap((bay,i)=>bay === 'window' ? [[bayX(i),by-wallHeight] as Point] : []),
-    bench?.at, composition?.lighting.workbench) : undefined;
-  place(wallRaster, wallMaterials, kit.lamp, mounts.lamp);
-  const recess = blank(), recessMaterials = blank();
-  if (architecture) {
-    const top = by-doorHeight, end = door+doorWidth-jamb;
-    solid(recess,theme.contour,rect(door+jamb,top,end,by));
-    solid(recess,theme.surfaces.wood[0],[[end-6,top],[end,top],[end,by],[end-9,by-6]]);
-    solid(recess,theme.surfaces.paving[0],[[door+jamb,by-4],[end-7,by-6],[end,by],[door+jamb,by]]);
-    solid(recess,theme.surfaces.wood[illumination === 'night' ? 0 : 1],
-      [[end-4,top],[end-2,top],[end-2,by-6],[end-4,by-8]]);
-    solid(recessMaterials,materialLegend.contour,rect(door+jamb,top,end,by));
-    if (composition) {
-      const left=door+jamb;
-      solid(recess,theme.surfaces.wood[0],[[left,top],[left+7,top+5],[left+7,by-10],[left,by-4]]);
-      solid(recess,theme.surfaces.wood[1],[[left+2,top+5],[left+4,top+7],[left+4,by-10],[left+2,by-8]]);
-      solid(recess,theme.surfaces.paving[1],[[left,by-1],[left+8,by-7],[end-9,by-7],[end,by-1]]);
-      solid(recess,theme.surfaces.paving[2],rect(left+4,by-3,end-4,by-2));
-      if (illumination === 'night') {
-        solid(recess,theme.surfaces.amber[0],[[left+1,by-3],[left+8,by-6],[end-10,by-6],[end-6,by-3]]);
-        solid(ambient!,theme.surfaces.amber[0],[[left+1,by-3],[left+8,by-6],[end-10,by-6],[end-6,by-3]]);
+    const roof = kit.roof(width);
+    const mounts = { sign: [bayX(signBay) + 8, by - (architecture ? 27 : 21)] as Point,
+      lamp: [door - 5, by - (architecture ? 42 : 24)] as Point,
+      nearestPost: [bx + 2, by] as Point, farPost: [right - 2, by] as Point, eave: [bx, by - wallHeight + 3] as Point };
+    if (architecture) {
+      for (let y=by-doorHeight;y<by;y++) for (let x=door+jamb;x<door+doorWidth-jamb;x++) {
+        requireThat(!coverage(wallRaster,x,y), 'Revised entrance aperture is painted shut.');
       }
-      solid(recessMaterials,materialLegend.wood,[[left,top],[left+7,top+5],[left+7,by-10],[left,by-4]]);
-      solid(recessMaterials,materialLegend.paving,[[left,by-1],[left+8,by-7],[end-9,by-7],[end,by-1]]);
     }
+    place(wallRaster, wallMaterials, kit.post, mounts.nearestPost);
+    place(wallRaster, wallMaterials, kit.post, mounts.farPost);
+    place(wallRaster, wallMaterials, roof, mounts.eave);
+    if (architecture) {
+      const row = roof.origin[1]-2;
+      for (let x=bx;x<right;x++) {
+        requireThat(covered(roof.raster,x-bx+roof.origin[0],row), 'Roof eave lifts away from the wall.');
+        seamSamples++;
+      }
+    }
+    place(wallRaster, wallMaterials, kit.sign, mounts.sign);
+    const bench = spec.placements.find(item=>item.ref === 'workbench');
+    const lights = architecture && illumination === 'night' ? lanternLight(paintGround,wallRaster,wallMaterials,groundMask,theme,
+      { x: door, y: by, width: doorWidth, top: by-doorHeight, jamb }, mounts.lamp,
+      bays.flatMap((bay,i)=>bay === 'window' ? [[bayX(i),by-wallHeight] as Point] : []),
+      bench?.at, composition?.lighting.workbench) : undefined;
+    place(wallRaster, wallMaterials, kit.lamp, mounts.lamp);
+    const recess = blank(), recessMaterials = blank();
+    if (architecture) {
+      const top = by-doorHeight, end = door+doorWidth-jamb;
+      solid(recess,theme.contour,rect(door+jamb,top,end,by));
+      solid(recess,theme.surfaces.wood[0],[[end-6,top],[end,top],[end,by],[end-9,by-6]]);
+      solid(recess,theme.surfaces.paving[0],[[door+jamb,by-4],[end-7,by-6],[end,by],[door+jamb,by]]);
+      solid(recess,theme.surfaces.wood[illumination === 'night' ? 0 : 1],
+        [[end-4,top],[end-2,top],[end-2,by-6],[end-4,by-8]]);
+      solid(recessMaterials,materialLegend.contour,rect(door+jamb,top,end,by));
+      if (composition) {
+        const left=door+jamb;
+        solid(recess,theme.surfaces.wood[0],[[left,top],[left+7,top+5],[left+7,by-10],[left,by-4]]);
+        solid(recess,theme.surfaces.wood[1],[[left+2,top+5],[left+4,top+7],[left+4,by-10],[left+2,by-8]]);
+        solid(recess,theme.surfaces.paving[1],[[left,by-1],[left+8,by-7],[end-9,by-7],[end,by-1]]);
+        solid(recess,theme.surfaces.paving[2],rect(left+4,by-3,end-4,by-2));
+        if (illumination === 'night') {
+          solid(recess,theme.surfaces.amber[0],[[left+1,by-3],[left+8,by-6],[end-10,by-6],[end-6,by-3]]);
+          solid(ambient!,theme.surfaces.amber[0],[[left+1,by-3],[left+8,by-6],[end-10,by-6],[end-6,by-3]]);
+        }
+        solid(recessMaterials,materialLegend.wood,[[left,top],[left+7,top+5],[left+7,by-10],[left,by-4]]);
+        solid(recessMaterials,materialLegend.paving,[[left,by-1],[left+8,by-7],[end-9,by-7],[end,by-1]]);
+      }
+    }
+    const layers: Layer[] = [{ id: 'station-shell', kind: 'building', at: spec.building.at,
+      piece: { raster: wallRaster, material: wallMaterials, origin: spec.building.at } }];
+    const collision: Footprint[] = [
+      { id: 'left-return', kind: 'architecture', points: [[bx,by],[bx+4,by],[bx+4+wallReturnPx,by-wallRisePx],[bx+wallReturnPx,by-wallRisePx]] },
+      { id: 'right-return', kind: 'architecture', points: [[right-4,by],[right,by],[right+wallReturnPx,by-wallRisePx],[right+wallReturnPx-4,by-wallRisePx]] },
+      { id: 'back-wall', kind: 'architecture', points: rect(bx+wallReturnPx,by-wallRisePx-4,right+wallReturnPx,by-wallRisePx) },
+    ];
+    bays.forEach((bay, index) => {
+      const x = bayX(index);
+      const strips = bay === 'door' ? [[x,x+jamb],[x+doorWidth-jamb,x+doorWidth]] : [[x,x+style.tilePx]];
+      strips.forEach(([left, end], j) => collision.push({ id: 'front-' + index + '-' + j, kind: 'architecture', points: rect(left,by-4,end,by) }));
+    });
+    return { bx,by,right,door,portal,entry,doorWidth,doorHeight,jamb,wallHeight,mounts,seamSamples,layers,collision,ambient,lights,recess,recessMaterials,roof,
+      roofOverhang:[roof.origin[0],roof.raster.w-width-roof.origin[0]-wallReturnPx],
+      footprint:[[bx,by],[right,by],[right+wallReturnPx,by-wallRisePx],[bx+wallReturnPx,by-wallRisePx]],
+      windowSillsY:bays.flatMap((bay,i)=>bay === 'window' ? [[bayX(i),by-wallHeight+38]] : []) };
   }
-  const layers: Layer[] = [{ id: 'station-shell', kind: 'building', at: spec.building.at,
-    piece: { raster: wallRaster, material: wallMaterials, origin: spec.building.at } }];
-  const collision: Footprint[] = [
-    { id: 'left-return', kind: 'architecture', points: [[bx,by],[bx+4,by],[bx+4+wallReturnPx,by-wallRisePx],[bx+wallReturnPx,by-wallRisePx]] },
-    { id: 'right-return', kind: 'architecture', points: [[right-4,by],[right,by],[right+wallReturnPx,by-wallRisePx],[right+wallReturnPx-4,by-wallRisePx]] },
-    { id: 'back-wall', kind: 'architecture', points: rect(bx+wallReturnPx,by-wallRisePx-4,right+wallReturnPx,by-wallRisePx) },
-  ];
-  bays.forEach((bay, index) => {
-    const x = bayX(index);
-    const strips = bay === 'door' ? [[x,x+jamb],[x+doorWidth-jamb,x+doorWidth]] : [[x,x+style.tilePx]];
-    strips.forEach(([left, end], j) => collision.push({ id: 'front-' + index + '-' + j, kind: 'architecture', points: rect(left,by-4,end,by) }));
-  });
+  function ruinsPlan(plan: NonNullable<typeof ruins>) {
+    const {gateway}=plan;
+    const {at:[bx,by],width:doorWidth,height:wallHeight,opening,depth}=gateway;
+    const jamb=(doorWidth-opening)/2, right=bx+doorWidth, x=bx+doorWidth/2;
+    const portal:[number,number]=[x,by];
+    const entry=rect(bx+jamb,by-4,right-jamb,by+4);
+    const pathMask=blank();
+    solid(pathMask,'#ffffff',spec.path);
+    requireThat(covered(pathMask,x,by+12),'Ruins approach does not reach the gateway.');
+    solid(paintGround,theme.dirt[2],spec.path);
+    solid(groundMask,materialLegend.dirt,spec.path);
+    solid(groundOwners,ownerColors.path,spec.path);
+    const layers:Layer[]=[], collision:Footprint[]=[];
+    paintPaving();
+    const signal=plan.modules.find(m=>m.module.kind==='signal')!.module;
+    let seamSamples=0;
+    for(const {module,piece} of plan.modules){
+      seamSamples+=connectedPixels(piece.raster);
+      const [mx,my]=module.at;
+      const end=mx+module.width, rise=Math.floor(module.depth/2);
+      if(module.kind==='platform'){
+        place(paintGround,groundMask,piece,module.at);
+        blit(groundOwners,silhouette(piece.raster,pack(ownerColors.path)),mx,my-piece.origin[1]);
+        continue;
+      }
+      layers.push({id:module.id,kind:'building',at:module.at,piece});
+      const strips=module.kind==='gateway'?[[mx,mx+jamb],[end-jamb,end]]:[[mx,end]];
+      for(const [i,[left,stop]] of strips.entries()){
+        const points:Point[]=[[left,my],[stop,my],[stop,my-4],[stop+rise,my-rise-4],[left+rise,my-rise-4],[left,my-4]];
+        collision.push({id:module.id+(strips.length>1?'-'+i:''),kind:'architecture',points});
+      }
+    }
+    const ambient=fillGroundLight(), pools=blank(), glaze=blank();
+    let lights: {pools:Raster;glaze:Raster}|undefined;
+    if(illumination==='night' && !flat && signal.kind==='signal' && signal.lit){
+      const [u,v]=signal.at, c=u+Math.floor(signal.width/2)+2, crown=v-signal.height+7;
+      solid(pools,theme.surfaces.amber[0],[[u-4,v+1],[u+signal.width+2,v],[u+signal.width+7,v+7],[u+12,v+11],[u-8,v+7]]);
+      solid(pools,theme.surfaces.amber[1],[[u+1,v+3],[u+signal.width-2,v+3],[u+signal.width+1,v+6],[u+6,v+7]]);
+      solid(glaze,theme.surfaces.amber[3],rect(c,crown,c+1,crown+1));
+      for(let i=0;i<pools.rgba.length;i+=4)if(pools.rgba[i+3]){
+        const role=groundMask.rgba.readUInt32BE(i);
+        if(role===pack(materialLegend.paving) || role===pack(materialLegend.dirt)) paintGround.rgba.writeUInt32BE(pools.rgba.readUInt32BE(i),i);
+        else pools.rgba.writeUInt32BE(0,i);
+      }
+      lights={pools,glaze};
+    }
+    return {bx,by,right,door:bx,portal,entry,doorWidth,doorHeight:60,jamb,wallHeight,mounts:{signal:signal.at},seamSamples,
+      layers,collision,ambient,lights,recess:blank(),recessMaterials:blank(),roof:undefined,roofOverhang:[],
+      footprint:[[bx,by],[right,by],[right+depth,by-Math.floor(depth/2)],[bx+depth,by-Math.floor(depth/2)]],windowSillsY:[]};
+  }
+  const { bx,by,right,door,portal,entry,doorWidth,doorHeight,jamb,wallHeight,mounts,seamSamples,layers,collision,ambient,lights,
+    recess,recessMaterials,roof,roofOverhang,footprint,windowSillsY } = ruins ? ruinsPlan(ruins) : outpostPlan();
   for (const item of spec.placements) {
     requireThat(item.id !== 'station-shell', 'Placement conflicts with building layer.');
     const [x,y] = item.at;
@@ -324,8 +394,17 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   }) : [];
   const contact = blank(), shadow = blank();
   const [sx, sy] = varied ? style.cast : [2, 2];
-  solid(contact,'#ffffff',[[bx-1,by-1],[right,by-1],[right+14,by-wallRisePx],[right+17+sx,by-wallRisePx+1+sy],
-    [right+sx,by+sy],[bx-1,by+sy]]);
+  if(ruins){
+    for(const {module} of ruins.modules) {
+      if(module.kind==='platform')continue;
+      const [x,y]=module.at;
+      const strips=module.kind==='gateway'?[[x,x+jamb],[x+module.width-jamb,x+module.width]]:[[x,x+module.width]];
+      for(const [left,end] of strips)solid(contact,'#ffffff',[[left,y-1],[end,y-2],[end+sx+2,y+sy],[left+2,y+sy]]);
+    }
+  }else{
+    solid(contact,'#ffffff',[[bx-1,by-1],[right,by-1],[right+14,by-wallRisePx],[right+17+sx,by-wallRisePx+1+sy],
+      [right+sx,by+sy],[bx-1,by+sy]]);
+  }
   for (const layer of layers) {
     if (layer.kind === 'building') continue;
     const [x,y] = layer.at, radius = layer.kind === 'actor' ? 7 : 10;
@@ -413,8 +492,8 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   })));
   const qa = audit(raster,palette);
   const kitEntries = { wall: kit.wall, door: kit.door, window: kit.window, corner: kit.corner,
-    column: kit.post, roof, compass: kit.sign, lamp: kit.lamp, workbench: kit.workbench };
-  const pieces = Object.entries(kitEntries);
+    column: kit.post, roof:roof!, compass: kit.sign, lamp: kit.lamp, workbench: kit.workbench };
+  const pieces = ruins ? ruins.modules.map(({module,piece})=>[module.id,piece] as const) : Object.entries(kitEntries);
   const atlas = makeRaster(pieces.reduce((sum, [,v]) => sum+v.raster.w+3,3), Math.max(...pieces.map(([,v])=>v.raster.h))+6);
   const atlasMaterials = makeRaster(atlas.w,atlas.h);
   let left = 3;
@@ -427,7 +506,12 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
     return { id, at, size: [piece.raster.w,piece.raster.h], pivot: piece.origin, rgbaSha256, alphaSha256 };
   });
   requireThat(audit(atlas,palette).alphaSha256 === audit(atlasMaterials).alphaSha256, 'Atlas material coverage differs.');
-  const nightLight = lights ? composite(ambient ? [ambient,lights.pools,lights.glaze] : [lights.pools,lights.glaze]) : undefined;
+  const nightLight = lights ? composite(ambient ? [ambient,lights.pools,lights.glaze] : [lights.pools,lights.glaze]) :
+    ruins && ambient?.rgba.some((value,i)=>i%4===3 && value===255) ? ambient : undefined;
+  const architectureSilhouette=ruins ? blank() : undefined;
+  if(architectureSilhouette && ruins)for (const {module,piece} of ruins.modules) {
+    blit(architectureSilhouette,silhouette(piece.raster,pack('#ffffff')),module.at[0],module.at[1]-piece.origin[1]);
+  }
   if (nightLight) audit(nightLight,palette);
   const metadata = {
     version: 1, camera: { width: w, height: h, sampling: 'nearest', view: style.view, pixelsPerUnit: style.pixelsPerUnit },
@@ -435,12 +519,11 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
     collisions: collision, layerOrder: bounds.map(x => x.id), occlusion, palette: {
       allowed: [...palette].map(unpack).sort(), used: [...qa.colors].map(unpack).sort(), ramps: inkRows,
       warnings: separation.filter(x=> x.equalInks.length || x.midtoneGap < style.minMaterialLumaGap),
-    }, atlas: { cells: atlasCells, materialLegend, layerLegend: ownerColors }, rgbaSha256: qa.rgbaSha256, alphaSha256: qa.alphaSha256,
+    }, atlas: { cells: atlasCells, materialLegend:ruins?{...materialLegend,moss:mossInk}:materialLegend, layerLegend: ownerColors }, rgbaSha256: qa.rgbaSha256, alphaSha256: qa.alphaSha256,
     ...(architecture ? { refinement: { geometry: { wallHeight, doorWidth, doorHeight, jamb, fit,
-      roofOverhang: [roof.origin[0],roof.raster.w-width-roof.origin[0]-wallReturnPx],
-      footprint: [[bx,by],[right,by],[right+wallReturnPx,by-wallRisePx],[bx+wallReturnPx,by-wallRisePx]],
-      windowSillsY: bays.flatMap((bay,i)=>bay === 'window' ? [[bayX(i),by-wallHeight+38]] : []),
+      roofOverhang, footprint, windowSillsY,
     }, quietedTerrainPixels, nightLightPixels: nightLight?.rgba.filter((value,i)=>i%4===3 && value===255).length ?? 0 } } : {}),
+    ...(ruins ? {ruins:{ modules:ruins.modules.map(({module})=>module), flat, supportPixels:seamSamples }} : {}),
   };
-  return { raster, materialMask, layerOverlay, collisionOverlay, collisionPlane, atlas, atlasMaterials, metadata, nightLight };
+  return { raster, materialMask, layerOverlay, collisionOverlay, collisionPlane, atlas, atlasMaterials, metadata, nightLight,architectureSilhouette };
 }

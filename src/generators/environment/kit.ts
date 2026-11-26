@@ -10,7 +10,8 @@ import { surfaceNames } from '../../specs/environment.ts';
 export type Surface = (typeof surfaceNames)[number];
 export const wallReturnPx = 16;
 export const wallRisePx = riseForDepth(wallReturnPx);
-type Region = Surface | 'contour';
+type Region = Surface | 'contour' | 'moss';
+export const mossInk = '#82a456';
 type Tone = 0 | 1 | 2 | 3;
 type Paint = (role: Region, tone: Tone, poly: readonly Point[]) => void;
 type Patch = (role: Surface, tone: Tone, face: Face, u0: number, v0: number, u1: number, v1: number) => void;
@@ -21,16 +22,14 @@ export const materialLegend = {
   contour: '#48425e', grass: '#68864c', dirt: '#9d795c', prop: '#c28291', actor: '#94e4bd', shadow: '#292d42',
 } as const;
 
-export function environmentKit(style: StyleProfile, finish: EnvironmentFinish, light: EnvironmentLight, seed: number, architecture?: EnvironmentArchitecture) {
-  const inks = style.illumination[light];
-  const rich = finish === 'B';
-  const span = style.detailSpan;
-  function piece(w: number, h: number, origin: Point, draw: (paint: Paint, patch: Patch) => void) {
+export function materialPiece(inks: StyleProfile['illumination']['day']): PaintPiece {
+  return function piece(w: number, h: number, origin: Point, draw: (paint: Paint, patch: Patch) => void) {
     const raster = makeRaster(w, h), material = makeRaster(w, h);
-    const color = (role: Region, tone: Tone) => pack(role === 'contour' ? inks.contour : inks.surfaces[role][tone]);
+    const color = (role: Region, tone: Tone) => pack(role === 'contour' ? inks.contour :
+      role === 'moss' ? inks.grass[Math.min(tone,2)] : inks.surfaces[role][tone]);
     const paint: Paint = (role, tone, poly) => {
       fillPolygon(raster, poly, color(role, tone));
-      fillPolygon(material, poly, pack(materialLegend[role]));
+      fillPolygon(material, poly, pack(role === 'moss' ? mossInk : materialLegend[role]));
     };
     const patch: Patch = (role, tone, face, u0, v0, u1, v1) => {
       fillFacePatch(raster, face, color(role, tone), u0, v0, u1, v1);
@@ -38,7 +37,13 @@ export function environmentKit(style: StyleProfile, finish: EnvironmentFinish, l
     };
     draw(paint, patch);
     return { raster, material, origin };
-  }
+  };
+}
+
+export function environmentKit(style: StyleProfile, finish: EnvironmentFinish, light: EnvironmentLight, seed: number, architecture?: EnvironmentArchitecture) {
+  const rich = finish === 'B';
+  const span = style.detailSpan;
+  const piece = materialPiece(style.illumination[light]);
 
   function wall(kind: 'wall' | 'window' | 'door') {
     return piece(16, 32, [0,32], paper => {

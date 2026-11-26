@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { environmentSpecSchema } from './environment.ts';
+import { environmentSpecSchema,ruinSiteSpec } from './environment.ts';
 import { terrainMapSpec } from './terrain.ts';
 
 const id = z.string().regex(/^[a-z][a-z0-9-]{0,35}$/);
@@ -16,7 +16,7 @@ const probe = z.strictObject({
   at:point, actor, occluder:id.optional(),
 });
 export const sceneCompositionSpec = z.strictObject({
-  version:z.literal(1), kind:z.literal('field-outpost-composition'), id, name:z.string().min(1).max(80),
+  version:z.literal(1), kind:z.enum(['field-outpost-composition','ruin-composition']), id, name:z.string().min(1).max(80),
   size:z.tuple([z.literal(320),z.literal(208)]), seed:z.number().int().min(0).max(0xffffffff),
   source:z.strictObject({
     checkpoint:z.literal('24b8ca6'), kit:z.enum(['front-court','roadside']), specSha256:digest,
@@ -26,7 +26,7 @@ export const sceneCompositionSpec = z.strictObject({
   building:point,
   approach:polygon,
   paving:z.array(z.strictObject({ points:polygon, role:z.enum(['route','activity']) })).min(1).max(6),
-  props:z.array(placement).min(2).max(4),
+  props:z.array(placement).max(4),
   spawns:z.array(z.strictObject({ actor, at:point })).length(2),
   walkable:z.array(polygon).min(2).max(7),
   zones:z.array(zone).min(6).max(16),
@@ -39,7 +39,10 @@ export const sceneCompositionSpec = z.strictObject({
     door:z.literal(true), workbench:z.enum(['door','secondary']),
     fill:z.array(z.strictObject({ points:polygon, role:z.enum(['grass','dirt','paving']), tone:z.union([z.literal(1),z.literal(2),z.literal(3)]) })).min(1).max(4),
   }),
+  ruins:ruinSiteSpec.optional(),
 }).superRefine((spec,ctx)=>{
+  if((spec.kind==='ruin-composition') !== !!spec.ruins)ctx.addIssue({code:'custom',path:['ruins'],message:'Ruin layout requires a ruin site.'});
+  if(!spec.ruins && spec.props.length<2)ctx.addIssue({code:'custom',path:['props'],message:'Field Outpost needs at least two props.'});
   for (const [field,values] of Object.entries({
     props:spec.props.map(x=>x.id), spawns:spec.spawns.map(x=>x.actor), zones:spec.zones.map(x=>x.id),
     interactions:spec.interactions.map(x=>x.id), routes:spec.routes.map(x=>x.id), probes:spec.probes.map(x=>x.id),
@@ -47,7 +50,14 @@ export const sceneCompositionSpec = z.strictObject({
   for (const role of ['primary','secondary','background','foreground','rest','readability'] as const) {
     if (!spec.zones.some(z=>z.role===role)) ctx.addIssue({code:'custom',path:['zones'],message:'Missing '+role+' zone.'});
   }
-  const ids = new Set(['entry','station-shell',...spec.props.map(p=>p.id)]);
+  const modules=spec.ruins?.modules ?? [];
+  if(modules.some(m=>['entry','station-shell','surveyor','courier',...spec.props.map(p=>p.id)].includes(m.id))) {
+    ctx.addIssue({code:'custom',path:['ruins'],message:'Ruin module conflicts with another placement ID.'});
+  }
+  if(spec.ruins && !modules.some(m=>m.kind==='gateway' && String(m.at)===String(spec.building))){
+    ctx.addIssue({code:'custom',path:['building'],message:'Building anchor must match the gateway.'});
+  }
+  const ids = new Set(['entry','station-shell',...spec.props.map(p=>p.id),...modules.map(m=>m.id)]);
   for (const [field,values] of Object.entries({interactions:spec.interactions.map(x=>x.target),probes:spec.probes.flatMap(x=>x.occluder?[x.occluder]:[])})) {
     if(values.some(id=>!ids.has(id)))ctx.addIssue({code:'custom',path:[field],message:'Unknown scene target.'});
   }

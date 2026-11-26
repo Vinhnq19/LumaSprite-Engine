@@ -1,0 +1,55 @@
+{
+  "studioRevision": "bb5c384",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "path": "benchmarks/results/e63/packages/r1-signal-entrance-day/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "a0f8223bd858188583177fe8e11b16f516077dc7bb0a43610a395e083b7a6530",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e63/packages/r1-signal-entrance-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "7c0c9cf6a310959fa43fbc69433ecab853a335d07d6bb2932ddc52342603de33",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e63/packages/r2-signal-clearing-day/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "6fa777a13b266b23f2a74a9df0c99abb364752d0fba44321a56fca18830a435a",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e63/packages/r2-signal-clearing-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "d919ea6d448eccea2868958b5fbc90db0c3c93e5be4e6b11d561a00aa7001073",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e63/packages/c2-night-quality-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "a174d780973c8fef028b32fa0800682e9616cc0a72ab5e44c58a8c8b2aa32552",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e63/packages/r1-signal-entrance-day/kit.png",
+      "width": 417,
+      "height": 87,
+      "rgbaSha256": "61e9707f2f5309501abe5588bea8b4a9a5604b56bc9d3f1c43435ccff9dd280a",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e63/packages/r2-signal-clearing-night/architecture-silhouette.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "8f24781dfef7a6bac1056afc86043b8a0956e885dd31e6d8bc3cf286e0b0eff6",
+      "saveReopen": "PASS"
+    }
+  ]
+}

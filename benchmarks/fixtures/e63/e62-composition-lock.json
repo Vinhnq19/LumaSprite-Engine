@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "reportedCheckpoint": "e8f15e1",
+  "verifiedCheckpoint": "d68f151bba8fb6c44c6e9821b5f7c4840c01c0fd",
+  "reference": "refs/remotes/origin/codex/e6-2-scene-composition",
+  "historical": "24b8ca6",
+  "decisions": {
+    "engineering": "APPROVED",
+    "c1": "APPROVED_WITH_LIMITATIONS",
+    "c2": "APPROVED_WITH_LIMITATIONS",
+    "composition": "SELECTED",
+    "environmentFinal": "PENDING_OWNER_REVIEW"
+  },
+  "files": {
+    "benchmarks/results/e62/SHA256SUMS": "dbfbdad477dc8c35f0ca11cf1ef549c32e4bf1471d5f2e4e189401c38a5c7431",
+    "benchmarks/results/e62/benchmark.json": "4ff3f2de2fa87a3218eafb9d64370cc09ca28cde8c5e8af048a61f0f0bdc89a5",
+    "benchmarks/results/e62/studio-parity.json": "7c3e06f54128558b6375d6cdb0a801d0ad99feb32344bc8895b46a0edd47b3bf",
+    "benchmarks/results/e62/unity-import.json": "480c47df8a344be72ed9413ab23fdfe1d48a61c87eb33a3c49ecac2f366d8ba7",
+    "benchmarks/results/e61r/SHA256SUMS": "12ec39e610eb6109796a9708721ded2fefaac70196c657cd0ccdc807aab8abdb",
+    "benchmarks/fixtures/e62/b1-production-lock.json": "df373f3fea972e3d543670f462db2a40329c91180d6d06ec19b7dcc4de588737",
+    "benchmarks/results/e62/packages/c1-courtyard-day/composition-spec.json": "a9085be34fea55e164140574ffdac2b640c213d7c7527852a1c0e15b6f1eb772",
+    "benchmarks/results/e62/packages/c2-supply-stop-day/composition-spec.json": "217fff40a7d2e6ee6839d6b337597118691cf0716e172e55b8f2526b3663ee76"
+  }
+}

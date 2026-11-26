@@ -22,9 +22,13 @@ test('Studio raw PNG round-trips the environment scene and architecture kit as r
   t.after(()=>rm(root,{recursive:true,force:true}));
   const store=new PixelStore(root);
   const edition=process.env.LUMASPRITE_ENVIRONMENT_EDITION ?? 'e61';
-  assert.ok(edition==='e61' || edition==='e61r' || edition==='e62','Unknown environment edition.');
+  assert.ok(edition==='e61' || edition==='e61r' || edition==='e62' || edition==='e63','Unknown environment edition.');
   const cases=[];
-  const inputs=edition==='e62' ?
+  const inputs=edition==='e63' ?
+    [['r1-signal-entrance-day','scene.png'],['r1-signal-entrance-night','scene.png'],['r2-signal-clearing-day','scene.png'],
+      ['r2-signal-clearing-night','scene.png'],['c2-night-quality-night','scene.png'],['r1-signal-entrance-day','kit.png'],
+      ['r2-signal-clearing-night','architecture-silhouette.png']] :
+    edition==='e62' ?
     [['c1-courtyard-day','scene.png'],['c1-courtyard-night','scene.png'],['c2-supply-stop-day','scene.png'],['c2-supply-stop-night','scene.png'],
       ['c2-supply-stop-day','kit.png'],['c1-courtyard-night','night-light.png'],['c2-supply-stop-night','walkable-mask.png']] :
     edition==='e61' ? [['front-court-b-day','scene.png'],['roadside-b-night','scene.png'],['front-court-b-day','kit.png']] :
