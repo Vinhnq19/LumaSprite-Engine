@@ -67,7 +67,7 @@ export function quietTerrain(ground: Raster, materials: Raster, areas: readonly 
 
 export function lanternLight(ground: Raster, shell: Raster, wallMaterials: Raster, groundMaterials: Raster,
   theme: StyleProfile['illumination']['night'], door: { x: number; y: number; width: number; top: number; jamb: number },
-  lamp: Point, windows: readonly Point[], bench?: Point) {
+  lamp: Point, windows: readonly Point[], bench?: Point, workbenchLight?: 'door'|'secondary') {
   const { x, y, width, top, jamb } = door;
   const [lx,ly] = lamp;
   const glaze = makeRaster(ground.w,ground.h);
@@ -91,6 +91,8 @@ export function lanternLight(ground: Raster, shell: Raster, wallMaterials: Raste
     const [bx,by] = bench;
     plot(pools,0,[[bx-8,by-1],[bx+8,by-1],[bx+12,by+4],[bx+2,by+7],[bx-10,by+4]]);
     plot(pools,1,rect(bx-6,by+2,bx+5,by+3));
+    if (workbenchLight === 'secondary') plot(pools,1,[[bx-4,by],[bx+5,by],[bx+10,by+4],[bx+1,by+5]]);
+    if (workbenchLight === 'door') plot(pools,0,[[bx-7,by],[bx+6,by],[bx+9,by+4],[bx-2,by+5]]);
   }
   const paving = pack(materialLegend.paving), wood = pack(materialLegend.wood), metal = pack(materialLegend.metal);
   for (let at=0;at<glaze.rgba.length;at+=4) {

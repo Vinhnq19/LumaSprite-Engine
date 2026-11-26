@@ -49,7 +49,7 @@ export function environmentPackage(input: Awaited<ReturnType<typeof loadEnvironm
   return { manifest, scene, files };
 }
 
-export async function writeEnvironmentPackage(directory: string, bundle: ReturnType<typeof environmentPackage>) {
+export async function writeEnvironmentPackage(directory: string, bundle: { files: ReadonlyMap<string, Buffer> }) {
   await mkdir(directory, { recursive: true });
   const actual = new Set(await readdir(directory));
   for (const file of actual) {

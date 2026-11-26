@@ -63,8 +63,8 @@ W2 is the selected Surveyor walk. Courier Walk is approved with limitations, wit
 
 E6 planning starts with an owner-approved Environment, UI and VFX brief after the E5 final decision. Use the current pixel scale, authored palettes, frozen scene controls and native game-readability rubric as evidence. Studio production integration remains E8. DeepSeek is deferred until after E8 and requires explicit owner authorization.
 
-## E5 closed and E6.1R awaiting art review
+## E5 closed, E6.1R approved with limitations, E6.2 awaiting scene review
 
 The Project Owner approved E5 engineering and its artistic baseline with limits, selected Discrete Root A, and authorized E6.0–E6.1 Environment. The E5.4 packages remain the locked production exports. E6.1 delivers the Outpost kit, versioned lighting/palette profile and two scene placements for review. [E5 Final Acceptance](e5-final-acceptance.md) · [E6.1 review gallery](LumaSprite-Engine-E6.1-Report.html)
 
-The owner approved E6.1 engineering and selected ENV-B for a bounded art revision. E6.1R ships the wider entrance, grounded Roadside layout and authored night light for independent review. E6.2 Scene Composition awaits owner approval of E6.1R. Editable environment handoff stays in E8. [E6.1R gallery](LumaSprite-Engine-E6.1R-Report.html) · [E6.2 proposal](e61r-environment-refinement.md#đề-xuất-e62)
+The owner approved E6.1R art with limitations and selected B1 for E6.2. C1 and C2 verify the kit in a survey courtyard and roadside supply stop. E6.3 Environment Variety awaits owner review of scene composition. Editable environment handoff stays in E8. [E6.1R acceptance](e61r-artistic-acceptance.md) · [E6.2 gallery](LumaSprite-Engine-E6.2-Report.html) · [E6.3 proposal](e62-scene-composition.md#đề-xuất-e63)

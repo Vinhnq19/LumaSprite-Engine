@@ -1,0 +1,147 @@
+[
+  {
+    "id": "front",
+    "kind": "actor",
+    "at": [
+      96,
+      137
+    ],
+    "left": 66,
+    "top": 78,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 1072,
+    "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+    "visible": 1072,
+    "hiddenBy": {},
+    "edgeSamples": 294,
+    "p10LumaGap": 15,
+    "contactPixels": 50,
+    "visibleContactPixels": 50,
+    "groundClearance": 16,
+    "actor": "surveyor"
+  },
+  {
+    "id": "threshold",
+    "kind": "actor",
+    "at": [
+      94,
+      115
+    ],
+    "left": 62,
+    "top": 57,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 997,
+    "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+    "visible": 975,
+    "hiddenBy": {
+      "station-shell": 22
+    },
+    "edgeSamples": 218,
+    "p10LumaGap": 6,
+    "contactPixels": 44,
+    "visibleContactPixels": 44,
+    "groundClearance": 6,
+    "actor": "courier",
+    "occluder": "station-shell"
+  },
+  {
+    "id": "side",
+    "kind": "actor",
+    "at": [
+      179,
+      114
+    ],
+    "left": 147,
+    "top": 56,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 997,
+    "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+    "visible": 766,
+    "hiddenBy": {
+      "station-shell": 231
+    },
+    "edgeSamples": 194,
+    "p10LumaGap": 16,
+    "contactPixels": 44,
+    "visibleContactPixels": 44,
+    "groundClearance": 5,
+    "actor": "courier",
+    "occluder": "station-shell"
+  },
+  {
+    "id": "rear",
+    "kind": "actor",
+    "at": [
+      125,
+      104
+    ],
+    "left": 95,
+    "top": 45,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 1072,
+    "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+    "visible": 0,
+    "hiddenBy": {
+      "station-shell": 1072
+    },
+    "edgeSamples": 0,
+    "p10LumaGap": null,
+    "contactPixels": 50,
+    "visibleContactPixels": 0,
+    "groundClearance": 2,
+    "actor": "surveyor",
+    "occluder": "station-shell"
+  },
+  {
+    "id": "between-props",
+    "kind": "actor",
+    "at": [
+      252,
+      177
+    ],
+    "left": 220,
+    "top": 119,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 997,
+    "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+    "visible": 997,
+    "hiddenBy": {},
+    "edgeSamples": 226,
+    "p10LumaGap": 25,
+    "contactPixels": 44,
+    "visibleContactPixels": 44,
+    "groundClearance": 15,
+    "actor": "courier"
+  },
+  {
+    "id": "foreground",
+    "kind": "actor",
+    "at": [
+      245,
+      151
+    ],
+    "left": 213,
+    "top": 93,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 997,
+    "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+    "visible": 779,
+    "hiddenBy": {
+      "water-barrel": 58,
+      "supply-crate": 160
+    },
+    "edgeSamples": 172,
+    "p10LumaGap": 18,
+    "contactPixels": 44,
+    "visibleContactPixels": 0,
+    "groundClearance": 1,
+    "actor": "courier",
+    "occluder": "supply-crate"
+  }
+]

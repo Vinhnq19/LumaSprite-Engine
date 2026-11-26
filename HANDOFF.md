@@ -1,6 +1,8 @@
 # Handoff
 
-**E6.1R is E6_1R_READY_FOR_HUMAN_ART_REVIEW.** The B1 Field Outpost uses a 66 px wall and a 26 × 58 px clear entrance. Both locked actors fit the projected entrance sweep. The Roadside Courier retains wall occlusion with both ground contacts visible. Four layouts and light combinations, masks, Studio RGBA parity and E5.4 walk playback are in the review packet. E6.2 awaits the owner decision. [Offline B0/B1 report and score sheet](docs/LumaSprite-Engine-E6.1R-Report.html) · [Art audit, tests and handoff](docs/e61r-environment-refinement.md)
+**E6.2 is E6_2_READY_FOR_HUMAN_SCENE_REVIEW.** C1 Survey Station Courtyard prioritizes the entry and survey workspace. C2 Roadside Supply Stop adds a through-road, unloading zone, and side route. Both use the locked B1 kit. Eight browser clips cross the threshold using E5.4 Discrete Root A. Forward planted slip is 0 px and the added depth projection moves planted pixels by up to 2 px on screen. Studio and Unity 6000.3.21f1 Editor preserved exact RGBA for seven PNGs. E6.3 awaits owner review. [Offline gallery and score sheet](docs/LumaSprite-Engine-E6.2-Report.html) · [Composition, QA and PR summary](docs/e62-scene-composition.md)
+
+**E6.1R engineering is APPROVED and art is APPROVED_WITH_LIMITATIONS.** The owner locked B1 at `24b8ca6` and retained B0 as the historical control. [Artistic acceptance](docs/e61r-artistic-acceptance.md) · [Production baseline](benchmarks/fixtures/e62/b1-production-lock.json) · [Original comparison](docs/LumaSprite-Engine-E6.1R-Report.html)
 
 **E6.1 engineering is APPROVED.** The owner selected art-directed ENV-B for refinement and retained ENV-A as control at `537f604`. The eight original packages reproduce all 104 archived hashes. [Original E6.1 A/B report](docs/LumaSprite-Engine-E6.1-Report.html) · [E6.1 foundation](docs/e61-environment-foundation.md)
 

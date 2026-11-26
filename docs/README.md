@@ -2,6 +2,7 @@
 
 ## Current checkpoint
 
+- [E6.2 offline composition gallery, playback and score sheet](LumaSprite-Engine-E6.2-Report.html), [QA and PR summary](e62-scene-composition.md) and [E6.1R owner acceptance](e61r-artistic-acceptance.md).
 - [E6.1R B0/B1 gallery and human review](LumaSprite-Engine-E6.1R-Report.html) and [E6.1R audit, QA and PR draft](e61r-environment-refinement.md).
 - [E6.1 RPG Field Outpost gallery](LumaSprite-Engine-E6.1-Report.html), [Environment art direction and QA](e61-environment-foundation.md) and [E5 Final Acceptance](e5-final-acceptance.md).
 - [E5.4 final owner gallery](LumaSprite-Engine-E5.4-Report.html), [Unity Runtime Report](e54-final-acceptance.md) and [production bundle lock](../benchmarks/results/e54/baseline-lock.json).

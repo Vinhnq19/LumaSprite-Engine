@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "kind": "lumasprite-scene-composition",
+  "id": "c1-courtyard",
+  "light": "night",
+  "source": {
+    "checkpoint": "24b8ca6",
+    "kit": "front-court",
+    "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+    "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "scene.png": "5a13cb0d681e2bf5527c7c3156093e3bf48fea0fb42b8563ac60ea50c79e6c15",
+    "layer-overlay.png": "2670d9941916d7b3ed0b2ba05bc504e7da4983dd7c55613ce698572c187f32e1",
+    "material-mask.png": "16b774c4538f19d217ecfc6cd04f8b4848fa46b3a5d04e96afde068a4b91c8e9",
+    "collision-mask.png": "3ba82f75ac7673601627ccc393ec0b6fb98b17610742fbac21fdbced13cb272f",
+    "collision-overlay.png": "511ca6946dff22f8eaa277f4feda55f54d0135100860913d9a16c91d115c02df",
+    "walkable-mask.png": "116c1742b9ea0d24343b4790825db73a5d32680fd001a5f9cb34f0388a722953",
+    "route-overlay.png": "55a3f4e42cf9ef455a41daf8ee65207d54361940b31867288a402496d0d43c04",
+    "focal-overlay.png": "12df2c35e1082bdb16052942844162c4353ad3a7840b40fd5438eefa303f42f1",
+    "kit.png": "97e37b7c6f2cc5686df64c11141c910038ecf076665e1e5e5567b7559cd5b499",
+    "kit-material-mask.png": "28870b433d6e7ea7d480e43f1caae0780eee029190bb1e6b0ef8a009e018539a",
+    "night-light.png": "e119ae5941f621cbc572c936d8e3f635cf481feada93e4a38d795c42a111ce22",
+    "scene-4x.png": "1c764e06575545e7b77ec7f217c618ad8b3f8065c2b6edef56c61cf4fb024dfb",
+    "composition-spec.json": "a9085be34fea55e164140574ffdac2b640c213d7c7527852a1c0e15b6f1eb772",
+    "kit.json": "840c5119da90684ecce2bc2f835c6e23af0002cdb4f03b85fd7b5fdb31372025",
+    "qa.json": "0bcb84f25d22b119f376d32f86ab468ef228ce4c357c023cb30b68da7c046801"
+  }
+}
