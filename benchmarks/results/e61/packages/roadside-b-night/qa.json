@@ -1,0 +1,966 @@
+{
+  "version": 1,
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "finish": "ENV-B",
+  "illumination": "night",
+  "keyLight": "upper-left",
+  "mounts": {
+    "sign": [
+      92,
+      96
+    ],
+    "lamp": [
+      95,
+      93
+    ],
+    "nearestPost": [
+      70,
+      117
+    ],
+    "farPost": [
+      162,
+      117
+    ],
+    "eave": [
+      68,
+      88
+    ]
+  },
+  "seamSamples": 180,
+  "portal": {
+    "at": [
+      108,
+      117
+    ],
+    "points": [
+      [
+        103,
+        113
+      ],
+      [
+        113,
+        113
+      ],
+      [
+        113,
+        121
+      ],
+      [
+        103,
+        121
+      ]
+    ]
+  },
+  "collisions": [
+    {
+      "id": "left-return",
+      "kind": "architecture",
+      "points": [
+        [
+          68,
+          117
+        ],
+        [
+          72,
+          117
+        ],
+        [
+          88,
+          109
+        ],
+        [
+          84,
+          109
+        ]
+      ]
+    },
+    {
+      "id": "right-return",
+      "kind": "architecture",
+      "points": [
+        [
+          160,
+          117
+        ],
+        [
+          164,
+          117
+        ],
+        [
+          180,
+          109
+        ],
+        [
+          176,
+          109
+        ]
+      ]
+    },
+    {
+      "id": "back-wall",
+      "kind": "architecture",
+      "points": [
+        [
+          84,
+          105
+        ],
+        [
+          180,
+          105
+        ],
+        [
+          180,
+          109
+        ],
+        [
+          84,
+          109
+        ]
+      ]
+    },
+    {
+      "id": "front-0-0",
+      "kind": "architecture",
+      "points": [
+        [
+          68,
+          113
+        ],
+        [
+          84,
+          113
+        ],
+        [
+          84,
+          117
+        ],
+        [
+          68,
+          117
+        ]
+      ]
+    },
+    {
+      "id": "front-1-0",
+      "kind": "architecture",
+      "points": [
+        [
+          84,
+          113
+        ],
+        [
+          100,
+          113
+        ],
+        [
+          100,
+          117
+        ],
+        [
+          84,
+          117
+        ]
+      ]
+    },
+    {
+      "id": "front-2-0",
+      "kind": "architecture",
+      "points": [
+        [
+          100,
+          113
+        ],
+        [
+          103,
+          113
+        ],
+        [
+          103,
+          117
+        ],
+        [
+          100,
+          117
+        ]
+      ]
+    },
+    {
+      "id": "front-2-1",
+      "kind": "architecture",
+      "points": [
+        [
+          113,
+          113
+        ],
+        [
+          116,
+          113
+        ],
+        [
+          116,
+          117
+        ],
+        [
+          113,
+          117
+        ]
+      ]
+    },
+    {
+      "id": "front-3-0",
+      "kind": "architecture",
+      "points": [
+        [
+          116,
+          113
+        ],
+        [
+          132,
+          113
+        ],
+        [
+          132,
+          117
+        ],
+        [
+          116,
+          117
+        ]
+      ]
+    },
+    {
+      "id": "front-4-0",
+      "kind": "architecture",
+      "points": [
+        [
+          132,
+          113
+        ],
+        [
+          148,
+          113
+        ],
+        [
+          148,
+          117
+        ],
+        [
+          132,
+          117
+        ]
+      ]
+    },
+    {
+      "id": "front-5-0",
+      "kind": "architecture",
+      "points": [
+        [
+          148,
+          113
+        ],
+        [
+          164,
+          113
+        ],
+        [
+          164,
+          117
+        ],
+        [
+          148,
+          117
+        ]
+      ]
+    },
+    {
+      "id": "supply-crate",
+      "kind": "prop",
+      "points": [
+        [
+          47,
+          125
+        ],
+        [
+          67,
+          125
+        ],
+        [
+          67,
+          136
+        ],
+        [
+          47,
+          136
+        ]
+      ]
+    },
+    {
+      "id": "water-barrel",
+      "kind": "prop",
+      "points": [
+        [
+          177,
+          139
+        ],
+        [
+          192,
+          139
+        ],
+        [
+          192,
+          148
+        ],
+        [
+          177,
+          148
+        ]
+      ]
+    },
+    {
+      "id": "survey-bench",
+      "kind": "prop",
+      "points": [
+        [
+          197,
+          123
+        ],
+        [
+          222,
+          123
+        ],
+        [
+          222,
+          128
+        ],
+        [
+          197,
+          128
+        ]
+      ]
+    }
+  ],
+  "layerOrder": [
+    "forest-courier",
+    "station-shell",
+    "survey-bench",
+    "supply-crate",
+    "field-surveyor",
+    "water-barrel"
+  ],
+  "occlusion": [
+    {
+      "id": "forest-courier",
+      "kind": "actor",
+      "at": [
+        187,
+        108
+      ],
+      "left": 155,
+      "top": 50,
+      "w": 64,
+      "h": 64,
+      "visibleBefore": 997,
+      "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+      "visible": 848,
+      "hiddenBy": {
+        "station-shell": 149
+      },
+      "edgeSamples": 204,
+      "p10LumaGap": 16
+    },
+    {
+      "id": "station-shell",
+      "kind": "building",
+      "at": [
+        68,
+        117
+      ],
+      "left": 0,
+      "top": 0,
+      "w": 320,
+      "h": 208,
+      "visibleBefore": 7566,
+      "alphaSha256": "d51f75b77ed4814cd4d52403f332a06632be7a9b031f8585bd7fc865b57246e8",
+      "visible": 7164,
+      "hiddenBy": {
+        "field-surveyor": 387,
+        "supply-crate": 15
+      },
+      "edgeSamples": 0,
+      "p10LumaGap": null
+    },
+    {
+      "id": "survey-bench",
+      "kind": "prop",
+      "at": [
+        210,
+        128
+      ],
+      "left": 194,
+      "top": 105,
+      "w": 35,
+      "h": 24,
+      "visibleBefore": 364,
+      "alphaSha256": "2e2fad62ea291ebbda7c8bb37b5fa065a5ccc8950ad175fc7f3a0cca022603ba",
+      "visible": 364,
+      "hiddenBy": {},
+      "edgeSamples": 0,
+      "p10LumaGap": null
+    },
+    {
+      "id": "supply-crate",
+      "kind": "prop",
+      "at": [
+        57,
+        136
+      ],
+      "left": 41,
+      "top": 107,
+      "w": 32,
+      "h": 32,
+      "visibleBefore": 582,
+      "alphaSha256": "2e8e8183c500da0195251f23fab90b1a9725e7f37184c207c0e58f2e931e5840",
+      "visible": 582,
+      "hiddenBy": {},
+      "edgeSamples": 0,
+      "p10LumaGap": null
+    },
+    {
+      "id": "field-surveyor",
+      "kind": "actor",
+      "at": [
+        116,
+        147
+      ],
+      "left": 86,
+      "top": 88,
+      "w": 64,
+      "h": 64,
+      "visibleBefore": 1072,
+      "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+      "visible": 1072,
+      "hiddenBy": {},
+      "edgeSamples": 294,
+      "p10LumaGap": 18
+    },
+    {
+      "id": "water-barrel",
+      "kind": "prop",
+      "at": [
+        184,
+        148
+      ],
+      "left": 168,
+      "top": 117,
+      "w": 32,
+      "h": 32,
+      "visibleBefore": 550,
+      "alphaSha256": "215ba7deba264afd6f97e9f1b10d581e4439fe4bae91818a1e6b7a3a5b9f6a32",
+      "visible": 550,
+      "hiddenBy": {},
+      "edgeSamples": 0,
+      "p10LumaGap": null
+    }
+  ],
+  "palette": {
+    "allowed": [
+      "#1e2133",
+      "#1f2c3d",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#2f2836",
+      "#30383c",
+      "#303d41",
+      "#303e41",
+      "#343344",
+      "#35475b",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#3c3746",
+      "#3d4c60",
+      "#414f4e",
+      "#434a5c",
+      "#454b68",
+      "#465046",
+      "#46746e",
+      "#4a2927",
+      "#506675",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#524158",
+      "#52474f",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#54657b",
+      "#56655a",
+      "#57505d",
+      "#61535b",
+      "#636d85",
+      "#674937",
+      "#6a4232",
+      "#6b4139",
+      "#6f5662",
+      "#705d62",
+      "#71453d",
+      "#723e2c",
+      "#736771",
+      "#758b8b",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7b8695",
+      "#836b69",
+      "#86503d",
+      "#8794a0",
+      "#88927a",
+      "#896049",
+      "#91818a",
+      "#935630",
+      "#977371",
+      "#9ca8a8",
+      "#a15a36",
+      "#a36146",
+      "#a86a55",
+      "#ab6e40",
+      "#b18059",
+      "#ca8248",
+      "#d79768",
+      "#dca57a",
+      "#ebb259",
+      "#eea761",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "used": [
+      "#1e2133",
+      "#1f2c3d",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#2f2836",
+      "#30383c",
+      "#303d41",
+      "#303e41",
+      "#343344",
+      "#35475b",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#3c3746",
+      "#3d4c60",
+      "#414f4e",
+      "#434a5c",
+      "#454b68",
+      "#465046",
+      "#46746e",
+      "#4a2927",
+      "#506675",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#524158",
+      "#52474f",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#54657b",
+      "#56655a",
+      "#57505d",
+      "#61535b",
+      "#636d85",
+      "#674937",
+      "#6b4139",
+      "#6f5662",
+      "#705d62",
+      "#71453d",
+      "#723e2c",
+      "#736771",
+      "#758b8b",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#836b69",
+      "#86503d",
+      "#8794a0",
+      "#88927a",
+      "#896049",
+      "#91818a",
+      "#935630",
+      "#977371",
+      "#9ca8a8",
+      "#a15a36",
+      "#a36146",
+      "#a86a55",
+      "#ab6e40",
+      "#b18059",
+      "#ca8248",
+      "#d79768",
+      "#dca57a",
+      "#ebb259",
+      "#eea761",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "ramps": [
+      {
+        "material": "stone",
+        "ramp": [
+          "#282f45",
+          "#3d4c60",
+          "#54657b",
+          "#7b8695"
+        ],
+        "luma": [
+          47,
+          74,
+          99,
+          133
+        ]
+      },
+      {
+        "material": "wood",
+        "ramp": [
+          "#2f2836",
+          "#524158",
+          "#6f5662",
+          "#977371"
+        ],
+        "luma": [
+          42,
+          70,
+          92,
+          123
+        ]
+      },
+      {
+        "material": "roof",
+        "ramp": [
+          "#1f2c3d",
+          "#35475b",
+          "#506675",
+          "#758b8b"
+        ],
+        "luma": [
+          42,
+          69,
+          98,
+          134
+        ]
+      },
+      {
+        "material": "paving",
+        "ramp": [
+          "#3c3746",
+          "#57505d",
+          "#736771",
+          "#91818a"
+        ],
+        "luma": [
+          57,
+          82,
+          106,
+          133
+        ]
+      },
+      {
+        "material": "metal",
+        "ramp": [
+          "#272c40",
+          "#454b68",
+          "#636d85",
+          "#8794a0"
+        ],
+        "luma": [
+          44,
+          76,
+          109,
+          146
+        ]
+      },
+      {
+        "material": "amber",
+        "ramp": [
+          "#6a4232",
+          "#ab6e40",
+          "#ebb259",
+          "#ffe3a0"
+        ],
+        "luma": [
+          73,
+          120,
+          184,
+          228
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "materials": [
+          "stone",
+          "wood"
+        ],
+        "equalInks": [],
+        "midtoneGap": 4
+      },
+      {
+        "materials": [
+          "stone",
+          "roof"
+        ],
+        "equalInks": [],
+        "midtoneGap": 5
+      },
+      {
+        "materials": [
+          "stone",
+          "paving"
+        ],
+        "equalInks": [],
+        "midtoneGap": 8
+      },
+      {
+        "materials": [
+          "stone",
+          "metal"
+        ],
+        "equalInks": [],
+        "midtoneGap": 2
+      },
+      {
+        "materials": [
+          "wood",
+          "roof"
+        ],
+        "equalInks": [],
+        "midtoneGap": 1
+      },
+      {
+        "materials": [
+          "wood",
+          "metal"
+        ],
+        "equalInks": [],
+        "midtoneGap": 6
+      },
+      {
+        "materials": [
+          "roof",
+          "metal"
+        ],
+        "equalInks": [],
+        "midtoneGap": 7
+      },
+      {
+        "materials": [
+          "paving",
+          "metal"
+        ],
+        "equalInks": [],
+        "midtoneGap": 6
+      }
+    ]
+  },
+  "atlas": {
+    "cells": [
+      {
+        "id": "wall",
+        "at": [
+          3,
+          3
+        ],
+        "size": [
+          16,
+          32
+        ],
+        "pivot": [
+          0,
+          32
+        ],
+        "rgbaSha256": "26ed3860f56e08fe7a171a1bdbdb3db4270133f11018928a31ce147649dd9724",
+        "alphaSha256": "9f56cda75fefeab90f6fa5d5ddc9601544b121732c5ecccab32e631060453a5d"
+      },
+      {
+        "id": "door",
+        "at": [
+          22,
+          3
+        ],
+        "size": [
+          16,
+          32
+        ],
+        "pivot": [
+          0,
+          32
+        ],
+        "rgbaSha256": "ee037842055b02ca371e4f2996888b2595bbbe91640c0b48dcf0762217946c3b",
+        "alphaSha256": "9f56cda75fefeab90f6fa5d5ddc9601544b121732c5ecccab32e631060453a5d"
+      },
+      {
+        "id": "window",
+        "at": [
+          41,
+          3
+        ],
+        "size": [
+          16,
+          32
+        ],
+        "pivot": [
+          0,
+          32
+        ],
+        "rgbaSha256": "6eb1f9e1f0a9ecd98e944102508ac1e306d631824fee198a76f5f77137009c29",
+        "alphaSha256": "9f56cda75fefeab90f6fa5d5ddc9601544b121732c5ecccab32e631060453a5d"
+      },
+      {
+        "id": "corner",
+        "at": [
+          60,
+          3
+        ],
+        "size": [
+          16,
+          40
+        ],
+        "pivot": [
+          0,
+          40
+        ],
+        "rgbaSha256": "29b168db52d2e396169fc0bb8769a30e220821f90b0176f96a0dc1d64b2c224f",
+        "alphaSha256": "c4053fea2b5b6da45afdb8d752b195bc642b0f9aa23dc47b990fd92c99a9d39e"
+      },
+      {
+        "id": "column",
+        "at": [
+          79,
+          3
+        ],
+        "size": [
+          6,
+          32
+        ],
+        "pivot": [
+          3,
+          32
+        ],
+        "rgbaSha256": "933880a9ba8b2891a4d5e6fa92d415dc3ebb39bc9408b378793db8ecbf01ec2c",
+        "alphaSha256": "8f62c344eff1568474fb693b8c18526629db443b9653a84264189c97693605de"
+      },
+      {
+        "id": "roof",
+        "at": [
+          88,
+          3
+        ],
+        "size": [
+          124,
+          40
+        ],
+        "pivot": [
+          5,
+          40
+        ],
+        "rgbaSha256": "75e0ad7994685ceebaaec19946a45d44ae0375e0ea721410ab1bf14be56590a7",
+        "alphaSha256": "33347fa675041531483c40ab1c5d69ddee6448a2bbb0c82cbb8c77a2e769324f"
+      },
+      {
+        "id": "compass",
+        "at": [
+          215,
+          3
+        ],
+        "size": [
+          14,
+          12
+        ],
+        "pivot": [
+          7,
+          0
+        ],
+        "rgbaSha256": "191a80d5ac6150a7b1864941e5916e611d844221d4649a4c552a038c03aa0a1a",
+        "alphaSha256": "22af26c6fe81ce67cd7ac41f51cabfac50aa5ab5758a8f93611b2faabfd2f05a"
+      },
+      {
+        "id": "lamp",
+        "at": [
+          232,
+          3
+        ],
+        "size": [
+          9,
+          14
+        ],
+        "pivot": [
+          4,
+          0
+        ],
+        "rgbaSha256": "1ec7d2d052a03c14e2282d6661e519b1d44e86f259e7e3170d4e12b2bd40963a",
+        "alphaSha256": "2128bf6fe7a23f298842a59e2fb1ea8ed87450ef281b1d7f3bdb9fcb398db04a"
+      },
+      {
+        "id": "workbench",
+        "at": [
+          244,
+          3
+        ],
+        "size": [
+          35,
+          24
+        ],
+        "pivot": [
+          16,
+          23
+        ],
+        "rgbaSha256": "e95338c23fcad577d399c37e457f9b7f55041257214baac9856d0bff9a63aa72",
+        "alphaSha256": "2e2fad62ea291ebbda7c8bb37b5fa065a5ccc8950ad175fc7f3a0cca022603ba"
+      }
+    ],
+    "materialLegend": {
+      "stone": "#8bb4ce",
+      "wood": "#bc8862",
+      "roof": "#789e94",
+      "paving": "#cfbb83",
+      "metal": "#98a0be",
+      "amber": "#f9bb51",
+      "contour": "#48425e",
+      "grass": "#68864c",
+      "dirt": "#9d795c",
+      "prop": "#c28291",
+      "actor": "#94e4bd",
+      "shadow": "#292d42"
+    },
+    "layerLegend": {
+      "terrain": "#364950",
+      "path": "#8c735a",
+      "shadow": "#3b2c55",
+      "building": "#81aeba",
+      "prop": "#dc9f64",
+      "actor": "#98e2c4"
+    }
+  },
+  "rgbaSha256": "b9b036ae7a606403443da1c934e8547a704ae6c55b232def37e7fff75a477e56",
+  "alphaSha256": "e295cac46a68c1c65760f7a4fb6eec1cfd9edd08462da6c8c7115f49a2d2e856"
+}

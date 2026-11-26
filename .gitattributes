@@ -1,5 +1,6 @@
 # Published benchmark and report bytes are checked by SHA-256.
 benchmarks/fixtures/**/*.md text eol=lf
+benchmarks/fixtures/e61/*.json text eol=lf
 benchmarks/results/**/*.json text eol=lf
 benchmarks/results/**/*.md text eol=lf
 docs/LumaSprite-Engine*Report.html text eol=lf

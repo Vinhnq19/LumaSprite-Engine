@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "kind": "field-outpost",
+  "name": "RPG Field Outpost · Front Court",
+  "seed": 42,
+  "style": {
+    "file": "benchmarks/fixtures/e61/style-profile.json",
+    "sha256": "5dcaa5a6727c5e7aa6b83ca1f9b285e2ae1e3290601e0734aa9c18f918b6dade"
+  },
+  "terrain": {
+    "manifest": "benchmarks/results/e34/packages/b-outdoor/map.json",
+    "sha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405",
+    "provenance": "E3.4 Candidate B, Authored, world-bake terrain spec; E6 layout rows authored separately",
+    "map": {
+      "rows": [
+        "####################",
+        "####################",
+        "####################",
+        "##############...###",
+        "#########.........##",
+        "######............##",
+        "#####.............##",
+        "####...............#",
+        "###...............##",
+        "##...............###",
+        "##............######",
+        "#..........#########",
+        "#........###########"
+      ],
+      "origin": [
+        7,
+        11
+      ]
+    }
+  },
+  "building": {
+    "at": [
+      104,
+      124
+    ],
+    "bays": [
+      "wall",
+      "window",
+      "wall",
+      "door",
+      "wall",
+      "window",
+      "wall"
+    ],
+    "signBay": 2
+  },
+  "path": [
+    [
+      154,
+      128
+    ],
+    [
+      166,
+      128
+    ],
+    [
+      176,
+      149
+    ],
+    [
+      161,
+      169
+    ],
+    [
+      116,
+      192
+    ],
+    [
+      93,
+      208
+    ],
+    [
+      58,
+      208
+    ],
+    [
+      73,
+      192
+    ],
+    [
+      118,
+      173
+    ],
+    [
+      147,
+      151
+    ]
+  ],
+  "assetRefs": [
+    {
+      "id": "crate",
+      "kind": "prop",
+      "file": "benchmarks/results/e24/crate-1x.png",
+      "sha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6",
+      "provenance": "E2.4 Owner-approved crate, authored palette",
+      "pivot": [
+        16,
+        29
+      ],
+      "footprint": [
+        20,
+        11
+      ]
+    },
+    {
+      "id": "barrel",
+      "kind": "prop",
+      "file": "benchmarks/results/e24/barrel-tall-1x.png",
+      "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2",
+      "provenance": "E2.4 Owner-approved tall barrel, authored palette",
+      "pivot": [
+        16,
+        31
+      ],
+      "footprint": [
+        15,
+        9
+      ]
+    },
+    {
+      "id": "surveyor",
+      "kind": "actor",
+      "file": "benchmarks/results/e44/packages/r2/final.png",
+      "sha256": "4b0d76ea22119e14f79ace767f37e7aeef6172ca5b21177af73acbb92c6f29ee",
+      "provenance": "E4 R2 + M2P, same neutral pose as the locked E5.1 idle",
+      "pivot": [
+        30,
+        59
+      ],
+      "footprint": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "courier",
+      "kind": "actor",
+      "file": "benchmarks/results/e44/packages/courier-rev/final.png",
+      "sha256": "d47d35079483f53bfc2f30b741ef3fbbe83561904895e8b24c99eff922549738",
+      "provenance": "E4.4 original Courier, locked E5.4 standing reference",
+      "pivot": [
+        32,
+        58
+      ],
+      "footprint": [
+        0,
+        0
+      ]
+    }
+  ],
+  "placements": [
+    {
+      "id": "supply-crate",
+      "ref": "crate",
+      "at": [
+        93,
+        147
+      ]
+    },
+    {
+      "id": "water-barrel",
+      "ref": "barrel",
+      "at": [
+        215,
+        151
+      ]
+    },
+    {
+      "id": "survey-bench",
+      "ref": "workbench",
+      "at": [
+        254,
+        129
+      ]
+    },
+    {
+      "id": "field-surveyor",
+      "ref": "surveyor",
+      "at": [
+        141,
+        164
+      ]
+    },
+    {
+      "id": "forest-courier",
+      "ref": "courier",
+      "at": [
+        278,
+        154
+      ]
+    }
+  ]
+}
