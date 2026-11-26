@@ -1,5 +1,12 @@
 # Handoff
 
+**Open-source art R&D is OPEN_SOURCE_ART_QUALITY_RND_READY_FOR_HUMAN_REVIEW.** The offline report has synchronized W2 and W2-IK playback, native 1× comparisons, three score sheets, downloadable QA, and source notices. [Offline report](research/open-source/art-quality/LumaSprite-Engine-Art-Quality-RnD.html) · [Provenance and reproduction](research/open-source/art-quality/README.md)
+
+- W2-IK is `FURTHER_EVALUATION_REQUIRED`. The worst sampled knee-angle change decreased from 41.021° to 35.538°. All eight adjacent planted samples retained zero world displacement and 880 ms total duration. Review the lighter landing and test another character before evaluating a solver version.
+- Surveyor-3Q is `REJECTED_FOR_INTEGRATION`. The angle reveals head and coat faces. The far arm reads less clearly at 1× and projecting the joints into CharacterSpec v2 violates the segment-length constraint.
+- OKLab/OKLCH diagnostics and the Courier ochre-leather candidate are `FURTHER_EVALUATION_REQUIRED`. Replacing RGB nearest-ink is `REJECTED_FOR_INTEGRATION` in the shared four-color test. The diagnostic and candidate outputs have separate JSON.
+- The R&D branch starts at `ba81037`. Engine regression passed all 65 tests, CLI smoke and 805 historical checksums. The paired experiments reproduced 54 PNG/JSON hashes. Studio was clean at `bb5c384`. Target-game execution is `GAME_RUNTIME_NOT_TESTED`.
+
 **R0 is R0_CLEANUP_READY_FOR_RND.** Local generated duplicates were removed by checksum, and the milestone archive remains pinned. Use the documentation index for current workflows and historical galleries. [R0 audit](docs/r0-project-audit.md) · [Regression](docs/r0-regression.md) · [Documentation index](docs/README.md) · [R&D preparation](research/open-source/README.md)
 
 The Project Owner approved E5.2 engineering and selected W2 Expressive Walk as the R&D baseline, with W1 Conservative Walk as the control. Walk Game-Ready Final Acceptance and target-game runtime validation remain pending. [Motion and package contract](docs/architecture/e52-walk-motion.md)

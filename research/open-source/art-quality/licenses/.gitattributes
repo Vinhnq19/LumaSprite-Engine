@@ -1,0 +1,2 @@
+*.txt -text
+texel-color.txt whitespace=-blank-at-eof
