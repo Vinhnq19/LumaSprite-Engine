@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "kind": "lumasprite-pixel-effect",
+  "id": "pickup-sparkle",
+  "family": "vfx",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "source": {
+    "file": "benchmarks/results/e24/barrel-tall-1x.png",
+    "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "frame-0.png": "83f78170c7f461e7a326349aa681413e88b23beb9686a68fa84f7fc3f2a49490",
+    "frame-1.png": "508363d8e58d5c7730cd1c14c68550aa68e1a16b28e30fadd8fa083429197afd",
+    "frame-2.png": "2c22c64f7992371e37dd3b04d4b497337625457433115f701c87449b6132b076",
+    "frame-3.png": "91d30c6c63f67225ef3870b7c78e7733b96a8ccdb90a50d5116644e92074a24c",
+    "frame-4.png": "70f4278304a306a9cefa612e843b1861eb4f7cf6ee5cf8f82e53f1306beb954b",
+    "frame-5.png": "b52ea83a4e2a4761b6b30e7c97861ee6d88b028195d192ea0b8ea5132a9177f0",
+    "timing.json": "2527e07ffa229af4b1afe43a890ddd849cfa8273d8017971964879a74c4621ba",
+    "spritesheet.png": "25df799b36c986a75b270a53fd3335d9c9f016708a0cdb9380a92222d69bea2f",
+    "spritesheet-4x.png": "38b9a92427a3515e78f2406bae30b249ca282a19779fa33d16ad906c1c3c7ee3",
+    "alpha.png": "2698a7eb9393f8e5c2acc84bb58f30e9cc65a4442e314ebe9c1028b5e4c5beec",
+    "spec.json": "cbf613caa64235f9e721ac4a4597c024a4fbf3b562a18b8172d479b83f6dd930",
+    "qa.json": "cd1d7c8b8d68d3faa5ac9fb11417dc6894e3fc9c5a2b44d93411681b08734f84"
+  }
+}

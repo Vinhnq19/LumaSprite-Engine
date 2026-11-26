@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "kind": "lumasprite-vfx-timing",
+  "name": "Supply Barrel · Pickup Glint",
+  "pivot": [
+    16,
+    20
+  ],
+  "canvas": {
+    "w": 32,
+    "h": 32
+  },
+  "sampling": "nearest",
+  "loop": "once",
+  "totalDurationMs": 410,
+  "frames": [
+    {
+      "phase": "anticipation",
+      "durationMs": 55,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rgbaSha256": "7789a87aa22bb759f65d640839dcd005823d39354017fac7f3c8a1636b13c3b0"
+    },
+    {
+      "phase": "buildup",
+      "durationMs": 60,
+      "rect": {
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rgbaSha256": "e9a64989045a9dcc99e494bb63f4a24093f97247845e13465833fa2f48137eef"
+    },
+    {
+      "phase": "peak",
+      "durationMs": 75,
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rgbaSha256": "3569d6d0b94374915719f311c26a868a1f350eb42ed23ed345aca2d5f99e3cc9"
+    },
+    {
+      "phase": "dissipation",
+      "durationMs": 65,
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rgbaSha256": "3bd70078e12f215a9f856e6ffc1a7e314bfb97948392ecace189dd1d1aaa5e99"
+    },
+    {
+      "phase": "dissipation",
+      "durationMs": 60,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rgbaSha256": "0f6df8a051ddcdd394f5dfdff7510f6e674947a8ef75d889f7414df293d78518"
+    },
+    {
+      "phase": "clear",
+      "durationMs": 95,
+      "rect": {
+        "x": 160,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rgbaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    }
+  ]
+}

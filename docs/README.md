@@ -2,6 +2,7 @@
 
 ## Current checkpoint
 
+- [E6.4 Pixel UI/VFX report and review sheet](LumaSprite-Engine-E6.4-Report.html), [QA and PR summary](e64-pixel-ui-vfx.md) and [E6.3 acceptance](e63-artistic-acceptance.md).
 - [E6.3 Forest Signal Ruins gallery and review sheet](LumaSprite-Engine-E6.3-Report.html), [architecture, QA and PR summary](e63-environment-variety.md) and [E6.2 artistic closeout](e62-artistic-closeout.md).
 - [E6.2 offline composition gallery, playback and score sheet](LumaSprite-Engine-E6.2-Report.html), [QA and PR summary](e62-scene-composition.md) and [E6.1R owner acceptance](e61r-artistic-acceptance.md).
 - [E6.1R B0/B1 gallery and human review](LumaSprite-Engine-E6.1R-Report.html) and [E6.1R audit, QA and PR draft](e61r-environment-refinement.md).

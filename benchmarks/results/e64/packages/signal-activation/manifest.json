@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "kind": "lumasprite-pixel-effect",
+  "id": "signal-activation",
+  "family": "vfx",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "source": {
+    "file": "benchmarks/results/e63/packages/r1-signal-entrance-day/manifest.json",
+    "sha256": "1864fedc13e351b4db0797fa76aebfb6a39e4d2ab0b509a36c2f2750ff72a310"
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "frame-0.png": "c19ccbb31b4d6e0b24d45c88bf164024f8f250f9cdf3ac9c798f5337a80a4892",
+    "frame-1.png": "a4d0631afe60694a28c77024603d1e2a06b58e140dbb40aae20e14ef23c62e96",
+    "frame-2.png": "0670a43b35ece8d1772c90bc0ee636eac9292b3c9e5e392a3ad4a5d5a56bd51b",
+    "frame-3.png": "910307a08f083e02fdd67a1eb3b5a7d5e5929279e5e364a89ff0ed09a98702ef",
+    "frame-4.png": "3789c5d3d7f270810a2273389d506e3f950c1c645d85d6116db54dab01e188bd",
+    "frame-5.png": "9e48e73d3ef26cc14269ff26f202f61289ae5152bfeba78ae16c0618b6dee10f",
+    "frame-6.png": "b63af1813337872ee2392b89e2a26a3a7abc66900e9cb071d66b014823b85705",
+    "timing.json": "52291b9f748ea93ed6cf3de101c558333ea1eb335a0a4c4c8caaa401420015e3",
+    "spritesheet.png": "3035110b1d996d00396c1561641f0065c393625b4a5d869ba6b2ff7af6756b76",
+    "spritesheet-4x.png": "70e4a22548a0aac5b3c0eb76c792c4a6c341c641853db2c72623360a825d51a8",
+    "alpha.png": "ff04d0a80e5105d4c3e53e4d5486f26272ec5f1564d6432851d0f481a8af04f0",
+    "spec.json": "684407fa7284711441b084b89b37178b90955166e8f2256b9e09ba0a4635ce95",
+    "qa.json": "acf22d92220a371abd57ad0274f1abddf799dc9cf6fe6eece8a2b2659761ad5f"
+  }
+}

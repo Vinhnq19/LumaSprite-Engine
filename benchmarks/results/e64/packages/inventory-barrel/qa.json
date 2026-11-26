@@ -1,0 +1,101 @@
+{
+  "native": [
+    32,
+    32
+  ],
+  "pivot": [
+    16,
+    28
+  ],
+  "alpha": "binary",
+  "sampling": "nearest",
+  "ramp": {
+    "outline": "#211e2a",
+    "woodShade": "#4a2927",
+    "woodDark": "#723e2c",
+    "wood": "#a15a36",
+    "woodLight": "#ca8248",
+    "woodRim": "#eea761",
+    "ironDark": "#303443",
+    "iron": "#657987",
+    "ironLight": "#b0bdac",
+    "brass": "#edaf59"
+  },
+  "frames": [
+    {
+      "id": "inventory",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "coverage": 566,
+      "bounds": {
+        "left": 3,
+        "top": 4,
+        "right": 28,
+        "bottom": 28
+      },
+      "components": [
+        566
+      ],
+      "colors": {
+        "#211e2a": 59,
+        "#303443": 70,
+        "#4a2927": 72,
+        "#657987": 28,
+        "#723e2c": 120,
+        "#a15a36": 110,
+        "#b0bdac": 8,
+        "#ca8248": 59,
+        "#edaf59": 2,
+        "#eea761": 38
+      },
+      "rgbaSha256": "fb8a4f6cba1ae9766c61013f52a752222ae3872764ba7eec7f60903341971a27",
+      "alphaSha256": "822b09dd5cded33f341f3d61221dea0f69adc769ec502cb205f6e8d895da5385"
+    }
+  ],
+  "transitions": [],
+  "recognition": {
+    "item": "E2.4 tall barrel",
+    "source": {
+      "bands": [
+        [
+          14,
+          15
+        ],
+        [
+          23,
+          24
+        ]
+      ],
+      "endWidths": [
+        8,
+        8
+      ],
+      "widest": 22
+    },
+    "icon": {
+      "bands": [
+        [
+          13,
+          14,
+          15
+        ],
+        [
+          22,
+          23,
+          24
+        ]
+      ],
+      "endWidths": [
+        15,
+        13
+      ],
+      "widest": 26
+    },
+    "design": "rounded wooden body, lid and two bands",
+    "method": "redrawn at 32×32"
+  }
+}

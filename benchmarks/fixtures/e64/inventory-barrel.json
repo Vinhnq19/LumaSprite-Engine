@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "inventory-barrel",
+  "name": "Inventory · Tall Banded Barrel",
+  "kind": "inventory-icon",
+  "size": [
+    32,
+    32
+  ],
+  "source": {
+    "file": "benchmarks/results/e24/barrel-tall-1x.png",
+    "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  }
+}

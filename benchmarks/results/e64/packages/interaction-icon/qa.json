@@ -1,0 +1,90 @@
+{
+  "native": [
+    16,
+    16
+  ],
+  "pivot": [
+    8,
+    15
+  ],
+  "alpha": "binary",
+  "sampling": "nearest",
+  "ramp": {
+    "outline": "#211e2a",
+    "slate": "#303443",
+    "silver": "#81939a",
+    "rim": "#b0bdac",
+    "bronze": "#ae7541",
+    "gold": "#edaf59",
+    "glyph": "#ffe3a0",
+    "white": "#fff4d7"
+  },
+  "frames": [
+    {
+      "id": "normal",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "coverage": 168,
+      "bounds": {
+        "left": 1,
+        "top": 1,
+        "right": 14,
+        "bottom": 15
+      },
+      "components": [
+        168
+      ],
+      "colors": {
+        "#211e2a": 42,
+        "#303443": 47,
+        "#81939a": 6,
+        "#b0bdac": 46,
+        "#edaf59": 4,
+        "#ffe3a0": 23
+      },
+      "rgbaSha256": "7226a51824ef23d289de8452d58dc2eaf68c9143e640a19dbbc2b915614854bc",
+      "alphaSha256": "41adbe05f1b1dfe1dd29358fdf21f879e21e3d7e08ebd382714e9ab775bb2f37"
+    },
+    {
+      "id": "active",
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "coverage": 168,
+      "bounds": {
+        "left": 1,
+        "top": 1,
+        "right": 14,
+        "bottom": 15
+      },
+      "components": [
+        168
+      ],
+      "colors": {
+        "#211e2a": 42,
+        "#303443": 47,
+        "#ae7541": 6,
+        "#edaf59": 50,
+        "#fff4d7": 23
+      },
+      "rgbaSha256": "b103bb9db65ad54fa353190c0f2d3d258234bdc3b0a5ed9fcf88c28596ae8e9a",
+      "alphaSha256": "41adbe05f1b1dfe1dd29358fdf21f879e21e3d7e08ebd382714e9ab775bb2f37"
+    }
+  ],
+  "transitions": [
+    {
+      "overlap": 168,
+      "added": 0,
+      "removed": 0,
+      "changed": 75
+    }
+  ],
+  "panelGlyphLumaGap": 176
+}

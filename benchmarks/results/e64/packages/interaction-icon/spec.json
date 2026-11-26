@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "id": "interaction-icon",
+  "name": "Interact · Enamel Hand Seal",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "kind": "interaction-icon",
+  "size": [
+    16,
+    16
+  ]
+}

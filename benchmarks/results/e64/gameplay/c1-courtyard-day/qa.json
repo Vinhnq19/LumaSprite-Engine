@@ -1,0 +1,80 @@
+{
+  "id": "c1-courtyard",
+  "light": "day",
+  "effect": "pickup-sparkle",
+  "holdout": false,
+  "anchor": [
+    87,
+    146
+  ],
+  "source": {
+    "file": "benchmarks/results/e62/packages/c1-courtyard-day/manifest.json",
+    "sha256": "9db69b0ce4248f22f616b2caaba2e28129cab77e722327b46dac4994e4938ed0"
+  },
+  "basePngSha256": "d8d3250b6b8e0faa5fb163966564fc9fe9344927ae853f74c966dbfe7294ec91",
+  "actorPreservation": "EXACT_RGBA_ALL_FRAMES",
+  "reflection": "MASKED_SCENE_PASS",
+  "frames": [
+    {
+      "phase": "anticipation",
+      "vfxPixels": 5,
+      "reflectionPixels": 0,
+      "changed": 1937,
+      "actorPixels": 2069,
+      "contrastP10": 78,
+      "contrastMedian": 78,
+      "contrastMax": 95
+    },
+    {
+      "phase": "buildup",
+      "vfxPixels": 20,
+      "reflectionPixels": 0,
+      "changed": 1952,
+      "actorPixels": 2069,
+      "contrastP10": 39,
+      "contrastMedian": 78,
+      "contrastMax": 123
+    },
+    {
+      "phase": "peak",
+      "vfxPixels": 44,
+      "reflectionPixels": 0,
+      "changed": 1976,
+      "actorPixels": 2069,
+      "contrastP10": 84,
+      "contrastMedian": 123,
+      "contrastMax": 197
+    },
+    {
+      "phase": "dissipation",
+      "vfxPixels": 17,
+      "reflectionPixels": 0,
+      "changed": 1949,
+      "actorPixels": 2069,
+      "contrastP10": 37,
+      "contrastMedian": 78,
+      "contrastMax": 152
+    },
+    {
+      "phase": "dissipation",
+      "vfxPixels": 6,
+      "reflectionPixels": 0,
+      "changed": 1938,
+      "actorPixels": 2069,
+      "contrastP10": 35,
+      "contrastMedian": 35,
+      "contrastMax": 108
+    },
+    {
+      "phase": "clear",
+      "vfxPixels": 0,
+      "reflectionPixels": 0,
+      "changed": 1932,
+      "actorPixels": 2069,
+      "contrastP10": null,
+      "contrastMedian": null,
+      "contrastMax": null
+    }
+  ],
+  "peak": 2
+}

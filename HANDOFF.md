@@ -1,6 +1,8 @@
 # Handoff
 
-**E6.3 is E6_3_READY_FOR_HUMAN_VARIETY_REVIEW.** Forest Signal Ruins uses five reusable module families in R1 Signal Ruins Entrance and R2 Overgrown Signal Clearing. Both have flat geometry, day/night scenes, material masks, atlas, and measured collision and occlusion. Studio kept exact RGBA for seven PNGs. E6.4 awaits owner review. [Offline gallery and score sheet](docs/LumaSprite-Engine-E6.3-Report.html) · [Architecture, QA and PR summary](docs/e63-environment-variety.md)
+**E6.4 is E6_4_READY_FOR_HUMAN_UI_VFX_REVIEW.** The pilot has a two-state 16 px interaction icon, a redrawn 32 px barrel icon, Signal Activation and Item Pickup Sparkle. R1, C1 and the R2 holdout have six day/night composites. Studio preserved three UI PNGs and thirteen timed VFX frame cells. E7 awaits owner review. [Offline gallery and score sheet](docs/LumaSprite-Engine-E6.4-Report.html) · [Audit, QA and PR summary](docs/e64-pixel-ui-vfx.md) · [E8 Integration Backlog](docs/integration/e8-backlog.md)
+
+**E6.3 engineering is APPROVED.** R1 and R2 were accepted with limitations at `6efc683`. R1 is the showcase and R2 the generalization benchmark. C2-Q needs further artistic refinement. [Acceptance and baseline](docs/e63-artistic-acceptance.md) · [E7 Art Quality Backlog](docs/art-quality/e7-backlog.md) · [Environment gallery](docs/LumaSprite-Engine-E6.3-Report.html)
 
 **E6.2 engineering is APPROVED.** The owner selected C1 and C2 with artistic limitations. The verified checkpoint is `d68f151`. C2-Q is proposed as a separate night refinement. Its edge p10 improves from 11 to 16 for Surveyor and 15 to 25 for Courier. The rear probe is outside the walkable region. E5.4 forward slip remains 0 px with a deliberate 2 px screen-depth projection at the threshold. The Unity result covers Editor import. [Artistic decision and closeout](docs/e62-artistic-closeout.md) · [C1/C2 original gallery](docs/LumaSprite-Engine-E6.2-Report.html)
 
