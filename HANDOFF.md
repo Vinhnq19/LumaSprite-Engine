@@ -1,6 +1,8 @@
 # Handoff
 
-**E6.4 is E6_4_READY_FOR_HUMAN_UI_VFX_REVIEW.** The pilot has a two-state 16 px interaction icon, a redrawn 32 px barrel icon, Signal Activation and Item Pickup Sparkle. R1, C1 and the R2 holdout have six day/night composites. Studio preserved three UI PNGs and thirteen timed VFX frame cells. E7 awaits owner review. [Offline gallery and score sheet](docs/LumaSprite-Engine-E6.4-Report.html) · [Audit, QA and PR summary](docs/e64-pixel-ui-vfx.md) · [E8 Integration Backlog](docs/integration/e8-backlog.md)
+**E7.1 is E7_1_READY_FOR_HUMAN_STRUCTURE_REVIEW.** Relay Box A0/A1 and Ruin Structure Q are available at native 1× and nearest 4× with masks and a downloadable review sheet. H1 is the frozen holdout for an independent art review. Engine passed 73 tests and reproduced all 79 E7.1 payloads. Studio preserved six pilot PNGs. E7.2 requires owner approval. [Offline gallery](docs/LumaSprite-Engine-E7.1-Report.html) · [QA and handoff](docs/e71-structure-quality.md) · [Quality Contract v1](docs/art-quality/quality-contract-v1.md)
+
+**E6.4 engineering is APPROVED and art is APPROVED_WITH_LIMITATIONS.** Inventory Barrel is an approved UI baseline. Interaction Icon, Signal Activation and Pickup Sparkle are approved with limitations. The 82 E6.4 payloads reproduce exactly. Target-game UI/VFX runtime is `PRODUCTION_GAME_RUNTIME_NOT_TESTED`. [Acceptance](docs/e64-artistic-acceptance.md) · [Baseline lock](benchmarks/fixtures/e71/e64-baseline-lock.json) · [E8 Integration Backlog](docs/integration/e8-runtime-backlog.md)
 
 **E6.3 engineering is APPROVED.** R1 and R2 were accepted with limitations at `6efc683`. R1 is the showcase and R2 the generalization benchmark. C2-Q needs further artistic refinement. [Acceptance and baseline](docs/e63-artistic-acceptance.md) · [E7 Art Quality Backlog](docs/art-quality/e7-backlog.md) · [Environment gallery](docs/LumaSprite-Engine-E6.3-Report.html)
 

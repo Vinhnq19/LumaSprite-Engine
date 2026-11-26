@@ -63,8 +63,19 @@ W2 is the selected Surveyor walk. Courier Walk is approved with limitations, wit
 
 E6 planning starts with an owner-approved Environment, UI and VFX brief after the E5 final decision. Use the current pixel scale, authored palettes, frozen scene controls and native game-readability rubric as evidence. Studio production integration remains E8. DeepSeek is deferred until after E8 and requires explicit owner authorization.
 
-## E6.3 accepted with limitations and E6.4 awaiting art review
+## E6.3 and E6.4 accepted with limitations
 
 The Project Owner approved E5 engineering and its artistic baseline with limits, selected Discrete Root A, and authorized E6.0–E6.1 Environment. The E5.4 packages remain the locked production exports. E6.1 delivers the Outpost kit, versioned lighting/palette profile and two scene placements for review. [E5 Final Acceptance](e5-final-acceptance.md) · [E6.1 review gallery](LumaSprite-Engine-E6.1-Report.html)
 
-The owner selected E6.2 C1/C2 and subsequently accepted R1/R2 with limitations at E6.3. R1 is the showcase, R2 the architecture holdout, and C2-Q requires further artistic refinement. E6.4 has two UI assets and two one-shot effects pending owner review. E7 Quality System awaits owner authorization. [E6.3 acceptance](e63-artistic-acceptance.md) · [E6.4 gallery](LumaSprite-Engine-E6.4-Report.html) · [E7 backlog](art-quality/e7-backlog.md) · [E8 integration](integration/e8-backlog.md)
+The owner selected E6.2 C1/C2 and accepted R1/R2 with limitations at E6.3. R1 is the showcase, R2 the original architecture holdout and C2-Q requires further artistic refinement. The owner approved E6.4 engineering and accepted the UI/VFX pilot with limitations. The target-game runtime verification is an E8 backlog item. [E6.3 acceptance](e63-artistic-acceptance.md) · [E6.4 acceptance](e64-artistic-acceptance.md) · [E8 integration](integration/e8-runtime-backlog.md)
+
+## E7 Structure & Silhouette
+
+| Stage | Status |
+| --- | --- |
+| E7.0 Quality Foundation | Audit, family rubric, Quality Contract v1 and benchmark corpus are in place. |
+| E7.1 Structure & Silhouette | Relay Box and Ruin Structure Q, including H1, are ready for independent human review. |
+| E7.2 Material & Pixel Craft | Proposal awaits owner approval. |
+| E7.3+ | Implementation awaits owner approval. |
+
+[E7.1 handoff and E7.2 proposal](e71-structure-quality.md) · [Review gallery](LumaSprite-Engine-E7.1-Report.html) · [E7 root-cause audit](art-quality/e7-root-cause.md)

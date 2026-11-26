@@ -1,0 +1,132 @@
+{
+  "coverage": {
+    "added": 62,
+    "removed": 65,
+    "shared": 455
+  },
+  "placement": [
+    180,
+    162
+  ],
+  "current": "projectBox single-volume",
+  "candidate": "projectBox articulated volumes",
+  "a0": {
+    "coverage": 520,
+    "outline": 80,
+    "isolatedOutline": 0,
+    "components": [
+      520
+    ],
+    "bounds": {
+      "left": 2,
+      "top": 9,
+      "right": 29,
+      "bottom": 28
+    },
+    "detail": {
+      "edges": 123,
+      "samples": 828,
+      "per100": 14.9
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#48425e/#98a0be",
+        "samples": 84,
+        "p10": 20,
+        "median": 20
+      },
+      {
+        "roles": "#48425e/#bc8862",
+        "samples": 4,
+        "p10": 14,
+        "median": 14
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 64,
+        "p10": 3,
+        "median": 29
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 12,
+        "p10": 130,
+        "median": 130
+      }
+    ],
+    "used": [
+      "#211e2a",
+      "#303443",
+      "#382c28",
+      "#657987",
+      "#81939a",
+      "#916e51",
+      "#b0bdac",
+      "#bc9366",
+      "#edaf59",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "8c8995f1e3ddf3d4a524dbf950c67c24a925d71bd07c07f320107c192cfb2af0",
+    "alphaSha256": "1313857508e9435ae068667f2d6d11ce34aee9247bf94bf2c4af574ab68998ad"
+  },
+  "a1": {
+    "coverage": 517,
+    "outline": 77,
+    "isolatedOutline": 0,
+    "components": [
+      517
+    ],
+    "bounds": {
+      "left": 3,
+      "top": 5,
+      "right": 28,
+      "bottom": 28
+    },
+    "detail": {
+      "edges": 191,
+      "samples": 811,
+      "per100": 23.6
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#48425e/#98a0be",
+        "samples": 57,
+        "p10": 20,
+        "median": 86
+      },
+      {
+        "roles": "#48425e/#bc8862",
+        "samples": 43,
+        "p10": 14,
+        "median": 14
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 57,
+        "p10": 6,
+        "median": 6
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 12,
+        "p10": 130,
+        "median": 130
+      }
+    ],
+    "used": [
+      "#211e2a",
+      "#303443",
+      "#382c28",
+      "#657987",
+      "#685044",
+      "#81939a",
+      "#916e51",
+      "#b0bdac",
+      "#bc9366",
+      "#edaf59",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "5b6597adf9d8e56ac5d9a7fd7c18900fe197726c3973010531b0fa963919afa0",
+    "alphaSha256": "115e30554e7a1d4e5bf482dc9bb115d28b7ee5e4ed03370b59cbe6ab13a20d0c"
+  }
+}
