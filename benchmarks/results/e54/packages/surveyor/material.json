@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "kind": "lumasprite-character-material-review",
+  "style": "m2p",
+  "light": "upper-left",
+  "technical": "PASS",
+  "artistic": "VISUAL_REVIEW_PENDING",
+  "source": {
+    "candidate": "r2",
+    "geometrySha256": "4152ddba29d254c7cb8e3ddc2224150be52f19dce6111403d7b0f00b49df606c",
+    "silhouetteAlphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015"
+  },
+  "pose": {
+    "intent": "standing-hold",
+    "pivot": [
+      30,
+      59
+    ],
+    "gripAnchor": [
+      49,
+      33
+    ]
+  },
+  "palette": {
+    "mode": "authored",
+    "status": "FULL_RAMP",
+    "warnings": [],
+    "ramps": {
+      "skin": [
+        "#a86a55",
+        "#dca57a",
+        "#f5c393",
+        "#392c37"
+      ],
+      "hair": [
+        "#392c37",
+        "#513638",
+        "#896049",
+        "#392c37"
+      ],
+      "cap": [
+        "#2d4346",
+        "#536964",
+        "#798c7c",
+        "#394b4d"
+      ],
+      "brim": [
+        "#2d4346",
+        "#394b4d",
+        "#536964",
+        "#2d4346"
+      ],
+      "coat": [
+        "#2e4e52",
+        "#46746e",
+        "#75a08b",
+        "#375d5b"
+      ],
+      "far-coat": [
+        "#293943",
+        "#37545a",
+        "#46746e",
+        "#2e4e52"
+      ],
+      "trousers": [
+        "#343344",
+        "#525a6e",
+        "#777d8b",
+        "#434a5c"
+      ],
+      "far-trousers": [
+        "#2c2c3b",
+        "#434a5c",
+        "#525a6e",
+        "#343344"
+      ],
+      "leather": [
+        "#513638",
+        "#896049",
+        "#b18059",
+        "#674937"
+      ],
+      "metal": [
+        "#343344",
+        "#51546a",
+        "#9ca8a8",
+        "#777d8b"
+      ],
+      "glass": [
+        "#935630",
+        "#e0a051",
+        "#ffe3a0",
+        "#f6bd68"
+      ]
+    }
+  },
+  "usedColors": [
+    "#201a24",
+    "#293943",
+    "#2c2c3b",
+    "#2d4346",
+    "#2e4e52",
+    "#343344",
+    "#37545a",
+    "#375d5b",
+    "#392c37",
+    "#394b4d",
+    "#434a5c",
+    "#46746e",
+    "#513638",
+    "#51546a",
+    "#525a6e",
+    "#536964",
+    "#674937",
+    "#75a08b",
+    "#777d8b",
+    "#798c7c",
+    "#896049",
+    "#935630",
+    "#9ca8a8",
+    "#a86a55",
+    "#b18059",
+    "#dca57a",
+    "#f5c393",
+    "#f6bd68",
+    "#ffe3a0"
+  ],
+  "materialCoverage": {
+    "contour": 229,
+    "cap": 64,
+    "brim": 37,
+    "skin": 114,
+    "hair": 11,
+    "far-coat": 70,
+    "coat": 232,
+    "leather": 98,
+    "metal": 54,
+    "trousers": 92,
+    "far-trousers": 56,
+    "glass": 15
+  },
+  "images": {
+    "finalPngSha256": "4b0d76ea22119e14f79ace767f37e7aeef6172ca5b21177af73acbb92c6f29ee",
+    "finalRgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e",
+    "maskPngSha256": "1dab0ea6b27b105a597f9d6e7a9109e13fd06bacf2a12c8ff5fe716240461554",
+    "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+    "silhouettePngSha256": "c9e4e307f64f2e36c1c7ae686591729d455735f7413b594e519feff562a53c76"
+  }
+}

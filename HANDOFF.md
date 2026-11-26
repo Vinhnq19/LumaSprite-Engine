@@ -1,5 +1,9 @@
 # Handoff
 
+**E5.4 is E5_READY_FOR_FINAL_OWNER_ACCEPTANCE.** Surveyor uses W2 with E5.1 Idle. Courier Walk is approved with limitations and uses the original E4.4 standing pose and material. Hybrid and W2-IK are research records. The production walk builder uses its established solver, with the Hybrid callback available only through E5.3 archive replay. [Final owner review gallery](docs/LumaSprite-Engine-E5.4-Report.html) · [Decision and Unity report](docs/e54-final-acceptance.md)
+
+Unity 6000.3.21f1 Windows Standalone passed. At the tested speeds, Discrete Root held the authored contacts at 0 px slip including samples between frames. Pixel-Snapped moved the root smoothly and shifted the held planted pose by up to 4 px for Surveyor and 3 px for Courier. The packet selects method A. Studio `bb5c384` round-tripped all four bundled clips. Owner acceptance remains pending. [Production lock](benchmarks/results/e54/baseline-lock.json) · [Unity and Studio evidence](benchmarks/results/e54/unity/evidence.json)
+
 **E5.3 is E5_3_READY_FOR_HUMAN_QUALITY_REVIEW.** W2 remains production. W2-Hybrid keeps the W2 torso, timing, planted targets and grip, and moves the passing knee by one pixel in two frames. Forest Courier has a verified `walk-free` package using the shared gait pipeline. Localized leather changes the satchel and strap with the original boots and silhouette. Independent art decisions remain open. [Offline gallery and score sheets](docs/LumaSprite-Engine-E5.3-Report.html) · [Quality gate and decisions](docs/e53-quality-review.md)
 
 Browser runtime passed five fixed-camera laps and idle transitions in both scenes. Surveyor advanced 160 px and Courier 120 px with 0 px sampled foot sliding. Unity runtime verification remains open. Engine passed 66 tests, and Studio `bb5c384` passed E5.1 and E5.2 integration. [Runtime harness](docs/LumaSprite-Engine-E5.3-Runtime.html) · [Runtime proof](docs/e53-runtime-proof.json)

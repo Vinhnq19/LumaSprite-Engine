@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "kind": "lumasprite-standing-pose",
+  "name": "Forest Courier E4.4 Revised · standing",
+  "image": "spritesheet.png",
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "sampling": "nearest",
+  "pivot": [
+    32,
+    58
+  ],
+  "loop": "hold",
+  "totalDurationMs": 1800,
+  "frames": [
+    {
+      "phase": "standing",
+      "durationMs": 1800,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "7c3de890678aac4e1a986a3b7bb585cfe8341a8cb27b80aa2eb192e029ff6205"
+    }
+  ]
+}

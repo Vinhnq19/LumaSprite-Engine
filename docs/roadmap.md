@@ -56,3 +56,9 @@ The owner selected M2 with limitations. E4.3 delivered M2P and the Forest Courie
 E4 is closed with engineering approval. The owner selected Surveyor R2 + M2P and the E4.4 revised Courier for 64 × 64 single-view art with recorded limitations. [E4 final acceptance](e4-final-acceptance.md) · [Human review](../benchmarks/results/e44/review.md)
 
 The Project Owner approved E5.0 architecture and the four-frame E5.1 Surveyor idle with limitations. E5.2 extends the same pipeline with two walk candidates, sampled world contacts, Studio timing parity and native gameplay previews. The Project Owner accepted E5.2 engineering and selected W2 for research, with W1 as the control. Walk Game-Ready Final Acceptance remains open. R0 records reproducibility and prepares isolated experiments before any source integration. [Idle acceptance](e51-idle-acceptance.md) · [Walk review](LumaSprite-Engine-E5.2-Report.html) · [E5.3 proposal](architecture/e52-walk-motion.md#e53-proposal)
+
+## E5.4 acceptance and E6 handoff
+
+W2 is the selected Surveyor walk. Courier Walk is approved with limitations, with its original E4.4 standing pose and palette. The two locked exports passed fixed-camera Windows Unity playback and Studio round-trip. Discrete Root preserved authored contacts at the tested speeds. E5 is ready for the Project Owner's final 1× review. [E5.4 review and evidence](e54-final-acceptance.md) · [Human review sheet](LumaSprite-Engine-E5.4-Report.html#review)
+
+E6 planning starts with an owner-approved Environment, UI and VFX brief after the E5 final decision. Use the current pixel scale, authored palettes, frozen scene controls and native game-readability rubric as evidence. Studio production integration remains E8. DeepSeek is deferred until after E8 and requires explicit owner authorization.

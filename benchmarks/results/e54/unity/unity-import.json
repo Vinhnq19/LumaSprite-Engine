@@ -1,0 +1,105 @@
+{
+    "editor": "6000.3.21f1",
+    "target": "StandaloneWindows64",
+    "textures": [
+        {
+            "file": "Assets/E54Input/outdoor.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGB24",
+            "width": 320,
+            "height": 176,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": false
+        },
+        {
+            "file": "Assets/E54Input/dungeon.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGB24",
+            "width": 320,
+            "height": 176,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": false
+        },
+        {
+            "file": "Assets/E54Input/neutral.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGB24",
+            "width": 320,
+            "height": 176,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": false
+        },
+        {
+            "file": "Assets/E54Input/surveyor/idle.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGBA32",
+            "width": 256,
+            "height": 64,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": true
+        },
+        {
+            "file": "Assets/E54Input/surveyor/walk.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGBA32",
+            "width": 512,
+            "height": 64,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": true
+        },
+        {
+            "file": "Assets/E54Input/surveyor/bridge.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGBA32",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": true
+        },
+        {
+            "file": "Assets/E54Input/courier/idle.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGBA32",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": true
+        },
+        {
+            "file": "Assets/E54Input/courier/walk.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGBA32",
+            "width": 512,
+            "height": 64,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": true
+        },
+        {
+            "file": "Assets/E54Input/courier/bridge.png",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "format": "RGBA32",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1,
+            "readable": true,
+            "transparent": true
+        }
+    ]
+}

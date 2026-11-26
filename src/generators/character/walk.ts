@@ -88,9 +88,7 @@ function buildTransition(source: CharacterPackage, base: WalkingCharacter, first
   return { frame, qa: { durationMs: 110, support: 'far', stationaryFarAnkle: farAnkle, transitions: moves } };
 }
 
-export function buildWalkAnimation(source: CharacterPackage, input: unknown,
-  refineKnee?: (index: number, side: (typeof feet)[number], point: Point) => [number, number],
-) {
+export function buildWalkAnimation(source: CharacterPackage, input: unknown) {
   const spec = walkSpecSchema.parse(input);
   const base = source.geometry.spec;
   requireAnimationSource(source, spec);
@@ -102,7 +100,6 @@ export function buildWalkAnimation(source: CharacterPackage, input: unknown,
   let rootX = 0;
   const builds = spec.keyPoses.map((key, i) => {
     const { pose, gait } = solveWalkPose(base, source.lock.projectedGround!, key, spec.stepPx / 2, rootX % spec.stepPx);
-    if (refineKnee) for (const side of feet) pose[side].knee = refineKnee(i, side, pose[side].knee);
     const frame = renderPose(source, base, pose, gait, key.lead + '-' + key.phase, spec.source.checkpoint);
     const { lock, geometry, material } = frame;
     const foot = { near: footSample(frame, 'near', rootX), far: footSample(frame, 'far', rootX) };

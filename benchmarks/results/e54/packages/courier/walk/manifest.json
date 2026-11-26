@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "lumasprite-animation-production",
+  "source": {
+    "checkpoint": "f9c6f77",
+    "characterSpecVersion": 3,
+    "geometryRevision": 1,
+    "productionManifestSha256": "d91c049a4a751f57471186da3548b31d2bee3e438ce93ce93eabd9fc31fa2e23",
+    "characterSpecSha256": "4607cbe1a09f65aefbad4b1dafb29cca54cb00348203c7bf80738ee1298f6b49",
+    "shapeLockSha256": "6f735bdd393b29334f4e26d8af6d69a012f6db1121c8413088815d7cd4ae46db"
+  },
+  "material": "m2",
+  "name": "Forest Courier · Walk",
+  "frameCount": 8,
+  "loop": "repeat",
+  "pivot": [
+    32,
+    58
+  ],
+  "files": {
+    "animation-spec.json": "83b60349b59a093227f08d6313df32f60dc1dcfaee081d7eba595213fcc8d7ac",
+    "spritesheet.png": "9aa076a9dfe1c18af7854e5ddcada877dd235689064d8e4b3001c775cedb3c99",
+    "timing.json": "cb7e9636ec3715d5bc9857f01e9d4a4541f70a33b522b1d306632b290265523a",
+    "qa.json": "fe391609097c62455ca24ff6ff6e13825a968736da26bf99e2fc498ccb050ab4"
+  }
+}

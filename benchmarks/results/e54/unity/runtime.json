@@ -1,0 +1,1252 @@
+{
+    "unity": "6000.3.21f1",
+    "graphics": "Direct3D11",
+    "platform": "WindowsPlayer",
+    "renderPipeline": "Built-in",
+    "ppu": 32,
+    "width": 320,
+    "height": 176,
+    "targetFps": 60,
+    "cases": [
+        {
+            "scene": "outdoor",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 0.75,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 289,
+            "interiorSamples": 264,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 1.0,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 217,
+            "interiorSamples": 197,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 1.25,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 173,
+            "interiorSamples": 160,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 0.75,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 311,
+            "interiorSamples": 285,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 1.0,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 233,
+            "interiorSamples": 217,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 1.25,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 186,
+            "interiorSamples": 173,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 0.75,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 289,
+            "interiorSamples": 264,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 1.0,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 217,
+            "interiorSamples": 197,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 1.25,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 173,
+            "interiorSamples": 160,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 0.75,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 311,
+            "interiorSamples": 285,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 1.0,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 233,
+            "interiorSamples": 217,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 1.25,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 186,
+            "interiorSamples": 173,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 0.75,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 289,
+            "interiorSamples": 264,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 1.0,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 217,
+            "interiorSamples": 197,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 1.25,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 173,
+            "interiorSamples": 160,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 0.75,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 311,
+            "interiorSamples": 285,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 1.0,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 233,
+            "interiorSamples": 217,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 1.25,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 186,
+            "interiorSamples": 173,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 0.75,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 289,
+            "interiorSamples": 264,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 1.0,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 217,
+            "interiorSamples": 197,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 1.25,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 173,
+            "interiorSamples": 160,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 0.75,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 311,
+            "interiorSamples": 285,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 1.0,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 233,
+            "interiorSamples": 217,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 1.25,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 186,
+            "interiorSamples": 173,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 0.75,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 289,
+            "interiorSamples": 264,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 1.0,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 217,
+            "interiorSamples": 197,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "surveyor",
+            "mode": "A",
+            "speed": 1.25,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 4,
+            "finalRootPx": 96,
+            "footSamples": 173,
+            "interiorSamples": 160,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 0.75,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 311,
+            "interiorSamples": 285,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 1.0,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 233,
+            "interiorSamples": 217,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "courier",
+            "mode": "A",
+            "speed": 1.25,
+            "maxSlipPx": 0.0,
+            "maxFootTickPx": 0.0,
+            "maxRootTickPx": 3,
+            "finalRootPx": 72,
+            "footSamples": 186,
+            "interiorSamples": 173,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 0.75,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 289,
+            "interiorSamples": 264,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 1.0,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 217,
+            "interiorSamples": 197,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "surveyor",
+            "mode": "B",
+            "speed": 1.25,
+            "maxSlipPx": 4.0,
+            "maxFootTickPx": 4.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 96,
+            "footSamples": 173,
+            "interiorSamples": 160,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                120,
+                115,
+                95,
+                110,
+                120,
+                115,
+                95,
+                110
+            ],
+            "pivot": [
+                30,
+                59
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 0.75,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 311,
+            "interiorSamples": 285,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 1.0,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 233,
+            "interiorSamples": 217,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        },
+        {
+            "scene": "neutral",
+            "actor": "courier",
+            "mode": "B",
+            "speed": 1.25,
+            "maxSlipPx": 3.0,
+            "maxFootTickPx": 3.0,
+            "maxRootTickPx": 1,
+            "finalRootPx": 72,
+            "footSamples": 186,
+            "interiorSamples": 173,
+            "probes": 48,
+            "wraps": 3,
+            "durations": [
+                125,
+                130,
+                110,
+                115,
+                125,
+                130,
+                110,
+                115
+            ],
+            "pivot": [
+                32,
+                58
+            ]
+        }
+    ],
+    "captures": [
+        {
+            "file": "outdoor-A.png",
+            "scene": "outdoor",
+            "mode": "A",
+            "atMs": 2115,
+            "roots": [
+                4,
+                3
+            ],
+            "frames": [
+                1,
+                1
+            ],
+            "anchorX": [
+                38,
+                77
+            ],
+            "anchorY": [
+                92,
+                163
+            ]
+        },
+        {
+            "file": "outdoor-B.png",
+            "scene": "outdoor",
+            "mode": "B",
+            "atMs": 2115,
+            "roots": [
+                7,
+                5
+            ],
+            "frames": [
+                1,
+                1
+            ],
+            "anchorX": [
+                38,
+                77
+            ],
+            "anchorY": [
+                92,
+                163
+            ]
+        },
+        {
+            "file": "dungeon-A.png",
+            "scene": "dungeon",
+            "mode": "A",
+            "atMs": 2115,
+            "roots": [
+                4,
+                3
+            ],
+            "frames": [
+                1,
+                1
+            ],
+            "anchorX": [
+                38,
+                79
+            ],
+            "anchorY": [
+                110,
+                151
+            ]
+        },
+        {
+            "file": "dungeon-B.png",
+            "scene": "dungeon",
+            "mode": "B",
+            "atMs": 2115,
+            "roots": [
+                7,
+                5
+            ],
+            "frames": [
+                1,
+                1
+            ],
+            "anchorX": [
+                38,
+                79
+            ],
+            "anchorY": [
+                110,
+                151
+            ]
+        },
+        {
+            "file": "neutral-A.png",
+            "scene": "neutral",
+            "mode": "A",
+            "atMs": 2115,
+            "roots": [
+                4,
+                3
+            ],
+            "frames": [
+                1,
+                1
+            ],
+            "anchorX": [
+                38,
+                77
+            ],
+            "anchorY": [
+                97,
+                157
+            ]
+        },
+        {
+            "file": "neutral-B.png",
+            "scene": "neutral",
+            "mode": "B",
+            "atMs": 2115,
+            "roots": [
+                7,
+                5
+            ],
+            "frames": [
+                1,
+                1
+            ],
+            "anchorX": [
+                38,
+                77
+            ],
+            "anchorY": [
+                97,
+                157
+            ]
+        }
+    ],
+    "live": [
+        {
+            "scene": "outdoor",
+            "mode": "A",
+            "elapsedSeconds": 6.8355476999999988,
+            "observedFps": 60.126857135383627,
+            "p95FrameMs": 16.753100000000744,
+            "renderedTicks": 411,
+            "uniqueWalkFrames": [
+                24,
+                24
+            ],
+            "finalRoots": [
+                96,
+                72
+            ],
+            "maxContactSlipPx": [
+                0,
+                0
+            ],
+            "sawIdleReturn": [
+                true,
+                true
+            ]
+        },
+        {
+            "scene": "outdoor",
+            "mode": "B",
+            "elapsedSeconds": 6.836405400000002,
+            "observedFps": 60.11931357961888,
+            "p95FrameMs": 16.764500000000738,
+            "renderedTicks": 411,
+            "uniqueWalkFrames": [
+                24,
+                24
+            ],
+            "finalRoots": [
+                96,
+                72
+            ],
+            "maxContactSlipPx": [
+                4,
+                3
+            ],
+            "sawIdleReturn": [
+                true,
+                true
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "mode": "A",
+            "elapsedSeconds": 6.835487199999996,
+            "observedFps": 60.12738931030406,
+            "p95FrameMs": 16.762500000005788,
+            "renderedTicks": 411,
+            "uniqueWalkFrames": [
+                24,
+                24
+            ],
+            "finalRoots": [
+                96,
+                72
+            ],
+            "maxContactSlipPx": [
+                0,
+                0
+            ],
+            "sawIdleReturn": [
+                true,
+                true
+            ]
+        },
+        {
+            "scene": "dungeon",
+            "mode": "B",
+            "elapsedSeconds": 6.8354810000000019,
+            "observedFps": 59.98114836395565,
+            "p95FrameMs": 16.74269999999467,
+            "renderedTicks": 410,
+            "uniqueWalkFrames": [
+                24,
+                24
+            ],
+            "finalRoots": [
+                96,
+                72
+            ],
+            "maxContactSlipPx": [
+                4,
+                3
+            ],
+            "sawIdleReturn": [
+                true,
+                true
+            ]
+        }
+    ]
+}

@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { z } from 'zod';
 import type { Point } from '../src/core/geometry/shapes.ts';
 import { chestColors, pack } from '../src/core/palette/colors.ts';
@@ -20,6 +21,7 @@ import { inspect } from '../research/open-source/art-quality/common.ts';
 import { outlineMarks } from './character-preview.ts';
 import { characterGameScenes } from './character-scenes.ts';
 import { courierSource, json, output, png, readJson, rnd, save, surveyorSource } from './e53-common.ts';
+import { archiveE53 } from './e53-archive.ts';
 
 type Walk = ReturnType<typeof buildWalkAnimation>;
 type Timing = Walk['timing'];
@@ -44,8 +46,13 @@ const [source, courier, idle] = await Promise.all([
 const baseline = buildWalkAnimation(source, readJson(spec.base));
 for (const [file, bytes] of baseline.files) assert.ok(bytes.equals(readFileSync('benchmarks/results/e52/w2/package/' + file)), file);
 
+const { buildWalkAnimation: buildResearchWalk } = await import(
+  pathToFileURL(join(archiveE53(), 'src/generators/character/walk.ts')).href
+) as { buildWalkAnimation: (character: CharacterPackage, input: unknown,
+  refine: (frame: number, side: (typeof feet)[number], point: Point) => [number, number]) => Walk };
+
 function hybridClip() {
-  return buildWalkAnimation(source, { ...baseline.spec, name: spec.name }, (frame, side, [x, y]) => {
+  return buildResearchWalk(source, { ...baseline.spec, name: spec.name }, (frame, side, [x, y]) => {
     const [dx, dy] = spec.knees.find(change => change.frame === frame && change.side === side)?.offset ?? [0, 0];
     return [x + dx, y + dy];
   });

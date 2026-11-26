@@ -1,0 +1,538 @@
+{
+  "version": 1,
+  "kind": "lumasprite-animation-timing",
+  "name": "W2 Expressive Walk",
+  "image": "spritesheet.png",
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "sampling": "nearest",
+  "pivot": [
+    30,
+    59
+  ],
+  "loop": "repeat",
+  "totalDurationMs": 880,
+  "frames": [
+    {
+      "phase": "contact",
+      "durationMs": 120,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "2d7193b7e5425a889a791927b108dda924fd4eaa4e138fefb866abea73bf1e7f"
+    },
+    {
+      "phase": "down",
+      "durationMs": 115,
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "8b4f4f629bd1b57880aabe56d8aac3ff05aff572835bbe35b2e63e3a45b92414"
+    },
+    {
+      "phase": "passing",
+      "durationMs": 95,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "0c42dd49fcac1be1071291cca988bd048f673ec5ef69b25ec4f65b4ab6961821"
+    },
+    {
+      "phase": "up",
+      "durationMs": 110,
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "9c95a40a508bfece524049c80a3d3d7f42717997d954062ceb3eacb857eac6b9"
+    },
+    {
+      "phase": "contact",
+      "durationMs": 120,
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "eee40e6b2cf1f0dffa57d20fc509854c811aa1b99a478be003d5a08a6a406eff"
+    },
+    {
+      "phase": "down",
+      "durationMs": 115,
+      "rect": {
+        "x": 320,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "84a087def26471bfbbb1c504907d3d9d74ca936838b21824cb28e50e1e75be57"
+    },
+    {
+      "phase": "passing",
+      "durationMs": 95,
+      "rect": {
+        "x": 384,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "5dfcc365cb9ba5f20cc89f40490cc7f213b161fea7f484ddd9738c62f2f7d1e3"
+    },
+    {
+      "phase": "up",
+      "durationMs": 110,
+      "rect": {
+        "x": 448,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "rgbaSha256": "2b5102501abd109f8308195136f6161bb5312f27712afc1ffa371e7b1c23e57f"
+    }
+  ],
+  "rootMotion": {
+    "mode": "frame-stepped",
+    "cyclePx": 32,
+    "axis": "+x",
+    "frames": [
+      {
+        "index": 0,
+        "phase": "contact",
+        "lead": "far",
+        "rootX": 0,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              28,
+              59
+            ],
+            "world": [
+              28,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              24,
+              54
+            ],
+            "knee": [
+              27,
+              46
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              43,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              39,
+              53
+            ],
+            "knee": [
+              38,
+              44
+            ]
+          }
+        }
+      },
+      {
+        "index": 1,
+        "phase": "down",
+        "lead": "far",
+        "rootX": 4,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "swing",
+            "canvas": [
+              28,
+              57
+            ],
+            "world": [
+              32,
+              57
+            ],
+            "groundY": 59,
+            "clearance": 2,
+            "solePixels": 9,
+            "ankle": [
+              24,
+              52
+            ],
+            "knee": [
+              28,
+              46
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              39,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              35,
+              53
+            ],
+            "knee": [
+              37,
+              46
+            ]
+          }
+        }
+      },
+      {
+        "index": 2,
+        "phase": "passing",
+        "lead": "far",
+        "rootX": 8,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "swing",
+            "canvas": [
+              38,
+              52
+            ],
+            "world": [
+              46,
+              52
+            ],
+            "groundY": 59,
+            "clearance": 7,
+            "solePixels": 9,
+            "ankle": [
+              34,
+              47
+            ],
+            "knee": [
+              34,
+              43
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              35,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              31,
+              53
+            ],
+            "knee": [
+              34,
+              45
+            ]
+          }
+        }
+      },
+      {
+        "index": 3,
+        "phase": "up",
+        "lead": "far",
+        "rootX": 12,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "swing",
+            "canvas": [
+              42,
+              56
+            ],
+            "world": [
+              54,
+              56
+            ],
+            "groundY": 59,
+            "clearance": 3,
+            "solePixels": 9,
+            "ankle": [
+              38,
+              51
+            ],
+            "knee": [
+              35,
+              44
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              31,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 5,
+            "ankle": [
+              27,
+              53
+            ],
+            "knee": [
+              32,
+              44
+            ]
+          }
+        }
+      },
+      {
+        "index": 4,
+        "phase": "contact",
+        "lead": "near",
+        "rootX": 16,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              44,
+              59
+            ],
+            "world": [
+              60,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              40,
+              54
+            ],
+            "knee": [
+              35,
+              46
+            ]
+          },
+          "far": {
+            "state": "planted",
+            "canvas": [
+              27,
+              58
+            ],
+            "world": [
+              43,
+              58
+            ],
+            "groundY": 58,
+            "clearance": 0,
+            "solePixels": 8,
+            "ankle": [
+              23,
+              53
+            ],
+            "knee": [
+              30,
+              44
+            ]
+          }
+        }
+      },
+      {
+        "index": 5,
+        "phase": "down",
+        "lead": "near",
+        "rootX": 20,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              40,
+              59
+            ],
+            "world": [
+              60,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              36,
+              54
+            ],
+            "knee": [
+              34,
+              47
+            ]
+          },
+          "far": {
+            "state": "swing",
+            "canvas": [
+              27,
+              56
+            ],
+            "world": [
+              47,
+              56
+            ],
+            "groundY": 58,
+            "clearance": 2,
+            "solePixels": 8,
+            "ankle": [
+              23,
+              51
+            ],
+            "knee": [
+              31,
+              45
+            ]
+          }
+        }
+      },
+      {
+        "index": 6,
+        "phase": "passing",
+        "lead": "near",
+        "rootX": 24,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              36,
+              59
+            ],
+            "world": [
+              60,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 9,
+            "ankle": [
+              32,
+              54
+            ],
+            "knee": [
+              31,
+              46
+            ]
+          },
+          "far": {
+            "state": "swing",
+            "canvas": [
+              37,
+              52
+            ],
+            "world": [
+              61,
+              52
+            ],
+            "groundY": 58,
+            "clearance": 6,
+            "solePixels": 8,
+            "ankle": [
+              33,
+              47
+            ],
+            "knee": [
+              37,
+              42
+            ]
+          }
+        }
+      },
+      {
+        "index": 7,
+        "phase": "up",
+        "lead": "near",
+        "rootX": 28,
+        "advancePx": 4,
+        "feet": {
+          "near": {
+            "state": "planted",
+            "canvas": [
+              32,
+              59
+            ],
+            "world": [
+              60,
+              59
+            ],
+            "groundY": 59,
+            "clearance": 0,
+            "solePixels": 5,
+            "ankle": [
+              28,
+              54
+            ],
+            "knee": [
+              29,
+              46
+            ]
+          },
+          "far": {
+            "state": "swing",
+            "canvas": [
+              41,
+              55
+            ],
+            "world": [
+              69,
+              55
+            ],
+            "groundY": 58,
+            "clearance": 3,
+            "solePixels": 8,
+            "ankle": [
+              37,
+              50
+            ],
+            "knee": [
+              38,
+              43
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
