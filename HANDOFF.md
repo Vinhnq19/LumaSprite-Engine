@@ -1,5 +1,9 @@
 # Handoff
 
+**E5.3 is E5_3_READY_FOR_HUMAN_QUALITY_REVIEW.** W2 remains production. W2-Hybrid keeps the W2 torso, timing, planted targets and grip, and moves the passing knee by one pixel in two frames. Forest Courier has a verified `walk-free` package using the shared gait pipeline. Localized leather changes the satchel and strap with the original boots and silhouette. Independent art decisions remain open. [Offline gallery and score sheets](docs/LumaSprite-Engine-E5.3-Report.html) · [Quality gate and decisions](docs/e53-quality-review.md)
+
+Browser runtime passed five fixed-camera laps and idle transitions in both scenes. Surveyor advanced 160 px and Courier 120 px with 0 px sampled foot sliding. Unity runtime verification remains open. Engine passed 66 tests, and Studio `bb5c384` passed E5.1 and E5.2 integration. [Runtime harness](docs/LumaSprite-Engine-E5.3-Runtime.html) · [Runtime proof](docs/e53-runtime-proof.json)
+
 **Open-source art R&D is OPEN_SOURCE_ART_QUALITY_RND_READY_FOR_HUMAN_REVIEW.** The offline report has synchronized W2 and W2-IK playback, native 1× comparisons, three score sheets, downloadable QA, and source notices. [Offline report](research/open-source/art-quality/LumaSprite-Engine-Art-Quality-RnD.html) · [Provenance and reproduction](research/open-source/art-quality/README.md)
 
 - W2-IK is `FURTHER_EVALUATION_REQUIRED`. The worst sampled knee-angle change decreased from 41.021° to 35.538°. All eight adjacent planted samples retained zero world displacement and 880 ms total duration. Review the lighter landing and test another character before evaluating a solver version.
@@ -11,7 +15,7 @@
 
 The Project Owner approved E5.2 engineering and selected W2 Expressive Walk as the R&D baseline, with W1 Conservative Walk as the control. Walk Game-Ready Final Acceptance and target-game runtime validation remain pending. [Motion and package contract](docs/architecture/e52-walk-motion.md)
 
-Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. E5.3 awaits the owner's decision. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
+Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
 
 The Project Owner approved E5.0 architecture and E5.1 as a subtle idle with limitations. The four 64 × 64 frame slots and 1,800 ms loop stay frozen. Target-game runtime is still pending. [Idle acceptance](docs/e51-idle-acceptance.md) · [E5.1 gallery](docs/LumaSprite-Engine-E5.1-Report.html)
 

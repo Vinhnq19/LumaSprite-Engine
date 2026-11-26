@@ -78,3 +78,28 @@ test('E5.1 original idle and E4 source remain byte-exact after sharing the walk 
   assert.equal(idle.timing.totalDurationMs, 1800);
   assert.equal(idle.timing.frames[0].rgbaSha256, idle.timing.frames[2].rgbaSha256);
 });
+
+test('walk-free keeps Courier anatomy, both hands, satchel and world contact in the shared walk package', async () => {
+  const source = await verifyCharacterProductionPackage('benchmarks/results/e44/packages/courier-rev');
+  const spec = walkSpecSchema.parse(JSON.parse(await readFile('benchmarks/fixtures/e53/courier-walk.json', 'utf8')));
+  assert.throws(() => walkSpecSchema.parse({ ...spec, contact: { ...spec.contact, equipment: 'held-lantern' } }), /match the standing pose/);
+  const swaying = structuredClone(spec);
+  swaying.keyPoses[1].sway = 1;
+  assert.throws(() => buildWalkAnimation(source, swaying), /no held-equipment motion/);
+  const walk = buildWalkAnimation(source, spec);
+  assert.equal(walk.timing.totalDurationMs, 960);
+  assert.equal(walk.timing.rootMotion.cyclePx, 24);
+  assert.deepEqual(walk.bridge.geometry.layers['far-boot'], source.geometry.layers['far-boot']);
+  assert.deepEqual(walk.frames.map(frame => frame.material.final), unpackAnimationStrip(walk.sheet, walk.timing));
+  for (const [i, frame] of walk.frames.entries()) {
+    assert.deepEqual(frame.geometry.spec.proportions, source.geometry.spec.proportions);
+    assert.equal(frame.lock.gripAnchor, null);
+    assert.ok(frame.lock.bodyParts.satchel.pixels > 0 && frame.lock.bodyParts.strap.pixels > 0);
+    assert.equal(walk.qa.transitions[i].flicker.length, 0);
+    for (const contact of walk.qa.transitions[i].contacts) {
+      if (contact.plantedDelta) assert.deepEqual(contact.plantedDelta, [0, 0]);
+    }
+  }
+  assert.ok(new Set(walk.frames.map(frame => frame.geometry.spec.pose.near.palm.join(','))).size > 2);
+  assert.ok(new Set(walk.frames.map(frame => frame.geometry.spec.pose.far.palm.join(','))).size > 2);
+});

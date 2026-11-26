@@ -2,6 +2,7 @@
 
 ## Current checkpoint
 
+- [E5.3 art and runtime gallery](LumaSprite-Engine-E5.3-Report.html), [playback harness](LumaSprite-Engine-E5.3-Runtime.html) and [artistic quality gate](e53-quality-review.md#artistic-quality-gate).
 - [R0 project audit and cleanup](r0-project-audit.md) and [regression record](r0-regression.md).
 - [R&D experiment plan](../research/open-source/README.md). W2 Expressive Walk is the research reference and W1 is the control.
 - [E5.2 walk gallery](LumaSprite-Engine-E5.2-Report.html), [W1/W2 packages](../benchmarks/results/e52/README.md) and [motion and root contract](architecture/e52-walk-motion.md).
