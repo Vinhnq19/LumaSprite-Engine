@@ -1,8 +1,12 @@
 # Handoff
 
-**E7.1R is E7_1R_READY_FOR_HUMAN_ART_REVIEW.** Bonded Fracture is an isolated architectural candidate. R1 and H1 compare against production and Q. The fresh H2 includes both retained control and candidate for day/night. H2's tall wall reads more clearly at 1×, and the low parapet changes little. [Report index](docs/reports/INDEX.md) · [Gallery](docs/reports/E7.1R-Ruin-Structure.html) · [Geometry audit and QA](docs/reports/e71r-structure-and-qa.md)
+**E7.2-A is E7_2A_READY_FOR_HUMAN_MATERIAL_REVIEW.** M0 reproduces Relay A1. M1 uses the same geometry with a timber housing, metal edges and connected amber display. Ridge Survey Receiver is the fresh material holdout. Both retain the box-like shape at native scale. [Material gallery](docs/reports/E7.2-A-Relay-Material.html) · [QA and E7.2-B proposal](docs/reports/e72a-material-and-qa.md) · [Report index](docs/reports/INDEX.md)
 
-**E7.1 artistic closeout.** The Project Owner selected Relay A1 for a material study, marked R1 Q research-only and requested revision of H1 Q. Production remains on the accepted baselines. E7.2 awaits approval. [Artistic Decision Record](docs/reports/e71-artistic-decision.md)
+**E7.1R art remains HUMAN_ART_REVIEW_PENDING.** The review pack includes ten Workbench pairs and day/night occlusion views for R1, H1 and H2. [Human Review Pack](docs/reports/e71r-human-review.md)
+
+**E7.1R structure evidence.** Bonded Fracture is an isolated architectural candidate. R1 and H1 compare against production and Q. The fresh H2 includes both retained control and candidate for day/night. H2's tall wall reads more clearly at 1×, and the low parapet changes little. [Report index](docs/reports/INDEX.md) · [Gallery](docs/reports/E7.1R-Ruin-Structure.html) · [Geometry audit and QA](docs/reports/e71r-structure-and-qa.md)
+
+**E7.1 artistic closeout.** The Project Owner selected Relay A1 for a material study, marked R1 Q research-only and requested revision of H1 Q. Production remains on the accepted baselines. E7.2-A is complete and E7.2-B awaits approval. [Artistic Decision Record](docs/reports/e71-artistic-decision.md)
 
 **E7.1 technical handoff.** Relay Box A0/A1 and Ruin Structure Q are available at native 1× and nearest 4× with masks and a downloadable review sheet. H1 is the frozen holdout for an independent art review. Engine passed 73 tests and reproduced all 79 E7.1 payloads. Studio preserved six pilot PNGs. E7.2 requires owner approval. [Offline gallery](docs/LumaSprite-Engine-E7.1-Report.html) · [QA and handoff](docs/e71-structure-quality.md) · [Quality Contract v1](docs/art-quality/quality-contract-v1.md)
 

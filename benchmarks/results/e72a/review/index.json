@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "reviews": [
+    {
+      "id": "relay",
+      "family": "prop",
+      "baseline": "benchmarks/results/e72a/relay/m0/native.png",
+      "candidate": "benchmarks/results/e72a/relay/m1/native.png",
+      "file": "benchmarks/results/e72a/review/relay.workbench.json"
+    },
+    {
+      "id": "receiver",
+      "family": "prop",
+      "baseline": "benchmarks/results/e72a/receiver/m0/native.png",
+      "candidate": "benchmarks/results/e72a/receiver/m1/native.png",
+      "file": "benchmarks/results/e72a/review/receiver.workbench.json"
+    },
+    {
+      "id": "r1-day-q",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/r1/day/current/native.png",
+      "candidate": "benchmarks/results/e71/ruin/r1/day/candidate/native.png",
+      "file": "benchmarks/results/e71r/review/r1-q.workbench.json"
+    },
+    {
+      "id": "r1-day-bonded",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/r1/day/current/native.png",
+      "candidate": "benchmarks/results/e71r/r1/day/bonded/native.png",
+      "file": "benchmarks/results/e72a/review/r1-day-bonded.workbench.json"
+    },
+    {
+      "id": "r1-night-q",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/r1/night/current/native.png",
+      "candidate": "benchmarks/results/e71/ruin/r1/night/candidate/native.png",
+      "file": "benchmarks/results/e72a/review/r1-night-q.workbench.json"
+    },
+    {
+      "id": "r1-night-bonded",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/r1/night/current/native.png",
+      "candidate": "benchmarks/results/e71r/r1/night/bonded/native.png",
+      "file": "benchmarks/results/e72a/review/r1-night-bonded.workbench.json"
+    },
+    {
+      "id": "h1-day-q",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/h1/day/current/native.png",
+      "candidate": "benchmarks/results/e71/ruin/h1/day/candidate/native.png",
+      "file": "benchmarks/results/e71r/review/h1-q.workbench.json"
+    },
+    {
+      "id": "h1-day-bonded",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/h1/day/current/native.png",
+      "candidate": "benchmarks/results/e71r/h1/day/bonded/native.png",
+      "file": "benchmarks/results/e72a/review/h1-day-bonded.workbench.json"
+    },
+    {
+      "id": "h1-night-q",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/h1/night/current/native.png",
+      "candidate": "benchmarks/results/e71/ruin/h1/night/candidate/native.png",
+      "file": "benchmarks/results/e72a/review/h1-night-q.workbench.json"
+    },
+    {
+      "id": "h1-night-bonded",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71/ruin/h1/night/current/native.png",
+      "candidate": "benchmarks/results/e71r/h1/night/bonded/native.png",
+      "file": "benchmarks/results/e72a/review/h1-night-bonded.workbench.json"
+    },
+    {
+      "id": "h2-day-bonded",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71r/h2/day/control/native.png",
+      "candidate": "benchmarks/results/e71r/h2/day/bonded/native.png",
+      "file": "benchmarks/results/e71r/review/h2-bonded.workbench.json"
+    },
+    {
+      "id": "h2-night-bonded",
+      "family": "environment",
+      "baseline": "benchmarks/results/e71r/h2/night/control/native.png",
+      "candidate": "benchmarks/results/e71r/h2/night/bonded/native.png",
+      "file": "benchmarks/results/e72a/review/h2-night-bonded.workbench.json"
+    }
+  ]
+}

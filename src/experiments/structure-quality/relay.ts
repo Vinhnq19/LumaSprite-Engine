@@ -47,35 +47,59 @@ function relayStructure(spec:Relay,variant:'a0'|'a1'):RelayStructure {
     contact:[x+Math.floor(width/2),bottom+3] as const, glint:spec.seed%2};
 }
 
-export async function renderRelay(raw:unknown,variant:'a0'|'a1'){
+export async function renderRelay(raw:unknown,variant:'a0'|'a1',look:'current'|'readout'='current'){
   const spec=relaySpec.parse(raw), structure=relayStructure(spec,variant);
   const style=artStyleProfileSchema.parse(JSON.parse((await pinnedFile(spec.sourceStyle)).toString('utf8')));
   const theme=style.illumination.day, factory=materialPiece(theme);
   const finish=(flat:boolean)=>factory(32,32,structure.contact,(paint,patch)=>{
-    const block=(src:Volume,role:'wood'|'metal')=>{
+    const refined=look==='readout'&&!flat;
+    const block=(src:Volume,role:'wood'|'metal',housing=false)=>{
       const f=projectBox(src);
-      paint(role,0,f.side);
-      paint(role,1,f.front);
+      const timber=refined&&housing;
+      paint(timber?'wood':role,timber?1:0,f.side);
+      paint(timber?'wood':role,timber?2:1,f.front);
       paint(role,2,f.top);
       if(flat)return;
-      patch(role,3,f.top,0.06,0.05,0.8,0.21);
+      if(refined){
+        if(role==='metal')patch('metal',3,f.top,.06,0,.76,.24);
+        patch(timber?'wood':role,0,f.front,0,.83,1,1);
+        if(timber){
+          patch('wood',0,f.side,0,.65,1,1);
+          patch('metal',1,f.front,0,0,.12,1);
+          patch('metal',1,f.front,.88,0,1,1);
+          patch('metal',0,f.side,0,0,.22,1);
+          patch('metal',0,f.side,.84,0,1,1);
+          patch('metal',2,f.front,0,0,1,.18);
+        }
+        return;
+      }
+      patch(role,3,f.top,.06,.05,.8,.21);
       patch(role,0,f.front,0,.83,1,1);
       patch(role,2,f.front,.07,.13,.16,.7);
     };
     structure.skids.forEach(s=>block(s,'wood'));
-    block(structure.box,'metal');
+    block(structure.box,'metal',true);
     structure.shoulder.forEach(s=>block(s,'metal'));
     const f=projectBox(structure.box);
-    patch('wood',0,f.side,.05,.72,1,.94);
-    patch('wood',2,f.front,.03,.72,.97,.9);
     const [l,t]=structure.window[0], [r,b]=structure.window[2];
-    paint('metal',0,structure.window);
-    paint('amber',flat?2:3,rect(l+2+structure.glint,t+1,l+3+structure.glint,b-1));
-    paint('amber',2,rect(l+4,t+1,r-2,t+2));
-    if(!flat){
-      paint('metal',3,rect(l,t-1,r-2,t));
-      paint('wood',3,rect(l-2,b+2,r-2,b+3));
-      paint('metal',2,rect(l-2,t+1,l-1,t+2));
+    if(refined){
+      // The recessed plane carries a continuous display and a dim terminal on the far side.
+      paint('metal',0,structure.window);
+      paint('amber',2,rect(l+1,t+1,r-1,b-1));
+      paint('amber',3,rect(l+1,t+1,l+4,t+2));
+      paint('amber',1,rect(r-3,t+1,r-1,b-1));
+      paint('metal',1,rect(l,t-1,r,t));
+    }else{
+      patch('wood',0,f.side,.05,.72,1,.94);
+      patch('wood',2,f.front,.03,.72,.97,.9);
+      paint('metal',0,structure.window);
+      paint('amber',flat?2:3,rect(l+2+structure.glint,t+1,l+3+structure.glint,b-1));
+      paint('amber',2,rect(l+4,t+1,r-2,t+2));
+      if(!flat){
+        paint('metal',3,rect(l,t-1,r-2,t));
+        paint('wood',3,rect(l-2,b+2,r-2,b+3));
+        paint('metal',2,rect(l-2,t+1,l-1,t+2));
+      }
     }
   });
   const ink=pack(theme.contour), flat=finish(true);

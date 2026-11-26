@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "checkpoint": "ee8a4c9",
+  "variants": [
+    {
+      "layout": "r1",
+      "light": "day",
+      "variant": "production",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/r1/day/current/native.png",
+        "flat": "benchmarks/results/e71/ruin/r1/day/current/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/r1/day/current/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/r1/day/current/material.png",
+        "contour": "benchmarks/results/e71/ruin/r1/day/current/contour.png",
+        "collision": "benchmarks/results/e71/ruin/r1/day/current/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/r1/day/current/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/r1/day/production/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 12
+      }
+    },
+    {
+      "layout": "r1",
+      "light": "day",
+      "variant": "q",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/r1/day/candidate/native.png",
+        "flat": "benchmarks/results/e71/ruin/r1/day/candidate/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/r1/day/candidate/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/r1/day/candidate/material.png",
+        "contour": "benchmarks/results/e71/ruin/r1/day/candidate/contour.png",
+        "collision": "benchmarks/results/e71/ruin/r1/day/candidate/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/r1/day/candidate/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/r1/day/q/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 4
+      }
+    },
+    {
+      "layout": "r1",
+      "light": "day",
+      "variant": "bonded",
+      "paths": {
+        "native": "benchmarks/results/e71r/r1/day/bonded/native.png",
+        "flat": "benchmarks/results/e71r/r1/day/bonded/flat.png",
+        "silhouette": "benchmarks/results/e71r/r1/day/bonded/silhouette.png",
+        "material": "benchmarks/results/e71r/r1/day/bonded/material.png",
+        "contour": "benchmarks/results/e71r/r1/day/bonded/contour.png",
+        "collision": "benchmarks/results/e71r/r1/day/bonded/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/r1/day/bonded/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/r1/day/bonded/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 4
+      }
+    },
+    {
+      "layout": "r1",
+      "light": "night",
+      "variant": "production",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/r1/night/current/native.png",
+        "flat": "benchmarks/results/e71/ruin/r1/night/current/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/r1/night/current/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/r1/night/current/material.png",
+        "contour": "benchmarks/results/e71/ruin/r1/night/current/contour.png",
+        "collision": "benchmarks/results/e71/ruin/r1/night/current/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/r1/night/current/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/r1/night/production/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 12
+      }
+    },
+    {
+      "layout": "r1",
+      "light": "night",
+      "variant": "q",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/r1/night/candidate/native.png",
+        "flat": "benchmarks/results/e71/ruin/r1/night/candidate/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/r1/night/candidate/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/r1/night/candidate/material.png",
+        "contour": "benchmarks/results/e71/ruin/r1/night/candidate/contour.png",
+        "collision": "benchmarks/results/e71/ruin/r1/night/candidate/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/r1/night/candidate/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/r1/night/q/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 4
+      }
+    },
+    {
+      "layout": "r1",
+      "light": "night",
+      "variant": "bonded",
+      "paths": {
+        "native": "benchmarks/results/e71r/r1/night/bonded/native.png",
+        "flat": "benchmarks/results/e71r/r1/night/bonded/flat.png",
+        "silhouette": "benchmarks/results/e71r/r1/night/bonded/silhouette.png",
+        "material": "benchmarks/results/e71r/r1/night/bonded/material.png",
+        "contour": "benchmarks/results/e71r/r1/night/bonded/contour.png",
+        "collision": "benchmarks/results/e71r/r1/night/bonded/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/r1/night/bonded/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/r1/night/bonded/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 4
+      }
+    },
+    {
+      "layout": "h1",
+      "light": "day",
+      "variant": "production",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/h1/day/current/native.png",
+        "flat": "benchmarks/results/e71/ruin/h1/day/current/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/h1/day/current/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/h1/day/current/material.png",
+        "contour": "benchmarks/results/e71/ruin/h1/day/current/contour.png",
+        "collision": "benchmarks/results/e71/ruin/h1/day/current/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/h1/day/current/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h1/day/production/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 143
+      }
+    },
+    {
+      "layout": "h1",
+      "light": "day",
+      "variant": "q",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/h1/day/candidate/native.png",
+        "flat": "benchmarks/results/e71/ruin/h1/day/candidate/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/h1/day/candidate/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/h1/day/candidate/material.png",
+        "contour": "benchmarks/results/e71/ruin/h1/day/candidate/contour.png",
+        "collision": "benchmarks/results/e71/ruin/h1/day/candidate/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/h1/day/candidate/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h1/day/q/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 143
+      }
+    },
+    {
+      "layout": "h1",
+      "light": "day",
+      "variant": "bonded",
+      "paths": {
+        "native": "benchmarks/results/e71r/h1/day/bonded/native.png",
+        "flat": "benchmarks/results/e71r/h1/day/bonded/flat.png",
+        "silhouette": "benchmarks/results/e71r/h1/day/bonded/silhouette.png",
+        "material": "benchmarks/results/e71r/h1/day/bonded/material.png",
+        "contour": "benchmarks/results/e71r/h1/day/bonded/contour.png",
+        "collision": "benchmarks/results/e71r/h1/day/bonded/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/h1/day/bonded/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h1/day/bonded/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 143
+      }
+    },
+    {
+      "layout": "h1",
+      "light": "night",
+      "variant": "production",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/h1/night/current/native.png",
+        "flat": "benchmarks/results/e71/ruin/h1/night/current/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/h1/night/current/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/h1/night/current/material.png",
+        "contour": "benchmarks/results/e71/ruin/h1/night/current/contour.png",
+        "collision": "benchmarks/results/e71/ruin/h1/night/current/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/h1/night/current/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h1/night/production/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 143
+      }
+    },
+    {
+      "layout": "h1",
+      "light": "night",
+      "variant": "q",
+      "paths": {
+        "native": "benchmarks/results/e71/ruin/h1/night/candidate/native.png",
+        "flat": "benchmarks/results/e71/ruin/h1/night/candidate/flat.png",
+        "silhouette": "benchmarks/results/e71/ruin/h1/night/candidate/silhouette.png",
+        "material": "benchmarks/results/e71/ruin/h1/night/candidate/material.png",
+        "contour": "benchmarks/results/e71/ruin/h1/night/candidate/contour.png",
+        "collision": "benchmarks/results/e71/ruin/h1/night/candidate/collision.png",
+        "nearest4x": "benchmarks/results/e71/ruin/h1/night/candidate/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h1/night/q/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 143
+      }
+    },
+    {
+      "layout": "h1",
+      "light": "night",
+      "variant": "bonded",
+      "paths": {
+        "native": "benchmarks/results/e71r/h1/night/bonded/native.png",
+        "flat": "benchmarks/results/e71r/h1/night/bonded/flat.png",
+        "silhouette": "benchmarks/results/e71r/h1/night/bonded/silhouette.png",
+        "material": "benchmarks/results/e71r/h1/night/bonded/material.png",
+        "contour": "benchmarks/results/e71r/h1/night/bonded/contour.png",
+        "collision": "benchmarks/results/e71r/h1/night/bonded/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/h1/night/bonded/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h1/night/bonded/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 143
+      }
+    },
+    {
+      "layout": "h2",
+      "light": "day",
+      "variant": "production",
+      "paths": {
+        "native": "benchmarks/results/e71r/h2/day/control/native.png",
+        "flat": "benchmarks/results/e71r/h2/day/control/flat.png",
+        "silhouette": "benchmarks/results/e71r/h2/day/control/silhouette.png",
+        "material": "benchmarks/results/e71r/h2/day/control/material.png",
+        "contour": "benchmarks/results/e71r/h2/day/control/contour.png",
+        "collision": "benchmarks/results/e71r/h2/day/control/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/h2/day/production/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h2/day/production/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 237
+      }
+    },
+    {
+      "layout": "h2",
+      "light": "day",
+      "variant": "bonded",
+      "paths": {
+        "native": "benchmarks/results/e71r/h2/day/bonded/native.png",
+        "flat": "benchmarks/results/e71r/h2/day/bonded/flat.png",
+        "silhouette": "benchmarks/results/e71r/h2/day/bonded/silhouette.png",
+        "material": "benchmarks/results/e71r/h2/day/bonded/material.png",
+        "contour": "benchmarks/results/e71r/h2/day/bonded/contour.png",
+        "collision": "benchmarks/results/e71r/h2/day/bonded/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/h2/day/bonded/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h2/day/bonded/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 237
+      }
+    },
+    {
+      "layout": "h2",
+      "light": "night",
+      "variant": "production",
+      "paths": {
+        "native": "benchmarks/results/e71r/h2/night/control/native.png",
+        "flat": "benchmarks/results/e71r/h2/night/control/flat.png",
+        "silhouette": "benchmarks/results/e71r/h2/night/control/silhouette.png",
+        "material": "benchmarks/results/e71r/h2/night/control/material.png",
+        "contour": "benchmarks/results/e71r/h2/night/control/contour.png",
+        "collision": "benchmarks/results/e71r/h2/night/control/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/h2/night/production/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h2/night/production/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 237
+      }
+    },
+    {
+      "layout": "h2",
+      "light": "night",
+      "variant": "bonded",
+      "paths": {
+        "native": "benchmarks/results/e71r/h2/night/bonded/native.png",
+        "flat": "benchmarks/results/e71r/h2/night/bonded/flat.png",
+        "silhouette": "benchmarks/results/e71r/h2/night/bonded/silhouette.png",
+        "material": "benchmarks/results/e71r/h2/night/bonded/material.png",
+        "contour": "benchmarks/results/e71r/h2/night/bonded/contour.png",
+        "collision": "benchmarks/results/e71r/h2/night/bonded/collision.png",
+        "nearest4x": "benchmarks/results/e72a/ruin-review/h2/night/bonded/native-4x.png",
+        "occlusion": "benchmarks/results/e72a/ruin-review/h2/night/bonded/occlusion.png"
+      },
+      "overlap": {
+        "actorVisible": 2069,
+        "architectureAboveAnotherLayer": 237
+      }
+    }
+  ],
+  "legend": {
+    "actor": "#94e4bd",
+    "architectureOverlap": "#f9bb51",
+    "base": "scene RGB × 0.45"
+  },
+  "sourceSha256": {
+    "benchmarks/results/e71/ruin/r1/day/current/native.png": "186f2aa4d960151facdf665f8ac7c9f6d64af0928ea239df987075a0c6e6bf7c",
+    "benchmarks/results/e71/ruin/r1/day/current/flat.png": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90",
+    "benchmarks/results/e71/ruin/r1/day/current/silhouette.png": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7",
+    "benchmarks/results/e71/ruin/r1/day/current/material.png": "ff644738d7e85aeebdf592ea08e7d6ab92506d40804940e13f9b7857bd861172",
+    "benchmarks/results/e71/ruin/r1/day/current/contour.png": "8636a5da0a7a18ad0c9fa1000950202ef491d50e346f4f4b437b7beb57456350",
+    "benchmarks/results/e71/ruin/r1/day/current/collision.png": "5320bb2fcbdbbe4ec410504361d46d929d245b2219df0c6b6b37bb3743817e3a",
+    "benchmarks/results/e71/ruin/r1/day/current/native-4x.png": "6502b735eeaacfac447527d35d3766aa08de048399964033ecf5dd49a9e05500",
+    "benchmarks/results/e71/ruin/r1/day/candidate/native.png": "b5cc2cc91b4827e52f72c4472c892a729f122038cbd9afd3abd1b36f8b2066ad",
+    "benchmarks/results/e71/ruin/r1/day/candidate/flat.png": "b7faadf3b2334b7cf4275e3ac72713152e5c1bb38fb18ed78e04642d83c5cae7",
+    "benchmarks/results/e71/ruin/r1/day/candidate/silhouette.png": "a8db18a44d67fbf808aeccef221d4d1ddc20f161cfc02be08533996149478283",
+    "benchmarks/results/e71/ruin/r1/day/candidate/material.png": "fc1ddff1b3d81097e38b683e508f7fedd095d14677d49815ffb50b591783179f",
+    "benchmarks/results/e71/ruin/r1/day/candidate/contour.png": "a15ff1c006fc47df907e34b9f0ac095f7c69628e89d02308a2a5c7df86618d3d",
+    "benchmarks/results/e71/ruin/r1/day/candidate/collision.png": "438be5b848b5993147fa49b9bb22b761f2ec118e33b094b238f5303ecece89b3",
+    "benchmarks/results/e71/ruin/r1/day/candidate/native-4x.png": "0cb71ca0e1c0ab42fd78d9c83d1333d4ce8779c4991f7291773cd3aff1428b3b",
+    "benchmarks/results/e71r/r1/day/bonded/native.png": "b82d9ba01954771286b0e249deb9aa215439e2b9b60a8800a72038e40dc0f698",
+    "benchmarks/results/e71r/r1/day/bonded/flat.png": "18a45b0981936b6e03ad06e6b70ce7830fff005768040a11816f3d41b24e0b0d",
+    "benchmarks/results/e71r/r1/day/bonded/silhouette.png": "e52b7c95d5a39755ecd07bfc63e4092c00a66e49bb7c8125693cbf5996726c50",
+    "benchmarks/results/e71r/r1/day/bonded/material.png": "67060f9a557f005c41d05be56e7bd375c9fd6dbd584bfb3a38d4c31705c120de",
+    "benchmarks/results/e71r/r1/day/bonded/contour.png": "45a796b8ddb0fdb13895c0d1e37a1f0e9ddb52f2343e864b232110e8e1268a79",
+    "benchmarks/results/e71r/r1/day/bonded/collision.png": "122335c4832f5497050b530c62e8e775a6862624644be2881cb100ac4db29be0",
+    "benchmarks/results/e71/ruin/r1/night/current/native.png": "7ff1b8cb5f6d64b991a18ccbe87abf3d8eb27e1afbb232dc985d49338553e917",
+    "benchmarks/results/e71/ruin/r1/night/current/flat.png": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90",
+    "benchmarks/results/e71/ruin/r1/night/current/silhouette.png": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7",
+    "benchmarks/results/e71/ruin/r1/night/current/material.png": "eee4d64bcc3ac4d316b23c9dd9d106d8a45ecb2c9825aa23b028c2e39152a12d",
+    "benchmarks/results/e71/ruin/r1/night/current/contour.png": "3644b639e9e834d7f7660944e74fd7dfd5428ce452176032ef408857e9560a1f",
+    "benchmarks/results/e71/ruin/r1/night/current/collision.png": "576839bec9cbe2be9c4f957af82376167c4fff40ddb6bf5f739fcbcb08be9585",
+    "benchmarks/results/e71/ruin/r1/night/current/native-4x.png": "d643846707336422de44df36ec6382b302fd7eeecc4e0989d1b65ead806fd04c",
+    "benchmarks/results/e71/ruin/r1/night/candidate/native.png": "e9a20313a76aae25a05045477ac5d23ee54d3f1c5de571d47176a1e547f47429",
+    "benchmarks/results/e71/ruin/r1/night/candidate/flat.png": "b7faadf3b2334b7cf4275e3ac72713152e5c1bb38fb18ed78e04642d83c5cae7",
+    "benchmarks/results/e71/ruin/r1/night/candidate/silhouette.png": "a8db18a44d67fbf808aeccef221d4d1ddc20f161cfc02be08533996149478283",
+    "benchmarks/results/e71/ruin/r1/night/candidate/material.png": "efef069f0eccf7e6c9fa7e0dc3da712b6e65053fa5c8264f18228d2fd7e3b294",
+    "benchmarks/results/e71/ruin/r1/night/candidate/contour.png": "e84589a20ee70ed5dcdea24c2c60f4030382e3383527704553c38ce9759b0564",
+    "benchmarks/results/e71/ruin/r1/night/candidate/collision.png": "40d21cf43ae458cfa67aba1a2e4a5f15ae2bf62884e1d3ce1166da95c391b2af",
+    "benchmarks/results/e71/ruin/r1/night/candidate/native-4x.png": "a060996811192c3e249aaaf0fc10c015368c2c75004a0e284930ec8a3efef88e",
+    "benchmarks/results/e71r/r1/night/bonded/native.png": "8cc978232c304aec58a8b5587926d03e989fb00cff8a8b04a994cb101a1cbac9",
+    "benchmarks/results/e71r/r1/night/bonded/flat.png": "18a45b0981936b6e03ad06e6b70ce7830fff005768040a11816f3d41b24e0b0d",
+    "benchmarks/results/e71r/r1/night/bonded/silhouette.png": "e52b7c95d5a39755ecd07bfc63e4092c00a66e49bb7c8125693cbf5996726c50",
+    "benchmarks/results/e71r/r1/night/bonded/material.png": "271fed78960a786fa47f63f9db1180ee404a84b65645a8df6c4021a8fc10b4f1",
+    "benchmarks/results/e71r/r1/night/bonded/contour.png": "34afb6b7b7a329cea11bc61a44503ec403f891fc2e74c0dd2a8fdd229c57a12c",
+    "benchmarks/results/e71r/r1/night/bonded/collision.png": "7ac76e780bcd5ef5f9b6321e8825cf68261c310f5fab86cc5028cea3a27999fb",
+    "benchmarks/results/e71/ruin/h1/day/current/native.png": "10776ca5c5eda803fab9db71780dc9afaf80dba83d04d8ebac0f05af4f2ee561",
+    "benchmarks/results/e71/ruin/h1/day/current/flat.png": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d",
+    "benchmarks/results/e71/ruin/h1/day/current/silhouette.png": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986",
+    "benchmarks/results/e71/ruin/h1/day/current/material.png": "6907898d111da9216f9d572ca61b6e93bdda5b1d68d789557e3ae40df9ad1fa9",
+    "benchmarks/results/e71/ruin/h1/day/current/contour.png": "bc73e61bae739432120239d6a37800e5b581c4d89e4baa7f5173d61bf3d79864",
+    "benchmarks/results/e71/ruin/h1/day/current/collision.png": "2c15c308f611fd53dbe8ea71f08284ba0064124cddc170c8af52a8a4e6381bed",
+    "benchmarks/results/e71/ruin/h1/day/current/native-4x.png": "73ba0b1c31e7ab69cb130252210b3db46f479f1d7bd2224a927dadf15ff171a6",
+    "benchmarks/results/e71/ruin/h1/day/candidate/native.png": "e49c877e1e89972a236eae08cf91326d600b7cff83d9d1971eab2ef5680c3318",
+    "benchmarks/results/e71/ruin/h1/day/candidate/flat.png": "a5091d6437f43babef84124f90ea097bc928f1f4ed88180c6b99c057dbb5f8bd",
+    "benchmarks/results/e71/ruin/h1/day/candidate/silhouette.png": "739f6c3610a8e499d3e663aae1ed242a83e6ecb84b9a4544026f2fa07db2b5fb",
+    "benchmarks/results/e71/ruin/h1/day/candidate/material.png": "0cdf890c195f0bd50b708a8c246114c51f08d24da05a6825998141740755d097",
+    "benchmarks/results/e71/ruin/h1/day/candidate/contour.png": "0931c1b57a45b584bd641e5a5a6eb920e138633142f43f1f82cfd1b5d25b2ccf",
+    "benchmarks/results/e71/ruin/h1/day/candidate/collision.png": "52df9d0a11f1b7c740464bd21272337c38ac16049e9c35739610bdb4ba1dbbc0",
+    "benchmarks/results/e71/ruin/h1/day/candidate/native-4x.png": "e221748624199ec3619f14d9369f08e123317aecc761ddafc61390b0d0821b50",
+    "benchmarks/results/e71r/h1/day/bonded/native.png": "3a00918cc40452d0fa77f1024835723eb21ae67fb33c6bcdb4c7cbabd6f78238",
+    "benchmarks/results/e71r/h1/day/bonded/flat.png": "180dcd6229db3fdfb2cd1f29ddd58b231bd31cdd6b38fb9ece74ffa285c5d41f",
+    "benchmarks/results/e71r/h1/day/bonded/silhouette.png": "47267e9818470e175e56e3aa01a8158897d87cdf7719abe71f17941014abb54d",
+    "benchmarks/results/e71r/h1/day/bonded/material.png": "30f54101fab2e689c1c3600f8e6fc8aff8a34cd50bb96655b6b2abbd04494312",
+    "benchmarks/results/e71r/h1/day/bonded/contour.png": "064f5f202e2ce58a627bbfe0b660da052c257e050422554ea75ee6b8f3103c1e",
+    "benchmarks/results/e71r/h1/day/bonded/collision.png": "52aabd487869d2622176760f1ba9a2860aeddc69f453286884498d210c8e5e7f",
+    "benchmarks/results/e71/ruin/h1/night/current/native.png": "321e05952d823c3803e8d75e8da3e2dc429338d8e501241b9868248c076efd3d",
+    "benchmarks/results/e71/ruin/h1/night/current/flat.png": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d",
+    "benchmarks/results/e71/ruin/h1/night/current/silhouette.png": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986",
+    "benchmarks/results/e71/ruin/h1/night/current/material.png": "2701989a8e4e737d589921e79041c434d9a41ef4487e278d6da3766956254ddf",
+    "benchmarks/results/e71/ruin/h1/night/current/contour.png": "d43439d1b8bcfedb5e3c414b02ed54d1403d4be9439d03652e736bb1ae879199",
+    "benchmarks/results/e71/ruin/h1/night/current/collision.png": "e02e726d5a1a48214d326daad9ff494c502e3f387d73d9935f8b096e3b2e47b5",
+    "benchmarks/results/e71/ruin/h1/night/current/native-4x.png": "d95c9e59aeba6ac493dd70fd8c5a4683b45f3d760110b3367edb7aba892db477",
+    "benchmarks/results/e71/ruin/h1/night/candidate/native.png": "2b45ff7ecf4bcc879dd92debeb83c10ab36fa8dbd2b5436c80c545da181988d4",
+    "benchmarks/results/e71/ruin/h1/night/candidate/flat.png": "a5091d6437f43babef84124f90ea097bc928f1f4ed88180c6b99c057dbb5f8bd",
+    "benchmarks/results/e71/ruin/h1/night/candidate/silhouette.png": "739f6c3610a8e499d3e663aae1ed242a83e6ecb84b9a4544026f2fa07db2b5fb",
+    "benchmarks/results/e71/ruin/h1/night/candidate/material.png": "0cfc038d5aa0c1dbdef74afeb80bc16309c6340bfced0427f32ff8177314b1ae",
+    "benchmarks/results/e71/ruin/h1/night/candidate/contour.png": "c63a0a8e6e045fafaa247f549636299e11bd934930f347f3f690e4183178b30d",
+    "benchmarks/results/e71/ruin/h1/night/candidate/collision.png": "e406fde938b09e90a63b03ba36cbc38624e165291c79005fd6a33d100d98f55f",
+    "benchmarks/results/e71/ruin/h1/night/candidate/native-4x.png": "17a21b4c01a0c6b54af22d416b535ac9b2b7ee2894e6dc7aa80c42de05a3a0ed",
+    "benchmarks/results/e71r/h1/night/bonded/native.png": "3c08bba54495c73683b8460bec559bf010ca08759bbe84da44139e96456149b3",
+    "benchmarks/results/e71r/h1/night/bonded/flat.png": "180dcd6229db3fdfb2cd1f29ddd58b231bd31cdd6b38fb9ece74ffa285c5d41f",
+    "benchmarks/results/e71r/h1/night/bonded/silhouette.png": "47267e9818470e175e56e3aa01a8158897d87cdf7719abe71f17941014abb54d",
+    "benchmarks/results/e71r/h1/night/bonded/material.png": "9b2561bc61f0e07ed92cce8d9a9af2ebfecd6c5f567658ed3615e985f15e79ce",
+    "benchmarks/results/e71r/h1/night/bonded/contour.png": "e5922d7c8052665bb1768a943329afeaeabcfbfcad7fb4a8f162ac0a0cc90846",
+    "benchmarks/results/e71r/h1/night/bonded/collision.png": "d2997e8af20a14490e0774cfa8ebfb0c7463123df4fe2887e43b68bd9274cf6d",
+    "benchmarks/results/e71r/h2/day/control/native.png": "987f37b50646d1cfca0f60368a66f2cbbee572dcd60a38376b92ab99b2b3aa7c",
+    "benchmarks/results/e71r/h2/day/control/flat.png": "3d8e5c7413fb7dccaa745674ed13842865e5267260844c32151a2abda1f8246f",
+    "benchmarks/results/e71r/h2/day/control/silhouette.png": "7f1dcfba9ea05c8011c8128583e2be22634cb19c0bab59c9fb2b79a6458be28e",
+    "benchmarks/results/e71r/h2/day/control/material.png": "d6d186c31c9da0b9377ff6ecd453814c15cce93b83733048b863bfcbabae8fdb",
+    "benchmarks/results/e71r/h2/day/control/contour.png": "42d8a3db02664d3533163fe346bddbb3ce2ab5c0eea88c5353708e31836b3189",
+    "benchmarks/results/e71r/h2/day/control/collision.png": "f33a024c66aa651b29ba86e61d7182c5cf1b5c8695ab95968b1d7d9fa99dce82",
+    "benchmarks/results/e71r/h2/day/bonded/native.png": "78a92e9fb6cdcafb06efa6ecb3253b688b5753c6c82e4a6e211aa08e2cce0fac",
+    "benchmarks/results/e71r/h2/day/bonded/flat.png": "d2ccea6d7746c4ad96f9c2a7303b11b21b35f8752d7ec2dc85b37ec2fc49a6b1",
+    "benchmarks/results/e71r/h2/day/bonded/silhouette.png": "2fe9217f0ecdcfbb3bc9ee96c37c69165a27ae1fa46db3710c32284a5781e03c",
+    "benchmarks/results/e71r/h2/day/bonded/material.png": "b282636e24adc0673f961d76e7d1525fed567d2a8841bebd33f18678945af926",
+    "benchmarks/results/e71r/h2/day/bonded/contour.png": "cfec8f1af5f62d307b9dcb890afd47d3fcfe29c0db3cd3691bf861175b2bffd2",
+    "benchmarks/results/e71r/h2/day/bonded/collision.png": "934094efcff25939ebc83a89fb0f56bcd6bc129467cead9b8eda0f52c187adc2",
+    "benchmarks/results/e71r/h2/night/control/native.png": "4d4b360dad53e843f7200e6c177d90d78bafb6165d1694fa0d4ea44f3cee2e96",
+    "benchmarks/results/e71r/h2/night/control/flat.png": "3d8e5c7413fb7dccaa745674ed13842865e5267260844c32151a2abda1f8246f",
+    "benchmarks/results/e71r/h2/night/control/silhouette.png": "7f1dcfba9ea05c8011c8128583e2be22634cb19c0bab59c9fb2b79a6458be28e",
+    "benchmarks/results/e71r/h2/night/control/material.png": "3a58e21c5cb70a205702e06d90d37cdefa5508d58453d8bd6585697941ef11cc",
+    "benchmarks/results/e71r/h2/night/control/contour.png": "2b8ac0587e6446eeb7bae504751300e5d9ad8e065f93cd412582bd25c52a75c4",
+    "benchmarks/results/e71r/h2/night/control/collision.png": "3fad4a4f635bbc0f675904a7f2f6e5ec8e18551d3e398202bdd4fc6eba480ec8",
+    "benchmarks/results/e71r/h2/night/bonded/native.png": "78b31ba1e7535371eeb475b267af96ce726e0328a61f63113a2b3ae1ffccf6bd",
+    "benchmarks/results/e71r/h2/night/bonded/flat.png": "d2ccea6d7746c4ad96f9c2a7303b11b21b35f8752d7ec2dc85b37ec2fc49a6b1",
+    "benchmarks/results/e71r/h2/night/bonded/silhouette.png": "2fe9217f0ecdcfbb3bc9ee96c37c69165a27ae1fa46db3710c32284a5781e03c",
+    "benchmarks/results/e71r/h2/night/bonded/material.png": "6e21d71eb77de7ff4d38515fa996c543d5390a32b4aea2e66d41e175d7f2f063",
+    "benchmarks/results/e71r/h2/night/bonded/contour.png": "b8f4b99ca244278f2bc9f4dabc793dad888309e21c12d1a3f03356f365b11092",
+    "benchmarks/results/e71r/h2/night/bonded/collision.png": "dad426edf405587854c3e3ec90df8f856d9b889366b9bd1f6fd25adc665e586c"
+  },
+  "sha256": {
+    "r1/day/production/occlusion.png": "032a7ec766385f416a7b3b68011961c5880c76e39e0f817b7466b53b10841692",
+    "r1/day/q/occlusion.png": "273af4ded3a8e4e1e761d2bd0f6d5f1d7565491640c561e22754981d19a43de6",
+    "r1/day/bonded/native-4x.png": "0244ab920bfbacb2feee9b2bebd17cc47a6ec63939e3f4253834438c4d1c1b8b",
+    "r1/day/bonded/occlusion.png": "220594c7a8797d0af6f087b464b0edc8dceb28fc0994088c03545ee12318b299",
+    "r1/night/production/occlusion.png": "576d4fc7b6a7c2e0dedef7ecc1ca7fa5fc0146fc71a925f6f65f7832f25fcefa",
+    "r1/night/q/occlusion.png": "03e5059f8d416eca7dd53be3f335e5d22369e866c49eff254386631839530f21",
+    "r1/night/bonded/native-4x.png": "76213ae7ef716faa3b3f306707d6033ca5a1d941a90296957447fb464c68f0b0",
+    "r1/night/bonded/occlusion.png": "7aa49a32e399b2b103ebbb4869d1aa05bf62654919173bf1a1aff6276c9bdeb3",
+    "h1/day/production/occlusion.png": "61146e3887a691fecb17515f079233b9b750cc59ec43d4f60fd7aee14d99f720",
+    "h1/day/q/occlusion.png": "1b06d9cff5db08b66532c7b376723954b1502e2891912858cec1727f6fafac20",
+    "h1/day/bonded/native-4x.png": "42d2422e6a08a5a1eae1793c8de171716e35f203251247da9245980fae3cf6c3",
+    "h1/day/bonded/occlusion.png": "50896c54d4d71f02ccf764ddfae81ea296ee7ddc7c58abccee144c5178886a86",
+    "h1/night/production/occlusion.png": "582d91e52c0be287faefe96ba2d07b90e07dd20015b21b2a9625a03bd73aa9eb",
+    "h1/night/q/occlusion.png": "3f8056be0edb353c8310af07d4500d9bb506c321fc057e2474bf2af8db830354",
+    "h1/night/bonded/native-4x.png": "4695659caa790b2b74d933b4cc85c6502c206bf88043a1ef61672d1779eb2463",
+    "h1/night/bonded/occlusion.png": "4b659532f0e3d59077210879bb7a8fa0fa3fd139f3aa89d1cc104d608789bba8",
+    "h2/day/production/native-4x.png": "2e5d31465e1e34a0373b3db222bb4d61b173a3649ae21f8a081c9bbff8018aa4",
+    "h2/day/production/occlusion.png": "73eca97ea4ff75e5cab7fbbff20b31e042733d54731f7791a993964992928ce8",
+    "h2/day/bonded/native-4x.png": "768391219867a76ae9d51b063adc7902026a285004b364b307e2a3096317581d",
+    "h2/day/bonded/occlusion.png": "0f0603b76afe3eae1a339a11b9fc4860875bd6ec7297ac5b2ae50b2ef4b192ec",
+    "h2/night/production/native-4x.png": "d70caf49c48003d5ff6d0c2466e1f85bd2103221194d16590555ab22c8195a9d",
+    "h2/night/production/occlusion.png": "983de22a8f489a433b71628d18e4f75f914a4b5e298dca67517fb179f5446a58",
+    "h2/night/bonded/native-4x.png": "487d5c28d65bf8c5c1cac33e64f466193ef8ff78d3b0d643ce0b03c99473771a",
+    "h2/night/bonded/occlusion.png": "44af8f66c07e94ce288061b6e1d73e14cd21604c20220455ac3c0464d3e4a4f6"
+  }
+}

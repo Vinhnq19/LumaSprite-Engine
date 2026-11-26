@@ -76,7 +76,8 @@ The owner selected E6.2 C1/C2 and accepted R1/R2 with limitations at E6.3. R1 is
 | E7.0 Quality Foundation | Audit, family rubric, Quality Contract v1 and benchmark corpus are in place. |
 | E7.1 Structure & Silhouette | Owner selected Relay A1 for a material study, kept R1 Q for research and requested a revision of H1 Q. |
 | E7.1R Ruin Structure | Bonded Fracture, observed H1 and unseen H2 are ready for independent human art review. |
-| E7.2 Material & Pixel Craft | Proposal awaits owner approval. |
+| E7.2-A Relay Material | M0/M1 and Receiver holdout are ready for human material review. |
+| E7.2-B Ruin Material | Preparation only. Awaits owner structure selection and authorization. |
 | E7.3+ | Implementation awaits owner approval. |
 
 [E7.1R handoff and E7.2 proposal](reports/e71r-structure-and-qa.md) · [Review gallery](LumaSprite-Engine-E7.1-Report.html) · [E7 root-cause audit](art-quality/e7-root-cause.md)
