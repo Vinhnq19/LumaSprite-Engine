@@ -56,3 +56,26 @@ The owner selected M2 with limitations. E4.3 delivered M2P and the Forest Courie
 E4 is closed with engineering approval. The owner selected Surveyor R2 + M2P and the E4.4 revised Courier for 64 × 64 single-view art with recorded limitations. [E4 final acceptance](e4-final-acceptance.md) · [Human review](../benchmarks/results/e44/review.md)
 
 The Project Owner approved E5.0 architecture and the four-frame E5.1 Surveyor idle with limitations. E5.2 extends the same pipeline with two walk candidates, sampled world contacts, Studio timing parity and native gameplay previews. The Project Owner accepted E5.2 engineering and selected W2 for research, with W1 as the control. Walk Game-Ready Final Acceptance remains open. R0 records reproducibility and prepares isolated experiments before any source integration. [Idle acceptance](e51-idle-acceptance.md) · [Walk review](LumaSprite-Engine-E5.2-Report.html) · [E5.3 proposal](architecture/e52-walk-motion.md#e53-proposal)
+
+## E5.4 acceptance and E6 handoff
+
+W2 is the selected Surveyor walk. Courier Walk is approved with limitations, with its original E4.4 standing pose and palette. The two locked exports passed fixed-camera Windows Unity playback and Studio round-trip. Discrete Root preserved authored contacts at the tested speeds. E5 is ready for the Project Owner's final 1× review. [E5.4 review and evidence](e54-final-acceptance.md) · [Human review sheet](LumaSprite-Engine-E5.4-Report.html#review)
+
+E6 planning starts with an owner-approved Environment, UI and VFX brief after the E5 final decision. Use the current pixel scale, authored palettes, frozen scene controls and native game-readability rubric as evidence. Studio production integration remains E8. DeepSeek is deferred until after E8 and requires explicit owner authorization.
+
+## E6.3 and E6.4 accepted with limitations
+
+The Project Owner approved E5 engineering and its artistic baseline with limits, selected Discrete Root A, and authorized E6.0–E6.1 Environment. The E5.4 packages remain the locked production exports. E6.1 delivers the Outpost kit, versioned lighting/palette profile and two scene placements for review. [E5 Final Acceptance](e5-final-acceptance.md) · [E6.1 review gallery](LumaSprite-Engine-E6.1-Report.html)
+
+The owner selected E6.2 C1/C2 and accepted R1/R2 with limitations at E6.3. R1 is the showcase, R2 the original architecture holdout and C2-Q requires further artistic refinement. The owner approved E6.4 engineering and accepted the UI/VFX pilot with limitations. The target-game runtime verification is an E8 backlog item. [E6.3 acceptance](e63-artistic-acceptance.md) · [E6.4 acceptance](e64-artistic-acceptance.md) · [E8 integration](integration/e8-runtime-backlog.md)
+
+## E7 Structure & Silhouette
+
+| Stage | Status |
+| --- | --- |
+| E7.0 Quality Foundation | Audit, family rubric, Quality Contract v1 and benchmark corpus are in place. |
+| E7.1 Structure & Silhouette | Relay Box and Ruin Structure Q, including H1, are ready for independent human review. |
+| E7.2 Material & Pixel Craft | Proposal awaits owner approval. |
+| E7.3+ | Implementation awaits owner approval. |
+
+[E7.1 handoff and E7.2 proposal](e71-structure-quality.md) · [Review gallery](LumaSprite-Engine-E7.1-Report.html) · [E7 root-cause audit](art-quality/e7-root-cause.md)

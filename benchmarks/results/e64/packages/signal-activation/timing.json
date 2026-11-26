@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "kind": "lumasprite-vfx-timing",
+  "name": "Forest Signal · Activation Arc",
+  "pivot": [
+    24,
+    30
+  ],
+  "canvas": {
+    "w": 48,
+    "h": 48
+  },
+  "sampling": "nearest",
+  "loop": "once",
+  "totalDurationMs": 685,
+  "frames": [
+    {
+      "phase": "anticipation",
+      "durationMs": 115,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rgbaSha256": "154e01b3ab937d98d7c887acdacee30b2d3d683ce857a394d5824c48647fe541"
+    },
+    {
+      "phase": "buildup",
+      "durationMs": 85,
+      "rect": {
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rgbaSha256": "6d584f86c857353cf191996e195553f3fc4bf5ef40bb574fb5f0520a326a1347"
+    },
+    {
+      "phase": "buildup",
+      "durationMs": 80,
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rgbaSha256": "8768006ed595ab967950315ab7c4e596fec9e0416886f2c71ee7116dcbcf71ea"
+    },
+    {
+      "phase": "peak",
+      "durationMs": 105,
+      "rect": {
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rgbaSha256": "9ef805dfa1fdda8b122eeee20c6607f027e8169cb4b47c55db030bd989016abb"
+    },
+    {
+      "phase": "dissipation",
+      "durationMs": 95,
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rgbaSha256": "98ea306e20fe4d84e0a0f77ab8fe8541e0e8db1ac329b881174f6d02477731ac"
+    },
+    {
+      "phase": "dissipation",
+      "durationMs": 75,
+      "rect": {
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rgbaSha256": "e0d52f611127bd66ddb1c0d69931258fe4f0d324c44c9853331ab2b59a664938"
+    },
+    {
+      "phase": "clear",
+      "durationMs": 130,
+      "rect": {
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rgbaSha256": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kind": "lumasprite-environment-pilot",
+  "finish": "B",
+  "lighting": "night",
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "name": "RPG Field Outpost · Roadside",
+  "scene": "scene.png",
+  "atlas": "kit.png",
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "files": {
+    "scene.png": "eee64e460482750d39daaeff702a27d2257e79c636095c8cf82a9eac14aa58c9",
+    "material-mask.png": "2e8156e39953ffb9d2ab09f956b3689d9134ab54f6960e1f4a6ac888dc4f02bb",
+    "layer-overlay.png": "e639e7e676f2f2da9724cc3ac861615eab0479d0bcdd71a891be3f61ada0c620",
+    "collision-overlay.png": "e033381b04bf4b0b8bcfdcd776f5b8e6ca79ee8af4143376b458f783b8361d2d",
+    "collision-mask.png": "e82043b5ce8efb8a5bdb1abe70638d6102f3d592acfcaacc7641b0b3f7c0e35a",
+    "kit.png": "c6ecf5d6cc3d2a6cff1abb6c73fcbb17e208707ff8cf197850fedf6e410bea51",
+    "kit-material-mask.png": "79497f6f9e16971cf8ee53335e0a9827f628da4af336ffe7da005fd45ad20a20",
+    "scene-4x.png": "4b58d97bdd62083b7d411c4ac3811b2bb9ac2c316fb5bb18c60862ebb24c6008",
+    "environment-spec.json": "19c1bb30efe98635757a34ff8407de0ac759f36f03b6c7632ae036fec47d2760",
+    "art-style-profile.json": "5dcaa5a6727c5e7aa6b83ca1f9b285e2ae1e3290601e0734aa9c18f918b6dade",
+    "kit.json": "0f52cd659611a1db4fb7465e1187c0dac86617b243458f3a4b0249854406963c",
+    "qa.json": "057b6cecb0666f3773b47b5581ffbaa09c9380161dc5cd7978cd638745b01bfc"
+  }
+}

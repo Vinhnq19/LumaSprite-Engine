@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "lumasprite-animation-bundle",
+  "character": "surveyor",
+  "pivot": [
+    30,
+    59
+  ],
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "clips": {
+    "idle": {
+      "timing": "idle/timing.json",
+      "spec": "idle/animation-spec.json"
+    },
+    "walk": {
+      "timing": "walk/timing.json",
+      "spec": "walk/animation-spec.json",
+      "bridge": "bridge.png",
+      "bridgeMs": 110
+    }
+  },
+  "source": {
+    "directory": "benchmarks/results/e44/packages/r2",
+    "characterSpecVersion": 2,
+    "materialStyle": "m2p",
+    "productionManifestSha256": "0450bd63ca1a7238d077a6e27cfe9ae60113ed3b306ef01d5aa5c2fc1c8b014a",
+    "characterSpecSha256": "17c430de356e8e77d2bb0d9559699624159d998e4c1e843d5285b9da31d4c6c9",
+    "shapeLockSha256": "0b617f360f073a3b6dc8379dabf04b999baa0056b3ea420e8fb059a0939543b6"
+  },
+  "files": {
+    "bridge.png": "15d59ce548787680fa123d9719be53cdf7e48d3f6900dde850cd7f618f751d57",
+    "idle/animation-spec.json": "ca87f794a8ad405d34c72d1e204e204926080b4edddef5bbb788ba8f7795ccf8",
+    "idle/manifest.json": "e404b44dcb71a04edb1bf4f30cd828c4915cb3a0f11d5198e541e337d96a62cd",
+    "idle/qa.json": "767eb68e899a52076d4c7a1b364b0a156dc8424aa90328a100e1b90e8f5b7a5e",
+    "idle/spritesheet.png": "c87c1ef75a945993fdd91accae0c580b2cb4c3e50b18c53767d3cfd8ed82d215",
+    "idle/timing.json": "9debbbb6a24ce3f29aa6021991bc62b663cedbe2978e2f8f28a6cb5d096a16cf",
+    "material.json": "42fc7e472410cf1a0927ec01cda3b6d64069927d02d4d62598086a2280025d05",
+    "walk/animation-spec.json": "7949744a61b877aa58fb17c76e974d4c4d0f457d0dd1dbbbce6b09acb875355f",
+    "walk/manifest.json": "93b0deb6b10ceb24212b54c0c56f204115c83a753fab9c4cbb7af9046173f904",
+    "walk/qa.json": "81c94325f51ece584a51b239e0f13cd7e60e40527befeb6fd02f346fdd452929",
+    "walk/spritesheet.png": "c53d40c7632a13da1c1884bbbde7731357aba6f85c14c2cb03f457d5989f07c7",
+    "walk/timing.json": "1315fd6c0c06675d467eb344c5fc579cd704f8a9f348fbe06cd0dfdb3c0e82cb"
+  }
+}

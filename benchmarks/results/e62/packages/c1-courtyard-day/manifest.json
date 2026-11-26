@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "kind": "lumasprite-scene-composition",
+  "id": "c1-courtyard",
+  "light": "day",
+  "source": {
+    "checkpoint": "24b8ca6",
+    "kit": "front-court",
+    "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+    "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "scene.png": "d8d3250b6b8e0faa5fb163966564fc9fe9344927ae853f74c966dbfe7294ec91",
+    "layer-overlay.png": "c77b0c4eb0c0dd4a8648be64e46301d5bcc4c268e18793b8f317b6d178d9df97",
+    "material-mask.png": "83f09773ef7899515c70329f42790ac697641220a5028b09677f0a006c558dc2",
+    "collision-mask.png": "3ba82f75ac7673601627ccc393ec0b6fb98b17610742fbac21fdbced13cb272f",
+    "collision-overlay.png": "e9c7e59f05e89644faa72a9ceda80faacbbf97fb8804f02b7e4e2207c2c42554",
+    "walkable-mask.png": "116c1742b9ea0d24343b4790825db73a5d32680fd001a5f9cb34f0388a722953",
+    "route-overlay.png": "ff4d5bd59e17d53b04dee260a5bb47e4b202e7a7229f401e7f31e01a6195ba93",
+    "focal-overlay.png": "c941f818c78b24dd31695c988e500288f910129a6c9bcb171485f5ed4886138f",
+    "kit.png": "8496edc3ed5a3653e3d1b82946b045a399de0e85041b83a7d4bde75795d08d31",
+    "kit-material-mask.png": "28870b433d6e7ea7d480e43f1caae0780eee029190bb1e6b0ef8a009e018539a",
+    "scene-4x.png": "825431213a2ea17ce667d6b5ba4339dad9d531a4af7102bbf2fda0a0d1d3bd4f",
+    "composition-spec.json": "a9085be34fea55e164140574ffdac2b640c213d7c7527852a1c0e15b6f1eb772",
+    "kit.json": "3fc5b8924d410e4659c8172950ff37fc3cc67cc68713e33fb6c6a0cf650177fa",
+    "qa.json": "e810392a076293e3c54ee50ce29267efa003b91632e6695046ee7b39dab5d4ee"
+  }
+}

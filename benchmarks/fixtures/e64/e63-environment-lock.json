@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "checkpoint": "6efc683",
+  "parent": "d68f151",
+  "engineering": "APPROVED",
+  "art": {
+    "r1-signal-entrance": "APPROVED_WITH_LIMITATIONS",
+    "r2-signal-clearing": "APPROVED_WITH_LIMITATIONS"
+  },
+  "historicalB1": "24b8ca6",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "files": [
+    {
+      "file": "benchmarks/results/e63/SHA256SUMS",
+      "sha256": "5694cf4950bb8732a0779d43c82bf30283fbb197ca9be350da2130e9a3bf13af"
+    },
+    {
+      "file": "benchmarks/results/e63/benchmark.json",
+      "sha256": "a22fa5f2eec71cc21086c730d5e264b3088361c859946a3077b020832d0a9262"
+    },
+    {
+      "file": "benchmarks/results/e63/studio-parity.json",
+      "sha256": "2f59294b2a18c50d83bc8cfa89e0a7d0867613d3a4c0ab7d4e0bdc0ede3bc869"
+    },
+    {
+      "file": "benchmarks/results/e62/SHA256SUMS",
+      "sha256": "dbfbdad477dc8c35f0ca11cf1ef549c32e4bf1471d5f2e4e189401c38a5c7431"
+    },
+    {
+      "file": "benchmarks/results/e61r/SHA256SUMS",
+      "sha256": "12ec39e610eb6109796a9708721ded2fefaac70196c657cd0ccdc807aab8abdb"
+    },
+    {
+      "file": "benchmarks/fixtures/e63/e62-composition-lock.json",
+      "sha256": "c16553dcad0e20db532ed4fd0547c4a63df2fbc14febf2a80218372754e88ad8"
+    },
+    {
+      "file": "benchmarks/fixtures/e61r/style-profile.json",
+      "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+    },
+    {
+      "file": "benchmarks/results/e24/barrel-tall-1x.png",
+      "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "r1-signal-entrance",
+      "edition": "e63",
+      "decision": "ARTISTIC_SHOWCASE",
+      "packages": {
+        "day": {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-day/manifest.json",
+          "sha256": "1864fedc13e351b4db0797fa76aebfb6a39e4d2ab0b509a36c2f2750ff72a310"
+        },
+        "night": {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-night/manifest.json",
+          "sha256": "f52d8b84b015ca7e57fdfb95e966e80a335c9287ac93072bde9f2b9dc52fac48"
+        }
+      }
+    },
+    {
+      "id": "r2-signal-clearing",
+      "edition": "e63",
+      "decision": "GENERALIZATION_BENCHMARK",
+      "packages": {
+        "day": {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-day/manifest.json",
+          "sha256": "fac313ee2ce20d48d8f88315c94f2555525fe427c9ed841073f7f130d24698a9"
+        },
+        "night": {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-night/manifest.json",
+          "sha256": "612a2ca3bb2006336fb011f19bfe185323432a55434962b97ab6e04241a828ad"
+        }
+      }
+    },
+    {
+      "id": "c1-courtyard",
+      "edition": "e62",
+      "decision": "HISTORICAL_CONTROL",
+      "packages": {
+        "day": {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-day/manifest.json",
+          "sha256": "9db69b0ce4248f22f616b2caaba2e28129cab77e722327b46dac4994e4938ed0"
+        },
+        "night": {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-night/manifest.json",
+          "sha256": "56b51f31f2fef94be57287575c5629b0c4545a83669a2aabc376626284252ff9"
+        }
+      }
+    },
+    {
+      "id": "c2-supply-stop",
+      "edition": "e62",
+      "decision": "HISTORICAL_CONTROL",
+      "packages": {
+        "day": {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-day/manifest.json",
+          "sha256": "a0de4500c39dc136ed1407fc0a0be799451091a94493dc4062b55f9749ec83e9"
+        },
+        "night": {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-night/manifest.json",
+          "sha256": "9a980107792238fc2218fea2ef8a780a1cb071a216fd61b495eeb4cd5633e4dd"
+        }
+      }
+    },
+    {
+      "id": "c2-night-quality",
+      "edition": "e63",
+      "decision": "FURTHER_ARTISTIC_REFINEMENT_REQUIRED",
+      "packages": {
+        "night": {
+          "file": "benchmarks/results/e63/packages/c2-night-quality-night/manifest.json",
+          "sha256": "3ecbfbe1bb38bfc3d653f16eee0c1fd2e1f6335951471b0d76d365f1ee9babd7"
+        }
+      }
+    }
+  ]
+}

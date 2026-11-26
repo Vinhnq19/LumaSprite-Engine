@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "checkpoint": "7fa1f23",
+  "historicalChecksums": 805,
+  "historicalRebuilt": {
+    "e24": 65,
+    "e34": 124,
+    "e44": 63,
+    "e51": 31,
+    "e52": 78
+  },
+  "packages": [
+    {
+      "id": "surveyor",
+      "manifestSha256": "b2c6484d91597aca270e8879a8a735b4c0d42e0bf5240ce43aca6a16673830bf",
+      "directory": "benchmarks/results/e44/packages/r2",
+      "characterSpecVersion": 2,
+      "materialStyle": "m2p",
+      "productionManifestSha256": "0450bd63ca1a7238d077a6e27cfe9ae60113ed3b306ef01d5aa5c2fc1c8b014a",
+      "characterSpecSha256": "17c430de356e8e77d2bb0d9559699624159d998e4c1e843d5285b9da31d4c6c9",
+      "shapeLockSha256": "0b617f360f073a3b6dc8379dabf04b999baa0056b3ea420e8fb059a0939543b6",
+      "clips": {
+        "idle": {
+          "timing": "idle/timing.json",
+          "spec": "idle/animation-spec.json"
+        },
+        "walk": {
+          "timing": "walk/timing.json",
+          "spec": "walk/animation-spec.json",
+          "bridge": "bridge.png",
+          "bridgeMs": 110
+        }
+      }
+    },
+    {
+      "id": "courier",
+      "manifestSha256": "07be5d41879a1da00d9ebcffca4e8d5a21ca15732d105ab93e3f4ee2a6c13d1f",
+      "directory": "benchmarks/results/e44/packages/courier-rev",
+      "characterSpecVersion": 3,
+      "materialStyle": "m2",
+      "productionManifestSha256": "d91c049a4a751f57471186da3548b31d2bee3e438ce93ce93eabd9fc31fa2e23",
+      "characterSpecSha256": "4607cbe1a09f65aefbad4b1dafb29cca54cb00348203c7bf80738ee1298f6b49",
+      "shapeLockSha256": "6f735bdd393b29334f4e26d8af6d69a012f6db1121c8413088815d7cd4ae46db",
+      "clips": {
+        "idle": {
+          "timing": "idle/timing.json",
+          "spec": null
+        },
+        "walk": {
+          "timing": "walk/timing.json",
+          "spec": "walk/animation-spec.json",
+          "bridge": "bridge.png",
+          "bridgeMs": 110
+        }
+      }
+    }
+  ],
+  "previous": {
+    "idle": "e404b44dcb71a04edb1bf4f30cd828c4915cb3a0f11d5198e541e337d96a62cd",
+    "w1": "e45d9f84c675d0df34dda964660d12943f77c4bec98e05f814587a767f855288",
+    "w2": "93b0deb6b10ceb24212b54c0c56f204115c83a753fab9c4cbb7af9046173f904",
+    "e53Evidence": "b4a721a62e117cb22bb106114ce4952efc71e401f3c269ac7ed1b5197b9f404f",
+    "e53RuntimeProof": "7d7f86f3c40571e99cf9263235fb0864bdd32caeb9d8852d4439ade9e8db216c",
+    "rndNotices": {
+      "ink-and-bones": "495487f16de5b1343e52b3499cbf6cc29447d7b706a0795aa3c00bd159ca69be",
+      "spritekiln": "26d75f5d834072bb1c1246226e53f1dbc8944ca229cd6509b313dfd7227291a3",
+      "texel-color": "72b418e9783afac55baabeec690084171ad7fada981bd5f15f87e0dae2194867"
+    }
+  }
+}

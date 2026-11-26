@@ -1,0 +1,27 @@
+{
+  "studioRevision": "bb5c384",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "path": "benchmarks/results/e61/packages/front-court-b-day/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "77658ea9269b3ca7c53cf9622ffe8eff549c591981dfc5649d4b5b9ed52f2edf",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61/packages/roadside-b-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "b9b036ae7a606403443da1c934e8547a704ae6c55b232def37e7fff75a477e56",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61/packages/front-court-b-day/kit.png",
+      "width": 298,
+      "height": 46,
+      "rgbaSha256": "b474575d5b8a1a1a8e54f886c33f2e4091ec178609567ce03659236a041e5d96",
+      "saveReopen": "PASS"
+    }
+  ]
+}

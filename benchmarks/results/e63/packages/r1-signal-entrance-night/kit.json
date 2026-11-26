@@ -1,0 +1,146 @@
+{
+  "cells": [
+    {
+      "id": "west-wall",
+      "at": [
+        3,
+        3
+      ],
+      "size": [
+        66,
+        42
+      ],
+      "pivot": [
+        0,
+        42
+      ],
+      "rgbaSha256": "45e2a219d083b3343f4ec138bd84d4b27d599cdb5ebc21b3f34e4df54face072",
+      "alphaSha256": "f0493542496200bf3be673ab37c3e0347e6ac6cd85b475fa623200cad09da14d"
+    },
+    {
+      "id": "signal-gateway",
+      "at": [
+        72,
+        3
+      ],
+      "size": [
+        76,
+        81
+      ],
+      "pivot": [
+        0,
+        81
+      ],
+      "rgbaSha256": "77994143476557639cae6fa3bf4a3081fa39ad10c172fe1fbee3640b003628bf",
+      "alphaSha256": "30c6910468888b9097406e734bb55e7076b90b8d0176c528055a0f73523d1cfb"
+    },
+    {
+      "id": "east-wall",
+      "at": [
+        151,
+        3
+      ],
+      "size": [
+        68,
+        55
+      ],
+      "pivot": [
+        0,
+        55
+      ],
+      "rgbaSha256": "bd31badba7f421b4ceb14738db9533501e436042f2ed3f64d8e83ee9a6dcad57",
+      "alphaSha256": "19af987ee5aab94a5690c008d0024d1f401ddd2df75d7688bc697f33c43e3c72"
+    },
+    {
+      "id": "signal-terrace",
+      "at": [
+        222,
+        3
+      ],
+      "size": [
+        94,
+        21
+      ],
+      "pivot": [
+        0,
+        21
+      ],
+      "rgbaSha256": "d85e13f6eb50291b6d861d4c39a30fba7584429ec5e6d3223851928fee93bd13",
+      "alphaSha256": "e3dc20b51f17c415013951f183690b0caffe45b184a4b535f21cf6104a63e07f"
+    },
+    {
+      "id": "signal-pedestal",
+      "at": [
+        319,
+        3
+      ],
+      "size": [
+        34,
+        41
+      ],
+      "pivot": [
+        0,
+        41
+      ],
+      "rgbaSha256": "9edb1ceb02b3e06b7c190b750adbc65d8e98ea03f2b1639478100547a1fc134b",
+      "alphaSha256": "bbb73066ffea99bec49c4336e5618941bd5f956af21f21c6a135555c0f600a13"
+    },
+    {
+      "id": "near-column",
+      "at": [
+        356,
+        3
+      ],
+      "size": [
+        28,
+        38
+      ],
+      "pivot": [
+        0,
+        38
+      ],
+      "rgbaSha256": "55d5a00dc2970eaf40281d0dd2b1301c1a60b87657e7ab3bf89d1d81be2f79f5",
+      "alphaSha256": "f2a7f5c74c56c5edf2ac0de159d05c557770fea937a67490e1124a0f2cd3c5b6"
+    },
+    {
+      "id": "east-column",
+      "at": [
+        387,
+        3
+      ],
+      "size": [
+        27,
+        29
+      ],
+      "pivot": [
+        0,
+        29
+      ],
+      "rgbaSha256": "0c2d0e18bc4641eca23a3f1991f7aa50be70fe02deb496658155da119491f183",
+      "alphaSha256": "fa8bf09d0c8bb74e5e061a4150387058d8697c6dcc9c6acd57d1b77eb5475f4a"
+    }
+  ],
+  "materialLegend": {
+    "stone": "#8bb4ce",
+    "wood": "#bc8862",
+    "roof": "#789e94",
+    "paving": "#cfbb83",
+    "metal": "#98a0be",
+    "amber": "#f9bb51",
+    "contour": "#48425e",
+    "grass": "#68864c",
+    "dirt": "#9d795c",
+    "prop": "#c28291",
+    "actor": "#94e4bd",
+    "shadow": "#292d42",
+    "moss": "#82a456"
+  },
+  "layerLegend": {
+    "terrain": "#364950",
+    "path": "#8c735a",
+    "shadow": "#3b2c55",
+    "building": "#81aeba",
+    "prop": "#dc9f64",
+    "actor": "#98e2c4"
+  }
+}

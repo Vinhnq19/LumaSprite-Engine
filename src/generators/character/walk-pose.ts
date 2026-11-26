@@ -4,7 +4,7 @@ import type { GaitPose } from './geometry.ts';
 
 export const feet = ['near', 'far'] as const;
 type Side = (typeof feet)[number];
-export type WalkingCharacter = Extract<CharacterSpec, { version: 2 }>;
+export type WalkingCharacter = Extract<CharacterSpec, { version: 2 | 3 }>;
 export type WalkKey = {
   lead: Side;
   phase: Exclude<GaitPose['phase'], 'transition'>;
@@ -27,9 +27,15 @@ export function solveWalkPose(source: WalkingCharacter, ground: GaitPose['ground
   const hip: [number, number] = [base.hip[0], base.hip[1] + bob];
   const [gx, gy] = key.gripShift;
   const arm = key.armSwing * (lead === 'near' ? 1 : -1);
+  const free = source.version === 3;
   const pose = {
-    ...base, support: lead, hip, lean: phase === 'down' ? 1 : 0,
-    near: {
+    ...base, support: lead, hip, lean: Number(phase === 'down') + (free ? base.lean : 0),
+    near: free ? {
+      ...base.near,
+      elbow: shift(base.near.elbow, -arm, bob),
+      wrist: shift(base.near.wrist, -2 * arm, bob),
+      palm: shift(base.near.palm, -2 * arm, bob),
+    } : {
       ...base.near,
       elbow: shift(base.near.elbow, gx, Math.min(1, bob) - Number(phase === 'passing')),
       wrist: shift(base.near.wrist, gx, gy), palm: shift(base.near.palm, gx, gy),

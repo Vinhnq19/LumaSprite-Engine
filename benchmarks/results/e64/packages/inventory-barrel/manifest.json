@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "kind": "lumasprite-pixel-effect",
+  "id": "inventory-barrel",
+  "family": "ui",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "source": {
+    "file": "benchmarks/results/e24/barrel-tall-1x.png",
+    "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "frame-0.png": "3e537ae6a421b1419f0498a37cd859c79cf62e3cdd9f3aba061f092270ed0765",
+    "states.json": "c6c625d4a9254573f65ca66617e4b6f0989eed07673df102789d79e43db81d24",
+    "spritesheet.png": "3e537ae6a421b1419f0498a37cd859c79cf62e3cdd9f3aba061f092270ed0765",
+    "spritesheet-4x.png": "7a1026e88ce6fd5299393ef04a1e388387af7e6fe551a8ecc09af5614e860630",
+    "alpha.png": "9a3101c1e2616b20587fbc75b0b050b2c5bb0fe563e938721d3a75d1cfc03e17",
+    "spec.json": "e69c5b85d129754d558da50a313752221838f1fbdb1c65c6b3a9fb9364110be2",
+    "qa.json": "048cb0087621f2b8471962d4fee0f329b5ea90d4c6c472b830a0deef6f413dfe"
+  }
+}

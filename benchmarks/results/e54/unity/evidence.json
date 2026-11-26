@@ -1,0 +1,492 @@
+{
+  "unityStatus": "UNITY_RUNTIME_PASS",
+  "selectedPlayback": "A",
+  "camera": [
+    {
+      "file": "outdoor-A.png",
+      "pngSha256": "2fdd1b966d196ec69255eb5cf3adc4f2dc57b8cf3220aaee65587fb14d114813",
+      "rgbaSha256": "1f4052e283915a1d30d02642efb5bfef940b14eb0efd667409fce58c3567a003",
+      "mismatchedPixels": 0
+    },
+    {
+      "file": "outdoor-B.png",
+      "pngSha256": "3cdb327d87d1299ad8fd336eac4199cd77215126a307b23c342abfd18c38cdaa",
+      "rgbaSha256": "159a5b66e322d32c324d389bbb3b86d269ff9857bd055e63167f3dede44dd7ea",
+      "mismatchedPixels": 0
+    },
+    {
+      "file": "dungeon-A.png",
+      "pngSha256": "63d482a47c14bfa3003847e8bc03ebc707c8d0cc6c5bd9eb7912a33219051fe1",
+      "rgbaSha256": "75d40416bff77146f3669c8018be0af779010ebac6d9e55f56ba39e1a68a7638",
+      "mismatchedPixels": 0
+    },
+    {
+      "file": "dungeon-B.png",
+      "pngSha256": "0cf94c5a256a09dff98f1f2ea5fa37ae97c230f7f40805c80c6a4dfc833fae6e",
+      "rgbaSha256": "105481a98ebbbabca16ad640a15b9705618c2e149d7538fb992b01e0cb7390f2",
+      "mismatchedPixels": 0
+    },
+    {
+      "file": "neutral-A.png",
+      "pngSha256": "5b1363db32a1c382924b4f49c4a335fde4fb1df2c78bc9af7fba51be07398a1a",
+      "rgbaSha256": "340c8d05879b6d1276654602e43055f7df840f4fab14242b292ab90b954feab4",
+      "mismatchedPixels": 0
+    },
+    {
+      "file": "neutral-B.png",
+      "pngSha256": "780b7502d285a7d6fe19e4458f321ce0204b292663d7333fc4d87c2842a16f9c",
+      "rgbaSha256": "490bdf8e1469eb3f2a5bb357f5efe06942d08e6bd2d522b0e6f1d5c43f614a43",
+      "mismatchedPixels": 0
+    }
+  ],
+  "traces": [
+    {
+      "file": "surveyor-A-trace.csv",
+      "csvSha256": "b6cfb3703f3b982041bf404744732bd0a93d0934d9d2aef2955a135b278d11d3",
+      "originalJsonSha256": "d571ddab1ac7eacf08c64721fe9ac585160a2e22fd7c3c8b59a2693b5d7ebb00",
+      "ticks": 396,
+      "interiorTicks": 155,
+      "midFrameExample": {
+        "ms": 1966.6666666666667,
+        "inFrameMs": 56.66666666666674,
+        "tick": 118,
+        "cycle": 0,
+        "frame": 0,
+        "root": 0,
+        "nearX": 36,
+        "farX": 51,
+        "nearSlip": 0,
+        "farSlip": 0,
+        "nearPlanted": true,
+        "farPlanted": true,
+        "stage": "walk"
+      }
+    },
+    {
+      "file": "surveyor-B-trace.csv",
+      "csvSha256": "4f803a3a03e7a9045c73db7dbd32ef6f330b57e253cba24b1d6a040209c2a2c2",
+      "originalJsonSha256": "5aeafda8a500990bc4aba58157838c926088ed1b1cd9d8307f7bf06876d875cd",
+      "ticks": 396,
+      "interiorTicks": 155,
+      "midFrameExample": {
+        "ms": 1966.6666666666667,
+        "inFrameMs": 56.66666666666674,
+        "tick": 118,
+        "cycle": 0,
+        "frame": 0,
+        "root": 2,
+        "nearX": 38,
+        "farX": 53,
+        "nearSlip": 2,
+        "farSlip": 2,
+        "nearPlanted": true,
+        "farPlanted": true,
+        "stage": "walk"
+      }
+    },
+    {
+      "file": "courier-A-trace.csv",
+      "csvSha256": "42b6ac123539b6421707e78c098cf7b4925bc0fec4b4c5f4421c96455af8f38f",
+      "originalJsonSha256": "9d72d0bf9d686ff8dc5694de0c87a4366c8e35b06496dbd4688bd2ba2d4b9ae1",
+      "ticks": 411,
+      "interiorTicks": 172,
+      "midFrameExample": {
+        "ms": 1966.6666666666667,
+        "inFrameMs": 56.66666666666674,
+        "tick": 118,
+        "cycle": 0,
+        "frame": 0,
+        "root": 0,
+        "nearX": 77,
+        "farX": 89,
+        "nearSlip": 0,
+        "farSlip": 0,
+        "nearPlanted": true,
+        "farPlanted": true,
+        "stage": "walk"
+      }
+    },
+    {
+      "file": "courier-B-trace.csv",
+      "csvSha256": "c15fa8143877fefe2a6019fff073cb7116b39e58f78a85c7f01dd0a46e317fd9",
+      "originalJsonSha256": "a75a4c3791c71fcdda7fc62122abd5697dbf7d99521d82f92a625405cad294ba",
+      "ticks": 411,
+      "interiorTicks": 172,
+      "midFrameExample": {
+        "ms": 1966.6666666666667,
+        "inFrameMs": 56.66666666666674,
+        "tick": 118,
+        "cycle": 0,
+        "frame": 0,
+        "root": 1,
+        "nearX": 78,
+        "farX": 90,
+        "nearSlip": 1,
+        "farSlip": 1,
+        "nearPlanted": true,
+        "farPlanted": true,
+        "stage": "walk"
+      }
+    }
+  ],
+  "studios": {
+    "surveyor/idle": {
+      "studioRevision": "bb5c384",
+      "import": "ENGINE_RESULT_V1",
+      "exactRgba": true,
+      "pivot": [
+        30,
+        59
+      ],
+      "normalizedPivot": {
+        "x": 0.46875,
+        "y": 0.921875
+      },
+      "direction": "forward",
+      "loop": true,
+      "timingMs": [
+        360,
+        480,
+        360,
+        600
+      ],
+      "totalDurationMs": 1800,
+      "frames": [
+        {
+          "phase": "neutral",
+          "durationMs": 360,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e"
+        },
+        {
+          "phase": "inhale",
+          "durationMs": 480,
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "ae571bb34dd5dc861843fac62bd0046ee63adff13f3b381c8fd6a548cd183428"
+        },
+        {
+          "phase": "return",
+          "durationMs": 360,
+          "rect": {
+            "x": 128,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "8045b0db05af92941f0c1e4bf565a0f486663d40e34ed66f864c0539288b322e"
+        },
+        {
+          "phase": "recovery",
+          "durationMs": 600,
+          "rect": {
+            "x": 192,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "c60d02f3fee9a254b86a82b0699a32637751a877c5aa7f91d7ca3f4ec8f9b578"
+        }
+      ],
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "stripPngJson": "PASS",
+      "staleRevision": "REJECTED",
+      "engineManifestSha256": "e404b44dcb71a04edb1bf4f30cd828c4915cb3a0f11d5198e541e337d96a62cd",
+      "studioStripPngSha256": "91c9b2f9a0c141a64897ebfec18f89711d69595b292f8891c0373c4dc893c520"
+    },
+    "surveyor/walk": {
+      "studioRevision": "bb5c384",
+      "import": "ENGINE_RESULT_V1",
+      "exactRgba": true,
+      "pivot": [
+        30,
+        59
+      ],
+      "normalizedPivot": {
+        "x": 0.46875,
+        "y": 0.921875
+      },
+      "direction": "forward",
+      "loop": true,
+      "timingMs": [
+        120,
+        115,
+        95,
+        110,
+        120,
+        115,
+        95,
+        110
+      ],
+      "totalDurationMs": 880,
+      "frames": [
+        {
+          "phase": "contact",
+          "durationMs": 120,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "2d7193b7e5425a889a791927b108dda924fd4eaa4e138fefb866abea73bf1e7f"
+        },
+        {
+          "phase": "down",
+          "durationMs": 115,
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "8b4f4f629bd1b57880aabe56d8aac3ff05aff572835bbe35b2e63e3a45b92414"
+        },
+        {
+          "phase": "passing",
+          "durationMs": 95,
+          "rect": {
+            "x": 128,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "0c42dd49fcac1be1071291cca988bd048f673ec5ef69b25ec4f65b4ab6961821"
+        },
+        {
+          "phase": "up",
+          "durationMs": 110,
+          "rect": {
+            "x": 192,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "9c95a40a508bfece524049c80a3d3d7f42717997d954062ceb3eacb857eac6b9"
+        },
+        {
+          "phase": "contact",
+          "durationMs": 120,
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "eee40e6b2cf1f0dffa57d20fc509854c811aa1b99a478be003d5a08a6a406eff"
+        },
+        {
+          "phase": "down",
+          "durationMs": 115,
+          "rect": {
+            "x": 320,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "84a087def26471bfbbb1c504907d3d9d74ca936838b21824cb28e50e1e75be57"
+        },
+        {
+          "phase": "passing",
+          "durationMs": 95,
+          "rect": {
+            "x": 384,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "5dfcc365cb9ba5f20cc89f40490cc7f213b161fea7f484ddd9738c62f2f7d1e3"
+        },
+        {
+          "phase": "up",
+          "durationMs": 110,
+          "rect": {
+            "x": 448,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "2b5102501abd109f8308195136f6161bb5312f27712afc1ffa371e7b1c23e57f"
+        }
+      ],
+      "rootMotion": "ENGINE_TIMING_SIDECAR",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "stripPngJson": "PASS",
+      "staleRevision": "REJECTED",
+      "engineManifestSha256": "93b0deb6b10ceb24212b54c0c56f204115c83a753fab9c4cbb7af9046173f904",
+      "studioStripPngSha256": "9dae9685e0edcf7bbe0b3c74c447f59287aed98a3fba2ea2159c7a1467d636f9"
+    },
+    "courier/idle": {
+      "studioRevision": "bb5c384",
+      "import": "ENGINE_RESULT_V1",
+      "exactRgba": true,
+      "pivot": [
+        32,
+        58
+      ],
+      "normalizedPivot": {
+        "x": 0.5,
+        "y": 0.90625
+      },
+      "direction": "forward",
+      "loop": false,
+      "timingMs": [
+        1800
+      ],
+      "totalDurationMs": 1800,
+      "frames": [
+        {
+          "phase": "standing",
+          "durationMs": 1800,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "7c3de890678aac4e1a986a3b7bb585cfe8341a8cb27b80aa2eb192e029ff6205"
+        }
+      ],
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "stripPngJson": "PASS",
+      "staleRevision": "REJECTED",
+      "engineManifestSha256": "07be5d41879a1da00d9ebcffca4e8d5a21ca15732d105ab93e3f4ee2a6c13d1f",
+      "studioStripPngSha256": "47e6324efad3a819c2abd568c3933575fa0670f19ae35c45888ec2325db05905"
+    },
+    "courier/walk": {
+      "studioRevision": "bb5c384",
+      "import": "ENGINE_RESULT_V1",
+      "exactRgba": true,
+      "pivot": [
+        32,
+        58
+      ],
+      "normalizedPivot": {
+        "x": 0.5,
+        "y": 0.90625
+      },
+      "direction": "forward",
+      "loop": true,
+      "timingMs": [
+        125,
+        130,
+        110,
+        115,
+        125,
+        130,
+        110,
+        115
+      ],
+      "totalDurationMs": 960,
+      "frames": [
+        {
+          "phase": "contact",
+          "durationMs": 125,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "e047d1a19b6dcc4c7b32d045c2975c92dcdce8765574933b787b57d59eb1891e"
+        },
+        {
+          "phase": "down",
+          "durationMs": 130,
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "2e55a62c1ef13014e148445133a2e37811a91bcfb1048ca52c57f3c4ee23ce25"
+        },
+        {
+          "phase": "passing",
+          "durationMs": 110,
+          "rect": {
+            "x": 128,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "447ef3e93dfcc2bc887a6ec676a7f75489fe372ee2c54c1eb27c79186590acad"
+        },
+        {
+          "phase": "up",
+          "durationMs": 115,
+          "rect": {
+            "x": 192,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "a4f330647c95f2df39bf519213a4507c0cb60ed6a33e0d775ef34c4e3d360f6f"
+        },
+        {
+          "phase": "contact",
+          "durationMs": 125,
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "0451886d726fb5a46d0ee792843af8acc9debdd7ab648f62edb4b05b1382a54e"
+        },
+        {
+          "phase": "down",
+          "durationMs": 130,
+          "rect": {
+            "x": 320,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "dea4b629a86af7989967d07973d6eabe3a5f26ed97073c9683a1205b2b86405f"
+        },
+        {
+          "phase": "passing",
+          "durationMs": 110,
+          "rect": {
+            "x": 384,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "b4f714ea03dd5bf99b7f1812cf8dcd25de2fa76bf583032cea3d081da782925e"
+        },
+        {
+          "phase": "up",
+          "durationMs": 115,
+          "rect": {
+            "x": 448,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "rgbaSha256": "85e662309e34e9100326caa8908d10a1762e7db01c2d6feac3a74a8990c64e13"
+        }
+      ],
+      "rootMotion": "ENGINE_TIMING_SIDECAR",
+      "saveReopen": "PASS",
+      "backupRestore": "PASS",
+      "stripPngJson": "PASS",
+      "staleRevision": "REJECTED",
+      "engineManifestSha256": "f9028e42cd480b900052e8f6d3bc333574e94d7004fc6513ce2ca739d288d9e9",
+      "studioStripPngSha256": "eca0844473c1cdaeae4afc8910b05abffd4680cb67b1026d5fa2e6c2af9dd1cc"
+    }
+  }
+}

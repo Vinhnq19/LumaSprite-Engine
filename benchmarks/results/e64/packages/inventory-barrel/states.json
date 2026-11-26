@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "canvas": {
+    "w": 32,
+    "h": 32
+  },
+  "pivot": [
+    16,
+    28
+  ],
+  "sampling": "nearest",
+  "states": [
+    {
+      "id": "inventory",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rgbaSha256": "fb8a4f6cba1ae9766c61013f52a752222ae3872764ba7eec7f60903341971a27"
+    }
+  ]
+}

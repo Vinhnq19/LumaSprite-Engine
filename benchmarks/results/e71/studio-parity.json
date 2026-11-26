@@ -1,0 +1,48 @@
+{
+  "studioRevision": "c56837e",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "path": "benchmarks/results/e71/relay/a0/native.png",
+      "width": 32,
+      "height": 32,
+      "rgbaSha256": "8c8995f1e3ddf3d4a524dbf950c67c24a925d71bd07c07f320107c192cfb2af0",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e71/relay/a1/native.png",
+      "width": 32,
+      "height": 32,
+      "rgbaSha256": "5b6597adf9d8e56ac5d9a7fd7c18900fe197726c3973010531b0fa963919afa0",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e71/relay/a1/flat.png",
+      "width": 32,
+      "height": 32,
+      "rgbaSha256": "181275e5f105e94b5198f1cd928726c4adf8c281f245df27e715a93ef7d97b9f",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e71/relay/a1/material.png",
+      "width": 32,
+      "height": 32,
+      "rgbaSha256": "ace6af07f07d2d9856f9b63dd7fa371255d474eaef6e9429e75046d034bada25",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e71/ruin/r1/day/candidate/native.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "cbb2b108585345f37d0669da90a88198c9e74d5043e82417d3e1e4364f751716",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e71/ruin/h1/night/candidate/native.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "2410719f1f91c86b0fda0d4694439952c0b1fbd87b6b09f1a97171d4608a085d",
+      "saveReopen": "PASS"
+    }
+  ]
+}

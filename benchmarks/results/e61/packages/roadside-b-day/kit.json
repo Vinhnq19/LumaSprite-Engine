@@ -1,0 +1,179 @@
+{
+  "cells": [
+    {
+      "id": "wall",
+      "at": [
+        3,
+        3
+      ],
+      "size": [
+        16,
+        32
+      ],
+      "pivot": [
+        0,
+        32
+      ],
+      "rgbaSha256": "dea04a003c8a84a9bc3b8dac1f49c1ca2d2a430da36597d85962e75eee6f3674",
+      "alphaSha256": "9f56cda75fefeab90f6fa5d5ddc9601544b121732c5ecccab32e631060453a5d"
+    },
+    {
+      "id": "door",
+      "at": [
+        22,
+        3
+      ],
+      "size": [
+        16,
+        32
+      ],
+      "pivot": [
+        0,
+        32
+      ],
+      "rgbaSha256": "2f6ee1dad94f0f3e8c00097c06d0851d978343e8406833c6b37b167a2f6b6f70",
+      "alphaSha256": "9f56cda75fefeab90f6fa5d5ddc9601544b121732c5ecccab32e631060453a5d"
+    },
+    {
+      "id": "window",
+      "at": [
+        41,
+        3
+      ],
+      "size": [
+        16,
+        32
+      ],
+      "pivot": [
+        0,
+        32
+      ],
+      "rgbaSha256": "e28c2b08a90e716b2257a50ef2c7b1c50d64a835910c0ce466e6e04b3cf0f552",
+      "alphaSha256": "9f56cda75fefeab90f6fa5d5ddc9601544b121732c5ecccab32e631060453a5d"
+    },
+    {
+      "id": "corner",
+      "at": [
+        60,
+        3
+      ],
+      "size": [
+        16,
+        40
+      ],
+      "pivot": [
+        0,
+        40
+      ],
+      "rgbaSha256": "5b2beebc02bd45278a068a4178396921bfe57cabf9942a987cff06729b3991a4",
+      "alphaSha256": "c4053fea2b5b6da45afdb8d752b195bc642b0f9aa23dc47b990fd92c99a9d39e"
+    },
+    {
+      "id": "column",
+      "at": [
+        79,
+        3
+      ],
+      "size": [
+        6,
+        32
+      ],
+      "pivot": [
+        3,
+        32
+      ],
+      "rgbaSha256": "e1933dfbf6216d3e971a9445584bb1cf96aeb71d7c74ceea8fef13953a49122e",
+      "alphaSha256": "8f62c344eff1568474fb693b8c18526629db443b9653a84264189c97693605de"
+    },
+    {
+      "id": "roof",
+      "at": [
+        88,
+        3
+      ],
+      "size": [
+        124,
+        40
+      ],
+      "pivot": [
+        5,
+        40
+      ],
+      "rgbaSha256": "27c349bfa1d78f72d3953afbd7abf36ca43b9c30344315cf2a10d5c529f98592",
+      "alphaSha256": "33347fa675041531483c40ab1c5d69ddee6448a2bbb0c82cbb8c77a2e769324f"
+    },
+    {
+      "id": "compass",
+      "at": [
+        215,
+        3
+      ],
+      "size": [
+        14,
+        12
+      ],
+      "pivot": [
+        7,
+        0
+      ],
+      "rgbaSha256": "d3bd34e2aca102f5c3b82be40058c196853517722649ae4924cfe916fd0b054a",
+      "alphaSha256": "22af26c6fe81ce67cd7ac41f51cabfac50aa5ab5758a8f93611b2faabfd2f05a"
+    },
+    {
+      "id": "lamp",
+      "at": [
+        232,
+        3
+      ],
+      "size": [
+        9,
+        14
+      ],
+      "pivot": [
+        4,
+        0
+      ],
+      "rgbaSha256": "fe84897687451e83a76cf1ac6d340eddd25e51b8d6ff4897112d6eb07417e3c2",
+      "alphaSha256": "2128bf6fe7a23f298842a59e2fb1ea8ed87450ef281b1d7f3bdb9fcb398db04a"
+    },
+    {
+      "id": "workbench",
+      "at": [
+        244,
+        3
+      ],
+      "size": [
+        35,
+        24
+      ],
+      "pivot": [
+        16,
+        23
+      ],
+      "rgbaSha256": "b41f293931199ac03152f079a96c72f67f8eeded5da906845413437f62f4a7c3",
+      "alphaSha256": "2e2fad62ea291ebbda7c8bb37b5fa065a5ccc8950ad175fc7f3a0cca022603ba"
+    }
+  ],
+  "materialLegend": {
+    "stone": "#8bb4ce",
+    "wood": "#bc8862",
+    "roof": "#789e94",
+    "paving": "#cfbb83",
+    "metal": "#98a0be",
+    "amber": "#f9bb51",
+    "contour": "#48425e",
+    "grass": "#68864c",
+    "dirt": "#9d795c",
+    "prop": "#c28291",
+    "actor": "#94e4bd",
+    "shadow": "#292d42"
+  },
+  "layerLegend": {
+    "terrain": "#364950",
+    "path": "#8c735a",
+    "shadow": "#3b2c55",
+    "building": "#81aeba",
+    "prop": "#dc9f64",
+    "actor": "#98e2c4"
+  }
+}

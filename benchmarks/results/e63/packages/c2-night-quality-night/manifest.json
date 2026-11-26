@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "kind": "lumasprite-scene-composition",
+  "id": "c2-night-quality",
+  "light": "night",
+  "source": {
+    "checkpoint": "24b8ca6",
+    "kit": "roadside",
+    "specSha256": "b881ba8f3bd3862ad9170e595beae4f3c6535b78076e1c02ca38c469c3daa465",
+    "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "scene.png": "11db0b62a030cefa863a877fb87973ec30c3a758934daa242601c6a4deaf61dc",
+    "layer-overlay.png": "da78c24cdb3382f885b71bb5443629742a407c39ba9538f3c35b00e72ef49075",
+    "material-mask.png": "09eddef28647d25c2444634757cbe159fd7d1cbf1b362a1bd4fbb3ee90ec56ed",
+    "collision-mask.png": "9857594034dbd75f8251c0fcb2b3e8b0e3c0293e54a6c0ddfa0e5ec45f1a1595",
+    "collision-overlay.png": "d4ddbb9807302f4fc5a209c64ea593b3c671f4f7e15f61925e9722b6985b9951",
+    "walkable-mask.png": "617941d5b29fa67d5922adcfb294812a3ac4d2e35af1bbd2ce1b207f41683022",
+    "route-overlay.png": "557c3e4a180c75bd1b2492c24619cf3d20e1aa027af43989a9d4fec505d4cfbd",
+    "focal-overlay.png": "edb75b5bf1063b0bc431777eec72d064448eb2db7a24067bd9b204946dd32f37",
+    "kit.png": "316b85aae6d374d8322e515d99e44f71d16d1d416dec568ea1eb3251cd5dc402",
+    "kit-material-mask.png": "b81f7f67e2dc353d8a5e156ccbebef6595f51455844b02ba751cf5aa6d0bfaeb",
+    "night-light.png": "0271d55fccfcb8dbb2e3747c67d77cd73f8d2b6d951e409a32ea3441645cefbe",
+    "scene-4x.png": "930f5a0cf6baf3050bc951621dab05ff98101ad59657f41722a88a73c0ec5b11",
+    "composition-spec.json": "ebc124c54bfc258d698000422deaff49f1faa9843857200e285074ad6661bd50",
+    "kit.json": "6895c24192da7d512756c485cae34a31b642099e5ebc98b8bdaa7ff99c9474eb",
+    "qa.json": "1eacc237bdba4c33afaa82f3de88e641b673f7bf1cda61d92fce2ba9f07cce12"
+  }
+}

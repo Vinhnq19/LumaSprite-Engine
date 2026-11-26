@@ -1,0 +1,214 @@
+{
+  "native": [
+    32,
+    32
+  ],
+  "pivot": [
+    16,
+    20
+  ],
+  "alpha": "binary",
+  "sampling": "nearest",
+  "ramp": [
+    "#254856",
+    "#3e7881",
+    "#82c4af",
+    "#b4f0cd",
+    "#ebffe5"
+  ],
+  "frames": [
+    {
+      "id": "anticipation",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "durationMs": 55,
+      "coverage": 5,
+      "bounds": {
+        "left": 15,
+        "top": 19,
+        "right": 17,
+        "bottom": 21
+      },
+      "components": [
+        5
+      ],
+      "colors": {
+        "#82c4af": 5
+      },
+      "rgbaSha256": "7789a87aa22bb759f65d640839dcd005823d39354017fac7f3c8a1636b13c3b0",
+      "alphaSha256": "ef501d88b2cc279c4d7a751177df02f7b1961d51e197af25f082eb9202908cbe"
+    },
+    {
+      "id": "buildup",
+      "rect": {
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "durationMs": 60,
+      "coverage": 20,
+      "bounds": {
+        "left": 9,
+        "top": 14,
+        "right": 18,
+        "bottom": 20
+      },
+      "components": [
+        15,
+        5
+      ],
+      "colors": {
+        "#82c4af": 16,
+        "#b4f0cd": 4
+      },
+      "rgbaSha256": "e9a64989045a9dcc99e494bb63f4a24093f97247845e13465833fa2f48137eef",
+      "alphaSha256": "eb601461395fa8ee3f916ac837d31d671b34d0c58698bc33943cca99a4ca824a"
+    },
+    {
+      "id": "peak",
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "durationMs": 75,
+      "coverage": 44,
+      "bounds": {
+        "left": 7,
+        "top": 9,
+        "right": 24,
+        "bottom": 20
+      },
+      "components": [
+        32,
+        5,
+        5,
+        2
+      ],
+      "colors": {
+        "#82c4af": 7,
+        "#b4f0cd": 32,
+        "#ebffe5": 5
+      },
+      "rgbaSha256": "3569d6d0b94374915719f311c26a868a1f350eb42ed23ed345aca2d5f99e3cc9",
+      "alphaSha256": "e35893946404a6e32040b3f3c9346dc39a8d0cfef6b000331e05a675ddbb3d47"
+    },
+    {
+      "id": "dissipation",
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "durationMs": 65,
+      "coverage": 17,
+      "bounds": {
+        "left": 6,
+        "top": 8,
+        "right": 25,
+        "bottom": 15
+      },
+      "components": [
+        5,
+        5,
+        5,
+        2
+      ],
+      "colors": {
+        "#82c4af": 17
+      },
+      "rgbaSha256": "3bd70078e12f215a9f856e6ffc1a7e314bfb97948392ecace189dd1d1aaa5e99",
+      "alphaSha256": "548f7cd6059e4a44c065eab8a93faccfe5fa32477b5a347c3553133740bd95bf"
+    },
+    {
+      "id": "dissipation",
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "durationMs": 60,
+      "coverage": 6,
+      "bounds": {
+        "left": 7,
+        "top": 6,
+        "right": 25,
+        "bottom": 13
+      },
+      "components": [
+        2,
+        2,
+        2
+      ],
+      "colors": {
+        "#3e7881": 4,
+        "#82c4af": 2
+      },
+      "rgbaSha256": "0f6df8a051ddcdd394f5dfdff7510f6e674947a8ef75d889f7414df293d78518",
+      "alphaSha256": "2bbec219701e074de00a703ae1161abf9494f8e439a381cecca0bbd57420c1cb"
+    },
+    {
+      "id": "clear",
+      "rect": {
+        "x": 160,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "durationMs": 95,
+      "coverage": 0,
+      "bounds": null,
+      "components": [],
+      "colors": {},
+      "rgbaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    }
+  ],
+  "transitions": [
+    {
+      "overlap": 2,
+      "added": 18,
+      "removed": 3,
+      "changed": 21
+    },
+    {
+      "overlap": 11,
+      "added": 33,
+      "removed": 9,
+      "changed": 52
+    },
+    {
+      "overlap": 5,
+      "added": 12,
+      "removed": 39,
+      "changed": 56
+    },
+    {
+      "overlap": 1,
+      "added": 5,
+      "removed": 16,
+      "changed": 21
+    },
+    {
+      "overlap": 0,
+      "added": 0,
+      "removed": 6,
+      "changed": 6
+    }
+  ],
+  "timing": {
+    "loops": "once",
+    "totalMs": 410,
+    "clearTailMs": 95,
+    "onceAtEnd": null,
+    "repeatAtEnd": 0
+  }
+}

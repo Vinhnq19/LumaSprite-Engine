@@ -67,13 +67,20 @@ const walkKey = z.strictObject({
 });
 export const walkSpecSchema = animationSchema.extend({
   version: z.literal(2),
-  intent: z.literal('walk-hold'),
+  intent: z.enum(['walk-hold', 'walk-free']),
   frameCount: z.union([z.literal(6), z.literal(8)]),
-  contact: z.strictObject({ feet: z.literal('alternate'), equipment: z.literal('held-lantern'), root: z.literal('frame-stepped') }),
+  contact: z.strictObject({ feet: z.literal('alternate'), equipment: z.enum(['held-lantern', 'none']), root: z.literal('frame-stepped') }),
   keyPoses: z.array(walkKey).min(6).max(8),
   stepPx: integer(12, 16),
 }).superRefine((spec, ctx) => {
   const fail = (message: string) => ctx.addIssue({ code: 'custom', path: ['keyPoses'], message });
+  const held = spec.intent === 'walk-hold';
+  if (spec.contact.equipment !== (held ? 'held-lantern' : 'none') || spec.source.characterSpecVersion !== (held ? 2 : 3)) {
+    ctx.addIssue({ code: 'custom', path: ['contact', 'equipment'], message: 'Walk equipment and source must match the standing pose.' });
+  }
+  if (!held && spec.keyPoses.some(key => key.sway || key.gripShift.some(Boolean))) {
+    fail('Free walks have no held-equipment motion.');
+  }
   if (spec.frameCount !== spec.keyPoses.length || spec.stepPx % 2) fail('Walk requires the declared frame count and an even step length.');
   const phasesPerFoot = spec.frameCount / 2;
   for (const [i, key] of spec.keyPoses.entries()) {

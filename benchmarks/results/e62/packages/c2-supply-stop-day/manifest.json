@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "kind": "lumasprite-scene-composition",
+  "id": "c2-supply-stop",
+  "light": "day",
+  "source": {
+    "checkpoint": "24b8ca6",
+    "kit": "roadside",
+    "specSha256": "b881ba8f3bd3862ad9170e595beae4f3c6535b78076e1c02ca38c469c3daa465",
+    "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "scene.png": "c0d1ef9ba46e6247cea3739b50724ccdd0b66c2c3f81d25a60aa825fc8e7c097",
+    "layer-overlay.png": "4f7f002d21517cb794174ee6c15121609cedf40bca3a08fa45e5885f118a1feb",
+    "material-mask.png": "f62295301ba81ead972fa16f50253d1599912864bf35d2e06fb18f1bdc1191a6",
+    "collision-mask.png": "9857594034dbd75f8251c0fcb2b3e8b0e3c0293e54a6c0ddfa0e5ec45f1a1595",
+    "collision-overlay.png": "079d50455f006cadb4b434efbe32e3e0c7d93fc638fcc11e2c23a47686250710",
+    "walkable-mask.png": "617941d5b29fa67d5922adcfb294812a3ac4d2e35af1bbd2ce1b207f41683022",
+    "route-overlay.png": "d23b506e13364896181917dd9009957cc12dbdc569f77c750736825830101fdf",
+    "focal-overlay.png": "cf55cf93d2a19008c02d0839a5bca2caf90af6fbf4ee3a5458e86536a3cbb70b",
+    "kit.png": "de3c7607cb4de22d131c89f134ec3a83abfd1dbbfd012e3f546febf46916dd19",
+    "kit-material-mask.png": "b81f7f67e2dc353d8a5e156ccbebef6595f51455844b02ba751cf5aa6d0bfaeb",
+    "scene-4x.png": "5659f63eafa6e67de680a30faaba740b3538fd14f04de92b985fc149a2bb5cb5",
+    "composition-spec.json": "217fff40a7d2e6ee6839d6b337597118691cf0716e172e55b8f2526b3663ee76",
+    "kit.json": "3f05de7d217a820c8539f19e54f135bfa8405f301cbd3e374f998f2a6392d3a4",
+    "qa.json": "65e28fefab5b0f97ba7788b162d753c6e650f287eebdbffb60c9bdc03698ab45"
+  }
+}

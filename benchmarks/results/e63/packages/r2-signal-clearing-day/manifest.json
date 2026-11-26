@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "kind": "lumasprite-scene-composition",
+  "id": "r2-signal-clearing",
+  "light": "day",
+  "source": {
+    "checkpoint": "24b8ca6",
+    "kit": "front-court",
+    "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+    "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "scene.png": "c26d26bf08643ad2a2f2efd97a8a0c100c3eb51ca89a327673efc5dfba4d3bda",
+    "layer-overlay.png": "45359cfc39ef3eb3e1ebb7e2d19ece8beadb5689cc0e7628a5f941da547fbbd5",
+    "material-mask.png": "45097b07c0f913a8eb3067a0f0eafd758ba807829bb6b693e2ab3138fabd62a9",
+    "collision-mask.png": "51921b55144e6ba0580710d6cbc3a083683002648bade34f080fc4c575342559",
+    "collision-overlay.png": "cc444e5812f8f1fb43a42ebcf3c55ff45e40d345a98d28215aba8145f4875d6b",
+    "walkable-mask.png": "5ea4f630f066bccd782956fb6ab85a2bae09deba8b2a139423e0aff3b3b0bc39",
+    "route-overlay.png": "dc7d6ccf895a843be1a3c3e5c7efa9d1a13a7cd001a54feaee3ba0ea8f30b8d9",
+    "focal-overlay.png": "3943ac63559a4f5f1f0b98038533ae3d5043d8f18f70bdffdb491e44cf8990f2",
+    "kit.png": "ceb6c7057235ff390d402f0326386ecfc75947e8da1723845c44e93833872ad5",
+    "kit-material-mask.png": "72e453934938abad273e9c71ffc784aca39f1a22578388441d0ad1f2099ef92b",
+    "scene-4x.png": "9c61924aee10a788e3ec85ca628266ae56bc4eb104f6d01fb83f481454378309",
+    "flat-geometry.png": "e7fb176999f0c988d59058cebe199d1630097dfc6311ca4d9ba3d670358232a0",
+    "architecture-silhouette.png": "9ee219d6bf88854fa3c20f510d0ed87fcba53778e18d000300091cd250d46367",
+    "composition-spec.json": "8748700c36028adcafe8c532cf546a10ce359106eba31af580f44625355dcac8",
+    "kit.json": "a992a75bac5ed1a8c33bd5f39aa367326222c5a566dfb23b24e96565eddc392a",
+    "qa.json": "f3b96e0de3fb1e559cc1aba13aaa868f8c57e7e067ae073bf1148bab89f61925"
+  }
+}

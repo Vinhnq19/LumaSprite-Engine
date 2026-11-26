@@ -1,0 +1,55 @@
+{
+  "studioRevision": "bb5c384",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "path": "benchmarks/results/e62/packages/c1-courtyard-day/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "a20dca039ea5c688fc95f37e112087c8c66f85a0c58cbdcebb48da79bf42909e",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e62/packages/c1-courtyard-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "a9887ad8d31ab03cad440c7475c8249dddad84c2b9040f27dddda8933a301a98",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e62/packages/c2-supply-stop-day/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "f052e4e3a3c2205a9a51986955aa6d70202e48216a7b68f9047d8754f743e6b8",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e62/packages/c2-supply-stop-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "9500c343594551ec9f6bdeb3ab5517d4c018f2f2e62fb769f1b4469466951343",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e62/packages/c2-supply-stop-day/kit.png",
+      "width": 313,
+      "height": 80,
+      "rgbaSha256": "08b762f20b81732862c49c1708e750eaf453f0f7559efde4fb0ec5b3fce00dc2",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e62/packages/c1-courtyard-night/night-light.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "38a7caaf112f7a267354b0ac940a970f233d1d5364bf4afe52bb1d37429f37fc",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e62/packages/c2-supply-stop-night/walkable-mask.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "4adbb8bd670189121a40d5563c936bb3a29e4257644b6a7d871b6b940f22236a",
+      "saveReopen": "PASS"
+    }
+  ]
+}

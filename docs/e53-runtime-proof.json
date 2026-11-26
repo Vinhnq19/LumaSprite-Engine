@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-26",
+  "status": "BROWSER_RUNTIME_PASS",
+  "unity": "UNITY_RUNTIME_NOT_TESTED",
+  "playerSha256": "145261416e7769755fcfa20cd00047fa51a42f3fdf0f76b150d31aedfb3387fe",
+  "executedFrom": "file:// LumaSprite-Engine-E5.3-Runtime.html",
+  "frameTransitions": {
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "canvas": [
+      320,
+      176
+    ],
+    "native": [
+      320,
+      176
+    ],
+    "offline": true,
+    "results": [
+      {
+        "scene": "outdoor",
+        "clip": "w2",
+        "stages": [
+          "idle",
+          "entry",
+          "walk",
+          "stop-contact",
+          "exit",
+          "idle-return",
+          "done"
+        ],
+        "boundaries": 80,
+        "wraps": 5,
+        "plantedPairs": 40,
+        "maxSlidePx": 0,
+        "finalRootPx": 160
+      },
+      {
+        "scene": "outdoor",
+        "clip": "courier",
+        "stages": [
+          "idle",
+          "entry",
+          "walk",
+          "stop-contact",
+          "exit",
+          "idle-return",
+          "done"
+        ],
+        "boundaries": 80,
+        "wraps": 5,
+        "plantedPairs": 40,
+        "maxSlidePx": 0,
+        "finalRootPx": 120
+      },
+      {
+        "scene": "dungeon",
+        "clip": "hybrid",
+        "stages": [
+          "idle",
+          "entry",
+          "walk",
+          "stop-contact",
+          "exit",
+          "idle-return",
+          "done"
+        ],
+        "boundaries": 80,
+        "wraps": 5,
+        "plantedPairs": 40,
+        "maxSlidePx": 0,
+        "finalRootPx": 160
+      },
+      {
+        "scene": "dungeon",
+        "clip": "courier",
+        "stages": [
+          "idle",
+          "entry",
+          "walk",
+          "stop-contact",
+          "exit",
+          "idle-return",
+          "done"
+        ],
+        "boundaries": 80,
+        "wraps": 5,
+        "plantedPairs": 40,
+        "maxSlidePx": 0,
+        "finalRootPx": 120
+      },
+      {
+        "scene": "outdoor",
+        "clip": "ik",
+        "stages": [
+          "idle",
+          "entry",
+          "walk",
+          "stop-contact",
+          "exit",
+          "idle-return",
+          "done"
+        ],
+        "boundaries": 80,
+        "wraps": 5,
+        "plantedPairs": 40,
+        "maxSlidePx": 0,
+        "finalRootPx": 160
+      },
+      {
+        "scene": "outdoor",
+        "clip": "courier",
+        "stages": [
+          "idle",
+          "entry",
+          "walk",
+          "stop-contact",
+          "exit",
+          "idle-return",
+          "done"
+        ],
+        "boundaries": 80,
+        "wraps": 5,
+        "plantedPairs": 40,
+        "maxSlidePx": 0,
+        "finalRootPx": 120
+      }
+    ]
+  },
+  "livePlaybacks": [
+    {
+      "scene": "outdoor",
+      "clip": "w2",
+      "elapsed": 8749,
+      "wallMs": 8751,
+      "final": [
+        {
+          "id": "w2",
+          "stage": "done",
+          "rootPx": 160,
+          "displayedWalkFrames": 40,
+          "stages": [
+            "idle",
+            "entry",
+            "walk",
+            "stop-contact",
+            "exit",
+            "idle-return",
+            "done"
+          ]
+        },
+        {
+          "id": "courier",
+          "stage": "done",
+          "rootPx": 120,
+          "displayedWalkFrames": 40,
+          "stages": [
+            "idle",
+            "entry",
+            "walk",
+            "stop-contact",
+            "exit",
+            "idle-return",
+            "done"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "dungeon",
+      "clip": "hybrid",
+      "elapsed": 8748,
+      "wallMs": 8749,
+      "final": [
+        {
+          "id": "hybrid",
+          "stage": "done",
+          "rootPx": 160,
+          "displayedWalkFrames": 40,
+          "stages": [
+            "idle",
+            "entry",
+            "walk",
+            "stop-contact",
+            "exit",
+            "idle-return",
+            "done"
+          ]
+        },
+        {
+          "id": "courier",
+          "stage": "done",
+          "rootPx": 120,
+          "displayedWalkFrames": 40,
+          "stages": [
+            "idle",
+            "entry",
+            "walk",
+            "stop-contact",
+            "exit",
+            "idle-return",
+            "done"
+          ]
+        }
+      ]
+    }
+  ],
+  "gallery": {
+    "viewport": [
+      390,
+      844
+    ],
+    "modes": [
+      "outdoor",
+      "dungeon",
+      "sprite",
+      "zoom",
+      "marks"
+    ],
+    "frames": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "0",
+      "1"
+    ],
+    "scoreDownload": "e53-surveyor-walk-review.json",
+    "embeddedImages": 22,
+    "downloadableTimingStripPairs": 2
+  },
+  "mediaSha256": "7226547bd5d99341e3baac401bb43f2566a8d567c12febe8defcc8b981f67782"
+}

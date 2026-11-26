@@ -1,0 +1,130 @@
+[
+  {
+    "id": "r1",
+    "light": "day",
+    "seed": 83,
+    "coverage": {
+      "added": 218,
+      "removed": 483,
+      "shared": 10575
+    },
+    "routes": [
+      [
+        "gate-passage",
+        1919
+      ],
+      [
+        "signal-approach",
+        1932
+      ]
+    ],
+    "actors": [
+      {
+        "id": "courier",
+        "before": 997,
+        "after": 997
+      },
+      {
+        "id": "surveyor",
+        "before": 1072,
+        "after": 1072
+      }
+    ]
+  },
+  {
+    "id": "r1",
+    "light": "night",
+    "seed": 83,
+    "coverage": {
+      "added": 218,
+      "removed": 483,
+      "shared": 10575
+    },
+    "routes": [
+      [
+        "gate-passage",
+        1919
+      ],
+      [
+        "signal-approach",
+        1932
+      ]
+    ],
+    "actors": [
+      {
+        "id": "courier",
+        "before": 997,
+        "after": 997
+      },
+      {
+        "id": "surveyor",
+        "before": 1072,
+        "after": 1072
+      }
+    ]
+  },
+  {
+    "id": "h1",
+    "light": "day",
+    "seed": 2117,
+    "coverage": {
+      "added": 240,
+      "removed": 713,
+      "shared": 10908
+    },
+    "routes": [
+      [
+        "gate-passage",
+        2142
+      ],
+      [
+        "signal-approach",
+        836
+      ]
+    ],
+    "actors": [
+      {
+        "id": "surveyor",
+        "before": 1072,
+        "after": 1072
+      },
+      {
+        "id": "courier",
+        "before": 997,
+        "after": 997
+      }
+    ]
+  },
+  {
+    "id": "h1",
+    "light": "night",
+    "seed": 2117,
+    "coverage": {
+      "added": 240,
+      "removed": 713,
+      "shared": 10908
+    },
+    "routes": [
+      [
+        "gate-passage",
+        2142
+      ],
+      [
+        "signal-approach",
+        836
+      ]
+    ],
+    "actors": [
+      {
+        "id": "surveyor",
+        "before": 1072,
+        "after": 1072
+      },
+      {
+        "id": "courier",
+        "before": 997,
+        "after": 997
+      }
+    ]
+  }
+]

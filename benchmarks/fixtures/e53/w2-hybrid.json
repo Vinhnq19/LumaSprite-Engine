@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "lumasprite-walk-refinement",
+  "name": "W2-Hybrid",
+  "base": "benchmarks/fixtures/e52/w2.json",
+  "baseSha256": "7949744a61b877aa58fb17c76e974d4c4d0f457d0dd1dbbbce6b09acb875355f",
+  "w2ManifestSha256": "93b0deb6b10ceb24212b54c0c56f204115c83a753fab9c4cbb7af9046173f904",
+  "ikQaSha256": "8d27e1d447c2cd56df7e1723aa6b5172129a202bbb736f606ec8cea7a15aaefb",
+  "knees": [
+    {
+      "frame": 2,
+      "side": "near",
+      "offset": [
+        -1,
+        0
+      ]
+    },
+    {
+      "frame": 6,
+      "side": "far",
+      "offset": [
+        -1,
+        0
+      ]
+    }
+  ]
+}

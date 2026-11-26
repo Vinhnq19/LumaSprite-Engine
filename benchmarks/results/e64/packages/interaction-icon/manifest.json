@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "kind": "lumasprite-pixel-effect",
+  "id": "interaction-icon",
+  "family": "ui",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "files": {
+    "frame-0.png": "ed5ed8b0a7cc022040ef8309060a549c30187ec9b28623ce4acab9b25ce4dfec",
+    "frame-1.png": "e936ef6a9700ffbe3ec46ef0465c78d62e43a52cff73681052ca1668e1c1d1d8",
+    "states.json": "537f3bb4ee10b2b82146eb13d57a9f56ff20641bd357aa36588d8fa328555b30",
+    "spritesheet.png": "52778f9a17f3385643a30f481d4c7669f36e526a0a740a87fa05193540de8360",
+    "spritesheet-4x.png": "1d1e7113bccd558ba852ccee1d6b4853e084dd3b8d4a86372d453c97e4187cf6",
+    "alpha.png": "9498649e7256f9f6dc908bbeaea2dc13e26ed571ff3a593a169543ead6960069",
+    "spec.json": "d5b5d1a117d32a2ed9bb57121787bfdf3a1e7e6358398173f40139a8c0aee31b",
+    "qa.json": "73957cec735fdcd723f0c4c2e28bfa82a109822071da6c30ef48c2b774c1347b"
+  }
+}

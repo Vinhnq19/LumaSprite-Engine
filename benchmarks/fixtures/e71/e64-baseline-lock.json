@@ -1,0 +1,340 @@
+{
+  "version": 1,
+  "checkpoint": "77fbaa5",
+  "parent": "6efc683",
+  "engineering": "APPROVED",
+  "artistic": "APPROVED_WITH_LIMITATIONS",
+  "runtime": "PRODUCTION_GAME_RUNTIME_NOT_TESTED",
+  "files": [
+    {
+      "file": "benchmarks/results/e64/SHA256SUMS",
+      "sha256": "491ac52a4aaa3777fb4425eb0404919f283c5958fd5891cc610d71c70307d75c"
+    },
+    {
+      "file": "benchmarks/results/e64/benchmark.json",
+      "sha256": "3973c05672591f7365fdd9c118f20d37a17a4ad29dbd5a3cab619a9e53afd240"
+    },
+    {
+      "file": "benchmarks/results/e64/studio-parity.json",
+      "sha256": "7fa1f9d0e9b30e102963041557ea7d79a0bb7e5df962d2110feacea2cd5055c7"
+    },
+    {
+      "file": "benchmarks/fixtures/e64/e63-environment-lock.json",
+      "sha256": "3ddc46d1f581d035a720ff72b39e0437b2e13f485c88341370cbfa19f6fa9f5a"
+    },
+    {
+      "file": "benchmarks/fixtures/e61r/style-profile.json",
+      "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+    }
+  ],
+  "packages": [
+    {
+      "id": "interaction-icon",
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "manifest": {
+        "file": "benchmarks/results/e64/packages/interaction-icon/manifest.json",
+        "sha256": "ec974f8b970759855df1e7372a1ec7c6adc26c25f7919937037d887579584a69"
+      },
+      "spec": {
+        "file": "benchmarks/results/e64/packages/interaction-icon/spec.json",
+        "sha256": "d5b5d1a117d32a2ed9bb57121787bfdf3a1e7e6358398173f40139a8c0aee31b"
+      },
+      "pivot": [
+        8,
+        15
+      ],
+      "palette": {
+        "outline": "#211e2a",
+        "slate": "#303443",
+        "silver": "#81939a",
+        "rim": "#b0bdac",
+        "bronze": "#ae7541",
+        "gold": "#edaf59",
+        "glyph": "#ffe3a0",
+        "white": "#fff4d7"
+      },
+      "style": {
+        "file": "benchmarks/fixtures/e61r/style-profile.json",
+        "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+      },
+      "frameRgbaSha256": [
+        "7226a51824ef23d289de8452d58dc2eaf68c9143e640a19dbbc2b915614854bc",
+        "b103bb9db65ad54fa353190c0f2d3d258234bdc3b0a5ed9fcf88c28596ae8e9a"
+      ],
+      "files": [
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/frame-0.png",
+          "sha256": "ed5ed8b0a7cc022040ef8309060a549c30187ec9b28623ce4acab9b25ce4dfec"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/frame-1.png",
+          "sha256": "e936ef6a9700ffbe3ec46ef0465c78d62e43a52cff73681052ca1668e1c1d1d8"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/states.json",
+          "sha256": "537f3bb4ee10b2b82146eb13d57a9f56ff20641bd357aa36588d8fa328555b30"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/spritesheet.png",
+          "sha256": "52778f9a17f3385643a30f481d4c7669f36e526a0a740a87fa05193540de8360"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/spritesheet-4x.png",
+          "sha256": "1d1e7113bccd558ba852ccee1d6b4853e084dd3b8d4a86372d453c97e4187cf6"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/alpha.png",
+          "sha256": "9498649e7256f9f6dc908bbeaea2dc13e26ed571ff3a593a169543ead6960069"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/spec.json",
+          "sha256": "d5b5d1a117d32a2ed9bb57121787bfdf3a1e7e6358398173f40139a8c0aee31b"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/qa.json",
+          "sha256": "73957cec735fdcd723f0c4c2e28bfa82a109822071da6c30ef48c2b774c1347b"
+        }
+      ]
+    },
+    {
+      "id": "inventory-barrel",
+      "artistic": "APPROVED",
+      "manifest": {
+        "file": "benchmarks/results/e64/packages/inventory-barrel/manifest.json",
+        "sha256": "9ea55df8c38af266cab283fea3008bd03df536124ed856b6429a2f790ee93888"
+      },
+      "spec": {
+        "file": "benchmarks/results/e64/packages/inventory-barrel/spec.json",
+        "sha256": "e69c5b85d129754d558da50a313752221838f1fbdb1c65c6b3a9fb9364110be2"
+      },
+      "pivot": [
+        16,
+        28
+      ],
+      "palette": {
+        "outline": "#211e2a",
+        "woodShade": "#4a2927",
+        "woodDark": "#723e2c",
+        "wood": "#a15a36",
+        "woodLight": "#ca8248",
+        "woodRim": "#eea761",
+        "ironDark": "#303443",
+        "iron": "#657987",
+        "ironLight": "#b0bdac",
+        "brass": "#edaf59"
+      },
+      "style": {
+        "file": "benchmarks/fixtures/e61r/style-profile.json",
+        "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+      },
+      "frameRgbaSha256": [
+        "fb8a4f6cba1ae9766c61013f52a752222ae3872764ba7eec7f60903341971a27"
+      ],
+      "files": [
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/frame-0.png",
+          "sha256": "3e537ae6a421b1419f0498a37cd859c79cf62e3cdd9f3aba061f092270ed0765"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/states.json",
+          "sha256": "c6c625d4a9254573f65ca66617e4b6f0989eed07673df102789d79e43db81d24"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/spritesheet.png",
+          "sha256": "3e537ae6a421b1419f0498a37cd859c79cf62e3cdd9f3aba061f092270ed0765"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/spritesheet-4x.png",
+          "sha256": "7a1026e88ce6fd5299393ef04a1e388387af7e6fe551a8ecc09af5614e860630"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/alpha.png",
+          "sha256": "9a3101c1e2616b20587fbc75b0b050b2c5bb0fe563e938721d3a75d1cfc03e17"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/spec.json",
+          "sha256": "e69c5b85d129754d558da50a313752221838f1fbdb1c65c6b3a9fb9364110be2"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/qa.json",
+          "sha256": "048cb0087621f2b8471962d4fee0f329b5ea90d4c6c472b830a0deef6f413dfe"
+        }
+      ]
+    },
+    {
+      "id": "signal-activation",
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "manifest": {
+        "file": "benchmarks/results/e64/packages/signal-activation/manifest.json",
+        "sha256": "c587b1387f4dfe6a1993cb318c341571eaa8ce03ea3da6c97f5d0439292a2e48"
+      },
+      "spec": {
+        "file": "benchmarks/results/e64/packages/signal-activation/spec.json",
+        "sha256": "684407fa7284711441b084b89b37178b90955166e8f2256b9e09ba0a4635ce95"
+      },
+      "pivot": [
+        24,
+        30
+      ],
+      "palette": [
+        "#72492f",
+        "#ae7541",
+        "#edaf59",
+        "#ffe3a0",
+        "#fff5d4"
+      ],
+      "style": {
+        "file": "benchmarks/fixtures/e61r/style-profile.json",
+        "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+      },
+      "frameRgbaSha256": [
+        "154e01b3ab937d98d7c887acdacee30b2d3d683ce857a394d5824c48647fe541",
+        "6d584f86c857353cf191996e195553f3fc4bf5ef40bb574fb5f0520a326a1347",
+        "8768006ed595ab967950315ab7c4e596fec9e0416886f2c71ee7116dcbcf71ea",
+        "9ef805dfa1fdda8b122eeee20c6607f027e8169cb4b47c55db030bd989016abb",
+        "98ea306e20fe4d84e0a0f77ab8fe8541e0e8db1ac329b881174f6d02477731ac",
+        "e0d52f611127bd66ddb1c0d69931258fe4f0d324c44c9853331ab2b59a664938",
+        "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+      ],
+      "files": [
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/frame-0.png",
+          "sha256": "c19ccbb31b4d6e0b24d45c88bf164024f8f250f9cdf3ac9c798f5337a80a4892"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/frame-1.png",
+          "sha256": "a4d0631afe60694a28c77024603d1e2a06b58e140dbb40aae20e14ef23c62e96"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/frame-2.png",
+          "sha256": "0670a43b35ece8d1772c90bc0ee636eac9292b3c9e5e392a3ad4a5d5a56bd51b"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/frame-3.png",
+          "sha256": "910307a08f083e02fdd67a1eb3b5a7d5e5929279e5e364a89ff0ed09a98702ef"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/frame-4.png",
+          "sha256": "3789c5d3d7f270810a2273389d506e3f950c1c645d85d6116db54dab01e188bd"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/frame-5.png",
+          "sha256": "9e48e73d3ef26cc14269ff26f202f61289ae5152bfeba78ae16c0618b6dee10f"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/frame-6.png",
+          "sha256": "b63af1813337872ee2392b89e2a26a3a7abc66900e9cb071d66b014823b85705"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/timing.json",
+          "sha256": "52291b9f748ea93ed6cf3de101c558333ea1eb335a0a4c4c8caaa401420015e3"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/spritesheet.png",
+          "sha256": "3035110b1d996d00396c1561641f0065c393625b4a5d869ba6b2ff7af6756b76"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/spritesheet-4x.png",
+          "sha256": "70e4a22548a0aac5b3c0eb76c792c4a6c341c641853db2c72623360a825d51a8"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/alpha.png",
+          "sha256": "ff04d0a80e5105d4c3e53e4d5486f26272ec5f1564d6432851d0f481a8af04f0"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/spec.json",
+          "sha256": "684407fa7284711441b084b89b37178b90955166e8f2256b9e09ba0a4635ce95"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/qa.json",
+          "sha256": "acf22d92220a371abd57ad0274f1abddf799dc9cf6fe6eece8a2b2659761ad5f"
+        }
+      ]
+    },
+    {
+      "id": "pickup-sparkle",
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "manifest": {
+        "file": "benchmarks/results/e64/packages/pickup-sparkle/manifest.json",
+        "sha256": "4d3e27d63f1c9700afd6320f487c63660828deefd07476f725aafef3d1349816"
+      },
+      "spec": {
+        "file": "benchmarks/results/e64/packages/pickup-sparkle/spec.json",
+        "sha256": "cbf613caa64235f9e721ac4a4597c024a4fbf3b562a18b8172d479b83f6dd930"
+      },
+      "pivot": [
+        16,
+        20
+      ],
+      "palette": [
+        "#254856",
+        "#3e7881",
+        "#82c4af",
+        "#b4f0cd",
+        "#ebffe5"
+      ],
+      "style": {
+        "file": "benchmarks/fixtures/e61r/style-profile.json",
+        "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+      },
+      "frameRgbaSha256": [
+        "7789a87aa22bb759f65d640839dcd005823d39354017fac7f3c8a1636b13c3b0",
+        "e9a64989045a9dcc99e494bb63f4a24093f97247845e13465833fa2f48137eef",
+        "3569d6d0b94374915719f311c26a868a1f350eb42ed23ed345aca2d5f99e3cc9",
+        "3bd70078e12f215a9f856e6ffc1a7e314bfb97948392ecace189dd1d1aaa5e99",
+        "0f6df8a051ddcdd394f5dfdff7510f6e674947a8ef75d889f7414df293d78518",
+        "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+      ],
+      "files": [
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/frame-0.png",
+          "sha256": "83f78170c7f461e7a326349aa681413e88b23beb9686a68fa84f7fc3f2a49490"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/frame-1.png",
+          "sha256": "508363d8e58d5c7730cd1c14c68550aa68e1a16b28e30fadd8fa083429197afd"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/frame-2.png",
+          "sha256": "2c22c64f7992371e37dd3b04d4b497337625457433115f701c87449b6132b076"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/frame-3.png",
+          "sha256": "91d30c6c63f67225ef3870b7c78e7733b96a8ccdb90a50d5116644e92074a24c"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/frame-4.png",
+          "sha256": "70f4278304a306a9cefa612e843b1861eb4f7cf6ee5cf8f82e53f1306beb954b"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/frame-5.png",
+          "sha256": "b52ea83a4e2a4761b6b30e7c97861ee6d88b028195d192ea0b8ea5132a9177f0"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/timing.json",
+          "sha256": "2527e07ffa229af4b1afe43a890ddd849cfa8273d8017971964879a74c4621ba"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/spritesheet.png",
+          "sha256": "25df799b36c986a75b270a53fd3335d9c9f016708a0cdb9380a92222d69bea2f"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/spritesheet-4x.png",
+          "sha256": "38b9a92427a3515e78f2406bae30b249ca282a19779fa33d16ad906c1c3c7ee3"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/alpha.png",
+          "sha256": "2698a7eb9393f8e5c2acc84bb58f30e9cc65a4442e314ebe9c1028b5e4c5beec"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/spec.json",
+          "sha256": "cbf613caa64235f9e721ac4a4597c024a4fbf3b562a18b8172d479b83f6dd930"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/qa.json",
+          "sha256": "cd1d7c8b8d68d3faa5ac9fb11417dc6894e3fc9c5a2b44d93411681b08734f84"
+        }
+      ]
+    }
+  ]
+}

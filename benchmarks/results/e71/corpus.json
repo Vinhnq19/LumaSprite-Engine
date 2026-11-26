@@ -1,0 +1,1333 @@
+{
+  "version": 1,
+  "checkpoint": "77fbaa5",
+  "historical": [
+    {
+      "class": "A",
+      "id": "compact",
+      "family": "prop",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "E2.4 authored palette",
+        "reference": {
+          "file": "benchmarks/results/e24/compact-spec.json",
+          "sha256": "fd1821cda71f373b6bb5a4e768515cfdbd97f6d5f884aa0f5245aa158080f43e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e24/compact-spec.json",
+        "sha256": "fd1821cda71f373b6bb5a4e768515cfdbd97f6d5f884aa0f5245aa158080f43e"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED",
+      "limitations": [
+        "Approved for the reviewed authored 32×32 art."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e24/compact-1x.png",
+          "sha256": "09e3f06490415e523c18974eea2a3d04e9fd18490e08846a86817e489f99cbbf"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "domed",
+      "family": "prop",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "E2.4 authored palette",
+        "reference": {
+          "file": "benchmarks/results/e24/domed-spec.json",
+          "sha256": "cb6866819dc296f54d4ed3fc9a4f4a9e653bf1550240d88ea1589a87ce507827"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e24/domed-spec.json",
+        "sha256": "cb6866819dc296f54d4ed3fc9a4f4a9e653bf1550240d88ea1589a87ce507827"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED",
+      "limitations": [
+        "Approved for the reviewed authored 32×32 art."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e24/domed-1x.png",
+          "sha256": "75dcca132877c28349961937e8aa564e9fa72f5ef48f3743be26d6f043b5cd90"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "travel",
+      "family": "prop",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "E2.4 authored palette",
+        "reference": {
+          "file": "benchmarks/results/e24/travel-spec.json",
+          "sha256": "211f82b24b479a5e39d9e4d3e9df914e6ae94c66730e4c4a274aeb7b914fc082"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e24/travel-spec.json",
+        "sha256": "211f82b24b479a5e39d9e4d3e9df914e6ae94c66730e4c4a274aeb7b914fc082"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED",
+      "limitations": [
+        "Front rail prominent on bright backgrounds."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e24/travel-1x.png",
+          "sha256": "36d9e060c449eea52bd852c29a096ea0c9b3264730cc15a28c39d70191b054ef"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "crate",
+      "family": "prop",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "E2.4 authored palette",
+        "reference": {
+          "file": "benchmarks/results/e24/crate-spec.json",
+          "sha256": "7e1401ba78cd382d7142ab3bdbe684e285561d3efbf4bf37909977cf5b699589"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e24/crate-spec.json",
+        "sha256": "7e1401ba78cd382d7142ab3bdbe684e285561d3efbf4bf37909977cf5b699589"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED",
+      "limitations": [
+        "Approved for the reviewed authored 32×32 art."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e24/crate-1x.png",
+          "sha256": "7877388780f146c49beb6afce19a50f0da1b6b5329bb5313c5c88354aa8bd6b6"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "barrel-wide",
+      "family": "prop",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "E2.4 authored palette",
+        "reference": {
+          "file": "benchmarks/results/e24/barrel-wide-spec.json",
+          "sha256": "1ee09a1b770d45a3ca783892e21df3115863258449b709b94d53d3071598b9b5"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e24/barrel-wide-spec.json",
+        "sha256": "1ee09a1b770d45a3ca783892e21df3115863258449b709b94d53d3071598b9b5"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED",
+      "limitations": [
+        "Approved for the reviewed authored 32×32 art."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e24/barrel-wide-1x.png",
+          "sha256": "bdc97c7fb1ae7f5f6da9592b767f49710d92b434b66446c5d9a827f3d5d94eb7"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "barrel-tall",
+      "family": "prop",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "E2.4 authored palette",
+        "reference": {
+          "file": "benchmarks/results/e24/barrel-tall-spec.json",
+          "sha256": "0f7d62c39acdbc55547373ae02e6638d12c2db7d6c0cf0dfc98699e1b1e701ea"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e24/barrel-tall-spec.json",
+        "sha256": "0f7d62c39acdbc55547373ae02e6638d12c2db7d6c0cf0dfc98699e1b1e701ea"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED",
+      "limitations": [
+        "Low stave separation in the separate four-ink preset."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e24/barrel-tall-1x.png",
+          "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "terrain-b-outdoor",
+      "family": "terrain",
+      "canvas": [
+        128,
+        96
+      ],
+      "style": {
+        "name": "E3.4 Direction B authored terrain",
+        "reference": {
+          "file": "benchmarks/results/e34/packages/b-outdoor/map.json",
+          "sha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e34/packages/b-outdoor/map.json",
+        "sha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+      },
+      "seed": 42,
+      "specVersion": 4,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Dirt is simple and long transitions can expose the tile grid. Static Studio atlas for editable maps."
+      ],
+      "mapCanvas": [
+        416,
+        224
+      ],
+      "tileSize": 16,
+      "outputs": [
+        {
+          "file": "benchmarks/results/e34/packages/b-outdoor/atlas.png",
+          "sha256": "be7f121ce723dc9df1c8ecefc778685ae1e8cf3e933718c8d2bb091b2d68a82a"
+        },
+        {
+          "file": "benchmarks/results/e34/packages/b-outdoor/map.png",
+          "sha256": "6c75c549f0496354b857589fc16dde8f6e5c1f22db95d5aa9de8560cda158f88"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "terrain-b-organic",
+      "family": "terrain",
+      "canvas": [
+        128,
+        96
+      ],
+      "style": {
+        "name": "E3.4 Direction B authored terrain",
+        "reference": {
+          "file": "benchmarks/results/e34/packages/b-organic/map.json",
+          "sha256": "472a05675665e4337a8145b66084b54b0ab18bde87cf33732866621f8a51089a"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e34/packages/b-organic/map.json",
+        "sha256": "472a05675665e4337a8145b66084b54b0ab18bde87cf33732866621f8a51089a"
+      },
+      "seed": 42,
+      "specVersion": 4,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Dirt is simple and long transitions can expose the tile grid. Static Studio atlas for editable maps."
+      ],
+      "mapCanvas": [
+        496,
+        304
+      ],
+      "tileSize": 16,
+      "outputs": [
+        {
+          "file": "benchmarks/results/e34/packages/b-organic/atlas.png",
+          "sha256": "be7f121ce723dc9df1c8ecefc778685ae1e8cf3e933718c8d2bb091b2d68a82a"
+        },
+        {
+          "file": "benchmarks/results/e34/packages/b-organic/map.png",
+          "sha256": "a997f85aad36e906f3a03c7a1da59760992389e1e1c220f084f4539832ab481a"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "terrain-b-large",
+      "family": "terrain",
+      "canvas": [
+        128,
+        96
+      ],
+      "style": {
+        "name": "E3.4 Direction B authored terrain",
+        "reference": {
+          "file": "benchmarks/results/e34/packages/b-large/map.json",
+          "sha256": "4d5404791667142ebdf097dfbea904ee214fe6a38f3c609ca97ad2e90132c580"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e34/packages/b-large/map.json",
+        "sha256": "4d5404791667142ebdf097dfbea904ee214fe6a38f3c609ca97ad2e90132c580"
+      },
+      "seed": 42,
+      "specVersion": 4,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Dirt is simple and long transitions can expose the tile grid. Static Studio atlas for editable maps."
+      ],
+      "mapCanvas": [
+        576,
+        336
+      ],
+      "tileSize": 16,
+      "outputs": [
+        {
+          "file": "benchmarks/results/e34/packages/b-large/atlas.png",
+          "sha256": "be7f121ce723dc9df1c8ecefc778685ae1e8cf3e933718c8d2bb091b2d68a82a"
+        },
+        {
+          "file": "benchmarks/results/e34/packages/b-large/map.png",
+          "sha256": "4e188b9969da27380332dd3da71cc09f9855e4847d66a4108ec318e1297a78de"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "terrain-b-storage",
+      "family": "terrain",
+      "canvas": [
+        128,
+        96
+      ],
+      "style": {
+        "name": "E3.4 Direction B authored terrain",
+        "reference": {
+          "file": "benchmarks/results/e34/packages/b-storage/map.json",
+          "sha256": "6ac1811ccbd5138fe0035ff91e4e6bf5ee2cbd96f29df427947a69f854229a5f"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e34/packages/b-storage/map.json",
+        "sha256": "6ac1811ccbd5138fe0035ff91e4e6bf5ee2cbd96f29df427947a69f854229a5f"
+      },
+      "seed": 42,
+      "specVersion": 4,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Dirt is simple and long transitions can expose the tile grid. Static Studio atlas for editable maps."
+      ],
+      "mapCanvas": [
+        256,
+        144
+      ],
+      "tileSize": 16,
+      "outputs": [
+        {
+          "file": "benchmarks/results/e34/packages/b-storage/atlas.png",
+          "sha256": "be7f121ce723dc9df1c8ecefc778685ae1e8cf3e933718c8d2bb091b2d68a82a"
+        },
+        {
+          "file": "benchmarks/results/e34/packages/b-storage/map.png",
+          "sha256": "aaebc409f4e7535b527b568ec525e054e5578ea78e1fb7365a761f4c270e0ad7"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "terrain-b-stress",
+      "family": "terrain",
+      "canvas": [
+        128,
+        96
+      ],
+      "style": {
+        "name": "E3.4 Direction B authored terrain",
+        "reference": {
+          "file": "benchmarks/results/e34/packages/b-stress/map.json",
+          "sha256": "922e42fbde6062602e172acef19f50a8124672bbd83d26abdfb2486189a36b6c"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e34/packages/b-stress/map.json",
+        "sha256": "922e42fbde6062602e172acef19f50a8124672bbd83d26abdfb2486189a36b6c"
+      },
+      "seed": 42,
+      "specVersion": 4,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Dirt is simple and long transitions can expose the tile grid. Static Studio atlas for editable maps."
+      ],
+      "mapCanvas": [
+        288,
+        176
+      ],
+      "tileSize": 16,
+      "outputs": [
+        {
+          "file": "benchmarks/results/e34/packages/b-stress/atlas.png",
+          "sha256": "be7f121ce723dc9df1c8ecefc778685ae1e8cf3e933718c8d2bb091b2d68a82a"
+        },
+        {
+          "file": "benchmarks/results/e34/packages/b-stress/map.png",
+          "sha256": "487b1376c3cc4c2e7268c7df7df888d8c61dfa16f45796a89f5c11dd2430eedb"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "surveyor",
+      "family": "character",
+      "canvas": [
+        64,
+        64
+      ],
+      "style": {
+        "name": "E4.4 Authored",
+        "reference": {
+          "file": "benchmarks/results/e44/packages/r2/character-spec.json",
+          "sha256": "17c430de356e8e77d2bb0d9559699624159d998e4c1e843d5285b9da31d4c6c9"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e44/packages/r2/character-spec.json",
+        "sha256": "17c430de356e8e77d2bb0d9559699624159d998e4c1e843d5285b9da31d4c6c9"
+      },
+      "seed": 42,
+      "specVersion": 2,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Single right-facing view with limited 3/4 depth or material contrast."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e44/packages/r2/final.png",
+          "sha256": "4b0d76ea22119e14f79ace767f37e7aeef6172ca5b21177af73acbb92c6f29ee"
+        },
+        {
+          "file": "benchmarks/results/e44/packages/r2/shape-lock.json",
+          "sha256": "0b617f360f073a3b6dc8379dabf04b999baa0056b3ea420e8fb059a0939543b6"
+        },
+        {
+          "file": "benchmarks/results/e44/packages/r2/material-mask.png",
+          "sha256": "1dab0ea6b27b105a597f9d6e7a9109e13fd06bacf2a12c8ff5fe716240461554"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "surveyor-idle",
+      "family": "animation",
+      "canvas": [
+        64,
+        64
+      ],
+      "style": {
+        "name": "Locked E4/E5 animation material",
+        "reference": {
+          "file": "benchmarks/results/e54/packages/surveyor/idle/animation-spec.json",
+          "sha256": "ca87f794a8ad405d34c72d1e204e204926080b4edddef5bbb788ba8f7795ccf8"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e54/packages/surveyor/idle/animation-spec.json",
+        "sha256": "ca87f794a8ad405d34c72d1e204e204926080b4edddef5bbb788ba8f7795ccf8"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Single view. Production uses the selected discrete-root playback policy when applicable."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e54/packages/surveyor/idle/spritesheet.png",
+          "sha256": "c87c1ef75a945993fdd91accae0c580b2cb4c3e50b18c53767d3cfd8ed82d215"
+        },
+        {
+          "file": "benchmarks/results/e54/packages/surveyor/idle/timing.json",
+          "sha256": "9debbbb6a24ce3f29aa6021991bc62b663cedbe2978e2f8f28a6cb5d096a16cf"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "surveyor-walk",
+      "family": "animation",
+      "canvas": [
+        64,
+        64
+      ],
+      "style": {
+        "name": "Locked E4/E5 animation material",
+        "reference": {
+          "file": "benchmarks/results/e54/packages/surveyor/walk/animation-spec.json",
+          "sha256": "7949744a61b877aa58fb17c76e974d4c4d0f457d0dd1dbbbce6b09acb875355f"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e54/packages/surveyor/walk/animation-spec.json",
+        "sha256": "7949744a61b877aa58fb17c76e974d4c4d0f457d0dd1dbbbce6b09acb875355f"
+      },
+      "seed": 42,
+      "specVersion": 2,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Single view. Production uses the selected discrete-root playback policy when applicable."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e54/packages/surveyor/walk/spritesheet.png",
+          "sha256": "c53d40c7632a13da1c1884bbbde7731357aba6f85c14c2cb03f457d5989f07c7"
+        },
+        {
+          "file": "benchmarks/results/e54/packages/surveyor/walk/timing.json",
+          "sha256": "1315fd6c0c06675d467eb344c5fc579cd704f8a9f348fbe06cd0dfdb3c0e82cb"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "courier",
+      "family": "character",
+      "canvas": [
+        64,
+        64
+      ],
+      "style": {
+        "name": "E4.4 Authored",
+        "reference": {
+          "file": "benchmarks/results/e44/packages/courier-rev/character-spec.json",
+          "sha256": "4607cbe1a09f65aefbad4b1dafb29cca54cb00348203c7bf80738ee1298f6b49"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e44/packages/courier-rev/character-spec.json",
+        "sha256": "4607cbe1a09f65aefbad4b1dafb29cca54cb00348203c7bf80738ee1298f6b49"
+      },
+      "seed": 73,
+      "specVersion": 3,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Single right-facing view with limited 3/4 depth or material contrast."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e44/packages/courier-rev/final.png",
+          "sha256": "d47d35079483f53bfc2f30b741ef3fbbe83561904895e8b24c99eff922549738"
+        },
+        {
+          "file": "benchmarks/results/e44/packages/courier-rev/shape-lock.json",
+          "sha256": "6f735bdd393b29334f4e26d8af6d69a012f6db1121c8413088815d7cd4ae46db"
+        },
+        {
+          "file": "benchmarks/results/e44/packages/courier-rev/material-mask.png",
+          "sha256": "b5a40109ce530260455b43a2d88cb8616bfdbdb94a604ea783d21b52a9f95288"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "courier-standing",
+      "family": "animation",
+      "canvas": [
+        64,
+        64
+      ],
+      "style": {
+        "name": "Locked E4/E5 animation material",
+        "reference": {
+          "file": "benchmarks/results/e44/packages/courier-rev/character-spec.json",
+          "sha256": "4607cbe1a09f65aefbad4b1dafb29cca54cb00348203c7bf80738ee1298f6b49"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e44/packages/courier-rev/character-spec.json",
+        "sha256": "4607cbe1a09f65aefbad4b1dafb29cca54cb00348203c7bf80738ee1298f6b49"
+      },
+      "seed": 73,
+      "specVersion": 3,
+      "artistic": "APPROVED_STANDING_REFERENCE",
+      "limitations": [
+        "Single view. Production uses the selected discrete-root playback policy when applicable."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e54/packages/courier/idle/spritesheet.png",
+          "sha256": "d47d35079483f53bfc2f30b741ef3fbbe83561904895e8b24c99eff922549738"
+        },
+        {
+          "file": "benchmarks/results/e54/packages/courier/idle/timing.json",
+          "sha256": "58b697224a396669b88c85c92f002800301025464fb3cf9f1bcdf926b6bf0de4"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "courier-walk",
+      "family": "animation",
+      "canvas": [
+        64,
+        64
+      ],
+      "style": {
+        "name": "Locked E4/E5 animation material",
+        "reference": {
+          "file": "benchmarks/results/e54/packages/courier/walk/animation-spec.json",
+          "sha256": "83b60349b59a093227f08d6313df32f60dc1dcfaee081d7eba595213fcc8d7ac"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e54/packages/courier/walk/animation-spec.json",
+        "sha256": "83b60349b59a093227f08d6313df32f60dc1dcfaee081d7eba595213fcc8d7ac"
+      },
+      "seed": 73,
+      "specVersion": 2,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Single view. Production uses the selected discrete-root playback policy when applicable."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e54/packages/courier/walk/spritesheet.png",
+          "sha256": "9aa076a9dfe1c18af7854e5ddcada877dd235689064d8e4b3001c775cedb3c99"
+        },
+        {
+          "file": "benchmarks/results/e54/packages/courier/walk/timing.json",
+          "sha256": "cb7e9636ec3715d5bc9857f01e9d4a4541f70a33b522b1d306632b290265523a"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "front-court-day",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e61r/packages/front-court-day/environment-spec.json",
+        "sha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27"
+      },
+      "seed": 42,
+      "specVersion": 2,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Limited visual depth in the doorway."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e61r/packages/front-court-day/scene.png",
+          "sha256": "4aa5862588a5ab9c59e16e02710c074b1297db5c4d5b0b3877080dcebd3aaa9a"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/front-court-day/manifest.json",
+          "sha256": "d9f291b3007961bec98321ce534241fb22cee6a77c73283c5117b6c932aebd0c"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/front-court-day/kit.png",
+          "sha256": "8496edc3ed5a3653e3d1b82946b045a399de0e85041b83a7d4bde75795d08d31"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "front-court-night",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e61r/packages/front-court-night/environment-spec.json",
+        "sha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27"
+      },
+      "seed": 42,
+      "specVersion": 2,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Limited visual depth in the doorway."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e61r/packages/front-court-night/scene.png",
+          "sha256": "e52d88dd504c1deaa6c7cb96a171f0270882341e3f0b0cc8fb365eafa17fb15b"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/front-court-night/manifest.json",
+          "sha256": "ceb7d5174d2ee45390665fbdc7c01ce228945b1b21eaee043aba2dd61bc98c48"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/front-court-night/kit.png",
+          "sha256": "97e37b7c6f2cc5686df64c11141c910038ecf076665e1e5e5567b7559cd5b499"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "roadside-day",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e61r/packages/roadside-day/environment-spec.json",
+        "sha256": "b881ba8f3bd3862ad9170e595beae4f3c6535b78076e1c02ca38c469c3daa465"
+      },
+      "seed": 42,
+      "specVersion": 2,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Limited visual depth in the doorway."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e61r/packages/roadside-day/scene.png",
+          "sha256": "60b707f695e66d6619da31a46248f035236f1496c397a7e8aecf5a244434c9cb"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/roadside-day/manifest.json",
+          "sha256": "d35c7bfa8a1216ed61e7d2f7d246958a990dca2c099881c0c2462d41d261b3c6"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/roadside-day/kit.png",
+          "sha256": "de3c7607cb4de22d131c89f134ec3a83abfd1dbbfd012e3f546febf46916dd19"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "roadside-night",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e61r/packages/roadside-night/environment-spec.json",
+        "sha256": "b881ba8f3bd3862ad9170e595beae4f3c6535b78076e1c02ca38c469c3daa465"
+      },
+      "seed": 42,
+      "specVersion": 2,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Limited visual depth in the doorway."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e61r/packages/roadside-night/scene.png",
+          "sha256": "572d67841c3675306f3f75de36eb874ad7f77d2c479a260b24ab053ce18828df"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/roadside-night/manifest.json",
+          "sha256": "557ad908943e707a4ac7cf9cd2864c542c2c3e7c17957cd2658eb2663e32e6c1"
+        },
+        {
+          "file": "benchmarks/results/e61r/packages/roadside-night/kit.png",
+          "sha256": "316b85aae6d374d8322e515d99e44f71d16d1d416dec568ea1eb3251cd5dc402"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "c1-courtyard-day",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e62/packages/c1-courtyard-day/composition-spec.json",
+        "sha256": "a9085be34fea55e164140574ffdac2b640c213d7c7527852a1c0e15b6f1eb772"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Some character edges remain low-contrast at night."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-day/scene.png",
+          "sha256": "d8d3250b6b8e0faa5fb163966564fc9fe9344927ae853f74c966dbfe7294ec91"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-day/manifest.json",
+          "sha256": "9db69b0ce4248f22f616b2caaba2e28129cab77e722327b46dac4994e4938ed0"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-day/kit.png",
+          "sha256": "8496edc3ed5a3653e3d1b82946b045a399de0e85041b83a7d4bde75795d08d31"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "c1-courtyard-night",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e62/packages/c1-courtyard-night/composition-spec.json",
+        "sha256": "a9085be34fea55e164140574ffdac2b640c213d7c7527852a1c0e15b6f1eb772"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Some character edges remain low-contrast at night."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-night/scene.png",
+          "sha256": "5a13cb0d681e2bf5527c7c3156093e3bf48fea0fb42b8563ac60ea50c79e6c15"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-night/manifest.json",
+          "sha256": "56b51f31f2fef94be57287575c5629b0c4545a83669a2aabc376626284252ff9"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c1-courtyard-night/kit.png",
+          "sha256": "97e37b7c6f2cc5686df64c11141c910038ecf076665e1e5e5567b7559cd5b499"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "c2-supply-stop-day",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e62/packages/c2-supply-stop-day/composition-spec.json",
+        "sha256": "217fff40a7d2e6ee6839d6b337597118691cf0716e172e55b8f2526b3663ee76"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Some character edges remain low-contrast at night."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-day/scene.png",
+          "sha256": "c0d1ef9ba46e6247cea3739b50724ccdd0b66c2c3f81d25a60aa825fc8e7c097"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-day/manifest.json",
+          "sha256": "a0de4500c39dc136ed1407fc0a0be799451091a94493dc4062b55f9749ec83e9"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-day/kit.png",
+          "sha256": "de3c7607cb4de22d131c89f134ec3a83abfd1dbbfd012e3f546febf46916dd19"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "c2-supply-stop-night",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e62/packages/c2-supply-stop-night/composition-spec.json",
+        "sha256": "217fff40a7d2e6ee6839d6b337597118691cf0716e172e55b8f2526b3663ee76"
+      },
+      "seed": 42,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Some character edges remain low-contrast at night."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-night/scene.png",
+          "sha256": "aa9270c0c522f2aa7efa7a2ecebedb0bec8169fdf99e899f2ad70a76aef5d963"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-night/manifest.json",
+          "sha256": "9a980107792238fc2218fea2ef8a780a1cb071a216fd61b495eeb4cd5633e4dd"
+        },
+        {
+          "file": "benchmarks/results/e62/packages/c2-supply-stop-night/kit.png",
+          "sha256": "316b85aae6d374d8322e515d99e44f71d16d1d416dec568ea1eb3251cd5dc402"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "r1-signal-entrance-day",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e63/packages/r1-signal-entrance-day/composition-spec.json",
+        "sha256": "0dd0a04cb1703bb125db2b80f3472e15a8e599d9d52db19750dbaf99870490a9"
+      },
+      "seed": 83,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Crest rhythm, moss attachment and signal hierarchy still need review."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-day/scene.png",
+          "sha256": "186f2aa4d960151facdf665f8ac7c9f6d64af0928ea239df987075a0c6e6bf7c"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-day/manifest.json",
+          "sha256": "1864fedc13e351b4db0797fa76aebfb6a39e4d2ab0b509a36c2f2750ff72a310"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-day/kit.png",
+          "sha256": "72c90227f5e10983dcddbe259bb710c178476f708ff6740bf2cb479dd5280a55"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "r1-signal-entrance-night",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e63/packages/r1-signal-entrance-night/composition-spec.json",
+        "sha256": "0dd0a04cb1703bb125db2b80f3472e15a8e599d9d52db19750dbaf99870490a9"
+      },
+      "seed": 83,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Crest rhythm, moss attachment and signal hierarchy still need review."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-night/scene.png",
+          "sha256": "7ff1b8cb5f6d64b991a18ccbe87abf3d8eb27e1afbb232dc985d49338553e917"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-night/manifest.json",
+          "sha256": "f52d8b84b015ca7e57fdfb95e966e80a335c9287ac93072bde9f2b9dc52fac48"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r1-signal-entrance-night/kit.png",
+          "sha256": "ef7c7615584b7c01ac7f76e3e42ad1f7badf69f45428635a77981bb38a47413b"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "r2-signal-clearing-day",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e63/packages/r2-signal-clearing-day/composition-spec.json",
+        "sha256": "8748700c36028adcafe8c532cf546a10ce359106eba31af580f44625355dcac8"
+      },
+      "seed": 137,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Crest rhythm, moss attachment and signal hierarchy still need review."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-day/scene.png",
+          "sha256": "c26d26bf08643ad2a2f2efd97a8a0c100c3eb51ca89a327673efc5dfba4d3bda"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-day/manifest.json",
+          "sha256": "fac313ee2ce20d48d8f88315c94f2555525fe427c9ed841073f7f130d24698a9"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-day/kit.png",
+          "sha256": "ceb6c7057235ff390d402f0326386ecfc75947e8da1723845c44e93833872ad5"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "r2-signal-clearing-night",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e63/packages/r2-signal-clearing-night/composition-spec.json",
+        "sha256": "8748700c36028adcafe8c532cf546a10ce359106eba31af580f44625355dcac8"
+      },
+      "seed": 137,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Crest rhythm, moss attachment and signal hierarchy still need review."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-night/scene.png",
+          "sha256": "d82209dce51b296b82d23f03dc3a90a487f3d78d2643cf4933a599cc886c2cfa"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-night/manifest.json",
+          "sha256": "612a2ca3bb2006336fb011f19bfe185323432a55434962b97ab6e04241a828ad"
+        },
+        {
+          "file": "benchmarks/results/e63/packages/r2-signal-clearing-night/kit.png",
+          "sha256": "8c97e210563a25688ca8c694242793a8f0ab1ab62bc30558bde53e273bee9559"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "interaction-icon",
+      "family": "ui",
+      "canvas": [
+        16,
+        16
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e64/packages/interaction-icon/spec.json",
+        "sha256": "d5b5d1a117d32a2ed9bb57121787bfdf3a1e7e6358398173f40139a8c0aee31b"
+      },
+      "seed": null,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Semantics weaken outside context."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/spritesheet.png",
+          "sha256": "52778f9a17f3385643a30f481d4c7669f36e526a0a740a87fa05193540de8360"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/states.json",
+          "sha256": "537f3bb4ee10b2b82146eb13d57a9f56ff20641bd357aa36588d8fa328555b30"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/interaction-icon/manifest.json",
+          "sha256": "ec974f8b970759855df1e7372a1ec7c6adc26c25f7919937037d887579584a69"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "inventory-barrel",
+      "family": "ui",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e64/packages/inventory-barrel/spec.json",
+        "sha256": "e69c5b85d129754d558da50a313752221838f1fbdb1c65c6b3a9fb9364110be2"
+      },
+      "seed": null,
+      "specVersion": 1,
+      "artistic": "APPROVED",
+      "limitations": [
+        "Approved inventory reference."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/spritesheet.png",
+          "sha256": "3e537ae6a421b1419f0498a37cd859c79cf62e3cdd9f3aba061f092270ed0765"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/states.json",
+          "sha256": "c6c625d4a9254573f65ca66617e4b6f0989eed07673df102789d79e43db81d24"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/inventory-barrel/manifest.json",
+          "sha256": "9ea55df8c38af266cab283fea3008bd03df536124ed856b6429a2f790ee93888"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "signal-activation",
+      "family": "vfx",
+      "canvas": [
+        48,
+        48
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e64/packages/signal-activation/spec.json",
+        "sha256": "684407fa7284711441b084b89b37178b90955166e8f2256b9e09ba0a4635ce95"
+      },
+      "seed": null,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "Activation reads like a magical spark and the device change is subtle."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/spritesheet.png",
+          "sha256": "3035110b1d996d00396c1561641f0065c393625b4a5d869ba6b2ff7af6756b76"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/timing.json",
+          "sha256": "52291b9f748ea93ed6cf3de101c558333ea1eb335a0a4c4c8caaa401420015e3"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/signal-activation/manifest.json",
+          "sha256": "c587b1387f4dfe6a1993cb318c341571eaa8ce03ea3da6c97f5d0439292a2e48"
+        }
+      ]
+    },
+    {
+      "class": "A",
+      "id": "pickup-sparkle",
+      "family": "vfx",
+      "canvas": [
+        32,
+        32
+      ],
+      "style": {
+        "name": "Art Style Profile v1",
+        "reference": {
+          "file": "benchmarks/fixtures/e61r/style-profile.json",
+          "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+        }
+      },
+      "sourceSpec": {
+        "file": "benchmarks/results/e64/packages/pickup-sparkle/spec.json",
+        "sha256": "cbf613caa64235f9e721ac4a4597c024a4fbf3b562a18b8172d479b83f6dd930"
+      },
+      "seed": null,
+      "specVersion": 1,
+      "artistic": "APPROVED_WITH_LIMITATIONS",
+      "limitations": [
+        "The action is hard to read at gameplay scale."
+      ],
+      "outputs": [
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/spritesheet.png",
+          "sha256": "25df799b36c986a75b270a53fd3335d9c9f016708a0cdb9380a92222d69bea2f"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/timing.json",
+          "sha256": "2527e07ffa229af4b1afe43a890ddd849cfa8273d8017971964879a74c4621ba"
+        },
+        {
+          "file": "benchmarks/results/e64/packages/pickup-sparkle/manifest.json",
+          "sha256": "4d3e27d63f1c9700afd6320f487c63660828deefd07476f725aafef3d1349816"
+        }
+      ]
+    }
+  ],
+  "experiments": [
+    {
+      "class": "B",
+      "id": "relay-box",
+      "family": "prop",
+      "canvas": [
+        32,
+        32
+      ],
+      "specVersion": 1,
+      "seed": 127,
+      "style": {
+        "file": "benchmarks/fixtures/e61r/style-profile.json",
+        "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+      },
+      "sourceSpec": {
+        "file": "benchmarks/fixtures/e71/relay-box.json",
+        "sha256": "23787db30286fadd05aff03830fe25e40e0d685df30f46457c4c5a730b5e8c52"
+      },
+      "artistic": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "class": "B",
+      "id": "r1-wall-study",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "specVersion": 1,
+      "seed": 83,
+      "style": {
+        "file": "benchmarks/fixtures/e61r/style-profile.json",
+        "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+      },
+      "sourceSpec": {
+        "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+        "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+      },
+      "artistic": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "class": "C",
+      "id": "h1-switchback-depot",
+      "family": "environment",
+      "canvas": [
+        320,
+        208
+      ],
+      "specVersion": 1,
+      "seed": 2117,
+      "style": {
+        "file": "benchmarks/fixtures/e61r/style-profile.json",
+        "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+      },
+      "sourceSpec": {
+        "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+        "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+      },
+      "protocol": {
+        "file": "benchmarks/fixtures/e71/holdout-lock.json",
+        "sha256": "7e701dd364dfdd3deda1116f42cbb3438a8257667ed920a7b06f00bf9ad7616c"
+      },
+      "artistic": "PENDING_HUMAN_REVIEW"
+    }
+  ]
+}

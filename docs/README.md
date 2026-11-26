@@ -2,6 +2,14 @@
 
 ## Current checkpoint
 
+- [E7.1 structure gallery and review sheet](LumaSprite-Engine-E7.1-Report.html), [QA and handoff](e71-structure-quality.md), [root-cause audit](art-quality/e7-root-cause.md) and [Quality Contract v1](art-quality/quality-contract-v1.md).
+- [E6.4 artistic acceptance](e64-artistic-acceptance.md), [original Pixel UI/VFX gallery](LumaSprite-Engine-E6.4-Report.html) and [QA](e64-pixel-ui-vfx.md).
+- [E6.3 Forest Signal Ruins gallery and review sheet](LumaSprite-Engine-E6.3-Report.html), [architecture, QA and PR summary](e63-environment-variety.md) and [E6.2 artistic closeout](e62-artistic-closeout.md).
+- [E6.2 offline composition gallery, playback and score sheet](LumaSprite-Engine-E6.2-Report.html), [QA and PR summary](e62-scene-composition.md) and [E6.1R owner acceptance](e61r-artistic-acceptance.md).
+- [E6.1R B0/B1 gallery and human review](LumaSprite-Engine-E6.1R-Report.html) and [E6.1R audit, QA and PR draft](e61r-environment-refinement.md).
+- [E6.1 RPG Field Outpost gallery](LumaSprite-Engine-E6.1-Report.html), [Environment art direction and QA](e61-environment-foundation.md) and [E5 Final Acceptance](e5-final-acceptance.md).
+- [E5.4 final owner gallery](LumaSprite-Engine-E5.4-Report.html), [Unity Runtime Report](e54-final-acceptance.md) and [production bundle lock](../benchmarks/results/e54/baseline-lock.json).
+- [E5.3 art and runtime gallery](LumaSprite-Engine-E5.3-Report.html), [playback harness](LumaSprite-Engine-E5.3-Runtime.html) and [artistic quality gate](e53-quality-review.md#artistic-quality-gate).
 - [R0 project audit and cleanup](r0-project-audit.md) and [regression record](r0-regression.md).
 - [R&D experiment plan](../research/open-source/README.md). W2 Expressive Walk is the research reference and W1 is the control.
 - [E5.2 walk gallery](LumaSprite-Engine-E5.2-Report.html), [W1/W2 packages](../benchmarks/results/e52/README.md) and [motion and root contract](architecture/e52-walk-motion.md).

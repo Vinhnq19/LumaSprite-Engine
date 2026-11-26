@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "policy": {
+    "technical": "Evaluate applicable integrity diagnostics individually.",
+    "artistic": "Independent family rubric and human decision.",
+    "compositeScore": false,
+    "noAutomaticArtPass": true
+  },
+  "classification": {
+    "A": "historical locked baseline",
+    "B": "development benchmark",
+    "C": "unseen holdout frozen before candidate rendering"
+  },
+  "diagnostics": [
+    {
+      "id": "alpha",
+      "applies": "RGBA outputs",
+      "check": "Binary alpha and zero RGB on transparent pixels.",
+      "gate": "technical"
+    },
+    {
+      "id": "native-pixels",
+      "applies": "all pixel assets",
+      "check": "Record native dimensions and point sampling, verify integer 4x preview.",
+      "gate": "technical"
+    },
+    {
+      "id": "palette",
+      "applies": "assets with role or palette manifests",
+      "check": "Verify palette membership and retain style reference.",
+      "gate": "technical"
+    },
+    {
+      "id": "outline",
+      "applies": "separable sprites or architecture",
+      "check": "Measure 4-neighbor outline, union coverage and isolated pixels.",
+      "gate": "evidence"
+    },
+    {
+      "id": "clusters",
+      "applies": "single subject silhouettes and sprite frames",
+      "check": "Record connected-component sizes. Separate designed shape parts from overspray.",
+      "gate": "evidence"
+    },
+    {
+      "id": "density",
+      "applies": "known material pixels or flat categories",
+      "check": "Count luma edges of at least six levels across same-role adjacent pixels.",
+      "gate": "evidence"
+    },
+    {
+      "id": "silhouette",
+      "applies": "structural sprites or identifiable geometry",
+      "check": "Save binary mask, compare stable anchor and bounds. Evaluate identity at native size.",
+      "gate": "human-plus-evidence"
+    },
+    {
+      "id": "material-contrast",
+      "applies": "raster with material mask",
+      "check": "Record same-scene role boundary P10, median and sample count, without aggregate pass.",
+      "gate": "evidence"
+    },
+    {
+      "id": "provenance",
+      "applies": "all entries",
+      "check": "Pin source version, fixture or seed criterion, and output SHA-256.",
+      "gate": "technical"
+    },
+    {
+      "id": "determinism",
+      "applies": "regenerable outputs",
+      "check": "Regenerate and match all published bytes under the pinned inputs.",
+      "gate": "technical"
+    }
+  ],
+  "assetRubrics": {
+    "prop": [
+      "Recognition",
+      "Silhouette",
+      "Perspective",
+      "Volume",
+      "Material separation",
+      "Pixel cluster craftsmanship",
+      "Overall appeal"
+    ],
+    "character": [
+      "Proportion",
+      "Anatomy",
+      "Pose",
+      "Attachment points",
+      "View orientation"
+    ],
+    "terrain": [
+      "Tile seams",
+      "Variation",
+      "Texture rhythm",
+      "Transitions"
+    ],
+    "environment": [
+      "Structural coherence",
+      "Architectural silhouette",
+      "Depth",
+      "Natural breakage",
+      "Negative space",
+      "Material readiness",
+      "Gameplay readability",
+      "Generalization"
+    ],
+    "animation": [
+      "Motion clarity",
+      "Contact",
+      "Timing",
+      "Frame consistency"
+    ],
+    "ui": [
+      "Recognition",
+      "Icon semantics",
+      "Readability",
+      "State distinction"
+    ],
+    "vfx": [
+      "Anticipation",
+      "Buildup",
+      "Peak",
+      "Dissipation",
+      "Motion intent",
+      "Scene integration"
+    ]
+  },
+  "review": {
+    "scale": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "coreTarget": 4,
+    "missing": "pending review",
+    "blockingDefectOverridesScores": true
+  }
+}

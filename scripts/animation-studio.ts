@@ -25,8 +25,10 @@ function readStripExport(bytes: Buffer) {
 }
 
 const edition = process.env.LUMASPRITE_ANIMATION_EDITION ?? '51';
-if (edition !== '51' && edition !== '52') throw new Error('Animation edition must be 51 or 52.');
-for (const candidate of edition === '52' ? ['w1', 'w2'] : ['']) {
+if (edition !== '51' && edition !== '52' && edition !== '54') throw new Error('Animation edition must be 51, 52 or 54.');
+const candidates = edition === '54' ? ['surveyor/idle', 'surveyor/walk', 'courier/idle', 'courier/walk']
+  : edition === '52' ? ['w1', 'w2'] : [''];
+for (const candidate of candidates) {
   test('Studio preserves animation transport, timeline and restored strip · ' + (candidate || 'idle'), t => verifyStudioAnimation(candidate, t));
 }
 
@@ -42,11 +44,20 @@ async function verifyStudioAnimation(candidate: string, t: TestContext) {
   const { exportPixel } = await import(url('src/node/studio/pixel-render.ts'));
 
   const published = 'benchmarks/results/e' + edition;
-  const directory = join(published, candidate, 'package');
-  const animation = await verifyAnimationPackage(directory, 'benchmarks/results/e44/packages/r2');
+  const directory = edition === '54' ? join(published, 'packages', candidate) : join(published, candidate, 'package');
+  const source = candidate.startsWith('courier/') ? 'benchmarks/results/e44/packages/courier-rev' : 'benchmarks/results/e44/packages/r2';
+  const standing = candidate === 'courier/idle';
+  const animation = standing ? null : await verifyAnimationPackage(directory, source);
   const sheetPng = await readFile(join(directory, 'spritesheet.png'));
-  const timing = JSON.parse(await readFile(join(directory, 'timing.json'), 'utf8')) as typeof animation.timing;
-  assert.deepEqual(timing, animation.timing);
+  const timing = JSON.parse(await readFile(join(directory, 'timing.json'), 'utf8')) as
+    Omit<NonNullable<typeof animation>['timing'], 'loop'> & { loop: 'repeat' | 'hold' };
+  if (animation) assert.deepEqual(timing, animation.timing);
+  else {
+    assert.ok(sheetPng.equals(await readFile(join(source, 'final.png'))));
+    assert.equal(timing.frames.length, 1);
+    assert.equal(timing.loop, 'hold');
+  }
+  const loop = timing.loop === 'repeat';
   const { w, h } = timing.canvas, sheetWidth = w * timing.frames.length;
   const decoded: Uint32Array | undefined = await readStudioPng(new Blob([Uint8Array.from(sheetPng)]), sheetWidth, h);
   assert.ok(decoded);
@@ -59,10 +70,11 @@ async function verifyStudioAnimation(candidate: string, t: TestContext) {
     return { durationMs: frame.durationMs, rgba };
   });
   const timings = frames.map(frame => frame.durationMs);
-  const palette = [0, ...new Set(animation.frames.flatMap(frame => frame.material.usedColors.map(pack)))];
+  const colors = animation ? animation.frames.flatMap(frame => frame.material.usedColors.map(pack)) : decoded;
+  const palette = [0, ...new Set(colors)].filter((ink, i) => i === 0 || ink !== 0);
   const request = {
     version: 1, requestId: 'e51-idle', assetType: 'animation', brief: timing.name,
-    canvas: { w, h }, frameDurationsMs: timings, loop: timing.loop === 'repeat', alpha: 'binary', palette,
+    canvas: { w, h }, frameDurationsMs: timings, loop, alpha: 'binary', palette,
   };
   assert.equal(negotiateEngineV1({ versions: [1], assetTypes: ['animation'], features: [], limits: { width: 64, height: 64, frames: 8 } }, request), 1);
   const asset = materializeEngineResultV1({
@@ -89,7 +101,7 @@ async function verifyStudioAnimation(candidate: string, t: TestContext) {
     const stored = reopened.assets[0];
     assert.deepEqual(stored.metadata.pivot, asset.metadata.pivot);
     assert.deepEqual(stored.tags, asset.tags);
-    assert.equal(stored.tags[0].loop, true);
+    assert.equal(stored.tags[0].loop, loop);
     const sequence: { frame: { id: string; duration: number }; index: number }[] = playback(stored, tagId);
     assert.deepEqual(sequence.map(s => s.index), frames.map((_, i) => i));
     assert.deepEqual(sequence.map(s => s.frame.duration), timings);
@@ -101,19 +113,20 @@ async function verifyStudioAnimation(candidate: string, t: TestContext) {
     }
     let start = 0;
     for (const [index, frame] of frames.entries()) {
-      assert.deepEqual(sampleMotionPlayback(frames, start, true), { index, done: false, delayMs: frame.durationMs });
+      assert.deepEqual(sampleMotionPlayback(frames, start, loop), { index, done: false, delayMs: frame.durationMs });
       start += frame.durationMs;
-      assert.deepEqual(sampleMotionPlayback(frames, start - 1, true), { index, done: false, delayMs: 1 });
+      assert.deepEqual(sampleMotionPlayback(frames, start - 1, loop), { index, done: false, delayMs: 1 });
     }
     assert.equal(start, timing.totalDurationMs);
-    assert.deepEqual(sampleMotionPlayback(frames, start, true), { index: 0, done: false, delayMs: frames[0].durationMs });
+    assert.deepEqual(sampleMotionPlayback(frames, start, loop), loop
+      ? { index: 0, done: false, delayMs: frames[0].durationMs } : { index: frames.length - 1, done: true, delayMs: 0 });
 
     const result = exportPixel({ document: reopened, assetId: stored.id, tagId, format: 'strip' });
     const { png, metadata } = readStripExport(Buffer.from(result.data));
     const exported = decodePng(png);
-    assert.deepEqual(exported, animation.sheet);
+    assert.deepEqual(exported, animation?.sheet ?? decodePng(sheetPng));
     assert.deepEqual(metadata.meta.size, { w: sheetWidth, h });
-    assert.deepEqual(metadata.meta.frameTags, [{ name: timing.name, from: 0, to: frames.length - 1, direction: 'forward', loop: true }]);
+    assert.deepEqual(metadata.meta.frameTags, [{ name: timing.name, from: 0, to: frames.length - 1, direction: 'forward', loop }]);
     assert.deepEqual(metadata.meta.pxl.assets[stored.id].pivot, asset.metadata.pivot);
     assert.deepEqual(metadata.meta.pxl.playback, sequence.map(({ frame }) => ({ frameId: frame.id, duration: frame.duration })));
     const cells = Object.values(metadata.frames) as { frame: typeof timing.frames[number]['rect']; duration: number }[];
@@ -138,10 +151,11 @@ async function verifyStudioAnimation(candidate: string, t: TestContext) {
   await writeFile(join(output, 'restored-strip.png'), png);
   await writeFile(join(output, 'parity.json'), JSON.stringify({
     studioRevision: revision, import: 'ENGINE_RESULT_V1', exactRgba: true, pivot: timing.pivot, normalizedPivot: asset.metadata.pivot,
-    direction: 'forward', loop: true, timingMs: timings, totalDurationMs: timing.totalDurationMs, frames: timing.frames,
+    direction: 'forward', loop, timingMs: timings, totalDurationMs: timing.totalDurationMs, frames: timing.frames,
     ...('rootMotion' in timing ? { rootMotion: 'ENGINE_TIMING_SIDECAR' } : {}),
     saveReopen: 'PASS', backupRestore: 'PASS', stripPngJson: 'PASS', staleRevision: 'REJECTED',
-    engineManifestSha256: sha256(animation.files.get('manifest.json')!), studioStripPngSha256: sha256(png),
+    engineManifestSha256: sha256(animation?.files.get('manifest.json') ?? await readFile(join(directory, '../manifest.json'))),
+    studioStripPngSha256: sha256(png),
   }, null, 2) + '\n');
   t.diagnostic('Studio ' + revision + ' preserved ' + frames.length + ' frame cells, pivot, loop and ' + timings.join('/') + ' ms delays.');
 }

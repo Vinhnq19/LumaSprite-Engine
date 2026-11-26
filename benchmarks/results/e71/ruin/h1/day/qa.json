@@ -1,0 +1,524 @@
+{
+  "scene": "h1-switchback-depot",
+  "holdout": true,
+  "seed": 2117,
+  "review": "PENDING_HUMAN_REVIEW",
+  "light": "day",
+  "flat": false,
+  "touched": 1820,
+  "baseline": {
+    "coverage": 11621,
+    "outline": 1110,
+    "isolatedOutline": 0,
+    "components": [
+      7598,
+      2777,
+      678,
+      568
+    ],
+    "bounds": {
+      "left": 26,
+      "top": 38,
+      "right": 297,
+      "bottom": 147
+    },
+    "detail": {
+      "edges": 0,
+      "samples": 22597,
+      "per100": 0
+    },
+    "materialBoundaries": [],
+    "used": [
+      "#ffffff"
+    ],
+    "rgbaSha256": "16a9f830d263300f08dcde8b737593bbb28e4c7461a6f1f71a1cd45a301542dd",
+    "alphaSha256": "16a9f830d263300f08dcde8b737593bbb28e4c7461a6f1f71a1cd45a301542dd"
+  },
+  "candidate": {
+    "coverage": 11148,
+    "outline": 1291,
+    "isolatedOutline": 0,
+    "components": [
+      7125,
+      2777,
+      678,
+      568
+    ],
+    "bounds": {
+      "left": 26,
+      "top": 38,
+      "right": 297,
+      "bottom": 147
+    },
+    "detail": {
+      "edges": 0,
+      "samples": 21538,
+      "per100": 0
+    },
+    "materialBoundaries": [],
+    "used": [
+      "#ffffff"
+    ],
+    "rgbaSha256": "06adde4539612eaa2919d3456cb0e360dc65bd6a47d8da28522beb4ac8931382",
+    "alphaSha256": "06adde4539612eaa2919d3456cb0e360dc65bd6a47d8da28522beb4ac8931382"
+  },
+  "coverage": {
+    "added": 240,
+    "removed": 713,
+    "shared": 10908
+  },
+  "surface": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 11168,
+      "samples": 127445,
+      "per100": 8.8
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 129,
+        "p10": 27,
+        "median": 27
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 7,
+        "p10": 6,
+        "median": 6
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 193,
+        "p10": 31,
+        "median": 58
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 37,
+        "p10": 23,
+        "median": 68
+      },
+      {
+        "roles": "#292d42/#98a0be",
+        "samples": 12,
+        "p10": 65,
+        "median": 65
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 181,
+        "p10": 10,
+        "median": 17
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 65,
+        "p10": 41,
+        "median": 53
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 205,
+        "p10": 27,
+        "median": 27
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 6,
+        "p10": 95,
+        "median": 102
+      },
+      {
+        "roles": "#48425e/#cfbb83",
+        "samples": 3,
+        "p10": 99,
+        "median": 111
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 313,
+        "p10": 16,
+        "median": 18
+      },
+      {
+        "roles": "#68864c/#94e4bd",
+        "samples": 183,
+        "p10": 50,
+        "median": 95
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1945,
+        "p10": 21,
+        "median": 38
+      },
+      {
+        "roles": "#68864c/#cfbb83",
+        "samples": 34,
+        "p10": 20,
+        "median": 20
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 230,
+        "p10": 11,
+        "median": 11
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 15,
+        "p10": 6,
+        "median": 6
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 73,
+        "p10": 31,
+        "median": 44
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 40,
+        "p10": 7,
+        "median": 55
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 789,
+        "p10": 7,
+        "median": 27
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 13,
+        "p10": 13,
+        "median": 61
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 132,
+        "p10": 2,
+        "median": 84
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 131,
+        "p10": 65,
+        "median": 106
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 96,
+        "p10": 62,
+        "median": 80
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 13,
+        "p10": 65,
+        "median": 75
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 6,
+        "median": 6
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 38,
+        "median": 38
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 265,
+        "p10": 3,
+        "median": 9
+      }
+    ],
+    "used": [
+      "#201a24",
+      "#211e2a",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#303443",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#353c45",
+      "#37545a",
+      "#375d5b",
+      "#382c28",
+      "#392c37",
+      "#394b4d",
+      "#434a5c",
+      "#465046",
+      "#46746e",
+      "#4b6940",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#646e66",
+      "#657987",
+      "#674937",
+      "#68864c",
+      "#695848",
+      "#6b4139",
+      "#71453d",
+      "#72492f",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7f9858",
+      "#81939a",
+      "#86503d",
+      "#869087",
+      "#88927a",
+      "#896049",
+      "#91816a",
+      "#935630",
+      "#936f53",
+      "#9ca8a8",
+      "#9f795c",
+      "#a28d70",
+      "#a36146",
+      "#a68061",
+      "#a86a55",
+      "#aeb2a1",
+      "#b18059",
+      "#b9a384",
+      "#d79768",
+      "#dca57a",
+      "#edaf59",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "8ed8c6aa3ed8fc51467ca219850c0d9f704a630bb087f0b60b9b28ac067dcfa1",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "walls": [
+    {
+      "id": "upper-wall",
+      "geometry": {
+        "runs": [
+          {
+            "left": 0,
+            "top": 13,
+            "width": 22,
+            "depth": 16,
+            "bottom": 46,
+            "taper": 0
+          },
+          {
+            "left": 22,
+            "top": 10,
+            "width": 16,
+            "depth": 16,
+            "bottom": 46,
+            "taper": 0
+          },
+          {
+            "left": 38,
+            "top": 33,
+            "width": 12,
+            "depth": 12,
+            "bottom": 46,
+            "taper": 0
+          },
+          {
+            "left": 50,
+            "top": 25,
+            "width": 13,
+            "depth": 16,
+            "bottom": 46,
+            "taper": 0
+          },
+          {
+            "left": 63,
+            "top": 43,
+            "width": 9,
+            "depth": 12,
+            "bottom": 46,
+            "taper": 0
+          }
+        ],
+        "support": 44,
+        "origin": [
+          0,
+          56
+        ]
+      },
+      "coverage": 3463,
+      "diff": {
+        "added": 114,
+        "removed": 524,
+        "shared": 3349
+      },
+      "detail": {
+        "baseline": {
+          "edges": 1034,
+          "samples": 7523,
+          "per100": 13.7
+        },
+        "candidate": {
+          "edges": 856,
+          "samples": 6649,
+          "per100": 12.9
+        }
+      }
+    },
+    {
+      "id": "fallen-wall",
+      "geometry": {
+        "runs": [
+          {
+            "left": 0,
+            "top": 30,
+            "width": 8,
+            "depth": 6,
+            "bottom": 33,
+            "taper": 0
+          },
+          {
+            "left": 8,
+            "top": 17,
+            "width": 12,
+            "depth": 10,
+            "bottom": 33,
+            "taper": 0
+          },
+          {
+            "left": 20,
+            "top": 23,
+            "width": 11,
+            "depth": 6,
+            "bottom": 33,
+            "taper": 0
+          },
+          {
+            "left": 31,
+            "top": 6,
+            "width": 14,
+            "depth": 10,
+            "bottom": 33,
+            "taper": 0
+          },
+          {
+            "left": 45,
+            "top": 9,
+            "width": 20,
+            "depth": 10,
+            "bottom": 33,
+            "taper": 0
+          }
+        ],
+        "support": 31,
+        "origin": [
+          0,
+          40
+        ]
+      },
+      "coverage": 2161,
+      "diff": {
+        "added": 129,
+        "removed": 211,
+        "shared": 2032
+      },
+      "detail": {
+        "baseline": {
+          "edges": 693,
+          "samples": 4249,
+          "per100": 16.3
+        },
+        "candidate": {
+          "edges": 645,
+          "samples": 4048,
+          "per100": 15.9
+        }
+      }
+    }
+  ],
+  "actors": [
+    {
+      "id": "surveyor",
+      "before": 1072,
+      "after": 1072
+    },
+    {
+      "id": "courier",
+      "before": 997,
+      "after": 997
+    }
+  ],
+  "routes": [
+    {
+      "id": "gate-passage",
+      "actor": "courier",
+      "points": [
+        [
+          231,
+          193
+        ],
+        [
+          221,
+          157
+        ],
+        [
+          222,
+          135
+        ],
+        [
+          222,
+          92
+        ]
+      ],
+      "halfWidth": 10,
+      "tested": 2142
+    },
+    {
+      "id": "signal-approach",
+      "actor": "surveyor",
+      "points": [
+        [
+          155,
+          171
+        ],
+        [
+          151,
+          147
+        ],
+        [
+          148,
+          132
+        ],
+        [
+          145,
+          128
+        ]
+      ],
+      "halfWidth": 9,
+      "tested": 836
+    }
+  ],
+  "collision": "SAME_APPROVED_FOOTPRINTS",
+  "occlusion": "SAME_SORT_WITH_RENDERER_CHECKED_OWNERSHIP"
+}

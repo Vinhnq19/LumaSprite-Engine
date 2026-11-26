@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "checkpoint": "24b8ca6",
+  "controlCheckpoint": "537f604",
+  "decision": {
+    "engineering": "APPROVED",
+    "artistic": "APPROVED_WITH_LIMITATIONS",
+    "selected": "ENV-B refined B1",
+    "controls": [
+      "ENV-A",
+      "ENV-B original B0"
+    ]
+  },
+  "architecture": {
+    "specVersion": 2,
+    "styleVersion": 1,
+    "camera": [
+      320,
+      208
+    ],
+    "tilePx": 16,
+    "pixelsPerUnit": 32,
+    "wallHeight": 66,
+    "clearOpening": [
+      26,
+      58
+    ],
+    "jamb": 3
+  },
+  "sourceSha256": {
+    "benchmarks/results/e61/benchmark.json": "527e67dde34a09b4c0c30e8b5ea73f02a8792ed206abcd408d41d664ae310ee4",
+    "benchmarks/results/e61r/benchmark.json": "b3938124648d836bbf667db80450ec9ce1a205f3504d8515d993122c79f7e21e",
+    "benchmarks/results/e61r/SHA256SUMS": "12ec39e610eb6109796a9708721ded2fefaac70196c657cd0ccdc807aab8abdb",
+    "benchmarks/results/e54/baseline-lock.json": "6827fa8930ea6347777a4cb199c783e409ddcca27da9791320d15814501ba725",
+    "benchmarks/fixtures/e61r/style-profile.json": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "packages": {
+    "front-court-day": {
+      "manifest": "benchmarks/results/e61r/packages/front-court-day/manifest.json",
+      "manifestSha256": "d9f291b3007961bec98321ce534241fb22cee6a77c73283c5117b6c932aebd0c",
+      "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+      "kitSha256": "8496edc3ed5a3653e3d1b82946b045a399de0e85041b83a7d4bde75795d08d31"
+    },
+    "front-court-night": {
+      "manifest": "benchmarks/results/e61r/packages/front-court-night/manifest.json",
+      "manifestSha256": "ceb7d5174d2ee45390665fbdc7c01ce228945b1b21eaee043aba2dd61bc98c48",
+      "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+      "kitSha256": "97e37b7c6f2cc5686df64c11141c910038ecf076665e1e5e5567b7559cd5b499"
+    },
+    "roadside-day": {
+      "manifest": "benchmarks/results/e61r/packages/roadside-day/manifest.json",
+      "manifestSha256": "d35c7bfa8a1216ed61e7d2f7d246958a990dca2c099881c0c2462d41d261b3c6",
+      "specSha256": "b881ba8f3bd3862ad9170e595beae4f3c6535b78076e1c02ca38c469c3daa465",
+      "kitSha256": "de3c7607cb4de22d131c89f134ec3a83abfd1dbbfd012e3f546febf46916dd19"
+    },
+    "roadside-night": {
+      "manifest": "benchmarks/results/e61r/packages/roadside-night/manifest.json",
+      "manifestSha256": "557ad908943e707a4ac7cf9cd2864c542c2c3e7c17957cd2658eb2663e32e6c1",
+      "specSha256": "b881ba8f3bd3862ad9170e595beae4f3c6535b78076e1c02ca38c469c3daa465",
+      "kitSha256": "316b85aae6d374d8322e515d99e44f71d16d1d416dec568ea1eb3251cd5dc402"
+    }
+  }
+}

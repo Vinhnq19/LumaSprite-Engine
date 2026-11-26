@@ -1,10 +1,39 @@
 # Handoff
 
+**E7.1 is E7_1_READY_FOR_HUMAN_STRUCTURE_REVIEW.** Relay Box A0/A1 and Ruin Structure Q are available at native 1× and nearest 4× with masks and a downloadable review sheet. H1 is the frozen holdout for an independent art review. Engine passed 73 tests and reproduced all 79 E7.1 payloads. Studio preserved six pilot PNGs. E7.2 requires owner approval. [Offline gallery](docs/LumaSprite-Engine-E7.1-Report.html) · [QA and handoff](docs/e71-structure-quality.md) · [Quality Contract v1](docs/art-quality/quality-contract-v1.md)
+
+**E6.4 engineering is APPROVED and art is APPROVED_WITH_LIMITATIONS.** Inventory Barrel is an approved UI baseline. Interaction Icon, Signal Activation and Pickup Sparkle are approved with limitations. The 82 E6.4 payloads reproduce exactly. Target-game UI/VFX runtime is `PRODUCTION_GAME_RUNTIME_NOT_TESTED`. [Acceptance](docs/e64-artistic-acceptance.md) · [Baseline lock](benchmarks/fixtures/e71/e64-baseline-lock.json) · [E8 Integration Backlog](docs/integration/e8-runtime-backlog.md)
+
+**E6.3 engineering is APPROVED.** R1 and R2 were accepted with limitations at `6efc683`. R1 is the showcase and R2 the generalization benchmark. C2-Q needs further artistic refinement. [Acceptance and baseline](docs/e63-artistic-acceptance.md) · [E7 Art Quality Backlog](docs/art-quality/e7-backlog.md) · [Environment gallery](docs/LumaSprite-Engine-E6.3-Report.html)
+
+**E6.2 engineering is APPROVED.** The owner selected C1 and C2 with artistic limitations. The verified checkpoint is `d68f151`. C2-Q is proposed as a separate night refinement. Its edge p10 improves from 11 to 16 for Surveyor and 15 to 25 for Courier. The rear probe is outside the walkable region. E5.4 forward slip remains 0 px with a deliberate 2 px screen-depth projection at the threshold. The Unity result covers Editor import. [Artistic decision and closeout](docs/e62-artistic-closeout.md) · [C1/C2 original gallery](docs/LumaSprite-Engine-E6.2-Report.html)
+
+**E6.1R engineering is APPROVED and art is APPROVED_WITH_LIMITATIONS.** The owner locked B1 at `24b8ca6` and retained B0 as the historical control. [Artistic acceptance](docs/e61r-artistic-acceptance.md) · [Production baseline](benchmarks/fixtures/e62/b1-production-lock.json) · [Original comparison](docs/LumaSprite-Engine-E6.1R-Report.html)
+
+**E6.1 engineering is APPROVED.** The owner selected art-directed ENV-B for refinement and retained ENV-A as control at `537f604`. The eight original packages reproduce all 104 archived hashes. [Original E6.1 A/B report](docs/LumaSprite-Engine-E6.1-Report.html) · [E6.1 foundation](docs/e61-environment-foundation.md)
+
+**E5 Engineering is APPROVED and the Artistic Baseline is APPROVED_WITH_LIMITATIONS.** The owner selected W2, the E5.3 Courier walk, the original Courier standing pose and Discrete Root A. The E5.4 source, PNG, timing, root/contact, palette and pivot locks are the production references. [E5 Final Acceptance](docs/e5-final-acceptance.md) · [Production lock](benchmarks/results/e54/baseline-lock.json)
+
+**E5.4 is E5_READY_FOR_FINAL_OWNER_ACCEPTANCE.** Surveyor uses W2 with E5.1 Idle. Courier Walk is approved with limitations and uses the original E4.4 standing pose and material. Hybrid and W2-IK are research records. The production walk builder uses its established solver, with the Hybrid callback available only through E5.3 archive replay. [Final owner review gallery](docs/LumaSprite-Engine-E5.4-Report.html) · [Decision and Unity report](docs/e54-final-acceptance.md)
+
+Unity 6000.3.21f1 Windows Standalone passed. At the tested speeds, Discrete Root held the authored contacts at 0 px slip including samples between frames. Pixel-Snapped moved the root smoothly and shifted the held planted pose by up to 4 px for Surveyor and 3 px for Courier. The packet selects method A. Studio `bb5c384` round-tripped all four bundled clips. [Production lock](benchmarks/results/e54/baseline-lock.json) · [Unity and Studio evidence](benchmarks/results/e54/unity/evidence.json)
+
+**E5.3 is E5_3_READY_FOR_HUMAN_QUALITY_REVIEW.** W2 remains production. W2-Hybrid keeps the W2 torso, timing, planted targets and grip, and moves the passing knee by one pixel in two frames. Forest Courier has a verified `walk-free` package using the shared gait pipeline. Localized leather changes the satchel and strap with the original boots and silhouette. Independent art decisions remain open. [Offline gallery and score sheets](docs/LumaSprite-Engine-E5.3-Report.html) · [Quality gate and decisions](docs/e53-quality-review.md)
+
+Browser runtime passed five fixed-camera laps and idle transitions in both scenes. Surveyor advanced 160 px and Courier 120 px with 0 px sampled foot sliding. Unity runtime verification remains open. Engine passed 66 tests, and Studio `bb5c384` passed E5.1 and E5.2 integration. [Runtime harness](docs/LumaSprite-Engine-E5.3-Runtime.html) · [Runtime proof](docs/e53-runtime-proof.json)
+
+**Open-source art R&D is OPEN_SOURCE_ART_QUALITY_RND_READY_FOR_HUMAN_REVIEW.** The offline report has synchronized W2 and W2-IK playback, native 1× comparisons, three score sheets, downloadable QA, and source notices. [Offline report](research/open-source/art-quality/LumaSprite-Engine-Art-Quality-RnD.html) · [Provenance and reproduction](research/open-source/art-quality/README.md)
+
+- W2-IK is `FURTHER_EVALUATION_REQUIRED`. The worst sampled knee-angle change decreased from 41.021° to 35.538°. All eight adjacent planted samples retained zero world displacement and 880 ms total duration. Review the lighter landing and test another character before evaluating a solver version.
+- Surveyor-3Q is `REJECTED_FOR_INTEGRATION`. The angle reveals head and coat faces. The far arm reads less clearly at 1× and projecting the joints into CharacterSpec v2 violates the segment-length constraint.
+- OKLab/OKLCH diagnostics and the Courier ochre-leather candidate are `FURTHER_EVALUATION_REQUIRED`. Replacing RGB nearest-ink is `REJECTED_FOR_INTEGRATION` in the shared four-color test. The diagnostic and candidate outputs have separate JSON.
+- The R&D branch starts at `ba81037`. Engine regression passed all 65 tests, CLI smoke and 805 historical checksums. The paired experiments reproduced 54 PNG/JSON hashes. Studio was clean at `bb5c384`. Target-game execution is `GAME_RUNTIME_NOT_TESTED`.
+
 **R0 is R0_CLEANUP_READY_FOR_RND.** Local generated duplicates were removed by checksum, and the milestone archive remains pinned. Use the documentation index for current workflows and historical galleries. [R0 audit](docs/r0-project-audit.md) · [Regression](docs/r0-regression.md) · [Documentation index](docs/README.md) · [R&D preparation](research/open-source/README.md)
 
 The Project Owner approved E5.2 engineering and selected W2 Expressive Walk as the R&D baseline, with W1 Conservative Walk as the control. Walk Game-Ready Final Acceptance and target-game runtime validation remain pending. [Motion and package contract](docs/architecture/e52-walk-motion.md)
 
-Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. E5.3 awaits the owner's decision. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
+Surveyor R2 uses one gait pipeline for six-frame W1 and eight-frame W2. Planted foot anchors are fixed in sampled world space including both wraps. Studio preserves exact frame cells and their variable delays. [Offline gallery](docs/LumaSprite-Engine-E5.2-Report.html) · [Walk review](benchmarks/results/e52/review.md) · [QA](docs/e52-test-report.md) · [PR draft](docs/e52-pr.md)
 
 The Project Owner approved E5.0 architecture and E5.1 as a subtle idle with limitations. The four 64 × 64 frame slots and 1,800 ms loop stay frozen. Target-game runtime is still pending. [Idle acceptance](docs/e51-idle-acceptance.md) · [E5.1 gallery](docs/LumaSprite-Engine-E5.1-Report.html)
 

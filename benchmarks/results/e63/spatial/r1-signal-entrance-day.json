@@ -1,0 +1,146 @@
+[
+  {
+    "id": "front",
+    "kind": "actor",
+    "at": [
+      142,
+      144
+    ],
+    "left": 112,
+    "top": 85,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 1072,
+    "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+    "visible": 1072,
+    "hiddenBy": {},
+    "edgeSamples": 294,
+    "p10LumaGap": 62,
+    "contactPixels": 50,
+    "visibleContactPixels": 50,
+    "groundClearance": 16,
+    "actor": "surveyor"
+  },
+  {
+    "id": "threshold",
+    "kind": "actor",
+    "at": [
+      139,
+      120
+    ],
+    "left": 107,
+    "top": 62,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 997,
+    "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+    "visible": 989,
+    "hiddenBy": {
+      "signal-gateway": 8
+    },
+    "edgeSamples": 222,
+    "p10LumaGap": 60,
+    "contactPixels": 44,
+    "visibleContactPixels": 44,
+    "groundClearance": 10,
+    "actor": "courier",
+    "occluder": "signal-gateway"
+  },
+  {
+    "id": "side",
+    "kind": "actor",
+    "at": [
+      234,
+      130
+    ],
+    "left": 202,
+    "top": 72,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 997,
+    "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+    "visible": 989,
+    "hiddenBy": {
+      "east-column": 8
+    },
+    "edgeSamples": 224,
+    "p10LumaGap": 31,
+    "contactPixels": 44,
+    "visibleContactPixels": 38,
+    "groundClearance": 13,
+    "actor": "courier",
+    "occluder": "east-column"
+  },
+  {
+    "id": "rear",
+    "kind": "actor",
+    "at": [
+      171,
+      99
+    ],
+    "left": 141,
+    "top": 40,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 1072,
+    "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+    "visible": 245,
+    "hiddenBy": {
+      "signal-gateway": 827
+    },
+    "edgeSamples": 132,
+    "p10LumaGap": 16,
+    "contactPixels": 50,
+    "visibleContactPixels": 0,
+    "groundClearance": 13,
+    "actor": "surveyor",
+    "occluder": "signal-gateway"
+  },
+  {
+    "id": "between-props",
+    "kind": "actor",
+    "at": [
+      177,
+      132
+    ],
+    "left": 145,
+    "top": 74,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 997,
+    "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+    "visible": 997,
+    "hiddenBy": {},
+    "edgeSamples": 226,
+    "p10LumaGap": 23,
+    "contactPixels": 44,
+    "visibleContactPixels": 44,
+    "groundClearance": 10,
+    "actor": "courier"
+  },
+  {
+    "id": "foreground",
+    "kind": "actor",
+    "at": [
+      81,
+      141
+    ],
+    "left": 51,
+    "top": 82,
+    "w": 64,
+    "h": 64,
+    "visibleBefore": 1072,
+    "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+    "visible": 618,
+    "hiddenBy": {
+      "near-column": 454
+    },
+    "edgeSamples": 202,
+    "p10LumaGap": 20,
+    "contactPixels": 50,
+    "visibleContactPixels": 0,
+    "groundClearance": 1,
+    "actor": "surveyor",
+    "occluder": "near-column"
+  }
+]

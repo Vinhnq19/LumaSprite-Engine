@@ -1,0 +1,55 @@
+{
+  "studioRevision": "bb5c384",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "path": "benchmarks/results/e61r/packages/front-court-day/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "5c7900516c241638ef7636b6b6a19a29346d79e0a634e4ef6bad667ebeffb40f",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61r/packages/front-court-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "ab727b14dba8dc5518f8585b058bbcf61d1e4730abe7652fc2f50a3e8a904d07",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61r/packages/roadside-day/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "c0390a793bad72aea86ad59df972357633376879dc02136772d743a19f7b0760",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61r/packages/roadside-night/scene.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "0d229a2854a2c20cfe95d4ffb67c7e2a91bf4301647cd3d271ceb9e6adc0d447",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61r/packages/front-court-day/kit.png",
+      "width": 329,
+      "height": 80,
+      "rgbaSha256": "c5987ea06961b4592269fe157a3327bc395199dbb7899dba236569f89af64dbe",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61r/packages/roadside-night/kit.png",
+      "width": 313,
+      "height": 80,
+      "rgbaSha256": "d0ea7775d4b807676ad1f802d8354939d32f62c050f425de710afd784a732599",
+      "saveReopen": "PASS"
+    },
+    {
+      "path": "benchmarks/results/e61r/packages/roadside-night/night-light.png",
+      "width": 320,
+      "height": 208,
+      "rgbaSha256": "c2a2e59d96b51918cc35e8ce9595fc77ea7c25dfd2bb5f04aec23d643df94e0e",
+      "saveReopen": "PASS"
+    }
+  ]
+}

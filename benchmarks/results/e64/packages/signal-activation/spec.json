@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "id": "signal-activation",
+  "name": "Forest Signal · Activation Arc",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "loop": "once",
+  "frames": [
+    {
+      "phase": "anticipation",
+      "durationMs": 115
+    },
+    {
+      "phase": "buildup",
+      "durationMs": 85
+    },
+    {
+      "phase": "buildup",
+      "durationMs": 80
+    },
+    {
+      "phase": "peak",
+      "durationMs": 105
+    },
+    {
+      "phase": "dissipation",
+      "durationMs": 95
+    },
+    {
+      "phase": "dissipation",
+      "durationMs": 75
+    },
+    {
+      "phase": "clear",
+      "durationMs": 130
+    }
+  ],
+  "kind": "signal-activation",
+  "size": [
+    48,
+    48
+  ],
+  "source": {
+    "file": "benchmarks/results/e63/packages/r1-signal-entrance-day/manifest.json",
+    "sha256": "1864fedc13e351b4db0797fa76aebfb6a39e4d2ab0b509a36c2f2750ff72a310"
+  }
+}

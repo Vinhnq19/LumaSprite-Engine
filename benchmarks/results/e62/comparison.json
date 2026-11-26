@@ -1,0 +1,806 @@
+[
+  {
+    "id": "c1-courtyard",
+    "light": "day",
+    "baseline": "front-court-day",
+    "kitSha256": "8496edc3ed5a3653e3d1b82946b045a399de0e85041b83a7d4bde75795d08d31",
+    "courierEdgeP10": [
+      54,
+      54
+    ],
+    "actors": [
+      {
+        "id": "courier",
+        "kind": "actor",
+        "at": [
+          264,
+          154
+        ],
+        "left": 232,
+        "top": 96,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 997,
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+        "visible": 997,
+        "hiddenBy": {},
+        "edgeSamples": 226,
+        "p10LumaGap": 54,
+        "contactPixels": 44,
+        "visibleContactPixels": 44,
+        "groundClearance": 16
+      },
+      {
+        "id": "surveyor",
+        "kind": "actor",
+        "at": [
+          104,
+          183
+        ],
+        "left": 74,
+        "top": 124,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 1072,
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+        "visible": 1072,
+        "hiddenBy": {},
+        "edgeSamples": 294,
+        "p10LumaGap": 27,
+        "contactPixels": 50,
+        "visibleContactPixels": 50,
+        "groundClearance": 16
+      }
+    ],
+    "nightLightPixels": 0,
+    "seamSamples": 576,
+    "routes": [
+      {
+        "id": "entry-path",
+        "actor": "surveyor",
+        "points": [
+          [
+            104,
+            200
+          ],
+          [
+            125,
+            173
+          ],
+          [
+            146,
+            155
+          ],
+          [
+            156,
+            136
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 1292
+      },
+      {
+        "id": "survey-station",
+        "actor": "surveyor",
+        "points": [
+          [
+            104,
+            183
+          ],
+          [
+            68,
+            180
+          ],
+          [
+            68,
+            148
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 1311
+      }
+    ],
+    "hierarchy": [
+      {
+        "id": "station",
+        "role": "primary",
+        "samples": 15188,
+        "edges": 3781,
+        "per100": 24.9
+      },
+      {
+        "id": "work-area",
+        "role": "secondary",
+        "samples": 3812,
+        "edges": 1013,
+        "per100": 26.6
+      },
+      {
+        "id": "upper-field",
+        "role": "background",
+        "samples": 16655,
+        "edges": 2506,
+        "per100": 15
+      },
+      {
+        "id": "courtyard-entry",
+        "role": "foreground",
+        "samples": 4321,
+        "edges": 548,
+        "per100": 12.7
+      },
+      {
+        "id": "quiet-verge",
+        "role": "rest",
+        "samples": 19661,
+        "edges": 3006,
+        "per100": 15.3
+      },
+      {
+        "id": "courier-backdrop",
+        "role": "rest",
+        "samples": 7114,
+        "edges": 1343,
+        "per100": 18.9
+      },
+      {
+        "id": "surveyor-room",
+        "role": "readability",
+        "samples": 1074,
+        "edges": 378,
+        "per100": 35.2
+      },
+      {
+        "id": "courier-room",
+        "role": "readability",
+        "samples": 1691,
+        "edges": 501,
+        "per100": 29.6
+      }
+    ],
+    "interactions": [
+      {
+        "id": "door-landing",
+        "target": "entry",
+        "walkablePixels": 476,
+        "nearest": 0
+      },
+      {
+        "id": "study-table",
+        "target": "survey-bench",
+        "walkablePixels": 364,
+        "nearest": 0
+      }
+    ]
+  },
+  {
+    "id": "c1-courtyard",
+    "light": "night",
+    "baseline": "front-court-night",
+    "kitSha256": "97e37b7c6f2cc5686df64c11141c910038ecf076665e1e5e5567b7559cd5b499",
+    "courierEdgeP10": [
+      12,
+      18
+    ],
+    "actors": [
+      {
+        "id": "courier",
+        "kind": "actor",
+        "at": [
+          264,
+          154
+        ],
+        "left": 232,
+        "top": 96,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 997,
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+        "visible": 997,
+        "hiddenBy": {},
+        "edgeSamples": 226,
+        "p10LumaGap": 18,
+        "contactPixels": 44,
+        "visibleContactPixels": 44,
+        "groundClearance": 16
+      },
+      {
+        "id": "surveyor",
+        "kind": "actor",
+        "at": [
+          104,
+          183
+        ],
+        "left": 74,
+        "top": 124,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 1072,
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+        "visible": 1072,
+        "hiddenBy": {},
+        "edgeSamples": 294,
+        "p10LumaGap": 17,
+        "contactPixels": 50,
+        "visibleContactPixels": 50,
+        "groundClearance": 16
+      }
+    ],
+    "nightLightPixels": 5496,
+    "seamSamples": 576,
+    "routes": [
+      {
+        "id": "entry-path",
+        "actor": "surveyor",
+        "points": [
+          [
+            104,
+            200
+          ],
+          [
+            125,
+            173
+          ],
+          [
+            146,
+            155
+          ],
+          [
+            156,
+            136
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 1292
+      },
+      {
+        "id": "survey-station",
+        "actor": "surveyor",
+        "points": [
+          [
+            104,
+            183
+          ],
+          [
+            68,
+            180
+          ],
+          [
+            68,
+            148
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 1311
+      }
+    ],
+    "hierarchy": [
+      {
+        "id": "station",
+        "role": "primary",
+        "samples": 15187,
+        "edges": 3731,
+        "per100": 24.6
+      },
+      {
+        "id": "work-area",
+        "role": "secondary",
+        "samples": 3833,
+        "edges": 1070,
+        "per100": 27.9
+      },
+      {
+        "id": "upper-field",
+        "role": "background",
+        "samples": 16655,
+        "edges": 2506,
+        "per100": 15
+      },
+      {
+        "id": "courtyard-entry",
+        "role": "foreground",
+        "samples": 4321,
+        "edges": 548,
+        "per100": 12.7
+      },
+      {
+        "id": "quiet-verge",
+        "role": "rest",
+        "samples": 19661,
+        "edges": 3006,
+        "per100": 15.3
+      },
+      {
+        "id": "courier-backdrop",
+        "role": "rest",
+        "samples": 7114,
+        "edges": 954,
+        "per100": 13.4
+      },
+      {
+        "id": "surveyor-room",
+        "role": "readability",
+        "samples": 1074,
+        "edges": 378,
+        "per100": 35.2
+      },
+      {
+        "id": "courier-room",
+        "role": "readability",
+        "samples": 1691,
+        "edges": 513,
+        "per100": 30.3
+      }
+    ],
+    "interactions": [
+      {
+        "id": "door-landing",
+        "target": "entry",
+        "walkablePixels": 476,
+        "nearest": 0
+      },
+      {
+        "id": "study-table",
+        "target": "survey-bench",
+        "walkablePixels": 364,
+        "nearest": 0
+      }
+    ]
+  },
+  {
+    "id": "c2-supply-stop",
+    "light": "day",
+    "baseline": "roadside-day",
+    "kitSha256": "de3c7607cb4de22d131c89f134ec3a83abfd1dbbfd012e3f546febf46916dd19",
+    "courierEdgeP10": [
+      60,
+      58
+    ],
+    "actors": [
+      {
+        "id": "surveyor",
+        "kind": "actor",
+        "at": [
+          113,
+          173
+        ],
+        "left": 83,
+        "top": 114,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 1072,
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+        "visible": 1072,
+        "hiddenBy": {},
+        "edgeSamples": 294,
+        "p10LumaGap": 27,
+        "contactPixels": 50,
+        "visibleContactPixels": 50,
+        "groundClearance": 16
+      },
+      {
+        "id": "courier",
+        "kind": "actor",
+        "at": [
+          212,
+          178
+        ],
+        "left": 180,
+        "top": 120,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 997,
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+        "visible": 997,
+        "hiddenBy": {},
+        "edgeSamples": 226,
+        "p10LumaGap": 58,
+        "contactPixels": 44,
+        "visibleContactPixels": 44,
+        "groundClearance": 16
+      }
+    ],
+    "nightLightPixels": 0,
+    "seamSamples": 496,
+    "routes": [
+      {
+        "id": "through-road",
+        "actor": "courier",
+        "points": [
+          [
+            12,
+            166
+          ],
+          [
+            52,
+            171
+          ],
+          [
+            102,
+            181
+          ],
+          [
+            155,
+            180
+          ],
+          [
+            199,
+            177
+          ],
+          [
+            225,
+            177
+          ],
+          [
+            273,
+            171
+          ],
+          [
+            307,
+            151
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 6216
+      },
+      {
+        "id": "rear-turn",
+        "actor": "surveyor",
+        "points": [
+          [
+            113,
+            173
+          ],
+          [
+            166,
+            171
+          ],
+          [
+            194,
+            154
+          ],
+          [
+            194,
+            118
+          ],
+          [
+            194,
+            98
+          ],
+          [
+            157,
+            98
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 3325
+      },
+      {
+        "id": "door-approach",
+        "actor": "surveyor",
+        "points": [
+          [
+            113,
+            173
+          ],
+          [
+            110,
+            152
+          ],
+          [
+            96,
+            132
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 798
+      }
+    ],
+    "hierarchy": [
+      {
+        "id": "station",
+        "role": "primary",
+        "samples": 13178,
+        "edges": 3338,
+        "per100": 25.3
+      },
+      {
+        "id": "delivery",
+        "role": "secondary",
+        "samples": 5082,
+        "edges": 1473,
+        "per100": 29
+      },
+      {
+        "id": "roadside-field",
+        "role": "background",
+        "samples": 19140,
+        "edges": 2414,
+        "per100": 12.6
+      },
+      {
+        "id": "road-entry",
+        "role": "foreground",
+        "samples": 6431,
+        "edges": 446,
+        "per100": 6.9
+      },
+      {
+        "id": "far-grass",
+        "role": "rest",
+        "samples": 19321,
+        "edges": 2423,
+        "per100": 12.5
+      },
+      {
+        "id": "near-verge",
+        "role": "rest",
+        "samples": 5504,
+        "edges": 1123,
+        "per100": 20.4
+      },
+      {
+        "id": "surveyor-room",
+        "role": "readability",
+        "samples": 1313,
+        "edges": 369,
+        "per100": 28.1
+      },
+      {
+        "id": "courier-room",
+        "role": "readability",
+        "samples": 1285,
+        "edges": 432,
+        "per100": 33.6
+      }
+    ],
+    "interactions": [
+      {
+        "id": "door-landing",
+        "target": "entry",
+        "walkablePixels": 459,
+        "nearest": 0
+      },
+      {
+        "id": "unload",
+        "target": "survey-bench",
+        "walkablePixels": 481,
+        "nearest": 1
+      },
+      {
+        "id": "store-supplies",
+        "target": "supply-crate",
+        "walkablePixels": 266,
+        "nearest": 0
+      }
+    ]
+  },
+  {
+    "id": "c2-supply-stop",
+    "light": "night",
+    "baseline": "roadside-night",
+    "kitSha256": "316b85aae6d374d8322e515d99e44f71d16d1d416dec568ea1eb3251cd5dc402",
+    "courierEdgeP10": [
+      20,
+      15
+    ],
+    "actors": [
+      {
+        "id": "surveyor",
+        "kind": "actor",
+        "at": [
+          113,
+          173
+        ],
+        "left": 83,
+        "top": 114,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 1072,
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+        "visible": 1072,
+        "hiddenBy": {},
+        "edgeSamples": 294,
+        "p10LumaGap": 11,
+        "contactPixels": 50,
+        "visibleContactPixels": 50,
+        "groundClearance": 16
+      },
+      {
+        "id": "courier",
+        "kind": "actor",
+        "at": [
+          212,
+          178
+        ],
+        "left": 180,
+        "top": 120,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 997,
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+        "visible": 997,
+        "hiddenBy": {},
+        "edgeSamples": 226,
+        "p10LumaGap": 15,
+        "contactPixels": 44,
+        "visibleContactPixels": 44,
+        "groundClearance": 16
+      }
+    ],
+    "nightLightPixels": 2491,
+    "seamSamples": 496,
+    "routes": [
+      {
+        "id": "through-road",
+        "actor": "courier",
+        "points": [
+          [
+            12,
+            166
+          ],
+          [
+            52,
+            171
+          ],
+          [
+            102,
+            181
+          ],
+          [
+            155,
+            180
+          ],
+          [
+            199,
+            177
+          ],
+          [
+            225,
+            177
+          ],
+          [
+            273,
+            171
+          ],
+          [
+            307,
+            151
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 6216
+      },
+      {
+        "id": "rear-turn",
+        "actor": "surveyor",
+        "points": [
+          [
+            113,
+            173
+          ],
+          [
+            166,
+            171
+          ],
+          [
+            194,
+            154
+          ],
+          [
+            194,
+            118
+          ],
+          [
+            194,
+            98
+          ],
+          [
+            157,
+            98
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 3325
+      },
+      {
+        "id": "door-approach",
+        "actor": "surveyor",
+        "points": [
+          [
+            113,
+            173
+          ],
+          [
+            110,
+            152
+          ],
+          [
+            96,
+            132
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 798
+      }
+    ],
+    "hierarchy": [
+      {
+        "id": "station",
+        "role": "primary",
+        "samples": 13177,
+        "edges": 3289,
+        "per100": 25
+      },
+      {
+        "id": "delivery",
+        "role": "secondary",
+        "samples": 5092,
+        "edges": 1433,
+        "per100": 28.1
+      },
+      {
+        "id": "roadside-field",
+        "role": "background",
+        "samples": 19140,
+        "edges": 2423,
+        "per100": 12.7
+      },
+      {
+        "id": "road-entry",
+        "role": "foreground",
+        "samples": 6431,
+        "edges": 446,
+        "per100": 6.9
+      },
+      {
+        "id": "far-grass",
+        "role": "rest",
+        "samples": 19321,
+        "edges": 2428,
+        "per100": 12.6
+      },
+      {
+        "id": "near-verge",
+        "role": "rest",
+        "samples": 5504,
+        "edges": 1123,
+        "per100": 20.4
+      },
+      {
+        "id": "surveyor-room",
+        "role": "readability",
+        "samples": 1313,
+        "edges": 369,
+        "per100": 28.1
+      },
+      {
+        "id": "courier-room",
+        "role": "readability",
+        "samples": 1285,
+        "edges": 434,
+        "per100": 33.8
+      }
+    ],
+    "interactions": [
+      {
+        "id": "door-landing",
+        "target": "entry",
+        "walkablePixels": 459,
+        "nearest": 0
+      },
+      {
+        "id": "unload",
+        "target": "survey-bench",
+        "walkablePixels": 481,
+        "nearest": 1
+      },
+      {
+        "id": "store-supplies",
+        "target": "supply-crate",
+        "walkablePixels": 266,
+        "nearest": 0
+      }
+    ]
+  }
+]

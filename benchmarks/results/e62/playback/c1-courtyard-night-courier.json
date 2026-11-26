@@ -1,0 +1,599 @@
+{
+  "actor": "courier",
+  "source": "benchmarks/results/e54/packages/courier/walk/",
+  "hashes": {
+    "animation-spec.json": "83b60349b59a093227f08d6313df32f60dc1dcfaee081d7eba595213fcc8d7ac",
+    "spritesheet.png": "9aa076a9dfe1c18af7854e5ddcada877dd235689064d8e4b3001c775cedb3c99",
+    "timing.json": "cb7e9636ec3715d5bc9857f01e9d4a4541f70a33b522b1d306632b290265523a",
+    "qa.json": "fe391609097c62455ca24ff6ff6e13825a968736da26bf99e2fc498ccb050ab4"
+  },
+  "pivot": [
+    32,
+    58
+  ],
+  "width": 320,
+  "height": 208,
+  "columns": 5,
+  "mode": "Discrete Root A",
+  "end": "inside-threshold-apron",
+  "cyclePx": 24,
+  "tested": 1029,
+  "maxForwardSlip": 0,
+  "maxScreenDepthSlip": 2,
+  "plantedPairs": 16,
+  "steps": [
+    {
+      "frame": 0,
+      "stage": "approach",
+      "phase": "contact",
+      "rootX": 0,
+      "at": [
+        119,
+        130
+      ],
+      "ms": 125,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            119,
+            130
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            131,
+            129
+          ]
+        }
+      ],
+      "visible": 921,
+      "original": 921,
+      "visibleContactPixels": 45,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 1,
+      "stage": "approach",
+      "phase": "down",
+      "rootX": 3,
+      "at": [
+        122,
+        130
+      ],
+      "ms": 130,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "swing",
+          "at": [
+            122,
+            128
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            131,
+            129
+          ]
+        }
+      ],
+      "visible": 916,
+      "original": 916,
+      "visibleContactPixels": 24,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 2,
+      "stage": "approach",
+      "phase": "passing",
+      "rootX": 6,
+      "at": [
+        125,
+        130
+      ],
+      "ms": 110,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "swing",
+          "at": [
+            135,
+            124
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            131,
+            129
+          ]
+        }
+      ],
+      "visible": 910,
+      "original": 910,
+      "visibleContactPixels": 16,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 3,
+      "stage": "approach",
+      "phase": "up",
+      "rootX": 9,
+      "at": [
+        128,
+        130
+      ],
+      "ms": 115,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "swing",
+          "at": [
+            139,
+            127
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            131,
+            129
+          ]
+        }
+      ],
+      "visible": 968,
+      "original": 968,
+      "visibleContactPixels": 11,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 4,
+      "stage": "approach",
+      "phase": "contact",
+      "rootX": 12,
+      "at": [
+        131,
+        130
+      ],
+      "ms": 125,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            143,
+            130
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            131,
+            129
+          ]
+        }
+      ],
+      "visible": 1021,
+      "original": 1021,
+      "visibleContactPixels": 45,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 5,
+      "stage": "approach",
+      "phase": "down",
+      "rootX": 15,
+      "at": [
+        134,
+        130
+      ],
+      "ms": 130,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            143,
+            130
+          ]
+        },
+        {
+          "side": "far",
+          "state": "swing",
+          "at": [
+            135,
+            125
+          ]
+        }
+      ],
+      "visible": 947,
+      "original": 947,
+      "visibleContactPixels": 29,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 6,
+      "stage": "approach",
+      "phase": "passing",
+      "rootX": 18,
+      "at": [
+        137,
+        130
+      ],
+      "ms": 110,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            143,
+            130
+          ]
+        },
+        {
+          "side": "far",
+          "state": "swing",
+          "at": [
+            143,
+            124
+          ]
+        }
+      ],
+      "visible": 910,
+      "original": 910,
+      "visibleContactPixels": 29,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 7,
+      "stage": "approach",
+      "phase": "up",
+      "rootX": 21,
+      "at": [
+        140,
+        130
+      ],
+      "ms": 115,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            143,
+            130
+          ]
+        },
+        {
+          "side": "far",
+          "state": "swing",
+          "at": [
+            150,
+            126
+          ]
+        }
+      ],
+      "visible": 930,
+      "original": 930,
+      "visibleContactPixels": 23,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 0,
+      "stage": "landing",
+      "phase": "contact",
+      "rootX": 24,
+      "at": [
+        143,
+        130
+      ],
+      "ms": 125,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            143,
+            130
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            155,
+            129
+          ]
+        }
+      ],
+      "visible": 921,
+      "original": 921,
+      "visibleContactPixels": 45,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 1,
+      "stage": "landing",
+      "phase": "down",
+      "rootX": 27,
+      "at": [
+        146,
+        128
+      ],
+      "ms": 130,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "swing",
+          "at": [
+            146,
+            126
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            155,
+            127
+          ]
+        }
+      ],
+      "visible": 916,
+      "original": 916,
+      "visibleContactPixels": 24,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 2,
+      "stage": "landing",
+      "phase": "passing",
+      "rootX": 30,
+      "at": [
+        149,
+        126
+      ],
+      "ms": 110,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "swing",
+          "at": [
+            159,
+            120
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            155,
+            125
+          ]
+        }
+      ],
+      "visible": 910,
+      "original": 910,
+      "visibleContactPixels": 16,
+      "hiddenBy": {}
+    },
+    {
+      "frame": 3,
+      "stage": "landing",
+      "phase": "up",
+      "rootX": 33,
+      "at": [
+        152,
+        124
+      ],
+      "ms": 115,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "swing",
+          "at": [
+            163,
+            121
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            155,
+            123
+          ]
+        }
+      ],
+      "visible": 893,
+      "original": 968,
+      "visibleContactPixels": 11,
+      "hiddenBy": {
+        "station-shell": 75
+      }
+    },
+    {
+      "frame": 4,
+      "stage": "threshold",
+      "phase": "contact",
+      "rootX": 36,
+      "at": [
+        155,
+        122
+      ],
+      "ms": 125,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            167,
+            122
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            155,
+            121
+          ]
+        }
+      ],
+      "visible": 913,
+      "original": 1021,
+      "visibleContactPixels": 42,
+      "hiddenBy": {
+        "station-shell": 108
+      }
+    },
+    {
+      "frame": 5,
+      "stage": "threshold",
+      "phase": "down",
+      "rootX": 39,
+      "at": [
+        158,
+        120
+      ],
+      "ms": 130,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            167,
+            120
+          ]
+        },
+        {
+          "side": "far",
+          "state": "swing",
+          "at": [
+            159,
+            115
+          ]
+        }
+      ],
+      "visible": 838,
+      "original": 947,
+      "visibleContactPixels": 26,
+      "hiddenBy": {
+        "station-shell": 109
+      }
+    },
+    {
+      "frame": 6,
+      "stage": "exit",
+      "phase": "passing",
+      "rootX": 42,
+      "at": [
+        161,
+        118
+      ],
+      "ms": 110,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            167,
+            118
+          ]
+        },
+        {
+          "side": "far",
+          "state": "swing",
+          "at": [
+            167,
+            112
+          ]
+        }
+      ],
+      "visible": 731,
+      "original": 910,
+      "visibleContactPixels": 26,
+      "hiddenBy": {
+        "station-shell": 179
+      }
+    },
+    {
+      "frame": 7,
+      "stage": "exit",
+      "phase": "up",
+      "rootX": 45,
+      "at": [
+        164,
+        118
+      ],
+      "ms": 115,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            167,
+            118
+          ]
+        },
+        {
+          "side": "far",
+          "state": "swing",
+          "at": [
+            174,
+            114
+          ]
+        }
+      ],
+      "visible": 601,
+      "original": 930,
+      "visibleContactPixels": 20,
+      "hiddenBy": {
+        "station-shell": 329
+      }
+    },
+    {
+      "frame": 0,
+      "stage": "exit",
+      "phase": "contact",
+      "rootX": 48,
+      "at": [
+        167,
+        118
+      ],
+      "ms": 125,
+      "contacts": [
+        {
+          "side": "near",
+          "state": "planted",
+          "at": [
+            167,
+            118
+          ]
+        },
+        {
+          "side": "far",
+          "state": "planted",
+          "at": [
+            179,
+            117
+          ]
+        }
+      ],
+      "visible": 466,
+      "original": 921,
+      "visibleContactPixels": 26,
+      "hiddenBy": {
+        "station-shell": 455
+      }
+    }
+  ]
+}

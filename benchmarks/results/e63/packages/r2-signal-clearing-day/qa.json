@@ -1,0 +1,1139 @@
+{
+  "geometry": {
+    "version": 1,
+    "camera": {
+      "width": 320,
+      "height": 208,
+      "sampling": "nearest",
+      "view": "three-quarter-right",
+      "pixelsPerUnit": 32
+    },
+    "finish": "ENV-B",
+    "illumination": "day",
+    "keyLight": "upper-left",
+    "mounts": {
+      "signal": [
+        112,
+        124
+      ]
+    },
+    "seamSamples": 11701,
+    "portal": {
+      "at": [
+        222,
+        113
+      ],
+      "points": [
+        [
+          206,
+          109
+        ],
+        [
+          238,
+          109
+        ],
+        [
+          238,
+          117
+        ],
+        [
+          206,
+          117
+        ]
+      ]
+    },
+    "collisions": [
+      {
+        "id": "fallen-wall",
+        "kind": "architecture",
+        "points": [
+          [
+            30,
+            150
+          ],
+          [
+            93,
+            150
+          ],
+          [
+            93,
+            146
+          ],
+          [
+            99,
+            140
+          ],
+          [
+            36,
+            140
+          ],
+          [
+            30,
+            146
+          ]
+        ]
+      },
+      {
+        "id": "upper-wall",
+        "kind": "architecture",
+        "points": [
+          [
+            101,
+            101
+          ],
+          [
+            169,
+            101
+          ],
+          [
+            169,
+            97
+          ],
+          [
+            176,
+            90
+          ],
+          [
+            108,
+            90
+          ],
+          [
+            101,
+            97
+          ]
+        ]
+      },
+      {
+        "id": "signal-pedestal",
+        "kind": "architecture",
+        "points": [
+          [
+            112,
+            124
+          ],
+          [
+            138,
+            124
+          ],
+          [
+            138,
+            120
+          ],
+          [
+            143,
+            115
+          ],
+          [
+            117,
+            115
+          ],
+          [
+            112,
+            120
+          ]
+        ]
+      },
+      {
+        "id": "upper-column",
+        "kind": "architecture",
+        "points": [
+          [
+            70,
+            110
+          ],
+          [
+            85,
+            110
+          ],
+          [
+            85,
+            106
+          ],
+          [
+            90,
+            101
+          ],
+          [
+            75,
+            101
+          ],
+          [
+            70,
+            106
+          ]
+        ]
+      },
+      {
+        "id": "near-column",
+        "kind": "architecture",
+        "points": [
+          [
+            255,
+            151
+          ],
+          [
+            274,
+            151
+          ],
+          [
+            274,
+            147
+          ],
+          [
+            280,
+            141
+          ],
+          [
+            261,
+            141
+          ],
+          [
+            255,
+            147
+          ]
+        ]
+      },
+      {
+        "id": "signal-gateway-0",
+        "kind": "architecture",
+        "points": [
+          [
+            193,
+            113
+          ],
+          [
+            206,
+            113
+          ],
+          [
+            206,
+            109
+          ],
+          [
+            211,
+            104
+          ],
+          [
+            198,
+            104
+          ],
+          [
+            193,
+            109
+          ]
+        ]
+      },
+      {
+        "id": "signal-gateway-1",
+        "kind": "architecture",
+        "points": [
+          [
+            238,
+            113
+          ],
+          [
+            251,
+            113
+          ],
+          [
+            251,
+            109
+          ],
+          [
+            256,
+            104
+          ],
+          [
+            243,
+            104
+          ],
+          [
+            238,
+            109
+          ]
+        ]
+      }
+    ],
+    "layerOrder": [
+      "upper-wall",
+      "upper-column",
+      "signal-gateway",
+      "signal-pedestal",
+      "fallen-wall",
+      "near-column",
+      "surveyor",
+      "courier"
+    ],
+    "occlusion": [
+      {
+        "id": "upper-wall",
+        "kind": "building",
+        "at": [
+          101,
+          101
+        ],
+        "left": 101,
+        "top": 52,
+        "w": 82,
+        "h": 49,
+        "visibleBefore": 2994,
+        "alphaSha256": "8a23c51ad78d3e28f4fc7a88dfcf7c1c745b1fcf807ea9d1fb9fca77c5977f16",
+        "visible": 2769,
+        "hiddenBy": {
+          "signal-pedestal": 225
+        },
+        "edgeSamples": 0,
+        "p10LumaGap": null
+      },
+      {
+        "id": "upper-column",
+        "kind": "building",
+        "at": [
+          70,
+          110
+        ],
+        "left": 70,
+        "top": 80,
+        "w": 25,
+        "h": 30,
+        "visibleBefore": 626,
+        "alphaSha256": "5fdeabf0cd4514d99b36d753a0a7d240c2425ef39bf342b85cf81dbd1c5917d0",
+        "visible": 626,
+        "hiddenBy": {},
+        "edgeSamples": 0,
+        "p10LumaGap": null
+      },
+      {
+        "id": "signal-gateway",
+        "kind": "building",
+        "at": [
+          193,
+          113
+        ],
+        "left": 193,
+        "top": 38,
+        "w": 68,
+        "h": 75,
+        "visibleBefore": 2777,
+        "alphaSha256": "cdb30358d3b6f4a974f136b3bcd74ea91d25cf048f175e44ceb23ba17ce96344",
+        "visible": 2777,
+        "hiddenBy": {},
+        "edgeSamples": 0,
+        "p10LumaGap": null
+      },
+      {
+        "id": "signal-pedestal",
+        "kind": "building",
+        "at": [
+          112,
+          124
+        ],
+        "left": 112,
+        "top": 82,
+        "w": 36,
+        "h": 42,
+        "visibleBefore": 634,
+        "alphaSha256": "ee4e24f0678f2e347c79b93635578d45a1e618ce171b2d948d2a1d4bde781fbc",
+        "visible": 634,
+        "hiddenBy": {},
+        "edgeSamples": 0,
+        "p10LumaGap": null
+      },
+      {
+        "id": "fallen-wall",
+        "kind": "building",
+        "at": [
+          30,
+          150
+        ],
+        "left": 30,
+        "top": 114,
+        "w": 75,
+        "h": 36,
+        "visibleBefore": 2068,
+        "alphaSha256": "16f8fef209d76ea19d48b0509f9358d6eecd49fb5ed6cd67ade7c91df8854456",
+        "visible": 1685,
+        "hiddenBy": {
+          "courier": 383
+        },
+        "edgeSamples": 0,
+        "p10LumaGap": null
+      },
+      {
+        "id": "near-column",
+        "kind": "building",
+        "at": [
+          255,
+          151
+        ],
+        "left": 255,
+        "top": 115,
+        "w": 31,
+        "h": 36,
+        "visibleBefore": 948,
+        "alphaSha256": "3a9e3e6c4ea0f35e3e96c544545401ee1f3de0fbdecb2f35818334def008eb7f",
+        "visible": 948,
+        "hiddenBy": {},
+        "edgeSamples": 0,
+        "p10LumaGap": null
+      },
+      {
+        "id": "surveyor",
+        "kind": "actor",
+        "at": [
+          155,
+          171
+        ],
+        "left": 125,
+        "top": 112,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 1072,
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+        "visible": 1072,
+        "hiddenBy": {},
+        "edgeSamples": 294,
+        "p10LumaGap": 63,
+        "contactPixels": 50,
+        "visibleContactPixels": 50,
+        "groundClearance": 16
+      },
+      {
+        "id": "courier",
+        "kind": "actor",
+        "at": [
+          79,
+          179
+        ],
+        "left": 47,
+        "top": 121,
+        "w": 64,
+        "h": 64,
+        "visibleBefore": 997,
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+        "visible": 997,
+        "hiddenBy": {},
+        "edgeSamples": 226,
+        "p10LumaGap": 37,
+        "contactPixels": 44,
+        "visibleContactPixels": 44,
+        "groundClearance": 16
+      }
+    ],
+    "palette": {
+      "allowed": [
+        "#201a24",
+        "#211e2a",
+        "#263944",
+        "#293943",
+        "#2c2c3b",
+        "#2d4346",
+        "#2e4e52",
+        "#303443",
+        "#30383c",
+        "#303d41",
+        "#343344",
+        "#353c45",
+        "#37545a",
+        "#375d5b",
+        "#382c28",
+        "#392c37",
+        "#394b4d",
+        "#3b515c",
+        "#434a5c",
+        "#465046",
+        "#46746e",
+        "#4a2927",
+        "#4b6940",
+        "#512f32",
+        "#513638",
+        "#51546a",
+        "#525a6e",
+        "#535e51",
+        "#536964",
+        "#55727b",
+        "#646e66",
+        "#657987",
+        "#674937",
+        "#685044",
+        "#68864c",
+        "#695848",
+        "#6b4139",
+        "#71453d",
+        "#723e2c",
+        "#72492f",
+        "#75a08b",
+        "#777d8b",
+        "#798c7c",
+        "#7f9858",
+        "#81939a",
+        "#819494",
+        "#86503d",
+        "#869087",
+        "#88927a",
+        "#896049",
+        "#916e51",
+        "#91816a",
+        "#935630",
+        "#936f53",
+        "#9ca8a8",
+        "#9f795c",
+        "#a15a36",
+        "#a28d70",
+        "#a36146",
+        "#a68061",
+        "#a86a55",
+        "#ae7541",
+        "#aeb2a1",
+        "#b0bdac",
+        "#b18059",
+        "#b58f6f",
+        "#b9a384",
+        "#bc9366",
+        "#ca8248",
+        "#d79768",
+        "#dca57a",
+        "#edaf59",
+        "#eea761",
+        "#f5c393",
+        "#f6bd68",
+        "#ffe3a0"
+      ],
+      "used": [
+        "#201a24",
+        "#211e2a",
+        "#293943",
+        "#2c2c3b",
+        "#2d4346",
+        "#2e4e52",
+        "#303443",
+        "#30383c",
+        "#303d41",
+        "#343344",
+        "#353c45",
+        "#37545a",
+        "#375d5b",
+        "#382c28",
+        "#392c37",
+        "#394b4d",
+        "#434a5c",
+        "#465046",
+        "#46746e",
+        "#4b6940",
+        "#512f32",
+        "#513638",
+        "#51546a",
+        "#525a6e",
+        "#535e51",
+        "#536964",
+        "#646e66",
+        "#657987",
+        "#674937",
+        "#68864c",
+        "#695848",
+        "#6b4139",
+        "#71453d",
+        "#72492f",
+        "#75a08b",
+        "#777d8b",
+        "#798c7c",
+        "#7f9858",
+        "#81939a",
+        "#86503d",
+        "#869087",
+        "#88927a",
+        "#896049",
+        "#91816a",
+        "#935630",
+        "#936f53",
+        "#9ca8a8",
+        "#9f795c",
+        "#a28d70",
+        "#a36146",
+        "#a68061",
+        "#a86a55",
+        "#aeb2a1",
+        "#b18059",
+        "#b58f6f",
+        "#b9a384",
+        "#d79768",
+        "#dca57a",
+        "#edaf59",
+        "#f5c393",
+        "#f6bd68",
+        "#ffe3a0"
+      ],
+      "ramps": [
+        {
+          "material": "stone",
+          "ramp": [
+            "#353c45",
+            "#646e66",
+            "#869087",
+            "#aeb2a1"
+          ],
+          "luma": [
+            59,
+            107,
+            141,
+            176
+          ]
+        },
+        {
+          "material": "wood",
+          "ramp": [
+            "#382c28",
+            "#685044",
+            "#916e51",
+            "#bc9366"
+          ],
+          "luma": [
+            46,
+            84,
+            115,
+            152
+          ]
+        },
+        {
+          "material": "roof",
+          "ramp": [
+            "#263944",
+            "#3b515c",
+            "#55727b",
+            "#819494"
+          ],
+          "luma": [
+            54,
+            77,
+            108,
+            144
+          ]
+        },
+        {
+          "material": "paving",
+          "ramp": [
+            "#695848",
+            "#91816a",
+            "#a28d70",
+            "#b9a384"
+          ],
+          "luma": [
+            90,
+            131,
+            143,
+            165
+          ]
+        },
+        {
+          "material": "metal",
+          "ramp": [
+            "#303443",
+            "#657987",
+            "#81939a",
+            "#b0bdac"
+          ],
+          "luma": [
+            52,
+            118,
+            144,
+            185
+          ]
+        },
+        {
+          "material": "amber",
+          "ramp": [
+            "#72492f",
+            "#ae7541",
+            "#edaf59",
+            "#ffe3a0"
+          ],
+          "luma": [
+            80,
+            125,
+            182,
+            228
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "materials": [
+            "wood",
+            "roof"
+          ],
+          "equalInks": [],
+          "midtoneGap": 7
+        },
+        {
+          "materials": [
+            "paving",
+            "amber"
+          ],
+          "equalInks": [],
+          "midtoneGap": 6
+        },
+        {
+          "materials": [
+            "metal",
+            "amber"
+          ],
+          "equalInks": [],
+          "midtoneGap": 7
+        }
+      ]
+    },
+    "atlas": {
+      "cells": [
+        {
+          "id": "fallen-wall",
+          "at": [
+            3,
+            3
+          ],
+          "size": [
+            75,
+            36
+          ],
+          "pivot": [
+            0,
+            36
+          ],
+          "rgbaSha256": "8f6f4f61ba7cb8113473ed4c605be7081cee4f23b55a69b9b4908c40ac6f09bf",
+          "alphaSha256": "16f8fef209d76ea19d48b0509f9358d6eecd49fb5ed6cd67ade7c91df8854456"
+        },
+        {
+          "id": "upper-wall",
+          "at": [
+            81,
+            3
+          ],
+          "size": [
+            82,
+            49
+          ],
+          "pivot": [
+            0,
+            49
+          ],
+          "rgbaSha256": "7ea5b024fc746be3aaeda35ea8a445e401bfc1d8fa7c9be3ba1dd351a396c701",
+          "alphaSha256": "8a23c51ad78d3e28f4fc7a88dfcf7c1c745b1fcf807ea9d1fb9fca77c5977f16"
+        },
+        {
+          "id": "signal-terrace",
+          "at": [
+            166,
+            3
+          ],
+          "size": [
+            92,
+            22
+          ],
+          "pivot": [
+            0,
+            22
+          ],
+          "rgbaSha256": "366de831072f9ba6d9ff9171257889d474f8f9815ca1cd968c237867253f3c3d",
+          "alphaSha256": "6eb7f8d6a68a356a4a6341946997b24eb5399c7b13353579c0cab5fbad39d726"
+        },
+        {
+          "id": "signal-pedestal",
+          "at": [
+            261,
+            3
+          ],
+          "size": [
+            36,
+            42
+          ],
+          "pivot": [
+            0,
+            42
+          ],
+          "rgbaSha256": "33a0097062480b90cbd12aed72ee4b18193d666d6e267aebd021baf6f545eb79",
+          "alphaSha256": "ee4e24f0678f2e347c79b93635578d45a1e618ce171b2d948d2a1d4bde781fbc"
+        },
+        {
+          "id": "upper-column",
+          "at": [
+            300,
+            3
+          ],
+          "size": [
+            25,
+            30
+          ],
+          "pivot": [
+            0,
+            30
+          ],
+          "rgbaSha256": "963837239846e7b4f1547276c17fabc822aa7f4537d5ec9306b57161075854f6",
+          "alphaSha256": "5fdeabf0cd4514d99b36d753a0a7d240c2425ef39bf342b85cf81dbd1c5917d0"
+        },
+        {
+          "id": "near-column",
+          "at": [
+            328,
+            3
+          ],
+          "size": [
+            31,
+            36
+          ],
+          "pivot": [
+            0,
+            36
+          ],
+          "rgbaSha256": "662a05948fe748cb03413d806d4253ca88ec28a90f4a676803d0512831f6364c",
+          "alphaSha256": "3a9e3e6c4ea0f35e3e96c544545401ee1f3de0fbdecb2f35818334def008eb7f"
+        },
+        {
+          "id": "signal-gateway",
+          "at": [
+            362,
+            3
+          ],
+          "size": [
+            68,
+            75
+          ],
+          "pivot": [
+            0,
+            75
+          ],
+          "rgbaSha256": "edebbb67fbe6cd57930423075caf61ef3d0ecef85bd2d25990a7085bc7be1582",
+          "alphaSha256": "cdb30358d3b6f4a974f136b3bcd74ea91d25cf048f175e44ceb23ba17ce96344"
+        }
+      ],
+      "materialLegend": {
+        "stone": "#8bb4ce",
+        "wood": "#bc8862",
+        "roof": "#789e94",
+        "paving": "#cfbb83",
+        "metal": "#98a0be",
+        "amber": "#f9bb51",
+        "contour": "#48425e",
+        "grass": "#68864c",
+        "dirt": "#9d795c",
+        "prop": "#c28291",
+        "actor": "#94e4bd",
+        "shadow": "#292d42",
+        "moss": "#82a456"
+      },
+      "layerLegend": {
+        "terrain": "#364950",
+        "path": "#8c735a",
+        "shadow": "#3b2c55",
+        "building": "#81aeba",
+        "prop": "#dc9f64",
+        "actor": "#98e2c4"
+      }
+    },
+    "rgbaSha256": "6fa777a13b266b23f2a74a9df0c99abb364752d0fba44321a56fca18830a435a",
+    "alphaSha256": "e295cac46a68c1c65760f7a4fb6eec1cfd9edd08462da6c8c7115f49a2d2e856",
+    "refinement": {
+      "geometry": {
+        "wallHeight": 70,
+        "doorWidth": 58,
+        "doorHeight": 60,
+        "jamb": 13,
+        "fit": [
+          {
+            "id": "surveyor",
+            "nativeCanvas": 64,
+            "pivot": [
+              30,
+              59
+            ],
+            "silhouette": {
+              "left": 21,
+              "right": 53,
+              "top": 3,
+              "bottom": 58,
+              "width": 33,
+              "height": 56
+            },
+            "jacket": {
+              "left": 23,
+              "right": 38,
+              "top": 19,
+              "bottom": 39,
+              "width": 16,
+              "height": 21
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 9,
+            "testedPixels": 380,
+            "clearWidth": 32,
+            "doorHeight": 60
+          },
+          {
+            "id": "courier",
+            "nativeCanvas": 64,
+            "pivot": [
+              32,
+              58
+            ],
+            "silhouette": {
+              "left": 18,
+              "right": 47,
+              "top": 6,
+              "bottom": 57,
+              "width": 30,
+              "height": 52
+            },
+            "jacket": {
+              "left": 26,
+              "right": 41,
+              "top": 22,
+              "bottom": 39,
+              "width": 16,
+              "height": 18
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 10,
+            "testedPixels": 420,
+            "clearWidth": 32,
+            "doorHeight": 60
+          }
+        ],
+        "roofOverhang": [],
+        "footprint": [
+          [
+            193,
+            113
+          ],
+          [
+            251,
+            113
+          ],
+          [
+            261,
+            108
+          ],
+          [
+            203,
+            108
+          ]
+        ],
+        "windowSillsY": []
+      },
+      "quietedTerrainPixels": 2628,
+      "nightLightPixels": 0
+    },
+    "ruins": {
+      "modules": [
+        {
+          "id": "fallen-wall",
+          "at": [
+            30,
+            150
+          ],
+          "width": 63,
+          "height": 30,
+          "depth": 12,
+          "kind": "wall",
+          "fracture": "right",
+          "moss": 2
+        },
+        {
+          "id": "upper-wall",
+          "at": [
+            101,
+            101
+          ],
+          "width": 68,
+          "height": 42,
+          "depth": 14,
+          "kind": "wall",
+          "fracture": "left",
+          "moss": 1
+        },
+        {
+          "id": "signal-terrace",
+          "at": [
+            75,
+            134
+          ],
+          "width": 72,
+          "height": 12,
+          "depth": 20,
+          "kind": "platform"
+        },
+        {
+          "id": "signal-pedestal",
+          "at": [
+            112,
+            124
+          ],
+          "width": 26,
+          "height": 37,
+          "depth": 10,
+          "kind": "signal",
+          "lit": true
+        },
+        {
+          "id": "upper-column",
+          "at": [
+            70,
+            110
+          ],
+          "width": 15,
+          "height": 25,
+          "depth": 10,
+          "kind": "column",
+          "moss": 1
+        },
+        {
+          "id": "near-column",
+          "at": [
+            255,
+            151
+          ],
+          "width": 19,
+          "height": 30,
+          "depth": 12,
+          "kind": "column",
+          "moss": 2
+        },
+        {
+          "id": "signal-gateway",
+          "at": [
+            193,
+            113
+          ],
+          "width": 58,
+          "height": 70,
+          "depth": 10,
+          "kind": "gateway",
+          "opening": 32,
+          "crown": "stepped"
+        }
+      ],
+      "flat": false,
+      "supportPixels": 11701
+    }
+  },
+  "routes": [
+    {
+      "id": "gate-passage",
+      "actor": "courier",
+      "points": [
+        [
+          231,
+          193
+        ],
+        [
+          221,
+          157
+        ],
+        [
+          222,
+          135
+        ],
+        [
+          222,
+          92
+        ]
+      ],
+      "halfWidth": 10,
+      "tested": 2142
+    },
+    {
+      "id": "signal-approach",
+      "actor": "surveyor",
+      "points": [
+        [
+          155,
+          171
+        ],
+        [
+          151,
+          147
+        ],
+        [
+          148,
+          132
+        ],
+        [
+          145,
+          128
+        ]
+      ],
+      "halfWidth": 9,
+      "tested": 836
+    }
+  ],
+  "hierarchy": [
+    {
+      "id": "gateway",
+      "role": "primary",
+      "samples": 7459,
+      "edges": 1220,
+      "per100": 16.4
+    },
+    {
+      "id": "signal",
+      "role": "secondary",
+      "samples": 2653,
+      "edges": 551,
+      "per100": 20.8
+    },
+    {
+      "id": "clearing-fringe",
+      "role": "background",
+      "samples": 20949,
+      "edges": 1781,
+      "per100": 8.5
+    },
+    {
+      "id": "fallen-wall-foreground",
+      "role": "foreground",
+      "samples": 5080,
+      "edges": 1426,
+      "per100": 28.1
+    },
+    {
+      "id": "quiet-canopy",
+      "role": "rest",
+      "samples": 21122,
+      "edges": 1823,
+      "per100": 8.6
+    },
+    {
+      "id": "near-verge",
+      "role": "rest",
+      "samples": 4979,
+      "edges": 886,
+      "per100": 17.8
+    },
+    {
+      "id": "actor-space",
+      "role": "readability",
+      "samples": 7491,
+      "edges": 1898,
+      "per100": 25.3
+    }
+  ],
+  "interactions": [
+    {
+      "id": "gateway-step",
+      "target": "entry",
+      "walkablePixels": 504,
+      "nearest": 0
+    },
+    {
+      "id": "read-signal",
+      "target": "signal-pedestal",
+      "walkablePixels": 560,
+      "nearest": 11
+    }
+  ],
+  "zoneLegend": {
+    "primary": "#ffca78",
+    "secondary": "#a6d9ff",
+    "background": "#82b3b5",
+    "foreground": "#c2aaf5",
+    "rest": "#91a7a4",
+    "readability": "#a7e8b2"
+  }
+}

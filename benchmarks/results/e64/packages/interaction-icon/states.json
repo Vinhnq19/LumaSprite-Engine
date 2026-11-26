@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "canvas": {
+    "w": 16,
+    "h": 16
+  },
+  "pivot": [
+    8,
+    15
+  ],
+  "sampling": "nearest",
+  "states": [
+    {
+      "id": "normal",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "rgbaSha256": "7226a51824ef23d289de8452d58dc2eaf68c9143e640a19dbbc2b915614854bc"
+    },
+    {
+      "id": "active",
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "rgbaSha256": "b103bb9db65ad54fa353190c0f2d3d258234bdc3b0a5ed9fcf88c28596ae8e9a"
+    }
+  ]
+}

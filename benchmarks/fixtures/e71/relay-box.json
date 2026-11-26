@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "kind": "field-signal-relay-box",
+  "label": "Field Signal Relay Box",
+  "canvas": {
+    "w": 32,
+    "h": 32
+  },
+  "seed": 127,
+  "sourceStyle": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "body": {
+    "width": 19,
+    "depth": 7,
+    "height": 14
+  },
+  "placement": {
+    "file": "benchmarks/results/e62/packages/c1-courtyard-day/manifest.json",
+    "sha256": "9db69b0ce4248f22f616b2caaba2e28129cab77e722327b46dac4994e4938ed0",
+    "pivot": [
+      180,
+      162
+    ]
+  },
+  "brief": "Portable survey relay with a one-pixel keyed amber signal window inside a dark horizontal aperture, iron enclosure and wooden skids."
+}

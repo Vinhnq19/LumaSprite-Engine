@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "class": "C",
+  "checkpoint": "77fbaa5",
+  "brief": "A narrow switchback leading to a stepped gateway. A low broken screen in the near-left plane and a taller fractured fragment in the rear plane bracket the signal platform. Retain space to identify and approach the signal.",
+  "fixedBefore": "Candidate implementation and rendering",
+  "seed": 2117,
+  "derivedFrom": {
+    "file": "benchmarks/fixtures/e63/r2-signal-clearing.json",
+    "sha256": "31d6c4848460152b9bba963934fd758a67b62b84e1430b6c6dbd8e6b44f41e42"
+  },
+  "spec": {
+    "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+    "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+  },
+  "rules": [
+    "Identical algorithm and material policy to R1.",
+    "Retain A0 control and A1 even if degradation is observed.",
+    "Reserve any per-layout changes for a separately locked case."
+  ]
+}
