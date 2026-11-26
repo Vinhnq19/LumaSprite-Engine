@@ -1,0 +1,44 @@
+{
+  "revision": "c56837e",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "file": "r1/day/bonded/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "rgbaSha256": "cae7a52b5d3adf00bb2fd6a86bbd13d9f59ff2666e40550a033d59a8cfcf1e38"
+    },
+    {
+      "file": "h1/day/bonded/flat.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "rgbaSha256": "7d84e32f26722111fcbd79bf2dfaa74e4ed4969946dd7b348900c7d8cdb98fbe"
+    },
+    {
+      "file": "h2/day/bonded/material.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "rgbaSha256": "2bc762d045f8ff61e61dd7a5700a0d5394998cbcd84bba4df98f505f841f0501"
+    },
+    {
+      "file": "h2/night/bonded/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "rgbaSha256": "f26d7aa2c82d0f9bc4617c18d1bc7403ea76bb7a2351139881a3a978592fefb6"
+    }
+  ],
+  "workbenchReviews": [
+    "review/relay.workbench.json",
+    "review/r1-q.workbench.json",
+    "review/h1-q.workbench.json",
+    "review/h2-bonded.workbench.json"
+  ]
+}

@@ -2,6 +2,8 @@
 
 ## Current checkpoint
 
+[Official report index](reports/INDEX.md) · [E7.1R structure gallery](reports/E7.1R-Ruin-Structure.html) · [E7.1 owner decisions](reports/e71-artistic-decision.md)
+
 - [E7.1 structure gallery and review sheet](LumaSprite-Engine-E7.1-Report.html), [QA and handoff](e71-structure-quality.md), [root-cause audit](art-quality/e7-root-cause.md) and [Quality Contract v1](art-quality/quality-contract-v1.md).
 - [E6.4 artistic acceptance](e64-artistic-acceptance.md), [original Pixel UI/VFX gallery](LumaSprite-Engine-E6.4-Report.html) and [QA](e64-pixel-ui-vfx.md).
 - [E6.3 Forest Signal Ruins gallery and review sheet](LumaSprite-Engine-E6.3-Report.html), [architecture, QA and PR summary](e63-environment-variety.md) and [E6.2 artistic closeout](e62-artistic-closeout.md).

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "checkpoint": "3315425eddb1bc52b79fca9e08baa2b835ac95ca",
+  "decisions": [
+    {
+      "id": "relay-a1",
+      "status": "SELECTED_FOR_MATERIAL_REFINEMENT",
+      "comparison": {
+        "file": "benchmarks/results/e71/relay/compare.json",
+        "sha256": "0837d3d019336a474fea216aea3e01421ab32fee3a942ab30c20e13c7292b9f0"
+      }
+    },
+    {
+      "id": "r1-structure-q",
+      "status": "RESEARCH_ONLY",
+      "comparison": {
+        "file": "benchmarks/results/e71/ruin/r1/day/qa.json",
+        "sha256": "0a575701bad9879c2dd3866a494f9732d27e36d19e87dde475ff0b3cbe438cd1"
+      }
+    },
+    {
+      "id": "h1-structure-q",
+      "status": "REVISION_REQUIRED",
+      "comparison": {
+        "file": "benchmarks/results/e71/ruin/h1/day/qa.json",
+        "sha256": "8d0bfd2182dba570f07640b9aa0f743193a31aef56c239c182533d91d0aa1d81"
+      }
+    }
+  ],
+  "ownerScoreSheet": "PENDING",
+  "production": "PREVIOUS_APPROVED_BASELINES",
+  "e72": "PENDING_OWNER_APPROVAL",
+  "sources": [
+    {
+      "file": "benchmarks/results/e71/benchmark.json",
+      "sha256": "c7e56edcd4701c1edc2193706be9cc1ae0c57680bae3c37f248bf285282680bb"
+    },
+    {
+      "file": "benchmarks/results/e71/SHA256SUMS",
+      "sha256": "ae79bc3546312e496b3657cae62d54c936f41dd1f2bfa1f57cc22e7db81c0008"
+    },
+    {
+      "file": "benchmarks/results/e71/ruin/compare.json",
+      "sha256": "6383ec956c2e1ca90bd749f9f449125e7f9b16be4dacb49c4151a5d808851be1"
+    },
+    {
+      "file": "benchmarks/fixtures/e71/holdout-lock.json",
+      "sha256": "7e701dd364dfdd3deda1116f42cbb3438a8257667ed920a7b06f00bf9ad7616c"
+    },
+    {
+      "file": "benchmarks/fixtures/e71/e64-baseline-lock.json",
+      "sha256": "fbb58e0fdb8b21fba7ef1751f9dbadfab7c36552d25540aeb099e7ccbd5f5c64"
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 # Handoff
 
-**E7.1 is E7_1_READY_FOR_HUMAN_STRUCTURE_REVIEW.** Relay Box A0/A1 and Ruin Structure Q are available at native 1× and nearest 4× with masks and a downloadable review sheet. H1 is the frozen holdout for an independent art review. Engine passed 73 tests and reproduced all 79 E7.1 payloads. Studio preserved six pilot PNGs. E7.2 requires owner approval. [Offline gallery](docs/LumaSprite-Engine-E7.1-Report.html) · [QA and handoff](docs/e71-structure-quality.md) · [Quality Contract v1](docs/art-quality/quality-contract-v1.md)
+**E7.1R is E7_1R_READY_FOR_HUMAN_ART_REVIEW.** Bonded Fracture is an isolated architectural candidate. R1 and H1 compare against production and Q. The fresh H2 includes both retained control and candidate for day/night. H2's tall wall reads more clearly at 1×, and the low parapet changes little. [Report index](docs/reports/INDEX.md) · [Gallery](docs/reports/E7.1R-Ruin-Structure.html) · [Geometry audit and QA](docs/reports/e71r-structure-and-qa.md)
+
+**E7.1 artistic closeout.** The Project Owner selected Relay A1 for a material study, marked R1 Q research-only and requested revision of H1 Q. Production remains on the accepted baselines. E7.2 awaits approval. [Artistic Decision Record](docs/reports/e71-artistic-decision.md)
+
+**E7.1 technical handoff.** Relay Box A0/A1 and Ruin Structure Q are available at native 1× and nearest 4× with masks and a downloadable review sheet. H1 is the frozen holdout for an independent art review. Engine passed 73 tests and reproduced all 79 E7.1 payloads. Studio preserved six pilot PNGs. E7.2 requires owner approval. [Offline gallery](docs/LumaSprite-Engine-E7.1-Report.html) · [QA and handoff](docs/e71-structure-quality.md) · [Quality Contract v1](docs/art-quality/quality-contract-v1.md)
 
 **E6.4 engineering is APPROVED and art is APPROVED_WITH_LIMITATIONS.** Inventory Barrel is an approved UI baseline. Interaction Icon, Signal Activation and Pickup Sparkle are approved with limitations. The 82 E6.4 payloads reproduce exactly. Target-game UI/VFX runtime is `PRODUCTION_GAME_RUNTIME_NOT_TESTED`. [Acceptance](docs/e64-artistic-acceptance.md) · [Baseline lock](benchmarks/fixtures/e71/e64-baseline-lock.json) · [E8 Integration Backlog](docs/integration/e8-runtime-backlog.md)
 
