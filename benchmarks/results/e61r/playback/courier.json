@@ -1,0 +1,87 @@
+{
+  "source": "benchmarks/results/e54/packages/courier/walk/",
+  "mode": "frame-stepped",
+  "sourceFiles": {
+    "animation-spec.json": "83b60349b59a093227f08d6313df32f60dc1dcfaee081d7eba595213fcc8d7ac",
+    "spritesheet.png": "9aa076a9dfe1c18af7854e5ddcada877dd235689064d8e4b3001c775cedb3c99",
+    "timing.json": "cb7e9636ec3715d5bc9857f01e9d4a4541f70a33b522b1d306632b290265523a",
+    "qa.json": "fe391609097c62455ca24ff6ff6e13825a968736da26bf99e2fc498ccb050ab4"
+  },
+  "cyclePx": 24,
+  "width": 320,
+  "height": 208,
+  "steps": [
+    {
+      "phase": "contact",
+      "at": [
+        124,
+        146
+      ],
+      "ms": 125
+    },
+    {
+      "phase": "down",
+      "at": [
+        127,
+        146
+      ],
+      "ms": 130
+    },
+    {
+      "phase": "passing",
+      "at": [
+        130,
+        146
+      ],
+      "ms": 110
+    },
+    {
+      "phase": "up",
+      "at": [
+        133,
+        146
+      ],
+      "ms": 115
+    },
+    {
+      "phase": "contact",
+      "at": [
+        136,
+        146
+      ],
+      "ms": 125
+    },
+    {
+      "phase": "down",
+      "at": [
+        139,
+        146
+      ],
+      "ms": 130
+    },
+    {
+      "phase": "passing",
+      "at": [
+        142,
+        146
+      ],
+      "ms": 110
+    },
+    {
+      "phase": "up",
+      "at": [
+        145,
+        146
+      ],
+      "ms": 115
+    },
+    {
+      "phase": "contact",
+      "at": [
+        148,
+        146
+      ],
+      "ms": 0
+    }
+  ]
+}

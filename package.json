@@ -42,6 +42,8 @@
     "environment": "node dist/cli/environment.js",
     "benchmark:e61": "node scripts/benchmark-e61.ts",
     "report:e61": "node scripts/report-e61.ts",
+    "benchmark:e61r": "node scripts/benchmark-e61r.ts",
+    "report:e61r": "node scripts/report-e61r.ts",
     "test:environment-studio": "node --test scripts/environment-studio.ts",
     "benchmark:e52": "node scripts/benchmark-e52.ts",
     "report:e52": "node scripts/report-e52.ts",

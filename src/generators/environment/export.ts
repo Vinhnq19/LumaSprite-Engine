@@ -26,6 +26,11 @@ export function environmentPackage(input: Awaited<ReturnType<typeof loadEnvironm
     if (errors.length) throw new Error(file + ': ' + errors.join(','));
     files.set(file, png);
   }
+  if (scene.nightLight && repeat.nightLight) {
+    const png = encodePng(scene.nightLight);
+    if (inspectPng(scene.nightLight,png,repeat.nightLight).length) throw new Error('Night mask cannot round-trip.');
+    files.set('night-light.png',png);
+  }
   const four = nearestNeighbor(scene.raster, 4);
   const fourPng = encodePng(four);
   if (inspectPng(four, fourPng, nearestNeighbor(repeat.raster, 4)).length) throw new Error('4× preview cannot round-trip.');
@@ -36,6 +41,7 @@ export function environmentPackage(input: Awaited<ReturnType<typeof loadEnvironm
   files.set('qa.json', json(scene.metadata));
   const manifest = {
     version: 1, kind: 'lumasprite-environment-pilot', finish, lighting, review: 'HUMAN_ART_REVIEW_PENDING',
+    ...(input.spec.version === 2 ? { revision: 'E6.1R-B1' } : {}),
     name: input.spec.name, scene: 'scene.png', atlas: 'kit.png', camera: scene.metadata.camera,
     files: Object.fromEntries([...files].map(([name, data]) => [name, sha256(data)])),
   };

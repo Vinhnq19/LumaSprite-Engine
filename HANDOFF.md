@@ -1,6 +1,8 @@
 # Handoff
 
-**E6.1 is E6_1_READY_FOR_HUMAN_ENVIRONMENT_REVIEW.** RPG Field Outpost uses the same nine-part kit in Front Court and Roadside. ENV-A and ENV-B share architecture, scene, palette constraints and collision, with day/night renders at native 320×208. ENV-B is proposed for review. Studio verified baked PNG save/reopen and export. [Offline A/B gallery and score sheet](docs/LumaSprite-Engine-E6.1-Report.html) · [E6 architecture, art and QA](docs/e61-environment-foundation.md)
+**E6.1R is E6_1R_READY_FOR_HUMAN_ART_REVIEW.** The B1 Field Outpost uses a 66 px wall and a 26 × 58 px clear entrance. Both locked actors fit the projected entrance sweep. The Roadside Courier retains wall occlusion with both ground contacts visible. Four layouts and light combinations, masks, Studio RGBA parity and E5.4 walk playback are in the review packet. E6.2 awaits the owner decision. [Offline B0/B1 report and score sheet](docs/LumaSprite-Engine-E6.1R-Report.html) · [Art audit, tests and handoff](docs/e61r-environment-refinement.md)
+
+**E6.1 engineering is APPROVED.** The owner selected art-directed ENV-B for refinement and retained ENV-A as control at `537f604`. The eight original packages reproduce all 104 archived hashes. [Original E6.1 A/B report](docs/LumaSprite-Engine-E6.1-Report.html) · [E6.1 foundation](docs/e61-environment-foundation.md)
 
 **E5 Engineering is APPROVED and the Artistic Baseline is APPROVED_WITH_LIMITATIONS.** The owner selected W2, the E5.3 Courier walk, the original Courier standing pose and Discrete Root A. The E5.4 source, PNG, timing, root/contact, palette and pivot locks are the production references. [E5 Final Acceptance](docs/e5-final-acceptance.md) · [Production lock](benchmarks/results/e54/baseline-lock.json)
 

@@ -25,11 +25,11 @@ export const artStyleProfileSchema = z.strictObject({
 
 const pngRef = z.strictObject({
   id, kind: z.enum(['actor','prop']), file: assetPath, sha256: digest, provenance: z.string().min(1).max(100),
-  pivot: point, footprint: point,
+  pivot: point, footprint: point, scaleManifestSha256: digest.optional(),
 });
 const bay = z.enum(['wall','window','door']);
-export const environmentSpecSchema = z.strictObject({
-  version: z.literal(1), kind: z.literal('field-outpost'), name: z.string().min(1).max(64),
+const common = z.strictObject({
+  kind: z.literal('field-outpost'), name: z.string().min(1).max(64),
   seed: z.number().int().min(0).max(0xffffffff),
   style: z.strictObject({
     file: z.string().regex(/^benchmarks\/fixtures\/(?:[a-z0-9-]+\/)+[a-z0-9-]+\.json$/), sha256: digest,
@@ -41,7 +41,18 @@ export const environmentSpecSchema = z.strictObject({
   path: z.array(point).min(4).max(14),
   assetRefs: z.array(pngRef).min(1).max(12),
   placements: z.array(z.strictObject({ id, ref: id, at: point })).min(1).max(20),
-}).superRefine((spec, ctx) => {
+});
+const architecture = z.strictObject({
+  wallHeight: z.number().int().min(52).max(72),
+  doorHeight: z.number().int().min(48).max(66),
+  jamb: z.number().int().min(2).max(5),
+  terrainRest: z.array(z.array(point).min(4).max(10)).min(1).max(4),
+});
+export type EnvironmentArchitecture = z.infer<typeof architecture>;
+export const environmentSpecSchema = z.discriminatedUnion('version', [
+  z.strictObject({ version: z.literal(1), ...common.shape }),
+  z.strictObject({ version: z.literal(2), ...common.shape, architecture }),
+]).superRefine((spec, ctx) => {
   const error = (message: string, path: string) => ctx.addIssue({ code: 'custom', path: [path], message });
   const { bays, signBay } = spec.building;
   const entrance = bays.indexOf('door');
@@ -54,6 +65,15 @@ export const environmentSpecSchema = z.strictObject({
   if (spec.placements.some(x => x.ref !== 'workbench' && !spec.assetRefs.some(asset => asset.id === x.ref)) ||
       spec.assetRefs.some(asset => asset.id === 'workbench' || (asset.kind === 'prop' ? asset.footprint.includes(0) : asset.footprint.some(Boolean)))) {
     error('Placements require known references and actor/prop collision dimensions.', 'placements');
+  }
+  if (spec.version === 2) {
+    const { wallHeight, doorHeight } = spec.architecture;
+    if (wallHeight - doorHeight < 8) error('The entrance needs an eight-pixel lintel.', 'architecture');
+    if (spec.assetRefs.some(ref => ref.kind === 'actor' && !ref.scaleManifestSha256)) {
+      error('Revised architecture requires pinned actor scale evidence.', 'assetRefs');
+    }
+  } else if (spec.assetRefs.some(ref => ref.scaleManifestSha256)) {
+    error('Scale references require version 2.', 'assetRefs');
   }
   const { rows } = spec.terrain.map;
   if (rows.length < 10 || rows.length > 24 || rows[0].length < 14 || rows[0].length > 32 ||

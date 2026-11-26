@@ -9,6 +9,8 @@ import { sha256 } from '../../quality/raster.ts';
 import { renderTerrain, renderTileGrid, tileIdsForMap } from '../terrain/render.ts';
 import { environmentKit, materialLegend, wallReturnPx, wallRisePx } from './kit.ts';
 
+import { covered, lanternLight, quietTerrain, readActorScale } from './refinement.ts';
+
 type Footprint = { id: string; kind: 'architecture' | 'prop'; points: readonly Point[] };
 type Piece = ReturnType<typeof environmentKit>['wall'];
 type Layer = { id: string; kind: 'building' | 'prop' | 'actor'; at: Point; piece: Piece };
@@ -56,7 +58,8 @@ export async function loadEnvironment(input: unknown) {
     requireThat(ref.pivot[0] < raster.w && ref.pivot[1] < raster.h && ref.footprint[0] <= raster.w && ref.footprint[1] <= raster.h, ref.id + ': invalid pivot/footprint.');
     requireThat(ref.pivot[1] > 0 && Array.from({ length: raster.w }, (_, x) => x).some(x => coverage(raster, x, ref.pivot[1] - 1)),
       ref.id + ': pivot does not follow the contact row.');
-    return [ref.id, { ref, raster, colors: audit(raster).colors }] as const;
+    const scale = spec.version === 2 && ref.kind === 'actor' ? await readActorScale(ref, raster) : undefined;
+    return [ref.id, { ref, raster, colors: audit(raster).colors, scale }] as const;
   })));
   return { spec, style, ground, terrain: terrain.material.diagnostics.ramps, assets };
 }
@@ -67,7 +70,9 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   const { seed } = spec;
   const theme = style.illumination[illumination];
   const varied = finish === 'B';
-  const kit = environmentKit(style, finish, illumination, seed);
+  const architecture = spec.version === 2 ? spec.architecture : undefined;
+  requireThat(!architecture || varied, 'Revised architecture requires finish B.');
+  const kit = environmentKit(style, finish, illumination, seed, architecture);
   const blank = () => makeRaster(w, h);
   const testPoint = ([x,y]: Point) => x >= 0 && y >= 0 && x <= w && y <= h;
   const indexAt = (x: number, y: number) => ((y * w) + x) * 4;
@@ -90,13 +95,19 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
     groundOwners.rgba.writeUInt32BE(pack(ownerColors.terrain), at);
   }
 
+  requireThat(!architecture || architecture.terrainRest.every(poly => poly.every(testPoint)), 'Terrain rest region exceeds scene.');
+  const quietedTerrainPixels = architecture ? quietTerrain(paintGround,groundMask,architecture.terrainRest,theme) : 0;
   const { at: [bx, by], bays, signBay } = spec.building;
-  const width = style.tilePx * bays.length, right = bx + width;
-  requireThat(bx >= 12 && by >= 72 && right + 26 < w && by + 25 < h, 'Building exceeds native scene.');
-  const bayX = (index: number) => bx + index * style.tilePx;
-  const door = bayX(bays.indexOf('door'));
-  const portal: Point = [door + 8, by];
-  const entry = rect(door + 3, by - 4, door + 13, by + 4);
+  const doorIndex = bays.indexOf('door');
+  const doorWidth = kit.door.raster.w;
+  const wallHeight = kit.wall.raster.h;
+  const doorHeight = architecture?.doorHeight ?? 24;
+  const jamb = architecture?.jamb ?? 3;
+  const bayX = (index: number) => bx + index * style.tilePx + (index > doorIndex ? doorWidth-style.tilePx : 0);
+  const right = bayX(bays.length), width = right-bx, door = bayX(doorIndex);
+  requireThat(bx >= 12 && by >= wallHeight+40 && right + 26 < w && by + 25 < h, 'Building exceeds native scene.');
+  const portal: Point = [door + doorWidth/2, by];
+  const entry = rect(door + jamb, by - 4, door + doorWidth-jamb, by + 4);
   const pathOnly = blank();
   solid(pathOnly, '#ffffff', spec.path);
   requireThat(coverage(pathOnly, portal[0], by + 12), 'Approach path does not reach the door.');
@@ -111,7 +122,7 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   solid(groundMask, materialLegend.paving, pad);
   solid(groundOwners, ownerColors.path, pad.map(([x,y]) => [x,y - 2] as Point));
   solid(groundOwners, ownerColors.path, pad);
-  if (varied) {
+  if (varied && !architecture) {
     for (let row = 0; row < 3; row++) {
       const y = by + 3 + row * 5;
       for (let x = bx - 9 + (row % 2) * 6; x < right + 9; x += 13) {
@@ -136,9 +147,20 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
       solid(paintGround, theme.surfaces.wood[2], [[door-9,by+3],[door+2,by+3],[door+5,by+7],[door-7,by+7]]);
     }
   }
-  const tread = rect(door + 1, by, door + 15, by + 5);
+  if (architecture) {
+    // Sparse, staggered clusters along the landing rather than a regular tiling grid.
+    for (const [dx,dy,length] of [[-25,7,7],[-19,8,5],[-14,17,8],[-2,13,4],[14,15,8],[33,8,5],[37,7,9],[51,14,8]]) {
+      for (let x=door+dx;x<door+dx+length;x++) {
+        const at=indexAt(x,by+dy);
+        if (x>=0 && x<w && groundMask.rgba.readUInt32BE(at) === pack(materialLegend.paving)) {
+          paintGround.rgba.writeUInt32BE(pack(theme.surfaces.paving[1]),at);
+        }
+      }
+    }
+  }
+  const tread = rect(door + 1, by, door + doorWidth-1, by + 5);
   solid(paintGround, theme.surfaces.paving[1], tread);
-  solid(paintGround, theme.surfaces.paving[3], rect(door + 1, by + 3, door + 15, by + 4));
+  solid(paintGround, theme.surfaces.paving[3], rect(door + 1, by + 3, door + doorWidth-1, by + 4));
   solid(groundMask, materialLegend.paving, tread);
   solid(groundOwners, ownerColors.path, tread);
 
@@ -150,18 +172,45 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   bays.forEach((bay, index) => place(wallRaster, wallMaterials, kit[bay], [bayX(index), by]));
   place(wallRaster, wallMaterials, kit.corner, [right, by]);
   let seamSamples = 0;
-  for (let i = 1; i <= bays.length; i++) for (let y = by - 30; y < by; y++) {
+  for (let i = 1; i <= bays.length; i++) for (let y = by - wallHeight + 2; y < by; y++) {
     requireThat(coverage(wallRaster, bayX(i) - 1, y) && coverage(wallRaster, bayX(i), y), 'Open seam at front or corner.');
     seamSamples++;
   }
   const roof = kit.roof(width);
-  const mounts = { sign: [bayX(signBay) + 8, by - 21] as Point, lamp: [door - 5, by - 24] as Point,
-    nearestPost: [bx + 2, by] as Point, farPost: [right - 2, by] as Point, eave: [bx, by - 29] as Point };
+  const mounts = { sign: [bayX(signBay) + 8, by - (architecture ? 27 : 21)] as Point,
+    lamp: [door - 5, by - (architecture ? 42 : 24)] as Point,
+    nearestPost: [bx + 2, by] as Point, farPost: [right - 2, by] as Point, eave: [bx, by - wallHeight + 3] as Point };
+  if (architecture) {
+    for (let y=by-doorHeight;y<by;y++) for (let x=door+jamb;x<door+doorWidth-jamb;x++) {
+      requireThat(!coverage(wallRaster,x,y), 'Revised entrance aperture is painted shut.');
+    }
+  }
   place(wallRaster, wallMaterials, kit.post, mounts.nearestPost);
   place(wallRaster, wallMaterials, kit.post, mounts.farPost);
   place(wallRaster, wallMaterials, roof, mounts.eave);
+  if (architecture) {
+    const row = roof.origin[1]-2;
+    for (let x=bx;x<right;x++) {
+      requireThat(covered(roof.raster,x-bx+roof.origin[0],row), 'Roof eave lifts away from the wall.');
+      seamSamples++;
+    }
+  }
   place(wallRaster, wallMaterials, kit.sign, mounts.sign);
+  const bench = spec.placements.find(item=>item.ref === 'workbench');
+  const lights = architecture && illumination === 'night' ? lanternLight(paintGround,wallRaster,wallMaterials,groundMask,theme,
+    { x: door, y: by, width: doorWidth, top: by-doorHeight, jamb }, mounts.lamp,
+    bays.flatMap((bay,i)=>bay === 'window' ? [[bayX(i),by-wallHeight] as Point] : []), bench?.at) : undefined;
   place(wallRaster, wallMaterials, kit.lamp, mounts.lamp);
+  const recess = blank(), recessMaterials = blank();
+  if (architecture) {
+    const top = by-doorHeight, end = door+doorWidth-jamb;
+    solid(recess,theme.contour,rect(door+jamb,top,end,by));
+    solid(recess,theme.surfaces.wood[0],[[end-6,top],[end,top],[end,by],[end-9,by-6]]);
+    solid(recess,theme.surfaces.paving[0],[[door+jamb,by-4],[end-7,by-6],[end,by],[door+jamb,by]]);
+    solid(recess,theme.surfaces.wood[illumination === 'night' ? 0 : 1],
+      [[end-4,top],[end-2,top],[end-2,by-6],[end-4,by-8]]);
+    solid(recessMaterials,materialLegend.contour,rect(door+jamb,top,end,by));
+  }
   const layers: Layer[] = [{ id: 'station-shell', kind: 'building', at: spec.building.at,
     piece: { raster: wallRaster, material: wallMaterials, origin: spec.building.at } }];
   const collision: Footprint[] = [
@@ -171,7 +220,7 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   ];
   bays.forEach((bay, index) => {
     const x = bayX(index);
-    const strips = bay === 'door' ? [[x, x+3], [x+13, x+16]] : [[x, x+16]];
+    const strips = bay === 'door' ? [[x,x+jamb],[x+doorWidth-jamb,x+doorWidth]] : [[x,x+style.tilePx]];
     strips.forEach(([left, end], j) => collision.push({ id: 'front-' + index + '-' + j, kind: 'architecture', points: rect(left,by-4,end,by) }));
   });
   for (const item of spec.placements) {
@@ -193,13 +242,34 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   const collisionPlane = blank();
   for (const box of collision) solid(collisionPlane, box.kind === 'prop' ? '#ffbf76' : '#e87e82', box.points);
   for (let y = by - 8; y <= by + 12; y++) requireThat(!coverage(collisionPlane, portal[0], y), 'Threshold is blocked.');
-  const entryPixel = portal[0], leftJamb = door + 1, rightJamb = door + 14;
+  const entryPixel = portal[0], leftJamb = door + 1, rightJamb = door + doorWidth - 2;
   requireThat(coverage(collisionPlane,leftJamb,by-2) && coverage(collisionPlane,rightJamb,by-2), 'Door jambs must be solid.');
   for (const layer of layers.filter(x => x.kind === 'actor')) {
     const [x,y] = layer.at;
     requireThat(x < w && y < h && !coverage(collisionPlane,x,y), 'Actor stands in collision: ' + layer.id);
   }
 
+  const groundClearance = (x: number, y: number) => {
+    for (let radius=0;radius<16;radius++) {
+      for (let d=-radius;d<=radius;d++) {
+        if (covered(collisionPlane,x+d,y-radius) || covered(collisionPlane,x+d,y+radius) ||
+            covered(collisionPlane,x-radius,y+d) || covered(collisionPlane,x+radius,y+d)) return radius;
+      }
+    }
+    return 16;
+  };
+  const fit = architecture ? [...assets.values()].filter(asset=>asset.scale).map(({ scale, ref })=>{
+    const { silhouette, jacket, shoulderSpan, bodyHalfWidth } = scale!;
+    const clearWidth = doorWidth - 2*jamb;
+    requireThat(doorHeight >= silhouette.height+2 && clearWidth >= 2*bodyHalfWidth+3, ref.id + ': entrance does not fit the reference actor.');
+    let testedPixels = 0;
+    for (let y=by-7;y<=by+12;y++) for (let x=portal[0]-bodyHalfWidth;x<=portal[0]+bodyHalfWidth;x++) {
+      requireThat(!coverage(collisionPlane,x,y), ref.id + ': projected body sweep touches a collider.');
+      testedPixels++;
+    }
+    return { id: ref.id, nativeCanvas: style.actorCanvasPx, pivot: ref.pivot, silhouette, jacket, shoulderSpan,
+      bodyHalfWidth, testedPixels, clearWidth, doorHeight };
+  }) : [];
   const contact = blank(), shadow = blank();
   const [sx, sy] = varied ? style.cast : [2, 2];
   solid(contact,'#ffffff',[[bx-1,by-1],[right,by-1],[right+14,by-wallRisePx],[right+17+sx,by-wallRisePx+1+sy],
@@ -210,16 +280,17 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
     solid(contact,'#ffffff',[[x-radius,y-1],[x+radius-2,y-1],[x+radius+sx,y+sy-1],[x-radius+3,y+sy]]);
   }
   for (let at = 0; at < contact.rgba.length; at += 4) {
-    if (!contact.rgba[at + 3]) continue;
+    if (!contact.rgba[at + 3] || (architecture && lights?.pools.rgba[at + 3] &&
+      (at/4 % w < door-2 || at/4 % w > door+doorWidth+2 || Math.floor(at/4/w) > by+2))) continue;
     const region = groundMask.rgba.readUInt32BE(at);
     const ink = region === pack(materialLegend.grass) ? theme.grass[0]
       : region === pack(materialLegend.dirt) ? theme.dirt[0] : theme.surfaces.paving[0];
     shadow.rgba.writeUInt32BE(pack(ink), at);
   }
 
-  const raster = composite([paintGround, shadow]);
-  const materialMask = composite([groundMask, silhouette(shadow, pack(materialLegend.shadow))]);
-  const layerOverlay = composite([groundOwners, silhouette(shadow, pack(ownerColors.shadow))]);
+  const raster = composite([paintGround, shadow, recess]);
+  const materialMask = composite([groundMask, silhouette(shadow, pack(materialLegend.shadow)), recessMaterials]);
+  const layerOverlay = composite([groundOwners, silhouette(shadow, pack(ownerColors.shadow)), silhouette(recess,pack(ownerColors.building))]);
   const owners = new Int16Array(w * h).fill(-1);
   layers.sort((a,b) => a.at[1] - b.at[1] || a.id.localeCompare(b.id));
   const bounds = layers.map(({ id, kind, at, piece }, layerIndex) => {
@@ -241,22 +312,31 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
     if (collisionPlane.rgba[at+3] && (x+y)%3 === 0) collisionOverlay.rgba.writeUInt32BE(collisionPlane.rgba.readUInt32BE(at),at);
   }
   solid(collisionOverlay,'#96efca',rect(entryPixel-1,by-8,entryPixel+1,by+8));
+  if (architecture) {
+    const half = Math.max(0,...fit.map(actor=>actor.bodyHalfWidth));
+    for (const x of [entryPixel-half,entryPixel+half]) solid(collisionOverlay,'#96efca',rect(x,by-7,x+1,by+13));
+  }
 
   const occlusion = bounds.map((item, i) => {
     const hiddenBy: Record<string, number> = {};
-    let visible = 0;
+    let visible = 0, contactPixels = 0, visibleContactPixels = 0;
     const source = layers[i].piece.raster;
     const contrast: number[] = [];
     for (let y = 0; y < item.h; y++) for (let x = 0; x < item.w; x++) {
       if (!coverage(source,x,y)) continue;
       const gx = item.left+x, gy = item.top+y, occupant = owners[gy*w+gx];
+      const onContact = item.kind === 'actor' && gy >= item.at[1]-3 && gy < item.at[1];
+      if (onContact) contactPixels++;
       if (occupant !== i) {
         const id = bounds[occupant].id;
         hiddenBy[id] = (hiddenBy[id] ?? 0) + 1;
         continue;
       }
       visible++;
+      if (onContact) visibleContactPixels++;
       if (item.kind !== 'actor') continue;
+      if (architecture) requireThat(raster.rgba.readUInt32BE(indexAt(gx,gy)) === source.rgba.readUInt32BE((y*source.w+x)*4),
+        'Visible character colors differ from the locked reference.');
       const a = raster.rgba.readUInt32BE(indexAt(gx,gy));
       for (const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]) {
         const nx = gx + dx, ny = gy + dy;
@@ -266,7 +346,8 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
     }
     contrast.sort((a,b)=>a-b);
     requireThat(item.kind !== 'actor' || visible >= item.visibleBefore * .65, 'Actor is obscured by scene layers: ' + item.id);
-    return { ...item, visible, hiddenBy, edgeSamples: contrast.length, p10LumaGap: contrast[Math.floor(contrast.length / 10)] ?? null };
+    return { ...item, visible, hiddenBy, edgeSamples: contrast.length, p10LumaGap: contrast[Math.floor(contrast.length / 10)] ?? null,
+      ...(architecture && item.kind === 'actor' ? { contactPixels, visibleContactPixels, groundClearance: groundClearance(...item.at) } : {}) };
   });
 
   const inkRows = Object.entries(theme.surfaces).map(([name, ramp]) => {
@@ -294,6 +375,8 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
     return { id, at, size: [piece.raster.w,piece.raster.h], pivot: piece.origin, rgbaSha256, alphaSha256 };
   });
   requireThat(audit(atlas,palette).alphaSha256 === audit(atlasMaterials).alphaSha256, 'Atlas material coverage differs.');
+  const nightLight = lights ? composite([lights.pools,lights.glaze]) : undefined;
+  if (nightLight) audit(nightLight,palette);
   const metadata = {
     version: 1, camera: { width: w, height: h, sampling: 'nearest', view: style.view, pixelsPerUnit: style.pixelsPerUnit },
     finish: 'ENV-' + finish, illumination, keyLight: style.keyLight, mounts, seamSamples, portal: { at: portal, points: entry },
@@ -301,6 +384,11 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
       allowed: [...palette].map(unpack).sort(), used: [...qa.colors].map(unpack).sort(), ramps: inkRows,
       warnings: separation.filter(x=> x.equalInks.length || x.midtoneGap < style.minMaterialLumaGap),
     }, atlas: { cells: atlasCells, materialLegend, layerLegend: ownerColors }, rgbaSha256: qa.rgbaSha256, alphaSha256: qa.alphaSha256,
+    ...(architecture ? { refinement: { geometry: { wallHeight, doorWidth, doorHeight, jamb, fit,
+      roofOverhang: [roof.origin[0],roof.raster.w-width-roof.origin[0]-wallReturnPx],
+      footprint: [[bx,by],[right,by],[right+wallReturnPx,by-wallRisePx],[bx+wallReturnPx,by-wallRisePx]],
+      windowSillsY: bays.flatMap((bay,i)=>bay === 'window' ? [[bayX(i),by-wallHeight+38]] : []),
+    }, quietedTerrainPixels, nightLightPixels: nightLight?.rgba.filter((value,i)=>i%4===3 && value===255).length ?? 0 } } : {}),
   };
-  return { raster, materialMask, layerOverlay, collisionOverlay, collisionPlane, atlas, atlasMaterials, metadata };
+  return { raster, materialMask, layerOverlay, collisionOverlay, collisionPlane, atlas, atlasMaterials, metadata, nightLight };
 }

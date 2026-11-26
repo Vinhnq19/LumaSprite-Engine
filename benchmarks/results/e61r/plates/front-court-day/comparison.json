@@ -1,0 +1,638 @@
+{
+  "layout": "front-court",
+  "light": "day",
+  "baseline": {
+    "checkpoint": "537f604",
+    "originalPackage": "benchmarks/results/e61/packages/front-court-b-day",
+    "manifestSha256": "8a4ad56523c5c66324dd9ced4332bf2382bb9c45bcce41d63f73661fb5a787fa"
+  },
+  "revision": {
+    "package": "packages/front-court-day",
+    "spec": "benchmarks/fixtures/e61r/front-court.json",
+    "manifestSha256": "d9f291b3007961bec98321ce534241fb22cee6a77c73283c5117b6c932aebd0c"
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "b0": {
+    "geometry": {
+      "wallHeight": 32,
+      "doorWidth": 16,
+      "paintedDoorHeight": 24,
+      "clearCollisionWidth": 10
+    },
+    "building": {
+      "at": [
+        104,
+        124
+      ],
+      "bays": [
+        "wall",
+        "window",
+        "wall",
+        "door",
+        "wall",
+        "window",
+        "wall"
+      ],
+      "signBay": 2
+    },
+    "placements": [
+      {
+        "id": "supply-crate",
+        "ref": "crate",
+        "at": [
+          93,
+          147
+        ]
+      },
+      {
+        "id": "water-barrel",
+        "ref": "barrel",
+        "at": [
+          215,
+          151
+        ]
+      },
+      {
+        "id": "survey-bench",
+        "ref": "workbench",
+        "at": [
+          254,
+          129
+        ]
+      },
+      {
+        "id": "field-surveyor",
+        "ref": "surveyor",
+        "at": [
+          141,
+          164
+        ]
+      },
+      {
+        "id": "forest-courier",
+        "ref": "courier",
+        "at": [
+          278,
+          154
+        ]
+      }
+    ],
+    "portal": {
+      "at": [
+        160,
+        124
+      ],
+      "points": [
+        [
+          155,
+          120
+        ],
+        [
+          165,
+          120
+        ],
+        [
+          165,
+          128
+        ],
+        [
+          155,
+          128
+        ]
+      ]
+    },
+    "mounts": {
+      "sign": [
+        144,
+        103
+      ],
+      "lamp": [
+        147,
+        100
+      ],
+      "nearestPost": [
+        106,
+        124
+      ],
+      "farPost": [
+        214,
+        124
+      ],
+      "eave": [
+        104,
+        95
+      ]
+    },
+    "materialWarnings": [
+      {
+        "materials": [
+          "stone",
+          "wood"
+        ],
+        "equalInks": [],
+        "midtoneGap": 8
+      },
+      {
+        "materials": [
+          "stone",
+          "roof"
+        ],
+        "equalInks": [],
+        "midtoneGap": 4
+      },
+      {
+        "materials": [
+          "stone",
+          "metal"
+        ],
+        "equalInks": [],
+        "midtoneGap": 5
+      },
+      {
+        "materials": [
+          "wood",
+          "roof"
+        ],
+        "equalInks": [],
+        "midtoneGap": 4
+      },
+      {
+        "materials": [
+          "wood",
+          "metal"
+        ],
+        "equalInks": [],
+        "midtoneGap": 3
+      },
+      {
+        "materials": [
+          "roof",
+          "metal"
+        ],
+        "equalInks": [],
+        "midtoneGap": 1
+      },
+      {
+        "materials": [
+          "paving",
+          "amber"
+        ],
+        "equalInks": [],
+        "midtoneGap": 6
+      }
+    ],
+    "courier": {
+      "id": "forest-courier",
+      "kind": "actor",
+      "at": [
+        278,
+        154
+      ],
+      "left": 246,
+      "top": 96,
+      "w": 64,
+      "h": 64,
+      "visibleBefore": 997,
+      "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+      "visible": 997,
+      "hiddenBy": {},
+      "edgeSamples": 226,
+      "p10LumaGap": 61
+    },
+    "textures": {
+      "grass": {
+        "samples": 32255,
+        "edges": 5250,
+        "per100": 16.3,
+        "repeatedAt16": 37.2
+      },
+      "dirt": {
+        "samples": 15314,
+        "edges": 1085,
+        "per100": 7.1,
+        "repeatedAt16": 26.6
+      },
+      "roof": {
+        "samples": 4249,
+        "edges": 2035,
+        "per100": 47.9,
+        "repeatedAt16": 89.5
+      },
+      "wood": {
+        "samples": 1249,
+        "edges": 486,
+        "per100": 38.9,
+        "repeatedAt16": 79.5
+      },
+      "stone": {
+        "samples": 1876,
+        "edges": 442,
+        "per100": 23.6,
+        "repeatedAt16": 64.1
+      }
+    },
+    "boundaries": [
+      {
+        "pair": [
+          "roof",
+          "metal"
+        ],
+        "samples": 0,
+        "median": null,
+        "p10": null
+      },
+      {
+        "pair": [
+          "stone",
+          "roof"
+        ],
+        "samples": 0,
+        "median": null,
+        "p10": null
+      },
+      {
+        "pair": [
+          "wood",
+          "roof"
+        ],
+        "samples": 147,
+        "median": 57,
+        "p10": 12
+      }
+    ]
+  },
+  "b1": {
+    "geometry": {
+      "wallHeight": 66,
+      "doorWidth": 32,
+      "doorHeight": 58,
+      "jamb": 3,
+      "fit": [
+        {
+          "id": "surveyor",
+          "nativeCanvas": 64,
+          "pivot": [
+            30,
+            59
+          ],
+          "silhouette": {
+            "left": 21,
+            "right": 53,
+            "top": 3,
+            "bottom": 58,
+            "width": 33,
+            "height": 56
+          },
+          "jacket": {
+            "left": 23,
+            "right": 38,
+            "top": 19,
+            "bottom": 39,
+            "width": 16,
+            "height": 21
+          },
+          "shoulderSpan": 10,
+          "bodyHalfWidth": 9,
+          "testedPixels": 380,
+          "clearWidth": 26,
+          "doorHeight": 58
+        },
+        {
+          "id": "courier",
+          "nativeCanvas": 64,
+          "pivot": [
+            32,
+            58
+          ],
+          "silhouette": {
+            "left": 18,
+            "right": 47,
+            "top": 6,
+            "bottom": 57,
+            "width": 30,
+            "height": 52
+          },
+          "jacket": {
+            "left": 26,
+            "right": 41,
+            "top": 22,
+            "bottom": 39,
+            "width": 16,
+            "height": 18
+          },
+          "shoulderSpan": 10,
+          "bodyHalfWidth": 10,
+          "testedPixels": 420,
+          "clearWidth": 26,
+          "doorHeight": 58
+        }
+      ],
+      "roofOverhang": [
+        5,
+        7
+      ],
+      "footprint": [
+        [
+          84,
+          134
+        ],
+        [
+          212,
+          134
+        ],
+        [
+          228,
+          126
+        ],
+        [
+          100,
+          126
+        ]
+      ],
+      "windowSillsY": [
+        [
+          100,
+          106
+        ],
+        [
+          180,
+          106
+        ]
+      ]
+    },
+    "quietedTerrainPixels": 11577,
+    "nightLightPixels": 0,
+    "building": {
+      "at": [
+        84,
+        134
+      ],
+      "bays": [
+        "wall",
+        "window",
+        "wall",
+        "door",
+        "wall",
+        "window",
+        "wall"
+      ],
+      "signBay": 2
+    },
+    "placements": [
+      {
+        "id": "supply-crate",
+        "ref": "crate",
+        "at": [
+          75,
+          154
+        ]
+      },
+      {
+        "id": "water-barrel",
+        "ref": "barrel",
+        "at": [
+          220,
+          151
+        ]
+      },
+      {
+        "id": "survey-bench",
+        "ref": "workbench",
+        "at": [
+          244,
+          127
+        ]
+      },
+      {
+        "id": "field-surveyor",
+        "ref": "surveyor",
+        "at": [
+          119,
+          166
+        ]
+      },
+      {
+        "id": "forest-courier",
+        "ref": "courier",
+        "at": [
+          267,
+          154
+        ]
+      }
+    ],
+    "portal": {
+      "at": [
+        148,
+        134
+      ],
+      "points": [
+        [
+          135,
+          130
+        ],
+        [
+          161,
+          130
+        ],
+        [
+          161,
+          138
+        ],
+        [
+          135,
+          138
+        ]
+      ]
+    },
+    "mounts": {
+      "sign": [
+        124,
+        107
+      ],
+      "lamp": [
+        127,
+        92
+      ],
+      "nearestPost": [
+        86,
+        134
+      ],
+      "farPost": [
+        210,
+        134
+      ],
+      "eave": [
+        84,
+        71
+      ]
+    },
+    "materialWarnings": [
+      {
+        "materials": [
+          "wood",
+          "roof"
+        ],
+        "equalInks": [],
+        "midtoneGap": 7
+      },
+      {
+        "materials": [
+          "paving",
+          "amber"
+        ],
+        "equalInks": [],
+        "midtoneGap": 6
+      },
+      {
+        "materials": [
+          "metal",
+          "amber"
+        ],
+        "equalInks": [],
+        "midtoneGap": 7
+      }
+    ],
+    "courier": {
+      "id": "forest-courier",
+      "kind": "actor",
+      "at": [
+        267,
+        154
+      ],
+      "left": 235,
+      "top": 96,
+      "w": 64,
+      "h": 64,
+      "visibleBefore": 997,
+      "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+      "visible": 997,
+      "hiddenBy": {},
+      "edgeSamples": 226,
+      "p10LumaGap": 54,
+      "contactPixels": 44,
+      "visibleContactPixels": 44,
+      "groundClearance": 16
+    },
+    "textures": {
+      "grass": {
+        "samples": 28756,
+        "edges": 3735,
+        "per100": 13,
+        "repeatedAt16": 32.7
+      },
+      "dirt": {
+        "samples": 13340,
+        "edges": 900,
+        "per100": 6.7,
+        "repeatedAt16": 33.7
+      },
+      "roof": {
+        "samples": 4373,
+        "edges": 1074,
+        "per100": 24.6,
+        "repeatedAt16": 62.8
+      },
+      "wood": {
+        "samples": 5412,
+        "edges": 1814,
+        "per100": 33.5,
+        "repeatedAt16": 54.2
+      },
+      "stone": {
+        "samples": 1473,
+        "edges": 278,
+        "per100": 18.9,
+        "repeatedAt16": 90.3
+      }
+    },
+    "boundaries": [
+      {
+        "pair": [
+          "roof",
+          "metal"
+        ],
+        "samples": 0,
+        "median": null,
+        "p10": null
+      },
+      {
+        "pair": [
+          "stone",
+          "roof"
+        ],
+        "samples": 0,
+        "median": null,
+        "p10": null
+      },
+      {
+        "pair": [
+          "wood",
+          "roof"
+        ],
+        "samples": 162,
+        "median": 61,
+        "p10": 8
+      }
+    ]
+  },
+  "stances": [
+    {
+      "actor": "surveyor",
+      "pose": "landing",
+      "at": [
+        148,
+        146
+      ],
+      "visible": 1072,
+      "original": 1072,
+      "hiddenBy": {},
+      "boots": 50
+    },
+    {
+      "actor": "surveyor",
+      "pose": "threshold",
+      "at": [
+        146,
+        130
+      ],
+      "visible": 912,
+      "original": 1072,
+      "hiddenBy": {
+        "station-shell": 160
+      },
+      "boots": 49
+    },
+    {
+      "actor": "courier",
+      "pose": "landing",
+      "at": [
+        148,
+        146
+      ],
+      "visible": 997,
+      "original": 997,
+      "hiddenBy": {},
+      "boots": 44
+    },
+    {
+      "actor": "courier",
+      "pose": "threshold",
+      "at": [
+        146,
+        130
+      ],
+      "visible": 975,
+      "original": 997,
+      "hiddenBy": {
+        "station-shell": 22
+      },
+      "boots": 44
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "kind": "lumasprite-environment-pilot",
+  "finish": "B",
+  "lighting": "day",
+  "review": "HUMAN_ART_REVIEW_PENDING",
+  "revision": "E6.1R-B1",
+  "name": "RPG Field Outpost · Front Court",
+  "scene": "scene.png",
+  "atlas": "kit.png",
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "files": {
+    "scene.png": "4aa5862588a5ab9c59e16e02710c074b1297db5c4d5b0b3877080dcebd3aaa9a",
+    "material-mask.png": "691d501fef3f87e308c6995a9ae13479e0d684a11774549d039d0fe9a304e437",
+    "layer-overlay.png": "cc1b988cf70ef2a7af61483d6c4ea2ed975f8d5350d8e523de96ec5217ae479c",
+    "collision-overlay.png": "7a69f43f3f40e9c4ef928c8fccf590e0cca0ac48fd9c872662d6154202ec92fa",
+    "collision-mask.png": "a05de4fe036420f08baacd89058ca77ee2f027f16d24b359d56122f1aeb3e2c7",
+    "kit.png": "8496edc3ed5a3653e3d1b82946b045a399de0e85041b83a7d4bde75795d08d31",
+    "kit-material-mask.png": "28870b433d6e7ea7d480e43f1caae0780eee029190bb1e6b0ef8a009e018539a",
+    "scene-4x.png": "77e6300f558bbfcd05000317e95f777c5f3c704b8450d62f843b82b8402c139a",
+    "environment-spec.json": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+    "art-style-profile.json": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "kit.json": "3fc5b8924d410e4659c8172950ff37fc3cc67cc68713e33fb6c6a0cf650177fa",
+    "qa.json": "dc573fa34f4fa9e21aa4c698ab9a08c271b0d32678812ede6275d23cc861cde1"
+  }
+}

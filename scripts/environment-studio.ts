@@ -21,9 +21,14 @@ test('Studio raw PNG round-trips the environment scene and architecture kit as r
   assert.ok(root.startsWith(cache+sep) && root.length>cache.length+sep.length);
   t.after(()=>rm(root,{recursive:true,force:true}));
   const store=new PixelStore(root);
+  const edition=process.env.LUMASPRITE_ENVIRONMENT_EDITION ?? 'e61';
+  assert.ok(edition==='e61' || edition==='e61r','Unknown environment edition.');
   const cases=[];
-  for (const [bundle,file] of [['front-court-b-day','scene.png'],['roadside-b-night','scene.png'],['front-court-b-day','kit.png']]) {
-    const path='benchmarks/results/e61/packages/'+bundle+'/'+file;
+  const inputs=edition==='e61' ? [['front-court-b-day','scene.png'],['roadside-b-night','scene.png'],['front-court-b-day','kit.png']] :
+    [['front-court-day','scene.png'],['front-court-night','scene.png'],['roadside-day','scene.png'],['roadside-night','scene.png'],
+      ['front-court-day','kit.png'],['roadside-night','kit.png'],['roadside-night','night-light.png']];
+  for (const [bundle,file] of inputs) {
+    const path='benchmarks/results/'+edition+'/packages/'+bundle+'/'+file;
     const png=await readFile(path);
     const raster=decodePng(png);
     const data: Uint32Array = await readStudioPng(new Blob([Uint8Array.from(png)]), raster.w, raster.h);
@@ -40,8 +45,8 @@ test('Studio raw PNG round-trips the environment scene and architecture kit as r
     assert.deepEqual(decodePng(Buffer.from(pngAgain.data)),raster);
     cases.push({path,width:raster.w,height:raster.h,rgbaSha256:sha256(raster.rgba),saveReopen:'PASS'});
   }
-  const folder='benchmarks/results/run/e61';
+  const folder='benchmarks/results/run/'+edition;
   await mkdir(folder,{recursive:true});
   await writeFile(join(folder,'studio-parity.json'), JSON.stringify({ studioRevision:revision, mode:'RAW_PNG_ONLY', cases },null,2)+'\n');
-  t.diagnostic('Studio '+revision+' kept exact RGBA for two baked scenes and a transparent kit atlas.');
+  t.diagnostic('Studio '+revision+' kept exact RGBA for '+cases.length+' PNGs.');
 });

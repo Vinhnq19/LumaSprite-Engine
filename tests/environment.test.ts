@@ -47,3 +47,30 @@ test('environment validation rejects disconnected approaches and invalid asset r
   const detached = await loadEnvironment({...input,path:[[16,16],[30,16],[30,30],[16,30]]});
   assert.throws(()=>renderEnvironment(detached,'A','day'),/does not reach the door/);
 });
+
+test('environment v2 validates both actor scales and rejects undersized or occupied entries', async () => {
+  const raw = JSON.parse(await readFile('benchmarks/fixtures/e61r/front-court.json','utf8'));
+  assert.equal(environmentSpecSchema.parse(raw).version,2);
+  const missing = structuredClone(raw);
+  delete missing.assetRefs.find((x: {kind:string})=>x.kind==='actor').scaleManifestSha256;
+  assert.throws(()=>environmentSpecSchema.parse(missing),/scale evidence/);
+  const tampered = structuredClone(raw);
+  tampered.assetRefs.find((x: {kind:string})=>x.kind==='actor').scaleManifestSha256='0'.repeat(64);
+  await assert.rejects(loadEnvironment(tampered),/scale evidence checksum/);
+  const input = await loadEnvironment(raw);
+  assert.throws(()=>renderEnvironment(input,'A','day'),/requires finish B/);
+  const scene = renderEnvironment(input,'B','day');
+  const night = renderEnvironment(input,'B','night');
+  assert.deepEqual(scene.collisionPlane,night.collisionPlane);
+  assert.deepEqual(scene.metadata.layerOrder,night.metadata.layerOrder);
+  assert.deepEqual(scene.metadata.occlusion.map(row=>[row.id,row.visible,row.hiddenBy]),
+    night.metadata.occlusion.map(row=>[row.id,row.visible,row.hiddenBy]));
+  assert.equal(scene.metadata.refinement?.geometry.fit.length,2);
+  assert.ok(night.nightLight);
+  assert.equal(scene.nightLight,undefined);
+  const low=await loadEnvironment({...raw,architecture:{...raw.architecture,doorHeight:52}});
+  assert.throws(()=>renderEnvironment(low,'B','day'),/does not fit/);
+  const occupied=structuredClone(raw);
+  occupied.placements.find((x: {id:string})=>x.id==='supply-crate').at=[scene.metadata.portal.at[0]+16,scene.metadata.portal.at[1]+8];
+  assert.throws(()=>renderEnvironment({...input,spec:environmentSpecSchema.parse(occupied)},'B','day'),/body sweep touches/);
+});

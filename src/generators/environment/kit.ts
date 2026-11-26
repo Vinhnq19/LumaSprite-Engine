@@ -3,7 +3,8 @@ import { fillPolygon, type Point } from '../../core/geometry/shapes.ts';
 import { projectBox, riseForDepth } from '../../core/geometry/projection.ts';
 import { pack } from '../../core/palette/colors.ts';
 import { makeRaster } from '../../core/pixels/raster.ts';
-import type { EnvironmentFinish, EnvironmentLight, StyleProfile } from '../../specs/environment.ts';
+import { revisedArchitecture } from './architecture.ts';
+import type { EnvironmentArchitecture, EnvironmentFinish, EnvironmentLight, StyleProfile } from '../../specs/environment.ts';
 import { surfaceNames } from '../../specs/environment.ts';
 
 export type Surface = (typeof surfaceNames)[number];
@@ -11,12 +12,16 @@ export const wallReturnPx = 16;
 export const wallRisePx = riseForDepth(wallReturnPx);
 type Region = Surface | 'contour';
 type Tone = 0 | 1 | 2 | 3;
+type Paint = (role: Region, tone: Tone, poly: readonly Point[]) => void;
+type Patch = (role: Surface, tone: Tone, face: Face, u0: number, v0: number, u1: number, v1: number) => void;
+export type PaintPiece = (w: number, h: number, origin: Point, draw: (paint: Paint, patch: Patch) => void) =>
+  { raster: ReturnType<typeof makeRaster>; material: ReturnType<typeof makeRaster>; origin: Point };
 export const materialLegend = {
   stone: '#8bb4ce', wood: '#bc8862', roof: '#789e94', paving: '#cfbb83', metal: '#98a0be', amber: '#f9bb51',
   contour: '#48425e', grass: '#68864c', dirt: '#9d795c', prop: '#c28291', actor: '#94e4bd', shadow: '#292d42',
 } as const;
 
-export function environmentKit(style: StyleProfile, finish: EnvironmentFinish, light: EnvironmentLight, seed: number) {
+export function environmentKit(style: StyleProfile, finish: EnvironmentFinish, light: EnvironmentLight, seed: number, architecture?: EnvironmentArchitecture) {
   const inks = style.illumination[light];
   const rich = finish === 'B';
   const span = style.detailSpan;
@@ -34,8 +39,6 @@ export function environmentKit(style: StyleProfile, finish: EnvironmentFinish, l
     draw(paint, patch);
     return { raster, material, origin };
   }
-  type Paint = (role: Region, tone: Tone, poly: readonly Point[]) => void;
-  type Patch = (role: Surface, tone: Tone, face: Face, u0: number, v0: number, u1: number, v1: number) => void;
 
   function wall(kind: 'wall' | 'window' | 'door') {
     return piece(16, 32, [0,32], paper => {
@@ -164,5 +167,7 @@ export function environmentKit(style: StyleProfile, finish: EnvironmentFinish, l
     paint('metal',0,[[19,1],[21,0],[24,3],[22,4]]);
     paint('amber',2,rect(13,6,15,8));
   });
-  return { wall: wall('wall'), window: wall('window'), door: wall('door'), corner, roof, post, sign, lamp, workbench };
+  const shell = architecture ? revisedArchitecture(piece, architecture, seed) :
+    { wall: wall('wall'), window: wall('window'), door: wall('door'), corner, roof, post };
+  return { ...shell, sign, lamp, workbench };
 }
