@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "checkpoint": "ff101af29617f7b80d6f5aab03da31a06e754939",
+  "seed": 6491,
+  "brief": "Seepstone Terrace. A tall shallow buttress lies in front of the shaded left approach, with a deeper upper return behind the right column. Show the effect of retained form cues and moist footing on different projected depths, keeping the passage and actors legible.",
+  "source": {
+    "file": "benchmarks/fixtures/e72r/h4-seepstone-terrace.json",
+    "sha256": "8e2ba4dec3cf91330913debbf59d99e10da96a695b1fd030441c2d7215cc21ee"
+  },
+  "derivedFrom": {
+    "file": "benchmarks/fixtures/e71r/h2-culvert-lookout.json",
+    "sha256": "602785937ce8ae08488a88fe2069e31ab74d6efdcfc699d9a7031dfe9df7d48c"
+  },
+  "style": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+  "controls": {
+    "size": [
+      320,
+      208
+    ],
+    "geometry": "production",
+    "lights": [
+      "day",
+      "night"
+    ],
+    "view": "three-quarter-right",
+    "collision": "kit-and-prop-footprints"
+  },
+  "selection": "Fixed before S2. H4 is evaluated once with the development rule. Keep all variants and any regressions; no seed or rule tuning from H4."
+}

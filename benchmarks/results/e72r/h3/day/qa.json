@@ -1,0 +1,603 @@
+{
+  "id": "h3",
+  "name": "Fern Cut Signal Gate",
+  "light": "day",
+  "seed": 5203,
+  "source": {
+    "file": "benchmarks/fixtures/e72b/h3-fern-cut-signal-gate.json",
+    "sha256": "714939dfe33e9aed9ec40f62a0eb08186153717cf2b8e950a67f0c58479e2f47"
+  },
+  "caseRole": "known-diagnostic",
+  "changedFromS1": 388,
+  "visibleFootprint": {
+    "structural": 288,
+    "material": 100
+  },
+  "structure": {
+    "silhouetteSha256": "6a8f0bfe72809cc1776755561cf03194a740f060de4fb3fcdb0c0c0603bc2629",
+    "collisionSha256": "f4a051794421f7e9490a30812b3f3d94384276758200837f25c953af0ecf2f53",
+    "layerOrder": [
+      "upper-wall",
+      "upper-column",
+      "signal-gateway",
+      "signal-pedestal",
+      "near-column",
+      "fallen-wall",
+      "surveyor",
+      "courier"
+    ],
+    "anchors": [
+      {
+        "id": "upper-wall",
+        "at": [
+          96,
+          94
+        ],
+        "alphaSha256": "a6d20c72054366b5b5751c96339424e23daee3065cf2c2cd12c37906123b6024"
+      },
+      {
+        "id": "upper-column",
+        "at": [
+          70,
+          110
+        ],
+        "alphaSha256": "5fdeabf0cd4514d99b36d753a0a7d240c2425ef39bf342b85cf81dbd1c5917d0"
+      },
+      {
+        "id": "signal-gateway",
+        "at": [
+          193,
+          113
+        ],
+        "alphaSha256": "cdb30358d3b6f4a974f136b3bcd74ea91d25cf048f175e44ceb23ba17ce96344"
+      },
+      {
+        "id": "signal-pedestal",
+        "at": [
+          112,
+          124
+        ],
+        "alphaSha256": "ee4e24f0678f2e347c79b93635578d45a1e618ce171b2d948d2a1d4bde781fbc"
+      },
+      {
+        "id": "near-column",
+        "at": [
+          255,
+          151
+        ],
+        "alphaSha256": "3a9e3e6c4ea0f35e3e96c544545401ee1f3de0fbdecb2f35818334def008eb7f"
+      },
+      {
+        "id": "fallen-wall",
+        "at": [
+          40,
+          156
+        ],
+        "alphaSha256": "c126344dca6937b1ade7f9b3a237586590eb6175405840c992e152d113ef91d4"
+      },
+      {
+        "id": "surveyor",
+        "at": [
+          155,
+          171
+        ],
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015"
+      },
+      {
+        "id": "courier",
+        "at": [
+          79,
+          179
+        ],
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77"
+      }
+    ],
+    "occlusion": [
+      {
+        "id": "upper-wall",
+        "visible": 3712,
+        "hiddenBy": {
+          "signal-pedestal": 105
+        }
+      },
+      {
+        "id": "upper-column",
+        "visible": 626,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-gateway",
+        "visible": 2777,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-pedestal",
+        "visible": 634,
+        "hiddenBy": {}
+      },
+      {
+        "id": "near-column",
+        "visible": 948,
+        "hiddenBy": {}
+      },
+      {
+        "id": "fallen-wall",
+        "visible": 1397,
+        "hiddenBy": {
+          "courier": 540
+        }
+      },
+      {
+        "id": "surveyor",
+        "visible": 1072,
+        "hiddenBy": {}
+      },
+      {
+        "id": "courier",
+        "visible": 997,
+        "hiddenBy": {}
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "courier",
+        "points": [
+          [
+            231,
+            193
+          ],
+          [
+            221,
+            157
+          ],
+          [
+            222,
+            135
+          ],
+          [
+            222,
+            92
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 2142
+      },
+      {
+        "id": "signal-approach",
+        "actor": "surveyor",
+        "points": [
+          [
+            155,
+            171
+          ],
+          [
+            151,
+            147
+          ],
+          [
+            148,
+            132
+          ],
+          [
+            145,
+            128
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 836
+      }
+    ]
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "palette": {
+    "stone": [
+      "#353c45",
+      "#646e66",
+      "#869087",
+      "#aeb2a1"
+    ],
+    "moss": [
+      "#4b6940",
+      "#68864c",
+      "#7f9858"
+    ],
+    "contour": [
+      "#211e2a"
+    ]
+  },
+  "planes": {
+    "side": "#647294",
+    "front": "#9e9d89",
+    "top": "#d8c5a4"
+  },
+  "walls": [
+    {
+      "id": "upper-wall",
+      "refinement": {
+        "structural": {
+          "side": 40,
+          "front": 77,
+          "top": 93
+        },
+        "material": {
+          "exposedStonePixels": 60,
+          "detachedMossPixelsRemoved": 0,
+          "footingMossPixels": 5
+        }
+      },
+      "stone": [
+        {
+          "pixels": 3751,
+          "largest": 2061,
+          "isolated": 10,
+          "clusters": [
+            2061,
+            558,
+            178,
+            140,
+            106,
+            83,
+            79,
+            61,
+            46,
+            45,
+            45,
+            45,
+            31,
+            20,
+            20,
+            20,
+            20,
+            15,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            10,
+            10,
+            8,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            4,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 3753,
+          "largest": 2521,
+          "isolated": 10,
+          "clusters": [
+            2521,
+            637,
+            262,
+            69,
+            54,
+            43,
+            31,
+            29,
+            20,
+            17,
+            14,
+            14,
+            11,
+            7,
+            5,
+            3,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 3748,
+          "largest": 2384,
+          "isolated": 6,
+          "clusters": [
+            2384,
+            592,
+            116,
+            110,
+            69,
+            69,
+            61,
+            60,
+            54,
+            43,
+            31,
+            29,
+            20,
+            20,
+            20,
+            17,
+            14,
+            11,
+            10,
+            3,
+            3,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "moss": [
+        {
+          "pixels": 39,
+          "largest": 15,
+          "isolated": 2,
+          "clusters": [
+            15,
+            11,
+            9,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 64,
+          "largest": 25,
+          "isolated": 1,
+          "clusters": [
+            25,
+            21,
+            13,
+            4,
+            1
+          ]
+        },
+        {
+          "pixels": 69,
+          "largest": 30,
+          "isolated": 1,
+          "clusters": [
+            30,
+            21,
+            13,
+            4,
+            1
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "edges": 932,
+          "samples": 7362,
+          "per100": 12.7
+        },
+        {
+          "edges": 606,
+          "samples": 7439,
+          "per100": 8.1
+        },
+        {
+          "edges": 749,
+          "samples": 7437,
+          "per100": 10.1
+        }
+      ]
+    },
+    {
+      "id": "fallen-wall",
+      "refinement": {
+        "structural": {
+          "side": 0,
+          "front": 45,
+          "top": 57
+        },
+        "material": {
+          "exposedStonePixels": 31,
+          "detachedMossPixelsRemoved": 0,
+          "footingMossPixels": 5
+        }
+      },
+      "stone": [
+        {
+          "pixels": 1887,
+          "largest": 569,
+          "isolated": 1,
+          "clusters": [
+            569,
+            524,
+            264,
+            110,
+            61,
+            61,
+            54,
+            36,
+            31,
+            30,
+            23,
+            20,
+            12,
+            12,
+            12,
+            12,
+            10,
+            10,
+            7,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "pixels": 1870,
+          "largest": 654,
+          "isolated": 4,
+          "clusters": [
+            654,
+            621,
+            230,
+            177,
+            33,
+            31,
+            20,
+            17,
+            17,
+            14,
+            11,
+            10,
+            9,
+            9,
+            5,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 1865,
+          "largest": 675,
+          "isolated": 4,
+          "clusters": [
+            675,
+            545,
+            225,
+            177,
+            67,
+            31,
+            31,
+            20,
+            17,
+            17,
+            14,
+            11,
+            9,
+            9,
+            5,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "moss": [
+        {
+          "pixels": 50,
+          "largest": 15,
+          "isolated": 4,
+          "clusters": [
+            15,
+            11,
+            9,
+            6,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 67,
+          "largest": 49,
+          "isolated": 0,
+          "clusters": [
+            49,
+            14,
+            4
+          ]
+        },
+        {
+          "pixels": 72,
+          "largest": 54,
+          "isolated": 0,
+          "clusters": [
+            54,
+            14,
+            4
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "edges": 703,
+          "samples": 3719,
+          "per100": 18.9
+        },
+        {
+          "edges": 434,
+          "samples": 3717,
+          "per100": 11.7
+        },
+        {
+          "edges": 512,
+          "samples": 3715,
+          "per100": 13.8
+        }
+      ]
+    }
+  ],
+  "technical": "PASS",
+  "art": "PENDING_HUMAN_REVIEW"
+}

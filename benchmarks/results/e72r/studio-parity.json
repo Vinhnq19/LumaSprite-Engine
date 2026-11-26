@@ -1,0 +1,60 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "file": "r1/day/s2/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "2b21fa468ab045863a148637845594b5ad043640eefba1f0bb56796d130a169b",
+      "rgbaSha256": "fe150943bf6857e532c02a2b14e6290f4bb5b982e584abc752eba0a001317279"
+    },
+    {
+      "file": "h1/night/s2/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "07c5407afe3f47e5fc848f950bd6c1e6b0b7ae090f4a3bbb4b0bca1d1d16623d",
+      "rgbaSha256": "5795d64accb5f08c3c326d918e80df2289229190887962e07534262fd9cf8569"
+    },
+    {
+      "file": "h3/night/s2/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "5e4e956b2ee4f1eba353485e7e531b7a251b62601e086b1bd0e4a2b25b412a97",
+      "rgbaSha256": "1449f15de5ef63499acbdec61fe60958458bb2dcd8a752b82cbf1cdc31f5f195"
+    },
+    {
+      "file": "h4/day/s2/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "1436f61ff875704d54b701958006e2bcdaa236e3927ed7bcac9e3e54ddbebbbc",
+      "rgbaSha256": "6af2411484ccd0565cdd2c0e5c7a06d00f0472ffb4104e3c2d8edb231247177b"
+    },
+    {
+      "file": "h4/night/s2/material.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "c577c4ced7f6e9a645a511548b6ffab9d505a8ef7803d32c9bba79c06d7401c7",
+      "rgbaSha256": "c1654815ed1841f400d984bec1ba5c97965ade67e80ac40d0d3e8348d1c4e2db"
+    },
+    {
+      "file": "h4/night/silhouette.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "21daeaa71b95d341ae6920598acf18508c371e8a8ab8561db09e4d7f16582a64",
+      "rgbaSha256": "71da6dde048d3e251b9eba14dd92ec5b7ab9dbb3a2a046751c8d7447a8c3e03f"
+    }
+  ]
+}

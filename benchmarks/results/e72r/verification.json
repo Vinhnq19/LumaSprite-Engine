@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "base": "ff101af29617f7b80d6f5aab03da31a06e754939",
+  "branch": "codex/e7-2r-plane-aware-material",
+  "checks": [
+    [
+      "npm run lint",
+      "PASS",
+      "Engine, scripts, tests"
+    ],
+    [
+      "npm run typecheck",
+      "PASS",
+      "tsc --noEmit"
+    ],
+    [
+      "npm run build",
+      "PASS",
+      "Production build và declarations"
+    ],
+    [
+      "npm run smoke",
+      "PASS",
+      "CLI và adapter loopback"
+    ],
+    [
+      "npm test",
+      "PASS",
+      "73/73 Engine tests"
+    ],
+    [
+      "node scripts/verify-e54.ts --history",
+      "PASS",
+      "805 SHA-256 và 361 artifact lịch sử tái tạo"
+    ],
+    [
+      "node scripts/benchmark-e64.ts --publish",
+      "PASS",
+      "82 payload E6.4"
+    ],
+    [
+      "node scripts/benchmark-e71.ts --publish",
+      "PASS",
+      "79 payload E7.1"
+    ],
+    [
+      "node scripts/benchmark-e71r.ts --publish",
+      "PASS",
+      "54 payload E7.1R"
+    ],
+    [
+      "node scripts/benchmark-e72a.ts --publish",
+      "PASS",
+      "32 payload E7.2-A"
+    ],
+    [
+      "node scripts/benchmark-e72b.ts --publish",
+      "PASS",
+      "72 payload E7.2-B"
+    ],
+    [
+      "node scripts/review-e71r.ts --publish",
+      "PASS",
+      "24 PNG review E7.1R"
+    ],
+    [
+      "node scripts/benchmark-e72r.ts --publish",
+      "PASS",
+      "60 PNG mới và 8 QA record. 60 PNG từ E7.2-B khớp từng byte. Alpha, palette, mask, collision và world-space anchor giữ nguyên."
+    ],
+    [
+      "npm run benchmark:e72r -- --out benchmarks/results/run/e72r-dev/reproduction",
+      "PASS",
+      "68 payload và manifest trùng SHA-256 khi tái tạo độc lập"
+    ],
+    [
+      "npm run test:e72r-studio",
+      "PASS",
+      "Studio c56837e giữ RGBA của 6 PNG qua import, save, reopen và export"
+    ],
+    [
+      "SHA-256 catalogs E6.4–E7.2-B",
+      "PASS",
+      "Các asset và QA lịch sử khớp. Index E7.1R giữ blob cũ trong Git để kiểm SHA; Index hiện hành là điều hướng sống."
+    ],
+    [
+      "Game runtime E8",
+      "NOT RUN",
+      "Ngoài phạm vi E7.2-R"
+    ]
+  ]
+}

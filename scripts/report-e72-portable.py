@@ -12,6 +12,7 @@ CHECKPOINT = "c97a36f0da15ee630ccbb38b2e0471dd6f44a174"
 BRANCH = "codex/e7-2b-stone-material"
 A = Path("benchmarks/results/e72a")
 B = Path("benchmarks/results/e72b")
+R = Path("benchmarks/results/e72r")
 REPORTS = Path("docs/reports")
 CSS = Path("research/open-source/art-quality/report.css").read_text(encoding="utf-8") + """
 .wrap{width:min(1180px,calc(100% - 2rem))}
@@ -287,14 +288,118 @@ Kiểm 1× Day/Night và xem H3 trước khi quyết định.</p></section>""")
         [("r1-day","R1"),("h1-day","H1"),("h3-day","H3"),("audit","Audit"),("technical","QA"),("summary","Tóm tắt")],
         "".join(sections), evidence, CROP_CSS, CROP_SCRIPT)
 
+def report_refinement(evidence, index, revision):
+    reviews = {
+        "r1": ("R1 · Development",
+               "East wall phục hồi hai dải vật liệu theo mặt bên. Mép trên nối với mặt trước rõ hơn ở 1×.",
+               "Dấu bậc vuông thuộc Production Geometry. Một số cụm sáng vẫn dễ đọc thành vạch khi nhìn lâu."),
+        "h1": ("H1 · Development",
+               "Mảng sáng ở upper wall và các mép gãy kết nối lại mặt trên với mặt trước. Vết nứt chính và vùng rêu thấp của S1 vẫn đọc được.",
+               "Mặt trước upper wall còn một khoảng phẳng lớn, nhất là Night. Rêu ở chân tối vẫn ít nổi bật."),
+        "h3": ("H3 · Known diagnostic",
+               "H3 Night lấy lại hai dải mặt bên của upper wall. Các mặt trên và mặt đứng tách rõ hơn S1, kể cả khi nhìn ở 1×.",
+               "Fallen wall ít thay đổi chiều sâu mặt bên. Texture đá vẫn tiết chế và không khôi phục toàn bộ bề mặt S0."),
+        "h4": ("H4 · Frozen holdout",
+               "Seepstone Terrace giữ thêm tầng ở mặt bên của cả hai vách so với S1. Cạnh trên vẫn là phần sáng hơn trong cùng ramp.",
+               "Mặt trước terrace-return ở Night vẫn khá phẳng. Dấu hiệu giữ chiều sâu trên một holdout cần Owner xác nhận trước khi kết luận khả năng áp dụng."),
+    }
+    criteria = ["Độ đọc từng mặt", "Khối lượng đá", "Nhận diện vật liệu", "Logic vết nứt",
+                "Rêu bám bề mặt", "Cụm pixel", "Đường viền", "Độ đọc Day/Night", "Hài hòa gameplay", "Khả năng áp dụng"]
+    variants = ("S0", "S1", "S2")
+    sections = []
+    for case in index["cases"]:
+        ident = case["id"]+"-"+case["light"]
+        label, benefit, caution = reviews[case["id"]]
+        qa = json.loads(evidence.verified(R / case["qa"]))
+        def imgs(mode):
+            return [evidence.image(Path(case["variants"][v.lower()][mode]),v) for v in variants]
+        def common(keys):
+            return pair(evidence.image(Path(case["common"][mode]),caption) for mode,caption in keys)
+        rows = []
+        for wall in qa["walls"]:
+            structure = wall["refinement"]["structural"]
+            material = wall["refinement"]["material"]
+            sequence = lambda entries: " → ".join(str(n) for n in entries)
+            rows.append((wall["id"],structure["top"],structure["front"],structure["side"],
+                material["footingMossPixels"],sequence(x["isolated"] for x in wall["stone"]),
+                sequence(x["per100"] for x in wall["detail"])))
+        wall_metrics = table(["Vách", "Đỉnh (px)", "Trước (px)", "Bên (px)", "Rêu bám chân (px)",
+            "Cụm đá 1 px · S0 → S1 → S2", "Biên luma / 100 · S0 → S1 → S2"], rows)
+        metrics = wall_metrics + swatches(qa["palette"])
+        diag=common([("planes","Mặt bên, trước và trên"),("treatments","Cụm S2 · form và vật liệu"),
+            ("diff","Pixel thay đổi từ S1 sang S2")])
+        geometry=common([("flat","Flat geometry"),("silhouette","Silhouette kiến trúc"),("collision","Collision plane")])
+        context = 'Day' if case["light"]=="day" else 'Night'
+        record = evidence.download(R/case["qa"], "Geometry và material QA JSON", ident+"-qa.json")
+        sections.append(f"""<section id="{ident}"><h2>{esc(label)} · {context}</h2>
+<p>{esc(qa['name'])} · seed {qa['seed']} · 320×208 · camera 3/4 phải.</p>
+{pair(imgs("native"))}<p>{esc(benefit)}</p><p><strong>Cần duyệt.</strong> {esc(caution)}</p>
+{closeups(imgs("native-4x"),case["crops"])}
+{details("Material masks",pair(imgs("material")))}
+{details("Plane và pixel diagnostics",diag)}
+{details("Flat geometry, silhouette và collision",geometry)}
+{details("Cụm pixel và palette",metrics)}
+<p>S2 đổi {qa['changedFromS1']} pixel so với S1. Alpha, silhouette, collision và world-space anchors khớp.</p>
+<p class="qa-links">{record}</p>{details("Phiếu duyệt của Owner",review(ident,criteria,variants))}</section>""")
+    technical=json.loads(evidence.verified(R/"verification.json"))
+    links="".join(evidence.download(path,label) for path,label in [
+        (R/"benchmark.json","Evidence manifest + SHA-256"),(R/"verification.json","Technical checks"),
+        (R/"studio-parity.json","Studio parity"),(Path(index["holdout"]["file"]),"H4 holdout lock"),
+        (Path(next(case["source"]["file"] for case in index["cases"] if case["id"]=="h4")),"H4 source spec"),
+        (Path(index["prior"]["file"]),"E7.2-B locked manifest"),
+        (REPORTS/"e72-artistic-decision.md","E7.2 Artistic Decision Record"),
+        (REPORTS/"e73-cross-asset-architecture.md","E7.3 Architecture Proposal"),
+    ])
+    sections.append(f"""<section id="decisions"><h2>Artistic closeout và phương pháp S2</h2>
+<p>Owner duyệt Relay M1 và Receiver M1 làm tham chiếu mỹ thuật. Dáng hộp còn là hạn chế thiết kế hình khối và chức năng.
+Stone S1 được duyệt có giới hạn. R1/H1 Day cải thiện nhẹ, Night chưa thuyết phục. H3 Day và Night giảm chiều sâu, rõ nhất ở H3 Night.
+Bonded Fracture chỉ nghiên cứu. Production Geometry và S0 là đối chiếu.</p>
+<p>S2 giữ cụm mô tả khối. Các nhóm lớn từ S0 ở mép đỉnh, mặt trước và mặt bên được phục hồi có chọn lọc trên atlas mặt phẳng khóa.
+Cụm vật liệu bổ sung một mảng đá mòn và nối rêu vào hàng chân có shade tối. Các vạch trang trí lặp từ S0 giữ ở mức thưa của S1.
+Trong diagnostics, vàng là cụm mô tả khối, mint là xử lý vật liệu. RGBA diff chỉ đánh dấu pixel thực sự đổi.</p>
+<p>S2 là ứng viên duy nhất. R1/H1 là development. H3 là lỗi đã biết. H4 khóa brief, seed và bố cục trước khi chạy.
+Một kết quả H4 chưa đủ để chuyển rule vào production. Owner đánh giá bóng tối và độ tách của từng mặt ở 1×.</p></section>
+<section id="technical"><h2>Technical QA</h2>
+<p>Nhánh <code>codex/e7-2r-plane-aware-material</code> · Full SHA triển khai <code>{esc(revision)}</code> · Base <code>{esc(index['checkpoint'])}</code>.
+Working tree sạch tại commit triển khai. Commit bàn giao thêm HTML và điều hướng.</p>
+<p>Source chính <code>src/experiments/stone-material.ts</code>, <code>scripts/benchmark-e72r.ts</code>, script Studio parity và generator báo cáo.
+Report Index hiện hành được cập nhật. SHA lịch sử của Index E7.1R đối chiếu với Git blob tại base; các benchmark và hash catalog giữ nguyên.</p>
+{table(["Lệnh hoặc gate","Trạng thái","Kết quả"],technical["checks"])}<p class="qa-links">{links}</p></section>
+<section id="summary"><h2>Tóm tắt gửi ChatGPT</h2>
+<p>S2 khôi phục một phần độ sâu mặt bên của R1 east wall và H3 upper wall. H4 giữ mặt bên rõ hơn S1 ở 1× nhưng có vùng trước còn phẳng ở Night.
+Có ảnh Day/Night, hình 1×/4× và SHA-256 của PNG. Cùng geometry, camera, palette và scene.</p>
+<p>QA kỹ thuật đạt. Đề nghị Owner chốt S2 theo từng layout và tách H4 khỏi các mẫu đã quan sát. Human art approval đang chờ.
+Nếu chiều sâu mặt khuất vẫn không đạt, giữ S0 production và S1 làm nghiên cứu. Sau E7.2 Final Owner Review, cân nhắc brief E7.3 trong proposal, với một nhân vật, một prop và một cảnh.</p>
+<p>Đính kèm <code>E7.2-R-PORTABLE-ART-REVIEW.html</code> khi duyệt đá. Dùng thêm HTML portable Relay E7.2-A nếu cần đối chiếu quyết định M1.</p></section>""")
+    return page("E7.2-R · Plane-Aware Stone", "E7_2_READY_FOR_FINAL_OWNER_ART_REVIEW",
+        "So S0, S1 và S2 ở native 1×. R1/H1 dùng phát triển, H3 dùng chẩn đoán, H4 Seepstone Terrace là holdout khóa trước.",
+        [("r1-day","R1"),("h1-day","H1"),("h3-day","H3"),("h4-day","H4 holdout"),("technical","QA"),("summary","Tóm tắt")],
+        "".join(sections),evidence,CROP_CSS,CROP_SCRIPT)
+
 def run():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--stone", action="store_true")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--stone", action="store_true")
+    mode.add_argument("--refinement", action="store_true")
     parser.add_argument("--revision")
     args=parser.parse_args()
     checksums = dict((path, digest) for digest, path in (line.split("  ", 1) for line in
         (A / "SHA256SUMS").read_text(encoding="utf-8").splitlines()))
-    if args.stone:
+    if args.refinement:
+        if not args.revision or not re.fullmatch(r"[0-9a-f]{40}",args.revision):
+            parser.error("--refinement requires the full implementation --revision")
+        manifest=R/"benchmark.json"
+        index=json.loads(manifest.read_bytes())
+        checksums.update({(R/file).as_posix():digest for file,digest in index["sha256"].items()})
+        checksums.update(index["sourceSha256"])
+        for lock in (index["prior"],index["holdout"],next(c["source"] for c in index["cases"] if c["id"]=="h4")):
+            checksums[lock["file"]]=lock["sha256"]
+        for path in (manifest,R/"studio-parity.json",R/"verification.json",
+                     REPORTS/"e72-artistic-decision.md",REPORTS/"e73-cross-asset-architecture.md"):
+            checksums[path.as_posix()]=sha(path.read_bytes())
+        evidence=Evidence(checksums)
+        result=report_refinement(evidence,index,args.revision)
+    elif args.stone:
         if not args.revision or not re.fullmatch(r"[0-9a-f]{40}",args.revision):
             parser.error("--stone requires the full implementation --revision")
         benchmark=B/"benchmark.json"
@@ -312,7 +417,8 @@ def run():
     digest_list = re.findall(r'data-sha="([0-9a-f]{64})"[^>]+(?:src|href)="data:[^"]*?;base64,([^"]+)"',result)
     assert len(digest_list) == len(evidence.pictures) + len(evidence.metadata)
     assert all(sha(base64.b64decode(payload,validate=True))==digest for digest,payload in digest_list)
-    path = REPORTS / ("E7.2-B-PORTABLE-ART-REVIEW.html" if args.stone else "E7.2-A-PORTABLE-ART-REVIEW.html")
+    name = "E7.2-R" if args.refinement else "E7.2-B" if args.stone else "E7.2-A"
+    path = REPORTS / (name+"-PORTABLE-ART-REVIEW.html")
     path.write_bytes(result.encode("utf-8"))
     print(path, len(evidence.pictures), "PNG,", len(evidence.metadata), "metadata")
 

@@ -1,0 +1,623 @@
+{
+  "id": "r1",
+  "name": "Signal Ruins Entrance",
+  "light": "day",
+  "seed": 83,
+  "source": {
+    "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+    "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+  },
+  "caseRole": "development",
+  "changedFromS1": 355,
+  "visibleFootprint": {
+    "structural": 269,
+    "material": 86
+  },
+  "structure": {
+    "silhouetteSha256": "6dbfd1e1d1b3d78962c029c315ff73d0075887804230cc71664b46deac3df930",
+    "collisionSha256": "470cd784e3e860593c906036bc0c90aa59abca3b72076414ae1a5c48f3d6f20f",
+    "layerOrder": [
+      "signal-pedestal",
+      "east-wall",
+      "west-wall",
+      "signal-gateway",
+      "courier",
+      "near-column",
+      "east-column",
+      "surveyor"
+    ],
+    "anchors": [
+      {
+        "id": "signal-pedestal",
+        "at": [
+          191,
+          106
+        ],
+        "alphaSha256": "bbb73066ffea99bec49c4336e5618941bd5f956af21f21c6a135555c0f600a13"
+      },
+      {
+        "id": "east-wall",
+        "at": [
+          220,
+          109
+        ],
+        "alphaSha256": "19af987ee5aab94a5690c008d0024d1f401ddd2df75d7688bc697f33c43e3c72"
+      },
+      {
+        "id": "west-wall",
+        "at": [
+          46,
+          110
+        ],
+        "alphaSha256": "f0493542496200bf3be673ab37c3e0347e6ac6cd85b475fa623200cad09da14d"
+      },
+      {
+        "id": "signal-gateway",
+        "at": [
+          111,
+          123
+        ],
+        "alphaSha256": "30c6910468888b9097406e734bb55e7076b90b8d0176c528055a0f73523d1cfb"
+      },
+      {
+        "id": "courier",
+        "at": [
+          206,
+          145
+        ],
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77"
+      },
+      {
+        "id": "near-column",
+        "at": [
+          71,
+          151
+        ],
+        "alphaSha256": "f2a7f5c74c56c5edf2ac0de159d05c557770fea937a67490e1124a0f2cd3c5b6"
+      },
+      {
+        "id": "east-column",
+        "at": [
+          238,
+          152
+        ],
+        "alphaSha256": "fa8bf09d0c8bb74e5e061a4150387058d8697c6dcc9c6acd57d1b77eb5475f4a"
+      },
+      {
+        "id": "surveyor",
+        "at": [
+          107,
+          165
+        ],
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015"
+      }
+    ],
+    "occlusion": [
+      {
+        "id": "signal-pedestal",
+        "visible": 427,
+        "hiddenBy": {
+          "courier": 181
+        }
+      },
+      {
+        "id": "east-wall",
+        "visible": 2779,
+        "hiddenBy": {}
+      },
+      {
+        "id": "west-wall",
+        "visible": 2125,
+        "hiddenBy": {
+          "signal-gateway": 12
+        }
+      },
+      {
+        "id": "signal-gateway",
+        "visible": 3334,
+        "hiddenBy": {
+          "surveyor": 87
+        }
+      },
+      {
+        "id": "courier",
+        "visible": 997,
+        "hiddenBy": {}
+      },
+      {
+        "id": "near-column",
+        "visible": 923,
+        "hiddenBy": {
+          "surveyor": 5
+        }
+      },
+      {
+        "id": "east-column",
+        "visible": 650,
+        "hiddenBy": {}
+      },
+      {
+        "id": "surveyor",
+        "visible": 1072,
+        "hiddenBy": {}
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "surveyor",
+        "points": [
+          [
+            139,
+            196
+          ],
+          [
+            145,
+            159
+          ],
+          [
+            142,
+            137
+          ],
+          [
+            142,
+            96
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 1919
+      },
+      {
+        "id": "signal-approach",
+        "actor": "courier",
+        "points": [
+          [
+            142,
+            140
+          ],
+          [
+            152,
+            154
+          ],
+          [
+            178,
+            154
+          ],
+          [
+            208,
+            140
+          ],
+          [
+            204,
+            119
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 1932
+      }
+    ]
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "palette": {
+    "stone": [
+      "#353c45",
+      "#646e66",
+      "#869087",
+      "#aeb2a1"
+    ],
+    "moss": [
+      "#4b6940",
+      "#68864c",
+      "#7f9858"
+    ],
+    "contour": [
+      "#211e2a"
+    ]
+  },
+  "planes": {
+    "side": "#647294",
+    "front": "#9e9d89",
+    "top": "#d8c5a4"
+  },
+  "walls": [
+    {
+      "id": "east-wall",
+      "refinement": {
+        "structural": {
+          "side": 54,
+          "front": 47,
+          "top": 61
+        },
+        "material": {
+          "exposedStonePixels": 38,
+          "detachedMossPixelsRemoved": 0,
+          "footingMossPixels": 5
+        }
+      },
+      "stone": [
+        {
+          "pixels": 2665,
+          "largest": 1205,
+          "isolated": 13,
+          "clusters": [
+            1205,
+            566,
+            133,
+            112,
+            68,
+            54,
+            51,
+            49,
+            39,
+            32,
+            31,
+            29,
+            27,
+            27,
+            27,
+            17,
+            17,
+            16,
+            13,
+            13,
+            12,
+            12,
+            12,
+            12,
+            8,
+            7,
+            7,
+            7,
+            7,
+            4,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 2694,
+          "largest": 1607,
+          "isolated": 5,
+          "clusters": [
+            1607,
+            679,
+            213,
+            33,
+            31,
+            26,
+            25,
+            16,
+            10,
+            10,
+            9,
+            9,
+            6,
+            4,
+            3,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 2689,
+          "largest": 1522,
+          "isolated": 4,
+          "clusters": [
+            1522,
+            620,
+            118,
+            74,
+            44,
+            38,
+            34,
+            33,
+            31,
+            27,
+            27,
+            26,
+            25,
+            16,
+            10,
+            10,
+            9,
+            6,
+            4,
+            3,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "moss": [
+        {
+          "pixels": 78,
+          "largest": 15,
+          "isolated": 4,
+          "clusters": [
+            15,
+            15,
+            11,
+            11,
+            9,
+            9,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 85,
+          "largest": 25,
+          "isolated": 1,
+          "clusters": [
+            25,
+            21,
+            21,
+            13,
+            4,
+            1
+          ]
+        },
+        {
+          "pixels": 90,
+          "largest": 30,
+          "isolated": 1,
+          "clusters": [
+            30,
+            21,
+            21,
+            13,
+            4,
+            1
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "edges": 829,
+          "samples": 5250,
+          "per100": 15.8
+        },
+        {
+          "edges": 453,
+          "samples": 5361,
+          "per100": 8.4
+        },
+        {
+          "edges": 592,
+          "samples": 5359,
+          "per100": 11
+        }
+      ]
+    },
+    {
+      "id": "west-wall",
+      "refinement": {
+        "structural": {
+          "side": 19,
+          "front": 46,
+          "top": 42
+        },
+        "material": {
+          "exposedStonePixels": 38,
+          "detachedMossPixelsRemoved": 0,
+          "footingMossPixels": 5
+        }
+      },
+      "stone": [
+        {
+          "pixels": 2088,
+          "largest": 804,
+          "isolated": 7,
+          "clusters": [
+            804,
+            529,
+            213,
+            112,
+            46,
+            42,
+            42,
+            39,
+            31,
+            31,
+            23,
+            22,
+            20,
+            20,
+            17,
+            16,
+            12,
+            12,
+            12,
+            7,
+            7,
+            7,
+            5,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 2073,
+          "largest": 871,
+          "isolated": 4,
+          "clusters": [
+            871,
+            552,
+            226,
+            224,
+            33,
+            29,
+            25,
+            20,
+            17,
+            17,
+            14,
+            10,
+            10,
+            10,
+            5,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 2068,
+          "largest": 808,
+          "isolated": 5,
+          "clusters": [
+            808,
+            555,
+            222,
+            202,
+            52,
+            38,
+            33,
+            29,
+            25,
+            20,
+            17,
+            17,
+            14,
+            10,
+            10,
+            5,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "moss": [
+        {
+          "pixels": 39,
+          "largest": 15,
+          "isolated": 2,
+          "clusters": [
+            15,
+            11,
+            9,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 64,
+          "largest": 25,
+          "isolated": 1,
+          "clusters": [
+            25,
+            21,
+            13,
+            4,
+            1
+          ]
+        },
+        {
+          "pixels": 69,
+          "largest": 30,
+          "isolated": 1,
+          "clusters": [
+            30,
+            21,
+            13,
+            4,
+            1
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "edges": 749,
+          "samples": 4099,
+          "per100": 18.3
+        },
+        {
+          "edges": 469,
+          "samples": 4116,
+          "per100": 11.4
+        },
+        {
+          "edges": 547,
+          "samples": 4114,
+          "per100": 13.3
+        }
+      ]
+    }
+  ],
+  "technical": "PASS",
+  "art": "PENDING_HUMAN_REVIEW"
+}

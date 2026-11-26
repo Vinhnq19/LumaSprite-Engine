@@ -12,6 +12,7 @@ type Scene=ReturnType<typeof renderComposition>['scene'];
 type Wall=Extract<RuinModule,{kind:'wall'}>;
 type Theme=StyleProfile['illumination']['day'];
 type Cell=Scene['metadata']['atlas']['cells'][number];
+type StoneVariant='s1'|'s2';
 const stoneRole=pack(materialLegend.stone),mossRole=pack(mossInk),contourRole=pack(materialLegend.contour);
 const planeLegend={side:'#647294',front:'#9e9d89',top:'#d8c5a4'};
 const planeInks=[planeLegend.side,planeLegend.front,planeLegend.top].map(pack);
@@ -42,7 +43,96 @@ function materialClusters(raster:Raster,roles:Raster){
   }));
 }
 
-function weatherWall(module:Wall,old:Raster,oldMask:Raster,flat:Raster,theme:Theme,flatInks:readonly number[]){
+function wallClusters(w:number,h:number,eligible:(index:number)=>boolean){
+  const seen=new Uint8Array(w*h);
+  const clusters:number[][]=[];
+  for(let i=0;i<seen.length;i++){
+    if(seen[i]||!eligible(i))continue;
+    const cluster=[i];
+    seen[i]=1;
+    for(const index of cluster){
+      const x=index%w,y=Math.floor(index/w);
+      for(const [u,v] of [[x-1,y],[x+1,y],[x,y-1],[x,y+1]]){
+        if(u<0||v<0||u>=w||v>=h)continue;
+        const next=v*w+u;
+        if(seen[next]||!eligible(next))continue;
+        seen[next]=1;
+        cluster.push(next);
+      }
+    }
+    clusters.push(cluster);
+  }
+  return clusters.sort((a,b)=>b.length-a.length);
+}
+
+const featureLegend={structural:'#f5c687',material:'#94e4bd'};
+function refinePlanes(old:Raster,oldMask:Raster,raster:Raster,material:Raster,planes:Int8Array,front:number[],
+  module:Wall,theme:Theme,course:number){
+  const {w,h}=raster,width=module.width;
+  const palette=theme.surfaces.stone.map(pack);
+  const features=makeRaster(w,h);
+  const set=(index:number,ink:number,role:number,feature:'structural'|'material')=>{
+    const offset=index*4;
+    assert.ok(planes[index]>=0&&raster.rgba[offset+3]===255);
+    raster.rgba.writeUInt32BE(ink,offset);
+    material.rgba.writeUInt32BE(role,offset);
+    features.rgba.writeUInt32BE(pack(featureLegend[feature]),offset);
+  };
+  const darkest=(index:number)=>planes[index]===1&&material.rgba.readUInt32BE(index*4)===stoneRole&&
+    raster.rgba.readUInt32BE(index*4)===palette[0];
+  const worn=width*(module.fracture==='right'?.32:.68);
+  const origin=Math.round(worn), y0=front[origin];
+  const half=Math.round(width*.12), y=y0+Math.floor((h-y0)*.4);
+  const exposed=materialPiece(theme)(w,h,[0,h],paint=>{
+    paint('stone',2,[[origin-half,y+2],[origin-half+3,y],[origin+half-1,y],[origin+half,y+2],
+      [origin+half-4,y+4],[origin-2,y+4],[origin-half+1,y+3]]);
+  });
+  let exposedPixels=0,mossDetached=0,mossFooting=0;
+  for(const cluster of wallClusters(w,h,i=>planes[i]===1&&material.rgba.readUInt32BE(i*4)===mossRole)){
+    const attached=cluster.some(i=>Math.floor(i/w)>=h-4||
+      [i-w,i+w,...(i%w?[i-1]:[]),...(i%w<w-1?[i+1]:[])].some(darkest));
+    if(!attached)for(const i of cluster){
+      set(i,palette[1],stoneRole,'material');
+      mossDetached++;
+    }
+    for(const i of cluster){
+      if(Math.floor(i/w)!==h-3||i%w<1||i%w>w-2)continue;
+      if(!darkest(i+w)||[i-1,i+1].some(adj=>material.rgba.readUInt32BE(adj*4)!==mossRole))continue;
+      set(i+w,pack(theme.grass[0]),mossRole,'material');
+      mossFooting++;
+    }
+  }
+  for(const cluster of wallClusters(w,h,i=>planes[i]===1&&exposed.raster.rgba[i*4+3]===255&&
+    raster.rgba.readUInt32BE(i*4)===palette[1])){
+    if(cluster.length<7)continue;
+    for(const i of cluster)set(i,palette[2],stoneRole,'material');
+    exposedPixels+=cluster.length;
+  }
+  const structural={side:0,front:0,top:0};
+  const targets=[
+    {key:'side',plane:0,shade:1,limit:2,minimum:8},
+    {key:'front',plane:1,shade:2,limit:2,minimum:8},
+    {key:'top',plane:2,shade:3,limit:1,minimum:10}
+  ] as const;
+  for(const {key,plane,shade,limit,minimum} of targets){
+    const candidates=wallClusters(w,h,i=>{
+      if(planes[i]!==plane||oldMask.rgba.readUInt32BE(i*4)!==stoneRole||old.rgba.readUInt32BE(i*4)!==palette[shade])return false;
+      if(plane!==1)return true;
+      const distance=Math.floor(i/w)-front[i%w];
+      return distance>=0&&distance<Math.min(4,course);
+    });
+    for(const cluster of candidates.filter(region=>region.length>=minimum).slice(0,limit)){
+      for(const i of cluster){
+        if(material.rgba.readUInt32BE(i*4)!==stoneRole||darkest(i))continue;
+        if(raster.rgba.readUInt32BE(i*4)!==palette[shade])structural[key]++;
+        set(i,palette[shade],stoneRole,'structural');
+      }
+    }
+  }
+  return {features,details:{structural,material:{exposedStonePixels:exposedPixels,detachedMossPixelsRemoved:mossDetached,footingMossPixels:mossFooting}}};
+}
+
+function weatherWall(module:Wall,old:Raster,oldMask:Raster,flat:Raster,theme:Theme,flatInks:readonly number[],variant:StoneVariant){
   const {w,h}=old,width=module.width;
   const palette=theme.surfaces.stone.map(pack);
   const front=Array(width).fill(h) as number[],sideTop=Array(w).fill(h) as number[];
@@ -128,18 +218,20 @@ function weatherWall(module:Wall,old:Raster,oldMask:Raster,flat:Raster,theme:The
     material.rgba.writeUInt32BE(role,offset);
     planeMask.rgba.writeUInt32BE(planeInks[plane],offset);
   }
+  const refinement=variant==='s2'?refinePlanes(old,oldMask,raster,material,planes,front,module,theme,course):undefined;
   const geometry=compareCoverage(old,raster);
   assert.equal(geometry.added+geometry.removed,0);
   assert.deepEqual(compareCoverage(material,raster),geometry);
-  return {raster,material,planeMask,qa:{
+  return {raster,material,planeMask,features:refinement?.features,qa:{
     id:module.id,course,fracture:[crackX,crackY],moisture:[moisture,bed],geometry,
     baseline:inspectStructure(old,undefined,oldMask).stat,
     candidate:inspectStructure(raster,legalStone,material).stat,
-    clusters:{before:materialClusters(old,oldMask),after:materialClusters(raster,material)}
+    clusters:{before:materialClusters(old,oldMask),after:materialClusters(raster,material)},
+    ...(refinement?{refinement:refinement.details}:{})
   }};
 }
 
-export function compareStone(input:Composition,light:EnvironmentLight){
+export function compareStone(input:Composition,light:EnvironmentLight,variant:StoneVariant='s1'){
   const {spec,environment}=input;
   assert.ok(spec.ruins&&spec.props.length===0,'Stone pilot expects a ruin stack and its actor layers.');
   const baseline=renderComposition(input,light),scene=baseline.scene;
@@ -168,13 +260,14 @@ export function compareStone(input:Composition,light:EnvironmentLight){
   const walls=new Map(spec.ruins.modules.filter((module):module is Wall=>module.kind==='wall').map(module=>[module.id,module]));
   const raster=composite([scene.raster]),material=composite([scene.materialMask]), planeMask=makeRaster(raster.w,raster.h);
   const diff=makeRaster(raster.w,raster.h), changedByWall:Record<string,number>={};
+  const features=variant==='s2'?makeRaster(raster.w,raster.h):undefined;
   const flatCells=new Map(flat.metadata.atlas.cells.map(cell=>[cell.id,cell]));
   const edits=layers.map(layer=>{
     const module=walls.get(layer.id);
     if(!module)return;
     const local=atlasPixels(flat.atlas,flatCells.get(layer.id)!);
     const mask=atlasPixels(scene.atlasMaterials,layer.cell!);
-    return {mask,...weatherWall(module,layer.old,mask,local,theme,flatInks)};
+    return {mask,...weatherWall(module,layer.old,mask,local,theme,flatInks,variant)};
   });
   for(let i=0;i<owner.length;i++){
     const index=owner[i],edit=edits[index];
@@ -188,6 +281,7 @@ export function compareStone(input:Composition,light:EnvironmentLight){
     raster.rgba.writeUInt32BE(after,offset);
     material.rgba.writeUInt32BE(edit.material.rgba.readUInt32BE(local),offset);
     planeMask.rgba.writeUInt32BE(edit.planeMask.rgba.readUInt32BE(local),offset);
+    if(features&&edit.features)edit.features.rgba.copy(features.rgba,offset,local,local+4);
     diff.rgba.writeUInt32BE(pack(before!==after?'#94e4bd':'#303443'),offset);
     if(before!==after)changedByWall[layer.id]=(changedByWall[layer.id]??0)+1;
   }
@@ -197,7 +291,7 @@ export function compareStone(input:Composition,light:EnvironmentLight){
   const after=inspectStructure(raster,legal,material).stat;
   assert.equal(before.alphaSha256,after.alphaSha256);
   assert.deepEqual(compareCoverage(scene.materialMask,material),compareCoverage(scene.raster,raster));
-  return {baseline,edited:{raster,material,planeMask,diff},flat,qa:{
+  return {baseline,edited:{raster,material,planeMask,diff,features},flat,qa:{
     before,after,changedByWall,walls:edits.flatMap(edit=>edit?[edit.qa]:[]),
     structure:{silhouetteSha256:sha256(scene.architectureSilhouette!.rgba),collisionSha256:sha256(scene.collisionPlane.rgba),
       layerOrder:scene.metadata.layerOrder,anchors:layers.map(({id,at,alphaSha256})=>({id,at,alphaSha256})),
