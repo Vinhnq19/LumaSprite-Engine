@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "base": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174",
+  "branch": "codex/e7-2b-stone-material",
+  "checks": [
+    [
+      "npm run lint",
+      "PASS",
+      "Engine source, scripts và tests"
+    ],
+    [
+      "npm run typecheck",
+      "PASS",
+      "tsc --noEmit"
+    ],
+    [
+      "npm run build",
+      "PASS",
+      "Production build và declarations"
+    ],
+    [
+      "npm run smoke",
+      "PASS",
+      "CLI và adapter loopback"
+    ],
+    [
+      "npm test",
+      "PASS",
+      "73/73 Engine tests"
+    ],
+    [
+      "node scripts/verify-e54.ts --history",
+      "PASS",
+      "805 SHA-256, 361 artifact tái tạo; E5.3 và kho R&D khớp"
+    ],
+    [
+      "node scripts/benchmark-e64.ts --publish",
+      "PASS",
+      "82 payload E6.4"
+    ],
+    [
+      "node scripts/benchmark-e71.ts --publish",
+      "PASS",
+      "79 payload E7.1"
+    ],
+    [
+      "node scripts/benchmark-e71r.ts --publish",
+      "PASS",
+      "54 payload E7.1R"
+    ],
+    [
+      "node scripts/benchmark-e72a.ts --publish",
+      "PASS",
+      "32 payload E7.2-A"
+    ],
+    [
+      "node scripts/review-e71r.ts --publish",
+      "PASS",
+      "24 PNG bổ sung E7.1R"
+    ],
+    [
+      "node scripts/benchmark-e72b.ts --publish",
+      "PASS",
+      "66 PNG, 6 QA record; R1/H1 S0 khớp PNG khóa"
+    ],
+    [
+      "npm run benchmark:e72b -- --out benchmarks/results/run/e72b-dev/reproduction",
+      "PASS",
+      "72 payload khớp SHA-256; định dạng, alpha, vật liệu, palette và quyền sở hữu pixel được kiểm"
+    ],
+    [
+      "npm run test:e72b-studio",
+      "PASS",
+      "Studio c56837e giữ RGBA qua 6 lượt import/save/reopen/export"
+    ],
+    [
+      "npm run report:e72-portable + Chrome detached E7.2-A",
+      "PASS",
+      "30 PNG, 6 metadata, hai phiếu duyệt. Hash bản portable 42e78b0cbcdcd0771917d3235eea6fe0edb68d9f6ce95b31792354c46cd1e372"
+    ],
+    [
+      "Target-game runtime E8",
+      "NOT RUN",
+      "Ngoài phạm vi Stone Material Pilot"
+    ]
+  ]
+}

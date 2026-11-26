@@ -1,0 +1,60 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "file": "r1/day/s0/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "186f2aa4d960151facdf665f8ac7c9f6d64af0928ea239df987075a0c6e6bf7c",
+      "rgbaSha256": "a0f8223bd858188583177fe8e11b16f516077dc7bb0a43610a395e083b7a6530"
+    },
+    {
+      "file": "r1/day/s1/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "0d66012552cd5fb9ec24e710262ca88ee244b4435b9c1f9e6fc9af31a08a4a5e",
+      "rgbaSha256": "a11d8b780e5cf9537e3c6285c0984a47ce9cdeb6a6205b6f79a354fc6b906c01"
+    },
+    {
+      "file": "h1/night/s1/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "c4622f945ddad2a0f889d3307338d6d70f7074ff72cdb809a88a888811c79030",
+      "rgbaSha256": "ac6df257449341d820302d892edab1896044deb719f8c9dbc4b2a7754d8b528e"
+    },
+    {
+      "file": "h3/day/s1/native.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "f6921eae77cc99afdb3139169209c405c41b0100a48803193aa256faea002a3e",
+      "rgbaSha256": "c2ca556a0d5cb92e6377452011f7385df800e7b63e1d4aae895d4d1de7ddcb34"
+    },
+    {
+      "file": "h3/night/s1/material.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "4e3ffa25f7fdd36bd07553cad581672ac8b938845c9abd783ae5fbac8773c758",
+      "rgbaSha256": "d127892ef1a1f31f145d81146e815de53fcfc2cc4adc8b5c3226f4fbd159ba42"
+    },
+    {
+      "file": "h3/night/silhouette.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "f7ea19828116e0f101cff45e69ffc4f1c4551f14ce0e6984d286558d546bfa4c",
+      "rgbaSha256": "6a8f0bfe72809cc1776755561cf03194a740f060de4fb3fcdb0c0c0603bc2629"
+    }
+  ]
+}

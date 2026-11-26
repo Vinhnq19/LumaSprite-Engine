@@ -8,6 +8,7 @@ benchmarks/fixtures/e64/*.json text eol=lf
 benchmarks/fixtures/e71/*.json text eol=lf
 benchmarks/fixtures/e71r/*.json text eol=lf
 benchmarks/fixtures/e72a/*.json text eol=lf
+benchmarks/fixtures/e72b/*.json text eol=lf
 benchmarks/results/e72a/SHA256SUMS text eol=lf
 benchmarks/results/e71r/SHA256SUMS text eol=lf
 docs/reports/*.html text eol=lf

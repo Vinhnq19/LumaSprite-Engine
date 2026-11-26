@@ -1,0 +1,1192 @@
+{
+  "id": "h3",
+  "name": "Fern Cut Signal Gate",
+  "seed": 5203,
+  "light": "night",
+  "source": {
+    "file": "benchmarks/fixtures/e72b/h3-fern-cut-signal-gate.json",
+    "sha256": "714939dfe33e9aed9ec40f62a0eb08186153717cf2b8e950a67f0c58479e2f47"
+  },
+  "crops": [
+    {
+      "id": "fallen-wall",
+      "rect": [
+        35,
+        115,
+        78,
+        45
+      ]
+    },
+    {
+      "id": "upper-wall",
+      "rect": [
+        91,
+        33,
+        98,
+        65
+      ]
+    }
+  ],
+  "role": "holdout",
+  "technical": "PASS",
+  "art": "PENDING_HUMAN_REVIEW",
+  "before": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 10511,
+      "samples": 127663,
+      "per100": 8.2
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 111,
+        "p10": 13,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 5,
+        "p10": 1,
+        "median": 1
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 171,
+        "p10": 5,
+        "median": 14
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 35,
+        "p10": 21,
+        "median": 24
+      },
+      {
+        "roles": "#292d42/#98a0be",
+        "samples": 8,
+        "p10": 17,
+        "median": 17
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 184,
+        "p10": 22,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 82,
+        "p10": 18,
+        "median": 23
+      },
+      {
+        "roles": "#48425e/#68864c",
+        "samples": 2,
+        "p10": 31,
+        "median": 31
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 234,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 6,
+        "p10": 49,
+        "median": 57
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 277,
+        "p10": 15,
+        "median": 38
+      },
+      {
+        "roles": "#68864c/#94e4bd",
+        "samples": 166,
+        "p10": 5,
+        "median": 37
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1942,
+        "p10": 9,
+        "median": 39
+      },
+      {
+        "roles": "#68864c/#cfbb83",
+        "samples": 26,
+        "p10": 6,
+        "median": 23
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 198,
+        "p10": 5,
+        "median": 28
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 17,
+        "p10": 24,
+        "median": 24
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 92,
+        "p10": 7,
+        "median": 70
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 36,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 612,
+        "p10": 11,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 13,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 139,
+        "p10": 15,
+        "median": 41
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 129,
+        "p10": 27,
+        "median": 63
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 98,
+        "p10": 17,
+        "median": 28
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 21,
+        "p10": 47,
+        "median": 47
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 0,
+        "median": 0
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 40,
+        "median": 40
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 288,
+        "p10": 3,
+        "median": 3
+      }
+    ],
+    "used": [
+      "#1e2133",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#28373c",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#302a39",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#35444a",
+      "#363442",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#403b48",
+      "#434a5c",
+      "#435268",
+      "#465046",
+      "#465552",
+      "#46746e",
+      "#494651",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#59697d",
+      "#5a505b",
+      "#5d5662",
+      "#64778c",
+      "#674937",
+      "#675761",
+      "#694636",
+      "#6b4139",
+      "#71453d",
+      "#746268",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7b8695",
+      "#8294a7",
+      "#86503d",
+      "#88927a",
+      "#896049",
+      "#935630",
+      "#9ca8a8",
+      "#a36146",
+      "#a86a55",
+      "#b0774b",
+      "#b18059",
+      "#d79768",
+      "#dca57a",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "af73049398dd91bb2d513800c72cfc89d435bdd569b95bdd6785f286b71c149a",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "after": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 10017,
+      "samples": 127767,
+      "per100": 7.8
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 111,
+        "p10": 13,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 5,
+        "p10": 1,
+        "median": 1
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 171,
+        "p10": 5,
+        "median": 14
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 35,
+        "p10": 21,
+        "median": 24
+      },
+      {
+        "roles": "#292d42/#98a0be",
+        "samples": 8,
+        "p10": 17,
+        "median": 17
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 184,
+        "p10": 22,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 82,
+        "p10": 18,
+        "median": 23
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 141,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 5,
+        "p10": 49,
+        "median": 57
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 279,
+        "p10": 15,
+        "median": 38
+      },
+      {
+        "roles": "#68864c/#94e4bd",
+        "samples": 166,
+        "p10": 5,
+        "median": 37
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1942,
+        "p10": 9,
+        "median": 39
+      },
+      {
+        "roles": "#68864c/#cfbb83",
+        "samples": 26,
+        "p10": 6,
+        "median": 23
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 187,
+        "p10": 5,
+        "median": 28
+      },
+      {
+        "roles": "#82a456/#94e4bd",
+        "samples": 8,
+        "p10": 8,
+        "median": 21
+      },
+      {
+        "roles": "#82a456/#98a0be",
+        "samples": 11,
+        "p10": 8,
+        "median": 21
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 17,
+        "p10": 24,
+        "median": 24
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 84,
+        "p10": 17,
+        "median": 40
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 25,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 613,
+        "p10": 11,
+        "median": 20
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 13,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 139,
+        "p10": 15,
+        "median": 41
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 129,
+        "p10": 27,
+        "median": 63
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 98,
+        "p10": 17,
+        "median": 28
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 21,
+        "p10": 47,
+        "median": 47
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 0,
+        "median": 0
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 40,
+        "median": 40
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 288,
+        "p10": 3,
+        "median": 3
+      }
+    ],
+    "used": [
+      "#1e2133",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#28373c",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#302a39",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#35444a",
+      "#363442",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#403b48",
+      "#434a5c",
+      "#435268",
+      "#465046",
+      "#465552",
+      "#46746e",
+      "#494651",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#59697d",
+      "#5a505b",
+      "#5d5662",
+      "#64778c",
+      "#674937",
+      "#675761",
+      "#694636",
+      "#6b4139",
+      "#71453d",
+      "#746268",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7b8695",
+      "#8294a7",
+      "#86503d",
+      "#88927a",
+      "#896049",
+      "#935630",
+      "#9ca8a8",
+      "#a36146",
+      "#a86a55",
+      "#b0774b",
+      "#b18059",
+      "#d79768",
+      "#dca57a",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "07fbcc0c96da5517a8f74d7335368a5436c232aab4fcf19d6c74aa1557b70c6f",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "changedByWall": {
+    "upper-wall": 1049,
+    "fallen-wall": 535
+  },
+  "walls": [
+    {
+      "id": "upper-wall",
+      "course": 12,
+      "fracture": [
+        24,
+        33
+      ],
+      "moisture": [
+        22,
+        52
+      ],
+      "geometry": {
+        "added": 0,
+        "removed": 0,
+        "shared": 3817
+      },
+      "baseline": {
+        "coverage": 3817,
+        "outline": 251,
+        "isolatedOutline": 0,
+        "components": [
+          3817
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 87,
+          "bottom": 56
+        },
+        "detail": {
+          "edges": 932,
+          "samples": 7362,
+          "per100": 12.7
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#8bb4ce",
+            "samples": 93,
+            "p10": 13,
+            "median": 13
+          },
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 34,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#1e2133",
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "a7e978a04a86c59fe2f814ed2b244037698ddc96ed9e6035133cd6696bcd9267",
+        "alphaSha256": "108860beb6090caa635b264b6b9c38b9a2c7b0bb9e45874ade76c8fd39763a05"
+      },
+      "candidate": {
+        "coverage": 3817,
+        "outline": 251,
+        "isolatedOutline": 0,
+        "components": [
+          3817
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 87,
+          "bottom": 56
+        },
+        "detail": {
+          "edges": 606,
+          "samples": 7439,
+          "per100": 8.1
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 50,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "d95db03cce312b9d5df03c545319ffc9bd51de5acbbe5b1e79401bfc519b96d8",
+        "alphaSha256": "108860beb6090caa635b264b6b9c38b9a2c7b0bb9e45874ade76c8fd39763a05"
+      },
+      "clusters": {
+        "before": {
+          "stone": {
+            "pixels": 3751,
+            "largest": 2061,
+            "isolated": 10,
+            "clusters": [
+              2061,
+              558,
+              178,
+              140,
+              106,
+              83,
+              79,
+              61,
+              46,
+              45,
+              45,
+              45,
+              31,
+              20,
+              20,
+              20,
+              20,
+              15,
+              12,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              10,
+              8,
+              7,
+              7,
+              7,
+              7,
+              7,
+              7,
+              4,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "contour": {
+            "pixels": 27,
+            "largest": 2,
+            "isolated": 15,
+            "clusters": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 39,
+            "largest": 15,
+            "isolated": 2,
+            "clusters": [
+              15,
+              11,
+              9,
+              2,
+              1,
+              1
+            ]
+          }
+        },
+        "after": {
+          "stone": {
+            "pixels": 3753,
+            "largest": 2521,
+            "isolated": 10,
+            "clusters": [
+              2521,
+              637,
+              262,
+              69,
+              54,
+              43,
+              31,
+              29,
+              20,
+              17,
+              14,
+              14,
+              11,
+              7,
+              5,
+              3,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 64,
+            "largest": 25,
+            "isolated": 1,
+            "clusters": [
+              25,
+              21,
+              13,
+              4,
+              1
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "fallen-wall",
+      "course": 8,
+      "fracture": [
+        35,
+        23
+      ],
+      "moisture": [
+        32,
+        32
+      ],
+      "geometry": {
+        "added": 0,
+        "removed": 0,
+        "shared": 1937
+      },
+      "baseline": {
+        "coverage": 1937,
+        "outline": 183,
+        "isolatedOutline": 0,
+        "components": [
+          1937
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 67,
+          "bottom": 36
+        },
+        "detail": {
+          "edges": 703,
+          "samples": 3719,
+          "per100": 18.9
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 50,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "15ef5d88514456e722a646f1147b03ef9243e0578553618ed0201cbdcb12350c",
+        "alphaSha256": "44a80296285d5318e11c018626695370864a73abfa63c07ad75c38f383e16fdb"
+      },
+      "candidate": {
+        "coverage": 1937,
+        "outline": 183,
+        "isolatedOutline": 0,
+        "components": [
+          1937
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 67,
+          "bottom": 36
+        },
+        "detail": {
+          "edges": 434,
+          "samples": 3717,
+          "per100": 11.7
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 52,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "f48affce8dc8f2564646867cb7c03b3ae71cdd26dc6a1c6fa2d2352b220a0624",
+        "alphaSha256": "44a80296285d5318e11c018626695370864a73abfa63c07ad75c38f383e16fdb"
+      },
+      "clusters": {
+        "before": {
+          "stone": {
+            "pixels": 1887,
+            "largest": 569,
+            "isolated": 1,
+            "clusters": [
+              569,
+              524,
+              264,
+              110,
+              61,
+              61,
+              54,
+              36,
+              31,
+              30,
+              23,
+              20,
+              12,
+              12,
+              12,
+              12,
+              10,
+              10,
+              7,
+              6,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 50,
+            "largest": 15,
+            "isolated": 4,
+            "clusters": [
+              15,
+              11,
+              9,
+              6,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "after": {
+          "stone": {
+            "pixels": 1870,
+            "largest": 654,
+            "isolated": 4,
+            "clusters": [
+              654,
+              621,
+              230,
+              177,
+              33,
+              31,
+              20,
+              17,
+              17,
+              14,
+              11,
+              10,
+              9,
+              9,
+              5,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 67,
+            "largest": 49,
+            "isolated": 0,
+            "clusters": [
+              49,
+              14,
+              4
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "structure": {
+    "silhouetteSha256": "6a8f0bfe72809cc1776755561cf03194a740f060de4fb3fcdb0c0c0603bc2629",
+    "collisionSha256": "f4a051794421f7e9490a30812b3f3d94384276758200837f25c953af0ecf2f53",
+    "layerOrder": [
+      "upper-wall",
+      "upper-column",
+      "signal-gateway",
+      "signal-pedestal",
+      "near-column",
+      "fallen-wall",
+      "surveyor",
+      "courier"
+    ],
+    "anchors": [
+      {
+        "id": "upper-wall",
+        "at": [
+          96,
+          94
+        ],
+        "alphaSha256": "a6d20c72054366b5b5751c96339424e23daee3065cf2c2cd12c37906123b6024"
+      },
+      {
+        "id": "upper-column",
+        "at": [
+          70,
+          110
+        ],
+        "alphaSha256": "5fdeabf0cd4514d99b36d753a0a7d240c2425ef39bf342b85cf81dbd1c5917d0"
+      },
+      {
+        "id": "signal-gateway",
+        "at": [
+          193,
+          113
+        ],
+        "alphaSha256": "cdb30358d3b6f4a974f136b3bcd74ea91d25cf048f175e44ceb23ba17ce96344"
+      },
+      {
+        "id": "signal-pedestal",
+        "at": [
+          112,
+          124
+        ],
+        "alphaSha256": "ee4e24f0678f2e347c79b93635578d45a1e618ce171b2d948d2a1d4bde781fbc"
+      },
+      {
+        "id": "near-column",
+        "at": [
+          255,
+          151
+        ],
+        "alphaSha256": "3a9e3e6c4ea0f35e3e96c544545401ee1f3de0fbdecb2f35818334def008eb7f"
+      },
+      {
+        "id": "fallen-wall",
+        "at": [
+          40,
+          156
+        ],
+        "alphaSha256": "c126344dca6937b1ade7f9b3a237586590eb6175405840c992e152d113ef91d4"
+      },
+      {
+        "id": "surveyor",
+        "at": [
+          155,
+          171
+        ],
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015"
+      },
+      {
+        "id": "courier",
+        "at": [
+          79,
+          179
+        ],
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77"
+      }
+    ],
+    "occlusion": [
+      {
+        "id": "upper-wall",
+        "visible": 3712,
+        "hiddenBy": {
+          "signal-pedestal": 105
+        }
+      },
+      {
+        "id": "upper-column",
+        "visible": 626,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-gateway",
+        "visible": 2777,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-pedestal",
+        "visible": 634,
+        "hiddenBy": {}
+      },
+      {
+        "id": "near-column",
+        "visible": 948,
+        "hiddenBy": {}
+      },
+      {
+        "id": "fallen-wall",
+        "visible": 1397,
+        "hiddenBy": {
+          "courier": 540
+        }
+      },
+      {
+        "id": "surveyor",
+        "visible": 1072,
+        "hiddenBy": {}
+      },
+      {
+        "id": "courier",
+        "visible": 997,
+        "hiddenBy": {}
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "courier",
+        "points": [
+          [
+            231,
+            193
+          ],
+          [
+            221,
+            157
+          ],
+          [
+            222,
+            135
+          ],
+          [
+            222,
+            92
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 2142
+      },
+      {
+        "id": "signal-approach",
+        "actor": "surveyor",
+        "points": [
+          [
+            155,
+            171
+          ],
+          [
+            151,
+            147
+          ],
+          [
+            148,
+            132
+          ],
+          [
+            145,
+            128
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 836
+      }
+    ]
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "palette": {
+    "stone": [
+      "#282f45",
+      "#435268",
+      "#59697d",
+      "#7b8695"
+    ],
+    "moss": [
+      "#28373c",
+      "#35444a",
+      "#465552"
+    ],
+    "contour": [
+      "#1e2133"
+    ]
+  },
+  "planeLegend": {
+    "side": "#647294",
+    "front": "#9e9d89",
+    "top": "#d8c5a4"
+  }
+}

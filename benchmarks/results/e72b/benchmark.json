@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "checkpoint": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174",
+  "rule": "production-plane-weathering",
+  "production": {
+    "file": "benchmarks/fixtures/e72b/production-lock.json",
+    "sha256": "7b4c1663ec935c5808b56819998048c8875a515c4669ae8a4c22a06419441c82"
+  },
+  "holdout": {
+    "file": "benchmarks/fixtures/e72b/holdout-lock.json",
+    "sha256": "1cfe539d65ba4dd924010df41373b49b6ce9e2369c2292e11f4a5872efc1c3bf"
+  },
+  "cases": [
+    {
+      "id": "r1",
+      "light": "day",
+      "seed": 83,
+      "source": {
+        "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+        "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+      },
+      "qa": "r1/day/qa.json",
+      "crops": [
+        {
+          "id": "west-wall",
+          "rect": [
+            41,
+            64,
+            76,
+            50
+          ]
+        },
+        {
+          "id": "east-wall",
+          "rect": [
+            215,
+            50,
+            78,
+            63
+          ]
+        }
+      ],
+      "changedByWall": {
+        "east-wall": 902,
+        "west-wall": 807
+      }
+    },
+    {
+      "id": "r1",
+      "light": "night",
+      "seed": 83,
+      "source": {
+        "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+        "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+      },
+      "qa": "r1/night/qa.json",
+      "crops": [
+        {
+          "id": "west-wall",
+          "rect": [
+            41,
+            64,
+            76,
+            50
+          ]
+        },
+        {
+          "id": "east-wall",
+          "rect": [
+            215,
+            50,
+            78,
+            63
+          ]
+        }
+      ],
+      "changedByWall": {
+        "east-wall": 902,
+        "west-wall": 807
+      }
+    },
+    {
+      "id": "h1",
+      "light": "day",
+      "seed": 2117,
+      "source": {
+        "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+        "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+      },
+      "qa": "h1/day/qa.json",
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            21,
+            104,
+            85,
+            48
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            89,
+            36,
+            98,
+            64
+          ]
+        }
+      ],
+      "changedByWall": {
+        "upper-wall": 1119,
+        "fallen-wall": 755
+      }
+    },
+    {
+      "id": "h1",
+      "light": "night",
+      "seed": 2117,
+      "source": {
+        "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+        "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+      },
+      "qa": "h1/night/qa.json",
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            21,
+            104,
+            85,
+            48
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            89,
+            36,
+            98,
+            64
+          ]
+        }
+      ],
+      "changedByWall": {
+        "upper-wall": 1119,
+        "fallen-wall": 755
+      }
+    },
+    {
+      "id": "h3",
+      "light": "day",
+      "seed": 5203,
+      "source": {
+        "file": "benchmarks/fixtures/e72b/h3-fern-cut-signal-gate.json",
+        "sha256": "714939dfe33e9aed9ec40f62a0eb08186153717cf2b8e950a67f0c58479e2f47"
+      },
+      "qa": "h3/day/qa.json",
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            35,
+            115,
+            78,
+            45
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            91,
+            33,
+            98,
+            65
+          ]
+        }
+      ],
+      "changedByWall": {
+        "upper-wall": 1049,
+        "fallen-wall": 535
+      }
+    },
+    {
+      "id": "h3",
+      "light": "night",
+      "seed": 5203,
+      "source": {
+        "file": "benchmarks/fixtures/e72b/h3-fern-cut-signal-gate.json",
+        "sha256": "714939dfe33e9aed9ec40f62a0eb08186153717cf2b8e950a67f0c58479e2f47"
+      },
+      "qa": "h3/night/qa.json",
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            35,
+            115,
+            78,
+            45
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            91,
+            33,
+            98,
+            65
+          ]
+        }
+      ],
+      "changedByWall": {
+        "upper-wall": 1049,
+        "fallen-wall": 535
+      }
+    }
+  ],
+  "payloads": 72,
+  "sha256": {
+    "r1/day/s0/native.png": "186f2aa4d960151facdf665f8ac7c9f6d64af0928ea239df987075a0c6e6bf7c",
+    "r1/day/s0/native-4x.png": "6502b735eeaacfac447527d35d3766aa08de048399964033ecf5dd49a9e05500",
+    "r1/day/s0/material.png": "ff644738d7e85aeebdf592ea08e7d6ab92506d40804940e13f9b7857bd861172",
+    "r1/day/s1/native.png": "0d66012552cd5fb9ec24e710262ca88ee244b4435b9c1f9e6fc9af31a08a4a5e",
+    "r1/day/s1/native-4x.png": "e3593383f61b9e84fa4b4e7a4fcb6ab5febb6a526b124d484cf15a89ba513485",
+    "r1/day/s1/material.png": "184b4ce0178c7ade4b3cdca5d8e2756985a13036ae8446f435980cc38e9ce784",
+    "r1/day/flat.png": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90",
+    "r1/day/silhouette.png": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7",
+    "r1/day/collision.png": "6604521aee278c4149e5fe2e200a9b49e26757977df7b6d7c9e11bcda96ec2b2",
+    "r1/day/planes.png": "346e180d51be133cba2ab2bb898efa4bd11037d6ed59ebde7e23e434090759ee",
+    "r1/day/rgba-diff.png": "22ac4f13c0d35cb9e0e9e706f3f586558d20536d7891f0480dbb7755375e138a",
+    "r1/day/qa.json": "de5be6fb01eefa9d92070f938c55a6c11bb05e3024fe9c0afc118f9a3d38e0ec",
+    "r1/night/s0/native.png": "7ff1b8cb5f6d64b991a18ccbe87abf3d8eb27e1afbb232dc985d49338553e917",
+    "r1/night/s0/native-4x.png": "d643846707336422de44df36ec6382b302fd7eeecc4e0989d1b65ead806fd04c",
+    "r1/night/s0/material.png": "eee4d64bcc3ac4d316b23c9dd9d106d8a45ecb2c9825aa23b028c2e39152a12d",
+    "r1/night/s1/native.png": "e5074a9d5314f2a120e094f11159dd9a14366bc19e93c7af6141235f8828ad15",
+    "r1/night/s1/native-4x.png": "8731ac297c81b743c9777ca5aa109d1c6ee0c6ae9b8eed8cb06ae6c8cbd13fb3",
+    "r1/night/s1/material.png": "00e175dec6869ed91ec6b9dab5eb3fb569ece32fddeb703e8b10a5a20f299730",
+    "r1/night/flat.png": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90",
+    "r1/night/silhouette.png": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7",
+    "r1/night/collision.png": "6604521aee278c4149e5fe2e200a9b49e26757977df7b6d7c9e11bcda96ec2b2",
+    "r1/night/planes.png": "346e180d51be133cba2ab2bb898efa4bd11037d6ed59ebde7e23e434090759ee",
+    "r1/night/rgba-diff.png": "22ac4f13c0d35cb9e0e9e706f3f586558d20536d7891f0480dbb7755375e138a",
+    "r1/night/qa.json": "c5fb29b7920ce8e3e74f77cfdcc261757656d69cb67f66d04f9557e01541534e",
+    "h1/day/s0/native.png": "10776ca5c5eda803fab9db71780dc9afaf80dba83d04d8ebac0f05af4f2ee561",
+    "h1/day/s0/native-4x.png": "73ba0b1c31e7ab69cb130252210b3db46f479f1d7bd2224a927dadf15ff171a6",
+    "h1/day/s0/material.png": "6907898d111da9216f9d572ca61b6e93bdda5b1d68d789557e3ae40df9ad1fa9",
+    "h1/day/s1/native.png": "9fd814a9808c22c5205ef5d2bf998b01f68455cbae9ace9a5d5d3e4c44c1c4e4",
+    "h1/day/s1/native-4x.png": "2aaf39e1306ba01ca8fd68415caa4417ab6d22327510f4b72ff1d4c28087db2d",
+    "h1/day/s1/material.png": "f56ba17ca51d9626c8ae454005de0a18f05e3d0233372b16f3ac290bafe6acb5",
+    "h1/day/flat.png": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d",
+    "h1/day/silhouette.png": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986",
+    "h1/day/collision.png": "5ed55f92048ebb2549cab757858a9caf446f33c456e98caa2d19ecf6dc50aef3",
+    "h1/day/planes.png": "2e98ccf11f1aa2d0b4861df2d9c572ed03161c5c7b7ad8e82207e27c31d7b76a",
+    "h1/day/rgba-diff.png": "76998b33f92bf2a570f2e19f789b2cc531dca52908b86529ab8acf07ced1fc66",
+    "h1/day/qa.json": "39a3530327db431cab9dcdc4d3cec02a7355d2cfa4ca030ab16ffeffdc9477ed",
+    "h1/night/s0/native.png": "321e05952d823c3803e8d75e8da3e2dc429338d8e501241b9868248c076efd3d",
+    "h1/night/s0/native-4x.png": "d95c9e59aeba6ac493dd70fd8c5a4683b45f3d760110b3367edb7aba892db477",
+    "h1/night/s0/material.png": "2701989a8e4e737d589921e79041c434d9a41ef4487e278d6da3766956254ddf",
+    "h1/night/s1/native.png": "c4622f945ddad2a0f889d3307338d6d70f7074ff72cdb809a88a888811c79030",
+    "h1/night/s1/native-4x.png": "62f006057eb0e310ed2af492ae2c95dbb61f7437ad90597adc2baa3f6e3bc16d",
+    "h1/night/s1/material.png": "a7484bbfb03d3f391d9324ddc87a085ffeb0a675d90f03c6041ff3de3df894ae",
+    "h1/night/flat.png": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d",
+    "h1/night/silhouette.png": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986",
+    "h1/night/collision.png": "5ed55f92048ebb2549cab757858a9caf446f33c456e98caa2d19ecf6dc50aef3",
+    "h1/night/planes.png": "2e98ccf11f1aa2d0b4861df2d9c572ed03161c5c7b7ad8e82207e27c31d7b76a",
+    "h1/night/rgba-diff.png": "76998b33f92bf2a570f2e19f789b2cc531dca52908b86529ab8acf07ced1fc66",
+    "h1/night/qa.json": "a7f329377e3de9f9c2945cfc127fcb6fc09c9bbef59b596d92fe501d37374bfe",
+    "h3/day/s0/native.png": "83fa6f235c0b2adc2a0a239356add6f77dafbce8fcc27a1357ce092e1eff6141",
+    "h3/day/s0/native-4x.png": "bb0b5693940fd206c5fd144425999fee8472c3eee03a167c48e7c683e6297b09",
+    "h3/day/s0/material.png": "6c5766a0d6b44eace4f75dc81bbc614b3ab1c53e83ca2c605cbc2eda9d05c547",
+    "h3/day/s1/native.png": "f6921eae77cc99afdb3139169209c405c41b0100a48803193aa256faea002a3e",
+    "h3/day/s1/native-4x.png": "c06784f55a0fbace4fa644288546372a35976cf3caf7c8d417797c1e52ca19d6",
+    "h3/day/s1/material.png": "5ec4819c7b3d4afedc5537c684781d422c0cdd3f1b0d5d7e526d5a105a5a3f0f",
+    "h3/day/flat.png": "318187132ed6bc7089b16dd197f5e17c5b990be1894f4b690344cbc96571d547",
+    "h3/day/silhouette.png": "f7ea19828116e0f101cff45e69ffc4f1c4551f14ce0e6984d286558d546bfa4c",
+    "h3/day/collision.png": "2decc47b8e4d2a7409e37f396c96cd0ffdc1dd209641ad3258f434f905a40ec2",
+    "h3/day/planes.png": "94967789101e87e9f8f08f4374a3f47deb7cc09c9608ef87bb9bd481caa20d25",
+    "h3/day/rgba-diff.png": "ee8b96b042ef52d9e1bd02989889db8a3be67faf4e8d7c1913ddf59cda8e0fc2",
+    "h3/day/qa.json": "f57acf0b112a83f10a12b4ecd051e8dba0dcddf3cbacb37c010846e9a2b900a2",
+    "h3/night/s0/native.png": "52a50f4c34aa17011dd345b2ca387093b9c2fe8cffe4003458ed3314b531c2da",
+    "h3/night/s0/native-4x.png": "c7dab41264d1e138b3e1b2bee86b147fee283f9ad5b380c2a285bf2b83ae9166",
+    "h3/night/s0/material.png": "ff27538cc8338b948c9f117ea3583b5e1f30ca4a388429ea694d69f8fffb8b02",
+    "h3/night/s1/native.png": "3c3c647d208fa35d179536813ae11960802faf41ccd6040a1f87157471ee9fdb",
+    "h3/night/s1/native-4x.png": "bef84435c0cc2b517a441c8960cb36a87c561ffe2b59b4e6ffe7e2685f0d0216",
+    "h3/night/s1/material.png": "4e3ffa25f7fdd36bd07553cad581672ac8b938845c9abd783ae5fbac8773c758",
+    "h3/night/flat.png": "318187132ed6bc7089b16dd197f5e17c5b990be1894f4b690344cbc96571d547",
+    "h3/night/silhouette.png": "f7ea19828116e0f101cff45e69ffc4f1c4551f14ce0e6984d286558d546bfa4c",
+    "h3/night/collision.png": "2decc47b8e4d2a7409e37f396c96cd0ffdc1dd209641ad3258f434f905a40ec2",
+    "h3/night/planes.png": "94967789101e87e9f8f08f4374a3f47deb7cc09c9608ef87bb9bd481caa20d25",
+    "h3/night/rgba-diff.png": "ee8b96b042ef52d9e1bd02989889db8a3be67faf4e8d7c1913ddf59cda8e0fc2",
+    "h3/night/qa.json": "08ea8985846f56646043d4e1a60fa52d2e0827a0c0a9f64de43283c71cb17274"
+  },
+  "art": "PENDING_HUMAN_REVIEW"
+}
