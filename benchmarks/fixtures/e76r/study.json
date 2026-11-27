@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "base": "1f5350a67e599c4228591693c995cee49d21b7b8",
+  "implementation": "ec5d8c6ec3d9130bd118dfcb8bcc1528a1158faa",
+  "e75r": "80c0fe247cfa2e8438d9c73e744cbbb4df1da00c",
+  "caseRoles": {
+    "mistfen-ferry-landing": "development",
+    "floodgate-maintenance-yard": "known-diagnostic",
+    "canal-intake-service-platform": "fresh-holdout"
+  },
+  "rule": "One B2 branch, one fresh holdout, zero AI calls. Holdout parameters and rubric are immutable; generate only after publishing the development hash freeze.",
+  "criteria": [
+    "semanticRecognition",
+    "visualQuality",
+    "gameplayQuality",
+    "generalization"
+  ],
+  "required": [
+    "land-to-platform route for Surveyor 19x5",
+    "reachable maintenance stand beside wheel",
+    "stationary water open beneath raised gate",
+    "day/night invariance for collision and anchors",
+    "same camera, terrain, locked character and prop sources",
+    "exact tilemap/foreground RGBA replay"
+  ],
+  "limits": [
+    "BOAT_ASSET_CAPABILITY_GAP",
+    "static gated water only",
+    "one height plane for collision",
+    "runtime import not tested"
+  ]
+}

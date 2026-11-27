@@ -54,3 +54,7 @@ benchmarks/fixtures/e76/*.json text eol=lf
 benchmarks/results/e76/SHA256SUMS text eol=lf
 src/experiments/semantic-environment*.ts text eol=lf
 scripts/benchmark-e76.ts text eol=lf
+benchmarks/fixtures/e76r/*.json text eol=lf
+benchmarks/results/e76r/SHA256SUMS text eol=lf
+src/experiments/functional-waterfront.ts text eol=lf
+scripts/benchmark-e76r.ts text eol=lf
