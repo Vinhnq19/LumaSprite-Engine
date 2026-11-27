@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-27 ICT",
+  "html": "docs/reports/E7.6-PORTABLE-ART-REVIEW.html",
+  "sha256": "ebdccf7aa2c945f3c831038a118713775afc518b071a4ec38794c9e07a771ef2",
+  "bytes": 3448012,
+  "validationLocation": "A temporary Windows directory outside the Engine repository. Only the HTML was copied.",
+  "offline": true,
+  "scheme": "file:",
+  "title": "LumaSprite Engine · E7.6 Art Review",
+  "renderedImageElements": 76,
+  "uniquePNG": 74,
+  "nearestPairs": 8,
+  "attachments": 25,
+  "externalDependencies": 0,
+  "reviewTemplate": "PASS",
+  "populatedReviewExport": "PASS",
+  "evidenceDownload": "PASS",
+  "nativeDimensions": "320x208",
+  "zoomDimensions": "1280x832",
+  "synchronizedPan": "PASS",
+  "browser": "Chrome/158.0.0.0"
+}
