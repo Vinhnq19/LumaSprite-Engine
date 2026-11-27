@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-27 ICT",
+  "html": "docs/reports/E8-RUNTIME-ACCEPTANCE-REPORT.html",
+  "sha256": "7e003b200b715bd1b2b856ac57635a6b8922aa9a3126f251b3aaae0b578db2c7",
+  "size": 959579,
+  "location": "Windows Temp outside the repository, standalone copy",
+  "offline": true,
+  "source": "file:",
+  "images": 28,
+  "exactNearestPairs": 14,
+  "metadata": 16,
+  "externalDependencies": 0,
+  "reviewExport": "PASS",
+  "evidenceExport": "PASS",
+  "synchronizedPan": "PASS",
+  "chrome": "Chrome/158.0.0.0"
+}
