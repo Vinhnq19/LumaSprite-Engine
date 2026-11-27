@@ -4,6 +4,7 @@
 
 | Cần xem | Báo cáo |
 | --- | --- |
+| E7.6R · Functional Environment Quality | [Portable Art Review](E7.6R-PORTABLE-ART-REVIEW.html) · [E7.6 Closeout và Root-Cause Audit](e76r-functional-environment.md) · [E8 Preflight](../integration/e8-environment-preflight.md) · [QA](../../benchmarks/results/e76r/verification.json) · [Chrome](../../benchmarks/results/e76r/portable-verification.json) · [SHA-256](../../benchmarks/results/e76r/SHA256SUMS) · [Human Review](../../benchmarks/results/e76r/human-review.json) |
 | E7.6 · Mistfen Ferry Landing và Floodgate Maintenance Yard | [Portable Art Review](E7.6-PORTABLE-ART-REVIEW.html) · [Capability, contract và E8 gaps](e76-environment-pilot.md) · [QA](../../benchmarks/results/e76/verification.json) · [Chrome offline](../../benchmarks/results/e76/portable-verification.json) · [SHA-256](../../benchmarks/results/e76/SHA256SUMS) · [Human Review](../../benchmarks/results/e76/human-review.json) |
 | E7.5R · Ridge, Marsh và Canal Porter | [Portable Art Review](E7.5R-PORTABLE-ART-REVIEW.html) · [QA](../../benchmarks/results/e75r/verification.json) · [SHA-256](../../benchmarks/results/e75r/SHA256SUMS) · [Human Review](../../benchmarks/results/e75r/human-review.json) |
 | E7.5R · Fair benchmark và Animation Gate | [Audit và đề xuất](e75r-fair-comparison.md) · [Performance](../../benchmarks/results/e75r/performance.json) |
