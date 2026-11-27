@@ -58,3 +58,6 @@ benchmarks/fixtures/e76r/*.json text eol=lf
 benchmarks/results/e76r/SHA256SUMS text eol=lf
 src/experiments/functional-waterfront.ts text eol=lf
 scripts/benchmark-e76r.ts text eol=lf
+benchmarks/results/e8/SHA256SUMS text eol=lf
+benchmarks/results/e8/*.xml text eol=lf
+scripts/e8-unity/** text eol=lf

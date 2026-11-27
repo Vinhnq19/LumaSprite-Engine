@@ -1,0 +1,28 @@
+{
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "cliSmoke": "PASS",
+  "engineTests": {
+    "passed": 76,
+    "total": 76
+  },
+  "adapterTests": 3,
+  "e76rInputPayloads": 142,
+  "history": {
+    "sha256Matches": 805,
+    "reproducedArtifacts": 361,
+    "e75rPayloads": 263,
+    "e76Payloads": 91,
+    "e76rPayloads": 142,
+    "regression": "E3.4, E6.1R–E6.4, E7.1–E7.6R"
+  },
+  "studio": {
+    "head": "c56837e344dbb42369dc92ebd379e28255db7d84",
+    "remoteMain": "593650101ed0cd2a54d045197911fc5b7a8bdd83",
+    "e8SceneAdapter": "NOT_RUN",
+    "reason": "Native Studio import outside E8 Unity brief",
+    "e76rPngRoundTrips": 24
+  },
+  "aiCalls": 0
+}

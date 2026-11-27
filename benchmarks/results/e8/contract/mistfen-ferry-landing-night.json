@@ -1,0 +1,33 @@
+{
+  "id": "mistfen-ferry-landing",
+  "light": "night",
+  "clearance": {
+    "x": 9,
+    "y": 2
+  },
+  "spawn": {
+    "x": 113,
+    "y": 174
+  },
+  "landmark": {
+    "kind": "boarding-sill",
+    "at": {
+      "x": 286,
+      "y": 145
+    },
+    "stand": {
+      "x": 270,
+      "y": 145
+    }
+  },
+  "source": {
+    "fixture": "5be9e73304b93027ba61a9d36ed8437af863d6f41ca4c8ae8773489624248447",
+    "lockedScene": "7ee613bb482b390f8e47ab8131214230c8dc1e090d149946b49437e7a840e0f4",
+    "lockedMap": "0441a754e2c7582972058b179ec1177b9ee78f374cff514ae641dc52da4e2402",
+    "lockedFrame": "8c017a5694597f358303cf9ff6d077366ee3b92fa0c8b3d09394cdb17f56a005",
+    "rgba": "4b187d7f2b663d49ee36d084b561d45629c3cf99dc7f33b12e3eb68efbf151b9"
+  },
+  "aperture": null,
+  "colliderBoxes": 87,
+  "tiles": 260
+}

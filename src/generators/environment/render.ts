@@ -16,6 +16,8 @@ import { buildRuins,canopyGround,connectedPixels } from './ruins.ts';
 type Footprint = { id: string; kind: 'architecture' | 'prop'; points: readonly Point[] };
 type Piece = ReturnType<typeof environmentKit>['wall'];
 type Layer = { id: string; kind: 'building' | 'prop' | 'actor'; at: Point; piece: Piece };
+export const collectEnvironmentLayers = Symbol('collectEnvironmentLayers');
+export type EnvironmentLayerStack = { underlay: Raster; owners: Raster; layers: readonly Layer[] };
 const ownerColors = { terrain: '#364950', path: '#8c735a', shadow: '#3b2c55', building: '#81aeba', prop: '#dc9f64', actor: '#98e2c4' } as const;
 
 const coverage = (r: Raster, x: number, y: number) => r.rgba[(y * r.w + x) * 4 + 3] === 255;
@@ -66,7 +68,9 @@ export async function loadEnvironment(input: unknown) {
   return { spec, style, ground, terrain: terrain.material.diagnostics.ramps, assets };
 }
 
-export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironment>>, finish: EnvironmentFinish,
+export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironment>> & {
+  [collectEnvironmentLayers]?: (stack: EnvironmentLayerStack) => void;
+}, finish: EnvironmentFinish,
   illumination: EnvironmentLight, options?: { composition: SceneCompositionSpec; kitSeed: number; probe?: string; flat?: boolean }) {
   const composition = options?.composition;
   const site = composition?.ruins;
@@ -424,6 +428,9 @@ export function renderEnvironment(input: Awaited<ReturnType<typeof loadEnvironme
   const layerOverlay = composite([groundOwners, silhouette(shadow, pack(ownerColors.shadow)), silhouette(recess,pack(ownerColors.building))]);
   const owners = new Int16Array(w * h).fill(-1);
   layers.sort((a,b) => a.at[1] - b.at[1] || a.id.localeCompare(b.id));
+  if (input[collectEnvironmentLayers]) input[collectEnvironmentLayers]({
+    underlay: composite([raster]), owners: composite([layerOverlay]), layers,
+  });
   const bounds = layers.map(({ id, kind, at, piece }, layerIndex) => {
     const [left, top] = [at[0] - piece.origin[0], at[1] - piece.origin[1]];
     place(raster, materialMask, piece, at);

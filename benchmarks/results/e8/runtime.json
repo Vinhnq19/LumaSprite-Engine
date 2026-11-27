@@ -1,0 +1,716 @@
+{
+    "editor": "6000.3.21f1",
+    "platform": "WindowsPlayer",
+    "graphics": "Direct3D11",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "cpu": "AMD Ryzen 7 4800H with Radeon Graphics ",
+    "revision": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd",
+    "systemRamMB": 15791,
+    "screenWidth": 704,
+    "screenHeight": 472,
+    "width": 320,
+    "height": 208,
+    "targetFps": 60,
+    "ppu": 32,
+    "idleDurations": [
+        360,
+        480,
+        360,
+        600
+    ],
+    "walkDurations": [
+        120,
+        115,
+        95,
+        110,
+        120,
+        115,
+        95,
+        110
+    ],
+    "idleCycleMs": 1800,
+    "walkCycleMs": 880,
+    "timingBoundaries": true,
+    "cases": [
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "day",
+            "staticCapture": "mistfen-ferry-landing-day-spawn.png",
+            "routeCapture": "mistfen-ferry-landing-day-interaction.png",
+            "interaction": "boarding-sill",
+            "stagingCapture": "",
+            "steps": 186,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 29,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 547.0062866210938,
+            "tilemapBuildMs": 7.816699981689453,
+            "meanFrameMs": 31.59518814086914,
+            "p95FrameMs": 16.687400817871095,
+            "meanCameraSubmitMs": 0.2590521574020386,
+            "meanStepMs": 0.06353279948234558,
+            "meanAnimationSubmitMs": 0.0105634406208992,
+            "allocatedBytes": 56607799,
+            "reservedBytes": 134037504,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "supply-barrel",
+                    "from": {
+                        "x": 155,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 156,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "front-2-1",
+                    "from": {
+                        "x": 98,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 98,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 203,
+                        "y": 180
+                    },
+                    "to": {
+                        "x": 204,
+                        "y": 180
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-2",
+                    "from": {
+                        "x": 266,
+                        "y": 158
+                    },
+                    "to": {
+                        "x": 267,
+                        "y": 158
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ]
+        },
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "night",
+            "staticCapture": "mistfen-ferry-landing-night-spawn.png",
+            "routeCapture": "mistfen-ferry-landing-night-interaction.png",
+            "interaction": "boarding-sill",
+            "stagingCapture": "",
+            "steps": 186,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 29,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 27.890399932861329,
+            "tilemapBuildMs": 1.785599946975708,
+            "meanFrameMs": 16.66914939880371,
+            "p95FrameMs": 16.66759490966797,
+            "meanCameraSubmitMs": 0.23298119008541108,
+            "meanStepMs": 0.058454301208257678,
+            "meanAnimationSubmitMs": 0.0035397850442677738,
+            "allocatedBytes": 57579567,
+            "reservedBytes": 134037504,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "supply-barrel",
+                    "from": {
+                        "x": 155,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 156,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "front-2-1",
+                    "from": {
+                        "x": 98,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 98,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 203,
+                        "y": 180
+                    },
+                    "to": {
+                        "x": 204,
+                        "y": 180
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-2",
+                    "from": {
+                        "x": 266,
+                        "y": 158
+                    },
+                    "to": {
+                        "x": 267,
+                        "y": 158
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ]
+        },
+        {
+            "id": "floodgate-maintenance-yard",
+            "light": "day",
+            "staticCapture": "floodgate-maintenance-yard-day-spawn.png",
+            "routeCapture": "floodgate-maintenance-yard-day-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "",
+            "steps": 109,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 23,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 32.72639846801758,
+            "tilemapBuildMs": 1.559000015258789,
+            "meanFrameMs": 16.667278289794923,
+            "p95FrameMs": 16.667701721191408,
+            "meanCameraSubmitMs": 0.25804221630096438,
+            "meanStepMs": 0.056277982890605929,
+            "meanAnimationSubmitMs": 0.003800000064074993,
+            "allocatedBytes": 58272415,
+            "reservedBytes": 134037504,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "maintenance-barrel",
+                    "from": {
+                        "x": 150,
+                        "y": 175
+                    },
+                    "to": {
+                        "x": 150,
+                        "y": 176
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 191,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 192,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "sluice-gateway-0",
+                    "from": {
+                        "x": 133,
+                        "y": 124
+                    },
+                    "to": {
+                        "x": 132,
+                        "y": 124
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-post",
+                    "from": {
+                        "x": 96,
+                        "y": 152
+                    },
+                    "to": {
+                        "x": 95,
+                        "y": 152
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ]
+        },
+        {
+            "id": "floodgate-maintenance-yard",
+            "light": "night",
+            "staticCapture": "floodgate-maintenance-yard-night-spawn.png",
+            "routeCapture": "floodgate-maintenance-yard-night-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "",
+            "steps": 109,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 23,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 32.908199310302737,
+            "tilemapBuildMs": 1.9491000175476075,
+            "meanFrameMs": 16.669321060180665,
+            "p95FrameMs": 16.667800903320314,
+            "meanCameraSubmitMs": 0.21387064456939698,
+            "meanStepMs": 0.04750458523631096,
+            "meanAnimationSubmitMs": 0.0031559632625430824,
+            "allocatedBytes": 59125575,
+            "reservedBytes": 134037504,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "maintenance-barrel",
+                    "from": {
+                        "x": 150,
+                        "y": 175
+                    },
+                    "to": {
+                        "x": 150,
+                        "y": 176
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 191,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 192,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "sluice-gateway-0",
+                    "from": {
+                        "x": 133,
+                        "y": 124
+                    },
+                    "to": {
+                        "x": 132,
+                        "y": 124
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-post",
+                    "from": {
+                        "x": 96,
+                        "y": 152
+                    },
+                    "to": {
+                        "x": 95,
+                        "y": 152
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ]
+        },
+        {
+            "id": "canal-intake-service-platform",
+            "light": "day",
+            "staticCapture": "canal-intake-service-platform-day-spawn.png",
+            "routeCapture": "canal-intake-service-platform-day-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "canal-intake-service-platform-day-staging.png",
+            "steps": 126,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": 19,
+            "apertureStaging": 140,
+            "apertureThreshold": 35,
+            "sortOrderChanges": 47,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 32.93080139160156,
+            "tilemapBuildMs": 1.086899995803833,
+            "meanFrameMs": 16.66863250732422,
+            "p95FrameMs": 16.6676025390625,
+            "meanCameraSubmitMs": 0.21904683113098145,
+            "meanStepMs": 0.058143649250268939,
+            "meanAnimationSubmitMs": 0.003202380845323205,
+            "allocatedBytes": 59812991,
+            "reservedBytes": 134037504,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "intake-crate",
+                    "from": {
+                        "x": 144,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 143,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 198,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 199,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "back-wall",
+                    "from": {
+                        "x": 180,
+                        "y": 112
+                    },
+                    "to": {
+                        "x": 180,
+                        "y": 111
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-1",
+                    "from": {
+                        "x": 213,
+                        "y": 100
+                    },
+                    "to": {
+                        "x": 213,
+                        "y": 99
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ]
+        },
+        {
+            "id": "canal-intake-service-platform",
+            "light": "night",
+            "staticCapture": "canal-intake-service-platform-night-spawn.png",
+            "routeCapture": "canal-intake-service-platform-night-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "canal-intake-service-platform-night-staging.png",
+            "steps": 126,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": 19,
+            "apertureStaging": 140,
+            "apertureThreshold": 35,
+            "sortOrderChanges": 47,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 32.5547981262207,
+            "tilemapBuildMs": 2.1103999614715578,
+            "meanFrameMs": 16.671539306640626,
+            "p95FrameMs": 16.667701721191408,
+            "meanCameraSubmitMs": 0.23973174393177033,
+            "meanStepMs": 0.06360000371932984,
+            "meanAnimationSubmitMs": 0.0034214286133646967,
+            "allocatedBytes": 60651223,
+            "reservedBytes": 134037504,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "intake-crate",
+                    "from": {
+                        "x": 144,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 143,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 198,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 199,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "back-wall",
+                    "from": {
+                        "x": 180,
+                        "y": 112
+                    },
+                    "to": {
+                        "x": 180,
+                        "y": 111
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-1",
+                    "from": {
+                        "x": 213,
+                        "y": 100
+                    },
+                    "to": {
+                        "x": 213,
+                        "y": 99
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ]
+        }
+    ]
+}

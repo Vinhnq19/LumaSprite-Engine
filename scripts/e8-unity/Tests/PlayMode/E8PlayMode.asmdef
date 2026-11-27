@@ -1,0 +1,9 @@
+{
+  "name": "E8PlayMode",
+  "references": [
+    "E8Runtime"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

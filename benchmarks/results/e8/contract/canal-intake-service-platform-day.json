@@ -1,0 +1,54 @@
+{
+  "id": "canal-intake-service-platform",
+  "light": "day",
+  "clearance": {
+    "x": 9,
+    "y": 2
+  },
+  "spawn": {
+    "x": 147,
+    "y": 156
+  },
+  "landmark": {
+    "kind": "static-maintenance-wheel",
+    "at": {
+      "x": 226,
+      "y": 83
+    },
+    "stand": {
+      "x": 226,
+      "y": 109
+    }
+  },
+  "source": {
+    "fixture": "63de5633c68ad0467a0e27059c58dae3ecdbdff564ef1437ee912d12958fe56c",
+    "lockedScene": "b1feb36c26a13cc5b88dea18f637410930fa7e59d91c5862522ef9d9392735f7",
+    "lockedMap": "b373906ce97d512afd6b16a9834deaa39ec9af7bc6e4d26f7c452c8cb6f117d4",
+    "lockedFrame": "c7b98a8bd99a828aa75e019c220a582872b9c3227c4077ef9c29703e387ec714",
+    "rgba": "3c08fc4b996ed1f89b2bab4d1a7a4dcbb50fd8524c8ad935b3c3114d202a9c46"
+  },
+  "aperture": {
+    "x": 244,
+    "y": 61,
+    "w": 14,
+    "h": 10,
+    "water": [
+      "#263e49",
+      "#344f5a",
+      "#3d6267",
+      "#537977"
+    ],
+    "threshold": 35,
+    "expected": 19,
+    "staging": {
+      "x": 271,
+      "y": 110
+    },
+    "original": {
+      "x": 244,
+      "y": 110
+    }
+  },
+  "colliderBoxes": 77,
+  "tiles": 260
+}
