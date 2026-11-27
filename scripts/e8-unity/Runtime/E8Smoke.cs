@@ -27,6 +27,16 @@ public sealed class E8Smoke
         public bool stagingWalkable, stagingDepth, stagingPath;
         public float warmupMs, steadyMeanMs, steadyP95Ms, steadyMaxMs, firstMovementFrameMs, captureMs, switchMs;
         public int steadyFrames, spikesOver25ms, garbageCollections;
+        // E8.5 Studio provenance & dynamic interaction fields
+        public int spawnX, spawnY, studioRevision;
+        public string approvalStatus, zipSha256, zipName, interactionId, interactionLabel, linkedEntityId;
+        public bool linkedEntityResolved;
+    }
+    [Serializable] sealed class StudioVariantResult
+    {
+        public string variant, id, light, capture, promptCapture, zipName, zipSha256, approvalStatus, interactionLabel, prompt;
+        public int studioRevision, spawnX, spawnY;
+        public bool validated;
     }
     [Serializable] sealed class AnimationFrame
     {
@@ -43,6 +53,7 @@ public sealed class E8Smoke
         public int idleCycleMs, walkCycleMs;
         public bool timingBoundaries;
         public CaseResult[] cases;
+        public StudioVariantResult[] studioVariants;
         public AnimationFrame[] animation;
         public double startupToAwakeMs, awakeToSceneMs, processToFirstWorldCaptureMs;
         public string performanceClock, facing;
@@ -112,7 +123,7 @@ public sealed class E8Smoke
         E8Assets.Check(screen.width == Screen.width && screen.height == Screen.height, "screen capture dimensions");
         File.WriteAllBytes(Path.Combine(output, file), screen.EncodeToPNG());
         UnityEngine.Object.Destroy(screen);
-        row.captureMs += (float)clock.Elapsed.TotalMilliseconds;
+        if (row != null) row.captureMs += (float)clock.Elapsed.TotalMilliseconds;
         game.ProofOverlay = false;
     }
 
@@ -164,7 +175,48 @@ public sealed class E8Smoke
             facing = "Existing E5 one-way sheet. Cardinal movement does not select a new directional sprite."
         };
         var results = new List<CaseResult>();
+        var variants = new List<StudioVariantResult>();
         var animation = new List<AnimationFrame>();
+
+        // Run extra E8.5 Studio variants when imported into Resources/E8Input/
+        foreach (var extra in new[] {
+            new[] { "day-e84", "mistfen-ferry-landing/day-e84/scene", "mistfen-ferry-landing", "day" },
+            new[] { "day-rollback", "mistfen-ferry-landing/day-rollback/scene", "mistfen-ferry-landing", "day" },
+        })
+        {
+            if (Resources.Load<TextAsset>("E8Input/" + extra[1]) == null) continue;
+            var l = game.LoadPath(extra[1], extra[2], extra[3] == "night");
+            while (l.MoveNext()) yield return l.Current;
+            for (int i = 0; i < 8; i++) { game.Draw(); yield return null; }
+            var d = game.World.Data;
+            string worldFile = extra[2] + "-" + extra[0] + "-spawn";
+            Capture(worldFile);
+            VerifyOrder(game.World);
+            foreach (var node in d.route)
+                if (node.Point != game.World.Position) E8Assets.Check(game.World.Step(node.Point - game.World.Position), "variant route blocked");
+            string pFile = extra[2] + "-" + extra[0] + "-prompt.png";
+            var sc = ScreenShot(pFile, null);
+            while (sc.MoveNext()) yield return sc.Current;
+            variants.Add(new StudioVariantResult
+            {
+                variant = extra[0],
+                id = d.id,
+                light = d.light,
+                capture = worldFile + ".png",
+                promptCapture = pFile,
+                zipName = d.studio?.zipName ?? "",
+                zipSha256 = d.studio?.zipSha256 ?? "",
+                approvalStatus = d.studio?.approvalStatus ?? "",
+                studioRevision = d.studio?.studioRevision ?? 0,
+                spawnX = d.spawn.x,
+                spawnY = d.spawn.y,
+                interactionLabel = d.landmark.label ?? "",
+                prompt = "E · " + E8InteractionHud.PromptFor(d, game.World.ActiveTarget),
+                validated = true,
+            });
+            Debug.Log("E85_VARIANT_PASS " + extra[0] + " spawn=" + d.spawn.x + "," + d.spawn.y);
+        }
+
         for (int index = 0; index < game.Bundle.cases.Length; index++) for (int time = 0; time < 2; time++)
         {
             var clock = Stopwatch.StartNew();
@@ -172,9 +224,20 @@ public sealed class E8Smoke
             while (loading.MoveNext()) yield return loading.Current;
             var world = game.World;
             var data = world.Data;
-            var row = new CaseResult { id = data.id, light = data.light, loadMs = (float)clock.Elapsed.TotalMilliseconds,
+            var row = new CaseResult {
+                id = data.id, light = data.light, loadMs = (float)clock.Elapsed.TotalMilliseconds,
                 atlasCells = data.tiles.ids.Length, tilemapBuildMs = world.TilemapBuildMs, apertureVisible = -1, apertureStaging = -1, apertureThreshold = -1,
-                staticCapture = data.id + "-" + data.light + "-spawn.png" };
+                staticCapture = data.id + "-" + data.light + "-spawn.png",
+                spawnX = data.spawn.x, spawnY = data.spawn.y,
+                studioRevision = data.studio?.studioRevision ?? 0,
+                approvalStatus = data.studio?.approvalStatus ?? "",
+                zipSha256 = data.studio?.zipSha256 ?? "",
+                zipName = data.studio?.zipName ?? "",
+                interactionId = data.landmark.id ?? "",
+                interactionLabel = data.landmark.label ?? "",
+                linkedEntityId = data.landmark.linkedEntityId ?? "",
+                linkedEntityResolved = string.IsNullOrEmpty(data.landmark.linkedEntityId) || world.Objects.ContainsKey(data.landmark.linkedEntityId),
+            };
             string prefix = data.id + "-" + data.light;
             row.switchMs = results.Count == 0 ? 0 : row.loadMs;
             row.marker = new E8Pixel { x = E8InteractionHud.MarkerPixel(data, data.landmark).x, y = E8InteractionHud.MarkerPixel(data, data.landmark).y };
@@ -220,20 +283,36 @@ public sealed class E8Smoke
                 row.apertureThreshold = data.aperture.threshold;
                 E8Assets.Check(row.apertureVisible == data.aperture.expected && row.apertureVisible < row.apertureThreshold,
                     "locked Canal known failure changed: " + row.apertureVisible);
-                E8Assets.Check(data.Fits(data.aperture.staging.Point) && !world.PhysicsBlocked(data.aperture.staging.Point), "staging location blocked");
-                world.MoveProp("courier", data.aperture.staging.Point);
+                string stagingRes = "canal-intake-service-platform/" + data.light + "-staging/scene";
+                if (Resources.Load<TextAsset>("E8Input/" + stagingRes) != null)
+                {
+                    var loadStaging = game.LoadPath(stagingRes, data.id, time != 0, index);
+                    while (loadStaging.MoveNext()) yield return loadStaging.Current;
+                    for (int i = 0; i < 8; i++) { game.Draw(); yield return null; }
+                    world = game.World;
+                    var sData = world.Data;
+                    var courier = Array.Find(sData.layers, layer => layer.id == "courier");
+                    E8Assets.Check(courier.at.x == 271 && courier.at.y == 110, "Studio staging courier position mismatch");
+                    row.stagingWalkable = sData.Fits(courier.at.Point) && !world.PhysicsBlocked(courier.at.Point);
+                    row.stagingDepth = world.Objects["courier"].sortingOrder == E8World.Order(courier.at.y, courier.order);
+                }
+                else
+                {
+                    E8Assets.Check(data.Fits(data.aperture.staging.Point) && !world.PhysicsBlocked(data.aperture.staging.Point), "staging location blocked");
+                    world.MoveProp("courier", data.aperture.staging.Point);
+                    var courier = Array.Find(data.layers, layer => layer.id == "courier");
+                    row.stagingWalkable = true;
+                    row.stagingDepth = world.Objects["courier"].sortingOrder == E8World.Order(data.aperture.staging.y, courier.order);
+                }
                 row.stagingCapture = data.id + "-" + data.light + "-staging.png";
                 captureClock.Restart();
-                row.apertureStaging = Aperture(data, Capture(Path.GetFileNameWithoutExtension(row.stagingCapture)));
+                row.apertureStaging = Aperture(world.Data, Capture(Path.GetFileNameWithoutExtension(row.stagingCapture)));
                 row.captureMs += (float)captureClock.Elapsed.TotalMilliseconds;
-                row.stagingWalkable = true;
-                var courier = Array.Find(data.layers, layer => layer.id == "courier");
-                row.stagingDepth = world.Objects["courier"].sortingOrder == E8World.Order(data.aperture.staging.y, courier.order);
-                E8Assets.Check(row.stagingDepth && row.apertureStaging == data.aperture.w * data.aperture.h, "staging depth or water ROI");
-                foreach (var node in data.route)
+                E8Assets.Check(row.stagingWalkable && row.stagingDepth && row.apertureStaging == world.Data.aperture.w * world.Data.aperture.h, "staging depth or water ROI");
+                foreach (var node in world.Data.route)
                     if (node.Point != world.Position) E8Assets.Check(world.Step(node.Point - world.Position), "staging route blocked");
                 E8Assets.Check(game.HandleInteractionPress(true), "staging interaction");
-                row.stagingInteraction = data.landmark.kind;
+                row.stagingInteraction = world.Data.landmark.label ?? world.Data.landmark.kind;
                 row.stagingPath = world.Near;
                 E8Assets.Check(row.stagingPath, "staging reach");
                 yield return null;
@@ -287,15 +366,15 @@ public sealed class E8Smoke
             row.steadyMaxMs = steady.Max();
             row.spikesOver25ms = steady.Count(v => v > 25);
 
-            row.prompt = "E · " + E8InteractionHud.PromptFor(data.id);
+            row.prompt = "E · " + E8InteractionHud.PromptFor(data, world.ActiveTarget);
             row.promptCapture = prefix + "-prompt.png";
-            E8Assets.Check(world.ActiveTarget == world.Data.landmark && !game.HandleInteractionPress(false) && game.Feedback == "", "prompt eligibility");
+            E8Assets.Check(world.ActiveTarget != null && !game.HandleInteractionPress(false) && game.Feedback == "", "prompt eligibility");
             var prompt = ScreenShot(row.promptCapture, row);
             while (prompt.MoveNext()) yield return prompt.Current;
             row.sharedPress = game.HandleInteractionPress(true);
             row.duplicateRejected = !game.HandleInteractionPress(true);
             E8Assets.Check(row.sharedPress && row.duplicateRejected && emitted == data.landmark.kind && world.Interactions == 1, "one event per press");
-            row.feedback = E8InteractionHud.FeedbackFor(data.id);
+            row.feedback = E8InteractionHud.FeedbackFor(data, world.ActiveTarget);
             E8Assets.Check(game.Feedback == row.feedback, "feedback text");
             row.feedbackCapture = prefix + "-feedback.png";
             var feedback = ScreenShot(row.feedbackCapture, row);
@@ -324,7 +403,6 @@ public sealed class E8Smoke
             game.Save(save);
             var expected = world.Position;
             var oldScene = world.Scene;
-            // Return to another real Unity scene before restoring the saved position and light.
             E8Assets.Check(game.HandleInteractionPress(true), "pre-switch feedback");
             var switchWorld = game.Load((index + 1) % game.Bundle.cases.Length, time == 0);
             while (switchWorld.MoveNext()) yield return switchWorld.Current;
@@ -333,10 +411,10 @@ public sealed class E8Smoke
             var reload = game.Reload(save);
             while (reload.MoveNext()) yield return reload.Current;
             E8Assets.Check(game.World.Position == expected && game.World.Near && !oldScene.isLoaded && game.World.Scene.isLoaded &&
-                game.World.Interactions == 0, "Unity unload/reload and save state");
+                game.World.Interactions == 0 && (game.World.Data.studio?.studioRevision ?? 0) == (data.studio?.studioRevision ?? 0), "Unity unload/reload and save state");
             File.Delete(save);
             row.saveReload = true;
-            row.feedbackResets = game.Feedback == "" && game.World.ActiveTarget == game.World.Data.landmark;
+            row.feedbackResets = game.Feedback == "" && game.World.ActiveTarget != null;
             E8Assets.Check(row.feedbackResets, "reloaded prompt state");
             if (index == 0 && time == 0)
             {
@@ -351,7 +429,8 @@ public sealed class E8Smoke
             if (time == 1)
             {
                 var day = results[results.Count - 1];
-                row.dayNightAligned = row.steps == day.steps && row.atlasCells == day.atlasCells && row.probes.Length == day.probes.Length;
+                bool sameSpawn = row.spawnX == day.spawnX && row.spawnY == day.spawnY;
+                row.dayNightAligned = row.atlasCells == day.atlasCells && row.probes.Length == day.probes.Length && (!sameSpawn || row.steps == day.steps);
                 day.dayNightAligned = row.dayNightAligned;
                 E8Assets.Check(row.dayNightAligned, "day/night layout changed");
             }
@@ -359,6 +438,7 @@ public sealed class E8Smoke
             Debug.Log("E8_CASE_PASS " + data.id + " " + data.light + " " + row.steps + " steps");
         }
         report.cases = results.ToArray();
+        report.studioVariants = variants.ToArray();
         report.animation = animation.ToArray();
         File.WriteAllText(Path.Combine(output, "runtime.json"), JsonUtility.ToJson(report, true));
         Debug.Log("E8_PLAYER_PASS");

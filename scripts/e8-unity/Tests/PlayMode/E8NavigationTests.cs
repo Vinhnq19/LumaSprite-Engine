@@ -39,4 +39,35 @@ public sealed class E8NavigationTests
         yield return SceneManager.UnloadSceneAsync(world.Scene);
         Assert.IsFalse(world.Scene.isLoaded);
     }
+
+    [UnityTest]
+    public IEnumerator StudioApprovedSceneSpawnsAtX117AndShowsDynamicInteractionLabelAndLinkedEntity()
+    {
+        var data = E8Bundle.Load().LoadScene(0, false);
+        var world = new E8World(data);
+        try
+        {
+            if (data.studio != null && data.studio.schemaVersion == 1)
+            {
+                Assert.AreEqual(117, world.Position.x);
+                Assert.AreEqual(174, world.Position.y);
+                Assert.AreEqual("APPROVED", data.studio.approvalStatus);
+            }
+            foreach (var step in world.Data.route)
+            {
+                if (step.Point != world.Position) Assert.IsTrue(world.Step(step.Point - world.Position));
+            }
+            Assert.IsNotNull(world.ActiveTarget);
+            if (!string.IsNullOrEmpty(world.ActiveTarget.label))
+            {
+                Assert.AreEqual(world.ActiveTarget.label, E8InteractionHud.PromptFor(data, world.ActiveTarget));
+            }
+            if (!string.IsNullOrEmpty(world.ActiveLinkedEntityId))
+            {
+                Assert.IsTrue(world.Objects.ContainsKey(world.ActiveLinkedEntityId));
+            }
+        }
+        finally { world.Deactivate(); world.Release(); }
+        yield return SceneManager.UnloadSceneAsync(world.Scene);
+    }
 }

@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 
 public sealed class E8World
 {
+    public static int sceneSeq;
     public const int SolidLayer = 8;
     public readonly E8SceneData Data;
     public readonly Scene Scene;
@@ -23,13 +24,14 @@ public sealed class E8World
     public Vector2Int Position { get; private set; }
     public int Interactions { get; private set; }
     public E8SceneData.Landmark ActiveTarget { get; private set; }
+    public string ActiveLinkedEntityId => ActiveTarget?.linkedEntityId ?? "";
     public bool Near => ActiveTarget != null;
     public event Action<string> Interacted;
 
     public E8World(E8SceneData data)
     {
         Data = data;
-        Scene = SceneManager.CreateScene(data.id + "-" + data.light);
+        Scene = SceneManager.CreateScene(data.id + "-" + data.light + "-" + (++sceneSeq));
         Root = new GameObject(data.id);
         SceneManager.MoveGameObjectToScene(Root, Scene);
         var grid = Object("Atlas Grid").AddComponent<Grid>();
@@ -79,12 +81,20 @@ public sealed class E8World
             collider.size = new Vector2(box.w / (float)data.pixelsPerUnit, box.h / (float)data.pixelsPerUnit);
         }
         Physics2D.SyncTransforms();
-        targets = new[] { data.landmark };
+        if (data.studio != null && data.studio.interactions != null && data.studio.interactions.Length > 0)
+        {
+            targets = new E8SceneData.Landmark[data.studio.interactions.Length];
+            targets[0] = data.landmark;
+            for (int t = 1; t < data.studio.interactions.Length; t++) targets[t] = data.studio.interactions[t];
+        }
+        else targets = new[] { data.landmark };
+        foreach (var target in targets)
+            E8Assets.Check(string.IsNullOrEmpty(target.linkedEntityId) || Objects.ContainsKey(target.linkedEntityId),
+                "linked interaction entity missing: " + target.linkedEntityId);
         Place(data.spawn.Point);
     }
 
     public static int Order(int y, int tie) => y * 32 + tie;
-
 
     T Own<T>(T resource) where T : UnityEngine.Object
     {
@@ -113,7 +123,6 @@ public sealed class E8World
     {
         var size = new Vector2(2 * Data.clearance.x + 1, 2 * Data.clearance.y + 1) / Data.pixelsPerUnit;
         if (Physics2D.OverlapBox(Data.CellCenter(point.x, point.y), size, 0, 1 << SolidLayer) == null) return false;
-        // Resolve the broad-phase padding at the same cell centers as the exported masks.
         for (int y = point.y - Data.clearance.y; y <= point.y + Data.clearance.y; y++)
             for (int x = point.x - Data.clearance.x; x <= point.x + Data.clearance.x; x++)
                 if (Physics2D.OverlapPoint(Data.CellCenter(x, y), 1 << SolidLayer) != null) return true;

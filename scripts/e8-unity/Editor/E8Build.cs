@@ -14,12 +14,19 @@ public static class E8Build
         public int width, height, mipCount;
     }
 
+    [Serializable] sealed class StudioReceipt
+    {
+        public string id, light, subdir, zipName, zipSha256, approvalStatus, interactionLabel, linkedEntityId;
+        public int studioRevision, spawnX, spawnY;
+    }
+
     [Serializable] sealed class Audit
     {
         public string editor, target, renderPipeline, input, contractRevision;
         public string testFramework, pixelPerfect;
-        public int maps, foregroundTextures, tileSize, ppu, texturesCount;
+        public int maps, foregroundTextures, tileSize, ppu, texturesCount, studioZipsCount;
         public Imported[] textures;
+        public StudioReceipt[] studioZips;
     }
 
     public static void Run()
@@ -28,6 +35,33 @@ public static class E8Build
         string executable = args[Array.IndexOf(args, "-e8-build") + 1];
         var output = Path.GetDirectoryName(executable);
         Directory.CreateDirectory(output);
+
+        int zipsArg = Array.IndexOf(args, "-e85-zips");
+        var receipts = new List<StudioReceipt>();
+        if (zipsArg >= 0)
+        {
+            string manifestPath = args[zipsArg + 1];
+            string resourcesRoot = Path.Combine(Application.dataPath, "Resources", "E8Input");
+            foreach (var imp in E8StudioZipImporter.ImportManifest(manifestPath, resourcesRoot))
+            {
+                receipts.Add(new StudioReceipt
+                {
+                    id = imp.SceneKey,
+                    light = imp.Light,
+                    subdir = imp.ResourceSubdir,
+                    zipName = imp.ZipName,
+                    zipSha256 = imp.ZipSha256,
+                    studioRevision = imp.StudioRevision,
+                    approvalStatus = imp.ApprovalStatus,
+                    interactionLabel = imp.InteractionLabel,
+                    linkedEntityId = imp.LinkedEntityId,
+                    spawnX = imp.SpawnX,
+                    spawnY = imp.SpawnY,
+                });
+            }
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+        }
+
         var textures = new List<Imported>();
         foreach (var guid in AssetDatabase.FindAssets("t:Texture2D", new[] { "Assets/Resources/E8Input" }))
         {
@@ -68,7 +102,7 @@ public static class E8Build
         if (active != null) { active.intValue = 0; input.ApplyModifiedPropertiesWithoutUndo(); }
 
         PlayerSettings.companyName = "LumaSprite";
-        PlayerSettings.productName = "LumaSprite E8 Acceptance";
+        PlayerSettings.productName = zipsArg >= 0 ? "LumaSprite E8.5 End-to-End Acceptance" : "LumaSprite E8 Acceptance";
         PlayerSettings.colorSpace = ColorSpace.Gamma;
         PlayerSettings.defaultScreenWidth = 960;
         PlayerSettings.defaultScreenHeight = 680;
@@ -92,6 +126,7 @@ public static class E8Build
             pixelPerfect = pixel?.version ?? "orthographic camera and native point RenderTexture", maps = maps,
             foregroundTextures = foreground, tileSize = 16, ppu = 32, texturesCount = textures.Count,
             contractRevision = bundle.revision, textures = textures.ToArray(),
+            studioZipsCount = receipts.Count, studioZips = receipts.ToArray(),
         }, true));
         Debug.Log("E8_BUILD_PASS");
     }

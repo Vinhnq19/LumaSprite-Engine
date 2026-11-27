@@ -33,6 +33,13 @@ using UnityEngine;
         scene.Validate(revision, entry.id, night);
         return scene;
     }
+
+    public E8SceneData LoadPath(string resourcePath, string expectedId, bool night)
+    {
+        var scene = E8Assets.Json<E8SceneData>(resourcePath);
+        scene.Validate(revision, expectedId, night);
+        return scene;
+    }
 }
 
 [Serializable] public sealed class E8SceneData
@@ -63,7 +70,7 @@ using UnityEngine;
     }
     [Serializable] public sealed class Landmark
     {
-        public string kind;
+        public string kind, id, label, linkedEntityId, sourceRevision;
         public E8Pixel at, stand;
     }
     [Serializable] public sealed class Opening
@@ -71,6 +78,12 @@ using UnityEngine;
         public int x, y, w, h, threshold, expected;
         public E8Pixel original, staging;
         public string[] water;
+    }
+    [Serializable] public sealed class StudioMeta
+    {
+        public int schemaVersion, studioRevision;
+        public string approvalStatus, approvalNote, protectedSha256, zipSha256, zipName;
+        public Landmark[] interactions;
     }
 
     public int version, width, height, pixelsPerUnit;
@@ -84,6 +97,7 @@ using UnityEngine;
     public E8Pixel[] route;
     public Landmark landmark;
     public Opening aperture;
+    public StudioMeta studio;
 
     public Vector3 World(Vector2Int point) => new Vector3(point.x / (float)pixelsPerUnit, (height - point.y) / (float)pixelsPerUnit, 0);
     public Vector2 CellCenter(float x, float y) => new Vector2((x + .5f) / pixelsPerUnit, (height - y - .5f) / pixelsPerUnit);
@@ -100,6 +114,17 @@ using UnityEngine;
             for (int i = 0; i < spans.Length; i += 2)
                 if (left >= spans[i] && right < spans[i + 1]) { clear = true; break; }
             if (!clear) return false;
+        }
+        return true;
+    }
+
+    static bool IsHex64(string s)
+    {
+        if (string.IsNullOrEmpty(s) || s.Length != 64) return false;
+        for (int i = 0; i < 64; i++)
+        {
+            char c = s[i];
+            if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f'))) return false;
         }
         return true;
     }
@@ -128,6 +153,22 @@ using UnityEngine;
             route[0].Point == spawn.Point && route[route.Length - 1].Point == landmark.stand.Point, "route endpoints");
         for (int i = 0; i < layers.Length; i++) E8Assets.Check(layers[i].order == i && layers[i].at.y >= 0 &&
             layers[i].at.y <= height && (i == 0 || layers[i - 1].at.y <= layers[i].at.y), "layer ordering");
+        if (studio != null && studio.schemaVersion != 0)
+        {
+            E8Assets.Check(studio.schemaVersion == 1, "studio schemaVersion");
+            E8Assets.Check(studio.studioRevision >= 1, "studio revision");
+            E8Assets.Check(studio.approvalStatus == "APPROVED", "studio approvalStatus must be APPROVED");
+            E8Assets.Check(IsHex64(studio.protectedSha256) && IsHex64(studio.zipSha256), "studio SHA-256 provenance");
+            if (studio.interactions != null)
+            {
+                foreach (var it in studio.interactions)
+                {
+                    E8Assets.Check(!string.IsNullOrEmpty(it.id) && !string.IsNullOrEmpty(it.kind) &&
+                        it.at.x >= 0 && it.at.x < width && it.at.y >= 0 && it.at.y < height && Fits(it.stand.Point),
+                        "studio interaction anchor " + it.id);
+                }
+            }
+        }
     }
 }
 

@@ -20,7 +20,6 @@ public static class E8InteractionTarget
         if (previous != null && selected != null)
         {
             int distance = Distance(position, previous.stand.Point);
-            // Keep the current selection while both remain reachable and nearly tied.
             if (distance <= Reach && distance <= best + 1)
                 foreach (var target in targets) if (target == previous) return previous;
         }
@@ -65,7 +64,6 @@ public sealed class E8InteractionHud
     public static Vector2Int MarkerPixel(E8SceneData data, E8SceneData.Landmark target)
     {
         var foot = target.stand.Point;
-        // Put the guide below the contact pixel so it stays off the actor and the handle.
         int y = foot.y <= data.height - 14 ? foot.y + 9 : foot.y - 9;
         return new Vector2Int(Mathf.Clamp(foot.x, 5, data.width - 5), Mathf.Clamp(y, 5, data.height - 5));
     }
@@ -75,6 +73,12 @@ public sealed class E8InteractionHud
 
     public static string FeedbackFor(string scene) => scene == "mistfen-ferry-landing" ? "Đã kiểm tra điểm cập bến" :
         scene == "floodgate-maintenance-yard" ? "Đã kích hoạt sự kiện tay quay (demo)" : "Đã kiểm tra điểm điều khiển (demo)";
+
+    public static string PromptFor(E8SceneData data, E8SceneData.Landmark target) =>
+        target != null && !string.IsNullOrEmpty(target.label) ? target.label : PromptFor(data.id);
+
+    public static string FeedbackFor(E8SceneData data, E8SceneData.Landmark target) =>
+        target != null && !string.IsNullOrEmpty(target.label) ? "Đã kích hoạt: " + target.label + " (demo)" : FeedbackFor(data.id);
 
     static void Fill(Rect rect, Color color)
     {
@@ -101,7 +105,7 @@ public sealed class E8InteractionHud
         key.fontSize = 12 * scale;
         if (!string.IsNullOrEmpty(feedback)) { GUI.Label(rail, feedback, text); return; }
         if (active == null) { GUI.Label(rail, "Đi tới dấu vàng để tương tác", text); return; }
-        string label = PromptFor(data.id);
+        string label = PromptFor(data, active);
         float labelWidth = Mathf.Ceil(text.CalcSize(new GUIContent(label)).x);
         float start = Mathf.Floor(rail.center.x - (labelWidth + 25 * scale) / 2f);
         var box = new Rect(start, rail.y + 2 * scale, 18 * scale, 13 * scale);
