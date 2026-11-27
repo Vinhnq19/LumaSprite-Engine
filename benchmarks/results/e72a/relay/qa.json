@@ -1,0 +1,458 @@
+{
+  "id": "relay",
+  "label": "Field Signal Relay Box",
+  "seed": 127,
+  "holdout": false,
+  "canvas": [
+    32,
+    32
+  ],
+  "structure": {
+    "box": {
+      "left": 4,
+      "top": 14,
+      "width": 17,
+      "depth": 7,
+      "bottom": 25,
+      "taper": 1
+    },
+    "skids": [
+      {
+        "left": 4,
+        "top": 23,
+        "width": 5,
+        "depth": 5,
+        "bottom": 28,
+        "taper": 0
+      },
+      {
+        "left": 15,
+        "top": 23,
+        "width": 5,
+        "depth": 5,
+        "bottom": 28,
+        "taper": 0
+      }
+    ],
+    "shoulder": [
+      {
+        "left": 5,
+        "top": 12,
+        "width": 15,
+        "depth": 7,
+        "bottom": 15,
+        "taper": 0
+      },
+      {
+        "left": 9,
+        "top": 9,
+        "width": 9,
+        "depth": 5,
+        "bottom": 13,
+        "taper": 0
+      }
+    ],
+    "window": [
+      [
+        8,
+        18
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "contact": [
+      12,
+      29
+    ],
+    "glint": 1
+  },
+  "alphaSha256": "115e30554e7a1d4e5bf482dc9bb115d28b7ee5e4ed03370b59cbe6ab13a20d0c",
+  "placement": {
+    "file": "benchmarks/results/e62/packages/c1-courtyard-day/manifest.json",
+    "sha256": "9db69b0ce4248f22f616b2caaba2e28129cab77e722327b46dac4994e4938ed0",
+    "pivot": [
+      180,
+      162
+    ]
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "camera": "three-quarter-right",
+  "light": "upper-left",
+  "ramps": {
+    "stone": [
+      "#353c45",
+      "#646e66",
+      "#869087",
+      "#aeb2a1"
+    ],
+    "wood": [
+      "#382c28",
+      "#685044",
+      "#916e51",
+      "#bc9366"
+    ],
+    "roof": [
+      "#263944",
+      "#3b515c",
+      "#55727b",
+      "#819494"
+    ],
+    "paving": [
+      "#695848",
+      "#91816a",
+      "#a28d70",
+      "#b9a384"
+    ],
+    "metal": [
+      "#303443",
+      "#657987",
+      "#81939a",
+      "#b0bdac"
+    ],
+    "amber": [
+      "#72492f",
+      "#ae7541",
+      "#edaf59",
+      "#ffe3a0"
+    ]
+  },
+  "backgrounds": {
+    "bright": "#b9a384",
+    "dark": "#263944"
+  },
+  "diff": {
+    "rgbaPixels": 149,
+    "rolePixels": 94,
+    "alphaPixels": 0,
+    "maxLumaDelta": 176
+  },
+  "m0": {
+    "coverage": 517,
+    "outline": 77,
+    "isolatedOutline": 0,
+    "components": [
+      517
+    ],
+    "bounds": {
+      "left": 3,
+      "top": 5,
+      "right": 28,
+      "bottom": 28
+    },
+    "detail": {
+      "edges": 191,
+      "samples": 811,
+      "per100": 23.6
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#48425e/#98a0be",
+        "samples": 57,
+        "p10": 20,
+        "median": 86
+      },
+      {
+        "roles": "#48425e/#bc8862",
+        "samples": 43,
+        "p10": 14,
+        "median": 14
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 57,
+        "p10": 6,
+        "median": 6
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 12,
+        "p10": 130,
+        "median": 130
+      }
+    ],
+    "used": [
+      "#211e2a",
+      "#303443",
+      "#382c28",
+      "#657987",
+      "#685044",
+      "#81939a",
+      "#916e51",
+      "#b0bdac",
+      "#bc9366",
+      "#edaf59",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "5b6597adf9d8e56ac5d9a7fd7c18900fe197726c3973010531b0fa963919afa0",
+    "alphaSha256": "115e30554e7a1d4e5bf482dc9bb115d28b7ee5e4ed03370b59cbe6ab13a20d0c",
+    "clusters": {
+      "contour": {
+        "pixels": 79,
+        "counts": [
+          10,
+          10,
+          6,
+          6,
+          6,
+          5,
+          5,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "isolated": 9,
+        "tones": {
+          "#211e2a": 79
+        }
+      },
+      "metal": {
+        "pixels": 325,
+        "counts": [
+          127,
+          52,
+          31,
+          27,
+          19,
+          16,
+          10,
+          10,
+          7,
+          6,
+          6,
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "isolated": 6,
+        "tones": {
+          "#81939a": 43,
+          "#b0bdac": 13,
+          "#303443": 162,
+          "#657987": 107
+        }
+      },
+      "wood": {
+        "pixels": 108,
+        "counts": [
+          35,
+          30,
+          12,
+          9,
+          9,
+          9,
+          2,
+          1,
+          1
+        ],
+        "isolated": 2,
+        "tones": {
+          "#382c28": 47,
+          "#916e51": 33,
+          "#685044": 19,
+          "#bc9366": 9
+        }
+      },
+      "amber": {
+        "pixels": 5,
+        "counts": [
+          3,
+          2
+        ],
+        "isolated": 0,
+        "tones": {
+          "#ffe3a0": 2,
+          "#edaf59": 3
+        }
+      }
+    }
+  },
+  "m1": {
+    "coverage": 517,
+    "outline": 77,
+    "isolatedOutline": 0,
+    "components": [
+      517
+    ],
+    "bounds": {
+      "left": 3,
+      "top": 5,
+      "right": 28,
+      "bottom": 28
+    },
+    "detail": {
+      "edges": 170,
+      "samples": 765,
+      "per100": 22.2
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#48425e/#98a0be",
+        "samples": 57,
+        "p10": 20,
+        "median": 86
+      },
+      {
+        "roles": "#48425e/#bc8862",
+        "samples": 43,
+        "p10": 14,
+        "median": 14
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 97,
+        "p10": 3,
+        "median": 29
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 18,
+        "p10": 73,
+        "median": 130
+      }
+    ],
+    "used": [
+      "#211e2a",
+      "#303443",
+      "#382c28",
+      "#657987",
+      "#685044",
+      "#81939a",
+      "#916e51",
+      "#ae7541",
+      "#b0bdac",
+      "#edaf59",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "2528ebc1c8148871e71970b08226fb5b51764019f3f72169c15986eeb0762a2e",
+    "alphaSha256": "115e30554e7a1d4e5bf482dc9bb115d28b7ee5e4ed03370b59cbe6ab13a20d0c",
+    "clusters": {
+      "contour": {
+        "pixels": 79,
+        "counts": [
+          10,
+          10,
+          6,
+          6,
+          6,
+          5,
+          5,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "isolated": 9,
+        "tones": {
+          "#211e2a": 79
+        }
+      },
+      "metal": {
+        "pixels": 257,
+        "counts": [
+          91,
+          27,
+          22,
+          20,
+          19,
+          18,
+          17,
+          16,
+          9,
+          6,
+          4,
+          4,
+          2,
+          1,
+          1
+        ],
+        "isolated": 2,
+        "tones": {
+          "#81939a": 49,
+          "#b0bdac": 6,
+          "#303443": 113,
+          "#657987": 89
+        }
+      },
+      "wood": {
+        "pixels": 167,
+        "counts": [
+          42,
+          38,
+          34,
+          31,
+          12,
+          10
+        ],
+        "isolated": 0,
+        "tones": {
+          "#685044": 53,
+          "#916e51": 42,
+          "#382c28": 72
+        }
+      },
+      "amber": {
+        "pixels": 14,
+        "counts": [
+          7,
+          4,
+          3
+        ],
+        "isolated": 0,
+        "tones": {
+          "#ffe3a0": 3,
+          "#edaf59": 7,
+          "#ae7541": 4
+        }
+      }
+    }
+  },
+  "art": "PENDING_HUMAN_REVIEW"
+}

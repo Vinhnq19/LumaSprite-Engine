@@ -1,0 +1,592 @@
+{
+  "version": 1,
+  "checkpoint": "ff101af29617f7b80d6f5aab03da31a06e754939",
+  "rule": {
+    "file": "src/experiments/stone-material.ts",
+    "sha256": "726c819862151e3c64897d73c86fadb811b283ad9261d93ad9f7ac00b26438f6"
+  },
+  "prior": {
+    "file": "benchmarks/results/e72b/benchmark.json",
+    "sha256": "b2590b416d83711883858f4254e0945d170ad004bb4347c28f0795bfce96bffc"
+  },
+  "holdout": {
+    "file": "benchmarks/fixtures/e72r/holdout-lock.json",
+    "sha256": "664312a38d1cb69712ad2f632de86f548c90449eb356cf86e20c37eed2c445f5"
+  },
+  "cases": [
+    {
+      "id": "r1",
+      "light": "day",
+      "seed": 83,
+      "source": {
+        "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+        "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+      },
+      "crops": [
+        {
+          "id": "west-wall",
+          "rect": [
+            41,
+            64,
+            76,
+            50
+          ]
+        },
+        {
+          "id": "east-wall",
+          "rect": [
+            215,
+            50,
+            78,
+            63
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72b/r1/day/s0/native.png",
+          "native-4x": "benchmarks/results/e72b/r1/day/s0/native-4x.png",
+          "material": "benchmarks/results/e72b/r1/day/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72b/r1/day/s1/native.png",
+          "native-4x": "benchmarks/results/e72b/r1/day/s1/native-4x.png",
+          "material": "benchmarks/results/e72b/r1/day/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/r1/day/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/r1/day/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/r1/day/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72b/r1/day/flat.png",
+        "silhouette": "benchmarks/results/e72b/r1/day/silhouette.png",
+        "collision": "benchmarks/results/e72b/r1/day/collision.png",
+        "planes": "benchmarks/results/e72b/r1/day/planes.png",
+        "treatments": "benchmarks/results/e72r/r1/day/treatments.png",
+        "diff": "benchmarks/results/e72r/r1/day/s1-s2-diff.png"
+      },
+      "qa": "r1/day/qa.json"
+    },
+    {
+      "id": "r1",
+      "light": "night",
+      "seed": 83,
+      "source": {
+        "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+        "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+      },
+      "crops": [
+        {
+          "id": "west-wall",
+          "rect": [
+            41,
+            64,
+            76,
+            50
+          ]
+        },
+        {
+          "id": "east-wall",
+          "rect": [
+            215,
+            50,
+            78,
+            63
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72b/r1/night/s0/native.png",
+          "native-4x": "benchmarks/results/e72b/r1/night/s0/native-4x.png",
+          "material": "benchmarks/results/e72b/r1/night/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72b/r1/night/s1/native.png",
+          "native-4x": "benchmarks/results/e72b/r1/night/s1/native-4x.png",
+          "material": "benchmarks/results/e72b/r1/night/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/r1/night/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/r1/night/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/r1/night/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72b/r1/night/flat.png",
+        "silhouette": "benchmarks/results/e72b/r1/night/silhouette.png",
+        "collision": "benchmarks/results/e72b/r1/night/collision.png",
+        "planes": "benchmarks/results/e72b/r1/night/planes.png",
+        "treatments": "benchmarks/results/e72r/r1/night/treatments.png",
+        "diff": "benchmarks/results/e72r/r1/night/s1-s2-diff.png"
+      },
+      "qa": "r1/night/qa.json"
+    },
+    {
+      "id": "h1",
+      "light": "day",
+      "seed": 2117,
+      "source": {
+        "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+        "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+      },
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            21,
+            104,
+            85,
+            48
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            89,
+            36,
+            98,
+            64
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72b/h1/day/s0/native.png",
+          "native-4x": "benchmarks/results/e72b/h1/day/s0/native-4x.png",
+          "material": "benchmarks/results/e72b/h1/day/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72b/h1/day/s1/native.png",
+          "native-4x": "benchmarks/results/e72b/h1/day/s1/native-4x.png",
+          "material": "benchmarks/results/e72b/h1/day/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/h1/day/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/h1/day/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/h1/day/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72b/h1/day/flat.png",
+        "silhouette": "benchmarks/results/e72b/h1/day/silhouette.png",
+        "collision": "benchmarks/results/e72b/h1/day/collision.png",
+        "planes": "benchmarks/results/e72b/h1/day/planes.png",
+        "treatments": "benchmarks/results/e72r/h1/day/treatments.png",
+        "diff": "benchmarks/results/e72r/h1/day/s1-s2-diff.png"
+      },
+      "qa": "h1/day/qa.json"
+    },
+    {
+      "id": "h1",
+      "light": "night",
+      "seed": 2117,
+      "source": {
+        "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+        "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+      },
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            21,
+            104,
+            85,
+            48
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            89,
+            36,
+            98,
+            64
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72b/h1/night/s0/native.png",
+          "native-4x": "benchmarks/results/e72b/h1/night/s0/native-4x.png",
+          "material": "benchmarks/results/e72b/h1/night/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72b/h1/night/s1/native.png",
+          "native-4x": "benchmarks/results/e72b/h1/night/s1/native-4x.png",
+          "material": "benchmarks/results/e72b/h1/night/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/h1/night/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/h1/night/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/h1/night/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72b/h1/night/flat.png",
+        "silhouette": "benchmarks/results/e72b/h1/night/silhouette.png",
+        "collision": "benchmarks/results/e72b/h1/night/collision.png",
+        "planes": "benchmarks/results/e72b/h1/night/planes.png",
+        "treatments": "benchmarks/results/e72r/h1/night/treatments.png",
+        "diff": "benchmarks/results/e72r/h1/night/s1-s2-diff.png"
+      },
+      "qa": "h1/night/qa.json"
+    },
+    {
+      "id": "h3",
+      "light": "day",
+      "seed": 5203,
+      "source": {
+        "file": "benchmarks/fixtures/e72b/h3-fern-cut-signal-gate.json",
+        "sha256": "714939dfe33e9aed9ec40f62a0eb08186153717cf2b8e950a67f0c58479e2f47"
+      },
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            35,
+            115,
+            78,
+            45
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            91,
+            33,
+            98,
+            65
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72b/h3/day/s0/native.png",
+          "native-4x": "benchmarks/results/e72b/h3/day/s0/native-4x.png",
+          "material": "benchmarks/results/e72b/h3/day/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72b/h3/day/s1/native.png",
+          "native-4x": "benchmarks/results/e72b/h3/day/s1/native-4x.png",
+          "material": "benchmarks/results/e72b/h3/day/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/h3/day/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/h3/day/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/h3/day/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72b/h3/day/flat.png",
+        "silhouette": "benchmarks/results/e72b/h3/day/silhouette.png",
+        "collision": "benchmarks/results/e72b/h3/day/collision.png",
+        "planes": "benchmarks/results/e72b/h3/day/planes.png",
+        "treatments": "benchmarks/results/e72r/h3/day/treatments.png",
+        "diff": "benchmarks/results/e72r/h3/day/s1-s2-diff.png"
+      },
+      "qa": "h3/day/qa.json"
+    },
+    {
+      "id": "h3",
+      "light": "night",
+      "seed": 5203,
+      "source": {
+        "file": "benchmarks/fixtures/e72b/h3-fern-cut-signal-gate.json",
+        "sha256": "714939dfe33e9aed9ec40f62a0eb08186153717cf2b8e950a67f0c58479e2f47"
+      },
+      "crops": [
+        {
+          "id": "fallen-wall",
+          "rect": [
+            35,
+            115,
+            78,
+            45
+          ]
+        },
+        {
+          "id": "upper-wall",
+          "rect": [
+            91,
+            33,
+            98,
+            65
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72b/h3/night/s0/native.png",
+          "native-4x": "benchmarks/results/e72b/h3/night/s0/native-4x.png",
+          "material": "benchmarks/results/e72b/h3/night/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72b/h3/night/s1/native.png",
+          "native-4x": "benchmarks/results/e72b/h3/night/s1/native-4x.png",
+          "material": "benchmarks/results/e72b/h3/night/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/h3/night/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/h3/night/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/h3/night/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72b/h3/night/flat.png",
+        "silhouette": "benchmarks/results/e72b/h3/night/silhouette.png",
+        "collision": "benchmarks/results/e72b/h3/night/collision.png",
+        "planes": "benchmarks/results/e72b/h3/night/planes.png",
+        "treatments": "benchmarks/results/e72r/h3/night/treatments.png",
+        "diff": "benchmarks/results/e72r/h3/night/s1-s2-diff.png"
+      },
+      "qa": "h3/night/qa.json"
+    },
+    {
+      "id": "h4",
+      "light": "day",
+      "seed": 6491,
+      "source": {
+        "file": "benchmarks/fixtures/e72r/h4-seepstone-terrace.json",
+        "sha256": "8e2ba4dec3cf91330913debbf59d99e10da96a695b1fd030441c2d7215cc21ee"
+      },
+      "crops": [
+        {
+          "id": "seepstone-buttress",
+          "rect": [
+            26,
+            72,
+            86,
+            66
+          ]
+        },
+        {
+          "id": "terrace-return",
+          "rect": [
+            237,
+            49,
+            83,
+            58
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72r/h4/day/s0/native.png",
+          "native-4x": "benchmarks/results/e72r/h4/day/s0/native-4x.png",
+          "material": "benchmarks/results/e72r/h4/day/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72r/h4/day/s1/native.png",
+          "native-4x": "benchmarks/results/e72r/h4/day/s1/native-4x.png",
+          "material": "benchmarks/results/e72r/h4/day/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/h4/day/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/h4/day/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/h4/day/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72r/h4/day/flat.png",
+        "silhouette": "benchmarks/results/e72r/h4/day/silhouette.png",
+        "collision": "benchmarks/results/e72r/h4/day/collision.png",
+        "planes": "benchmarks/results/e72r/h4/day/planes.png",
+        "treatments": "benchmarks/results/e72r/h4/day/treatments.png",
+        "diff": "benchmarks/results/e72r/h4/day/s1-s2-diff.png"
+      },
+      "qa": "h4/day/qa.json"
+    },
+    {
+      "id": "h4",
+      "light": "night",
+      "seed": 6491,
+      "source": {
+        "file": "benchmarks/fixtures/e72r/h4-seepstone-terrace.json",
+        "sha256": "8e2ba4dec3cf91330913debbf59d99e10da96a695b1fd030441c2d7215cc21ee"
+      },
+      "crops": [
+        {
+          "id": "seepstone-buttress",
+          "rect": [
+            26,
+            72,
+            86,
+            66
+          ]
+        },
+        {
+          "id": "terrace-return",
+          "rect": [
+            237,
+            49,
+            83,
+            58
+          ]
+        }
+      ],
+      "variants": {
+        "s0": {
+          "native": "benchmarks/results/e72r/h4/night/s0/native.png",
+          "native-4x": "benchmarks/results/e72r/h4/night/s0/native-4x.png",
+          "material": "benchmarks/results/e72r/h4/night/s0/material.png"
+        },
+        "s1": {
+          "native": "benchmarks/results/e72r/h4/night/s1/native.png",
+          "native-4x": "benchmarks/results/e72r/h4/night/s1/native-4x.png",
+          "material": "benchmarks/results/e72r/h4/night/s1/material.png"
+        },
+        "s2": {
+          "native": "benchmarks/results/e72r/h4/night/s2/native.png",
+          "native-4x": "benchmarks/results/e72r/h4/night/s2/native-4x.png",
+          "material": "benchmarks/results/e72r/h4/night/s2/material.png"
+        }
+      },
+      "common": {
+        "flat": "benchmarks/results/e72r/h4/night/flat.png",
+        "silhouette": "benchmarks/results/e72r/h4/night/silhouette.png",
+        "collision": "benchmarks/results/e72r/h4/night/collision.png",
+        "planes": "benchmarks/results/e72r/h4/night/planes.png",
+        "treatments": "benchmarks/results/e72r/h4/night/treatments.png",
+        "diff": "benchmarks/results/e72r/h4/night/s1-s2-diff.png"
+      },
+      "qa": "h4/night/qa.json"
+    }
+  ],
+  "payloads": 68,
+  "sha256": {
+    "r1/day/treatments.png": "ee819042becabba1108cd93eacde8f75adf7aed33ae91c91517c86060b7a9842",
+    "r1/day/s1-s2-diff.png": "f445a0c92ef6682115d5a4e411933f5aa2d0611615d2349ec268ceeea92ac458",
+    "r1/day/s2/native.png": "2b21fa468ab045863a148637845594b5ad043640eefba1f0bb56796d130a169b",
+    "r1/day/s2/native-4x.png": "41d8338f294021b716ff8f64f00f90e66104635a3d6d0ebd168a3a9e14035e2e",
+    "r1/day/s2/material.png": "ee376715f27f58ad7608cdfe93ed3eb109f6313798defd18a045c921a42e3361",
+    "r1/day/qa.json": "2b4fbf03de26564bd9952c6f55c478091c2067a2e752899c20847d527ea18b03",
+    "r1/night/treatments.png": "ee819042becabba1108cd93eacde8f75adf7aed33ae91c91517c86060b7a9842",
+    "r1/night/s1-s2-diff.png": "f445a0c92ef6682115d5a4e411933f5aa2d0611615d2349ec268ceeea92ac458",
+    "r1/night/s2/native.png": "2880d60126df5735398f45eb17ec15c6cb805a0cb03e2bf68ed3f8b7b53f9459",
+    "r1/night/s2/native-4x.png": "d3cd93df64ee692c82d143ee749aa4fc44c2bd70d8b87512ecc373d985512141",
+    "r1/night/s2/material.png": "35ddcace6c614390d2a69466a3a6a12c98ff215c5ead123755cddae6184e3ec8",
+    "r1/night/qa.json": "b499c1c62fbe335711cb5e3a2e890be2d833b32ef9752f53e230877e117eeaea",
+    "h1/day/treatments.png": "3d511ce6c49542b87762ef884d2074d8792b0743086e067512132f8ec4b31f32",
+    "h1/day/s1-s2-diff.png": "15ea2c4f0d7bf3f0d444f98215cbe8b8ce5a475a815de753b897e5d72bbcad25",
+    "h1/day/s2/native.png": "3650fe05829e76d2f4f2dde49f0f93fe00def380994a63e1fdeda93b7fa4ea42",
+    "h1/day/s2/native-4x.png": "eb5a5ca4a0debf31803a73bc1e713c19ae9cdcb4eb668d7ebaa8e035951f1500",
+    "h1/day/s2/material.png": "465a0fb81dea6b65f576fde811faf5b80e07a8244c2f7f79a6e40ce1b584564b",
+    "h1/day/qa.json": "6192e1d9517b7bf58b1eed22a47b3e3baf42b1de6c2b42fcdabdf8acfe44ffd8",
+    "h1/night/treatments.png": "3d511ce6c49542b87762ef884d2074d8792b0743086e067512132f8ec4b31f32",
+    "h1/night/s1-s2-diff.png": "15ea2c4f0d7bf3f0d444f98215cbe8b8ce5a475a815de753b897e5d72bbcad25",
+    "h1/night/s2/native.png": "07c5407afe3f47e5fc848f950bd6c1e6b0b7ae090f4a3bbb4b0bca1d1d16623d",
+    "h1/night/s2/native-4x.png": "c264ce8ac1b2a9320a831c8e4658da5dc87a28cae306cffb6a6f2ab31d6483e6",
+    "h1/night/s2/material.png": "3914394815c2e7dd6d301e7c9f6ba32d1bfad3b380c48445c86be6dbe057b198",
+    "h1/night/qa.json": "5980ae20da0fb7f89af4ec6ba9945f3b5838d4a0cffffddd48852df925402161",
+    "h3/day/treatments.png": "aa45fceb879f01b4e12fe85399232d2d84aeda2807e638cc9247f19e17de93e9",
+    "h3/day/s1-s2-diff.png": "3e863c29f37d7ae72e0d0a262e159f52a3b6566663ec5716315608a99ef93df0",
+    "h3/day/s2/native.png": "9ed67a9d9dca4b8213d35b3402772d3825c161307248b394936fbb2bb4244c6a",
+    "h3/day/s2/native-4x.png": "9933d09c36dd7a4b585d9cab1b3598c5e0be238d3c5e678ecd5223dcb6ea39b2",
+    "h3/day/s2/material.png": "91d732230fb1c60febefa3d2acee82c5a8a9748516e214c0f9eb2b756427f4e1",
+    "h3/day/qa.json": "63ab2e33940f1c5482a4ba9637e1c716fb1e28c806c9d3e89c197b173ae4d2cd",
+    "h3/night/treatments.png": "aa45fceb879f01b4e12fe85399232d2d84aeda2807e638cc9247f19e17de93e9",
+    "h3/night/s1-s2-diff.png": "3e863c29f37d7ae72e0d0a262e159f52a3b6566663ec5716315608a99ef93df0",
+    "h3/night/s2/native.png": "5e4e956b2ee4f1eba353485e7e531b7a251b62601e086b1bd0e4a2b25b412a97",
+    "h3/night/s2/native-4x.png": "4f1ca5ac99268cdac9dfbaf985924f1ccf6eda0e0bde7afc93bbf7fd6d349132",
+    "h3/night/s2/material.png": "f33209cb85a509157ab5896e13a1eb6a1fc2c4ab88690bc2dcdec0ba2877975c",
+    "h3/night/qa.json": "1488d3c182ae8166920b8b35d89dd94fbdbc7d40690ae063fd677c71427bdf5d",
+    "h4/day/flat.png": "8425018d20ea9f629c9ff054682f25f912f94f52e71c8904c891164108eff1ca",
+    "h4/day/silhouette.png": "21daeaa71b95d341ae6920598acf18508c371e8a8ab8561db09e4d7f16582a64",
+    "h4/day/collision.png": "3b0d667f815e8e8761e542ae3fc9fd6699762a69b689f25361ac52410ec7cb32",
+    "h4/day/planes.png": "aa659d5ba193eb1c2581b233e524c18c8c69392ab2e7921ff65797d654120e0a",
+    "h4/day/treatments.png": "7b5bedd343f7d892320b21d185b70dd0fa85718d025483b46662a1ef010e6ac9",
+    "h4/day/s1-s2-diff.png": "513966c396b639b4eee4b2b30c73f36fd6caffb14301b0f37085920faa0c54ab",
+    "h4/day/s0/native.png": "4357a80d90a545f6ee2a727c2abe43ced49ded9157b1e4fbedd0888f7edbaf38",
+    "h4/day/s0/native-4x.png": "f78d76ef62336f332067b04c36b704ad76d00bcfd5764b54057661487b8f9f4e",
+    "h4/day/s0/material.png": "d55f394b817d6631ed8c728641da3eea300ccf38750d5f08364099db02c2621b",
+    "h4/day/s1/native.png": "ab00dfe909224d5da33e1aad4d26a19646e16d79af0c47fb73ae61243818032f",
+    "h4/day/s1/native-4x.png": "11f12ff614af51565e10e39ae941f20bd0d428f71248027592a12e94eb9eb9f2",
+    "h4/day/s1/material.png": "50fd8191b68b8bf7e25a5da48d477c8b2a7f7fa1c697b42587adc3e32552d151",
+    "h4/day/s2/native.png": "1436f61ff875704d54b701958006e2bcdaa236e3927ed7bcac9e3e54ddbebbbc",
+    "h4/day/s2/native-4x.png": "611e7197246a4abd18a718d55971b1a59d358a7ef98bb3b3185341b418d238fe",
+    "h4/day/s2/material.png": "b062c4f4dcc6c5c073f1ba8413e36f8ebfd1e39db9f36039a976b73b946f0768",
+    "h4/day/qa.json": "f48cb973b44912e41ce0b41ee1842c7bdbb3331fc380f121d5d7196d6aef27e2",
+    "h4/night/flat.png": "8425018d20ea9f629c9ff054682f25f912f94f52e71c8904c891164108eff1ca",
+    "h4/night/silhouette.png": "21daeaa71b95d341ae6920598acf18508c371e8a8ab8561db09e4d7f16582a64",
+    "h4/night/collision.png": "3b0d667f815e8e8761e542ae3fc9fd6699762a69b689f25361ac52410ec7cb32",
+    "h4/night/planes.png": "aa659d5ba193eb1c2581b233e524c18c8c69392ab2e7921ff65797d654120e0a",
+    "h4/night/treatments.png": "7b5bedd343f7d892320b21d185b70dd0fa85718d025483b46662a1ef010e6ac9",
+    "h4/night/s1-s2-diff.png": "513966c396b639b4eee4b2b30c73f36fd6caffb14301b0f37085920faa0c54ab",
+    "h4/night/s0/native.png": "ba4e4282170ea124374c4524b8d3f2b7fd4c6691d6b3b682fdf5a655bbe599c0",
+    "h4/night/s0/native-4x.png": "4eb0093196f57163fbc09675b1db9714caf2ae93c628d7691e12dc4cc09cdd40",
+    "h4/night/s0/material.png": "4674e7ddb731a59bbe804cdff92d9a3d6dae9efcd86db5f3ec84c7e9d304a613",
+    "h4/night/s1/native.png": "8c8821b0e00e8fa84907c4854e0a3a33749db46b8cacc5afca0ae6363e356685",
+    "h4/night/s1/native-4x.png": "7e4dcf16cd7815454d7470c3c895fe38c86ef10358e59d3564d0239ff7c9eeae",
+    "h4/night/s1/material.png": "d641bffec19b6077fe2abcdda2f4998dc4819439a916b91bf662cfa26bdae3f5",
+    "h4/night/s2/native.png": "6ac05e47e4a273bf827499aad0be21b97310b1c25ba97681840fbfd8349db8c2",
+    "h4/night/s2/native-4x.png": "fce5b309d86fa165b6fda78a6c743fc339cb396f4ef4f43a72add88b321e0b52",
+    "h4/night/s2/material.png": "c577c4ced7f6e9a645a511548b6ffab9d505a8ef7803d32c9bba79c06d7401c7",
+    "h4/night/qa.json": "a24f3b42cd049a393c4088e6f3224f58bf9b4a2815ccb74bb8d04830e83f9944"
+  },
+  "sourceSha256": {
+    "benchmarks/results/e72b/r1/day/flat.png": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90",
+    "benchmarks/results/e72b/r1/day/silhouette.png": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7",
+    "benchmarks/results/e72b/r1/day/collision.png": "6604521aee278c4149e5fe2e200a9b49e26757977df7b6d7c9e11bcda96ec2b2",
+    "benchmarks/results/e72b/r1/day/planes.png": "346e180d51be133cba2ab2bb898efa4bd11037d6ed59ebde7e23e434090759ee",
+    "benchmarks/results/e72b/r1/day/s0/native.png": "186f2aa4d960151facdf665f8ac7c9f6d64af0928ea239df987075a0c6e6bf7c",
+    "benchmarks/results/e72b/r1/day/s0/native-4x.png": "6502b735eeaacfac447527d35d3766aa08de048399964033ecf5dd49a9e05500",
+    "benchmarks/results/e72b/r1/day/s0/material.png": "ff644738d7e85aeebdf592ea08e7d6ab92506d40804940e13f9b7857bd861172",
+    "benchmarks/results/e72b/r1/day/s1/native.png": "0d66012552cd5fb9ec24e710262ca88ee244b4435b9c1f9e6fc9af31a08a4a5e",
+    "benchmarks/results/e72b/r1/day/s1/native-4x.png": "e3593383f61b9e84fa4b4e7a4fcb6ab5febb6a526b124d484cf15a89ba513485",
+    "benchmarks/results/e72b/r1/day/s1/material.png": "184b4ce0178c7ade4b3cdca5d8e2756985a13036ae8446f435980cc38e9ce784",
+    "benchmarks/results/e72b/r1/night/flat.png": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90",
+    "benchmarks/results/e72b/r1/night/silhouette.png": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7",
+    "benchmarks/results/e72b/r1/night/collision.png": "6604521aee278c4149e5fe2e200a9b49e26757977df7b6d7c9e11bcda96ec2b2",
+    "benchmarks/results/e72b/r1/night/planes.png": "346e180d51be133cba2ab2bb898efa4bd11037d6ed59ebde7e23e434090759ee",
+    "benchmarks/results/e72b/r1/night/s0/native.png": "7ff1b8cb5f6d64b991a18ccbe87abf3d8eb27e1afbb232dc985d49338553e917",
+    "benchmarks/results/e72b/r1/night/s0/native-4x.png": "d643846707336422de44df36ec6382b302fd7eeecc4e0989d1b65ead806fd04c",
+    "benchmarks/results/e72b/r1/night/s0/material.png": "eee4d64bcc3ac4d316b23c9dd9d106d8a45ecb2c9825aa23b028c2e39152a12d",
+    "benchmarks/results/e72b/r1/night/s1/native.png": "e5074a9d5314f2a120e094f11159dd9a14366bc19e93c7af6141235f8828ad15",
+    "benchmarks/results/e72b/r1/night/s1/native-4x.png": "8731ac297c81b743c9777ca5aa109d1c6ee0c6ae9b8eed8cb06ae6c8cbd13fb3",
+    "benchmarks/results/e72b/r1/night/s1/material.png": "00e175dec6869ed91ec6b9dab5eb3fb569ece32fddeb703e8b10a5a20f299730",
+    "benchmarks/results/e72b/h1/day/flat.png": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d",
+    "benchmarks/results/e72b/h1/day/silhouette.png": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986",
+    "benchmarks/results/e72b/h1/day/collision.png": "5ed55f92048ebb2549cab757858a9caf446f33c456e98caa2d19ecf6dc50aef3",
+    "benchmarks/results/e72b/h1/day/planes.png": "2e98ccf11f1aa2d0b4861df2d9c572ed03161c5c7b7ad8e82207e27c31d7b76a",
+    "benchmarks/results/e72b/h1/day/s0/native.png": "10776ca5c5eda803fab9db71780dc9afaf80dba83d04d8ebac0f05af4f2ee561",
+    "benchmarks/results/e72b/h1/day/s0/native-4x.png": "73ba0b1c31e7ab69cb130252210b3db46f479f1d7bd2224a927dadf15ff171a6",
+    "benchmarks/results/e72b/h1/day/s0/material.png": "6907898d111da9216f9d572ca61b6e93bdda5b1d68d789557e3ae40df9ad1fa9",
+    "benchmarks/results/e72b/h1/day/s1/native.png": "9fd814a9808c22c5205ef5d2bf998b01f68455cbae9ace9a5d5d3e4c44c1c4e4",
+    "benchmarks/results/e72b/h1/day/s1/native-4x.png": "2aaf39e1306ba01ca8fd68415caa4417ab6d22327510f4b72ff1d4c28087db2d",
+    "benchmarks/results/e72b/h1/day/s1/material.png": "f56ba17ca51d9626c8ae454005de0a18f05e3d0233372b16f3ac290bafe6acb5",
+    "benchmarks/results/e72b/h1/night/flat.png": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d",
+    "benchmarks/results/e72b/h1/night/silhouette.png": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986",
+    "benchmarks/results/e72b/h1/night/collision.png": "5ed55f92048ebb2549cab757858a9caf446f33c456e98caa2d19ecf6dc50aef3",
+    "benchmarks/results/e72b/h1/night/planes.png": "2e98ccf11f1aa2d0b4861df2d9c572ed03161c5c7b7ad8e82207e27c31d7b76a",
+    "benchmarks/results/e72b/h1/night/s0/native.png": "321e05952d823c3803e8d75e8da3e2dc429338d8e501241b9868248c076efd3d",
+    "benchmarks/results/e72b/h1/night/s0/native-4x.png": "d95c9e59aeba6ac493dd70fd8c5a4683b45f3d760110b3367edb7aba892db477",
+    "benchmarks/results/e72b/h1/night/s0/material.png": "2701989a8e4e737d589921e79041c434d9a41ef4487e278d6da3766956254ddf",
+    "benchmarks/results/e72b/h1/night/s1/native.png": "c4622f945ddad2a0f889d3307338d6d70f7074ff72cdb809a88a888811c79030",
+    "benchmarks/results/e72b/h1/night/s1/native-4x.png": "62f006057eb0e310ed2af492ae2c95dbb61f7437ad90597adc2baa3f6e3bc16d",
+    "benchmarks/results/e72b/h1/night/s1/material.png": "a7484bbfb03d3f391d9324ddc87a085ffeb0a675d90f03c6041ff3de3df894ae",
+    "benchmarks/results/e72b/h3/day/flat.png": "318187132ed6bc7089b16dd197f5e17c5b990be1894f4b690344cbc96571d547",
+    "benchmarks/results/e72b/h3/day/silhouette.png": "f7ea19828116e0f101cff45e69ffc4f1c4551f14ce0e6984d286558d546bfa4c",
+    "benchmarks/results/e72b/h3/day/collision.png": "2decc47b8e4d2a7409e37f396c96cd0ffdc1dd209641ad3258f434f905a40ec2",
+    "benchmarks/results/e72b/h3/day/planes.png": "94967789101e87e9f8f08f4374a3f47deb7cc09c9608ef87bb9bd481caa20d25",
+    "benchmarks/results/e72b/h3/day/s0/native.png": "83fa6f235c0b2adc2a0a239356add6f77dafbce8fcc27a1357ce092e1eff6141",
+    "benchmarks/results/e72b/h3/day/s0/native-4x.png": "bb0b5693940fd206c5fd144425999fee8472c3eee03a167c48e7c683e6297b09",
+    "benchmarks/results/e72b/h3/day/s0/material.png": "6c5766a0d6b44eace4f75dc81bbc614b3ab1c53e83ca2c605cbc2eda9d05c547",
+    "benchmarks/results/e72b/h3/day/s1/native.png": "f6921eae77cc99afdb3139169209c405c41b0100a48803193aa256faea002a3e",
+    "benchmarks/results/e72b/h3/day/s1/native-4x.png": "c06784f55a0fbace4fa644288546372a35976cf3caf7c8d417797c1e52ca19d6",
+    "benchmarks/results/e72b/h3/day/s1/material.png": "5ec4819c7b3d4afedc5537c684781d422c0cdd3f1b0d5d7e526d5a105a5a3f0f",
+    "benchmarks/results/e72b/h3/night/flat.png": "318187132ed6bc7089b16dd197f5e17c5b990be1894f4b690344cbc96571d547",
+    "benchmarks/results/e72b/h3/night/silhouette.png": "f7ea19828116e0f101cff45e69ffc4f1c4551f14ce0e6984d286558d546bfa4c",
+    "benchmarks/results/e72b/h3/night/collision.png": "2decc47b8e4d2a7409e37f396c96cd0ffdc1dd209641ad3258f434f905a40ec2",
+    "benchmarks/results/e72b/h3/night/planes.png": "94967789101e87e9f8f08f4374a3f47deb7cc09c9608ef87bb9bd481caa20d25",
+    "benchmarks/results/e72b/h3/night/s0/native.png": "52a50f4c34aa17011dd345b2ca387093b9c2fe8cffe4003458ed3314b531c2da",
+    "benchmarks/results/e72b/h3/night/s0/native-4x.png": "c7dab41264d1e138b3e1b2bee86b147fee283f9ad5b380c2a285bf2b83ae9166",
+    "benchmarks/results/e72b/h3/night/s0/material.png": "ff27538cc8338b948c9f117ea3583b5e1f30ca4a388429ea694d69f8fffb8b02",
+    "benchmarks/results/e72b/h3/night/s1/native.png": "3c3c647d208fa35d179536813ae11960802faf41ccd6040a1f87157471ee9fdb",
+    "benchmarks/results/e72b/h3/night/s1/native-4x.png": "bef84435c0cc2b517a441c8960cb36a87c561ffe2b59b4e6ffe7e2685f0d0216",
+    "benchmarks/results/e72b/h3/night/s1/material.png": "4e3ffa25f7fdd36bd07553cad581672ac8b938845c9abd783ae5fbac8773c758"
+  },
+  "art": "PENDING_HUMAN_REVIEW"
+}

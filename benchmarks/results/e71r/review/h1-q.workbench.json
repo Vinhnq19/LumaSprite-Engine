@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "kind": "lumasprite.art-review.v1",
+  "toolVersion": "1.0.0",
+  "timestamp": "2026-11-26T13:13:26.549Z",
+  "assetFamily": "environment",
+  "rubricId": "workbench-default-v1",
+  "rubricName": "Workbench Default Rubric",
+  "rubricVersion": "1.0.0",
+  "rubricIsWorkbenchDefault": true,
+  "alignment": {
+    "mode": "top-left",
+    "offsetX": 0,
+    "offsetY": 0,
+    "confirmed": false
+  },
+  "decision": "undecided",
+  "criticalOverrideRationale": "",
+  "summaryNote": "Project Owner brief: H1 Structure Q REVISION_REQUIRED. Some fractures look stair-stepped or machine-cut. Score sheet pending.",
+  "scores": {
+    "structure": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "perspective": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "depth": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "lighting": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "composition": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    }
+  },
+  "regionNotes": [],
+  "baselineRef": {
+    "slot": "baseline",
+    "name": "h1-q baseline",
+    "fileName": "native.png",
+    "frameWidth": 320,
+    "frameHeight": 208,
+    "sourceWidth": 320,
+    "sourceHeight": 208,
+    "frameCount": 1,
+    "sourceSha256": "10776ca5c5eda803fab9db71780dc9afaf80dba83d04d8ebac0f05af4f2ee561",
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  },
+  "candidateRef": {
+    "slot": "candidate",
+    "name": "h1-q candidate",
+    "fileName": "native.png",
+    "frameWidth": 320,
+    "frameHeight": 208,
+    "sourceWidth": 320,
+    "sourceHeight": 208,
+    "frameCount": 1,
+    "sourceSha256": "e49c877e1e89972a236eae08cf91326d600b7cff83d9d1971eab2ef5680c3318",
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  }
+}

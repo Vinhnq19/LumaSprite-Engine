@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "view": "three-quarter-right",
+  "canvas": 64,
+  "actor": "courier",
+  "id": "ridge-mechanic",
+  "role": "development",
+  "name": "Ridge Mechanic",
+  "seed": 15491,
+  "context": {
+    "file": "benchmarks/fixtures/e73/stormwatch.json",
+    "sha256": "5599b260efdf68138d1296e5ce3e4e049b0b0dce8429279950dd7a07ad9e9f54"
+  },
+  "spec": {
+    "version": 3,
+    "kind": "humanoid-traveler",
+    "canvas": {
+      "w": 64,
+      "h": 64,
+      "background": "transparent"
+    },
+    "view": "three-quarter-right",
+    "seed": 15491,
+    "palette": {
+      "mode": "authored"
+    },
+    "name": "Ridge Mechanic",
+    "outfit": {
+      "headwear": "hood",
+      "satchel": "crossbody",
+      "cloth": "teal"
+    },
+    "proportions": {
+      "head": [
+        16,
+        14
+      ],
+      "jacket": [
+        17,
+        14
+      ],
+      "hips": 14,
+      "arm": [
+        6,
+        4
+      ],
+      "leg": [
+        7,
+        5
+      ],
+      "boot": [
+        9,
+        4
+      ],
+      "satchel": [
+        9,
+        11
+      ]
+    },
+    "pose": {
+      "kind": "standing-free",
+      "hip": [
+        34,
+        37
+      ],
+      "lean": -2,
+      "turn": 3,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "secondaryGroundOffset": -1,
+      "near": {
+        "elbow": [
+          23,
+          34
+        ],
+        "wrist": [
+          21,
+          40
+        ],
+        "palm": [
+          22,
+          42
+        ],
+        "knee": [
+          30,
+          45
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          43,
+          32
+        ],
+        "wrist": [
+          45,
+          37
+        ],
+        "palm": [
+          44,
+          40
+        ],
+        "knee": [
+          41,
+          44
+        ],
+        "ankle": [
+          40,
+          52
+        ]
+      }
+    },
+    "geometryRevision": {
+      "number": 1,
+      "headOpening": 2,
+      "torsoPlaneOffset": 1,
+      "satchelOffset": [
+        -2,
+        2
+      ],
+      "satchelFlap": true
+    }
+  },
+  "body": "workwear",
+  "historical": {
+    "file": "benchmarks/fixtures/e75/ridge-mechanic.json",
+    "sha256": "f37bff97535b14b87c5fe97bb951a6fd867883d98f8e7790145c5ab2486cea86"
+  },
+  "selected": "a2",
+  "defect": {
+    "id": "RIDGE-GRIP-WORKWEAR",
+    "cause": "Hood resembles a traveler, wrench jaw is partly lost in a short exposed shaft, and the feet narrow in the raised pose.",
+    "approach": "Work cap, gloves and tool-specific geometry shared across the paired control. In the refinement widen the foot plant and raise the wrench at an oblique angle."
+  },
+  "matched": {
+    "near": {
+      "elbow": [
+        22,
+        31
+      ],
+      "wrist": [
+        17,
+        37
+      ],
+      "palm": [
+        16,
+        40
+      ]
+    },
+    "far": {
+      "elbow": [
+        44,
+        32
+      ],
+      "wrist": [
+        48,
+        35
+      ],
+      "palm": [
+        50,
+        36
+      ]
+    },
+    "tools": [
+      {
+        "kind": "toolbox",
+        "hand": "near",
+        "axis": [
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "wrench",
+        "hand": "far",
+        "axis": [
+          8,
+          -5
+        ]
+      }
+    ]
+  },
+  "refined": {
+    "near": {
+      "elbow": [
+        22,
+        32
+      ],
+      "wrist": [
+        13,
+        34
+      ],
+      "palm": [
+        14,
+        37
+      ]
+    },
+    "far": {
+      "elbow": [
+        44,
+        30
+      ],
+      "wrist": [
+        49,
+        27
+      ],
+      "palm": [
+        51,
+        26
+      ]
+    },
+    "farLeg": {
+      "knee": [
+        44,
+        44
+      ],
+      "ankle": [
+        43,
+        52
+      ]
+    },
+    "tools": [
+      {
+        "kind": "toolbox",
+        "hand": "near",
+        "axis": [
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "wrench",
+        "hand": "far",
+        "axis": [
+          4,
+          -9
+        ]
+      }
+    ]
+  }
+}

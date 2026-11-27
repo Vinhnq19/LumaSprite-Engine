@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "status": "E7_6R_READY_FOR_FINAL_HUMAN_ENVIRONMENT_REVIEW",
+  "ownerApproval": "UNREVIEWED",
+  "generalization": "PARTIAL_PASS",
+  "checkpoint": "1f5350a67e599c4228591693c995cee49d21b7b8",
+  "e76Implementation": "ec5d8c6ec3d9130bd118dfcb8bcc1528a1158faa",
+  "parentE75R": "80c0fe247cfa2e8438d9c73e744cbbb4df1da00c",
+  "frozenCandidate": "dbe27586c0afe94145ab6242d7137fa4c9a9f257",
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "cliSmoke": "PASS",
+  "engineTests": {
+    "passed": 73,
+    "total": 73
+  },
+  "historical": {
+    "sha256": 805,
+    "rebuiltArtifacts": 361,
+    "e76Payloads": 91,
+    "e75rPayloads": 263,
+    "regression": [
+      "E3.4",
+      "E6.1R–E6.4",
+      "E7.1–E7.6 (including R)"
+    ]
+  },
+  "candidate": {
+    "sceneChecks": 18,
+    "deterministicPayloads": 142,
+    "negativeRuns": 17,
+    "negativeTypes": [
+      "CONTROL_OUT_OF_REACH",
+      "ROUTE_BLOCKED",
+      "BRIDGE_DETACHED",
+      "INCORRECT_COLLISION",
+      "TILE_MISSING",
+      "INCORRECT_OCCLUSION"
+    ],
+    "checked": [
+      "spawn/destination",
+      "continuous deck",
+      "19×5 footprint",
+      "collision",
+      "occlusion",
+      "depth sort",
+      "pivots",
+      "anchors",
+      "tile seams and IDs",
+      "atlas",
+      "scene replay",
+      "binary PNG/RGBA",
+      "palette"
+    ]
+  },
+  "freshHoldout": {
+    "id": "canal-intake-service-platform",
+    "sealSha256": "ae90d489e9d8afc40a61ed0fc91276ce12bcf150b82bb98785d917c9bd01fbef",
+    "spatial": "PASS",
+    "recognition": "CAPABILITY_GAP",
+    "originalGateExit": 1,
+    "originalGateError": "INTAKE_APERTURE_OCCLUDED",
+    "observedWaterPixels": {
+      "day": 19,
+      "night": 19
+    },
+    "requiredWaterPixels": 35,
+    "retention": "Evidence logger preserves the frozen predicate and marks the failure while continuing independent spatial QA. Renderer, fixtures, seed and requirement unchanged."
+  },
+  "studio": {
+    "checkout": "c56837e344dbb42369dc92ebd379e28255db7d84",
+    "liveMain": "593650101ed0cd2a54d045197911fc5b7a8bdd83",
+    "mode": "RAW_PNG_ONLY",
+    "rgbaRoundTripsPerRevision": 12,
+    "sceneImport": "MISSING_ADAPTER",
+    "runtimeIntegration": "NOT_RUN – E8 preflight design only"
+  },
+  "audit": {
+    "secretPatterns": "PASS on new text",
+    "dependencies": "UNCHANGED",
+    "licenses": "UNCHANGED",
+    "externalAssetsImported": 0,
+    "aiCalls": 0
+  }
+}

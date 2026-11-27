@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "kind": "lumasprite.art-review.v1",
+  "toolVersion": "1.0.0",
+  "timestamp": "2026-11-26T13:38:22.339Z",
+  "assetFamily": "environment",
+  "rubricId": "workbench-default-v1",
+  "rubricName": "Workbench Default Rubric",
+  "rubricVersion": "1.0.0",
+  "rubricIsWorkbenchDefault": true,
+  "alignment": {
+    "mode": "top-left",
+    "offsetX": 0,
+    "offsetY": 0,
+    "confirmed": false
+  },
+  "decision": "undecided",
+  "criticalOverrideRationale": "",
+  "summaryNote": "Bonded Fracture. Compare at native scale; independent art review pending.",
+  "scores": {
+    "structure": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "perspective": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "depth": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "lighting": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "composition": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    }
+  },
+  "regionNotes": [],
+  "baselineRef": {
+    "slot": "baseline",
+    "name": "h1-day-bonded baseline",
+    "fileName": "native.png",
+    "sourceSha256": "10776ca5c5eda803fab9db71780dc9afaf80dba83d04d8ebac0f05af4f2ee561",
+    "frameWidth": 320,
+    "frameHeight": 208,
+    "sourceWidth": 320,
+    "sourceHeight": 208,
+    "frameCount": 1,
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  },
+  "candidateRef": {
+    "slot": "candidate",
+    "name": "h1-day-bonded candidate",
+    "fileName": "native.png",
+    "sourceSha256": "3a00918cc40452d0fa77f1024835723eb21ae67fb33c6bcdb4c7cbabd6f78238",
+    "frameWidth": 320,
+    "frameHeight": 208,
+    "sourceWidth": 320,
+    "sourceHeight": 208,
+    "frameCount": 1,
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  }
+}

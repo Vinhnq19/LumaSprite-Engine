@@ -1,0 +1,2173 @@
+{
+  "id": "mistfen",
+  "role": "holdout",
+  "seed": 8367,
+  "scene": "Mistfen Ferry Depot",
+  "description": "A roofless fen ferry depot with a stepped sluice gate, low flood walls and a stone service landing. A hooded ferry steward checks a narrow amber water-level signal from the footpath.",
+  "device": "Ferry Level Signal",
+  "lock": {
+    "version": 1,
+    "kind": "lumasprite-character-shape-lock",
+    "candidate": "mistfen",
+    "checkpoint": "3969177d8bd5c3fe56c58e924518742c54b013ec",
+    "characterSpecVersion": 3,
+    "geometryRevision": 1,
+    "canvas": {
+      "w": 64,
+      "h": 64
+    },
+    "poseIntent": "standing-free",
+    "source": {
+      "geometrySha256": "7ce586f7265e6e550b8ab2ebb81633a769770e9010e4a06cab661175b6fdaeb5",
+      "specSha256": "9c83c9281cce23b6f23457e83ab07af01b39480fb0c0d8b2f64b1eebd2be28b2",
+      "flatPngSha256": "0a6b146215f77ea54f6eeeba6bb9f0cac180677a04dbac6e9dc18e9ab6954968",
+      "silhouettePngSha256": "3a1f249278c5188c94074c6a12b1eea06df78a51c0f56a4309c0f6cb26985563",
+      "flatRgbaSha256": "010fcccf93a957848fbd0dd0befd0b88c96b0bb687be370a6d5fb54d333bc7ee"
+    },
+    "silhouetteAlphaSha256": "638cce46f85b7a19817c3c3a2bee665ffd34a9c8da730527131f61fdab2775f6",
+    "landmarks": {
+      "crown": {
+        "point": [
+          35,
+          16
+        ],
+        "partId": "head"
+      },
+      "neck": {
+        "point": [
+          33,
+          22
+        ],
+        "partId": "neck"
+      },
+      "chest": {
+        "point": [
+          32,
+          27
+        ],
+        "partId": "jacket"
+      },
+      "pelvis": {
+        "point": [
+          34,
+          37
+        ],
+        "partId": "hips"
+      },
+      "far-shoulder": {
+        "point": [
+          36,
+          23
+        ],
+        "partId": "far-upper-arm"
+      },
+      "far-elbow": {
+        "point": [
+          43,
+          32
+        ],
+        "partId": "far-forearm"
+      },
+      "far-wrist": {
+        "point": [
+          45,
+          37
+        ],
+        "partId": "far-forearm"
+      },
+      "far-palm": {
+        "point": [
+          44,
+          40
+        ],
+        "partId": "far-hand"
+      },
+      "far-hip": {
+        "point": [
+          38,
+          36
+        ],
+        "partId": "far-thigh"
+      },
+      "far-knee": {
+        "point": [
+          41,
+          44
+        ],
+        "partId": "far-shin"
+      },
+      "far-ankle": {
+        "point": [
+          40,
+          52
+        ],
+        "partId": "far-boot"
+      },
+      "far-ground": {
+        "point": [
+          40,
+          55
+        ],
+        "partId": "far-boot"
+      },
+      "near-shoulder": {
+        "point": [
+          26,
+          27
+        ],
+        "partId": "near-upper-arm"
+      },
+      "near-elbow": {
+        "point": [
+          23,
+          34
+        ],
+        "partId": "near-forearm"
+      },
+      "near-wrist": {
+        "point": [
+          21,
+          40
+        ],
+        "partId": "near-forearm"
+      },
+      "near-palm": {
+        "point": [
+          22,
+          42
+        ],
+        "partId": "near-hand"
+      },
+      "near-hip": {
+        "point": [
+          30,
+          38
+        ],
+        "partId": "near-thigh"
+      },
+      "near-knee": {
+        "point": [
+          30,
+          45
+        ],
+        "partId": "near-shin"
+      },
+      "near-ankle": {
+        "point": [
+          30,
+          53
+        ],
+        "partId": "near-boot"
+      },
+      "near-ground": {
+        "point": [
+          30,
+          56
+        ],
+        "partId": "near-boot"
+      }
+    },
+    "links": [
+      {
+        "from": "crown",
+        "to": "neck"
+      },
+      {
+        "from": "neck",
+        "to": "chest"
+      },
+      {
+        "from": "chest",
+        "to": "pelvis"
+      },
+      {
+        "from": "chest",
+        "to": "far-shoulder"
+      },
+      {
+        "from": "far-shoulder",
+        "to": "far-elbow"
+      },
+      {
+        "from": "far-elbow",
+        "to": "far-wrist"
+      },
+      {
+        "from": "far-wrist",
+        "to": "far-palm"
+      },
+      {
+        "from": "pelvis",
+        "to": "far-hip"
+      },
+      {
+        "from": "far-hip",
+        "to": "far-knee"
+      },
+      {
+        "from": "far-knee",
+        "to": "far-ankle"
+      },
+      {
+        "from": "far-ankle",
+        "to": "far-ground"
+      },
+      {
+        "from": "chest",
+        "to": "near-shoulder"
+      },
+      {
+        "from": "near-shoulder",
+        "to": "near-elbow"
+      },
+      {
+        "from": "near-elbow",
+        "to": "near-wrist"
+      },
+      {
+        "from": "near-wrist",
+        "to": "near-palm"
+      },
+      {
+        "from": "pelvis",
+        "to": "near-hip"
+      },
+      {
+        "from": "near-hip",
+        "to": "near-knee"
+      },
+      {
+        "from": "near-knee",
+        "to": "near-ankle"
+      },
+      {
+        "from": "near-ankle",
+        "to": "near-ground"
+      }
+    ],
+    "gripAnchor": null,
+    "groundPivot": [
+      32,
+      58
+    ],
+    "projectedGround": {
+      "near": 58,
+      "far": 57
+    },
+    "layerOrder": [
+      "far-thigh",
+      "far-shin",
+      "far-boot",
+      "far-upper-arm",
+      "far-forearm",
+      "far-hand",
+      "near-thigh",
+      "near-shin",
+      "near-boot",
+      "hips",
+      "jacket",
+      "strap",
+      "satchel",
+      "neck",
+      "head",
+      "hood",
+      "near-upper-arm",
+      "near-forearm",
+      "near-hand"
+    ],
+    "bodyParts": {
+      "far-thigh": {
+        "geometrySha256": "ea5ba2fac03f0afc1f09922103abc39f0f3b8880acca8138097b72197c84f2c7",
+        "sourceRgbaSha256": "86ef9d88fa1f52f9cf114583dafe0209d84f54c4c452ef89d0c49420563eca08",
+        "alphaSha256": "5986fab487d75fe160bef584bedd415e4b4cb9dadfbbf7f45b960fc44e48939e",
+        "pixels": 72
+      },
+      "far-shin": {
+        "geometrySha256": "0e6dfb9dff67ce32ab2d2df04070b421a4e9a5622417f61398622386e6e03c20",
+        "sourceRgbaSha256": "6bc21b8757aa0d26bc279d14108e20c2964b3fea6413da65c30010851a6a5a38",
+        "alphaSha256": "c6d144a1f5f41365aa2317edff54e8368a29c8693504a226ab83998944ffce93",
+        "pixels": 51
+      },
+      "far-boot": {
+        "geometrySha256": "9d13a7ebda15d3bb3af99313699fb879236d512a4064d65a417722e2d0d6fbd4",
+        "sourceRgbaSha256": "334982634067af5e8136bf903acb83faef0e488e99972a27095657f1805dad6b",
+        "alphaSha256": "397dd4f78d1ae99a735a74f1e8c728f25144bf1eb8db7e1d3f2908422f4f7401",
+        "pixels": 37
+      },
+      "far-upper-arm": {
+        "geometrySha256": "5b79dc8c13b89a1d57e248ced3c7040f7ba7e5b548c8866255453f9ebeb097c3",
+        "sourceRgbaSha256": "358d6de2bf6754bf5971b632c6c3a91918a322b37f4d252c4e8278cc8aef2ab0",
+        "alphaSha256": "25b833dd31765d45eb647a62d25b0b2cf344b07bcf99a38843bfa22757b24289",
+        "pixels": 68
+      },
+      "far-forearm": {
+        "geometrySha256": "35f76ffcd60d55c1b03302361912752bab5f9c351b78ac7b4df8133f65de5a43",
+        "sourceRgbaSha256": "f8b86ff973e9a7042bc02263012a51a07a38cd831c30ae496a8649cec1101c90",
+        "alphaSha256": "5fc9291d6d475deaaa55998d5b6be9826e90c6989da0c3e5760177f80938cfb5",
+        "pixels": 30
+      },
+      "far-hand": {
+        "geometrySha256": "685a12dcf0898739a0d62f277dd0f5ff9608259f417e6669096603e41b4c3575",
+        "sourceRgbaSha256": "7c64592d1e72396f05313b6c27b029a0b6349244732f1ac394a037bf3ed1fe41",
+        "alphaSha256": "f2cae49f603382afee2f9977ebc774982fe4a4c45d9f48353f3ca5ecbe6c4114",
+        "pixels": 18
+      },
+      "near-thigh": {
+        "geometrySha256": "c32e2364a4490760648e94adbfaf56c501b2e489e0a0eff41e793fc68addf2ea",
+        "sourceRgbaSha256": "e556c172ed88cbf5ac409d7031063d974faeb33f6f9662c4199d3cc6c333470e",
+        "alphaSha256": "1c63870a37423f6eda5bff90bec537ff807395d0c17d9f3362b7a72172f00735",
+        "pixels": 81
+      },
+      "near-shin": {
+        "geometrySha256": "e033bc201fcee89f4818d4f8504bc491aca9fa9694e6bb3feeaa3cfda738ff2e",
+        "sourceRgbaSha256": "a81d38894abf4b629ae9b113da5d0e2e1fff65a90fff280872137c606587e76f",
+        "alphaSha256": "12050469aa864be06a734871ba12a4685434e8581456bac60ed8b7b8e45de686",
+        "pixels": 66
+      },
+      "near-boot": {
+        "geometrySha256": "3aabc8555f781286192b785ef308e4327cf422e550899454710cf7c7962ab7d9",
+        "sourceRgbaSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+        "alphaSha256": "fd094e297b25791997375a79270cfbf07f3bfc31531bb28c4ffbd35594d4750b",
+        "pixels": 40
+      },
+      "hips": {
+        "geometrySha256": "4abca70a711d545a6dd7bac8e438a0e883758af3a2b24a63b35eae776e15b0ad",
+        "sourceRgbaSha256": "244dd25c5a2a7584f7546ef7359d9717e9904adfc299aec3607c73037db2506d",
+        "alphaSha256": "b4347fad8e3fdd4bf0c84c0bf5060f38d648708ac741ac13a92f557422bf95b3",
+        "pixels": 91
+      },
+      "jacket": {
+        "geometrySha256": "93b695c72e21852b95609dae66e3d53f9d767d79e17d117a190a857f7ab5fe9d",
+        "sourceRgbaSha256": "e2c60af2b1b6e32c34ad0a9af680801268acffbc39f9aa2bc38dbafdc537e0bb",
+        "alphaSha256": "a16b3bf7a58eae61a13277abedb19e4d7b6bc43db7efa0bf56ccab4368d600d5",
+        "pixels": 226
+      },
+      "strap": {
+        "geometrySha256": "1079c2664490e63358e7d387a4c423a71f04cec6d39cf5f801a2798ddc2297b5",
+        "sourceRgbaSha256": "9ca079918f568e3d92a955457230962586881e94a1371f9a544f0e7d966de973",
+        "alphaSha256": "7c2d61b5605bf2e382e22d3b7bfc05422e92c6d1d92b67561cab9436f0cbf901",
+        "pixels": 33
+      },
+      "satchel": {
+        "geometrySha256": "50369f0ba912120dc8f69bde6a1aa63c0db368f39e8f74058a21a0b26bcd4edf",
+        "sourceRgbaSha256": "51b3d502b39beccc98b93ff2a6f0820a3d471721f40b9029c201a34003d73613",
+        "alphaSha256": "eccc5145378061268a960ecba9d34898276d537e9cde5bab18f2126c66b55942",
+        "pixels": 64
+      },
+      "neck": {
+        "geometrySha256": "a4a450aa38b839e64586d8f26ce0bbfdba1595448e9529ddda963675da3dda62",
+        "sourceRgbaSha256": "3ee1021e75cbbbe9644b29e33c296e5f4d339b131599705de656da1960bee47e",
+        "alphaSha256": "00d801d48223fdda8894621dae31d944ad6a4d4e49e8697864c0ef7a87d86ced",
+        "pixels": 34
+      },
+      "head": {
+        "geometrySha256": "7fcbcfaa8674cdea27a536cab471229e9b2d6e89480f58e9a76380f4beac6659",
+        "sourceRgbaSha256": "d738f83a29caac65d2cebbe1b96cd76716aa44acc98368a912caa2c08b04b2c6",
+        "alphaSha256": "9e9b0f3455b20bace4f6e8764d5ae4ab6e589ad8645f04516efbe81116f3c2e4",
+        "pixels": 147
+      },
+      "hood": {
+        "geometrySha256": "292ed2f28bc7312a6a03a67290702aa640966c2e06cc94b5252805eb02925f7b",
+        "sourceRgbaSha256": "c0674fa322807cf24a9917dc8ad036e09b1f41c30096289ab43ee8731113ca74",
+        "alphaSha256": "6cd8fa415569e022d80a1bbd4b6ebc28cc7fbbdeb45688787d587ae15c5e6a4d",
+        "pixels": 157
+      },
+      "near-upper-arm": {
+        "geometrySha256": "f1979c47f3d109b0156b5917acdd320d44f85e64f8da9fa8518adcd7c8e874ea",
+        "sourceRgbaSha256": "ef9d894ff57f6868cac789630367d2b592da0331be149dc7cadc31375011a91a",
+        "alphaSha256": "33cd1aef546e4830ba651904e8da4928b1d3b16fda394882bcb07e5cab1691c1",
+        "pixels": 66
+      },
+      "near-forearm": {
+        "geometrySha256": "e3a04203222e9a5f0d13e95929115c83c73e6959629fc5999118f02df8f57362",
+        "sourceRgbaSha256": "8970e8084922dafa807af5d9bbf16b164500483636295c223f0074d5be2183e9",
+        "alphaSha256": "e3b15564c76617a8c88a954139a635008220b78cb0f8c9d2372e52170a4636be",
+        "pixels": 45
+      },
+      "near-hand": {
+        "geometrySha256": "cafa1efc8d2d4b548c6f9019961019f58b0fd3922c911df02e4991008aad49c7",
+        "sourceRgbaSha256": "2a22f6270d06a64a6d2c1603dcb4591d8e9ece5b4fd59686dffd5244d548f030",
+        "alphaSha256": "f55e574ced52e331534ed1429157c9a2171c91480d6e171ccb16ff136f06aa59",
+        "pixels": 21
+      }
+    },
+    "lockedRegions": {
+      "format": "uint8-alpha-row-major",
+      "silhouette": {
+        "alphaSha256": "638cce46f85b7a19817c3c3a2bee665ffd34a9c8da730527131f61fdab2775f6",
+        "pixels": 984
+      },
+      "lowerLegClearance": {
+        "alphaSha256": "ca25704ee2c9f804fe022474ae01ef235922b305262cfc0406dc2d81faaea639",
+        "pixels": 35
+      },
+      "gripContact": {
+        "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "pixels": 0
+      },
+      "handleOpening": {
+        "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "pixels": 0
+      },
+      "bootSoles": {
+        "alphaSha256": "21d08bb85dadda9487903dc7b9b5be79ed2babe9b026d185860b34cae7497678",
+        "pixels": 15
+      }
+    }
+  },
+  "geometry": {
+    "day": {
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      },
+      "lights": "upper-left",
+      "portal": {
+        "at": [
+          142,
+          123
+        ],
+        "points": [
+          [
+            124,
+            119
+          ],
+          [
+            160,
+            119
+          ],
+          [
+            160,
+            127
+          ],
+          [
+            124,
+            127
+          ]
+        ]
+      },
+      "occlusion": [
+        {
+          "id": "east-flood-wall",
+          "kind": "building",
+          "at": [
+            242,
+            103
+          ],
+          "left": 242,
+          "top": 70,
+          "w": 67,
+          "h": 33,
+          "visibleBefore": 1684,
+          "alphaSha256": "21a63c7b1a690aa48e1cf1d6f7f951e622301b648092ce9397cf89c6d7afc617",
+          "visible": 1684,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "signal-pedestal",
+          "kind": "building",
+          "at": [
+            191,
+            106
+          ],
+          "left": 191,
+          "top": 70,
+          "w": 32,
+          "h": 36,
+          "visibleBefore": 539,
+          "alphaSha256": "4e7c46ddc4ced622149a502fb751d8d2fddb35582d40c83ec025bf359f9be037",
+          "visible": 539,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "sluice-gateway",
+          "kind": "building",
+          "at": [
+            111,
+            123
+          ],
+          "left": 111,
+          "top": 45,
+          "w": 78,
+          "h": 78,
+          "visibleBefore": 3342,
+          "alphaSha256": "d01cb0bdff4f37f84ad580079bf3449e4a929b619726ae1152bbe4f5d6717fc8",
+          "visible": 3294,
+          "hiddenBy": {
+            "surveyor": 48
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "west-flood-wall",
+          "kind": "building",
+          "at": [
+            31,
+            134
+          ],
+          "left": 31,
+          "top": 98,
+          "w": 66,
+          "h": 36,
+          "visibleBefore": 1749,
+          "alphaSha256": "0fece4cd87c31b840b49b85028a6d8257e527eb63dd7437265ee903ffdafdd87",
+          "visible": 1612,
+          "hiddenBy": {
+            "mooring-post": 137
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "mooring-post",
+          "kind": "building",
+          "at": [
+            71,
+            151
+          ],
+          "left": 71,
+          "top": 124,
+          "w": 26,
+          "h": 27,
+          "visibleBefore": 574,
+          "alphaSha256": "624d4e16d1825fdba36d00cbad9c9ac319bca74886cba65d6ea98478b6d50568",
+          "visible": 505,
+          "hiddenBy": {
+            "ferry-level-signal": 69
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "courier",
+          "kind": "actor",
+          "at": [
+            201,
+            160
+          ],
+          "left": 169,
+          "top": 102,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 984,
+          "alphaSha256": "638cce46f85b7a19817c3c3a2bee665ffd34a9c8da730527131f61fdab2775f6",
+          "visible": 984,
+          "hiddenBy": {},
+          "edgeSamples": 224,
+          "contactPixels": 44,
+          "visibleContactPixels": 44,
+          "groundClearance": 16
+        },
+        {
+          "id": "ferry-level-signal",
+          "kind": "prop",
+          "at": [
+            72,
+            169
+          ],
+          "left": 59,
+          "top": 140,
+          "w": 32,
+          "h": 32,
+          "visibleBefore": 413,
+          "alphaSha256": "cf514c3a6e85fdd4bac227ea9773d911fb3d401d258817c3cb8a6a0c19fceb6c",
+          "visible": 413,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "surveyor",
+          "kind": "actor",
+          "at": [
+            111,
+            173
+          ],
+          "left": 81,
+          "top": 114,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 1072,
+          "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+          "visible": 1072,
+          "hiddenBy": {},
+          "edgeSamples": 294,
+          "contactPixels": 50,
+          "visibleContactPixels": 50,
+          "groundClearance": 16
+        }
+      ],
+      "collisions": [
+        {
+          "id": "sluice-gateway-0",
+          "kind": "architecture",
+          "points": [
+            [
+              111,
+              123
+            ],
+            [
+              124,
+              123
+            ],
+            [
+              124,
+              119
+            ],
+            [
+              132,
+              111
+            ],
+            [
+              119,
+              111
+            ],
+            [
+              111,
+              119
+            ]
+          ]
+        },
+        {
+          "id": "sluice-gateway-1",
+          "kind": "architecture",
+          "points": [
+            [
+              160,
+              123
+            ],
+            [
+              173,
+              123
+            ],
+            [
+              173,
+              119
+            ],
+            [
+              181,
+              111
+            ],
+            [
+              168,
+              111
+            ],
+            [
+              160,
+              119
+            ]
+          ]
+        },
+        {
+          "id": "west-flood-wall",
+          "kind": "architecture",
+          "points": [
+            [
+              31,
+              134
+            ],
+            [
+              87,
+              134
+            ],
+            [
+              87,
+              130
+            ],
+            [
+              92,
+              125
+            ],
+            [
+              36,
+              125
+            ],
+            [
+              31,
+              130
+            ]
+          ]
+        },
+        {
+          "id": "east-flood-wall",
+          "kind": "architecture",
+          "points": [
+            [
+              242,
+              103
+            ],
+            [
+              295,
+              103
+            ],
+            [
+              295,
+              99
+            ],
+            [
+              302,
+              92
+            ],
+            [
+              249,
+              92
+            ],
+            [
+              242,
+              99
+            ]
+          ]
+        },
+        {
+          "id": "signal-pedestal",
+          "kind": "architecture",
+          "points": [
+            [
+              191,
+              106
+            ],
+            [
+              214,
+              106
+            ],
+            [
+              214,
+              102
+            ],
+            [
+              218,
+              98
+            ],
+            [
+              195,
+              98
+            ],
+            [
+              191,
+              102
+            ]
+          ]
+        },
+        {
+          "id": "mooring-post",
+          "kind": "architecture",
+          "points": [
+            [
+              71,
+              151
+            ],
+            [
+              87,
+              151
+            ],
+            [
+              87,
+              147
+            ],
+            [
+              92,
+              142
+            ],
+            [
+              76,
+              142
+            ],
+            [
+              71,
+              147
+            ]
+          ]
+        },
+        {
+          "id": "ferry-level-signal",
+          "kind": "prop",
+          "points": [
+            [
+              64,
+              160
+            ],
+            [
+              80,
+              160
+            ],
+            [
+              80,
+              169
+            ],
+            [
+              64,
+              169
+            ]
+          ]
+        }
+      ],
+      "refinement": {
+        "wallHeight": 70,
+        "doorWidth": 62,
+        "doorHeight": 60,
+        "jamb": 13,
+        "fit": [
+          {
+            "id": "surveyor",
+            "nativeCanvas": 64,
+            "pivot": [
+              30,
+              59
+            ],
+            "silhouette": {
+              "left": 21,
+              "right": 53,
+              "top": 3,
+              "bottom": 58,
+              "width": 33,
+              "height": 56
+            },
+            "jacket": {
+              "left": 23,
+              "right": 38,
+              "top": 19,
+              "bottom": 39,
+              "width": 16,
+              "height": 21
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 9,
+            "testedPixels": 380,
+            "clearWidth": 36,
+            "doorHeight": 60
+          },
+          {
+            "id": "courier",
+            "nativeCanvas": 64,
+            "pivot": [
+              32,
+              58
+            ],
+            "silhouette": {
+              "left": 18,
+              "top": 6,
+              "right": 47,
+              "bottom": 57,
+              "width": 30,
+              "height": 52
+            },
+            "jacket": {
+              "left": 24,
+              "top": 22,
+              "right": 41,
+              "bottom": 39,
+              "width": 18,
+              "height": 18
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 10,
+            "testedPixels": 420,
+            "clearWidth": 36,
+            "doorHeight": 60
+          }
+        ],
+        "roofOverhang": [],
+        "footprint": [
+          [
+            111,
+            123
+          ],
+          [
+            173,
+            123
+          ],
+          [
+            189,
+            115
+          ],
+          [
+            127,
+            115
+          ]
+        ],
+        "windowSillsY": []
+      },
+      "collisionPlane": "2e214f9820e0967b703b646080e0b61a196ba3f64d3ab19d2a2aee3795a2703d",
+      "walkable": "56f70e14c52135f0d0f005be1d924c8ef8dabbd3900e632fab3e58b92866cd3e",
+      "routes": [
+        {
+          "id": "gate-passage",
+          "actor": "surveyor",
+          "points": [
+            [
+              139,
+              196
+            ],
+            [
+              145,
+              159
+            ],
+            [
+              142,
+              137
+            ],
+            [
+              142,
+              96
+            ]
+          ],
+          "halfWidth": 9,
+          "tested": 1919
+        },
+        {
+          "id": "signal-approach",
+          "actor": "courier",
+          "points": [
+            [
+              142,
+              140
+            ],
+            [
+              152,
+              154
+            ],
+            [
+              178,
+              154
+            ],
+            [
+              208,
+              140
+            ],
+            [
+              204,
+              119
+            ]
+          ],
+          "halfWidth": 10,
+          "tested": 1932
+        }
+      ],
+      "interactions": [
+        {
+          "id": "gateway-step",
+          "target": "entry",
+          "walkablePixels": 546,
+          "nearest": 0
+        },
+        {
+          "id": "read-signal",
+          "target": "signal-pedestal",
+          "walkablePixels": 617,
+          "nearest": 0
+        },
+        {
+          "id": "check-ferry-level",
+          "target": "ferry-level-signal",
+          "walkablePixels": 388,
+          "nearest": 0
+        }
+      ]
+    },
+    "night": {
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      },
+      "lights": "upper-left",
+      "portal": {
+        "at": [
+          142,
+          123
+        ],
+        "points": [
+          [
+            124,
+            119
+          ],
+          [
+            160,
+            119
+          ],
+          [
+            160,
+            127
+          ],
+          [
+            124,
+            127
+          ]
+        ]
+      },
+      "occlusion": [
+        {
+          "id": "east-flood-wall",
+          "kind": "building",
+          "at": [
+            242,
+            103
+          ],
+          "left": 242,
+          "top": 70,
+          "w": 67,
+          "h": 33,
+          "visibleBefore": 1684,
+          "alphaSha256": "21a63c7b1a690aa48e1cf1d6f7f951e622301b648092ce9397cf89c6d7afc617",
+          "visible": 1684,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "signal-pedestal",
+          "kind": "building",
+          "at": [
+            191,
+            106
+          ],
+          "left": 191,
+          "top": 70,
+          "w": 32,
+          "h": 36,
+          "visibleBefore": 539,
+          "alphaSha256": "4e7c46ddc4ced622149a502fb751d8d2fddb35582d40c83ec025bf359f9be037",
+          "visible": 539,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "sluice-gateway",
+          "kind": "building",
+          "at": [
+            111,
+            123
+          ],
+          "left": 111,
+          "top": 45,
+          "w": 78,
+          "h": 78,
+          "visibleBefore": 3342,
+          "alphaSha256": "d01cb0bdff4f37f84ad580079bf3449e4a929b619726ae1152bbe4f5d6717fc8",
+          "visible": 3294,
+          "hiddenBy": {
+            "surveyor": 48
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "west-flood-wall",
+          "kind": "building",
+          "at": [
+            31,
+            134
+          ],
+          "left": 31,
+          "top": 98,
+          "w": 66,
+          "h": 36,
+          "visibleBefore": 1749,
+          "alphaSha256": "0fece4cd87c31b840b49b85028a6d8257e527eb63dd7437265ee903ffdafdd87",
+          "visible": 1612,
+          "hiddenBy": {
+            "mooring-post": 137
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "mooring-post",
+          "kind": "building",
+          "at": [
+            71,
+            151
+          ],
+          "left": 71,
+          "top": 124,
+          "w": 26,
+          "h": 27,
+          "visibleBefore": 574,
+          "alphaSha256": "624d4e16d1825fdba36d00cbad9c9ac319bca74886cba65d6ea98478b6d50568",
+          "visible": 505,
+          "hiddenBy": {
+            "ferry-level-signal": 69
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "courier",
+          "kind": "actor",
+          "at": [
+            201,
+            160
+          ],
+          "left": 169,
+          "top": 102,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 984,
+          "alphaSha256": "638cce46f85b7a19817c3c3a2bee665ffd34a9c8da730527131f61fdab2775f6",
+          "visible": 984,
+          "hiddenBy": {},
+          "edgeSamples": 224,
+          "contactPixels": 44,
+          "visibleContactPixels": 44,
+          "groundClearance": 16
+        },
+        {
+          "id": "ferry-level-signal",
+          "kind": "prop",
+          "at": [
+            72,
+            169
+          ],
+          "left": 59,
+          "top": 140,
+          "w": 32,
+          "h": 32,
+          "visibleBefore": 413,
+          "alphaSha256": "cf514c3a6e85fdd4bac227ea9773d911fb3d401d258817c3cb8a6a0c19fceb6c",
+          "visible": 413,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "surveyor",
+          "kind": "actor",
+          "at": [
+            111,
+            173
+          ],
+          "left": 81,
+          "top": 114,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 1072,
+          "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015",
+          "visible": 1072,
+          "hiddenBy": {},
+          "edgeSamples": 294,
+          "contactPixels": 50,
+          "visibleContactPixels": 50,
+          "groundClearance": 16
+        }
+      ],
+      "collisions": [
+        {
+          "id": "sluice-gateway-0",
+          "kind": "architecture",
+          "points": [
+            [
+              111,
+              123
+            ],
+            [
+              124,
+              123
+            ],
+            [
+              124,
+              119
+            ],
+            [
+              132,
+              111
+            ],
+            [
+              119,
+              111
+            ],
+            [
+              111,
+              119
+            ]
+          ]
+        },
+        {
+          "id": "sluice-gateway-1",
+          "kind": "architecture",
+          "points": [
+            [
+              160,
+              123
+            ],
+            [
+              173,
+              123
+            ],
+            [
+              173,
+              119
+            ],
+            [
+              181,
+              111
+            ],
+            [
+              168,
+              111
+            ],
+            [
+              160,
+              119
+            ]
+          ]
+        },
+        {
+          "id": "west-flood-wall",
+          "kind": "architecture",
+          "points": [
+            [
+              31,
+              134
+            ],
+            [
+              87,
+              134
+            ],
+            [
+              87,
+              130
+            ],
+            [
+              92,
+              125
+            ],
+            [
+              36,
+              125
+            ],
+            [
+              31,
+              130
+            ]
+          ]
+        },
+        {
+          "id": "east-flood-wall",
+          "kind": "architecture",
+          "points": [
+            [
+              242,
+              103
+            ],
+            [
+              295,
+              103
+            ],
+            [
+              295,
+              99
+            ],
+            [
+              302,
+              92
+            ],
+            [
+              249,
+              92
+            ],
+            [
+              242,
+              99
+            ]
+          ]
+        },
+        {
+          "id": "signal-pedestal",
+          "kind": "architecture",
+          "points": [
+            [
+              191,
+              106
+            ],
+            [
+              214,
+              106
+            ],
+            [
+              214,
+              102
+            ],
+            [
+              218,
+              98
+            ],
+            [
+              195,
+              98
+            ],
+            [
+              191,
+              102
+            ]
+          ]
+        },
+        {
+          "id": "mooring-post",
+          "kind": "architecture",
+          "points": [
+            [
+              71,
+              151
+            ],
+            [
+              87,
+              151
+            ],
+            [
+              87,
+              147
+            ],
+            [
+              92,
+              142
+            ],
+            [
+              76,
+              142
+            ],
+            [
+              71,
+              147
+            ]
+          ]
+        },
+        {
+          "id": "ferry-level-signal",
+          "kind": "prop",
+          "points": [
+            [
+              64,
+              160
+            ],
+            [
+              80,
+              160
+            ],
+            [
+              80,
+              169
+            ],
+            [
+              64,
+              169
+            ]
+          ]
+        }
+      ],
+      "refinement": {
+        "wallHeight": 70,
+        "doorWidth": 62,
+        "doorHeight": 60,
+        "jamb": 13,
+        "fit": [
+          {
+            "id": "surveyor",
+            "nativeCanvas": 64,
+            "pivot": [
+              30,
+              59
+            ],
+            "silhouette": {
+              "left": 21,
+              "right": 53,
+              "top": 3,
+              "bottom": 58,
+              "width": 33,
+              "height": 56
+            },
+            "jacket": {
+              "left": 23,
+              "right": 38,
+              "top": 19,
+              "bottom": 39,
+              "width": 16,
+              "height": 21
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 9,
+            "testedPixels": 380,
+            "clearWidth": 36,
+            "doorHeight": 60
+          },
+          {
+            "id": "courier",
+            "nativeCanvas": 64,
+            "pivot": [
+              32,
+              58
+            ],
+            "silhouette": {
+              "left": 18,
+              "top": 6,
+              "right": 47,
+              "bottom": 57,
+              "width": 30,
+              "height": 52
+            },
+            "jacket": {
+              "left": 24,
+              "top": 22,
+              "right": 41,
+              "bottom": 39,
+              "width": 18,
+              "height": 18
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 10,
+            "testedPixels": 420,
+            "clearWidth": 36,
+            "doorHeight": 60
+          }
+        ],
+        "roofOverhang": [],
+        "footprint": [
+          [
+            111,
+            123
+          ],
+          [
+            173,
+            123
+          ],
+          [
+            189,
+            115
+          ],
+          [
+            127,
+            115
+          ]
+        ],
+        "windowSillsY": []
+      },
+      "collisionPlane": "2e214f9820e0967b703b646080e0b61a196ba3f64d3ab19d2a2aee3795a2703d",
+      "walkable": "56f70e14c52135f0d0f005be1d924c8ef8dabbd3900e632fab3e58b92866cd3e",
+      "routes": [
+        {
+          "id": "gate-passage",
+          "actor": "surveyor",
+          "points": [
+            [
+              139,
+              196
+            ],
+            [
+              145,
+              159
+            ],
+            [
+              142,
+              137
+            ],
+            [
+              142,
+              96
+            ]
+          ],
+          "halfWidth": 9,
+          "tested": 1919
+        },
+        {
+          "id": "signal-approach",
+          "actor": "courier",
+          "points": [
+            [
+              142,
+              140
+            ],
+            [
+              152,
+              154
+            ],
+            [
+              178,
+              154
+            ],
+            [
+              208,
+              140
+            ],
+            [
+              204,
+              119
+            ]
+          ],
+          "halfWidth": 10,
+          "tested": 1932
+        }
+      ],
+      "interactions": [
+        {
+          "id": "gateway-step",
+          "target": "entry",
+          "walkablePixels": 546,
+          "nearest": 0
+        },
+        {
+          "id": "read-signal",
+          "target": "signal-pedestal",
+          "walkablePixels": 617,
+          "nearest": 0
+        },
+        {
+          "id": "check-ferry-level",
+          "target": "ferry-level-signal",
+          "walkablePixels": 388,
+          "nearest": 0
+        }
+      ]
+    }
+  },
+  "diagnostics": {
+    "A": {
+      "day": {
+        "character": {
+          "silhouette": {
+            "n": 224,
+            "p10": 27,
+            "median": 99,
+            "weak": 6
+          },
+          "outline": {
+            "n": 224,
+            "p10": 27,
+            "median": 99,
+            "weak": 6
+          },
+          "contact": {
+            "n": 19,
+            "p10": 89,
+            "median": 89,
+            "weak": 0
+          },
+          "outlineRuns": [
+            161
+          ],
+          "weakOutlineRuns": [
+            2,
+            1
+          ],
+          "signal": {
+            "pixels": 0,
+            "clusters": [],
+            "housing": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 96,
+            "p10": 68,
+            "median": 95,
+            "weak": 0
+          },
+          "outline": {
+            "n": 96,
+            "p10": 68,
+            "median": 95,
+            "weak": 0
+          },
+          "contact": {
+            "n": 19,
+            "p10": 68,
+            "median": 68,
+            "weak": 0
+          },
+          "outlineRuns": [
+            70
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 10,
+            "clusters": [
+              10
+            ],
+            "housing": {
+              "n": 14,
+              "p10": 116,
+              "median": 116,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      },
+      "night": {
+        "character": {
+          "silhouette": {
+            "n": 224,
+            "p10": 18,
+            "median": 60,
+            "weak": 19
+          },
+          "outline": {
+            "n": 224,
+            "p10": 18,
+            "median": 60,
+            "weak": 19
+          },
+          "contact": {
+            "n": 19,
+            "p10": 33,
+            "median": 33,
+            "weak": 1
+          },
+          "outlineRuns": [
+            161
+          ],
+          "weakOutlineRuns": [
+            7,
+            5,
+            1
+          ],
+          "signal": {
+            "pixels": 0,
+            "clusters": [],
+            "housing": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 96,
+            "p10": 24,
+            "median": 37,
+            "weak": 0
+          },
+          "outline": {
+            "n": 96,
+            "p10": 24,
+            "median": 37,
+            "weak": 0
+          },
+          "contact": {
+            "n": 19,
+            "p10": 24,
+            "median": 24,
+            "weak": 0
+          },
+          "outlineRuns": [
+            70
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 10,
+            "clusters": [
+              10
+            ],
+            "housing": {
+              "n": 14,
+              "p10": 116,
+              "median": 116,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      }
+    },
+    "B": {
+      "day": {
+        "character": {
+          "silhouette": {
+            "n": 224,
+            "p10": 27,
+            "median": 89,
+            "weak": 6
+          },
+          "outline": {
+            "n": 224,
+            "p10": 27,
+            "median": 89,
+            "weak": 6
+          },
+          "contact": {
+            "n": 19,
+            "p10": 79,
+            "median": 79,
+            "weak": 0
+          },
+          "outlineRuns": [
+            161
+          ],
+          "weakOutlineRuns": [
+            2,
+            1
+          ],
+          "signal": {
+            "pixels": 0,
+            "clusters": [],
+            "housing": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 96,
+            "p10": 58,
+            "median": 85,
+            "weak": 0
+          },
+          "outline": {
+            "n": 96,
+            "p10": 58,
+            "median": 85,
+            "weak": 0
+          },
+          "contact": {
+            "n": 19,
+            "p10": 58,
+            "median": 58,
+            "weak": 0
+          },
+          "outlineRuns": [
+            70
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 10,
+            "clusters": [
+              10
+            ],
+            "housing": {
+              "n": 14,
+              "p10": 128,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      },
+      "night": {
+        "character": {
+          "silhouette": {
+            "n": 224,
+            "p10": 23,
+            "median": 50,
+            "weak": 14
+          },
+          "outline": {
+            "n": 224,
+            "p10": 23,
+            "median": 50,
+            "weak": 14
+          },
+          "contact": {
+            "n": 19,
+            "p10": 23,
+            "median": 23,
+            "weak": 1
+          },
+          "outlineRuns": [
+            161
+          ],
+          "weakOutlineRuns": [
+            9,
+            1
+          ],
+          "signal": {
+            "pixels": 0,
+            "clusters": [],
+            "housing": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 96,
+            "p10": 14,
+            "median": 27,
+            "weak": 34
+          },
+          "outline": {
+            "n": 96,
+            "p10": 14,
+            "median": 27,
+            "weak": 34
+          },
+          "contact": {
+            "n": 19,
+            "p10": 14,
+            "median": 14,
+            "weak": 17
+          },
+          "outlineRuns": [
+            70
+          ],
+          "weakOutlineRuns": [
+            8,
+            8,
+            6,
+            3,
+            2,
+            1
+          ],
+          "signal": {
+            "pixels": 10,
+            "clusters": [
+              10
+            ],
+            "housing": {
+              "n": 14,
+              "p10": 128,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      }
+    },
+    "C": {
+      "day": {
+        "character": {
+          "silhouette": {
+            "n": 224,
+            "p10": 27,
+            "median": 89,
+            "weak": 6
+          },
+          "outline": {
+            "n": 224,
+            "p10": 27,
+            "median": 89,
+            "weak": 6
+          },
+          "contact": {
+            "n": 19,
+            "p10": 79,
+            "median": 79,
+            "weak": 0
+          },
+          "outlineRuns": [
+            161
+          ],
+          "weakOutlineRuns": [
+            2,
+            1
+          ],
+          "signal": {
+            "pixels": 0,
+            "clusters": [],
+            "housing": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 96,
+            "p10": 58,
+            "median": 85,
+            "weak": 0
+          },
+          "outline": {
+            "n": 96,
+            "p10": 58,
+            "median": 85,
+            "weak": 0
+          },
+          "contact": {
+            "n": 19,
+            "p10": 58,
+            "median": 58,
+            "weak": 0
+          },
+          "outlineRuns": [
+            70
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 10,
+            "clusters": [
+              10
+            ],
+            "housing": {
+              "n": 14,
+              "p10": 128,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      },
+      "night": {
+        "character": {
+          "silhouette": {
+            "n": 224,
+            "p10": 18,
+            "median": 50,
+            "weak": 14
+          },
+          "outline": {
+            "n": 224,
+            "p10": 18,
+            "median": 50,
+            "weak": 14
+          },
+          "contact": {
+            "n": 19,
+            "p10": 23,
+            "median": 23,
+            "weak": 1
+          },
+          "outlineRuns": [
+            161
+          ],
+          "weakOutlineRuns": [
+            9,
+            1
+          ],
+          "signal": {
+            "pixels": 0,
+            "clusters": [],
+            "housing": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 96,
+            "p10": 14,
+            "median": 27,
+            "weak": 34
+          },
+          "outline": {
+            "n": 96,
+            "p10": 14,
+            "median": 27,
+            "weak": 34
+          },
+          "contact": {
+            "n": 19,
+            "p10": 14,
+            "median": 14,
+            "weak": 17
+          },
+          "outlineRuns": [
+            70
+          ],
+          "weakOutlineRuns": [
+            8,
+            8,
+            6,
+            3,
+            2,
+            1
+          ],
+          "signal": {
+            "pixels": 10,
+            "clusters": [
+              10
+            ],
+            "housing": {
+              "n": 14,
+              "p10": 128,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "candidate": {
+    "identity": {
+      "roles": [
+        "coat",
+        "far-coat"
+      ],
+      "exactPixels": 230
+    },
+    "prop": {
+      "amberPixelsExact": 10,
+      "woodShadowRuns": [
+        11,
+        9
+      ],
+      "materialBoundaries": {
+        "A": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 44,
+            "p10": 24,
+            "median": 57
+          },
+          {
+            "roles": "#48425e/#bc8862",
+            "samples": 44,
+            "p10": 20,
+            "median": 20
+          },
+          {
+            "roles": "#98a0be/#bc8862",
+            "samples": 86,
+            "p10": 4,
+            "median": 20
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 14,
+            "p10": 116,
+            "median": 116
+          }
+        ],
+        "B": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 44,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#48425e/#bc8862",
+            "samples": 44,
+            "p10": 8,
+            "median": 8
+          },
+          {
+            "roles": "#98a0be/#bc8862",
+            "samples": 86,
+            "p10": 9,
+            "median": 29
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 14,
+            "p10": 128,
+            "median": 128
+          }
+        ],
+        "C": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 44,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#48425e/#bc8862",
+            "samples": 44,
+            "p10": 8,
+            "median": 46
+          },
+          {
+            "roles": "#98a0be/#bc8862",
+            "samples": 86,
+            "p10": 9,
+            "median": 29
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 14,
+            "p10": 128,
+            "median": 128
+          }
+        ]
+      }
+    },
+    "night": {
+      "outlineBudget": 32,
+      "outlineChanged": 5,
+      "ink": "#1e2133",
+      "environment": "B1_UNCHANGED"
+    },
+    "results": {
+      "geometryStable": true,
+      "masksExact": true,
+      "alphaExact": true,
+      "paletteValid": true
+    }
+  }
+}

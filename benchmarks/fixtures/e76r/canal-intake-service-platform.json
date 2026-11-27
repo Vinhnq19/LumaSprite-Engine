@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "size": [
+    320,
+    208
+  ],
+  "view": "three-quarter-right",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "id": "canal-intake-service-platform",
+  "role": "holdout",
+  "name": "Canal Intake Service Platform",
+  "purpose": "floodgate",
+  "seed": 21119,
+  "brief": "A service platform on an upper canal bend. A short access bridge leads to a static inspection and control point beside an intake opening, with clean access from the lower bank.",
+  "base": {
+    "file": "benchmarks/fixtures/e73/tidegate.json",
+    "sha256": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b"
+  },
+  "shore": [
+    [
+      0,
+      186
+    ],
+    [
+      40,
+      191
+    ],
+    [
+      79,
+      180
+    ],
+    [
+      106,
+      203
+    ],
+    [
+      130,
+      215
+    ],
+    [
+      160,
+      208
+    ],
+    [
+      208,
+      218
+    ]
+  ],
+  "actors": {
+    "surveyor": [
+      147,
+      156
+    ],
+    "courier": [
+      244,
+      110
+    ]
+  },
+  "landProps": [
+    {
+      "id": "intake-crate",
+      "ref": "crate",
+      "at": [
+        125,
+        173
+      ]
+    },
+    {
+      "id": "intake-barrel",
+      "ref": "barrel",
+      "at": [
+        174,
+        158
+      ]
+    }
+  ],
+  "berth": [
+    264,
+    108
+  ],
+  "params": {
+    "clearWidth": 28,
+    "landingDepth": 34,
+    "freeboard": 5,
+    "bankOverlap": 21
+  },
+  "assembly": {
+    "entry": [
+      177,
+      107
+    ],
+    "lip": [
+      282,
+      108
+    ],
+    "landingDepth": 35,
+    "clearWidth": 30,
+    "turn": [
+      169,
+      133
+    ]
+  },
+  "gate": {
+    "at": [
+      251,
+      74
+    ],
+    "span": 44,
+    "height": 38
+  }
+}

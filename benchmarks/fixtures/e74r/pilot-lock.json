@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "checkpoint": "4e341f3d43a1058cbd495272cd5c0442ebe7d541",
+  "baseline": {
+    "file": "benchmarks/results/e74/SHA256SUMS",
+    "sha256": "b2652500ac4fc673a2fec0e008754ca2e3537708f2eeaf190721c62f9dffa43f"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "cases": [
+    {
+      "file": "benchmarks/fixtures/e74r/rain.json",
+      "sha256": "b4a4e0acae6a45afc139285402c13fac562e63b50eff9229f7c15aed6903aff3"
+    },
+    {
+      "file": "benchmarks/fixtures/e74r/beacon.json",
+      "sha256": "9651488ac611f8f454e069b72947bdecca94ee3744ecc822f3ba80b185040ef0"
+    },
+    {
+      "file": "benchmarks/fixtures/e74r/vane.json",
+      "sha256": "18eb90748716cfb60c15edd11d46f445289042349ffe26a102e73b3c8a789a66"
+    }
+  ],
+  "budget": {
+    "structuresPerBrief": 1,
+    "localPatchPixels": 12,
+    "weakContrast": 18,
+    "maximumPalette": 13
+  },
+  "palette": {
+    "source": "B1 ArtDirectionSpec v1 with its existing contour, metal, roof and amber ramps",
+    "newInks": 0
+  },
+  "criteria": [
+    "connected structure and contour margin",
+    "grounded contact",
+    "native semantic landmark pixels",
+    "alpha, geometry and material ownership lock after paint",
+    "Day and Night context comparison",
+    "functional recognition independently reviewed by a human"
+  ],
+  "holdout": "Cliffside Wind Vane uses fixed seed 12047 and an existing, unchanged Tidegate roadway context. No vane fixture is rendered until the rules are frozen."
+}

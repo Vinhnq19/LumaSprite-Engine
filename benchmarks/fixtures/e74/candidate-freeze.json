@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "briefLock": "a07c8457f8644dd12a37c71e77fa147a7003f7b6b4c0eb81f0bf56dc2e6eee3e",
+  "developmentReviewed": "field-rain-gauge",
+  "unseen": "harbor-signal-beacon",
+  "sources": {
+    "src/experiments/quality-guided-prop.ts": "50b40b60015cb84e41a0771fff7059172c9515dc8d15104abf30d1ad3e0e4e79",
+    "src/experiments/quality-guided-context.ts": "095eef28f5d0201958468e5be5be1dc31b24ea9a9cea4faa8be682a3d6eb6aa6",
+    "scripts/benchmark-e74.ts": "56e214a1108c216af93f2b32566a9de8c5c1a1f4e429b92504aef929bf16b6b6"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "kind": "lumasprite.art-review.v1",
+  "toolVersion": "1.0.0",
+  "timestamp": "2026-11-26T13:13:26.563Z",
+  "assetFamily": "environment",
+  "rubricId": "workbench-default-v1",
+  "rubricName": "Workbench Default Rubric",
+  "rubricVersion": "1.0.0",
+  "rubricIsWorkbenchDefault": true,
+  "alignment": {
+    "mode": "top-left",
+    "offsetX": 0,
+    "offsetY": 0,
+    "confirmed": false
+  },
+  "decision": "undecided",
+  "criticalOverrideRationale": "",
+  "summaryNote": "E7.1R holdout. Independent artistic review pending. Assistant observation: clearer tall break; the low parapet changes little at 1×.",
+  "scores": {
+    "structure": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "perspective": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "depth": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "lighting": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "composition": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    }
+  },
+  "regionNotes": [],
+  "baselineRef": {
+    "slot": "baseline",
+    "name": "h2-bonded baseline",
+    "fileName": "native.png",
+    "frameWidth": 320,
+    "frameHeight": 208,
+    "sourceWidth": 320,
+    "sourceHeight": 208,
+    "frameCount": 1,
+    "sourceSha256": "987f37b50646d1cfca0f60368a66f2cbbee572dcd60a38376b92ab99b2b3aa7c",
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  },
+  "candidateRef": {
+    "slot": "candidate",
+    "name": "h2-bonded candidate",
+    "fileName": "native.png",
+    "frameWidth": 320,
+    "frameHeight": 208,
+    "sourceWidth": 320,
+    "sourceHeight": 208,
+    "frameCount": 1,
+    "sourceSha256": "78a92e9fb6cdcafb06efa6ecb3253b688b5753c6c82e4a6e211aa08e2cce0fac",
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  }
+}

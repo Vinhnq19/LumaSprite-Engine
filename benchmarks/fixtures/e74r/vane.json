@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "id": "cliffside-wind-vane",
+  "name": "Cliffside Wind Vane",
+  "role": "holdout",
+  "kind": "vane",
+  "seed": 12047,
+  "canvas": 32,
+  "dimensions": {
+    "height": 22,
+    "width": 8,
+    "depth": 4
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "view": "three-quarter-right",
+  "brief": "A static cliffside wind vane with a directional arrow, a contrasting tail, a pivot bearing and a restrained grounded mast.",
+  "before": null,
+  "context": {
+    "file": "benchmarks/fixtures/e73/tidegate.json",
+    "sha256": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b"
+  },
+  "priority": [
+    "directional head",
+    "separate tail and cross arm",
+    "bearing and ground anchor"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "checkpoint": "a90ab95626f1cfc13dfe3723d11889181fb1679e",
+  "direction": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "briefs": [
+    {
+      "file": "benchmarks/fixtures/e73/stormwatch.json",
+      "sha256": "5599b260efdf68138d1296e5ce3e4e049b0b0dce8429279950dd7a07ad9e9f54",
+      "id": "stormwatch",
+      "role": "development",
+      "seed": 4471
+    },
+    {
+      "file": "benchmarks/fixtures/e73/tidegate.json",
+      "sha256": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b",
+      "id": "tidegate",
+      "role": "holdout",
+      "seed": 7592
+    }
+  ],
+  "controls": {
+    "sampling": "nearest",
+    "scene": [
+      320,
+      208
+    ],
+    "actor": [
+      64,
+      64
+    ],
+    "prop": [
+      32,
+      32
+    ],
+    "view": "three-quarter-right",
+    "light": "daylock A/B plus Night scene",
+    "qa": [
+      "binary alpha",
+      "palette membership",
+      "silhouette equality",
+      "same-world anchors",
+      "collision",
+      "occlusion",
+      "readability evidence"
+    ]
+  },
+  "protocol": "Briefs, seed, geometry constraints and profile were locked before A/B. Tidegate uses the finalized shared rule without per-asset tuning."
+}

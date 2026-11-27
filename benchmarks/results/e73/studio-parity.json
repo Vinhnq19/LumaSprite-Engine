@@ -1,0 +1,150 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "file": "stormwatch/a/character.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "pngSha256": "14e7718a6097cd37825437492c8139765766bae4966ee070d4d8ed00bb638643",
+      "rgbaSha256": "9356eed4e5008a9f6847b0e88bd6138ed997edf9424717b1183f8520bb18cd17"
+    },
+    {
+      "file": "stormwatch/a/prop.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "582130d1ed3eb718dd1854ccf122d68b9f99c67f63aa22db4449b316b14d2713",
+      "rgbaSha256": "dbceac667648b8a426f2159ec3f97aada86d8b0efa475d0d56a1427afc9e37d5"
+    },
+    {
+      "file": "stormwatch/a/environment.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "c5f612d82611c94237148ba506f29a8ad0bdc62d6f176f4a64caeece7c19ec5c",
+      "rgbaSha256": "880a4a90f13f7bc1878db08ef4c236d89eb251fc735e460932d3e258ac51f16d"
+    },
+    {
+      "file": "stormwatch/a/scene-night.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "a8f01cf248ffe74012bd5970a7694138c4bb1e15a31d081ef9d3b28c657cf4c0",
+      "rgbaSha256": "c5df46b475b514e4e638683d8d438d83e9b036b0173308b52f945ae25453501b"
+    },
+    {
+      "file": "stormwatch/b/character.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "pngSha256": "5c582fdb5bb84646d625c78506a9a626ee25c78f633233d28bec76a130fbb0bb",
+      "rgbaSha256": "d31b87c0a79797b888f42239014cd57e1481de3564d75978d8c3887324c016ea"
+    },
+    {
+      "file": "stormwatch/b/prop.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "e98cb6c684d49629fd632288ec7d9f9a988b4e0e540fb79ba085071eebc2bc4c",
+      "rgbaSha256": "7a369c7f6ca64e102d118b3ca00416dc7281bf2216e20836d854f92490d2ad92"
+    },
+    {
+      "file": "stormwatch/b/environment.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "954b0e0dbc7fab77811b1d918bc7b77e7878c8c6367395289a6033174ee0634f",
+      "rgbaSha256": "876d588b3f14551cb86ee51eb2e339ee6a85875516fb07a279ca75d8b13cd6af"
+    },
+    {
+      "file": "stormwatch/b/scene-night.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "09e1fbeb983ba705edbd6f249b5ed9943385d2dda803894dabf147e6cde47e98",
+      "rgbaSha256": "f2395b01dc26d03bd90eb4c6f151c94ca80aee721ba87c4539e4c94092e33fe0"
+    },
+    {
+      "file": "tidegate/a/character.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "pngSha256": "73916af9f46987d578bd7ae109deab246167ca873938b96bf94e6d5ca3b78a41",
+      "rgbaSha256": "1b94d25374fc73622870ae6c580f9ca49b6c20fca788a9b5a19ea97532fa949d"
+    },
+    {
+      "file": "tidegate/a/prop.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "e6ff26504f112632675dc45834c5934c2ca088d62ebf2c668a216c8d3122a4d0",
+      "rgbaSha256": "73d5c8f0b79ce2d5b0111e7fedf35f4263f0562ae5e16fa59f614376a978c492"
+    },
+    {
+      "file": "tidegate/a/environment.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "7e8c091f7753f7d078e56073a1499cbb0f8feac204ad13c3fcdb8e2a74f00f9c",
+      "rgbaSha256": "124eab1d7c8815ce75a2ba93cac49854f6826bf3b84c78822eba2a5ddeac9c4f"
+    },
+    {
+      "file": "tidegate/a/scene-night.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "40cb0624aa30bfcbc95892d598e76f67a5a700a32a01e85fd7d91765c42e2cb2",
+      "rgbaSha256": "0c1be776eda234f1b32a9b688202a8425a376e6df29f7cb6a2aeeb9abf8a1b71"
+    },
+    {
+      "file": "tidegate/b/character.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "pngSha256": "c4ebe37e03c0c587c8370d38dc6ec86ae12ccb2d0cdf14a53b0f93e35b433eda",
+      "rgbaSha256": "dc5d31ea4aaf1bd800ee021bc68ea637d2737fe41879fdf1c8fa1e4210e48e1f"
+    },
+    {
+      "file": "tidegate/b/prop.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "0c07fd7c4d90b7df695bcaf3ba4573109a8ff888640489f515eae55a4e1541dd",
+      "rgbaSha256": "c840ebf95740a495a6b2624c1a98ec303bbcacbd72350c87fc32acd8e185a6d1"
+    },
+    {
+      "file": "tidegate/b/environment.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "12796a9038319ea794d57843385ece7fcd20a5984493f915adda5443df019b81",
+      "rgbaSha256": "2146d79417b32c078ec2e0a35f5585a165a6f575dec5e1fac42a3c1a2109d932"
+    },
+    {
+      "file": "tidegate/b/scene-night.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "000aaf71d95203665fe9adf9bb1953adf0bac423536be685e129f03a213cabb4",
+      "rgbaSha256": "bc0ec13758e0cce5b15a42857458df1b0b19f635bb8cb4e309c91e9aa3588eb5"
+    }
+  ]
+}

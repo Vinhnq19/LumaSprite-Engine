@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "class": "C",
+  "checkpoint": "ee8a4c9",
+  "brief": "Upright portable field readout for a ridge survey. Timber housing, iron visor and skids with a recessed amber indicator, viewed from the same upper-left light.",
+  "seed": 3091,
+  "spec": {
+    "file": "benchmarks/fixtures/e72a/ridge-survey-receiver.json",
+    "sha256": "27a72e46f7c3fa4e0b62f6771a59597ef5852b03d3cf31b2155736614f8b5f0f"
+  },
+  "conditions": {
+    "canvas": [
+      32,
+      32
+    ],
+    "camera": "three-quarter-right",
+    "lights": "upper-left day",
+    "style": {
+      "file": "benchmarks/fixtures/e61r/style-profile.json",
+      "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+    },
+    "placement": {
+      "file": "benchmarks/results/e62/packages/c1-courtyard-day/manifest.json",
+      "sha256": "9db69b0ce4248f22f616b2caaba2e28129cab77e722327b46dac4994e4938ed0",
+      "pivot": [
+        180,
+        162
+      ]
+    }
+  },
+  "protocol": "Freeze this fixture before material rule development. Run the final M0/M1 rules on it unchanged. Keep both outputs."
+}

@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "id": "weathered-station-v1",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "view": "three-quarter-right",
+  "keyLight": "upper-left",
+  "stoneAndSlate": {
+    "roof": [
+      "#263b4a",
+      "#385666",
+      "#577988",
+      "#779aa5"
+    ],
+    "metal": [
+      "#303845",
+      "#596a83",
+      "#81979f",
+      "#bfcec6"
+    ],
+    "amber": [
+      "#704625",
+      "#ac713d",
+      "#edb063",
+      "#ffe3a1"
+    ]
+  },
+  "outline": "#242534",
+  "hierarchy": "actors-and-devices-first",
+  "character": {
+    "coat": [
+      "#314452",
+      "#49677a",
+      "#62858f",
+      "#9cbdba"
+    ],
+    "nearHue": "slate",
+    "farSide": "one-value-step-lower"
+  },
+  "clothAndWood": "preserve-warm-leather-and-timber",
+  "ground": "muted-rest-areas",
+  "geometry": "locked-ab",
+  "provenance": "family-pivots-and-style-v1"
+}

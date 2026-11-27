@@ -74,8 +74,11 @@ The owner selected E6.2 C1/C2 and accepted R1/R2 with limitations at E6.3. R1 is
 | Stage | Status |
 | --- | --- |
 | E7.0 Quality Foundation | Audit, family rubric, Quality Contract v1 and benchmark corpus are in place. |
-| E7.1 Structure & Silhouette | Relay Box and Ruin Structure Q, including H1, are ready for independent human review. |
-| E7.2 Material & Pixel Craft | Proposal awaits owner approval. |
-| E7.3+ | Implementation awaits owner approval. |
+| E7.1 Structure & Silhouette | Owner selected Relay A1 for a material study, kept R1 Q for research and requested a revision of H1 Q. |
+| E7.1R Ruin Structure | Engineering approved. Bonded Fracture is research-only, with H1 as the fracture research reference. |
+| E7.2-A Relay Material | M1 and Receiver M1 are approved as art references. Production uses the locked renderer. |
+| E7.2-B Ruin Material | S1 approved with limitations and kept for research. S0 stays the production control. |
+| E7.2-R Stone refinement | S2 and frozen H4 await the final Owner review. |
+| E7.3+ | Cross-asset style proposal prepared. Implementation awaits Owner authorization. |
 
-[E7.1 handoff and E7.2 proposal](e71-structure-quality.md) · [Review gallery](LumaSprite-Engine-E7.1-Report.html) · [E7 root-cause audit](art-quality/e7-root-cause.md)
+[E7.2-R portable review](reports/E7.2-R-PORTABLE-ART-REVIEW.html) · [E7.3 proposal](reports/e73-cross-asset-architecture.md) · [Review gallery](LumaSprite-Engine-E7.1-Report.html) · [E7 root-cause audit](art-quality/e7-root-cause.md)

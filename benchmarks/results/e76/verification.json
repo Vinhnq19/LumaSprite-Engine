@@ -1,0 +1,87 @@
+{
+  "status": "E7_6_READY_FOR_HUMAN_ENVIRONMENT_REVIEW",
+  "approval": "UNREVIEWED",
+  "checkpoint": "80c0fe247cfa2e8438d9c73e744cbbb4df1da00c",
+  "e75rImplementationParent": "fcf9c3d638fea6d6b23608c1bdae671ce0a2df63",
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "cliSmoke": "PASS",
+  "engineTests": {
+    "passed": 73,
+    "total": 73
+  },
+  "history": {
+    "sha256Matches": 805,
+    "artifactsRebuilt": 361,
+    "e75rMatches": 263,
+    "rebuilds": {
+      "e24": 65,
+      "e34": 124,
+      "e44": 63,
+      "e51": 31,
+      "e52": 78,
+      "e53": 50,
+      "artQualityRnd": 54
+    }
+  },
+  "regression": {
+    "e3": [
+      "E3.4 rebuild",
+      "Engine tests"
+    ],
+    "e6": [
+      "e61r",
+      "e62",
+      "e63",
+      "e64"
+    ],
+    "e7": [
+      "e71",
+      "e71r",
+      "e71r review",
+      "e72a",
+      "e72b",
+      "e72r",
+      "e73",
+      "e73r",
+      "e74",
+      "e74r",
+      "e74r dark material",
+      "e75",
+      "e75r"
+    ]
+  },
+  "pilot": {
+    "cases": 2,
+    "lightingVariantPasses": 8,
+    "distinctSpatialVariants": 4,
+    "deterministicPayloads": 91,
+    "walkability": "PASS",
+    "occlusion": "PASS",
+    "atlasSeams": "PASS",
+    "sceneReplay": "exact RGBA",
+    "anchors": "PASS",
+    "palette": "PASS",
+    "pngRgba": "PASS",
+    "negativeCases": [
+      "ROUTE_BLOCKED",
+      "BRIDGE_DETACHED",
+      "TILE_MISSING",
+      "INCORRECT_COLLISION",
+      "INCORRECT_OCCLUSION"
+    ],
+    "negativeRuns": 10,
+    "studio": {
+      "mode": "RAW_PNG_ONLY",
+      "rgbaRoundTrips": 16,
+      "revision": "c56837e344dbb42369dc92ebd379e28255db7d84"
+    }
+  },
+  "protectiveChecks": {
+    "productionChanges": 0,
+    "e75rChanges": 0,
+    "studioSourceChanges": 0,
+    "aiCalls": 0
+  }
+}

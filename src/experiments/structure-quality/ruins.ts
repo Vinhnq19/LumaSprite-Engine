@@ -12,6 +12,9 @@ import { compareCoverage,inspectStructure } from './diagnostics.ts';
 
 type Wall=Extract<RuinModule,{kind:'wall'}>;
 type Piece=ReturnType<ReturnType<typeof materialPiece>>;
+type Theme=StyleProfile['illumination']['day'];
+type WallShape={painted:Piece;geometry:{support:number;origin:readonly [number,number]}};
+type WallBuilder=(module:Wall,theme:Theme,seed:number)=>WallShape;
 
 function masonryStructure(module:Wall,seed:number){
   const {width,height,depth}=module, rise=riseForDepth(depth);
@@ -30,9 +33,9 @@ function masonryStructure(module:Wall,seed:number){
   return {runs,support,origin:[0,height+rise] as const};
 }
 
-function siteWall(module:Wall,old:Piece,referenceFlat:Piece,theme:StyleProfile['illumination']['day'],seed:number,flat:boolean){
+function steppedWall(module:Wall,theme:Theme,seed:number) {
   const geometry=masonryStructure(module,seed);
-  const painted=materialPiece(theme)(old.raster.w,old.raster.h,geometry.origin,paint=>{
+  const painted=materialPiece(theme)(module.width+module.depth,geometry.origin[1],geometry.origin,paint=>{
     for(const [i,run] of geometry.runs.entries()){
       const {left,top,width,bottom,depth}=run, right=left+width, next=geometry.runs[i+1];
       const end=next?Math.min(bottom,next.top+1):bottom;
@@ -53,6 +56,12 @@ function siteWall(module:Wall,old:Piece,referenceFlat:Piece,theme:StyleProfile['
       paint('stone',1,block);
     }
   });
+  return {painted,geometry};
+}
+
+function siteWall(module:Wall,old:Piece,referenceFlat:Piece,theme:Theme,seed:number,flat:boolean,build:WallBuilder){
+  const {painted,geometry}=build(module,theme,seed);
+  assert.deepEqual([painted.raster.w,painted.raster.h,painted.origin],[old.raster.w,old.raster.h,old.origin]);
   const {w, h, rgba}=painted.raster;
   const material=painted.material.rgba, placed=Buffer.from(rgba);
   const frontInk=pack(theme.surfaces.stone[1]);
@@ -73,7 +82,7 @@ function siteWall(module:Wall,old:Piece,referenceFlat:Piece,theme:StyleProfile['
 }
 
 const writeFrom=(target:Raster,at:number,src:Raster,from:number)=>target.rgba.writeUInt32BE(src.rgba.readUInt32BE(from),at);
-export function compareRuinStructure(input:Composition,light:EnvironmentLight,flat=false){
+export function compareRuinStructure(input:Composition,light:EnvironmentLight,flat=false,build:WallBuilder=steppedWall){
   const {spec,environment,kitSeed}=input, ruins=spec.ruins!;
   assert.ok(ruins&&spec.props.length===0,'This harness compares the ruin module stack and the locked actors.');
   const control=renderComposition(input,light,flat), scene=control.scene, {w,h}=scene.raster;
@@ -84,7 +93,7 @@ export function compareRuinStructure(input:Composition,light:EnvironmentLight,fl
   const flatSet=flat?old:buildRuins(ruins,environment.style,light,spec.seed,true).modules;
   const theme=environment.style.illumination[light];
   const stone=old.filter(m=>m.module.kind==='wall').map(({module,piece})=>({
-    id:module.id,...siteWall(module as Wall,piece,flatSet.find(x=>x.module.id===module.id)!.piece,theme,spec.seed,flat),
+    id:module.id,...siteWall(module as Wall,piece,flatSet.find(x=>x.module.id===module.id)!.piece,theme,spec.seed,flat,build),
   }));
   const changes=new Map(stone.map(s=>[s.id,s.painted]));
   const layers=scene.metadata.layerOrder.map(id=>{
@@ -100,17 +109,20 @@ export function compareRuinStructure(input:Composition,light:EnvironmentLight,fl
     return {id,at:p.at,old:piece,next:piece,wall:false,isActor:true};
   });
   const owners=(field:'old'|'next')=>{
-    const map=new Int16Array(w*h).fill(-1);
+    const map=new Int16Array(w*h).fill(-1), overlaps=new Uint8Array(w*h);
     layers.forEach((row,i)=>{
       const piece=row[field], [x,y]=row.at;
       const left=x-piece.origin[0],top=y-piece.origin[1];
       for(let v=0;v<piece.raster.h;v++)for(let u=0;u<piece.raster.w;u++)if(piece.raster.rgba[(v*piece.raster.w+u)*4+3]){
-        map[(top+v)*w+left+u]=i;
+        const at=(top+v)*w+left+u;
+        if(map[at]>=0)overlaps[at]=1;
+        map[at]=i;
       }
     });
-    return map;
+    return {map,overlaps};
   };
-  const start=owners('old'), end=owners('next');
+  const beforeOwners=owners('old'), afterOwners=owners('next');
+  const {map:start}=beforeOwners, {map:end}=afterOwners;
   const beforeCount=Array(layers.length).fill(0) as number[];
   const afterCount=Array(layers.length).fill(0) as number[];
   const raster=composite([scene.raster]), material=composite([scene.materialMask]);
@@ -149,7 +161,8 @@ export function compareRuinStructure(input:Composition,light:EnvironmentLight,fl
   for(let i=0;i<collision.rgba.length;i+=4)if(scene.collisionOverlay.rgba.readUInt32BE(i)!==scene.raster.rgba.readUInt32BE(i)){
     writeFrom(collision,i,scene.collisionOverlay,i);
   }
-  return {control,edited:{raster,material,arch,edge:v.edge,collision},qa:{light,flat,touched,
+  return {control,edited:{raster,material,arch,edge:v.edge,collision},
+    ownership:{before:beforeOwners,after:afterOwners,actors:layers.map(layer=>layer.isActor)},qa:{light,flat,touched,
     baseline:orig.stat,candidate:v.stat,coverage:compareCoverage(scene.architectureSilhouette!,arch),surface:q.stat,
     walls:stone.map(({id,geometry,coverage,diff,detail})=>({id,geometry,coverage,diff,detail})),
     actors:layers.flatMap((row,i)=>row.isActor?[{id:row.id,before:beforeCount[i],after:afterCount[i]}]:[]),

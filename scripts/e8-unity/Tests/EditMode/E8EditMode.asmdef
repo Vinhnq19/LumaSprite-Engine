@@ -1,0 +1,12 @@
+{
+  "name": "E8EditMode",
+  "references": [
+    "E8Runtime"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

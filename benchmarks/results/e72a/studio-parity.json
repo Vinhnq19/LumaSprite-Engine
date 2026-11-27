@@ -1,0 +1,63 @@
+{
+  "revision": "c56837e",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "file": "relay/m0/native.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "rgbaSha256": "5b6597adf9d8e56ac5d9a7fd7c18900fe197726c3973010531b0fa963919afa0"
+    },
+    {
+      "file": "relay/m1/native.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "rgbaSha256": "2528ebc1c8148871e71970b08226fb5b51764019f3f72169c15986eeb0762a2e"
+    },
+    {
+      "file": "relay/m1/material.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "rgbaSha256": "6f5b2df22cf5150b1a0ad131fa1eaa915595dc6c1b2329890e9de8f32f59806e"
+    },
+    {
+      "file": "relay/m1/context.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "rgbaSha256": "dc288489ae62f92422c5c2890b332cb61956f5bd0b800bbc29036b297381e728"
+    },
+    {
+      "file": "receiver/m0/native.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "rgbaSha256": "fe59b255d983f7f66f8279970845efb2025951c1e5a892a7e988239d6062d39a"
+    },
+    {
+      "file": "receiver/m1/native.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "rgbaSha256": "568b4efc711c34b44b31dd741b02b715ace7b8497c2d917fe1839751c378d253"
+    },
+    {
+      "file": "ruin-review/h2/night/bonded/occlusion.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "rgbaSha256": "f8e6ce56dd0252a71ebb3a8a9295658e9c90245944b8b8cccee4a4232f11b6b1"
+    }
+  ],
+  "workbenchReviews": 12
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "checkpoint": "61fec574d2cb76476167a57cc1cb10c2c5324319",
+  "cases": [
+    {
+      "file": "benchmarks/fixtures/e75/ridge-mechanic.json",
+      "sha256": "f37bff97535b14b87c5fe97bb951a6fd867883d98f8e7790145c5ab2486cea86"
+    },
+    {
+      "file": "benchmarks/fixtures/e75/marsh-harvester.json",
+      "sha256": "b40b60fec5add9f02a4b4c2011bca1f01cd75719414c59118ed1a41cf23639b3"
+    }
+  ],
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "baseline": {
+    "file": "benchmarks/results/e74r/SHA256SUMS",
+    "sha256": "ee238d605fa61305b2c9761316eee0cdfb336298b4752d52659ebad9d0e0cc66"
+  },
+  "limits": {
+    "candidatesBeyondBaseline": 2,
+    "staticOnly": true,
+    "maxLocalPatches": 1,
+    "maxPatchPixels": 8,
+    "aiCalls": 0
+  },
+  "review": [
+    "silhouette",
+    "anatomy",
+    "pose",
+    "grip",
+    "legs",
+    "footContact",
+    "material",
+    "clusters",
+    "context",
+    "identity",
+    "generalization"
+  ],
+  "protocol": "Pinned existing daytime and nighttime backgrounds, role palette, seeds, camera and pose inputs. Marsh Harvester outputs are evaluated after the generator and constraints are frozen."
+}

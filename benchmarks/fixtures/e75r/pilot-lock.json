@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "checkpoint": "278f26956cd598dd85e332b71a5c52d1b9d58d4d",
+  "cases": [
+    {
+      "file": "benchmarks/fixtures/e75r/ridge.json",
+      "sha256": "62dd67dc7472c72c063e75d46abafa062cb998a9aaf1638d1928946e66b5709f"
+    },
+    {
+      "file": "benchmarks/fixtures/e75r/marsh.json",
+      "sha256": "d86fd70363e791ba47d014e9d29dd06f94b8e7c7792ac7fd785960c2dfc70e45"
+    },
+    {
+      "file": "benchmarks/fixtures/e75r/canal.json",
+      "sha256": "041bd41b24a511e15dcdbab483598ce531aba970c645ba4b67801af23af6d5d6"
+    }
+  ],
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "baseline": {
+    "file": "benchmarks/results/e75/SHA256SUMS",
+    "sha256": "d87322fba0ab429a1690bcde05978b1f4090a4477685de0c92eaaf36a3d51a83"
+  },
+  "matchedPolicy": "Freeze one default stance per case. Equipment, garment geometry, materials, seed, camera, scene, technical gates and budget are identical between A0-Matched and E7.5R. Only the explicit pose/angle differs. Evaluate both without ranking or post-render edits.",
+  "holdout": "Different headwear, proportions and shared equipment topology. No post-render per-brief tuning. Tidegate is the fixed gameplay backdrop; canal water is outside this static-pose test.",
+  "criteria": [
+    "identity",
+    "silhouette",
+    "anatomy",
+    "pose",
+    "tool",
+    "grip",
+    "balance",
+    "legs",
+    "feet",
+    "materials",
+    "context",
+    "generalization"
+  ]
+}

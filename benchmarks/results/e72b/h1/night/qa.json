@@ -1,0 +1,1192 @@
+{
+  "id": "h1",
+  "name": "Abandoned Switchback Depot",
+  "seed": 2117,
+  "light": "night",
+  "source": {
+    "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+    "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+  },
+  "crops": [
+    {
+      "id": "fallen-wall",
+      "rect": [
+        21,
+        104,
+        85,
+        48
+      ]
+    },
+    {
+      "id": "upper-wall",
+      "rect": [
+        89,
+        36,
+        98,
+        64
+      ]
+    }
+  ],
+  "role": "development",
+  "technical": "PASS",
+  "art": "PENDING_HUMAN_REVIEW",
+  "before": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 10935,
+      "samples": 127650,
+      "per100": 8.6
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 129,
+        "p10": 13,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 5,
+        "p10": 1,
+        "median": 1
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 184,
+        "p10": 5,
+        "median": 14
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 37,
+        "p10": 21,
+        "median": 24
+      },
+      {
+        "roles": "#292d42/#98a0be",
+        "samples": 12,
+        "p10": 17,
+        "median": 17
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 181,
+        "p10": 22,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 82,
+        "p10": 18,
+        "median": 23
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 228,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 6,
+        "p10": 49,
+        "median": 57
+      },
+      {
+        "roles": "#48425e/#cfbb83",
+        "samples": 2,
+        "p10": 54,
+        "median": 54
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 276,
+        "p10": 18,
+        "median": 38
+      },
+      {
+        "roles": "#68864c/#94e4bd",
+        "samples": 183,
+        "p10": 8,
+        "median": 37
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1936,
+        "p10": 9,
+        "median": 39
+      },
+      {
+        "roles": "#68864c/#cfbb83",
+        "samples": 34,
+        "p10": 6,
+        "median": 23
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 230,
+        "p10": 5,
+        "median": 28
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 17,
+        "p10": 24,
+        "median": 24
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 73,
+        "p10": 17,
+        "median": 19
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 40,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 612,
+        "p10": 11,
+        "median": 20
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 13,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 128,
+        "p10": 15,
+        "median": 41
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 131,
+        "p10": 39,
+        "median": 63
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 96,
+        "p10": 17,
+        "median": 28
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 13,
+        "p10": 17,
+        "median": 39
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 0,
+        "median": 0
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 40,
+        "median": 40
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 257,
+        "p10": 3,
+        "median": 20
+      }
+    ],
+    "used": [
+      "#1e2133",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#28373c",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#302a39",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#35444a",
+      "#363442",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#403b48",
+      "#434a5c",
+      "#435268",
+      "#465046",
+      "#465552",
+      "#46746e",
+      "#494651",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#59697d",
+      "#5a505b",
+      "#5d5662",
+      "#64778c",
+      "#674937",
+      "#675761",
+      "#694636",
+      "#6b4139",
+      "#71453d",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7b8695",
+      "#8294a7",
+      "#86503d",
+      "#88927a",
+      "#896049",
+      "#935630",
+      "#9ca8a8",
+      "#a36146",
+      "#a86a55",
+      "#b0774b",
+      "#b18059",
+      "#d79768",
+      "#dca57a",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "c66bef2f46dc43556aff361746e7218016339bd4779cb8799a1af01528e5e01d",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "after": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 10344,
+      "samples": 127767,
+      "per100": 8.1
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 129,
+        "p10": 13,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 5,
+        "p10": 1,
+        "median": 1
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 184,
+        "p10": 5,
+        "median": 14
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 37,
+        "p10": 21,
+        "median": 24
+      },
+      {
+        "roles": "#292d42/#98a0be",
+        "samples": 12,
+        "p10": 17,
+        "median": 17
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 181,
+        "p10": 22,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 82,
+        "p10": 18,
+        "median": 23
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 129,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 5,
+        "p10": 49,
+        "median": 57
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 276,
+        "p10": 15,
+        "median": 38
+      },
+      {
+        "roles": "#68864c/#94e4bd",
+        "samples": 183,
+        "p10": 8,
+        "median": 37
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1936,
+        "p10": 9,
+        "median": 39
+      },
+      {
+        "roles": "#68864c/#cfbb83",
+        "samples": 34,
+        "p10": 6,
+        "median": 23
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 212,
+        "p10": 5,
+        "median": 28
+      },
+      {
+        "roles": "#82a456/#98a0be",
+        "samples": 6,
+        "p10": 8,
+        "median": 21
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 17,
+        "p10": 24,
+        "median": 24
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 73,
+        "p10": 17,
+        "median": 19
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 34,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 613,
+        "p10": 11,
+        "median": 20
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 13,
+        "p10": 3,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 130,
+        "p10": 15,
+        "median": 41
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 131,
+        "p10": 39,
+        "median": 63
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 96,
+        "p10": 17,
+        "median": 28
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 13,
+        "p10": 17,
+        "median": 39
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 0,
+        "median": 0
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 40,
+        "median": 40
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 257,
+        "p10": 3,
+        "median": 20
+      }
+    ],
+    "used": [
+      "#1e2133",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#28373c",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#302a39",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#35444a",
+      "#363442",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#403b48",
+      "#434a5c",
+      "#435268",
+      "#465046",
+      "#465552",
+      "#46746e",
+      "#494651",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#59697d",
+      "#5a505b",
+      "#5d5662",
+      "#64778c",
+      "#674937",
+      "#675761",
+      "#694636",
+      "#6b4139",
+      "#71453d",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7b8695",
+      "#8294a7",
+      "#86503d",
+      "#88927a",
+      "#896049",
+      "#935630",
+      "#9ca8a8",
+      "#a36146",
+      "#a86a55",
+      "#b0774b",
+      "#b18059",
+      "#d79768",
+      "#dca57a",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "ac6df257449341d820302d892edab1896044deb719f8c9dbc4b2a7754d8b528e",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "changedByWall": {
+    "upper-wall": 1119,
+    "fallen-wall": 755
+  },
+  "walls": [
+    {
+      "id": "upper-wall",
+      "course": 12,
+      "fracture": [
+        48,
+        33
+      ],
+      "moisture": [
+        44,
+        51
+      ],
+      "geometry": {
+        "added": 0,
+        "removed": 0,
+        "shared": 3873
+      },
+      "baseline": {
+        "coverage": 3873,
+        "outline": 261,
+        "isolatedOutline": 0,
+        "components": [
+          3873
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 87,
+          "bottom": 55
+        },
+        "detail": {
+          "edges": 1034,
+          "samples": 7523,
+          "per100": 13.7
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#8bb4ce",
+            "samples": 45,
+            "p10": 13,
+            "median": 13
+          },
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 34,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#1e2133",
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "2564cc77a8eb7e53e081dc722af6a03ed590f19d8e27204874f5e9f1e8b189e5",
+        "alphaSha256": "3e946885f5fbf516e00ace3b0f41aa6cde1661472318f833e6a909903e99226d"
+      },
+      "candidate": {
+        "coverage": 3873,
+        "outline": 261,
+        "isolatedOutline": 0,
+        "components": [
+          3873
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 87,
+          "bottom": 55
+        },
+        "detail": {
+          "edges": 606,
+          "samples": 7552,
+          "per100": 8
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 50,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "91a353aa8e0ab9caa3fc977e026f102d5d9fc53076c1bb8ba96a6f845360e39e",
+        "alphaSha256": "3e946885f5fbf516e00ace3b0f41aa6cde1661472318f833e6a909903e99226d"
+      },
+      "clusters": {
+        "before": {
+          "stone": {
+            "pixels": 3820,
+            "largest": 1730,
+            "isolated": 7,
+            "clusters": [
+              1730,
+              866,
+              343,
+              164,
+              106,
+              87,
+              80,
+              69,
+              44,
+              39,
+              33,
+              31,
+              31,
+              31,
+              20,
+              20,
+              20,
+              13,
+              12,
+              12,
+              12,
+              10,
+              7,
+              7,
+              5,
+              3,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "contour": {
+            "pixels": 14,
+            "largest": 2,
+            "isolated": 4,
+            "clusters": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 39,
+            "largest": 15,
+            "isolated": 2,
+            "clusters": [
+              15,
+              11,
+              9,
+              2,
+              1,
+              1
+            ]
+          }
+        },
+        "after": {
+          "stone": {
+            "pixels": 3809,
+            "largest": 2171,
+            "isolated": 4,
+            "clusters": [
+              2171,
+              1047,
+              366,
+              41,
+              30,
+              27,
+              25,
+              20,
+              20,
+              14,
+              13,
+              13,
+              10,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 64,
+            "largest": 25,
+            "isolated": 1,
+            "clusters": [
+              25,
+              21,
+              13,
+              4,
+              1
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "fallen-wall",
+      "course": 9,
+      "fracture": [
+        20,
+        23
+      ],
+      "moisture": [
+        19,
+        35
+      ],
+      "geometry": {
+        "added": 0,
+        "removed": 0,
+        "shared": 2243
+      },
+      "baseline": {
+        "coverage": 2243,
+        "outline": 197,
+        "isolatedOutline": 0,
+        "components": [
+          2243
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 74,
+          "bottom": 39
+        },
+        "detail": {
+          "edges": 693,
+          "samples": 4249,
+          "per100": 16.3
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#8bb4ce",
+            "samples": 54,
+            "p10": 13,
+            "median": 13
+          },
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 68,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#1e2133",
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "0f9522833758963a9a0cfc74ca4319dcc06d6172a22c16742b2a0840e715daff",
+        "alphaSha256": "377d0ba76148d6f32d12dac3b4bd5434c700941f526ae65969516b0b6819276b"
+      },
+      "candidate": {
+        "coverage": 2243,
+        "outline": 197,
+        "isolatedOutline": 0,
+        "components": [
+          2243
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 74,
+          "bottom": 39
+        },
+        "detail": {
+          "edges": 455,
+          "samples": 4315,
+          "per100": 10.5
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 56,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "dd1c43e88f15f90a9eb35989d1925a7adb5063d43d33980bd9de6f8587273699",
+        "alphaSha256": "377d0ba76148d6f32d12dac3b4bd5434c700941f526ae65969516b0b6819276b"
+      },
+      "clusters": {
+        "before": {
+          "stone": {
+            "pixels": 2149,
+            "largest": 976,
+            "isolated": 7,
+            "clusters": [
+              976,
+              372,
+              144,
+              131,
+              46,
+              43,
+              40,
+              40,
+              38,
+              36,
+              33,
+              31,
+              27,
+              19,
+              18,
+              18,
+              17,
+              17,
+              13,
+              12,
+              12,
+              12,
+              12,
+              7,
+              7,
+              7,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "contour": {
+            "pixels": 16,
+            "largest": 2,
+            "isolated": 8,
+            "clusters": [
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 78,
+            "largest": 15,
+            "isolated": 4,
+            "clusters": [
+              15,
+              15,
+              11,
+              11,
+              9,
+              9,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "after": {
+          "stone": {
+            "pixels": 2162,
+            "largest": 1136,
+            "isolated": 5,
+            "clusters": [
+              1136,
+              407,
+              210,
+              120,
+              52,
+              41,
+              37,
+              37,
+              28,
+              13,
+              13,
+              12,
+              11,
+              11,
+              9,
+              6,
+              5,
+              3,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 81,
+            "largest": 43,
+            "isolated": 0,
+            "clusters": [
+              43,
+              21,
+              13,
+              4
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "structure": {
+    "silhouetteSha256": "16a9f830d263300f08dcde8b737593bbb28e4c7461a6f1f71a1cd45a301542dd",
+    "collisionSha256": "cdf814ea0121d632c6c94e26790741207c94b853a2f655a026b647e3d5ca5c0b",
+    "layerOrder": [
+      "upper-wall",
+      "upper-column",
+      "signal-gateway",
+      "signal-pedestal",
+      "near-column",
+      "fallen-wall",
+      "surveyor",
+      "courier"
+    ],
+    "anchors": [
+      {
+        "id": "upper-wall",
+        "at": [
+          94,
+          96
+        ],
+        "alphaSha256": "8a8f32eff0d320aecf1d430b92bc46bfd6e17b476d77bb6d7bfd38d7a088e95d"
+      },
+      {
+        "id": "upper-column",
+        "at": [
+          62,
+          103
+        ],
+        "alphaSha256": "4aa20e8c8fe0d7c9e3d960ad899cf9f448d05f7d9d3ff585a2e27b03b713052d"
+      },
+      {
+        "id": "signal-gateway",
+        "at": [
+          193,
+          113
+        ],
+        "alphaSha256": "cdb30358d3b6f4a974f136b3bcd74ea91d25cf048f175e44ceb23ba17ce96344"
+      },
+      {
+        "id": "signal-pedestal",
+        "at": [
+          112,
+          124
+        ],
+        "alphaSha256": "ee4e24f0678f2e347c79b93635578d45a1e618ce171b2d948d2a1d4bde781fbc"
+      },
+      {
+        "id": "near-column",
+        "at": [
+          272,
+          145
+        ],
+        "alphaSha256": "5cff6be9bd449465d1cacbf21155e203f9348d69e1b5bf4c27e39c55ce8d197a"
+      },
+      {
+        "id": "fallen-wall",
+        "at": [
+          26,
+          148
+        ],
+        "alphaSha256": "81c4b2ed04e5941fedb1ead1a7a9ef8947f9acd63ca43f63aa18dfebcff98269"
+      },
+      {
+        "id": "surveyor",
+        "at": [
+          155,
+          171
+        ],
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015"
+      },
+      {
+        "id": "courier",
+        "at": [
+          79,
+          179
+        ],
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77"
+      }
+    ],
+    "occlusion": [
+      {
+        "id": "upper-wall",
+        "visible": 3730,
+        "hiddenBy": {
+          "signal-pedestal": 143
+        }
+      },
+      {
+        "id": "upper-column",
+        "visible": 568,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-gateway",
+        "visible": 2777,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-pedestal",
+        "visible": 634,
+        "hiddenBy": {}
+      },
+      {
+        "id": "near-column",
+        "visible": 678,
+        "hiddenBy": {}
+      },
+      {
+        "id": "fallen-wall",
+        "visible": 1896,
+        "hiddenBy": {
+          "courier": 347
+        }
+      },
+      {
+        "id": "surveyor",
+        "visible": 1072,
+        "hiddenBy": {}
+      },
+      {
+        "id": "courier",
+        "visible": 997,
+        "hiddenBy": {}
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "courier",
+        "points": [
+          [
+            231,
+            193
+          ],
+          [
+            221,
+            157
+          ],
+          [
+            222,
+            135
+          ],
+          [
+            222,
+            92
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 2142
+      },
+      {
+        "id": "signal-approach",
+        "actor": "surveyor",
+        "points": [
+          [
+            155,
+            171
+          ],
+          [
+            151,
+            147
+          ],
+          [
+            148,
+            132
+          ],
+          [
+            145,
+            128
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 836
+      }
+    ]
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "palette": {
+    "stone": [
+      "#282f45",
+      "#435268",
+      "#59697d",
+      "#7b8695"
+    ],
+    "moss": [
+      "#28373c",
+      "#35444a",
+      "#465552"
+    ],
+    "contour": [
+      "#1e2133"
+    ]
+  },
+  "planeLegend": {
+    "side": "#647294",
+    "front": "#9e9d89",
+    "top": "#d8c5a4"
+  }
+}

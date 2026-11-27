@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "checkpoint": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174",
+  "geometry": "Ruin Production Geometry",
+  "selectedModules": "wall",
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "scenes": [
+    {
+      "id": "r1",
+      "source": {
+        "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+        "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+      },
+      "lights": {
+        "day": {
+          "native": {
+            "file": "benchmarks/results/e71/ruin/r1/day/current/native.png",
+            "sha256": "186f2aa4d960151facdf665f8ac7c9f6d64af0928ea239df987075a0c6e6bf7c"
+          },
+          "material": {
+            "file": "benchmarks/results/e71/ruin/r1/day/current/material.png",
+            "sha256": "ff644738d7e85aeebdf592ea08e7d6ab92506d40804940e13f9b7857bd861172"
+          },
+          "flat": {
+            "file": "benchmarks/results/e71/ruin/r1/day/current/flat.png",
+            "sha256": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90"
+          },
+          "silhouette": {
+            "file": "benchmarks/results/e71/ruin/r1/day/current/silhouette.png",
+            "sha256": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7"
+          },
+          "collision": {
+            "file": "benchmarks/results/e71/ruin/r1/day/current/collision.png",
+            "sha256": "5320bb2fcbdbbe4ec410504361d46d929d245b2219df0c6b6b37bb3743817e3a"
+          }
+        },
+        "night": {
+          "native": {
+            "file": "benchmarks/results/e71/ruin/r1/night/current/native.png",
+            "sha256": "7ff1b8cb5f6d64b991a18ccbe87abf3d8eb27e1afbb232dc985d49338553e917"
+          },
+          "material": {
+            "file": "benchmarks/results/e71/ruin/r1/night/current/material.png",
+            "sha256": "eee4d64bcc3ac4d316b23c9dd9d106d8a45ecb2c9825aa23b028c2e39152a12d"
+          },
+          "flat": {
+            "file": "benchmarks/results/e71/ruin/r1/night/current/flat.png",
+            "sha256": "52fb5fe75294e6fb05e03f65c6e0951f7c5f1392855f336e1fc12a0aff8e9d90"
+          },
+          "silhouette": {
+            "file": "benchmarks/results/e71/ruin/r1/night/current/silhouette.png",
+            "sha256": "8aa65afdeca7ff451e6c0183869a7df76cbfb8239e42c22541e30f3601d2f6b7"
+          },
+          "collision": {
+            "file": "benchmarks/results/e71/ruin/r1/night/current/collision.png",
+            "sha256": "576839bec9cbe2be9c4f957af82376167c4fff40ddb6bf5f739fcbcb08be9585"
+          }
+        }
+      }
+    },
+    {
+      "id": "h1",
+      "source": {
+        "file": "benchmarks/fixtures/e71/h1-switchback-depot.json",
+        "sha256": "90e8f87f3dc8c181c123cc38a298e5448ecf47853e53cad312d36598281f9900"
+      },
+      "lights": {
+        "day": {
+          "native": {
+            "file": "benchmarks/results/e71/ruin/h1/day/current/native.png",
+            "sha256": "10776ca5c5eda803fab9db71780dc9afaf80dba83d04d8ebac0f05af4f2ee561"
+          },
+          "material": {
+            "file": "benchmarks/results/e71/ruin/h1/day/current/material.png",
+            "sha256": "6907898d111da9216f9d572ca61b6e93bdda5b1d68d789557e3ae40df9ad1fa9"
+          },
+          "flat": {
+            "file": "benchmarks/results/e71/ruin/h1/day/current/flat.png",
+            "sha256": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d"
+          },
+          "silhouette": {
+            "file": "benchmarks/results/e71/ruin/h1/day/current/silhouette.png",
+            "sha256": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986"
+          },
+          "collision": {
+            "file": "benchmarks/results/e71/ruin/h1/day/current/collision.png",
+            "sha256": "2c15c308f611fd53dbe8ea71f08284ba0064124cddc170c8af52a8a4e6381bed"
+          }
+        },
+        "night": {
+          "native": {
+            "file": "benchmarks/results/e71/ruin/h1/night/current/native.png",
+            "sha256": "321e05952d823c3803e8d75e8da3e2dc429338d8e501241b9868248c076efd3d"
+          },
+          "material": {
+            "file": "benchmarks/results/e71/ruin/h1/night/current/material.png",
+            "sha256": "2701989a8e4e737d589921e79041c434d9a41ef4487e278d6da3766956254ddf"
+          },
+          "flat": {
+            "file": "benchmarks/results/e71/ruin/h1/night/current/flat.png",
+            "sha256": "04434a6c612998c914a27c15e6f76fb6798fcf2133c8aef035e18a432a13390d"
+          },
+          "silhouette": {
+            "file": "benchmarks/results/e71/ruin/h1/night/current/silhouette.png",
+            "sha256": "e109c031b6783c5fb5e7afdd8b5a05a1f83f9dd3f503cbae19bf98ec6bbca986"
+          },
+          "collision": {
+            "file": "benchmarks/results/e71/ruin/h1/night/current/collision.png",
+            "sha256": "e02e726d5a1a48214d326daad9ff494c502e3f387d73d9935f8b096e3b2e47b5"
+          }
+        }
+      }
+    }
+  ],
+  "controls": [
+    "camera",
+    "palette",
+    "alpha",
+    "silhouette",
+    "footprint",
+    "collision",
+    "occlusion anchors",
+    "scene context"
+  ],
+  "bondedFracture": "RESEARCH_ONLY"
+}

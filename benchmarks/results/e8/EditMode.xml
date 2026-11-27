@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-27 07:04:55Z" end-time="2026-11-27 07:04:55Z" duration="0.1155537">
+  <test-suite type="TestSuite" id="1000" name="LumaSprite E8 Acceptance" fullname="LumaSprite E8 Acceptance" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-27 07:04:55Z" end-time="2026-11-27 07:04:55Z" duration="0.115554" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1004" name="E8EditMode.dll" fullname="D:/LumaSprite-Engine/.cache/e8-runtime-acceptance/Library/ScriptAssemblies/E8EditMode.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-27 07:04:55Z" end-time="2026-11-27 07:04:55Z" duration="0.097432" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="17648" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="E8ImportTests" fullname="E8ImportTests" classname="E8ImportTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-27 07:04:55Z" end-time="2026-11-27 07:04:55Z" duration="0.095433" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1003" name="AnimationFrameBoundariesFollowLockedMetadata" fullname="E8ImportTests.AnimationFrameBoundariesFollowLockedMetadata" methodname="AnimationFrameBoundariesFollowLockedMetadata" classname="E8ImportTests" runstate="Runnable" seed="162448527" result="Passed" start-time="2026-11-27 07:04:55Z" end-time="2026-11-27 07:04:55Z" duration="0.044130" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1002" name="ImportedAtlasAndForegroundRetainNativeMetrics" fullname="E8ImportTests.ImportedAtlasAndForegroundRetainNativeMetrics" methodname="ImportedAtlasAndForegroundRetainNativeMetrics" classname="E8ImportTests" runstate="Runnable" seed="228274335" result="Passed" start-time="2026-11-27 07:04:55Z" end-time="2026-11-27 07:04:55Z" duration="0.026600" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: D:\LumaSprite-Engine\benchmarks\results\run\e8\EditMode.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

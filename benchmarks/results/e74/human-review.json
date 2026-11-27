@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "status": "PENDING_HUMAN_REVIEW",
+  "choices": [
+    "A0",
+    "A1",
+    "A2",
+    "Refined",
+    "Neither"
+  ],
+  "criteria": [
+    "functionalRecognition",
+    "silhouette",
+    "proportions",
+    "perspective",
+    "materialSeparation",
+    "clusters",
+    "outline",
+    "nativeReadability",
+    "dayNightContext",
+    "generalization"
+  ],
+  "cases": [
+    {
+      "id": "field-rain-gauge",
+      "choice": null,
+      "notes": "",
+      "scores": {
+        "A0": {
+          "functionalRecognition": null,
+          "silhouette": null,
+          "proportions": null,
+          "perspective": null,
+          "materialSeparation": null,
+          "clusters": null,
+          "outline": null,
+          "nativeReadability": null,
+          "dayNightContext": null,
+          "generalization": null
+        },
+        "A1": {
+          "functionalRecognition": null,
+          "silhouette": null,
+          "proportions": null,
+          "perspective": null,
+          "materialSeparation": null,
+          "clusters": null,
+          "outline": null,
+          "nativeReadability": null,
+          "dayNightContext": null,
+          "generalization": null
+        },
+        "A2": {
+          "functionalRecognition": null,
+          "silhouette": null,
+          "proportions": null,
+          "perspective": null,
+          "materialSeparation": null,
+          "clusters": null,
+          "outline": null,
+          "nativeReadability": null,
+          "dayNightContext": null,
+          "generalization": null
+        },
+        "Refined": {
+          "functionalRecognition": null,
+          "silhouette": null,
+          "proportions": null,
+          "perspective": null,
+          "materialSeparation": null,
+          "clusters": null,
+          "outline": null,
+          "nativeReadability": null,
+          "dayNightContext": null,
+          "generalization": null
+        }
+      }
+    },
+    {
+      "id": "harbor-signal-beacon",
+      "choice": null,
+      "notes": "",
+      "scores": {
+        "A0": {
+          "functionalRecognition": null,
+          "silhouette": null,
+          "proportions": null,
+          "perspective": null,
+          "materialSeparation": null,
+          "clusters": null,
+          "outline": null,
+          "nativeReadability": null,
+          "dayNightContext": null,
+          "generalization": null
+        },
+        "A1": {
+          "functionalRecognition": null,
+          "silhouette": null,
+          "proportions": null,
+          "perspective": null,
+          "materialSeparation": null,
+          "clusters": null,
+          "outline": null,
+          "nativeReadability": null,
+          "dayNightContext": null,
+          "generalization": null
+        },
+        "A2": {
+          "functionalRecognition": null,
+          "silhouette": null,
+          "proportions": null,
+          "perspective": null,
+          "materialSeparation": null,
+          "clusters": null,
+          "outline": null,
+          "nativeReadability": null,
+          "dayNightContext": null,
+          "generalization": null
+        }
+      }
+    }
+  ]
+}

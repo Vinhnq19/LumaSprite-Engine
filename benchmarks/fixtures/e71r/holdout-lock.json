@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "class": "C",
+  "checkpoint": "3315425",
+  "brief": "Dry Culvert Lookout. A deep low parapet on the right brackets an open approach. A taller narrow-depth return stands behind the gate on the far left. Keep the signal apron and axial route readable while testing different masonry mass and wall depth.",
+  "seed": 4189,
+  "derivedFrom": {
+    "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+    "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+  },
+  "spec": {
+    "file": "benchmarks/fixtures/e71r/h2-culvert-lookout.json",
+    "sha256": "602785937ce8ae08488a88fe2069e31ab74d6efdcfc699d9a7031dfe9df7d48c"
+  },
+  "controls": {
+    "camera": "320×208, existing ortho",
+    "style": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "light": [
+      "day",
+      "night"
+    ],
+    "collision": "kit-and-prop-footprints"
+  },
+  "rule": "Run the finished R1/H1 rule without H2 tuning. Keep outcomes including native quality regressions."
+}

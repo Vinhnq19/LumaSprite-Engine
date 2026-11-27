@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-27 ICT",
+  "status": "PASS",
+  "source": "6cfc654e8e9f6c3d585d541038ede428136d929a",
+  "html": "docs/reports/E7.6R-PORTABLE-ART-REVIEW.html",
+  "sha256": "be99e11bb34f1e6b9151663c19fd156acc12389b4a4501ca3d67a6cbd7619c8a",
+  "size": 6450329,
+  "location": "Windows Temp outside Engine, only the HTML copied",
+  "offline": true,
+  "scheme": "file:",
+  "images": 153,
+  "uniquePng": 153,
+  "exact4xPairs": 18,
+  "metadata": 45,
+  "externalDependencies": 0,
+  "native": "320x208",
+  "zoom": "1280x832",
+  "synchronizedPan": "PASS",
+  "blankReview": "PASS",
+  "populatedReview": "PASS",
+  "evidenceDownload": "PASS",
+  "browser": "Chrome/158.0.0.0"
+}

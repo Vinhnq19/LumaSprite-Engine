@@ -1,0 +1,96 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "records": [
+    {
+      "name": "field-rain-gauge/a0/material.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "e6ff26504f112632675dc45834c5934c2ca088d62ebf2c668a216c8d3122a4d0",
+      "rgbaSha256": "73d5c8f0b79ce2d5b0111e7fedf35f4263f0562ae5e16fa59f614376a978c492"
+    },
+    {
+      "name": "field-rain-gauge/a1/material.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "c2e61a18ab6275cc2eee2762a4d6b85fc1e743108f2c646eee8be430bb805336",
+      "rgbaSha256": "2baa833a8d011e6e8fcca9cfd3b59af6b5e1c06a58cba1ab67704f1fbddc921b"
+    },
+    {
+      "name": "field-rain-gauge/a2/material.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "c376ba123eab08c2f02eb5a686cb3f5daa5cae20d213ce524fd0134d35c72d98",
+      "rgbaSha256": "a1de1e3ce83f6946f8c75bbf7f5b17ac07b45ffb41e82d496d30f0201ccb3818"
+    },
+    {
+      "name": "harbor-signal-beacon/a0/material.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "582130d1ed3eb718dd1854ccf122d68b9f99c67f63aa22db4449b316b14d2713",
+      "rgbaSha256": "dbceac667648b8a426f2159ec3f97aada86d8b0efa475d0d56a1427afc9e37d5"
+    },
+    {
+      "name": "harbor-signal-beacon/a1/material.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "d8e85b72fc2843ce8338b55d4a5ae082eb08a3b86411b10085eccffe4b983f05",
+      "rgbaSha256": "b9ff1ea7c8a4cd501a272d47b8d51a93d911fea8853736a695ab3a4efb624846"
+    },
+    {
+      "name": "harbor-signal-beacon/a2/material.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "baea60cfe7c6e646e046c191dafca7b8fcd9d2f1b34230e5d8d449cb5d5f990c",
+      "rgbaSha256": "248fcc75995a085ed51071e42ceb6a1cdb68a1c714e1c6a10182f7356cbab393"
+    },
+    {
+      "name": "field-rain-gauge/a1/focused.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "62e984786c4c5cb2ced24c31b15df3409aa3b75b8372a5018907ed8381c88ba7",
+      "rgbaSha256": "e456bec91e2453588d041ae3016730abf4ea353c67ce25802af6f32f49f8b6ec"
+    },
+    {
+      "name": "field-rain-gauge/a1/refined.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "4095e3b0ac462c4aaa9e1711599fb9cdc3fa648c18f138b35ba3c64926dec6c1",
+      "rgbaSha256": "828fbfc93e0f6b08151512724f8e534a3784b0d38f408f89d45d2048f0ce3ac3"
+    },
+    {
+      "name": "field-rain-gauge/a1/edit-mask.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "pngSha256": "1eaa6db1f279b7ae196d1c402e8eba8b204778562d59026e15a0c641797958db",
+      "rgbaSha256": "78f198d8db5a9948fb389000066f87cd0f489b6e69d8bb11bfc1265bcaa26210"
+    },
+    {
+      "name": "harbor-signal-beacon/a2/night.png",
+      "canvas": [
+        320,
+        208
+      ],
+      "pngSha256": "b469909c4e1c7baf335e983158e6848f10a1d6a30d2952cc69ab93ceefba44b5",
+      "rgbaSha256": "32fbaf55fa43af3e6aa010d3fa6ec7b5b0045985518e6183b6a21af3a068b99a"
+    }
+  ]
+}

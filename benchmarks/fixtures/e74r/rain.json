@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "id": "field-rain-gauge",
+  "name": "Field Rain Gauge",
+  "role": "development",
+  "kind": "collector",
+  "seed": 5821,
+  "canvas": 32,
+  "dimensions": {
+    "height": 23,
+    "width": 7,
+    "depth": 4
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "view": "three-quarter-right",
+  "brief": "Open rain-catching mouth above a glass measuring column, three grouped scale marks and two anchored supports.",
+  "before": {
+    "brief": {
+      "file": "benchmarks/fixtures/e74/field-rain-gauge.json",
+      "sha256": "1b6a1b9b722b46d6498e18bee9a4d10ecf19481c3d73137a4e967d2001887856"
+    },
+    "candidate": "a1"
+  },
+  "context": {
+    "file": "benchmarks/fixtures/e73/stormwatch.json",
+    "sha256": "5599b260efdf68138d1296e5ce3e4e049b0b0dce8429279950dd7a07ad9e9f54"
+  },
+  "priority": [
+    "open mouth",
+    "glass column and grouped scale",
+    "ground contact"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "floodgate-maintenance-yard",
+  "light": "day",
+  "clearance": {
+    "x": 9,
+    "y": 2
+  },
+  "spawn": {
+    "x": 140,
+    "y": 174
+  },
+  "landmark": {
+    "kind": "static-maintenance-wheel",
+    "at": {
+      "x": 226,
+      "y": 125
+    },
+    "stand": {
+      "x": 226,
+      "y": 151
+    }
+  },
+  "source": {
+    "fixture": "1b3410af11d31001a225860b2b3f05ec7d7b2200d554e2769dbbe790ea89a4b6",
+    "lockedScene": "939f607623e02203fbee70d11567f0bb0180cd793257978bd4b1e2568570d40e",
+    "lockedMap": "efd9536016e9144b0327ddec78896f9c528f8e0c564f66b2b4ee53b9e710c665",
+    "lockedFrame": "1d81803adad00c60efa655e883c8f4c39b30f4a4fc27c563b325db2b1f87cba2",
+    "rgba": "b420473096e95b7ec267cd95a0899673cf9e319793ba1a7c86c38f1a97c78652"
+  },
+  "aperture": null,
+  "colliderBoxes": 105,
+  "tiles": 260
+}

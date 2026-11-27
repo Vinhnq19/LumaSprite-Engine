@@ -8,7 +8,7 @@ import { blit,composite,silhouette } from '../../core/pixels/raster.ts';
 import { renderOutlinedLayers } from '../../core/renderer/layers.ts';
 import { decodePng } from '../../core/renderer/png.ts';
 import { materialLegend,materialPiece } from '../../generators/environment/kit.ts';
-import { artStyleProfileSchema } from '../../specs/environment.ts';
+import { artStyleProfileSchema, type StyleProfile } from '../../specs/environment.ts';
 import { inspectStructure,pinnedFile } from './diagnostics.ts';
 
 const hash=z.string().regex(/^[a-f0-9]{64}$/);
@@ -31,10 +31,20 @@ interface RelayStructure {
   glint: number;
 }
 
-function relayStructure(spec:Relay,variant:'a0'|'a1'):RelayStructure {
+type DeviceForm = 'weather-hood' | 'depth-gauge';
+
+function relayStructure(spec:Relay,variant:'a0'|'a1',form?:DeviceForm):RelayStructure {
   const {width,depth,height}=spec.body, x=Math.floor((32-width-depth)/2), bottom=26, top=bottom-height;
   const one=(left:number,y:number,w:number,d:number,end:number,taper=0):Volume=>({left,top:y,width:w,depth:d,bottom:end,taper});
-  const fit=variant==='a0'?{
+  const fit=form==='weather-hood'?{
+    box:one(x+1,top+3,width-2,depth,bottom-1,1),
+    skids:[one(x+1,bottom-3,5,depth-2,bottom+2),one(x+width-7,bottom-3,5,depth-2,bottom+2)],
+    shoulder:[one(x,top,width,depth,top+5,1),one(x+5,top-3,5,depth-3,top+1)],
+  }:form==='depth-gauge'?{
+    box:one(x+3,top+1,width-6,depth,bottom-1,1),
+    skids:[one(x+1,bottom-4,5,depth-1,bottom+2),one(x+width-6,bottom-4,5,depth-1,bottom+2)],
+    shoulder:[one(x+4,top-2,width-8,depth-1,top+3)],
+  }:variant==='a0'?{
     box:one(x,top+2,width,depth,bottom+2), skids:[], shoulder:[] as Volume[],
   }:{
     box:one(x+1,top+2,width-2,depth,bottom-1,1),
@@ -43,39 +53,71 @@ function relayStructure(spec:Relay,variant:'a0'|'a1'):RelayStructure {
   };
   const box=fit.box;
   const center=box.left+Math.floor(box.width/2);
-  return {...fit,window:rect(center-4,box.top+4,center+5,box.top+8),
+  const window=form==='depth-gauge'?rect(center-2,box.top+4,center+3,box.top+11)
+    :rect(center-4,box.top+4,center+5,box.top+8);
+  return {...fit,window,
     contact:[x+Math.floor(width/2),bottom+3] as const, glint:spec.seed%2};
 }
 
-export async function renderRelay(raw:unknown,variant:'a0'|'a1'){
-  const spec=relaySpec.parse(raw), structure=relayStructure(spec,variant);
-  const style=artStyleProfileSchema.parse(JSON.parse((await pinnedFile(spec.sourceStyle)).toString('utf8')));
-  const theme=style.illumination.day, factory=materialPiece(theme);
+type Theme = StyleProfile['illumination']['day'];
+
+function relaySprite(spec:Relay,variant:'a0'|'a1',look:'current'|'readout',theme:Theme,form?:DeviceForm){
+  const structure=relayStructure(spec,variant,form), factory=materialPiece(theme);
   const finish=(flat:boolean)=>factory(32,32,structure.contact,(paint,patch)=>{
-    const block=(src:Volume,role:'wood'|'metal')=>{
+    const refined=look==='readout'&&!flat;
+    const block=(src:Volume,role:'wood'|'metal',housing=false)=>{
       const f=projectBox(src);
-      paint(role,0,f.side);
-      paint(role,1,f.front);
+      const timber=refined&&housing;
+      paint(timber?'wood':role,timber?1:0,f.side);
+      paint(timber?'wood':role,timber?2:1,f.front);
       paint(role,2,f.top);
       if(flat)return;
-      patch(role,3,f.top,0.06,0.05,0.8,0.21);
+      if(refined){
+        if(role==='metal')patch('metal',3,f.top,.06,0,.76,.24);
+        patch(timber?'wood':role,0,f.front,0,.83,1,1);
+        if(timber){
+          patch('wood',0,f.side,0,.65,1,1);
+          patch('metal',1,f.front,0,0,.12,1);
+          patch('metal',1,f.front,.88,0,1,1);
+          patch('metal',0,f.side,0,0,.22,1);
+          patch('metal',0,f.side,.84,0,1,1);
+          patch('metal',2,f.front,0,0,1,.18);
+        }
+        return;
+      }
+      patch(role,3,f.top,.06,.05,.8,.21);
       patch(role,0,f.front,0,.83,1,1);
       patch(role,2,f.front,.07,.13,.16,.7);
     };
     structure.skids.forEach(s=>block(s,'wood'));
-    block(structure.box,'metal');
+    block(structure.box,'metal',true);
     structure.shoulder.forEach(s=>block(s,'metal'));
     const f=projectBox(structure.box);
-    patch('wood',0,f.side,.05,.72,1,.94);
-    patch('wood',2,f.front,.03,.72,.97,.9);
     const [l,t]=structure.window[0], [r,b]=structure.window[2];
-    paint('metal',0,structure.window);
-    paint('amber',flat?2:3,rect(l+2+structure.glint,t+1,l+3+structure.glint,b-1));
-    paint('amber',2,rect(l+4,t+1,r-2,t+2));
-    if(!flat){
-      paint('metal',3,rect(l,t-1,r-2,t));
-      paint('wood',3,rect(l-2,b+2,r-2,b+3));
-      paint('metal',2,rect(l-2,t+1,l-1,t+2));
+    if(form==='depth-gauge'){
+      paint('metal',0,structure.window);
+      paint('amber',2,rect(l+1,t+1,l+3,b-1));
+      paint('amber',3,rect(l+1,t+2,l+2,t+3));
+      paint('metal',2,rect(r-1,t+2,r,t+3));
+      paint('metal',2,rect(r-1,t+4,r,t+5));
+    }else if(refined){
+      // The recessed plane carries a continuous display and a dim terminal on the far side.
+      paint('metal',0,structure.window);
+      paint('amber',2,rect(l+1,t+1,r-1,b-1));
+      paint('amber',3,rect(l+1,t+1,l+4,t+2));
+      paint('amber',1,rect(r-3,t+1,r-1,b-1));
+      paint('metal',1,rect(l,t-1,r,t));
+    }else{
+      patch('wood',0,f.side,.05,.72,1,.94);
+      patch('wood',2,f.front,.03,.72,.97,.9);
+      paint('metal',0,structure.window);
+      paint('amber',flat?2:3,rect(l+2+structure.glint,t+1,l+3+structure.glint,b-1));
+      paint('amber',2,rect(l+4,t+1,r-2,t+2));
+      if(!flat){
+        paint('metal',3,rect(l,t-1,r-2,t));
+        paint('wood',3,rect(l-2,b+2,r-2,b+3));
+        paint('metal',2,rect(l-2,t+1,l-1,t+2));
+      }
     }
   });
   const ink=pack(theme.contour), flat=finish(true);
@@ -91,15 +133,26 @@ export async function renderRelay(raw:unknown,variant:'a0'|'a1'){
   const qa=inspectStructure(outline.final,legal,material);
   assert.deepEqual(qa.mask,shape.mask,'Material pass changed the approved shape for this variant.');
   assert.deepEqual(qa.mask,silhouette(material,pack('#ffffff')));
+  return {spec,structure,final:outline.final,flat:outline.flat,material,...qa};
+}
+
+export function renderRelayDevice(raw:unknown,form:DeviceForm,theme:Theme){
+  return relaySprite(relaySpec.parse(raw),'a1','readout',theme,form);
+}
+
+export async function renderRelay(raw:unknown,variant:'a0'|'a1',look:'current'|'readout'='current'){
+  const spec=relaySpec.parse(raw);
+  const style=artStyleProfileSchema.parse(JSON.parse((await pinnedFile(spec.sourceStyle)).toString('utf8')));
+  const theme=style.illumination.day, sprite=relaySprite(spec,variant,look,theme);
   const sceneFile=spec.placement.file.replace(/manifest.json$/,'');
   const manifest=JSON.parse((await pinnedFile(spec.placement)).toString('utf8'));
   const [scene,sceneMask]=await Promise.all(['scene.png','material-mask.png'].map(async file=>decodePng(await pinnedFile({file:sceneFile+file,sha256:manifest.files[file]}))));
   const inScene=composite([scene]), [x,y]=spec.placement.pivot;
-  const at:[number,number]=[x-structure.contact[0],y-structure.contact[1]];
+  const at:[number,number]=[x-sprite.structure.contact[0],y-sprite.structure.contact[1]];
   fillPolygon(inScene,[[x-12,y-1],[x+9,y-1],[x+15,y+2],[x+8,y+4],[x-11,y+3]],pack(theme.surfaces.paving[0]));
-  blit(inScene,outline.final,...at);
+  blit(inScene,sprite.final,...at);
   for(let i=0;i<scene.rgba.length;i+=4)if(sceneMask.rgba.readUInt32BE(i)===pack(materialLegend.actor)){
     assert.equal(inScene.rgba.readUInt32BE(i),scene.rgba.readUInt32BE(i),'Relay occludes approved actor pixels.');
   }
-  return {spec,structure,final:outline.final,flat:outline.flat,material,inScene,...qa};
+  return {...sprite,inScene};
 }

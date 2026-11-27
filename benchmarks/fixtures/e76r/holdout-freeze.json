@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "protocol": "The candidate was frozen after known cases and before generating Canal Intake.",
+  "source": {
+    "benchmarks/fixtures/e76r/study.json": "64c060d164bd52a52df23245d940278be7e0d22a4935fd7dd7ae18bb5fecef0f",
+    "benchmarks/fixtures/e76r/canal-intake-service-platform.json": "63de5633c68ad0467a0e27059c58dae3ecdbdff564ef1437ee912d12958fe56c",
+    "scripts/benchmark-e76r.ts": "6b3674effcfe1833cb71216431c4ef6d0f0ea731eadf03024555d5be5a52deb9",
+    "src/experiments/functional-waterfront.ts": "5981b1566cea61614313c58523411cea0f64b91c5f1d4801adf1211b9dbc5d81",
+    "src/experiments/semantic-environment.ts": "f0839e63672dd9df157e9744e546a2935b4685abe65f735b85d778f4b64c1897",
+    "src/experiments/semantic-environment-export.ts": "8688f3601f5c29ae68dc16d6e9095ef1f1c1e2afa6a67424398bd1cf3e455a7d",
+    "benchmarks/fixtures/e76/pilot-lock.json": "74ffcc6a4bebd941bb60229030bee1eb1dd3c45c266c18371548aaf5f7a064ab"
+  },
+  "knownEvidence": "a11594719a980c7cc6577016480c85dcbc9a2ddf26b9aa0ac21959a0d8a8fd92",
+  "criteria": [
+    "semanticRecognition",
+    "visualQuality",
+    "gameplayQuality",
+    "generalization"
+  ],
+  "requirements": [
+    "land-to-platform route for Surveyor 19x5",
+    "reachable maintenance stand beside wheel",
+    "stationary water open beneath raised gate",
+    "day/night invariance for collision and anchors",
+    "same camera, terrain, locked character and prop sources",
+    "exact tilemap/foreground RGBA replay"
+  ]
+}

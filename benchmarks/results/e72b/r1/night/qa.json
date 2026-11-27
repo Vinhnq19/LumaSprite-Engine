@@ -1,0 +1,1228 @@
+{
+  "id": "r1",
+  "name": "Signal Ruins Entrance",
+  "seed": 83,
+  "light": "night",
+  "source": {
+    "file": "benchmarks/fixtures/e63/r1-signal-entrance.json",
+    "sha256": "9b4261d445702bb2e2bb9490195a5eb5eee171bca5fe8e792da12069022dde23"
+  },
+  "crops": [
+    {
+      "id": "west-wall",
+      "rect": [
+        41,
+        64,
+        76,
+        50
+      ]
+    },
+    {
+      "id": "east-wall",
+      "rect": [
+        215,
+        50,
+        78,
+        63
+      ]
+    }
+  ],
+  "role": "development",
+  "technical": "PASS",
+  "art": "PENDING_HUMAN_REVIEW",
+  "before": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 11558,
+      "samples": 127835,
+      "per100": 9
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 60,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 4,
+        "p10": 1,
+        "median": 1
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 192,
+        "p10": 5,
+        "median": 14
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 39,
+        "p10": 2,
+        "median": 33
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 207,
+        "p10": 30,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 72,
+        "p10": 18,
+        "median": 35
+      },
+      {
+        "roles": "#48425e/#68864c",
+        "samples": 3,
+        "p10": 31,
+        "median": 31
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 345,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#48425e/#94e4bd",
+        "samples": 2,
+        "p10": 37,
+        "median": 37
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 2,
+        "p10": 57,
+        "median": 57
+      },
+      {
+        "roles": "#48425e/#cfbb83",
+        "samples": 2,
+        "p10": 42,
+        "median": 54
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 257,
+        "p10": 15,
+        "median": 38
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1904,
+        "p10": 9,
+        "median": 39
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 160,
+        "p10": 5,
+        "median": 28
+      },
+      {
+        "roles": "#82a456/#94e4bd",
+        "samples": 7,
+        "p10": 11,
+        "median": 11
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 15,
+        "p10": 6,
+        "median": 23
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 71,
+        "p10": 16,
+        "median": 19
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 7,
+        "p10": 3,
+        "median": 3
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 561,
+        "p10": 11,
+        "median": 12
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 11,
+        "p10": 36,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 114,
+        "p10": 8,
+        "median": 41
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 300,
+        "p10": 28,
+        "median": 63
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 101,
+        "p10": 15,
+        "median": 55
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 58,
+        "p10": 39,
+        "median": 47
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 0,
+        "median": 0
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 40,
+        "median": 40
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 226,
+        "p10": 3,
+        "median": 3
+      }
+    ],
+    "used": [
+      "#1e2133",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#28373c",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#302a39",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#35444a",
+      "#363442",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#403b48",
+      "#434a5c",
+      "#435268",
+      "#465046",
+      "#465552",
+      "#46746e",
+      "#494651",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#59697d",
+      "#5a505b",
+      "#5d5662",
+      "#64778c",
+      "#674937",
+      "#675761",
+      "#694636",
+      "#6b4139",
+      "#71453d",
+      "#746268",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7b8695",
+      "#8294a7",
+      "#86503d",
+      "#88927a",
+      "#896049",
+      "#935630",
+      "#9ca8a8",
+      "#a36146",
+      "#a86a55",
+      "#b0774b",
+      "#b18059",
+      "#d79768",
+      "#dca57a",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "7c0c9cf6a310959fa43fbc69433ecab853a335d07d6bb2932ddc52342603de33",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "after": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 10902,
+      "samples": 127960,
+      "per100": 8.5
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 60,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 4,
+        "p10": 1,
+        "median": 1
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 192,
+        "p10": 5,
+        "median": 14
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 39,
+        "p10": 2,
+        "median": 33
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 207,
+        "p10": 30,
+        "median": 30
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 72,
+        "p10": 18,
+        "median": 35
+      },
+      {
+        "roles": "#48425e/#68864c",
+        "samples": 1,
+        "p10": 31,
+        "median": 31
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 198,
+        "p10": 13,
+        "median": 13
+      },
+      {
+        "roles": "#48425e/#94e4bd",
+        "samples": 2,
+        "p10": 37,
+        "median": 37
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 1,
+        "p10": 57,
+        "median": 57
+      },
+      {
+        "roles": "#48425e/#cfbb83",
+        "samples": 2,
+        "p10": 42,
+        "median": 54
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 259,
+        "p10": 15,
+        "median": 35
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1904,
+        "p10": 9,
+        "median": 39
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 182,
+        "p10": 5,
+        "median": 28
+      },
+      {
+        "roles": "#82a456/#94e4bd",
+        "samples": 7,
+        "p10": 11,
+        "median": 11
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 15,
+        "p10": 6,
+        "median": 23
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 71,
+        "p10": 16,
+        "median": 19
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 7,
+        "p10": 3,
+        "median": 3
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 562,
+        "p10": 11,
+        "median": 12
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 11,
+        "p10": 36,
+        "median": 36
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 114,
+        "p10": 8,
+        "median": 41
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 300,
+        "p10": 28,
+        "median": 63
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 101,
+        "p10": 15,
+        "median": 55
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 58,
+        "p10": 39,
+        "median": 47
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 0,
+        "median": 0
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 40,
+        "median": 40
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 226,
+        "p10": 3,
+        "median": 3
+      }
+    ],
+    "used": [
+      "#1e2133",
+      "#201a24",
+      "#272c40",
+      "#282f45",
+      "#28373c",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#302a39",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#35444a",
+      "#363442",
+      "#37545a",
+      "#375d5b",
+      "#392c37",
+      "#394b4d",
+      "#403b48",
+      "#434a5c",
+      "#435268",
+      "#465046",
+      "#465552",
+      "#46746e",
+      "#494651",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#59697d",
+      "#5a505b",
+      "#5d5662",
+      "#64778c",
+      "#674937",
+      "#675761",
+      "#694636",
+      "#6b4139",
+      "#71453d",
+      "#746268",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7b8695",
+      "#8294a7",
+      "#86503d",
+      "#88927a",
+      "#896049",
+      "#935630",
+      "#9ca8a8",
+      "#a36146",
+      "#a86a55",
+      "#b0774b",
+      "#b18059",
+      "#d79768",
+      "#dca57a",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "2721f39b1d52a813b9d7328e37fe473fe384f59d0e2eeb240d236790df65ef2c",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "changedByWall": {
+    "east-wall": 902,
+    "west-wall": 807
+  },
+  "walls": [
+    {
+      "id": "east-wall",
+      "course": 12,
+      "fracture": [
+        17,
+        32
+      ],
+      "moisture": [
+        16,
+        50
+      ],
+      "geometry": {
+        "added": 0,
+        "removed": 0,
+        "shared": 2779
+      },
+      "baseline": {
+        "coverage": 2779,
+        "outline": 206,
+        "isolatedOutline": 0,
+        "components": [
+          2779
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 67,
+          "bottom": 54
+        },
+        "detail": {
+          "edges": 829,
+          "samples": 5250,
+          "per100": 15.8
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#8bb4ce",
+            "samples": 117,
+            "p10": 13,
+            "median": 13
+          },
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 68,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#1e2133",
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "bd31badba7f421b4ceb14738db9533501e436042f2ed3f64d8e83ee9a6dcad57",
+        "alphaSha256": "1ae71baabe5849869e48d4008226458980a2550c3275d3bce1314d30e0a3cc78"
+      },
+      "candidate": {
+        "coverage": 2779,
+        "outline": 206,
+        "isolatedOutline": 0,
+        "components": [
+          2779
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 67,
+          "bottom": 54
+        },
+        "detail": {
+          "edges": 453,
+          "samples": 5361,
+          "per100": 8.4
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 74,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "c98cb6ca95fb2088aa84ddc4197c371cebefff662e4df53cf0124921536b75cf",
+        "alphaSha256": "1ae71baabe5849869e48d4008226458980a2550c3275d3bce1314d30e0a3cc78"
+      },
+      "clusters": {
+        "before": {
+          "stone": {
+            "pixels": 2665,
+            "largest": 1205,
+            "isolated": 13,
+            "clusters": [
+              1205,
+              566,
+              133,
+              112,
+              68,
+              54,
+              51,
+              49,
+              39,
+              32,
+              31,
+              29,
+              27,
+              27,
+              27,
+              17,
+              17,
+              16,
+              13,
+              13,
+              12,
+              12,
+              12,
+              12,
+              8,
+              7,
+              7,
+              7,
+              7,
+              4,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "contour": {
+            "pixels": 36,
+            "largest": 2,
+            "isolated": 12,
+            "clusters": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 78,
+            "largest": 15,
+            "isolated": 4,
+            "clusters": [
+              15,
+              15,
+              11,
+              11,
+              9,
+              9,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "after": {
+          "stone": {
+            "pixels": 2694,
+            "largest": 1607,
+            "isolated": 5,
+            "clusters": [
+              1607,
+              679,
+              213,
+              33,
+              31,
+              26,
+              25,
+              16,
+              10,
+              10,
+              9,
+              9,
+              6,
+              4,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 85,
+            "largest": 25,
+            "isolated": 1,
+            "clusters": [
+              25,
+              21,
+              21,
+              13,
+              4,
+              1
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "west-wall",
+      "course": 9,
+      "fracture": [
+        36,
+        25
+      ],
+      "moisture": [
+        33,
+        37
+      ],
+      "geometry": {
+        "added": 0,
+        "removed": 0,
+        "shared": 2137
+      },
+      "baseline": {
+        "coverage": 2137,
+        "outline": 193,
+        "isolatedOutline": 0,
+        "components": [
+          2137
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 65,
+          "bottom": 41
+        },
+        "detail": {
+          "edges": 749,
+          "samples": 4099,
+          "per100": 18.3
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#8bb4ce",
+            "samples": 33,
+            "p10": 13,
+            "median": 13
+          },
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 34,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#1e2133",
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "45e2a219d083b3343f4ec138bd84d4b27d599cdb5ebc21b3f34e4df54face072",
+        "alphaSha256": "7893d4fc63ed3b022c6e3002582c0c7730e3f770b2848330a28f8079b09938d9"
+      },
+      "candidate": {
+        "coverage": 2137,
+        "outline": 193,
+        "isolatedOutline": 0,
+        "components": [
+          2137
+        ],
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 65,
+          "bottom": 41
+        },
+        "detail": {
+          "edges": 469,
+          "samples": 4116,
+          "per100": 11.4
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#82a456/#8bb4ce",
+            "samples": 50,
+            "p10": 5,
+            "median": 28
+          }
+        ],
+        "used": [
+          "#282f45",
+          "#28373c",
+          "#35444a",
+          "#435268",
+          "#59697d",
+          "#7b8695"
+        ],
+        "rgbaSha256": "1dcd477f5c55c8b16cc27c21fd0d94ad7fab8f33e912f9d08f5b659027bc7333",
+        "alphaSha256": "7893d4fc63ed3b022c6e3002582c0c7730e3f770b2848330a28f8079b09938d9"
+      },
+      "clusters": {
+        "before": {
+          "stone": {
+            "pixels": 2088,
+            "largest": 804,
+            "isolated": 7,
+            "clusters": [
+              804,
+              529,
+              213,
+              112,
+              46,
+              42,
+              42,
+              39,
+              31,
+              31,
+              23,
+              22,
+              20,
+              20,
+              17,
+              16,
+              12,
+              12,
+              12,
+              7,
+              7,
+              7,
+              5,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "contour": {
+            "pixels": 10,
+            "largest": 2,
+            "isolated": 4,
+            "clusters": [
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 39,
+            "largest": 15,
+            "isolated": 2,
+            "clusters": [
+              15,
+              11,
+              9,
+              2,
+              1,
+              1
+            ]
+          }
+        },
+        "after": {
+          "stone": {
+            "pixels": 2073,
+            "largest": 871,
+            "isolated": 4,
+            "clusters": [
+              871,
+              552,
+              226,
+              224,
+              33,
+              29,
+              25,
+              20,
+              17,
+              17,
+              14,
+              10,
+              10,
+              10,
+              5,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "moss": {
+            "pixels": 64,
+            "largest": 25,
+            "isolated": 1,
+            "clusters": [
+              25,
+              21,
+              13,
+              4,
+              1
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "structure": {
+    "silhouetteSha256": "6dbfd1e1d1b3d78962c029c315ff73d0075887804230cc71664b46deac3df930",
+    "collisionSha256": "470cd784e3e860593c906036bc0c90aa59abca3b72076414ae1a5c48f3d6f20f",
+    "layerOrder": [
+      "signal-pedestal",
+      "east-wall",
+      "west-wall",
+      "signal-gateway",
+      "courier",
+      "near-column",
+      "east-column",
+      "surveyor"
+    ],
+    "anchors": [
+      {
+        "id": "signal-pedestal",
+        "at": [
+          191,
+          106
+        ],
+        "alphaSha256": "bbb73066ffea99bec49c4336e5618941bd5f956af21f21c6a135555c0f600a13"
+      },
+      {
+        "id": "east-wall",
+        "at": [
+          220,
+          109
+        ],
+        "alphaSha256": "19af987ee5aab94a5690c008d0024d1f401ddd2df75d7688bc697f33c43e3c72"
+      },
+      {
+        "id": "west-wall",
+        "at": [
+          46,
+          110
+        ],
+        "alphaSha256": "f0493542496200bf3be673ab37c3e0347e6ac6cd85b475fa623200cad09da14d"
+      },
+      {
+        "id": "signal-gateway",
+        "at": [
+          111,
+          123
+        ],
+        "alphaSha256": "30c6910468888b9097406e734bb55e7076b90b8d0176c528055a0f73523d1cfb"
+      },
+      {
+        "id": "courier",
+        "at": [
+          206,
+          145
+        ],
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77"
+      },
+      {
+        "id": "near-column",
+        "at": [
+          71,
+          151
+        ],
+        "alphaSha256": "f2a7f5c74c56c5edf2ac0de159d05c557770fea937a67490e1124a0f2cd3c5b6"
+      },
+      {
+        "id": "east-column",
+        "at": [
+          238,
+          152
+        ],
+        "alphaSha256": "fa8bf09d0c8bb74e5e061a4150387058d8697c6dcc9c6acd57d1b77eb5475f4a"
+      },
+      {
+        "id": "surveyor",
+        "at": [
+          107,
+          165
+        ],
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015"
+      }
+    ],
+    "occlusion": [
+      {
+        "id": "signal-pedestal",
+        "visible": 427,
+        "hiddenBy": {
+          "courier": 181
+        }
+      },
+      {
+        "id": "east-wall",
+        "visible": 2779,
+        "hiddenBy": {}
+      },
+      {
+        "id": "west-wall",
+        "visible": 2125,
+        "hiddenBy": {
+          "signal-gateway": 12
+        }
+      },
+      {
+        "id": "signal-gateway",
+        "visible": 3334,
+        "hiddenBy": {
+          "surveyor": 87
+        }
+      },
+      {
+        "id": "courier",
+        "visible": 997,
+        "hiddenBy": {}
+      },
+      {
+        "id": "near-column",
+        "visible": 923,
+        "hiddenBy": {
+          "surveyor": 5
+        }
+      },
+      {
+        "id": "east-column",
+        "visible": 650,
+        "hiddenBy": {}
+      },
+      {
+        "id": "surveyor",
+        "visible": 1072,
+        "hiddenBy": {}
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "surveyor",
+        "points": [
+          [
+            139,
+            196
+          ],
+          [
+            145,
+            159
+          ],
+          [
+            142,
+            137
+          ],
+          [
+            142,
+            96
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 1919
+      },
+      {
+        "id": "signal-approach",
+        "actor": "courier",
+        "points": [
+          [
+            142,
+            140
+          ],
+          [
+            152,
+            154
+          ],
+          [
+            178,
+            154
+          ],
+          [
+            208,
+            140
+          ],
+          [
+            204,
+            119
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 1932
+      }
+    ]
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "palette": {
+    "stone": [
+      "#282f45",
+      "#435268",
+      "#59697d",
+      "#7b8695"
+    ],
+    "moss": [
+      "#28373c",
+      "#35444a",
+      "#465552"
+    ],
+    "contour": [
+      "#1e2133"
+    ]
+  },
+  "planeLegend": {
+    "side": "#647294",
+    "front": "#9e9d89",
+    "top": "#d8c5a4"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "checkpoint": "80c0fe247cfa2e8438d9c73e744cbbb4df1da00c",
+  "implementationParent": "fcf9c3d638fea6d6b23608c1bdae671ce0a2df63",
+  "baseline": {
+    "file": "benchmarks/results/e75r/SHA256SUMS",
+    "sha256": "8915bf76c3022d6dfcb84109922701c83b587b92bcdda6e0074568c3f7e95946"
+  },
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "cases": [
+    {
+      "file": "benchmarks/fixtures/e76/mistfen-landing.json",
+      "sha256": "5be9e73304b93027ba61a9d36ed8437af863d6f41ca4c8ae8773489624248447"
+    },
+    {
+      "file": "benchmarks/fixtures/e76/floodgate-yard.json",
+      "sha256": "1b3410af11d31001a225860b2b3f05ec7d7b2200d554e2769dbbe790ea89a4b6"
+    }
+  ],
+  "limits": {
+    "refinements": 1,
+    "apiCalls": 0
+  },
+  "water": {
+    "day": [
+      "#263e49",
+      "#344f5a",
+      "#3d6267",
+      "#537977"
+    ],
+    "night": [
+      "#1b2838",
+      "#263745",
+      "#324958",
+      "#46606d"
+    ]
+  },
+  "criteria": [
+    "function",
+    "composition",
+    "perspective",
+    "transition",
+    "materials",
+    "clusters",
+    "outlines",
+    "lighting",
+    "dayNight",
+    "focalOrder",
+    "scale",
+    "navigation"
+  ],
+  "method": "A0-Matched supplies frozen manual footprint and turn. B1 solves the crossing from berth, shore interpolation, clearance and bank overlap. Both run identical terrain, deck, prop, palette and depth rules. Floodgate parameters and seed are fixed before evaluation."
+}

@@ -1,0 +1,625 @@
+{
+  "id": "h4",
+  "name": "Seepstone Terrace",
+  "light": "night",
+  "seed": 6491,
+  "source": {
+    "file": "benchmarks/fixtures/e72r/h4-seepstone-terrace.json",
+    "sha256": "8e2ba4dec3cf91330913debbf59d99e10da96a695b1fd030441c2d7215cc21ee"
+  },
+  "caseRole": "frozen-holdout",
+  "changedFromS1": 378,
+  "visibleFootprint": {
+    "structural": 270,
+    "material": 108
+  },
+  "structure": {
+    "silhouetteSha256": "71da6dde048d3e251b9eba14dd92ec5b7ab9dbb3a2a046751c8d7447a8c3e03f",
+    "collisionSha256": "6f3d2704143d0ec3893aa4df069ae66722a3bdc5ae9d57926780594c8520ff47",
+    "layerOrder": [
+      "terrace-return",
+      "signal-pedestal",
+      "signal-gateway",
+      "seepstone-buttress",
+      "near-column",
+      "east-column",
+      "courier",
+      "surveyor"
+    ],
+    "anchors": [
+      {
+        "id": "terrace-return",
+        "at": [
+          242,
+          103
+        ],
+        "alphaSha256": "7d5da8e31f44c1ec7de1fc9c709e4739d80791d7ad79fefe5b6c41699c8633c3"
+      },
+      {
+        "id": "signal-pedestal",
+        "at": [
+          191,
+          106
+        ],
+        "alphaSha256": "bbb73066ffea99bec49c4336e5618941bd5f956af21f21c6a135555c0f600a13"
+      },
+      {
+        "id": "signal-gateway",
+        "at": [
+          111,
+          123
+        ],
+        "alphaSha256": "30c6910468888b9097406e734bb55e7076b90b8d0176c528055a0f73523d1cfb"
+      },
+      {
+        "id": "seepstone-buttress",
+        "at": [
+          31,
+          134
+        ],
+        "alphaSha256": "d0889d017c5407fcd31ca673f8e3108ab1487d5609de92dbf6daed35c12263b3"
+      },
+      {
+        "id": "near-column",
+        "at": [
+          71,
+          151
+        ],
+        "alphaSha256": "f2a7f5c74c56c5edf2ac0de159d05c557770fea937a67490e1124a0f2cd3c5b6"
+      },
+      {
+        "id": "east-column",
+        "at": [
+          238,
+          152
+        ],
+        "alphaSha256": "fa8bf09d0c8bb74e5e061a4150387058d8697c6dcc9c6acd57d1b77eb5475f4a"
+      },
+      {
+        "id": "courier",
+        "at": [
+          201,
+          160
+        ],
+        "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77"
+      },
+      {
+        "id": "surveyor",
+        "at": [
+          111,
+          173
+        ],
+        "alphaSha256": "4f9ffec16e2377267daa83b2e356daed5689d6ed6989473fb21fe16479228015"
+      }
+    ],
+    "occlusion": [
+      {
+        "id": "terrace-return",
+        "visible": 2948,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-pedestal",
+        "visible": 608,
+        "hiddenBy": {}
+      },
+      {
+        "id": "signal-gateway",
+        "visible": 3373,
+        "hiddenBy": {
+          "surveyor": 48
+        }
+      },
+      {
+        "id": "seepstone-buttress",
+        "visible": 2855,
+        "hiddenBy": {
+          "near-column": 476,
+          "surveyor": 2
+        }
+      },
+      {
+        "id": "near-column",
+        "visible": 928,
+        "hiddenBy": {}
+      },
+      {
+        "id": "east-column",
+        "visible": 650,
+        "hiddenBy": {}
+      },
+      {
+        "id": "courier",
+        "visible": 997,
+        "hiddenBy": {}
+      },
+      {
+        "id": "surveyor",
+        "visible": 1072,
+        "hiddenBy": {}
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "surveyor",
+        "points": [
+          [
+            139,
+            196
+          ],
+          [
+            145,
+            159
+          ],
+          [
+            142,
+            137
+          ],
+          [
+            142,
+            96
+          ]
+        ],
+        "halfWidth": 9,
+        "tested": 1919
+      },
+      {
+        "id": "signal-approach",
+        "actor": "courier",
+        "points": [
+          [
+            142,
+            140
+          ],
+          [
+            152,
+            154
+          ],
+          [
+            178,
+            154
+          ],
+          [
+            208,
+            140
+          ],
+          [
+            204,
+            119
+          ]
+        ],
+        "halfWidth": 10,
+        "tested": 1932
+      }
+    ]
+  },
+  "camera": {
+    "width": 320,
+    "height": 208,
+    "sampling": "nearest",
+    "view": "three-quarter-right",
+    "pixelsPerUnit": 32
+  },
+  "palette": {
+    "stone": [
+      "#282f45",
+      "#435268",
+      "#59697d",
+      "#7b8695"
+    ],
+    "moss": [
+      "#28373c",
+      "#35444a",
+      "#465552"
+    ],
+    "contour": [
+      "#1e2133"
+    ]
+  },
+  "planes": {
+    "side": "#647294",
+    "front": "#9e9d89",
+    "top": "#d8c5a4"
+  },
+  "walls": [
+    {
+      "id": "terrace-return",
+      "refinement": {
+        "structural": {
+          "side": 36,
+          "front": 50,
+          "top": 80
+        },
+        "material": {
+          "exposedStonePixels": 45,
+          "detachedMossPixelsRemoved": 0,
+          "footingMossPixels": 5
+        }
+      },
+      "stone": [
+        {
+          "pixels": 2893,
+          "largest": 1058,
+          "isolated": 6,
+          "clusters": [
+            1058,
+            753,
+            303,
+            127,
+            85,
+            77,
+            77,
+            52,
+            36,
+            33,
+            31,
+            31,
+            31,
+            29,
+            20,
+            20,
+            18,
+            12,
+            12,
+            12,
+            12,
+            10,
+            7,
+            7,
+            4,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 2884,
+          "largest": 1110,
+          "isolated": 4,
+          "clusters": [
+            1110,
+            933,
+            329,
+            286,
+            38,
+            34,
+            25,
+            22,
+            20,
+            18,
+            17,
+            11,
+            11,
+            10,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 2879,
+          "largest": 1038,
+          "isolated": 5,
+          "clusters": [
+            1038,
+            902,
+            288,
+            263,
+            90,
+            45,
+            38,
+            36,
+            34,
+            25,
+            22,
+            20,
+            18,
+            17,
+            11,
+            11,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "moss": [
+        {
+          "pixels": 39,
+          "largest": 15,
+          "isolated": 2,
+          "clusters": [
+            15,
+            11,
+            9,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 64,
+          "largest": 25,
+          "isolated": 1,
+          "clusters": [
+            25,
+            21,
+            13,
+            4,
+            1
+          ]
+        },
+        {
+          "pixels": 69,
+          "largest": 30,
+          "isolated": 1,
+          "clusters": [
+            30,
+            21,
+            13,
+            4,
+            1
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "edges": 941,
+          "samples": 5685,
+          "per100": 16.6
+        },
+        {
+          "edges": 528,
+          "samples": 5720,
+          "per100": 9.2
+        },
+        {
+          "edges": 682,
+          "samples": 5718,
+          "per100": 11.9
+        }
+      ]
+    },
+    {
+      "id": "seepstone-buttress",
+      "refinement": {
+        "structural": {
+          "side": 34,
+          "front": 34,
+          "top": 36
+        },
+        "material": {
+          "exposedStonePixels": 53,
+          "detachedMossPixelsRemoved": 0,
+          "footingMossPixels": 5
+        }
+      },
+      "stone": [
+        {
+          "pixels": 3231,
+          "largest": 1783,
+          "isolated": 8,
+          "clusters": [
+            1783,
+            525,
+            149,
+            132,
+            48,
+            45,
+            40,
+            39,
+            37,
+            36,
+            35,
+            34,
+            31,
+            31,
+            27,
+            20,
+            17,
+            17,
+            17,
+            15,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            8,
+            7,
+            7,
+            7,
+            7,
+            7,
+            6,
+            5,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 3248,
+          "largest": 2207,
+          "isolated": 5,
+          "clusters": [
+            2207,
+            589,
+            120,
+            77,
+            45,
+            38,
+            33,
+            28,
+            17,
+            16,
+            14,
+            14,
+            12,
+            11,
+            8,
+            5,
+            3,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 3243,
+          "largest": 2120,
+          "isolated": 4,
+          "clusters": [
+            2120,
+            550,
+            120,
+            95,
+            53,
+            50,
+            38,
+            33,
+            30,
+            28,
+            17,
+            17,
+            17,
+            16,
+            12,
+            11,
+            8,
+            8,
+            5,
+            3,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "moss": [
+        {
+          "pixels": 78,
+          "largest": 15,
+          "isolated": 4,
+          "clusters": [
+            15,
+            15,
+            11,
+            11,
+            9,
+            9,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "pixels": 85,
+          "largest": 25,
+          "isolated": 1,
+          "clusters": [
+            25,
+            21,
+            21,
+            13,
+            4,
+            1
+          ]
+        },
+        {
+          "pixels": 90,
+          "largest": 30,
+          "isolated": 1,
+          "clusters": [
+            30,
+            21,
+            21,
+            13,
+            4,
+            1
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "edges": 887,
+          "samples": 6383,
+          "per100": 13.9
+        },
+        {
+          "edges": 519,
+          "samples": 6458,
+          "per100": 8
+        },
+        {
+          "edges": 618,
+          "samples": 6456,
+          "per100": 9.6
+        }
+      ]
+    }
+  ],
+  "technical": "PASS",
+  "art": "PENDING_HUMAN_REVIEW"
+}

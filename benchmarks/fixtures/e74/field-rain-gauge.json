@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "canvas": {
+    "w": 32,
+    "h": 32
+  },
+  "view": "three-quarter-right",
+  "light": "upper-left",
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "id": "field-rain-gauge",
+  "role": "development",
+  "name": "Field Rain Gauge",
+  "seed": 5821,
+  "function": "collector",
+  "brief": "A field rain gauge with an open catchment funnel, a vertical glass measuring chamber, visible scale ticks, metal supports and a placeable pair of feet.",
+  "dimensions": {
+    "width": 7,
+    "depth": 4,
+    "height": 23
+  },
+  "baseline": {
+    "form": "depth-gauge",
+    "body": {
+      "width": 16,
+      "depth": 5,
+      "height": 16
+    }
+  },
+  "context": {
+    "file": "benchmarks/fixtures/e73/stormwatch.json",
+    "sha256": "5599b260efdf68138d1296e5ce3e4e049b0b0dce8429279950dd7a07ad9e9f54"
+  },
+  "refine": "a1"
+}

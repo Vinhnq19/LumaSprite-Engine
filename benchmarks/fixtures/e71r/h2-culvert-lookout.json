@@ -1,0 +1,741 @@
+{
+  "version": 1,
+  "kind": "ruin-composition",
+  "id": "h2-culvert-lookout",
+  "name": "Dry Culvert Lookout",
+  "size": [
+    320,
+    208
+  ],
+  "seed": 4189,
+  "source": {
+    "checkpoint": "24b8ca6",
+    "kit": "front-court",
+    "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+    "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+  },
+  "terrain": {
+    "origin": [
+      -31,
+      13
+    ],
+    "rows": [
+      "####################",
+      "####################",
+      "####################",
+      "###...#####.....####",
+      "##......##.......###",
+      "##...............###",
+      "##................##",
+      "###...............##",
+      "#####...........####",
+      "######.........#####",
+      "######........######",
+      "#######.......######",
+      "########.....#######"
+    ]
+  },
+  "building": [
+    111,
+    123
+  ],
+  "approach": [
+    [
+      131,
+      125
+    ],
+    [
+      154,
+      125
+    ],
+    [
+      164,
+      150
+    ],
+    [
+      161,
+      170
+    ],
+    [
+      152,
+      208
+    ],
+    [
+      111,
+      208
+    ],
+    [
+      125,
+      169
+    ],
+    [
+      122,
+      152
+    ]
+  ],
+  "paving": [
+    {
+      "role": "activity",
+      "points": [
+        [
+          132,
+          94
+        ],
+        [
+          206,
+          92
+        ],
+        [
+          236,
+          111
+        ],
+        [
+          220,
+          130
+        ],
+        [
+          165,
+          132
+        ],
+        [
+          130,
+          116
+        ]
+      ]
+    },
+    {
+      "role": "route",
+      "points": [
+        [
+          128,
+          117
+        ],
+        [
+          152,
+          118
+        ],
+        [
+          159,
+          139
+        ],
+        [
+          150,
+          146
+        ],
+        [
+          130,
+          141
+        ],
+        [
+          124,
+          131
+        ]
+      ]
+    }
+  ],
+  "props": [],
+  "spawns": [
+    {
+      "actor": "surveyor",
+      "at": [
+        109,
+        166
+      ]
+    },
+    {
+      "actor": "courier",
+      "at": [
+        196,
+        158
+      ]
+    }
+  ],
+  "walkable": [
+    [
+      [
+        91,
+        103
+      ],
+      [
+        158,
+        90
+      ],
+      [
+        190,
+        89
+      ],
+      [
+        233,
+        94
+      ],
+      [
+        269,
+        115
+      ],
+      [
+        280,
+        171
+      ],
+      [
+        240,
+        182
+      ],
+      [
+        179,
+        181
+      ],
+      [
+        157,
+        208
+      ],
+      [
+        103,
+        208
+      ],
+      [
+        91,
+        187
+      ],
+      [
+        44,
+        176
+      ],
+      [
+        47,
+        133
+      ]
+    ],
+    [
+      [
+        127,
+        91
+      ],
+      [
+        160,
+        91
+      ],
+      [
+        160,
+        153
+      ],
+      [
+        127,
+        153
+      ]
+    ]
+  ],
+  "zones": [
+    {
+      "id": "gateway",
+      "role": "primary",
+      "points": [
+        [
+          107,
+          31
+        ],
+        [
+          193,
+          31
+        ],
+        [
+          193,
+          137
+        ],
+        [
+          107,
+          137
+        ]
+      ]
+    },
+    {
+      "id": "signal",
+      "role": "secondary",
+      "points": [
+        [
+          185,
+          63
+        ],
+        [
+          225,
+          63
+        ],
+        [
+          225,
+          125
+        ],
+        [
+          185,
+          125
+        ]
+      ]
+    },
+    {
+      "id": "tree-line",
+      "role": "background",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          320,
+          0
+        ],
+        [
+          320,
+          73
+        ],
+        [
+          273,
+          69
+        ],
+        [
+          222,
+          63
+        ],
+        [
+          185,
+          34
+        ],
+        [
+          100,
+          37
+        ],
+        [
+          53,
+          72
+        ],
+        [
+          0,
+          90
+        ]
+      ]
+    },
+    {
+      "id": "near-broken-column",
+      "role": "foreground",
+      "points": [
+        [
+          54,
+          119
+        ],
+        [
+          99,
+          119
+        ],
+        [
+          99,
+          188
+        ],
+        [
+          54,
+          188
+        ]
+      ]
+    },
+    {
+      "id": "quiet-canopy",
+      "role": "rest",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          320,
+          0
+        ],
+        [
+          320,
+          72
+        ],
+        [
+          268,
+          63
+        ],
+        [
+          213,
+          58
+        ],
+        [
+          178,
+          35
+        ],
+        [
+          110,
+          39
+        ],
+        [
+          43,
+          69
+        ],
+        [
+          0,
+          99
+        ]
+      ]
+    },
+    {
+      "id": "meadow-edge",
+      "role": "rest",
+      "points": [
+        [
+          175,
+          178
+        ],
+        [
+          247,
+          165
+        ],
+        [
+          320,
+          152
+        ],
+        [
+          320,
+          208
+        ],
+        [
+          171,
+          208
+        ]
+      ]
+    },
+    {
+      "id": "actor-space",
+      "role": "readability",
+      "points": [
+        [
+          79,
+          115
+        ],
+        [
+          228,
+          115
+        ],
+        [
+          229,
+          168
+        ],
+        [
+          129,
+          185
+        ],
+        [
+          84,
+          182
+        ]
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "gateway-step",
+      "target": "entry",
+      "points": [
+        [
+          129,
+          123
+        ],
+        [
+          155,
+          123
+        ],
+        [
+          155,
+          144
+        ],
+        [
+          129,
+          144
+        ]
+      ]
+    },
+    {
+      "id": "read-signal",
+      "target": "signal-pedestal",
+      "points": [
+        [
+          173,
+          105
+        ],
+        [
+          206,
+          105
+        ],
+        [
+          206,
+          125
+        ],
+        [
+          173,
+          125
+        ]
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "gate-passage",
+      "actor": "surveyor",
+      "points": [
+        [
+          139,
+          196
+        ],
+        [
+          145,
+          159
+        ],
+        [
+          142,
+          137
+        ],
+        [
+          142,
+          96
+        ]
+      ]
+    },
+    {
+      "id": "signal-approach",
+      "actor": "courier",
+      "points": [
+        [
+          142,
+          140
+        ],
+        [
+          152,
+          154
+        ],
+        [
+          178,
+          154
+        ],
+        [
+          208,
+          140
+        ],
+        [
+          204,
+          119
+        ]
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "front",
+      "actor": "surveyor",
+      "at": [
+        142,
+        144
+      ]
+    },
+    {
+      "id": "threshold",
+      "actor": "courier",
+      "at": [
+        139,
+        120
+      ],
+      "occluder": "signal-gateway"
+    },
+    {
+      "id": "side",
+      "actor": "courier",
+      "at": [
+        234,
+        130
+      ],
+      "occluder": "east-column"
+    },
+    {
+      "id": "rear",
+      "actor": "surveyor",
+      "at": [
+        171,
+        99
+      ],
+      "occluder": "signal-gateway"
+    },
+    {
+      "id": "between-props",
+      "actor": "courier",
+      "at": [
+        177,
+        132
+      ]
+    },
+    {
+      "id": "foreground",
+      "actor": "surveyor",
+      "at": [
+        81,
+        141
+      ],
+      "occluder": "near-column"
+    }
+  ],
+  "depth": "ground-pivot-y",
+  "collision": "kit-and-prop-footprints",
+  "lighting": {
+    "door": true,
+    "workbench": "door",
+    "fill": [
+      {
+        "role": "dirt",
+        "tone": 2,
+        "points": [
+          [
+            135,
+            121
+          ],
+          [
+            200,
+            113
+          ],
+          [
+            252,
+            119
+          ],
+          [
+            259,
+            147
+          ],
+          [
+            236,
+            164
+          ],
+          [
+            172,
+            159
+          ],
+          [
+            139,
+            149
+          ]
+        ]
+      },
+      {
+        "role": "paving",
+        "tone": 2,
+        "points": [
+          [
+            177,
+            96
+          ],
+          [
+            223,
+            91
+          ],
+          [
+            235,
+            111
+          ],
+          [
+            223,
+            127
+          ],
+          [
+            185,
+            125
+          ]
+        ]
+      }
+    ]
+  },
+  "ruins": {
+    "version": 1,
+    "modules": [
+      {
+        "id": "east-column",
+        "kind": "column",
+        "at": [
+          238,
+          152
+        ],
+        "width": 17,
+        "height": 24,
+        "depth": 10,
+        "moss": 0
+      },
+      {
+        "id": "near-column",
+        "kind": "column",
+        "at": [
+          71,
+          151
+        ],
+        "width": 18,
+        "height": 33,
+        "depth": 10,
+        "moss": 1
+      },
+      {
+        "id": "signal-pedestal",
+        "kind": "signal",
+        "at": [
+          191,
+          106
+        ],
+        "width": 24,
+        "height": 36,
+        "depth": 10,
+        "lit": true
+      },
+      {
+        "id": "signal-terrace",
+        "kind": "platform",
+        "at": [
+          155,
+          115
+        ],
+        "width": 76,
+        "height": 12,
+        "depth": 18
+      },
+      {
+        "id": "culvert-parapet",
+        "kind": "wall",
+        "at": [
+          244,
+          137
+        ],
+        "width": 57,
+        "height": 32,
+        "depth": 17,
+        "fracture": "left",
+        "moss": 2
+      },
+      {
+        "id": "signal-gateway",
+        "kind": "gateway",
+        "at": [
+          111,
+          123
+        ],
+        "width": 62,
+        "height": 74,
+        "depth": 14,
+        "opening": 36,
+        "crown": "round"
+      },
+      {
+        "id": "lookout-return",
+        "kind": "wall",
+        "at": [
+          32,
+          91
+        ],
+        "width": 62,
+        "height": 52,
+        "depth": 12,
+        "fracture": "right",
+        "moss": 1
+      }
+    ]
+  }
+}

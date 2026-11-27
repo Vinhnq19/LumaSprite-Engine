@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "canvas": 64,
+  "view": "three-quarter-right",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "actor": "courier",
+  "id": "marsh-harvester",
+  "name": "Marsh Harvester",
+  "role": "holdout",
+  "seed": 27887,
+  "brief": "Marsh worker in a hooded rain cloak with a crossbody pouch, work boots and a short hooked harvesting tool.",
+  "context": {
+    "file": "benchmarks/fixtures/e73r/mistfen.json",
+    "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe"
+  },
+  "spec": {
+    "version": 3,
+    "kind": "humanoid-traveler",
+    "canvas": {
+      "w": 64,
+      "h": 64,
+      "background": "transparent"
+    },
+    "view": "three-quarter-right",
+    "seed": 27887,
+    "palette": {
+      "mode": "authored"
+    },
+    "name": "Marsh Harvester",
+    "outfit": {
+      "headwear": "hood",
+      "satchel": "crossbody",
+      "cloth": "russet-moss"
+    },
+    "proportions": {
+      "head": [
+        17,
+        15
+      ],
+      "jacket": [
+        16,
+        14
+      ],
+      "hips": 14,
+      "arm": [
+        6,
+        4
+      ],
+      "leg": [
+        7,
+        5
+      ],
+      "boot": [
+        9,
+        4
+      ],
+      "satchel": [
+        9,
+        11
+      ]
+    },
+    "pose": {
+      "kind": "standing-free",
+      "hip": [
+        34,
+        37
+      ],
+      "lean": -2,
+      "turn": 3,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "secondaryGroundOffset": -1,
+      "near": {
+        "elbow": [
+          23,
+          34
+        ],
+        "wrist": [
+          21,
+          40
+        ],
+        "palm": [
+          22,
+          42
+        ],
+        "knee": [
+          30,
+          45
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          43,
+          32
+        ],
+        "wrist": [
+          45,
+          37
+        ],
+        "palm": [
+          44,
+          40
+        ],
+        "knee": [
+          41,
+          44
+        ],
+        "ankle": [
+          40,
+          52
+        ]
+      }
+    },
+    "geometryRevision": {
+      "number": 1,
+      "headOpening": 2,
+      "torsoPlaneOffset": 1,
+      "satchelOffset": [
+        -2,
+        2
+      ],
+      "satchelFlap": true
+    }
+  },
+  "cloak": true,
+  "poses": [
+    {
+      "id": "a1",
+      "note": "Low outward carry and a wider grounded stance.",
+      "near": {
+        "elbow": [
+          23,
+          34
+        ],
+        "wrist": [
+          21,
+          40
+        ],
+        "palm": [
+          22,
+          42
+        ],
+        "knee": [
+          30,
+          45
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          44,
+          32
+        ],
+        "wrist": [
+          48,
+          35
+        ],
+        "palm": [
+          50,
+          36
+        ],
+        "knee": [
+          44,
+          44
+        ],
+        "ankle": [
+          43,
+          52
+        ]
+      },
+      "tools": [
+        {
+          "hand": "far",
+          "kind": "hook",
+          "axis": [
+            8,
+            -5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "note": "Raised tool and a closer secondary foot to show a different load silhouette.",
+      "near": {
+        "elbow": [
+          21,
+          32
+        ],
+        "wrist": [
+          18,
+          36
+        ],
+        "palm": [
+          18,
+          39
+        ],
+        "knee": [
+          32,
+          45
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          44,
+          30
+        ],
+        "wrist": [
+          49,
+          27
+        ],
+        "palm": [
+          50,
+          25
+        ],
+        "knee": [
+          42,
+          45
+        ],
+        "ankle": [
+          41,
+          52
+        ]
+      },
+      "tools": [
+        {
+          "hand": "far",
+          "kind": "hook",
+          "axis": [
+            4,
+            -9
+          ]
+        }
+      ]
+    }
+  ]
+}

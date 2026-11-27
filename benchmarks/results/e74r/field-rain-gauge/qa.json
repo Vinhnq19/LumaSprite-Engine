@@ -1,0 +1,1373 @@
+{
+  "version": 1,
+  "source": {
+    "file": "benchmarks/fixtures/e74r/rain.json",
+    "sha256": "b4a4e0acae6a45afc139285402c13fac562e63b50eff9229f7c15aed6903aff3"
+  },
+  "seed": 5821,
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "view": "three-quarter-right",
+  "keyLight": "upper-left",
+  "priority": [
+    "open mouth",
+    "glass column and grouped scale",
+    "ground contact"
+  ],
+  "previous": [
+    {
+      "id": "a0",
+      "files": {
+        "flat": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a0/flat.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a0/flat-4x.png"
+        },
+        "silhouette": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a0/silhouette.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a0/silhouette-4x.png"
+        },
+        "material": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a0/material.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a0/material-4x.png"
+        },
+        "day": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a0/day.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a0/day-4x.png"
+        },
+        "night": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a0/night.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a0/night-4x.png"
+        },
+        "ownership": "benchmarks/results/e74/field-rain-gauge/a0/ownership.png"
+      },
+      "context": {
+        "day": {
+          "anchor": [
+            48,
+            168
+          ],
+          "pivot": [
+            13,
+            29
+          ],
+          "coverage": 400,
+          "visible": 400,
+          "hiddenBy": {},
+          "rgbaSha256": "b5e427640280b750c243d7f75d8edd7161ec7483041e043aa6298bf2d4748ccc",
+          "contrasts": {
+            "silhouette": {
+              "n": 92,
+              "p10": 62,
+              "median": 115,
+              "weak": 0
+            },
+            "outline": {
+              "n": 92,
+              "p10": 62,
+              "median": 115,
+              "weak": 0
+            },
+            "contact": {
+              "n": 19,
+              "p10": 62,
+              "median": 62,
+              "weak": 0
+            },
+            "outlineRuns": [
+              70
+            ],
+            "weakOutlineRuns": [],
+            "signal": {
+              "pixels": 10,
+              "clusters": [
+                10
+              ],
+              "housing": {
+                "n": 14,
+                "p10": 116,
+                "median": 116,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        },
+        "night": {
+          "anchor": [
+            48,
+            168
+          ],
+          "pivot": [
+            13,
+            29
+          ],
+          "coverage": 400,
+          "visible": 400,
+          "hiddenBy": {},
+          "rgbaSha256": "7c19dd03b4b349d30ba0414e186668f75ad0612348184760b1940104d3ef06ba",
+          "contrasts": {
+            "silhouette": {
+              "n": 92,
+              "p10": 25,
+              "median": 60,
+              "weak": 0
+            },
+            "outline": {
+              "n": 92,
+              "p10": 25,
+              "median": 60,
+              "weak": 0
+            },
+            "contact": {
+              "n": 19,
+              "p10": 25,
+              "median": 25,
+              "weak": 0
+            },
+            "outlineRuns": [
+              70
+            ],
+            "weakOutlineRuns": [],
+            "signal": {
+              "pixels": 10,
+              "clusters": [
+                10
+              ],
+              "housing": {
+                "n": 14,
+                "p10": 116,
+                "median": 116,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        }
+      },
+      "shape": {
+        "status": "EXISTING_GENERATOR_REFERENCE",
+        "source": "E7.3 relay device",
+        "pivot": [
+          13,
+          29
+        ],
+        "geometrySha256": "c67cc4f0ac1e0e8ef73ae0adbf6cb2662ced85ceed4386754ebe280629bd3f93",
+        "stat": {
+          "coverage": 400,
+          "outline": 70,
+          "isolatedOutline": 0,
+          "components": [
+            400
+          ],
+          "bounds": {
+            "left": 5,
+            "top": 5,
+            "right": 24,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 101,
+            "samples": 567,
+            "per100": 17.8
+          },
+          "materialBoundaries": [
+            {
+              "roles": "#48425e/#98a0be",
+              "samples": 45,
+              "p10": 24,
+              "median": 57
+            },
+            {
+              "roles": "#48425e/#bc8862",
+              "samples": 41,
+              "p10": 20,
+              "median": 20
+            },
+            {
+              "roles": "#98a0be/#bc8862",
+              "samples": 87,
+              "p10": 4,
+              "median": 20
+            },
+            {
+              "roles": "#98a0be/#f9bb51",
+              "samples": 14,
+              "p10": 116,
+              "median": 116
+            }
+          ],
+          "used": [
+            "#201a24",
+            "#343344",
+            "#4a2927",
+            "#51546a",
+            "#723e2c",
+            "#777d8b",
+            "#a15a36",
+            "#e0a051",
+            "#ffe3a0"
+          ],
+          "rgbaSha256": "73d5c8f0b79ce2d5b0111e7fedf35f4263f0562ae5e16fa59f614376a978c492",
+          "alphaSha256": "c67cc4f0ac1e0e8ef73ae0adbf6cb2662ced85ceed4386754ebe280629bd3f93"
+        }
+      },
+      "qaSha256": "a56cf4cc3da693f37939e9d7595f458fd5661e8395cec41fcb81135b897f52bb"
+    },
+    {
+      "id": "a1",
+      "files": {
+        "flat": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a1/flat.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a1/flat-4x.png"
+        },
+        "silhouette": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a1/silhouette.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a1/silhouette-4x.png"
+        },
+        "material": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a1/material.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a1/material-4x.png"
+        },
+        "day": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a1/day.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a1/day-4x.png"
+        },
+        "night": {
+          "native": "benchmarks/results/e74/field-rain-gauge/a1/night.png",
+          "zoom": "benchmarks/results/e74/field-rain-gauge/a1/night-4x.png"
+        },
+        "ownership": "benchmarks/results/e74/field-rain-gauge/a1/ownership.png"
+      },
+      "context": {
+        "day": {
+          "anchor": [
+            48,
+            168
+          ],
+          "pivot": [
+            15,
+            29
+          ],
+          "coverage": 552,
+          "visible": 552,
+          "hiddenBy": {},
+          "rgbaSha256": "8ee88f3d9deecad6dc6e6bc1c844576414fcf31fb2793e3ace742648d95f701c",
+          "contrasts": {
+            "silhouette": {
+              "n": 136,
+              "p10": 52,
+              "median": 105,
+              "weak": 2
+            },
+            "outline": {
+              "n": 136,
+              "p10": 52,
+              "median": 105,
+              "weak": 2
+            },
+            "contact": {
+              "n": 25,
+              "p10": 52,
+              "median": 105,
+              "weak": 0
+            },
+            "outlineRuns": [
+              87,
+              18
+            ],
+            "weakOutlineRuns": [
+              2
+            ],
+            "signal": {
+              "pixels": 114,
+              "clusters": [
+                114
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 1,
+                "median": 48,
+                "weak": 5
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        },
+        "night": {
+          "anchor": [
+            48,
+            168
+          ],
+          "pivot": [
+            15,
+            29
+          ],
+          "coverage": 552,
+          "visible": 552,
+          "hiddenBy": {},
+          "rgbaSha256": "d587f0063522c6e43fd33c6c360d43f977042600b9f57127b3fb99af14dc1946",
+          "contrasts": {
+            "silhouette": {
+              "n": 136,
+              "p10": 15,
+              "median": 50,
+              "weak": 16
+            },
+            "outline": {
+              "n": 136,
+              "p10": 15,
+              "median": 50,
+              "weak": 16
+            },
+            "contact": {
+              "n": 25,
+              "p10": 15,
+              "median": 50,
+              "weak": 10
+            },
+            "outlineRuns": [
+              87,
+              18
+            ],
+            "weakOutlineRuns": [
+              5,
+              5,
+              4
+            ],
+            "signal": {
+              "pixels": 114,
+              "clusters": [
+                114
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 1,
+                "median": 48,
+                "weak": 5
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        }
+      },
+      "shape": {
+        "status": "PASS",
+        "failures": [],
+        "functional": 70,
+        "negative": 14,
+        "contact": 9,
+        "projectedDepth": 5,
+        "window": [
+          13,
+          11,
+          20,
+          21
+        ],
+        "voidRegion": [
+          8,
+          13,
+          13,
+          22
+        ],
+        "aperture": {
+          "center": [
+            18.5,
+            5
+          ],
+          "width": 6,
+          "height": 1.3
+        },
+        "geometrySha256": "a27320a0d20c3e4942b84970879efbfbb31dd19e9ed93a3ea138aba11ea69473",
+        "pivot": [
+          15,
+          29
+        ],
+        "stat": {
+          "coverage": 552,
+          "outline": 105,
+          "isolatedOutline": 0,
+          "components": [
+            552
+          ],
+          "bounds": {
+            "left": 3,
+            "top": 2,
+            "right": 29,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 307,
+            "samples": 1036,
+            "per100": 29.6
+          },
+          "materialBoundaries": [],
+          "used": [
+            "#242534",
+            "#263b4a",
+            "#303845",
+            "#385666",
+            "#596a83",
+            "#81979f"
+          ],
+          "rgbaSha256": "0f4bd66b77ac0d403124da8d2fe72939bf6f06cf2c4d18759153cb8e14ce6690",
+          "alphaSha256": "a27320a0d20c3e4942b84970879efbfbb31dd19e9ed93a3ea138aba11ea69473"
+        }
+      },
+      "qaSha256": "a56cf4cc3da693f37939e9d7595f458fd5661e8395cec41fcb81135b897f52bb"
+    }
+  ],
+  "geometry": {
+    "flat": {
+      "native": "benchmarks/results/e74r/field-rain-gauge/flat.png",
+      "zoom": "benchmarks/results/e74r/field-rain-gauge/flat-4x.png"
+    },
+    "silhouette": {
+      "native": "benchmarks/results/e74r/field-rain-gauge/silhouette.png",
+      "zoom": "benchmarks/results/e74r/field-rain-gauge/silhouette-4x.png"
+    },
+    "landmarks": {
+      "native": "benchmarks/results/e74r/field-rain-gauge/landmarks.png",
+      "zoom": "benchmarks/results/e74r/field-rain-gauge/landmarks-4x.png"
+    },
+    "material": {
+      "native": "benchmarks/results/e74r/field-rain-gauge/material.png",
+      "zoom": "benchmarks/results/e74r/field-rain-gauge/material-4x.png"
+    },
+    "ownership": "benchmarks/results/e74r/field-rain-gauge/ownership.png",
+    "day": {
+      "native": "benchmarks/results/e74r/field-rain-gauge/day.png",
+      "zoom": "benchmarks/results/e74r/field-rain-gauge/day-4x.png"
+    },
+    "night": {
+      "native": "benchmarks/results/e74r/field-rain-gauge/night.png",
+      "zoom": "benchmarks/results/e74r/field-rain-gauge/night-4x.png"
+    }
+  },
+  "shapeQA": {
+    "status": "PASS",
+    "failures": [],
+    "bounds": {
+      "left": 3,
+      "top": 3,
+      "right": 30,
+      "bottom": 28
+    },
+    "contacts": 10,
+    "gaps": 10,
+    "landmarks": {
+      "frame": {
+        "color": "#826e83",
+        "pixels": 179,
+        "box": [
+          5,
+          10,
+          26,
+          26
+        ],
+        "clusters": [
+          179
+        ]
+      },
+      "feet": {
+        "color": "#d8ab75",
+        "pixels": 35,
+        "box": [
+          4,
+          23,
+          29,
+          27
+        ],
+        "clusters": [
+          21,
+          14
+        ]
+      },
+      "funnel": {
+        "color": "#e8bc82",
+        "pixels": 54,
+        "box": [
+          9,
+          4,
+          22,
+          11
+        ],
+        "clusters": [
+          54
+        ]
+      },
+      "mouth": {
+        "color": "#c78ee8",
+        "pixels": 28,
+        "box": [
+          10,
+          4,
+          21,
+          6
+        ],
+        "clusters": [
+          28
+        ]
+      },
+      "tube": {
+        "color": "#65d2dc",
+        "pixels": 94,
+        "box": [
+          13,
+          9,
+          22,
+          21
+        ],
+        "clusters": [
+          94
+        ]
+      },
+      "scale": {
+        "color": "#b6f0d5",
+        "pixels": 7,
+        "box": [
+          17,
+          13,
+          19,
+          19
+        ],
+        "clusters": [
+          3,
+          2,
+          2
+        ]
+      }
+    },
+    "shapeSha256": "85ee5f259faf04055feb27fa2c580e452dad2ce47fefcb24e96570ef16724ce3",
+    "pivot": [
+      15,
+      29
+    ],
+    "contiguity": [
+      508
+    ]
+  },
+  "materialQA": {
+    "coverage": 508,
+    "outline": 100,
+    "isolatedOutline": 0,
+    "components": [
+      508
+    ],
+    "bounds": {
+      "left": 3,
+      "top": 3,
+      "right": 30,
+      "bottom": 28
+    },
+    "detail": {
+      "edges": 149,
+      "samples": 748,
+      "per100": 19.9
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#48425e/#789e94",
+        "samples": 22,
+        "p10": 18,
+        "median": 18
+      },
+      {
+        "roles": "#48425e/#98a0be",
+        "samples": 122,
+        "p10": 17,
+        "median": 66
+      },
+      {
+        "roles": "#789e94/#98a0be",
+        "samples": 56,
+        "p10": 1,
+        "median": 60
+      }
+    ],
+    "used": [
+      "#242534",
+      "#263b4a",
+      "#303845",
+      "#385666",
+      "#577988",
+      "#596a83",
+      "#779aa5",
+      "#81979f",
+      "#bfcec6"
+    ],
+    "rgbaSha256": "ac4eb13d2f9cae2c8e34b0fa8dae8764c201c5520695ef61f1b5bd41edc06618",
+    "alphaSha256": "85ee5f259faf04055feb27fa2c580e452dad2ce47fefcb24e96570ef16724ce3",
+    "shadeBudget": 13
+  },
+  "context": {
+    "day": {
+      "anchor": [
+        48,
+        168
+      ],
+      "pivot": [
+        15,
+        29
+      ],
+      "coverage": 508,
+      "visible": 508,
+      "hiddenBy": {},
+      "rgbaSha256": "be21c1ab4370b75407cb537e246492d7c1626ae95b97ff2c2b46cc311b47c4d2",
+      "contrasts": {
+        "silhouette": {
+          "n": 136,
+          "p10": 52,
+          "median": 105,
+          "weak": 0
+        },
+        "outline": {
+          "n": 136,
+          "p10": 52,
+          "median": 105,
+          "weak": 0
+        },
+        "contact": {
+          "n": 25,
+          "p10": 52,
+          "median": 105,
+          "weak": 0
+        },
+        "outlineRuns": [
+          86,
+          14
+        ],
+        "weakOutlineRuns": [],
+        "signal": {
+          "pixels": 0,
+          "clusters": [],
+          "housing": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      },
+      "darkMaterial": {
+        "samples": 0,
+        "p10": null,
+        "median": null,
+        "weak": 0
+      },
+      "functions": {
+        "frame": {
+          "pixels": 179,
+          "clusters": [
+            179
+          ],
+          "housing": {
+            "n": 49,
+            "p10": 0,
+            "median": 32,
+            "weak": 17
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "feet": {
+          "pixels": 35,
+          "clusters": [
+            21,
+            14
+          ],
+          "housing": {
+            "n": 23,
+            "p10": 0,
+            "median": 43,
+            "weak": 11
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "funnel": {
+          "pixels": 54,
+          "clusters": [
+            54
+          ],
+          "housing": {
+            "n": 36,
+            "p10": 23,
+            "median": 146,
+            "weak": 1
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "mouth": {
+          "pixels": 28,
+          "clusters": [
+            28
+          ],
+          "housing": {
+            "n": 22,
+            "p10": 146,
+            "median": 146,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "tube": {
+          "pixels": 94,
+          "clusters": [
+            94
+          ],
+          "housing": {
+            "n": 54,
+            "p10": 1,
+            "median": 32,
+            "weak": 7
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "scale": {
+          "pixels": 7,
+          "clusters": [
+            3,
+            2,
+            2
+          ],
+          "housing": {
+            "n": 20,
+            "p10": 32,
+            "median": 66,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      }
+    },
+    "night": {
+      "anchor": [
+        48,
+        168
+      ],
+      "pivot": [
+        15,
+        29
+      ],
+      "coverage": 508,
+      "visible": 508,
+      "hiddenBy": {},
+      "rgbaSha256": "d9908bafb92c9bfa353594f9be8696eeb7b89df4e974357bca7888d218f2e2c4",
+      "contrasts": {
+        "silhouette": {
+          "n": 136,
+          "p10": 33,
+          "median": 50,
+          "weak": 12
+        },
+        "outline": {
+          "n": 136,
+          "p10": 33,
+          "median": 50,
+          "weak": 12
+        },
+        "contact": {
+          "n": 25,
+          "p10": 15,
+          "median": 50,
+          "weak": 10
+        },
+        "outlineRuns": [
+          86,
+          14
+        ],
+        "weakOutlineRuns": [
+          5,
+          5
+        ],
+        "signal": {
+          "pixels": 0,
+          "clusters": [],
+          "housing": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      },
+      "darkMaterial": {
+        "samples": 0,
+        "p10": null,
+        "median": null,
+        "weak": 0
+      },
+      "functions": {
+        "frame": {
+          "pixels": 179,
+          "clusters": [
+            179
+          ],
+          "housing": {
+            "n": 49,
+            "p10": 0,
+            "median": 32,
+            "weak": 17
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "feet": {
+          "pixels": 35,
+          "clusters": [
+            21,
+            14
+          ],
+          "housing": {
+            "n": 23,
+            "p10": 0,
+            "median": 43,
+            "weak": 11
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "funnel": {
+          "pixels": 54,
+          "clusters": [
+            54
+          ],
+          "housing": {
+            "n": 36,
+            "p10": 23,
+            "median": 146,
+            "weak": 1
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "mouth": {
+          "pixels": 28,
+          "clusters": [
+            28
+          ],
+          "housing": {
+            "n": 22,
+            "p10": 146,
+            "median": 146,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "tube": {
+          "pixels": 94,
+          "clusters": [
+            94
+          ],
+          "housing": {
+            "n": 54,
+            "p10": 1,
+            "median": 32,
+            "weak": 7
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "scale": {
+          "pixels": 7,
+          "clusters": [
+            3,
+            2,
+            2
+          ],
+          "housing": {
+            "n": 20,
+            "p10": 32,
+            "median": 66,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      }
+    },
+    "contract": "71880d22544a25c372b8293f7376848a1403f2bd9205ff33b65147454e6f473c",
+    "placement": [
+      48,
+      168
+    ],
+    "fixture": {
+      "file": "benchmarks/fixtures/e73/stormwatch.json",
+      "sha256": "5599b260efdf68138d1296e5ce3e4e049b0b0dce8429279950dd7a07ad9e9f54"
+    }
+  },
+  "patch": {
+    "defectId": "NIGHT-OUTER-RIM",
+    "location": null,
+    "rootCause": "Dark contour and adjacent B1 night ground share low local separation.",
+    "target": "Connected, upward or left-facing metal contour on the Night sprite",
+    "ink": "#596a83",
+    "changed": 0,
+    "budget": 12,
+    "protectedBefore": "ac4eb13d2f9cae2c8e34b0fa8dae8764c201c5520695ef61f1b5bd41edc06618",
+    "protectedAfter": "ac4eb13d2f9cae2c8e34b0fa8dae8764c201c5520695ef61f1b5bd41edc06618",
+    "protectedPixels": 1024,
+    "alphaExact": true,
+    "used": [
+      "#242534",
+      "#263b4a",
+      "#303845",
+      "#385666",
+      "#577988",
+      "#596a83",
+      "#779aa5",
+      "#81979f",
+      "#bfcec6"
+    ],
+    "outcome": "NO_MEANINGFUL_VISUAL_GAIN",
+    "files": null,
+    "before": {
+      "anchor": [
+        48,
+        168
+      ],
+      "pivot": [
+        15,
+        29
+      ],
+      "coverage": 508,
+      "visible": 508,
+      "hiddenBy": {},
+      "rgbaSha256": "d9908bafb92c9bfa353594f9be8696eeb7b89df4e974357bca7888d218f2e2c4",
+      "contrasts": {
+        "silhouette": {
+          "n": 136,
+          "p10": 33,
+          "median": 50,
+          "weak": 12
+        },
+        "outline": {
+          "n": 136,
+          "p10": 33,
+          "median": 50,
+          "weak": 12
+        },
+        "contact": {
+          "n": 25,
+          "p10": 15,
+          "median": 50,
+          "weak": 10
+        },
+        "outlineRuns": [
+          86,
+          14
+        ],
+        "weakOutlineRuns": [
+          5,
+          5
+        ],
+        "signal": {
+          "pixels": 0,
+          "clusters": [],
+          "housing": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      },
+      "darkMaterial": {
+        "samples": 0,
+        "p10": null,
+        "median": null,
+        "weak": 0
+      },
+      "functions": {
+        "frame": {
+          "pixels": 179,
+          "clusters": [
+            179
+          ],
+          "housing": {
+            "n": 49,
+            "p10": 0,
+            "median": 32,
+            "weak": 17
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "feet": {
+          "pixels": 35,
+          "clusters": [
+            21,
+            14
+          ],
+          "housing": {
+            "n": 23,
+            "p10": 0,
+            "median": 43,
+            "weak": 11
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "funnel": {
+          "pixels": 54,
+          "clusters": [
+            54
+          ],
+          "housing": {
+            "n": 36,
+            "p10": 23,
+            "median": 146,
+            "weak": 1
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "mouth": {
+          "pixels": 28,
+          "clusters": [
+            28
+          ],
+          "housing": {
+            "n": 22,
+            "p10": 146,
+            "median": 146,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "tube": {
+          "pixels": 94,
+          "clusters": [
+            94
+          ],
+          "housing": {
+            "n": 54,
+            "p10": 1,
+            "median": 32,
+            "weak": 7
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "scale": {
+          "pixels": 7,
+          "clusters": [
+            3,
+            2,
+            2
+          ],
+          "housing": {
+            "n": 20,
+            "p10": 32,
+            "median": 66,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      }
+    },
+    "after": {
+      "anchor": [
+        48,
+        168
+      ],
+      "pivot": [
+        15,
+        29
+      ],
+      "coverage": 508,
+      "visible": 508,
+      "hiddenBy": {},
+      "rgbaSha256": "d9908bafb92c9bfa353594f9be8696eeb7b89df4e974357bca7888d218f2e2c4",
+      "contrasts": {
+        "silhouette": {
+          "n": 136,
+          "p10": 33,
+          "median": 50,
+          "weak": 12
+        },
+        "outline": {
+          "n": 136,
+          "p10": 33,
+          "median": 50,
+          "weak": 12
+        },
+        "contact": {
+          "n": 25,
+          "p10": 15,
+          "median": 50,
+          "weak": 10
+        },
+        "outlineRuns": [
+          86,
+          14
+        ],
+        "weakOutlineRuns": [
+          5,
+          5
+        ],
+        "signal": {
+          "pixels": 0,
+          "clusters": [],
+          "housing": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      },
+      "darkMaterial": {
+        "samples": 0,
+        "p10": null,
+        "median": null,
+        "weak": 0
+      },
+      "functions": {
+        "frame": {
+          "pixels": 179,
+          "clusters": [
+            179
+          ],
+          "housing": {
+            "n": 49,
+            "p10": 0,
+            "median": 32,
+            "weak": 17
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "feet": {
+          "pixels": 35,
+          "clusters": [
+            21,
+            14
+          ],
+          "housing": {
+            "n": 23,
+            "p10": 0,
+            "median": 43,
+            "weak": 11
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "funnel": {
+          "pixels": 54,
+          "clusters": [
+            54
+          ],
+          "housing": {
+            "n": 36,
+            "p10": 23,
+            "median": 146,
+            "weak": 1
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "mouth": {
+          "pixels": 28,
+          "clusters": [
+            28
+          ],
+          "housing": {
+            "n": 22,
+            "p10": 146,
+            "median": 146,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "tube": {
+          "pixels": 94,
+          "clusters": [
+            94
+          ],
+          "housing": {
+            "n": 54,
+            "p10": 1,
+            "median": 32,
+            "weak": 7
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        },
+        "scale": {
+          "pixels": 7,
+          "clusters": [
+            3,
+            2,
+            2
+          ],
+          "housing": {
+            "n": 20,
+            "p10": 32,
+            "median": 66,
+            "weak": 0
+          },
+          "exterior": {
+            "n": 0,
+            "p10": null,
+            "median": null,
+            "weak": 0
+          }
+        }
+      }
+    },
+    "semanticLandmarksExact": true,
+    "humanEvaluation": "PENDING_HUMAN_REVIEW",
+    "scope": "Night only"
+  }
+}

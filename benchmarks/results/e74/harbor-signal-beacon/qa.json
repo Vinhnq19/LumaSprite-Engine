@@ -1,0 +1,2322 @@
+{
+  "version": 1,
+  "brief": {
+    "file": "benchmarks/fixtures/e74/harbor-signal-beacon.json",
+    "sha256": "9e5a69ac5bede96aaf4110d89565feb40eeefc35f73fbfc01c453aec435f17f6"
+  },
+  "seed": 9317,
+  "role": "holdout",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "view": "three-quarter-right",
+  "light": "upper-left",
+  "bounds": {
+    "structuresBeyondBaseline": 2,
+    "materialRefinements": 1,
+    "localRefinements": 1,
+    "editablePixels": 8,
+    "paletteColors": 13,
+    "apiCalls": 0
+  },
+  "candidates": [
+    {
+      "id": "a0",
+      "parent": null,
+      "stage": "baseline",
+      "decision": null,
+      "passed": true,
+      "flat": {
+        "native": "harbor-signal-beacon/a0/flat.png",
+        "zoom": "harbor-signal-beacon/a0/flat-4x.png"
+      },
+      "silhouette": {
+        "native": "harbor-signal-beacon/a0/silhouette.png",
+        "zoom": "harbor-signal-beacon/a0/silhouette-4x.png"
+      },
+      "material": {
+        "native": "harbor-signal-beacon/a0/material.png",
+        "zoom": "harbor-signal-beacon/a0/material-4x.png"
+      },
+      "ownership": "harbor-signal-beacon/a0/ownership.png",
+      "inScene": {
+        "day": {
+          "native": "harbor-signal-beacon/a0/day.png",
+          "zoom": "harbor-signal-beacon/a0/day-4x.png"
+        },
+        "night": {
+          "native": "harbor-signal-beacon/a0/night.png",
+          "zoom": "harbor-signal-beacon/a0/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              72,
+              169
+            ],
+            "pivot": [
+              12,
+              29
+            ],
+            "coverage": 479,
+            "visible": 479,
+            "hiddenBy": {},
+            "rgbaSha256": "2b5e1ba9082aebbecd5624584e7aa863ed4eb11cfa75afcb7519c000295ed706",
+            "contrasts": {
+              "silhouette": {
+                "n": 104,
+                "p10": 68,
+                "median": 95,
+                "weak": 0
+              },
+              "outline": {
+                "n": 104,
+                "p10": 68,
+                "median": 95,
+                "weak": 0
+              },
+              "contact": {
+                "n": 20,
+                "p10": 68,
+                "median": 68,
+                "weak": 0
+              },
+              "outlineRuns": [
+                76
+              ],
+              "weakOutlineRuns": [],
+              "signal": {
+                "pixels": 14,
+                "clusters": [
+                  14
+                ],
+                "housing": {
+                  "n": 18,
+                  "p10": 44,
+                  "median": 116,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              72,
+              169
+            ],
+            "pivot": [
+              12,
+              29
+            ],
+            "coverage": 479,
+            "visible": 479,
+            "hiddenBy": {},
+            "rgbaSha256": "60a6e64a9a33847853b1cb947b6fd6206327a085881a7f129aa40a1681781c33",
+            "contrasts": {
+              "silhouette": {
+                "n": 104,
+                "p10": 24,
+                "median": 37,
+                "weak": 0
+              },
+              "outline": {
+                "n": 104,
+                "p10": 24,
+                "median": 37,
+                "weak": 0
+              },
+              "contact": {
+                "n": 20,
+                "p10": 24,
+                "median": 24,
+                "weak": 0
+              },
+              "outlineRuns": [
+                76
+              ],
+              "weakOutlineRuns": [],
+              "signal": {
+                "pixels": 14,
+                "clusters": [
+                  14
+                ],
+                "housing": {
+                  "n": 18,
+                  "p10": 44,
+                  "median": 116,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "shapeQA": {
+        "status": "EXISTING_GENERATOR_REFERENCE",
+        "source": "E7.3 relay device",
+        "pivot": [
+          12,
+          29
+        ],
+        "geometrySha256": "89ffc1938d040059e303e0174aa382147eec2360984c492c590e7dc21fde2b86",
+        "stat": {
+          "coverage": 479,
+          "outline": 76,
+          "isolatedOutline": 0,
+          "components": [
+            479
+          ],
+          "bounds": {
+            "left": 2,
+            "top": 7,
+            "right": 28,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 138,
+            "samples": 708,
+            "per100": 19.5
+          },
+          "materialBoundaries": [
+            {
+              "roles": "#48425e/#98a0be",
+              "samples": 56,
+              "p10": 24,
+              "median": 57
+            },
+            {
+              "roles": "#48425e/#bc8862",
+              "samples": 42,
+              "p10": 20,
+              "median": 20
+            },
+            {
+              "roles": "#98a0be/#bc8862",
+              "samples": 82,
+              "p10": 4,
+              "median": 17
+            },
+            {
+              "roles": "#98a0be/#f9bb51",
+              "samples": 18,
+              "p10": 44,
+              "median": 116
+            }
+          ],
+          "used": [
+            "#201a24",
+            "#343344",
+            "#4a2927",
+            "#51546a",
+            "#723e2c",
+            "#777d8b",
+            "#935630",
+            "#a15a36",
+            "#a4adbb",
+            "#e0a051",
+            "#ffe3a0"
+          ],
+          "rgbaSha256": "dbceac667648b8a426f2159ec3f97aada86d8b0efa475d0d56a1427afc9e37d5",
+          "alphaSha256": "89ffc1938d040059e303e0174aa382147eec2360984c492c590e7dc21fde2b86"
+        }
+      }
+    },
+    {
+      "id": "a1",
+      "parent": "a0",
+      "stage": "structure",
+      "decision": null,
+      "shapeQA": {
+        "status": "PASS",
+        "failures": [],
+        "functional": 32,
+        "negative": 15,
+        "contact": 13,
+        "projectedDepth": 5,
+        "window": [
+          10,
+          11,
+          18,
+          16
+        ],
+        "voidRegion": [
+          8,
+          17,
+          13,
+          24
+        ],
+        "aperture": {
+          "center": [
+            14,
+            13.5
+          ],
+          "width": 8,
+          "height": 4.5
+        },
+        "geometrySha256": "16e4c145dad08690c504f9e07c8ee866dc331bac6faf0a6ea8472a560cee6c7d",
+        "pivot": [
+          15,
+          29
+        ],
+        "stat": {
+          "coverage": 426,
+          "outline": 84,
+          "isolatedOutline": 0,
+          "components": [
+            426
+          ],
+          "bounds": {
+            "left": 6,
+            "top": 4,
+            "right": 27,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 226,
+            "samples": 793,
+            "per100": 28.5
+          },
+          "materialBoundaries": [],
+          "used": [
+            "#242534",
+            "#303845",
+            "#596a83",
+            "#81979f",
+            "#edb063"
+          ],
+          "rgbaSha256": "cfbec24560599c0ee79d23b4fca464397e8544ad95d89f592f9bd3871f1d2642",
+          "alphaSha256": "16e4c145dad08690c504f9e07c8ee866dc331bac6faf0a6ea8472a560cee6c7d"
+        }
+      },
+      "parts": [
+        {
+          "id": "pedestal-shoe",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                7,
+                24
+              ],
+              [
+                23,
+                24
+              ],
+              [
+                21,
+                28
+              ],
+              [
+                9,
+                28
+              ]
+            ],
+            "side": [
+              [
+                23,
+                24
+              ],
+              [
+                27,
+                22
+              ],
+              [
+                27,
+                24
+              ],
+              [
+                21,
+                28
+              ]
+            ],
+            "top": [
+              [
+                11,
+                22
+              ],
+              [
+                27,
+                22
+              ],
+              [
+                23,
+                24
+              ],
+              [
+                7,
+                24
+              ]
+            ]
+          }
+        },
+        {
+          "id": "mast",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                13,
+                15
+              ],
+              [
+                17,
+                15
+              ],
+              [
+                17,
+                25
+              ],
+              [
+                13,
+                25
+              ]
+            ],
+            "side": [
+              [
+                17,
+                15
+              ],
+              [
+                21,
+                13
+              ],
+              [
+                21,
+                23
+              ],
+              [
+                17,
+                25
+              ]
+            ],
+            "top": [
+              [
+                17,
+                13
+              ],
+              [
+                21,
+                13
+              ],
+              [
+                17,
+                15
+              ],
+              [
+                13,
+                15
+              ]
+            ]
+          }
+        },
+        {
+          "id": "toggle-lever",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                19,
+                16
+              ],
+              [
+                21,
+                16
+              ],
+              [
+                19,
+                21
+              ],
+              [
+                17,
+                21
+              ]
+            ],
+            "side": [
+              [
+                21,
+                16
+              ],
+              [
+                23,
+                15
+              ],
+              [
+                21,
+                20
+              ],
+              [
+                19,
+                21
+              ]
+            ],
+            "top": [
+              [
+                21,
+                15
+              ],
+              [
+                23,
+                15
+              ],
+              [
+                21,
+                16
+              ],
+              [
+                19,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "id": "lever-knob",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                18,
+                16
+              ],
+              [
+                22,
+                16
+              ],
+              [
+                22,
+                18
+              ],
+              [
+                18,
+                18
+              ]
+            ],
+            "side": [
+              [
+                22,
+                16
+              ],
+              [
+                24,
+                15
+              ],
+              [
+                24,
+                17
+              ],
+              [
+                22,
+                18
+              ]
+            ],
+            "top": [
+              [
+                20,
+                15
+              ],
+              [
+                24,
+                15
+              ],
+              [
+                22,
+                16
+              ],
+              [
+                18,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "id": "signal-housing",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                8,
+                10
+              ],
+              [
+                20,
+                10
+              ],
+              [
+                19,
+                17
+              ],
+              [
+                9,
+                17
+              ]
+            ],
+            "side": [
+              [
+                20,
+                10
+              ],
+              [
+                25,
+                7
+              ],
+              [
+                25,
+                13
+              ],
+              [
+                19,
+                17
+              ]
+            ],
+            "top": [
+              [
+                13,
+                7
+              ],
+              [
+                25,
+                7
+              ],
+              [
+                20,
+                10
+              ],
+              [
+                8,
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "id": "lamp-visor",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                7,
+                8
+              ],
+              [
+                21,
+                8
+              ],
+              [
+                20,
+                11
+              ],
+              [
+                8,
+                11
+              ]
+            ],
+            "side": [
+              [
+                21,
+                8
+              ],
+              [
+                26,
+                5
+              ],
+              [
+                26,
+                7
+              ],
+              [
+                20,
+                11
+              ]
+            ],
+            "top": [
+              [
+                12,
+                5
+              ],
+              [
+                26,
+                5
+              ],
+              [
+                21,
+                8
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          }
+        }
+      ],
+      "flat": {
+        "native": "harbor-signal-beacon/a1/flat.png",
+        "zoom": "harbor-signal-beacon/a1/flat-4x.png"
+      },
+      "silhouette": {
+        "native": "harbor-signal-beacon/a1/silhouette.png",
+        "zoom": "harbor-signal-beacon/a1/silhouette-4x.png"
+      },
+      "ownership": "harbor-signal-beacon/a1/ownership.png",
+      "passed": true,
+      "material": {
+        "native": "harbor-signal-beacon/a1/material.png",
+        "zoom": "harbor-signal-beacon/a1/material-4x.png"
+      },
+      "materialQA": {
+        "coverage": 426,
+        "outline": 84,
+        "isolatedOutline": 0,
+        "components": [
+          426
+        ],
+        "bounds": {
+          "left": 6,
+          "top": 4,
+          "right": 27,
+          "bottom": 28
+        },
+        "detail": {
+          "edges": 117,
+          "samples": 657,
+          "per100": 17.8
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 110,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 26,
+            "p10": 79,
+            "median": 79
+          }
+        ],
+        "used": [
+          "#242534",
+          "#303845",
+          "#596a83",
+          "#81979f",
+          "#bfcec6",
+          "#edb063",
+          "#ffe3a1"
+        ],
+        "rgbaSha256": "b9ff1ea7c8a4cd501a272d47b8d51a93d911fea8853736a695ab3a4efb624846",
+        "alphaSha256": "16e4c145dad08690c504f9e07c8ee866dc331bac6faf0a6ea8472a560cee6c7d"
+      },
+      "inScene": {
+        "day": {
+          "native": "harbor-signal-beacon/a1/day.png",
+          "zoom": "harbor-signal-beacon/a1/day-4x.png"
+        },
+        "night": {
+          "native": "harbor-signal-beacon/a1/night.png",
+          "zoom": "harbor-signal-beacon/a1/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              72,
+              169
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 426,
+            "visible": 426,
+            "hiddenBy": {},
+            "rgbaSha256": "398ea7b299385ba1a1b9fbcb3f05d198bd57d3be3245ea77d09e16ad85960e3f",
+            "contrasts": {
+              "silhouette": {
+                "n": 118,
+                "p10": 58,
+                "median": 85,
+                "weak": 0
+              },
+              "outline": {
+                "n": 118,
+                "p10": 58,
+                "median": 85,
+                "weak": 0
+              },
+              "contact": {
+                "n": 18,
+                "p10": 58,
+                "median": 58,
+                "weak": 0
+              },
+              "outlineRuns": [
+                84
+              ],
+              "weakOutlineRuns": [],
+              "signal": {
+                "pixels": 32,
+                "clusters": [
+                  32
+                ],
+                "housing": {
+                  "n": 26,
+                  "p10": 79,
+                  "median": 79,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              72,
+              169
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 426,
+            "visible": 426,
+            "hiddenBy": {},
+            "rgbaSha256": "a804ccfbdc5a920c3b612218f82643f379c87985fb5d4e882a891d0cad53f1f6",
+            "contrasts": {
+              "silhouette": {
+                "n": 118,
+                "p10": 14,
+                "median": 27,
+                "weak": 37
+              },
+              "outline": {
+                "n": 118,
+                "p10": 14,
+                "median": 27,
+                "weak": 37
+              },
+              "contact": {
+                "n": 18,
+                "p10": 14,
+                "median": 14,
+                "weak": 15
+              },
+              "outlineRuns": [
+                84
+              ],
+              "weakOutlineRuns": [
+                15,
+                9,
+                8
+              ],
+              "signal": {
+                "pixels": 32,
+                "clusters": [
+                  32
+                ],
+                "housing": {
+                  "n": 26,
+                  "p10": 79,
+                  "median": 79,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a2",
+      "parent": "a0",
+      "stage": "structure",
+      "decision": null,
+      "shapeQA": {
+        "status": "PASS",
+        "failures": [],
+        "functional": 32,
+        "negative": 13,
+        "contact": 10,
+        "projectedDepth": 5,
+        "window": [
+          12,
+          11,
+          20,
+          16
+        ],
+        "voidRegion": [
+          11,
+          19,
+          21,
+          25
+        ],
+        "aperture": {
+          "center": [
+            16,
+            13.5
+          ],
+          "width": 8,
+          "height": 4.5
+        },
+        "geometrySha256": "018a1515686f2493131d08df1936ca750913231236dea73029b4323f0ab12d45",
+        "pivot": [
+          15,
+          29
+        ],
+        "stat": {
+          "coverage": 430,
+          "outline": 91,
+          "isolatedOutline": 0,
+          "components": [
+            430
+          ],
+          "bounds": {
+            "left": 4,
+            "top": 4,
+            "right": 29,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 243,
+            "samples": 794,
+            "per100": 30.6
+          },
+          "materialBoundaries": [],
+          "used": [
+            "#242534",
+            "#303845",
+            "#596a83",
+            "#81979f",
+            "#edb063"
+          ],
+          "rgbaSha256": "ca922a395219b9f394b3aa68dda9de1d3493a23aabcedd78b42dc9b935caa3a0",
+          "alphaSha256": "018a1515686f2493131d08df1936ca750913231236dea73029b4323f0ab12d45"
+        }
+      },
+      "parts": [
+        {
+          "id": "port-foot",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                5,
+                25
+              ],
+              [
+                11,
+                25
+              ],
+              [
+                10,
+                28
+              ],
+              [
+                6,
+                28
+              ]
+            ],
+            "side": [
+              [
+                11,
+                25
+              ],
+              [
+                14,
+                23
+              ],
+              [
+                14,
+                25
+              ],
+              [
+                10,
+                28
+              ]
+            ],
+            "top": [
+              [
+                8,
+                23
+              ],
+              [
+                14,
+                23
+              ],
+              [
+                11,
+                25
+              ],
+              [
+                5,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "id": "starboard-foot",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                20,
+                25
+              ],
+              [
+                26,
+                25
+              ],
+              [
+                25,
+                28
+              ],
+              [
+                21,
+                28
+              ]
+            ],
+            "side": [
+              [
+                26,
+                25
+              ],
+              [
+                29,
+                23
+              ],
+              [
+                29,
+                25
+              ],
+              [
+                25,
+                28
+              ]
+            ],
+            "top": [
+              [
+                23,
+                23
+              ],
+              [
+                29,
+                23
+              ],
+              [
+                26,
+                25
+              ],
+              [
+                20,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "id": "port-brace",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                12,
+                15
+              ],
+              [
+                15,
+                15
+              ],
+              [
+                10,
+                27
+              ],
+              [
+                7,
+                27
+              ]
+            ],
+            "side": [
+              [
+                15,
+                15
+              ],
+              [
+                17,
+                14
+              ],
+              [
+                12,
+                26
+              ],
+              [
+                10,
+                27
+              ]
+            ],
+            "top": [
+              [
+                14,
+                14
+              ],
+              [
+                17,
+                14
+              ],
+              [
+                15,
+                15
+              ],
+              [
+                12,
+                15
+              ]
+            ]
+          }
+        },
+        {
+          "id": "starboard-brace",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                17,
+                14
+              ],
+              [
+                20,
+                14
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                21,
+                27
+              ]
+            ],
+            "side": [
+              [
+                20,
+                14
+              ],
+              [
+                22,
+                13
+              ],
+              [
+                26,
+                26
+              ],
+              [
+                24,
+                27
+              ]
+            ],
+            "top": [
+              [
+                19,
+                13
+              ],
+              [
+                22,
+                13
+              ],
+              [
+                20,
+                14
+              ],
+              [
+                17,
+                14
+              ]
+            ]
+          }
+        },
+        {
+          "id": "hinge-block",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                14,
+                18
+              ],
+              [
+                19,
+                18
+              ],
+              [
+                19,
+                21
+              ],
+              [
+                14,
+                21
+              ]
+            ],
+            "side": [
+              [
+                19,
+                18
+              ],
+              [
+                21,
+                17
+              ],
+              [
+                21,
+                20
+              ],
+              [
+                19,
+                21
+              ]
+            ],
+            "top": [
+              [
+                16,
+                17
+              ],
+              [
+                21,
+                17
+              ],
+              [
+                19,
+                18
+              ],
+              [
+                14,
+                18
+              ]
+            ]
+          }
+        },
+        {
+          "id": "signal-housing",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                10,
+                10
+              ],
+              [
+                22,
+                10
+              ],
+              [
+                21,
+                17
+              ],
+              [
+                11,
+                17
+              ]
+            ],
+            "side": [
+              [
+                22,
+                10
+              ],
+              [
+                27,
+                7
+              ],
+              [
+                27,
+                13
+              ],
+              [
+                21,
+                17
+              ]
+            ],
+            "top": [
+              [
+                15,
+                7
+              ],
+              [
+                27,
+                7
+              ],
+              [
+                22,
+                10
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "id": "lamp-visor",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                9,
+                8
+              ],
+              [
+                23,
+                8
+              ],
+              [
+                22,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "side": [
+              [
+                23,
+                8
+              ],
+              [
+                28,
+                5
+              ],
+              [
+                28,
+                7
+              ],
+              [
+                22,
+                11
+              ]
+            ],
+            "top": [
+              [
+                14,
+                5
+              ],
+              [
+                28,
+                5
+              ],
+              [
+                23,
+                8
+              ],
+              [
+                9,
+                8
+              ]
+            ]
+          }
+        }
+      ],
+      "flat": {
+        "native": "harbor-signal-beacon/a2/flat.png",
+        "zoom": "harbor-signal-beacon/a2/flat-4x.png"
+      },
+      "silhouette": {
+        "native": "harbor-signal-beacon/a2/silhouette.png",
+        "zoom": "harbor-signal-beacon/a2/silhouette-4x.png"
+      },
+      "ownership": "harbor-signal-beacon/a2/ownership.png",
+      "passed": true,
+      "material": {
+        "native": "harbor-signal-beacon/a2/material.png",
+        "zoom": "harbor-signal-beacon/a2/material-4x.png"
+      },
+      "materialQA": {
+        "coverage": 430,
+        "outline": 91,
+        "isolatedOutline": 0,
+        "components": [
+          430
+        ],
+        "bounds": {
+          "left": 4,
+          "top": 4,
+          "right": 29,
+          "bottom": 28
+        },
+        "detail": {
+          "edges": 117,
+          "samples": 644,
+          "per100": 18.2
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 124,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 26,
+            "p10": 79,
+            "median": 79
+          }
+        ],
+        "used": [
+          "#242534",
+          "#303845",
+          "#596a83",
+          "#81979f",
+          "#bfcec6",
+          "#edb063",
+          "#ffe3a1"
+        ],
+        "rgbaSha256": "248fcc75995a085ed51071e42ceb6a1cdb68a1c714e1c6a10182f7356cbab393",
+        "alphaSha256": "018a1515686f2493131d08df1936ca750913231236dea73029b4323f0ab12d45"
+      },
+      "inScene": {
+        "day": {
+          "native": "harbor-signal-beacon/a2/day.png",
+          "zoom": "harbor-signal-beacon/a2/day-4x.png"
+        },
+        "night": {
+          "native": "harbor-signal-beacon/a2/night.png",
+          "zoom": "harbor-signal-beacon/a2/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              72,
+              169
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 430,
+            "visible": 430,
+            "hiddenBy": {},
+            "rgbaSha256": "f492c334c397d71619e6e7195f21c301fcc0e23ad19de92bf3a2e702b12bb863",
+            "contrasts": {
+              "silhouette": {
+                "n": 132,
+                "p10": 58,
+                "median": 85,
+                "weak": 0
+              },
+              "outline": {
+                "n": 132,
+                "p10": 58,
+                "median": 85,
+                "weak": 0
+              },
+              "contact": {
+                "n": 18,
+                "p10": 58,
+                "median": 58,
+                "weak": 0
+              },
+              "outlineRuns": [
+                91
+              ],
+              "weakOutlineRuns": [],
+              "signal": {
+                "pixels": 32,
+                "clusters": [
+                  32
+                ],
+                "housing": {
+                  "n": 26,
+                  "p10": 79,
+                  "median": 79,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              72,
+              169
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 430,
+            "visible": 430,
+            "hiddenBy": {},
+            "rgbaSha256": "32fbaf55fa43af3e6aa010d3fa6ec7b5b0045985518e6183b6a21af3a068b99a",
+            "contrasts": {
+              "silhouette": {
+                "n": 132,
+                "p10": 14,
+                "median": 27,
+                "weak": 40
+              },
+              "outline": {
+                "n": 132,
+                "p10": 14,
+                "median": 27,
+                "weak": 40
+              },
+              "contact": {
+                "n": 18,
+                "p10": 14,
+                "median": 14,
+                "weak": 13
+              },
+              "outlineRuns": [
+                91
+              ],
+              "weakOutlineRuns": [
+                11,
+                7,
+                7,
+                6,
+                2
+              ],
+              "signal": {
+                "pixels": 32,
+                "clusters": [
+                  32
+                ],
+                "housing": {
+                  "n": 26,
+                  "p10": 79,
+                  "median": 79,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "cameraContract": "51c66cf7ab1189a64ed112068f52bf9ef175f5a3998b727c1d1e19a6e17e4e87",
+  "context": {
+    "version": 1,
+    "kind": "ruin-composition",
+    "id": "mistfen",
+    "name": "Mistfen Ferry Depot",
+    "size": [
+      320,
+      208
+    ],
+    "seed": 8367,
+    "source": {
+      "checkpoint": "24b8ca6",
+      "kit": "front-court",
+      "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+      "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+      "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+    },
+    "terrain": {
+      "origin": [
+        -31,
+        13
+      ],
+      "rows": [
+        "####################",
+        "####################",
+        "####################",
+        "###...#####.....####",
+        "##......##.......###",
+        "##...............###",
+        "##................##",
+        "###...............##",
+        "#####...........####",
+        "######.........#####",
+        "######........######",
+        "#######.......######",
+        "########.....#######"
+      ]
+    },
+    "building": [
+      111,
+      123
+    ],
+    "approach": [
+      [
+        131,
+        125
+      ],
+      [
+        154,
+        125
+      ],
+      [
+        164,
+        150
+      ],
+      [
+        161,
+        170
+      ],
+      [
+        152,
+        208
+      ],
+      [
+        111,
+        208
+      ],
+      [
+        125,
+        169
+      ],
+      [
+        122,
+        152
+      ]
+    ],
+    "paving": [
+      {
+        "role": "activity",
+        "points": [
+          [
+            132,
+            94
+          ],
+          [
+            206,
+            92
+          ],
+          [
+            236,
+            111
+          ],
+          [
+            220,
+            130
+          ],
+          [
+            165,
+            132
+          ],
+          [
+            130,
+            116
+          ]
+        ]
+      },
+      {
+        "role": "route",
+        "points": [
+          [
+            128,
+            117
+          ],
+          [
+            152,
+            118
+          ],
+          [
+            159,
+            139
+          ],
+          [
+            150,
+            146
+          ],
+          [
+            130,
+            141
+          ],
+          [
+            124,
+            131
+          ]
+        ]
+      }
+    ],
+    "props": [
+      {
+        "id": "ferry-level-signal",
+        "ref": "crate",
+        "at": [
+          72,
+          169
+        ]
+      }
+    ],
+    "spawns": [
+      {
+        "actor": "surveyor",
+        "at": [
+          111,
+          173
+        ]
+      },
+      {
+        "actor": "courier",
+        "at": [
+          201,
+          160
+        ]
+      }
+    ],
+    "walkable": [
+      [
+        [
+          91,
+          103
+        ],
+        [
+          158,
+          90
+        ],
+        [
+          190,
+          89
+        ],
+        [
+          233,
+          94
+        ],
+        [
+          269,
+          115
+        ],
+        [
+          280,
+          171
+        ],
+        [
+          240,
+          182
+        ],
+        [
+          179,
+          181
+        ],
+        [
+          157,
+          208
+        ],
+        [
+          103,
+          208
+        ],
+        [
+          91,
+          187
+        ],
+        [
+          44,
+          176
+        ],
+        [
+          47,
+          133
+        ]
+      ],
+      [
+        [
+          127,
+          91
+        ],
+        [
+          160,
+          91
+        ],
+        [
+          160,
+          153
+        ],
+        [
+          127,
+          153
+        ]
+      ]
+    ],
+    "zones": [
+      {
+        "id": "gateway",
+        "role": "primary",
+        "points": [
+          [
+            107,
+            31
+          ],
+          [
+            193,
+            31
+          ],
+          [
+            193,
+            137
+          ],
+          [
+            107,
+            137
+          ]
+        ]
+      },
+      {
+        "id": "signal",
+        "role": "secondary",
+        "points": [
+          [
+            185,
+            63
+          ],
+          [
+            225,
+            63
+          ],
+          [
+            225,
+            125
+          ],
+          [
+            185,
+            125
+          ]
+        ]
+      },
+      {
+        "id": "tree-line",
+        "role": "background",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            320,
+            0
+          ],
+          [
+            320,
+            73
+          ],
+          [
+            273,
+            69
+          ],
+          [
+            222,
+            63
+          ],
+          [
+            185,
+            34
+          ],
+          [
+            100,
+            37
+          ],
+          [
+            53,
+            72
+          ],
+          [
+            0,
+            90
+          ]
+        ]
+      },
+      {
+        "id": "near-broken-column",
+        "role": "foreground",
+        "points": [
+          [
+            54,
+            119
+          ],
+          [
+            99,
+            119
+          ],
+          [
+            99,
+            188
+          ],
+          [
+            54,
+            188
+          ]
+        ]
+      },
+      {
+        "id": "quiet-canopy",
+        "role": "rest",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            320,
+            0
+          ],
+          [
+            320,
+            72
+          ],
+          [
+            268,
+            63
+          ],
+          [
+            213,
+            58
+          ],
+          [
+            178,
+            35
+          ],
+          [
+            110,
+            39
+          ],
+          [
+            43,
+            69
+          ],
+          [
+            0,
+            99
+          ]
+        ]
+      },
+      {
+        "id": "meadow-edge",
+        "role": "rest",
+        "points": [
+          [
+            175,
+            178
+          ],
+          [
+            247,
+            165
+          ],
+          [
+            320,
+            152
+          ],
+          [
+            320,
+            208
+          ],
+          [
+            171,
+            208
+          ]
+        ]
+      },
+      {
+        "id": "actor-space",
+        "role": "readability",
+        "points": [
+          [
+            79,
+            115
+          ],
+          [
+            228,
+            115
+          ],
+          [
+            229,
+            168
+          ],
+          [
+            129,
+            185
+          ],
+          [
+            84,
+            182
+          ]
+        ]
+      }
+    ],
+    "interactions": [
+      {
+        "id": "gateway-step",
+        "target": "entry",
+        "points": [
+          [
+            129,
+            123
+          ],
+          [
+            155,
+            123
+          ],
+          [
+            155,
+            144
+          ],
+          [
+            129,
+            144
+          ]
+        ]
+      },
+      {
+        "id": "read-signal",
+        "target": "signal-pedestal",
+        "points": [
+          [
+            173,
+            105
+          ],
+          [
+            206,
+            105
+          ],
+          [
+            206,
+            125
+          ],
+          [
+            173,
+            125
+          ]
+        ]
+      },
+      {
+        "id": "check-ferry-level",
+        "target": "ferry-level-signal",
+        "points": [
+          [
+            55,
+            164
+          ],
+          [
+            91,
+            164
+          ],
+          [
+            91,
+            177
+          ],
+          [
+            55,
+            177
+          ]
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "surveyor",
+        "points": [
+          [
+            139,
+            196
+          ],
+          [
+            145,
+            159
+          ],
+          [
+            142,
+            137
+          ],
+          [
+            142,
+            96
+          ]
+        ]
+      },
+      {
+        "id": "signal-approach",
+        "actor": "courier",
+        "points": [
+          [
+            142,
+            140
+          ],
+          [
+            152,
+            154
+          ],
+          [
+            178,
+            154
+          ],
+          [
+            208,
+            140
+          ],
+          [
+            204,
+            119
+          ]
+        ]
+      }
+    ],
+    "probes": [
+      {
+        "id": "front",
+        "actor": "surveyor",
+        "at": [
+          142,
+          144
+        ]
+      },
+      {
+        "id": "threshold",
+        "actor": "courier",
+        "at": [
+          139,
+          120
+        ],
+        "occluder": "sluice-gateway"
+      },
+      {
+        "id": "side",
+        "actor": "courier",
+        "at": [
+          234,
+          130
+        ],
+        "occluder": "mooring-post"
+      },
+      {
+        "id": "rear",
+        "actor": "surveyor",
+        "at": [
+          171,
+          99
+        ],
+        "occluder": "sluice-gateway"
+      },
+      {
+        "id": "between-props",
+        "actor": "courier",
+        "at": [
+          177,
+          132
+        ]
+      },
+      {
+        "id": "foreground",
+        "actor": "surveyor",
+        "at": [
+          81,
+          141
+        ],
+        "occluder": "mooring-post"
+      }
+    ],
+    "depth": "ground-pivot-y",
+    "collision": "kit-and-prop-footprints",
+    "lighting": {
+      "door": true,
+      "workbench": "door",
+      "fill": [
+        {
+          "role": "dirt",
+          "tone": 2,
+          "points": [
+            [
+              135,
+              121
+            ],
+            [
+              200,
+              113
+            ],
+            [
+              252,
+              119
+            ],
+            [
+              259,
+              147
+            ],
+            [
+              236,
+              164
+            ],
+            [
+              172,
+              159
+            ],
+            [
+              139,
+              149
+            ]
+          ]
+        },
+        {
+          "role": "paving",
+          "tone": 2,
+          "points": [
+            [
+              177,
+              96
+            ],
+            [
+              223,
+              91
+            ],
+            [
+              235,
+              111
+            ],
+            [
+              223,
+              127
+            ],
+            [
+              185,
+              125
+            ]
+          ]
+        }
+      ]
+    },
+    "ruins": {
+      "version": 1,
+      "modules": [
+        {
+          "id": "sluice-gateway",
+          "kind": "gateway",
+          "at": [
+            111,
+            123
+          ],
+          "width": 62,
+          "height": 70,
+          "depth": 16,
+          "opening": 36,
+          "crown": "stepped"
+        },
+        {
+          "id": "west-flood-wall",
+          "kind": "wall",
+          "at": [
+            31,
+            134
+          ],
+          "width": 56,
+          "height": 31,
+          "depth": 10,
+          "fracture": "left",
+          "moss": 2
+        },
+        {
+          "id": "east-flood-wall",
+          "kind": "wall",
+          "at": [
+            242,
+            103
+          ],
+          "width": 53,
+          "height": 26,
+          "depth": 14,
+          "fracture": "right",
+          "moss": 1
+        },
+        {
+          "id": "landing-platform",
+          "kind": "platform",
+          "at": [
+            155,
+            115
+          ],
+          "width": 72,
+          "height": 12,
+          "depth": 18
+        },
+        {
+          "id": "signal-pedestal",
+          "kind": "signal",
+          "at": [
+            191,
+            106
+          ],
+          "width": 23,
+          "height": 31,
+          "depth": 9,
+          "lit": false
+        },
+        {
+          "id": "mooring-post",
+          "kind": "column",
+          "at": [
+            71,
+            151
+          ],
+          "width": 16,
+          "height": 22,
+          "depth": 10,
+          "moss": 1
+        }
+      ]
+    }
+  },
+  "palette": {
+    "profile": {
+      "file": "benchmarks/fixtures/e61r/style-profile.json",
+      "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+    },
+    "outline": "#242534",
+    "metal": [
+      "#303845",
+      "#596a83",
+      "#81979f",
+      "#bfcec6"
+    ],
+    "glass": [
+      "#263b4a",
+      "#385666",
+      "#577988",
+      "#779aa5"
+    ],
+    "signal": [
+      "#704625",
+      "#ac713d",
+      "#edb063",
+      "#ffe3a1"
+    ]
+  }
+}

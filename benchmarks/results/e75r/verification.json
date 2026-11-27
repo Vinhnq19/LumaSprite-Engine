@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "checkpoint": "278f26956cd598dd85e332b71a5c52d1b9d58d4d",
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "comparison": "CAPABILITY_MATCHED",
+  "holdout": "TECHNICAL_PASS_ARTISTIC_MIXED",
+  "checks": [
+    [
+      "Lint, typecheck, build, CLI smoke",
+      "PASS",
+      "Compiler, production build và loopback"
+    ],
+    [
+      "Engine tests",
+      "PASS",
+      "73/73"
+    ],
+    [
+      "Historical SHA và artifacts",
+      "PASS",
+      "805 SHA-256, 361 artifact tái tạo"
+    ],
+    [
+      "Regression E7.1–E7.5",
+      "PASS",
+      "Các stage lịch sử được tái tạo, gồm E7.4R và E7.5"
+    ],
+    [
+      "Determinism và native PNG",
+      "PASS",
+      "126 PNG mới, 132 PNG gốc, 263 mục SHA-256"
+    ],
+    [
+      "Palette, RGBA, silhouette và ownership",
+      "PASS",
+      "Binary alpha, role paint giữ alpha và part owner"
+    ],
+    [
+      "Landmarks, grip và ground contact",
+      "PASS",
+      "Đủ năm bản mới, hai tay Canal dùng chung cán, gần/xa 12/13 pixel"
+    ],
+    [
+      "Day/Night",
+      "PASS",
+      "Camera, spawn, route, collision, pixel nền khớp trong matched và refined"
+    ],
+    [
+      "Protected pixels",
+      "PASS",
+      "Chân trụ khớp; diff và SHA-256 pixel giữ nguyên; 0 patch RGB sau shape lock"
+    ],
+    [
+      "Negative controls",
+      "PASS",
+      "12 lượt chặn landmark sai, mask sai, RGB ngoài mask hoặc grip sai; có pole anchor thứ hai"
+    ],
+    [
+      "Studio raw PNG",
+      "PASS",
+      "11 ảnh khớp RGBA qua import, lưu, mở lại và xuất"
+    ],
+    [
+      "Animation, E7.6, E8",
+      "NOT RUN",
+      "Chờ duyệt dáng ở static. Thiết kế E7.6 được ghi riêng"
+    ]
+  ],
+  "findings": {
+    "ridge": {
+      "wrenchVisibleMatchedRefined": [
+        43,
+        51
+      ],
+      "legGapRows": [
+        6,
+        9
+      ],
+      "nightP10": [
+        26,
+        26
+      ],
+      "weakEdges": [
+        3,
+        5
+      ]
+    },
+    "marsh": {
+      "hookVisibleMatchedRefined": [
+        48,
+        65
+      ],
+      "legGapRows": [
+        6,
+        9
+      ],
+      "nightP10": [
+        18,
+        18
+      ]
+    },
+    "canal": {
+      "gripOverlap": [
+        12,
+        13
+      ],
+      "bodyRig": "v3",
+      "notes": "Broad hat and a shared shaft, asymmetric load, static only. Far hand blends with the shaft at 1×."
+    }
+  },
+  "apiCalls": 0
+}

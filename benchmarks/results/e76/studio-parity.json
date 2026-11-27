@@ -1,0 +1,86 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "samples": [
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/a0/day.png",
+      "pngSha256": "a5a9e1841648245054f703a5f82370c7a584296d2a5b9b516abcabf235341eb0",
+      "rgbaSha256": "fb8af63cf9d43095d5e1d717f5b5d17153eec5c9be8506e2f35043bf49858b08"
+    },
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/a0/night.png",
+      "pngSha256": "90812f82eae76072aa82da3c32e8a77cb875cb2af4d0d19ec5ddf8ce71b9c9f7",
+      "rgbaSha256": "29728a6d41a2e1f4d6e50b6b2e09477d365d940d573a532d9ea9d1dbf3a30225"
+    },
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/a0/tilemap-day.png",
+      "pngSha256": "9f6a1a3850a15b6cbf7db4f3d5a2640e5450c76833843f7ffb42e7ad725ef59e",
+      "rgbaSha256": "67a9b4db9f019787b6525c1f277ddf0b5d8fdd0c26d520e6a19154fcd1f7354b"
+    },
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/a0/atlas-day.png",
+      "pngSha256": "c68e5961f5980e3128e4153b5688baa275c0c9a2cf31562765201f197f42aaf4",
+      "rgbaSha256": "417736b94ac086f7de0d8892b5d4f0cc8ebb3242a672aff62ec88aae70cc72b1"
+    },
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/b1/day.png",
+      "pngSha256": "edc69522cbb973289b19ddcaf81723beb2e52dbfb7358dace450a2ada6ad4fb7",
+      "rgbaSha256": "8a4c4498ae7ca80a8445c08f6727a64c6b9c0563b5619c849f8d8ddc07070ba0"
+    },
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/b1/night.png",
+      "pngSha256": "407f1fd4d877a951cdd87033d23bb56982fb5ee8e3d8e60e952a626dca7b6ed3",
+      "rgbaSha256": "3b0bb2a677797c11b89a7ac2a7df6994cf276abf02d2dbfbc4414ffba043f8f2"
+    },
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/b1/tilemap-day.png",
+      "pngSha256": "3ae835c501a78a3dcb682a9b52e553d85a60653f7892e8335fc43a5c673473b0",
+      "rgbaSha256": "7a67cfc5048ae6c7d5d6237cbd1ce6bd80ee71ebfbbbbce22ae51d9850ab9243"
+    },
+    {
+      "file": "benchmarks/results/e76/mistfen-ferry-landing/b1/atlas-day.png",
+      "pngSha256": "935cef4e0d2b3e8bdc6bb3a053d6c05fddd49824e5978927f56af7d369b63788",
+      "rgbaSha256": "4f66be01f1827130c2ee52638d2ba1af0460f312fe024e6891692a3f330a1ae6"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/a0/day.png",
+      "pngSha256": "038e9f9db288927b6bab36effe6554fceab90688c88dc0ef87e447b0fcf91d9d",
+      "rgbaSha256": "20325e5ed67cd415bd04f8034af9658f1ec6de633914323b73f6924c26ec33f9"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/a0/night.png",
+      "pngSha256": "fc33bb9a86cbf815e17472bbf4c55cf667bfa43712c545dd1c5a80d7fc2338f1",
+      "rgbaSha256": "43b422bd2c6c530f2cb25cd214ecbd327614bda7764301040c7c11a6f75fafaa"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/a0/tilemap-day.png",
+      "pngSha256": "f5eaf823518e4c11160e86d9bb08939f884df90827a66190a0168295fdeefa7c",
+      "rgbaSha256": "78d262cf36252db639f64cdb347af47052a1748df285b5ca4a0b00939a1e353e"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/a0/atlas-day.png",
+      "pngSha256": "cbfdd410436de5243e19a8c44303e0a57ce27794c3ee875120bdeb723ad47151",
+      "rgbaSha256": "ca34db491cee08a909ef722134274f7c4bda8522e99eac824dfffac6df70e99d"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/b1/day.png",
+      "pngSha256": "ab98805fceaf6f1d82ec456816d39c52b3e2f6b847f077edd4019dfbb1b58c3d",
+      "rgbaSha256": "df335c15ad3b0fadc9ebd6e064090ef215548632c207ca0ce1a40553e7c18fcd"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/b1/night.png",
+      "pngSha256": "342908f710f34db6d33d661fbdb1650a37871b066a18ae764a1c1d1803fd8aa9",
+      "rgbaSha256": "3f6955e5b3adca6da4afc08ab7db9fd77cceda2ca3a845b7c095eee3350b7d1e"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/b1/tilemap-day.png",
+      "pngSha256": "69cf4327fa93c162c9c26b5753d3f930ad1dc1b54189291627bd452e5bd333d8",
+      "rgbaSha256": "d1a79f14d5f69c144511e8446bcd5a1ae6dbd4deb37dd4f44276c4159d981643"
+    },
+    {
+      "file": "benchmarks/results/e76/floodgate-maintenance-yard/b1/atlas-day.png",
+      "pngSha256": "597ebdc6b5f56e178cbd805f3bb29294092f20a6feb17039a19186a734258659",
+      "rgbaSha256": "60f24b0c013d517cf79696b205b9f0bcfe44e19bb27bec4564a35784f50e1ab3"
+    }
+  ]
+}

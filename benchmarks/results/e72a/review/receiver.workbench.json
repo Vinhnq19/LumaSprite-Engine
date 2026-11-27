@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "kind": "lumasprite.art-review.v1",
+  "toolVersion": "1.0.0",
+  "timestamp": "2026-11-26T13:38:22.299Z",
+  "assetFamily": "prop",
+  "rubricId": "workbench-default-v1",
+  "rubricName": "Workbench Default Rubric",
+  "rubricVersion": "1.0.0",
+  "rubricIsWorkbenchDefault": true,
+  "alignment": {
+    "mode": "top-left",
+    "offsetX": 0,
+    "offsetY": 0,
+    "confirmed": false
+  },
+  "decision": "undecided",
+  "criticalOverrideRationale": "",
+  "summaryNote": "Material pilot. Both variants share a locked silhouette and placement. Human review pending.",
+  "scores": {
+    "recognition": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "volume": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "perspective": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "material_separation": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    },
+    "contour": {
+      "score": null,
+      "severity": "none",
+      "note": ""
+    }
+  },
+  "regionNotes": [],
+  "baselineRef": {
+    "slot": "baseline",
+    "name": "receiver baseline",
+    "fileName": "native.png",
+    "sourceSha256": "70a6d44eb17d91942c5ac98ad83f64a20f4dc69a6d6154e202fc478a89706c5b",
+    "frameWidth": 32,
+    "frameHeight": 32,
+    "sourceWidth": 32,
+    "sourceHeight": 32,
+    "frameCount": 1,
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  },
+  "candidateRef": {
+    "slot": "candidate",
+    "name": "receiver candidate",
+    "fileName": "native.png",
+    "sourceSha256": "cf8f95479e5eeddbc8b199559171eb9a714b8d1264019f905d156c9efcca777f",
+    "frameWidth": 32,
+    "frameHeight": 32,
+    "sourceWidth": 32,
+    "sourceHeight": 32,
+    "frameCount": 1,
+    "frameDurationsMs": [
+      100
+    ],
+    "timingSource": "single-frame"
+  }
+}

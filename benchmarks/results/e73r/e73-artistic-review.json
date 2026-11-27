@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "source": "3969177d8bd5c3fe56c58e924518742c54b013ec",
+  "status": "OWNER_DECISION_RECORDED",
+  "decisions": {
+    "engineering": "APPROVED",
+    "artDirectionV1": "APPROVED_FOR_RESEARCH",
+    "productionIntegration": "NOT_AUTHORIZED",
+    "e73r": "AUTHORIZED",
+    "e74": "DESIGN_ONLY"
+  },
+  "cases": [
+    {
+      "id": "stormwatch",
+      "set": "APPROVED_WITH_LIMITATIONS",
+      "suggested": {
+        "character": null,
+        "prop": "B",
+        "environment": null,
+        "set": "B"
+      },
+      "propDisposition": "SELECTED_FOR_REFINEMENT",
+      "scores": null
+    },
+    {
+      "id": "tidegate",
+      "set": "MIXED_ARTISTIC_RESULT",
+      "suggested": {
+        "character": "A",
+        "prop": "B",
+        "environment": null,
+        "set": null
+      },
+      "propDisposition": "SELECTED_FOR_REFINEMENT",
+      "scores": null
+    }
+  ]
+}

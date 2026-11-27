@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "checkpoint": "ee8a4c9970ac2998a1328e67ef693d2396374a34",
+  "spec": {
+    "file": "benchmarks/fixtures/e71/relay-box.json",
+    "sha256": "23787db30286fadd05aff03830fe25e40e0d685df30f46457c4c5a730b5e8c52"
+  },
+  "geometry": {
+    "file": "benchmarks/results/e71/relay/a1/qa.json",
+    "sha256": "168ae0791a6bfb2c30b0bbc42f13d5c8b1e794312f4335989e88b4f118d0f98a"
+  },
+  "material": {
+    "file": "benchmarks/results/e71/relay/a1/material.png",
+    "sha256": "818b891051e5c93aa11f105b6eabd82ed713c65dce3aaf8615d9a898b94eb8ee"
+  },
+  "rgba": {
+    "file": "benchmarks/results/e71/relay/a1/native.png",
+    "sha256": "13be275624a4edd87eded28c196645dc416bbd3345191f80e1bc5ddfe17d6a8f"
+  },
+  "flat": {
+    "file": "benchmarks/results/e71/relay/a1/flat.png",
+    "sha256": "2fd09dd2d0a187bace0abe4099ce75af2ff60b27b96ed1ea1d01ac31db3fc3e4"
+  },
+  "silhouette": {
+    "file": "benchmarks/results/e71/relay/a1/silhouette.png",
+    "sha256": "590292097cdb87666f9fea901b708c2d8f0dd358e79a317b8d5c7418fc572311"
+  },
+  "context": {
+    "file": "benchmarks/results/e71/relay/a1/context.png",
+    "sha256": "17fb403525f5da0601ab8360a4695b70505a8e98e2db90023b40716412a3b550"
+  },
+  "canvas": [
+    32,
+    32
+  ],
+  "seed": 127,
+  "projectedGeometry": {
+    "box": {
+      "left": 4,
+      "top": 14,
+      "width": 17,
+      "depth": 7,
+      "bottom": 25,
+      "taper": 1
+    },
+    "skids": [
+      {
+        "left": 4,
+        "top": 23,
+        "width": 5,
+        "depth": 5,
+        "bottom": 28,
+        "taper": 0
+      },
+      {
+        "left": 15,
+        "top": 23,
+        "width": 5,
+        "depth": 5,
+        "bottom": 28,
+        "taper": 0
+      }
+    ],
+    "shoulder": [
+      {
+        "left": 5,
+        "top": 12,
+        "width": 15,
+        "depth": 7,
+        "bottom": 15,
+        "taper": 0
+      },
+      {
+        "left": 9,
+        "top": 9,
+        "width": 9,
+        "depth": 5,
+        "bottom": 13,
+        "taper": 0
+      }
+    ],
+    "window": [
+      [
+        8,
+        18
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "contact": [
+      12,
+      29
+    ],
+    "glint": 1
+  },
+  "pivot": [
+    12,
+    29
+  ],
+  "place": {
+    "file": "benchmarks/results/e62/packages/c1-courtyard-day/manifest.json",
+    "sha256": "9db69b0ce4248f22f616b2caaba2e28129cab77e722327b46dac4994e4938ed0",
+    "pivot": [
+      180,
+      162
+    ]
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "camera": "three-quarter-right",
+  "keyLight": "upper-left",
+  "alphaSha256": "115e30554e7a1d4e5bf482dc9bb115d28b7ee5e4ed03370b59cbe6ab13a20d0c",
+  "keepProduction": true
+}

@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "view": "three-quarter-right",
+  "canvas": 64,
+  "actor": "courier",
+  "id": "canal-porter",
+  "role": "holdout",
+  "name": "Canal Porter",
+  "seed": 91403,
+  "context": {
+    "file": "benchmarks/fixtures/e73/tidegate.json",
+    "sha256": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b"
+  },
+  "spec": {
+    "version": 3,
+    "kind": "humanoid-traveler",
+    "canvas": {
+      "w": 64,
+      "h": 64,
+      "background": "transparent"
+    },
+    "view": "three-quarter-right",
+    "seed": 91403,
+    "palette": {
+      "mode": "authored"
+    },
+    "name": "Canal Porter",
+    "outfit": {
+      "headwear": "hood",
+      "satchel": "crossbody",
+      "cloth": "teal"
+    },
+    "proportions": {
+      "head": [
+        14,
+        13
+      ],
+      "jacket": [
+        16,
+        15
+      ],
+      "hips": 14,
+      "arm": [
+        6,
+        4
+      ],
+      "leg": [
+        7,
+        5
+      ],
+      "boot": [
+        9,
+        4
+      ],
+      "satchel": [
+        8,
+        10
+      ]
+    },
+    "pose": {
+      "kind": "standing-free",
+      "hip": [
+        34,
+        37
+      ],
+      "lean": -2,
+      "turn": 3,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "secondaryGroundOffset": -1,
+      "near": {
+        "elbow": [
+          23,
+          34
+        ],
+        "wrist": [
+          21,
+          40
+        ],
+        "palm": [
+          22,
+          42
+        ],
+        "knee": [
+          30,
+          45
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          43,
+          32
+        ],
+        "wrist": [
+          45,
+          37
+        ],
+        "palm": [
+          44,
+          40
+        ],
+        "knee": [
+          41,
+          44
+        ],
+        "ankle": [
+          40,
+          52
+        ]
+      }
+    },
+    "geometryRevision": {
+      "number": 1,
+      "headOpening": 2,
+      "torsoPlaneOffset": 1,
+      "satchelOffset": [
+        -2,
+        2
+      ],
+      "satchelFlap": true
+    }
+  },
+  "body": "porter",
+  "historical": null,
+  "selected": null,
+  "defect": {
+    "id": "PORTER-SHARED-LOAD",
+    "cause": "Legacy standing-free rig cannot represent a horizontal shared carrier.",
+    "approach": "One pole crosses both palms and carries a suspended crate at one end. A broad work hat and short work jacket replace the hood."
+  },
+  "matched": null,
+  "refined": {
+    "near": {
+      "elbow": [
+        23,
+        32
+      ],
+      "wrist": [
+        19,
+        37
+      ],
+      "palm": [
+        20,
+        39
+      ]
+    },
+    "far": {
+      "elbow": [
+        44,
+        32
+      ],
+      "wrist": [
+        48,
+        34
+      ],
+      "palm": [
+        50,
+        35
+      ]
+    },
+    "farLeg": {
+      "knee": [
+        43,
+        44
+      ],
+      "ankle": [
+        42,
+        52
+      ]
+    },
+    "tools": [
+      {
+        "kind": "pole",
+        "hand": "both",
+        "axis": [
+          1,
+          0
+        ]
+      }
+    ]
+  }
+}

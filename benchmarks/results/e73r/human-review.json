@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "status": "PENDING_HUMAN_REVIEW",
+  "options": [
+    "A",
+    "B",
+    "C",
+    "Neither"
+  ],
+  "criteria": {
+    "character": [
+      "silhouette",
+      "proportions",
+      "identity",
+      "materialHierarchy",
+      "dayNightReadability"
+    ],
+    "prop": [
+      "functionalRecognition",
+      "materialSeparation",
+      "outline",
+      "signal",
+      "pixelClusters"
+    ],
+    "environment": [
+      "paletteHarmony",
+      "depth",
+      "lighting",
+      "architecture",
+      "gameplayComposition"
+    ],
+    "set": [
+      "hierarchy",
+      "coherence",
+      "semanticContrast",
+      "styleConsistency",
+      "individuality"
+    ]
+  },
+  "cases": [
+    {
+      "id": "stormwatch",
+      "decisions": {
+        "character": null,
+        "prop": null,
+        "environment": null,
+        "set": null
+      },
+      "scores": {
+        "character": {
+          "A": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          },
+          "B": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          },
+          "C": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          }
+        },
+        "prop": {
+          "A": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          },
+          "B": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          },
+          "C": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          }
+        },
+        "environment": {
+          "A": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          },
+          "B": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          },
+          "C": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          }
+        },
+        "set": {
+          "A": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          },
+          "B": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          },
+          "C": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          }
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "tidegate",
+      "decisions": {
+        "character": null,
+        "prop": null,
+        "environment": null,
+        "set": null
+      },
+      "scores": {
+        "character": {
+          "A": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          },
+          "B": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          },
+          "C": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          }
+        },
+        "prop": {
+          "A": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          },
+          "B": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          },
+          "C": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          }
+        },
+        "environment": {
+          "A": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          },
+          "B": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          },
+          "C": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          }
+        },
+        "set": {
+          "A": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          },
+          "B": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          },
+          "C": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          }
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "mistfen",
+      "decisions": {
+        "character": null,
+        "prop": null,
+        "environment": null,
+        "set": null
+      },
+      "scores": {
+        "character": {
+          "A": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          },
+          "B": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          },
+          "C": {
+            "silhouette": null,
+            "proportions": null,
+            "identity": null,
+            "materialHierarchy": null,
+            "dayNightReadability": null
+          }
+        },
+        "prop": {
+          "A": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          },
+          "B": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          },
+          "C": {
+            "functionalRecognition": null,
+            "materialSeparation": null,
+            "outline": null,
+            "signal": null,
+            "pixelClusters": null
+          }
+        },
+        "environment": {
+          "A": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          },
+          "B": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          },
+          "C": {
+            "paletteHarmony": null,
+            "depth": null,
+            "lighting": null,
+            "architecture": null,
+            "gameplayComposition": null
+          }
+        },
+        "set": {
+          "A": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          },
+          "B": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          },
+          "C": {
+            "hierarchy": null,
+            "coherence": null,
+            "semanticContrast": null,
+            "styleConsistency": null,
+            "individuality": null
+          }
+        }
+      },
+      "notes": ""
+    }
+  ]
+}

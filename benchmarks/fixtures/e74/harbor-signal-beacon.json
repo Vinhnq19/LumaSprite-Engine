@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "canvas": {
+    "w": 32,
+    "h": 32
+  },
+  "view": "three-quarter-right",
+  "light": "upper-left",
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "id": "harbor-signal-beacon",
+  "role": "holdout",
+  "name": "Harbor Signal Beacon",
+  "seed": 9317,
+  "function": "beacon",
+  "brief": "A compact harbor beacon with a fixed mast or braced support, a glowing lens and a separate mechanical control for the lamp.",
+  "dimensions": {
+    "width": 8,
+    "depth": 5,
+    "height": 21
+  },
+  "baseline": {
+    "form": "weather-hood",
+    "body": {
+      "width": 18,
+      "depth": 7,
+      "height": 13
+    }
+  },
+  "context": {
+    "file": "benchmarks/fixtures/e73r/mistfen.json",
+    "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe"
+  },
+  "refine": null
+}

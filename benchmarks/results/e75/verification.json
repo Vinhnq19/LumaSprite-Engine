@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "checkpoint": "61fec574d2cb76476167a57cc1cb10c2c5324319",
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "holdout": "TECHNICAL_PASS_ARTISTIC_MIXED",
+  "checks": [
+    [
+      "Lint, typecheck, build và CLI smoke",
+      "PASS",
+      "Build và loopback"
+    ],
+    [
+      "Engine tests",
+      "PASS",
+      "73/73"
+    ],
+    [
+      "Historical SHA và artifacts",
+      "PASS",
+      "805 checksum, 361 artifact tái tạo"
+    ],
+    [
+      "Regression E7.1–E7.4R",
+      "PASS",
+      "Các stage đã khóa, gồm review E7.1R và vật liệu tối E7.4R"
+    ],
+    [
+      "Determinism, alpha, RGBA và palette",
+      "PASS",
+      "144 PNG, 148 mục SHA-256. Hai lượt tái lập chính xác"
+    ],
+    [
+      "Pose, joint, knee và sole",
+      "PASS",
+      "Ridge/Marsh A0/A1/A2 có body/shape lock và footprint hợp lệ"
+    ],
+    [
+      "Grip, silhouette, part ownership",
+      "PASS",
+      "Giao điểm thật, tay ở trước cán, hai tool hoặc một tool theo brief, alpha/mask giữ sau paint"
+    ],
+    [
+      "Negative controls",
+      "PASS",
+      "Từ chối landmark sai, điểm nắm lệch, part mask lỗi, RGBA ngoài mask"
+    ],
+    [
+      "Gameplay context Day/Night",
+      "PASS",
+      "Giữ camera, vị trí, collision, route, actor phụ và mọi RGBA ngoài hợp silhouette"
+    ],
+    [
+      "Protected hash",
+      "PASS",
+      "NO_MEANINGFUL_VISUAL_GAIN, không áp patch, hash toàn sprite khớp"
+    ],
+    [
+      "Studio raw PNG parity",
+      "PASS",
+      "10 lượt save/reopen/export giữ nguyên RGBA"
+    ],
+    [
+      "Animation, E7.6, E8 runtime",
+      "NOT RUN",
+      "Static chờ Owner. Phần tiếp theo chỉ thiết kế"
+    ]
+  ],
+  "limitations": [
+    "A0 v3 thiếu công cụ theo brief và lớp áo mưa tùy chọn",
+    "Hood và giày dùng khuôn E4, móc có thể đọc thành gậy cong",
+    "Không có tăng chất lượng nghệ thuật được Owner xác nhận."
+  ],
+  "negativeTests": 4,
+  "apiCalls": 0
+}

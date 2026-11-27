@@ -1,0 +1,61 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "samples": [
+    {
+      "file": "benchmarks/results/e75r/ridge-mechanic/refined/material.png",
+      "pngSha256": "0b1b21ad66a173f062a6e255807e112bb19ff0745913dfbe9069f8e9d0f1167a",
+      "rgbaSha256": "9a6704d2e53dea70e95a810b4022778852cbfc2f3e15b86886ccb74604c4ce91"
+    },
+    {
+      "file": "benchmarks/results/e75r/ridge-mechanic/refined/parts.png",
+      "pngSha256": "2d18ff25ad0dc30e2add6569be7772367cd4ac71f0b3f085fec31846618dd068",
+      "rgbaSha256": "742b316a6ee1e005fbc39031183478dc76801399cc54efb0d7ec8c35dd93b6c9"
+    },
+    {
+      "file": "benchmarks/results/e75r/ridge-mechanic/refined/night.png",
+      "pngSha256": "cd20a32562f8a798893d4c1558beecafce9cb9a3d126f9ba59ff6b6abbcc0382",
+      "rgbaSha256": "b5e2e886af736d8b87ef29ac4be3116cefac3ca2b37d95529a2f578267f21f21"
+    },
+    {
+      "file": "benchmarks/results/e75r/ridge-mechanic/matched/material.png",
+      "pngSha256": "3b8b2e62aea30c165ad32a8632c09bd3a67ce2f3afcb978d1fc1b5a71f0c8b74",
+      "rgbaSha256": "7c442221b10f653c1cf6754a430c1a6c8683570b1dd21c1228f2c9dffc5f0bcf"
+    },
+    {
+      "file": "benchmarks/results/e75r/marsh-harvester/refined/material.png",
+      "pngSha256": "8efd7c88c874190fdc0dc902b4609eabf98d7e4bf5b4d52a434a5e7f47e424ff",
+      "rgbaSha256": "903ac047296f4eefff4dc721d006ba0b82ea1a22a2ee08e93c0d254ca6924084"
+    },
+    {
+      "file": "benchmarks/results/e75r/marsh-harvester/refined/parts.png",
+      "pngSha256": "4120346e9ced5a93e0f565e46bde1d50d573d25f1faab897b1f4d12d8251c8c3",
+      "rgbaSha256": "4596a5139f710b518e4ff0bea1d64511cff4164f0bcef54313c38ff934e45a09"
+    },
+    {
+      "file": "benchmarks/results/e75r/marsh-harvester/refined/night.png",
+      "pngSha256": "7d7ef2fb20079e16d78ee79a58ff82f0cebcebae3f0c950e04dce60baf22d3ec",
+      "rgbaSha256": "a0f7b842448604262e58bd37569a9a4831b4be686487ddde97bf14bd8ffde249"
+    },
+    {
+      "file": "benchmarks/results/e75r/marsh-harvester/matched/material.png",
+      "pngSha256": "17f0ed57474c3460a02b6ad57cc7f63de3d3ab0d8df3fbe35a5ea42733dafbb8",
+      "rgbaSha256": "fd13521fdd5461d7bd3921cb5c9fe8b5b3dc46c61a633790f019e5cd0054f23e"
+    },
+    {
+      "file": "benchmarks/results/e75r/canal-porter/refined/material.png",
+      "pngSha256": "9cd7cf187a163c906bab07b9fccda04ec491dce27a1460a1dab847b62f70e124",
+      "rgbaSha256": "17cd094957011a2785a81d2add336497cfb992abac9b087fa3b6533024cde319"
+    },
+    {
+      "file": "benchmarks/results/e75r/canal-porter/refined/parts.png",
+      "pngSha256": "4f31850af6c975d8aecf8880ac2f851950cbe229fbdf59827e1321c884e566fa",
+      "rgbaSha256": "f4fcbe6fca049f2817b288550671cc29602eca9a43ab8b19a6f85d59fcd02449"
+    },
+    {
+      "file": "benchmarks/results/e75r/canal-porter/refined/night.png",
+      "pngSha256": "e718acb7a67cf5b8f485efae47b8287671b4fed9eb4e299c68f671d52738b7e7",
+      "rgbaSha256": "9793cd93e60c3832b278caff2a0e4ae9562723938340c6df7a78c5d46cc8217c"
+    }
+  ]
+}

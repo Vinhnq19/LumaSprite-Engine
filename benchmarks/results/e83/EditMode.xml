@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.090439">
+  <test-suite type="TestSuite" id="1000" name="LumaSprite E8 Acceptance" fullname="LumaSprite E8 Acceptance" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.090439" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1006" name="E8EditMode.dll" fullname="D:/LumaSprite-Engine/.cache/e8-runtime-acceptance/Library/ScriptAssemblies/E8EditMode.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.079056" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="4204" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="E8ImportTests" fullname="E8ImportTests" classname="E8ImportTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.077504" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1003" name="AnimationFrameBoundariesFollowLockedMetadata" fullname="E8ImportTests.AnimationFrameBoundariesFollowLockedMetadata" methodname="AnimationFrameBoundariesFollowLockedMetadata" classname="E8ImportTests" runstate="Runnable" seed="981871161" result="Passed" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.028886" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1002" name="ImportedAtlasAndForegroundRetainNativeMetrics" fullname="E8ImportTests.ImportedAtlasAndForegroundRetainNativeMetrics" methodname="ImportedAtlasAndForegroundRetainNativeMetrics" classname="E8ImportTests" runstate="Runnable" seed="1219299122" result="Passed" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.016800" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1004" name="NearbyTargetsRemainStableAndUseOriginalFivePixelRange" fullname="E8ImportTests.NearbyTargetsRemainStableAndUseOriginalFivePixelRange" methodname="NearbyTargetsRemainStableAndUseOriginalFivePixelRange" classname="E8ImportTests" runstate="Runnable" seed="1908691666" result="Passed" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.001576" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1005" name="PromptIsInDedicatedRailAndMarkerStaysInsideAllSceneViewports" fullname="E8ImportTests.PromptIsInDedicatedRailAndMarkerStaysInsideAllSceneViewports" methodname="PromptIsInDedicatedRailAndMarkerStaysInsideAllSceneViewports" classname="E8ImportTests" runstate="Runnable" seed="1762367548" result="Passed" start-time="2026-11-27 07:48:40Z" end-time="2026-11-27 07:48:40Z" duration="0.013370" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: D:\LumaSprite-Engine\benchmarks\results\run\e83\EditMode.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "checkpoint": "a90ab95626f1cfc13dfe3723d11889181fb1679e",
+  "branch": "codex/e7-3-cross-asset-art-direction",
+  "summary": [
+    [
+      "Lint, typecheck, build, CLI smoke",
+      "PASS"
+    ],
+    [
+      "Engine tests",
+      "73/73 PASS"
+    ],
+    [
+      "Historical E5.4 verification",
+      "805 hashes · 361 regenerated artifacts · PASS"
+    ],
+    [
+      "E6.4 / E7.1 / E7.1R regression",
+      "82 / 79 / 54 payloads and 24 E7.1R review PNGs · PASS"
+    ],
+    [
+      "E7.2-A / B / R regression",
+      "32 / 72 / 68 payloads · PASS"
+    ],
+    [
+      "E7.3 independent reruns and published bytes",
+      "88 PNGs / 92 checksums · exact PNG/RGBA · PASS"
+    ],
+    [
+      "E7.3 binary alpha, palette, masks, pivots, cast and occlusion",
+      "A/B, two briefs, Day/Night · PASS"
+    ],
+    [
+      "Studio raw PNG round-trip",
+      "16 RGBA-exact · PASS"
+    ]
+  ],
+  "pilotOrder": [
+    "Pinned development and holdout briefs and B1 profile",
+    "Rendered and inspected Stormwatch development A/B",
+    "Held the same direction and render rules for Tidegate",
+    "Repeated both cases independently and verified published bytes"
+  ],
+  "directionSource": {
+    "src/experiments/art-direction.ts": "9d4f25394ee0c566983c5c8a31f28dbf1bc504a0f30e2b6462684f4e4c9822d5",
+    "src/experiments/cross-asset-pilot.ts": "47d31049f5f734f7b7b6369b2aed9453a79b1ca7814fe0d4b7b725359e04b36b",
+    "src/experiments/structure-quality/relay.ts": "d7f3e45e4384f124cf723592dbcdcbac4704b645c6597762a14e6eebf4f499ac",
+    "src/generators/character/materials.ts": "7d5a2650cfc4ca48262298d7487c2d47f9874da2425de53eb5ae220ca1c421c0"
+  },
+  "sourceHashMode": "UTF-8 LF working-copy bytes",
+  "studio": {
+    "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+    "mode": "RAW_PNG_ONLY",
+    "cases": 16
+  },
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "crossAssetGeneralization": "PENDING_HUMAN_REVIEW",
+  "e74": "PROPOSAL_ONLY"
+}

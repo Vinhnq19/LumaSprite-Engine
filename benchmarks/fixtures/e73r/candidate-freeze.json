@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "briefLock": "0b6d533fee46d0c6635f66b8ddc7cbd291026b3b9b0e25ddc0d9cc96979c17cb",
+  "developmentReviewed": [
+    "stormwatch",
+    "tidegate"
+  ],
+  "unseen": "mistfen",
+  "hashMode": "utf8-lf",
+  "sources": {
+    "src/experiments/semantic-style.ts": "162e8cb108c59b9ca506be34b44896ebb1e4028f1e2dda921585d873e61c683c",
+    "src/experiments/context-contrast.ts": "43e673b98c564508ddaeacdd46ae3e1e3d3247ae6ce1f4e310e155c7bea57c25",
+    "src/experiments/semantic-pilot.ts": "c630b10cfe647baadffc110f2bffa79a4f38ce6b0975590c95c053339b0b9783"
+  },
+  "postHoldoutTypeCleanup": {
+    "file": "src/experiments/semantic-pilot.ts",
+    "before": "5b3e20a1c3a3e965636bd3b511cca7e9ca1d947f9370a641f7915c19f75b16a0",
+    "reason": "Removed an unused TypeScript alias; TypeScript-erased runtime is identical.",
+    "erasedRuntimeSha256": "67457c8ae329c90fd27dd97cc0bc4689153f84e8d8bb1891f394d3bd61e281d3"
+  }
+}

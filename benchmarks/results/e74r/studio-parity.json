@@ -1,0 +1,46 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "samples": [
+    {
+      "file": "benchmarks/results/e74r/field-rain-gauge/material.png",
+      "pngSha256": "9adb25b72969c4d7f74a0d082344607efc69c84599fdabaab0c08fdca20781c9",
+      "rgbaSha256": "ac4eb13d2f9cae2c8e34b0fa8dae8764c201c5520695ef61f1b5bd41edc06618"
+    },
+    {
+      "file": "benchmarks/results/e74r/field-rain-gauge/landmarks.png",
+      "pngSha256": "f5013527bcdf272257bf9113d2d1284ce896875d9ecc684ea0c5897bb10339a2",
+      "rgbaSha256": "a405e8b9530ed9bb0cf3b694523d71a5450463e4545e4b0655329cf618a5bf18"
+    },
+    {
+      "file": "benchmarks/results/e74r/harbor-signal-beacon/material.png",
+      "pngSha256": "dc365ebd318ef97f66bfd02558b8766a4b2bdf6f62b8ef76ede7a7d8cf5d32a7",
+      "rgbaSha256": "edde0dfb4ff84ac7022fa6bb65f68f7146a5c97b4a1c38c9618fc7199a4e6985"
+    },
+    {
+      "file": "benchmarks/results/e74r/harbor-signal-beacon/patched.png",
+      "pngSha256": "a4b51a3fd0ae54ff9146e495cd3e16a28617102ad8548ebf731c8bb0fd7d8022",
+      "rgbaSha256": "881968c41520656df271e2e0cf2bff489092eef33d445652ca6ce34e3003c8f1"
+    },
+    {
+      "file": "benchmarks/results/e74r/harbor-signal-beacon/target-mask.png",
+      "pngSha256": "7787f14d404d5b605e719cfc15da8537b8e0bdda79f0cf39f3b836b49f8ca4bf",
+      "rgbaSha256": "9bbc19e9fe80ee423a2caf408077020b30ca8823df5cf7da394bc794abd8dda0"
+    },
+    {
+      "file": "benchmarks/results/e74r/harbor-signal-beacon/patched-night.png",
+      "pngSha256": "000cb6be1c3d3c85daf196d3137d0c65cbe1a5d60e1688931b9536ed01fa79b2",
+      "rgbaSha256": "69d036ed02022054d123c856c5372e5d15bbd7e5dc74fa28f5653b8dd7994eb0"
+    },
+    {
+      "file": "benchmarks/results/e74r/cliffside-wind-vane/material.png",
+      "pngSha256": "68abe08c77eee02f9f4d5077ff351ce8f03fca97f8ae08edbe721903b429fd89",
+      "rgbaSha256": "e48cafa13d6f1fadaf072fcd8967b82bf9519378545e09e63b12b810922619fd"
+    },
+    {
+      "file": "benchmarks/results/e74r/cliffside-wind-vane/day.png",
+      "pngSha256": "b0c5d055308d93b0aae00cf04de8ee542369a73c2b79b49838b0f04679728b88",
+      "rgbaSha256": "6e8787fe9ed351d83b8d120e5ae1878f96b49686eb003639c9023e3b28f25223"
+    }
+  ]
+}

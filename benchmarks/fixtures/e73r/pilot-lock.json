@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "checkpoint": "3969177d8bd5c3fe56c58e924518742c54b013ec",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "semantic": {
+    "file": "benchmarks/fixtures/e73r/semantic-direction-v1.json",
+    "sha256": "91a60311569484b7b90964e0d2cbdc07afdfd07d70f97fe66e6309e1e60cfc9f"
+  },
+  "baseline": {
+    "file": "benchmarks/results/e73/SHA256SUMS",
+    "sha256": "2e859cb6d5f93366845118bdd0ef2e1a9bed935dc5b62a8bc07a486764dfadfd"
+  },
+  "cases": [
+    {
+      "file": "benchmarks/fixtures/e73/stormwatch.json",
+      "sha256": "5599b260efdf68138d1296e5ce3e4e049b0b0dce8429279950dd7a07ad9e9f54",
+      "id": "stormwatch",
+      "role": "development",
+      "seed": 4471,
+      "historicalRole": "development"
+    },
+    {
+      "file": "benchmarks/fixtures/e73/tidegate.json",
+      "sha256": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b",
+      "id": "tidegate",
+      "role": "development",
+      "seed": 7592,
+      "historicalRole": "holdout"
+    },
+    {
+      "file": "benchmarks/fixtures/e73r/mistfen.json",
+      "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe",
+      "id": "mistfen",
+      "role": "holdout",
+      "seed": 8367
+    }
+  ],
+  "study": {
+    "canvas": [
+      320,
+      208
+    ],
+    "view": "three-quarter-right",
+    "backdrop": "B1 equipment lanes; graded Day and Night",
+    "gaps": [
+      "No navigable water or ferry vehicle",
+      "Existing stepped masonry primitives provide the landing and gate",
+      "The instrument is a glyph and silhouette, with no real sensing mechanics"
+    ]
+  }
+}

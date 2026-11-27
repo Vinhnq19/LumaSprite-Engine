@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "briefLock": "100092f92b9bdd26be9019a01ef7b3909c352b11539e67e4fc66a47b353203a6",
+  "development": [
+    "field-rain-gauge",
+    "harbor-signal-beacon"
+  ],
+  "unseen": "cliffside-wind-vane",
+  "hashMode": "UTF-8 LF",
+  "sources": {
+    "src/experiments/semantic-instrument.ts": "8ac2e347fec27ad65e54ec972d59e8dc0c0d4f3ed66782fe9d82595e6034ee39",
+    "src/experiments/semantic-instrument-context.ts": "225e754b6fcf4a8e8a6db48cf151b30384fb87fa5dd250b6af21dcb19176aa29",
+    "scripts/benchmark-e74r.ts": "cdec3c941cd029ff07470ae64da055d79f991cf1175b992c2eced48f4d38696c"
+  }
+}

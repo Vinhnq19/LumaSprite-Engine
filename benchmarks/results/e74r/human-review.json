@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "status": "PENDING_HUMAN_REVIEW",
+  "criteria": [
+    "function",
+    "silhouette",
+    "material",
+    "clusters",
+    "dayNight",
+    "localGain"
+  ],
+  "cases": [
+    {
+      "id": "field-rain-gauge",
+      "options": [
+        "Baseline",
+        "E7.4",
+        "E7.4R",
+        "Neither"
+      ],
+      "selected": null,
+      "scores": {
+        "Baseline": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        },
+        "E7.4": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        },
+        "E7.4R": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "harbor-signal-beacon",
+      "options": [
+        "Baseline",
+        "E7.4",
+        "E7.4R",
+        "Night patch",
+        "Neither"
+      ],
+      "selected": null,
+      "scores": {
+        "Baseline": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        },
+        "E7.4": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        },
+        "E7.4R": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        },
+        "Night patch": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "cliffside-wind-vane",
+      "options": [
+        "E7.4R",
+        "Neither"
+      ],
+      "selected": null,
+      "scores": {
+        "E7.4R": {
+          "function": null,
+          "silhouette": null,
+          "material": null,
+          "clusters": null,
+          "dayNight": null,
+          "localGain": null
+        }
+      },
+      "notes": ""
+    }
+  ]
+}

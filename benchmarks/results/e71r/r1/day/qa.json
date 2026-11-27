@@ -1,0 +1,724 @@
+{
+  "scene": "r1-signal-entrance",
+  "seed": 83,
+  "holdout": false,
+  "light": "day",
+  "review": "PENDING_HUMAN_REVIEW",
+  "priorQ": {
+    "added": 154,
+    "removed": 605,
+    "shared": 10188
+  },
+  "flat": false,
+  "touched": 1051,
+  "baseline": {
+    "coverage": 11058,
+    "outline": 1023,
+    "isolatedOutline": 0,
+    "components": [
+      9480,
+      928,
+      650
+    ],
+    "bounds": {
+      "left": 46,
+      "top": 42,
+      "right": 287,
+      "bottom": 151
+    },
+    "detail": {
+      "edges": 0,
+      "samples": 21504,
+      "per100": 0
+    },
+    "materialBoundaries": [],
+    "used": [
+      "#ffffff"
+    ],
+    "rgbaSha256": "6dbfd1e1d1b3d78962c029c315ff73d0075887804230cc71664b46deac3df930",
+    "alphaSha256": "6dbfd1e1d1b3d78962c029c315ff73d0075887804230cc71664b46deac3df930"
+  },
+  "candidate": {
+    "coverage": 10342,
+    "outline": 1006,
+    "isolatedOutline": 0,
+    "components": [
+      8764,
+      928,
+      650
+    ],
+    "bounds": {
+      "left": 46,
+      "top": 42,
+      "right": 287,
+      "bottom": 151
+    },
+    "detail": {
+      "edges": 0,
+      "samples": 20065,
+      "per100": 0
+    },
+    "materialBoundaries": [],
+    "used": [
+      "#ffffff"
+    ],
+    "rgbaSha256": "52518fa2b602c97cc47598debe3715d78172dddf925b70803f2e81933fe8e373",
+    "alphaSha256": "52518fa2b602c97cc47598debe3715d78172dddf925b70803f2e81933fe8e373"
+  },
+  "coverage": {
+    "added": 5,
+    "removed": 721,
+    "shared": 10337
+  },
+  "surface": {
+    "coverage": 66560,
+    "outline": 1052,
+    "isolatedOutline": 0,
+    "components": [
+      66560
+    ],
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "right": 319,
+      "bottom": 207
+    },
+    "detail": {
+      "edges": 11911,
+      "samples": 127815,
+      "per100": 9.3
+    },
+    "materialBoundaries": [
+      {
+        "roles": "#292d42/#68864c",
+        "samples": 60,
+        "p10": 27,
+        "median": 27
+      },
+      {
+        "roles": "#292d42/#82a456",
+        "samples": 5,
+        "p10": 6,
+        "median": 6
+      },
+      {
+        "roles": "#292d42/#8bb4ce",
+        "samples": 192,
+        "p10": 31,
+        "median": 58
+      },
+      {
+        "roles": "#292d42/#94e4bd",
+        "samples": 46,
+        "p10": 54,
+        "median": 89
+      },
+      {
+        "roles": "#292d42/#9d795c",
+        "samples": 207,
+        "p10": 17,
+        "median": 17
+      },
+      {
+        "roles": "#292d42/#cfbb83",
+        "samples": 74,
+        "p10": 0,
+        "median": 53
+      },
+      {
+        "roles": "#48425e/#68864c",
+        "samples": 3,
+        "p10": 91,
+        "median": 91
+      },
+      {
+        "roles": "#48425e/#8bb4ce",
+        "samples": 338,
+        "p10": 27,
+        "median": 27
+      },
+      {
+        "roles": "#48425e/#94e4bd",
+        "samples": 2,
+        "p10": 39,
+        "median": 39
+      },
+      {
+        "roles": "#48425e/#9d795c",
+        "samples": 3,
+        "p10": 102,
+        "median": 102
+      },
+      {
+        "roles": "#48425e/#cfbb83",
+        "samples": 2,
+        "p10": 111,
+        "median": 111
+      },
+      {
+        "roles": "#68864c/#8bb4ce",
+        "samples": 250,
+        "p10": 16,
+        "median": 45
+      },
+      {
+        "roles": "#68864c/#9d795c",
+        "samples": 1911,
+        "p10": 21,
+        "median": 38
+      },
+      {
+        "roles": "#82a456/#8bb4ce",
+        "samples": 160,
+        "p10": 11,
+        "median": 11
+      },
+      {
+        "roles": "#82a456/#94e4bd",
+        "samples": 7,
+        "p10": 33,
+        "median": 33
+      },
+      {
+        "roles": "#82a456/#cfbb83",
+        "samples": 14,
+        "p10": 6,
+        "median": 20
+      },
+      {
+        "roles": "#8bb4ce/#94e4bd",
+        "samples": 71,
+        "p10": 4,
+        "median": 44
+      },
+      {
+        "roles": "#8bb4ce/#98a0be",
+        "samples": 7,
+        "p10": 7,
+        "median": 7
+      },
+      {
+        "roles": "#8bb4ce/#9d795c",
+        "samples": 577,
+        "p10": 7,
+        "median": 27
+      },
+      {
+        "roles": "#8bb4ce/#bc8862",
+        "samples": 11,
+        "p10": 61,
+        "median": 61
+      },
+      {
+        "roles": "#8bb4ce/#cfbb83",
+        "samples": 118,
+        "p10": 17,
+        "median": 84
+      },
+      {
+        "roles": "#94e4bd/#9d795c",
+        "samples": 300,
+        "p10": 71,
+        "median": 106
+      },
+      {
+        "roles": "#94e4bd/#cfbb83",
+        "samples": 94,
+        "p10": 25,
+        "median": 103
+      },
+      {
+        "roles": "#98a0be/#9d795c",
+        "samples": 58,
+        "p10": 75,
+        "median": 82
+      },
+      {
+        "roles": "#98a0be/#bc8862",
+        "samples": 5,
+        "p10": 6,
+        "median": 6
+      },
+      {
+        "roles": "#98a0be/#f9bb51",
+        "samples": 32,
+        "p10": 38,
+        "median": 38
+      },
+      {
+        "roles": "#9d795c/#cfbb83",
+        "samples": 230,
+        "p10": 3,
+        "median": 9
+      }
+    ],
+    "used": [
+      "#201a24",
+      "#211e2a",
+      "#293943",
+      "#2c2c3b",
+      "#2d4346",
+      "#2e4e52",
+      "#303443",
+      "#30383c",
+      "#303d41",
+      "#343344",
+      "#353c45",
+      "#37545a",
+      "#375d5b",
+      "#382c28",
+      "#392c37",
+      "#394b4d",
+      "#434a5c",
+      "#465046",
+      "#46746e",
+      "#4b6940",
+      "#512f32",
+      "#513638",
+      "#51546a",
+      "#525a6e",
+      "#535e51",
+      "#536964",
+      "#646e66",
+      "#657987",
+      "#674937",
+      "#68864c",
+      "#695848",
+      "#6b4139",
+      "#71453d",
+      "#72492f",
+      "#75a08b",
+      "#777d8b",
+      "#798c7c",
+      "#7f9858",
+      "#81939a",
+      "#86503d",
+      "#869087",
+      "#88927a",
+      "#896049",
+      "#91816a",
+      "#935630",
+      "#936f53",
+      "#9ca8a8",
+      "#9f795c",
+      "#a28d70",
+      "#a36146",
+      "#a68061",
+      "#a86a55",
+      "#aeb2a1",
+      "#b18059",
+      "#b58f6f",
+      "#b9a384",
+      "#d79768",
+      "#dca57a",
+      "#edaf59",
+      "#f5c393",
+      "#f6bd68",
+      "#ffe3a0"
+    ],
+    "rgbaSha256": "cae7a52b5d3adf00bb2fd6a86bbd13d9f59ff2666e40550a033d59a8cfcf1e38",
+    "alphaSha256": "8cb28ed49e86975cdeec2d49f122231c348d7457861cde2e2f7204b2a82cd9df"
+  },
+  "walls": [
+    {
+      "id": "west-wall",
+      "geometry": {
+        "support": 32,
+        "origin": [
+          0,
+          42
+        ],
+        "course": 7,
+        "front": [
+          [
+            0,
+            14
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            16,
+            9
+          ],
+          [
+            19,
+            12
+          ],
+          [
+            23,
+            16
+          ],
+          [
+            25,
+            19
+          ],
+          [
+            28,
+            20
+          ],
+          [
+            31,
+            23
+          ],
+          [
+            36,
+            20
+          ],
+          [
+            39,
+            22
+          ],
+          [
+            43,
+            29
+          ],
+          [
+            47,
+            31
+          ],
+          [
+            51,
+            30
+          ],
+          [
+            54,
+            31
+          ]
+        ],
+        "rear": [
+          [
+            12,
+            8
+          ],
+          [
+            16,
+            5
+          ],
+          [
+            21,
+            5
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            28,
+            3
+          ],
+          [
+            31,
+            6
+          ],
+          [
+            32,
+            11
+          ],
+          [
+            34,
+            14
+          ],
+          [
+            37,
+            15
+          ],
+          [
+            40,
+            18
+          ],
+          [
+            45,
+            15
+          ],
+          [
+            46,
+            18
+          ],
+          [
+            50,
+            25
+          ],
+          [
+            54,
+            27
+          ],
+          [
+            58,
+            26
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "brokenBeds": [
+          16,
+          21,
+          28
+        ]
+      },
+      "coverage": 1773,
+      "diff": {
+        "added": 5,
+        "removed": 369,
+        "shared": 1768
+      },
+      "detail": {
+        "baseline": {
+          "edges": 749,
+          "samples": 4099,
+          "per100": 18.3
+        },
+        "candidate": {
+          "edges": 612,
+          "samples": 3379,
+          "per100": 18.1
+        }
+      }
+    },
+    {
+      "id": "east-wall",
+      "geometry": {
+        "support": 44,
+        "origin": [
+          0,
+          55
+        ],
+        "course": 10,
+        "front": [
+          [
+            0,
+            43
+          ],
+          [
+            3,
+            41
+          ],
+          [
+            7,
+            42
+          ],
+          [
+            11,
+            40
+          ],
+          [
+            15,
+            30
+          ],
+          [
+            18,
+            28
+          ],
+          [
+            23,
+            31
+          ],
+          [
+            26,
+            28
+          ],
+          [
+            29,
+            24
+          ],
+          [
+            31,
+            21
+          ],
+          [
+            35,
+            14
+          ],
+          [
+            38,
+            11
+          ],
+          [
+            43,
+            10
+          ],
+          [
+            45,
+            13
+          ],
+          [
+            50,
+            13
+          ],
+          [
+            54,
+            16
+          ]
+        ],
+        "rear": [
+          [
+            8,
+            39
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            15,
+            38
+          ],
+          [
+            19,
+            36
+          ],
+          [
+            23,
+            26
+          ],
+          [
+            29,
+            22
+          ],
+          [
+            34,
+            25
+          ],
+          [
+            37,
+            22
+          ],
+          [
+            40,
+            18
+          ],
+          [
+            42,
+            15
+          ],
+          [
+            49,
+            7
+          ],
+          [
+            52,
+            4
+          ],
+          [
+            57,
+            3
+          ],
+          [
+            59,
+            6
+          ],
+          [
+            64,
+            6
+          ],
+          [
+            68,
+            9
+          ]
+        ],
+        "brokenBeds": [
+          21,
+          29,
+          39
+        ]
+      },
+      "coverage": 2412,
+      "diff": {
+        "added": 0,
+        "removed": 367,
+        "shared": 2412
+      },
+      "detail": {
+        "baseline": {
+          "edges": 829,
+          "samples": 5250,
+          "per100": 15.8
+        },
+        "candidate": {
+          "edges": 677,
+          "samples": 4519,
+          "per100": 15
+        }
+      }
+    }
+  ],
+  "actors": [
+    {
+      "id": "courier",
+      "before": 997,
+      "after": 997
+    },
+    {
+      "id": "surveyor",
+      "before": 1072,
+      "after": 1072
+    }
+  ],
+  "routes": [
+    {
+      "id": "gate-passage",
+      "actor": "surveyor",
+      "points": [
+        [
+          139,
+          196
+        ],
+        [
+          145,
+          159
+        ],
+        [
+          142,
+          137
+        ],
+        [
+          142,
+          96
+        ]
+      ],
+      "halfWidth": 9,
+      "tested": 1919
+    },
+    {
+      "id": "signal-approach",
+      "actor": "courier",
+      "points": [
+        [
+          142,
+          140
+        ],
+        [
+          152,
+          154
+        ],
+        [
+          178,
+          154
+        ],
+        [
+          208,
+          140
+        ],
+        [
+          204,
+          119
+        ]
+      ],
+      "halfWidth": 10,
+      "tested": 1932
+    }
+  ],
+  "collision": "SAME_APPROVED_FOOTPRINTS",
+  "occlusion": "SAME_SORT_WITH_RENDERER_CHECKED_OWNERSHIP"
+}

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "size": [
+    320,
+    208
+  ],
+  "view": "three-quarter-right",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "id": "mistfen-ferry-landing",
+  "role": "development",
+  "name": "Mistfen Ferry Landing",
+  "purpose": "ferry",
+  "seed": 7639,
+  "brief": "A reed-lined marsh landing with a timber ferry pier, mooring posts and a step-free approach from a land spawn to the passenger platform.",
+  "base": {
+    "file": "benchmarks/fixtures/e73/tidegate.json",
+    "sha256": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b"
+  },
+  "shore": [
+    [
+      0,
+      193
+    ],
+    [
+      39,
+      181
+    ],
+    [
+      76,
+      194
+    ],
+    [
+      108,
+      202
+    ],
+    [
+      137,
+      211
+    ],
+    [
+      171,
+      218
+    ],
+    [
+      208,
+      200
+    ]
+  ],
+  "actors": {
+    "surveyor": [
+      113,
+      174
+    ],
+    "courier": [
+      246,
+      150
+    ]
+  },
+  "landProps": [
+    {
+      "id": "survey-bench",
+      "ref": "workbench",
+      "at": [
+        158,
+        132
+      ]
+    },
+    {
+      "id": "supply-barrel",
+      "ref": "barrel",
+      "at": [
+        172,
+        178
+      ]
+    }
+  ],
+  "berth": [
+    270,
+    145
+  ],
+  "params": {
+    "clearWidth": 30,
+    "landingDepth": 38,
+    "freeboard": 6,
+    "bankOverlap": 19
+  },
+  "assembly": {
+    "entry": [
+      184,
+      151
+    ],
+    "lip": [
+      286,
+      150
+    ],
+    "landingDepth": 36,
+    "clearWidth": 32,
+    "turn": [
+      165,
+      161
+    ]
+  },
+  "gate": null
+}
