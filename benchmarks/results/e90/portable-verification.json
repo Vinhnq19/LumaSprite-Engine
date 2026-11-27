@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-27 ICT",
+  "html": "docs/reports/E9.0-ART-QUALITY-ARCHITECTURE-REVIEW.html",
+  "sha256": "805351ece3d8670b524b4e169fd98f953445d71f77f787dde09d7570ec92a304",
+  "bytes": 617591,
+  "location": "Standalone Windows Temp copy outside the repository",
+  "offline": true,
+  "images": 30,
+  "externalDependencies": 0,
+  "consoleErrors": 0,
+  "pageErrors": 0,
+  "failedRequests": 0,
+  "blankReviewExport": "PASS",
+  "evidenceDownload": "PASS",
+  "fitNativeAndX4": "PASS",
+  "chrome": "Chrome/158.0.0.0"
+}
