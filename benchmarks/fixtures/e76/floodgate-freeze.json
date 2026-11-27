@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "conditions": "Fresh holdout locked after development and before any holdout render.",
+  "inputs": {
+    "benchmarks/fixtures/e76/pilot-lock.json": "74ffcc6a4bebd941bb60229030bee1eb1dd3c45c266c18371548aaf5f7a064ab",
+    "benchmarks/fixtures/e76/mistfen-landing.json": "5be9e73304b93027ba61a9d36ed8437af863d6f41ca4c8ae8773489624248447",
+    "benchmarks/fixtures/e76/floodgate-yard.json": "1b3410af11d31001a225860b2b3f05ec7d7b2200d554e2769dbbe790ea89a4b6",
+    "scripts/benchmark-e76.ts": "64d9ee9a225d4cbb5fe08afc097507d4b1d69bd7304b0fe65064fbd5dfe15794",
+    "src/experiments/semantic-environment.ts": "f0839e63672dd9df157e9744e546a2935b4685abe65f735b85d778f4b64c1897",
+    "src/experiments/semantic-environment-export.ts": "8688f3601f5c29ae68dc16d6e9095ef1f1c1e2afa6a67424398bd1cf3e455a7d"
+  },
+  "developmentReportSha256": "21b0d01e553b02c0ce6d63def8e5b60660a0f36289db7888c9b154b9c4dac844",
+  "decision": {
+    "defectId": "MF-01",
+    "selected": "original",
+    "status": "NO_MEANINGFUL_VISUAL_GAIN",
+    "concern": "The boarding edge is thin at native size.",
+    "rootCause": "The end of the deck uses the same implicit top and front edge hierarchy as the rest of the dock.",
+    "source": "paintSurfaces() timber walkway in semantic-environment.ts",
+    "target": "The three-pixel-wide interior band immediately before the boarding lip.",
+    "protected": "All pixels outside the target, all foreground actors and solid props, every geometry and navigation mask.",
+    "humanReview": "UNREVIEWED"
+  }
+}

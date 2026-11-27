@@ -50,3 +50,7 @@ docs/integration/e8-runtime-backlog.md text eol=lf
 benchmarks/results/e64/SHA256SUMS text eol=lf
 docs/e61r-artistic-acceptance.md text eol=lf
 docs/e62-scene-composition.md text eol=lf
+benchmarks/fixtures/e76/*.json text eol=lf
+benchmarks/results/e76/SHA256SUMS text eol=lf
+src/experiments/semantic-environment*.ts text eol=lf
+scripts/benchmark-e76.ts text eol=lf

@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "size": [
+    320,
+    208
+  ],
+  "view": "three-quarter-right",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "id": "floodgate-maintenance-yard",
+  "role": "holdout",
+  "name": "Floodgate Maintenance Yard",
+  "purpose": "floodgate",
+  "seed": 11863,
+  "brief": "A stone and timber sluice maintenance yard with a channel, a paired gate tower, a dock-sized inspection platform and land-to-platform access.",
+  "base": {
+    "file": "benchmarks/fixtures/e73r/mistfen.json",
+    "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe"
+  },
+  "shore": [
+    [
+      0,
+      176
+    ],
+    [
+      41,
+      164
+    ],
+    [
+      77,
+      178
+    ],
+    [
+      111,
+      194
+    ],
+    [
+      149,
+      207
+    ],
+    [
+      178,
+      201
+    ],
+    [
+      208,
+      188
+    ]
+  ],
+  "actors": {
+    "surveyor": [
+      140,
+      174
+    ],
+    "courier": [
+      245,
+      155
+    ]
+  },
+  "landProps": [
+    {
+      "id": "gauge-crate",
+      "ref": "crate",
+      "at": [
+        82,
+        169
+      ]
+    },
+    {
+      "id": "maintenance-barrel",
+      "ref": "barrel",
+      "at": [
+        166,
+        187
+      ]
+    }
+  ],
+  "berth": [
+    266,
+    151
+  ],
+  "params": {
+    "clearWidth": 30,
+    "landingDepth": 36,
+    "freeboard": 6,
+    "bankOverlap": 19
+  },
+  "assembly": {
+    "entry": [
+      181,
+      156
+    ],
+    "lip": [
+      281,
+      156
+    ],
+    "landingDepth": 34,
+    "clearWidth": 32,
+    "turn": [
+      156,
+      166
+    ]
+  },
+  "gate": {
+    "at": [
+      243,
+      104
+    ],
+    "span": 54,
+    "height": 45
+  }
+}

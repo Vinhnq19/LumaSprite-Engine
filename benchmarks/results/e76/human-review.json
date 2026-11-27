@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "reviewer": null,
+  "date": null,
+  "cases": [
+    {
+      "id": "mistfen-ferry-landing",
+      "choice": null,
+      "scores": {
+        "a0Matched": {
+          "function": null,
+          "composition": null,
+          "perspective": null,
+          "transition": null,
+          "materials": null,
+          "clusters": null,
+          "outlines": null,
+          "lighting": null,
+          "dayNight": null,
+          "focalOrder": null,
+          "scale": null,
+          "navigation": null
+        },
+        "b1": {
+          "function": null,
+          "composition": null,
+          "perspective": null,
+          "transition": null,
+          "materials": null,
+          "clusters": null,
+          "outlines": null,
+          "lighting": null,
+          "dayNight": null,
+          "focalOrder": null,
+          "scale": null,
+          "navigation": null
+        }
+      },
+      "comments": null
+    },
+    {
+      "id": "floodgate-maintenance-yard",
+      "choice": null,
+      "scores": {
+        "a0Matched": {
+          "function": null,
+          "composition": null,
+          "perspective": null,
+          "transition": null,
+          "materials": null,
+          "clusters": null,
+          "outlines": null,
+          "lighting": null,
+          "dayNight": null,
+          "focalOrder": null,
+          "scale": null,
+          "navigation": null
+        },
+        "b1": {
+          "function": null,
+          "composition": null,
+          "perspective": null,
+          "transition": null,
+          "materials": null,
+          "clusters": null,
+          "outlines": null,
+          "lighting": null,
+          "dayNight": null,
+          "focalOrder": null,
+          "scale": null,
+          "navigation": null
+        }
+      },
+      "comments": null
+    }
+  ],
+  "finalRecommendation": null
+}
