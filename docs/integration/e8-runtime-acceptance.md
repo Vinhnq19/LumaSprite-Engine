@@ -20,6 +20,8 @@ Checkpoint E7.6R là `bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd`. Commit `dbe2758
 
 ## E8 Runtime Readiness Matrix
 
+Current interaction hardening, Owner checklist and E8.4 design are tracked in [E8.3 Runtime Readiness](e83-runtime-hardening.md#readiness-matrix-sau-e83). The matrix below records the original E8 pilot.
+
 | Thỏa thuận | Gate | Evidence |
 | --- | --- | --- |
 | Scene, revision, JSON schema | Engine Output QA | Sidecar v1 kiểm kích thước, version, nguồn, PPU, revision, atlas bounds, landmarks. Giữ JSON/PNG gốc; sinh riêng DTO cho Unity JsonUtility. |

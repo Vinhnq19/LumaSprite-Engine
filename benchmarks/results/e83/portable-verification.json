@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-27 ICT",
+  "html": "docs/reports/E8.3-RUNTIME-HARDENING-REPORT.html",
+  "sha256": "d805c40deef635228faea2baba06e06a5cc2d1fd8b58ac2342cbe5f7236537df",
+  "bytes": 1509976,
+  "location": "Standalone Windows Temp copy outside the repository",
+  "offline": true,
+  "images": 44,
+  "hudImages": 18,
+  "metadata": 10,
+  "externalDependencies": 0,
+  "blankAndEditedReview": "PASS",
+  "evidenceDownload": "PASS",
+  "fitAndNative": "PASS",
+  "chrome": "Chrome/158.0.0.0"
+}
