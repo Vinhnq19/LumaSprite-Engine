@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "reviewer": null,
+  "date": null,
+  "cases": [
+    {
+      "id": "mistfen-ferry-landing",
+      "choice": null,
+      "scores": {
+        "a0Matched": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        },
+        "b1": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        },
+        "b2": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        }
+      },
+      "comments": null
+    },
+    {
+      "id": "floodgate-maintenance-yard",
+      "choice": null,
+      "scores": {
+        "a0Matched": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        },
+        "b1": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        },
+        "b2": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        }
+      },
+      "comments": null
+    },
+    {
+      "id": "canal-intake-service-platform",
+      "choice": null,
+      "scores": {
+        "a0Matched": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        },
+        "b1": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        },
+        "b2": {
+          "semanticRecognition": null,
+          "visualQuality": null,
+          "gameplayQuality": null,
+          "generalization": null
+        }
+      },
+      "comments": null
+    }
+  ],
+  "finalRecommendation": null
+}

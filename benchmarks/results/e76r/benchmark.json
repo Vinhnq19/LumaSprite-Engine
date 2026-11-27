@@ -1,0 +1,807 @@
+{
+  "version": 1,
+  "status": "E7_6R_READY_FOR_FINAL_HUMAN_ENVIRONMENT_REVIEW",
+  "approval": "UNREVIEWED",
+  "baseline": "1f5350a67e599c4228591693c995cee49d21b7b8",
+  "rules": [
+    "semanticRecognition",
+    "visualQuality",
+    "gameplayQuality",
+    "generalization"
+  ],
+  "historyMatches": 91,
+  "aiCalls": 0,
+  "frozenBenchmark": "dbe27586c0afe94145ab6242d7137fa4c9a9f257",
+  "freshFreeze": "ae90d489e9d8afc40a61ed0fc91276ce12bcf150b82bb98785d917c9bd01fbef",
+  "cases": [
+    {
+      "id": "mistfen-ferry-landing",
+      "name": "Mistfen Ferry Landing",
+      "brief": "A reed-lined marsh landing with a timber ferry pier, mooring posts and a step-free approach from a land spawn to the passenger platform.",
+      "role": "development",
+      "seed": 7639,
+      "source": {
+        "file": "benchmarks/fixtures/e76/mistfen-landing.json",
+        "sha256": "5be9e73304b93027ba61a9d36ed8437af863d6f41ca4c8ae8773489624248447"
+      },
+      "variants": [
+        {
+          "variant": "a0",
+          "archive": true,
+          "sameGeometry": "35888993e816be589b066939dcaf7b6b98631738158ae4ed34f6948296961f03",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 953,
+                "coveredWater": 2671,
+                "waterCollision": 22371,
+                "walkable": 43093,
+                "routeLength": 186
+              },
+              "occlusion": {
+                "protectedPixels": 15757,
+                "actorPixels": 2069,
+                "waterfrontActorPixels": 1368,
+                "crossLayerPixels": 2129
+              },
+              "seams": 15600,
+              "cells": 249,
+              "pngSha256": "a5a9e1841648245054f703a5f82370c7a584296d2a5b9b516abcabf235341eb0",
+              "rgbaSha256": "fb8af63cf9d43095d5e1d717f5b5d17153eec5c9be8506e2f35043bf49858b08",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 953,
+                "coveredWater": 2671,
+                "waterCollision": 22371,
+                "walkable": 43093,
+                "routeLength": 186
+              },
+              "occlusion": {
+                "protectedPixels": 15757,
+                "actorPixels": 2069,
+                "waterfrontActorPixels": 1368,
+                "crossLayerPixels": 2129
+              },
+              "seams": 15600,
+              "cells": 249,
+              "pngSha256": "90812f82eae76072aa82da3c32e8a77cb875cb2af4d0d19ec5ddf8ce71b9c9f7",
+              "rgbaSha256": "29728a6d41a2e1f4d6e50b6b2e09477d365d940d573a532d9ea9d1dbf3a30225",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            }
+          ]
+        },
+        {
+          "variant": "b1",
+          "archive": true,
+          "sameGeometry": "c29fd143c0b95ca180d1e65242ed468b609bf8e0a2d5df034b956a13533db2a6",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 567,
+                "coveredWater": 2633,
+                "waterCollision": 22409,
+                "walkable": 43055,
+                "routeLength": 186
+              },
+              "occlusion": {
+                "protectedPixels": 15767,
+                "actorPixels": 2069,
+                "waterfrontActorPixels": 1383,
+                "crossLayerPixels": 2143
+              },
+              "seams": 15600,
+              "cells": 246,
+              "pngSha256": "edc69522cbb973289b19ddcaf81723beb2e52dbfb7358dace450a2ada6ad4fb7",
+              "rgbaSha256": "8a4c4498ae7ca80a8445c08f6727a64c6b9c0563b5619c849f8d8ddc07070ba0",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 567,
+                "coveredWater": 2633,
+                "waterCollision": 22409,
+                "walkable": 43055,
+                "routeLength": 186
+              },
+              "occlusion": {
+                "protectedPixels": 15767,
+                "actorPixels": 2069,
+                "waterfrontActorPixels": 1383,
+                "crossLayerPixels": 2143
+              },
+              "seams": 15600,
+              "cells": 246,
+              "pngSha256": "407f1fd4d877a951cdd87033d23bb56982fb5ee8e3d8e60e952a626dca7b6ed3",
+              "rgbaSha256": "3b0bb2a677797c11b89a7ac2a7df6994cf276abf02d2dbfbc4414ffba043f8f2",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            }
+          ]
+        },
+        {
+          "variant": "b2",
+          "archive": false,
+          "sameGeometry": "c29fd143c0b95ca180d1e65242ed468b609bf8e0a2d5df034b956a13533db2a6",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 567,
+                "coveredWater": 2633,
+                "waterCollision": 22409,
+                "walkable": 43055,
+                "routeLength": 186
+              },
+              "occlusion": {
+                "protectedPixels": 15761,
+                "actorPixels": 2069,
+                "waterfrontActorPixels": 1383,
+                "crossLayerPixels": 2137
+              },
+              "seams": 15600,
+              "cells": 228,
+              "pngSha256": "c10d0210a9a9bffe85fc4cf6e55978795b317f50f3b17467a2d322c331f46a29",
+              "rgbaSha256": "8b27f0d31dbc6fddbfe018f798e4d39878889aee782694a17a59397667421f5c",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": {
+                "changed": 4388,
+                "editedForeground": 172,
+                "protectedPixels": 15534,
+                "buildingDepthTransitions": 0
+              },
+              "negative": [
+                "ROUTE_BLOCKED",
+                "BRIDGE_DETACHED",
+                "INCORRECT_COLLISION",
+                "TILE_MISSING",
+                "INCORRECT_OCCLUSION"
+              ]
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 567,
+                "coveredWater": 2633,
+                "waterCollision": 22409,
+                "walkable": 43055,
+                "routeLength": 186
+              },
+              "occlusion": {
+                "protectedPixels": 15761,
+                "actorPixels": 2069,
+                "waterfrontActorPixels": 1383,
+                "crossLayerPixels": 2137
+              },
+              "seams": 15600,
+              "cells": 228,
+              "pngSha256": "8c017a5694597f358303cf9ff6d077366ee3b92fa0c8b3d09394cdb17f56a005",
+              "rgbaSha256": "4b187d7f2b663d49ee36d084b561d45629c3cf99dc7f33b12e3eb68efbf151b9",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": {
+                "changed": 4388,
+                "editedForeground": 172,
+                "protectedPixels": 15534,
+                "buildingDepthTransitions": 0
+              },
+              "negative": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "floodgate-maintenance-yard",
+      "name": "Floodgate Maintenance Yard",
+      "brief": "A stone and timber sluice maintenance yard with a channel, a paired gate tower, a dock-sized inspection platform and land-to-platform access.",
+      "role": "known-diagnostic",
+      "seed": 11863,
+      "source": {
+        "file": "benchmarks/fixtures/e76/floodgate-yard.json",
+        "sha256": "1b3410af11d31001a225860b2b3f05ec7d7b2200d554e2769dbbe790ea89a4b6"
+      },
+      "variants": [
+        {
+          "variant": "a0",
+          "archive": true,
+          "sameGeometry": "3fb2fa6fe26282ddfec16d8babc64d4bbeb40b10f03a1e5ceb60057bbb4ba618",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 765,
+                "coveredWater": 2775,
+                "waterCollision": 25033,
+                "walkable": 40212,
+                "routeLength": 149
+              },
+              "occlusion": {
+                "protectedPixels": 13156,
+                "actorPixels": 2030,
+                "waterfrontActorPixels": 1359,
+                "crossLayerPixels": 7379
+              },
+              "seams": 15600,
+              "cells": 234,
+              "pngSha256": "038e9f9db288927b6bab36effe6554fceab90688c88dc0ef87e447b0fcf91d9d",
+              "rgbaSha256": "20325e5ed67cd415bd04f8034af9658f1ec6de633914323b73f6924c26ec33f9",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 765,
+                "coveredWater": 2775,
+                "waterCollision": 25033,
+                "walkable": 40212,
+                "routeLength": 149
+              },
+              "occlusion": {
+                "protectedPixels": 13156,
+                "actorPixels": 2030,
+                "waterfrontActorPixels": 1359,
+                "crossLayerPixels": 7379
+              },
+              "seams": 15600,
+              "cells": 233,
+              "pngSha256": "fc33bb9a86cbf815e17472bbf4c55cf667bfa43712c545dd1c5a80d7fc2338f1",
+              "rgbaSha256": "43b422bd2c6c530f2cb25cd214ecbd327614bda7764301040c7c11a6f75fafaa",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            }
+          ]
+        },
+        {
+          "variant": "b1",
+          "archive": true,
+          "sameGeometry": "bb9baa7493a66c04ac8043a623856b769b2ea5ea41a14c05e4afa775dd4334d2",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 513,
+                "coveredWater": 2727,
+                "waterCollision": 25081,
+                "walkable": 40164,
+                "routeLength": 149
+              },
+              "occlusion": {
+                "protectedPixels": 13175,
+                "actorPixels": 2030,
+                "waterfrontActorPixels": 1354,
+                "crossLayerPixels": 7409
+              },
+              "seams": 15600,
+              "cells": 235,
+              "pngSha256": "ab98805fceaf6f1d82ec456816d39c52b3e2f6b847f077edd4019dfbb1b58c3d",
+              "rgbaSha256": "df335c15ad3b0fadc9ebd6e064090ef215548632c207ca0ce1a40553e7c18fcd",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 513,
+                "coveredWater": 2727,
+                "waterCollision": 25081,
+                "walkable": 40164,
+                "routeLength": 149
+              },
+              "occlusion": {
+                "protectedPixels": 13175,
+                "actorPixels": 2030,
+                "waterfrontActorPixels": 1354,
+                "crossLayerPixels": 7409
+              },
+              "seams": 15600,
+              "cells": 234,
+              "pngSha256": "342908f710f34db6d33d661fbdb1650a37871b066a18ae764a1c1d1803fd8aa9",
+              "rgbaSha256": "3f6955e5b3adca6da4afc08ab7db9fd77cceda2ca3a845b7c095eee3350b7d1e",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            }
+          ]
+        },
+        {
+          "variant": "b2",
+          "archive": false,
+          "sameGeometry": "1daff609a8fe912a4665d07f29ad626262766deb68be6405ae186147233fd2c4",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 513,
+                "coveredWater": 2727,
+                "waterCollision": 25065,
+                "walkable": 40180,
+                "routeLength": 149
+              },
+              "occlusion": {
+                "protectedPixels": 12888,
+                "actorPixels": 2030,
+                "waterfrontActorPixels": 1354,
+                "crossLayerPixels": 7122
+              },
+              "seams": 15600,
+              "cells": 218,
+              "pngSha256": "1d81803adad00c60efa655e883c8f4c39b30f4a4fc27c563b325db2b1f87cba2",
+              "rgbaSha256": "b420473096e95b7ec267cd95a0899673cf9e319793ba1a7c86c38f1a97c78652",
+              "maintenanceSteps": 109,
+              "apertureWater": 60,
+              "semanticGap": null,
+              "collisionPixelsChanged": 48,
+              "walkPixelsChanged": 48,
+              "change": {
+                "changed": 6476,
+                "editedForeground": 1861,
+                "protectedPixels": 9853,
+                "buildingDepthTransitions": 145
+              },
+              "negative": [
+                "CONTROL_OUT_OF_REACH",
+                "ROUTE_BLOCKED",
+                "BRIDGE_DETACHED",
+                "INCORRECT_COLLISION",
+                "TILE_MISSING",
+                "INCORRECT_OCCLUSION"
+              ]
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 513,
+                "coveredWater": 2727,
+                "waterCollision": 25065,
+                "walkable": 40180,
+                "routeLength": 149
+              },
+              "occlusion": {
+                "protectedPixels": 12888,
+                "actorPixels": 2030,
+                "waterfrontActorPixels": 1354,
+                "crossLayerPixels": 7122
+              },
+              "seams": 15600,
+              "cells": 217,
+              "pngSha256": "13bfd0cbf39a6ef33bb442397aa988e8ae80c954426c45d72aa2e0ede89512a9",
+              "rgbaSha256": "ff4095d7968b050d2592ff294355b98c35c855682d94c7e08754db8162125675",
+              "maintenanceSteps": 109,
+              "apertureWater": 60,
+              "semanticGap": null,
+              "collisionPixelsChanged": 48,
+              "walkPixelsChanged": 48,
+              "change": {
+                "changed": 6476,
+                "editedForeground": 1861,
+                "protectedPixels": 9853,
+                "buildingDepthTransitions": 145
+              },
+              "negative": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canal-intake-service-platform",
+      "name": "Canal Intake Service Platform",
+      "brief": "A service platform on an upper canal bend. A short access bridge leads to a static inspection and control point beside an intake opening, with clean access from the lower bank.",
+      "role": "fresh-holdout",
+      "seed": 21119,
+      "source": {
+        "file": "benchmarks/fixtures/e76r/canal-intake-service-platform.json",
+        "sha256": "63de5633c68ad0467a0e27059c58dae3ecdbdff564ef1437ee912d12958fe56c"
+      },
+      "variants": [
+        {
+          "variant": "a0",
+          "archive": false,
+          "sameGeometry": "ed07d34287b6f79f637b0199460c0fe7fdc3f4db2ff4a96578d2b88d1b1e038f",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 754,
+                "coveredWater": 2746,
+                "waterCollision": 22354,
+                "walkable": 43015,
+                "routeLength": 165
+              },
+              "occlusion": {
+                "protectedPixels": 17954,
+                "actorPixels": 1974,
+                "waterfrontActorPixels": 1492,
+                "crossLayerPixels": 4416
+              },
+              "seams": 15600,
+              "cells": 197,
+              "pngSha256": "ea5bcec2ec183314d64469900108750923e64a820434b2f0a25a35a05712d353",
+              "rgbaSha256": "1f354fefaf4174d5f29e1924fb1c472d11bf2cfda99824f77b6bc8de361ddd49",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 754,
+                "coveredWater": 2746,
+                "waterCollision": 22354,
+                "walkable": 43015,
+                "routeLength": 165
+              },
+              "occlusion": {
+                "protectedPixels": 17954,
+                "actorPixels": 1974,
+                "waterfrontActorPixels": 1492,
+                "crossLayerPixels": 4416
+              },
+              "seams": 15600,
+              "cells": 197,
+              "pngSha256": "21fcc66e69afb120efc9d3e71cee09b712976021e3415e21a3733d9f0694d583",
+              "rgbaSha256": "fc32a2eea5d7f88a4151b30547ddf63137a0fe8e8e84b0609af17021ba7bf335",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            }
+          ]
+        },
+        {
+          "variant": "b1",
+          "archive": false,
+          "sameGeometry": "02ea906ba2bbf11eecd148b35416cbded02130aebd4db25de63dc04498e2781f",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 598,
+                "coveredWater": 2514,
+                "waterCollision": 22586,
+                "walkable": 42783,
+                "routeLength": 165
+              },
+              "occlusion": {
+                "protectedPixels": 17962,
+                "actorPixels": 1974,
+                "waterfrontActorPixels": 1553,
+                "crossLayerPixels": 4382
+              },
+              "seams": 15600,
+              "cells": 197,
+              "pngSha256": "b38064c3b5ac45bff60f15cc25bc912d084856fe8cf9bd1be8daa6d145a72cac",
+              "rgbaSha256": "be82a672c66a910918cae5985d4899aa40d69c39a851737174add5a489df66e3",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 598,
+                "coveredWater": 2514,
+                "waterCollision": 22586,
+                "walkable": 42783,
+                "routeLength": 165
+              },
+              "occlusion": {
+                "protectedPixels": 17962,
+                "actorPixels": 1974,
+                "waterfrontActorPixels": 1553,
+                "crossLayerPixels": 4382
+              },
+              "seams": 15600,
+              "cells": 197,
+              "pngSha256": "aff31b16a561a3cac31cb4997e447732e3d5f42d2ca1e036b8ffe8c3e932a4a7",
+              "rgbaSha256": "63cb08b50d15085954ea612201ef3ad6a5ef4cd031fde0a75d0631fa093f3f42",
+              "maintenanceSteps": null,
+              "apertureWater": 0,
+              "semanticGap": null,
+              "collisionPixelsChanged": 0,
+              "walkPixelsChanged": 0,
+              "change": null,
+              "negative": []
+            }
+          ]
+        },
+        {
+          "variant": "b2",
+          "archive": false,
+          "sameGeometry": "cd4f4626394eb46d9fb12a17954364f1ef6c5019f2a2acecd1e1ba2723992097",
+          "metrics": [
+            {
+              "light": "day",
+              "counts": {
+                "overlap": 598,
+                "coveredWater": 2514,
+                "waterCollision": 22570,
+                "walkable": 42799,
+                "routeLength": 165
+              },
+              "occlusion": {
+                "protectedPixels": 17739,
+                "actorPixels": 1974,
+                "waterfrontActorPixels": 1553,
+                "crossLayerPixels": 4159
+              },
+              "seams": 15600,
+              "cells": 181,
+              "pngSha256": "c7b98a8bd99a828aa75e019c220a582872b9c3227c4077ef9c29703e387ec714",
+              "rgbaSha256": "3c08fc4b996ed1f89b2bab4d1a7a4dcbb50fd8524c8ad935b3c3114d202a9c46",
+              "maintenanceSteps": 126,
+              "apertureWater": 19,
+              "semanticGap": {
+                "code": "INTAKE_APERTURE_OCCLUDED",
+                "visibleWaterPixels": 19,
+                "requiredWaterPixels": 35
+              },
+              "collisionPixelsChanged": 48,
+              "walkPixelsChanged": 48,
+              "change": {
+                "changed": 5949,
+                "editedForeground": 1340,
+                "protectedPixels": 15480,
+                "buildingDepthTransitions": 0
+              },
+              "negative": [
+                "CONTROL_OUT_OF_REACH",
+                "ROUTE_BLOCKED",
+                "BRIDGE_DETACHED",
+                "INCORRECT_COLLISION",
+                "TILE_MISSING",
+                "INCORRECT_OCCLUSION"
+              ]
+            },
+            {
+              "light": "night",
+              "counts": {
+                "overlap": 598,
+                "coveredWater": 2514,
+                "waterCollision": 22570,
+                "walkable": 42799,
+                "routeLength": 165
+              },
+              "occlusion": {
+                "protectedPixels": 17739,
+                "actorPixels": 1974,
+                "waterfrontActorPixels": 1553,
+                "crossLayerPixels": 4159
+              },
+              "seams": 15600,
+              "cells": 181,
+              "pngSha256": "7b728988f9f25047e5244d7bdf388b43ee818628732185c6e8928bf076a548d9",
+              "rgbaSha256": "aa03b7d876cbcf947efd68f6748fdab8df64f6db11e188980cac3f16bd427839",
+              "maintenanceSteps": 126,
+              "apertureWater": 19,
+              "semanticGap": {
+                "code": "INTAKE_APERTURE_OCCLUDED",
+                "visibleWaterPixels": 19,
+                "requiredWaterPixels": 35
+              },
+              "collisionPixelsChanged": 48,
+              "walkPixelsChanged": 48,
+              "change": {
+                "changed": 5949,
+                "editedForeground": 1340,
+                "protectedPixels": 15480,
+                "buildingDepthTransitions": 0
+              },
+              "negative": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "files": {
+    "mistfen-ferry-landing/a0/berth-day.png": "9946d3294bf079985006b14f1da04a2b9b6cd18058bfa59e251272f9d2990e51",
+    "mistfen-ferry-landing/a0/berth-night.png": "5f00a46afa1506fd046569761faa89f163d55365be34dd80fffc3ff1e6687a5f",
+    "mistfen-ferry-landing/b1/berth-day.png": "f3f6056e17a41498782bcdaac9d5d64949654f534b0dfd29ad55e0d24e994d8a",
+    "mistfen-ferry-landing/b1/berth-night.png": "27f8489a147b14c041fcdc8c2f7e62a527b97e834738d5aa9ebcba4b095dd1ff",
+    "mistfen-ferry-landing/b2/day.png": "c10d0210a9a9bffe85fc4cf6e55978795b317f50f3b17467a2d322c331f46a29",
+    "mistfen-ferry-landing/b2/day-4x.png": "e06d818ce2a6278a7341769628730dbdeba790b5cc380863e12c3a6f564c808e",
+    "mistfen-ferry-landing/b2/atlas-day.png": "aa7234964fa6f455b24b82cb01c1d2c9d05bb8397cddcf48f07cc2f0202310ee",
+    "mistfen-ferry-landing/b2/tilemap-day.png": "225c766a433da6d6b6b0f99724110bec5234b092a9c25b86fd1f3940c92cf4a0",
+    "mistfen-ferry-landing/b2/foreground-day.png": "aa86aa01cbb40592e6e8e3d7b4e1587afed024b3f5281d027277a7ddba226885",
+    "mistfen-ferry-landing/b2/shore-day.png": "f6cd718ff5ed960a85e8883befa108babf79f6f1b5d5c73b73623421467caa31",
+    "mistfen-ferry-landing/b2/scene-day.json": "4550856f2351999d6bd3841c8997e56039e349cf5b0ae319f2e9f6eca178cc06",
+    "mistfen-ferry-landing/b2/tilemap-day.json": "363ab76318e4902e0dc4e02b4fd939b888ef5d4203dbbec7d0a0cef08b8e401e",
+    "mistfen-ferry-landing/b2/flat.png": "8d8606c238f9facc67e92617119081f8741661d1d211f90212a4d90f39dc6404",
+    "mistfen-ferry-landing/b2/regions.png": "b1bc17fb7ea6620bc9fd3aa88acb85a4c4c003fb77eda714e01683bf6843b652",
+    "mistfen-ferry-landing/b2/walkability.png": "e80295f8de423e653d81e219f1b683e199abe43125cb47f0d6e030037b63912b",
+    "mistfen-ferry-landing/b2/collision.png": "d3ccf5d702b1db72d3a870fbf573fd56d1546cfcde7676b76d63a69fedaddd3d",
+    "mistfen-ferry-landing/b2/layers.png": "ffa039b645a164d3d3ac130c2589758eb46091d5304425b431d875b5e85bf1ca",
+    "mistfen-ferry-landing/b2/material-modules.png": "ef64a66b1397fcbd6872463d618d84ba73a113fe4a2956fa65604bd3022b9faf",
+    "mistfen-ferry-landing/b2/diff-b1.png": "14b5df50f3070e3b0ec1228e101248f631675c54a31f5f40c75a334ee032f1db",
+    "mistfen-ferry-landing/b2/berth-day.png": "d3c28e09af1289df851e46dedddd7739bacaff7e5c5e5eb3b98a9db1fd46a350",
+    "mistfen-ferry-landing/b2/night.png": "8c017a5694597f358303cf9ff6d077366ee3b92fa0c8b3d09394cdb17f56a005",
+    "mistfen-ferry-landing/b2/night-4x.png": "e54f4a6d4e66c76163b45055bcbc8f14d09edc89ce017f6a5949e8c66c081c8c",
+    "mistfen-ferry-landing/b2/atlas-night.png": "75c276f1c87f4b5bae937b31f3e5e041156dbb90cdcc36c429bb30cbba29bd41",
+    "mistfen-ferry-landing/b2/tilemap-night.png": "4b96666947a3fcf76c0c2efd38c7804debd3a7aef9a54a5d0be4885d03e48859",
+    "mistfen-ferry-landing/b2/foreground-night.png": "3f20aadd9a58e05f2e60dd47d6806d1e3820ed8d92adf501f19fddbc862e5c3e",
+    "mistfen-ferry-landing/b2/shore-night.png": "c279cf0302898ecca6851e93cac77d6412f11f24127c819e8c883bea872e63ad",
+    "mistfen-ferry-landing/b2/scene-night.json": "7ee613bb482b390f8e47ab8131214230c8dc1e090d149946b49437e7a840e0f4",
+    "mistfen-ferry-landing/b2/tilemap-night.json": "0441a754e2c7582972058b179ec1177b9ee78f374cff514ae641dc52da4e2402",
+    "mistfen-ferry-landing/b2/berth-night.png": "aed73cc9a3c3bd9249334d9a005af355d0139b83ae5b2313bbc9828e1d9baad6",
+    "floodgate-maintenance-yard/a0/berth-day.png": "5665cde6a34ff29a1ea3727136557576cd32f40dfaf9ab389ab01d6550dbc2eb",
+    "floodgate-maintenance-yard/a0/mechanism-day.png": "cfef900591a013950680cb8f33d10380db763e95889b5f6c936d75c76243c77e",
+    "floodgate-maintenance-yard/a0/berth-night.png": "00cbd7b4f4cf98daa019ad65d9619dffa9d6890a0b2fb353ace4cd1f505ec7e3",
+    "floodgate-maintenance-yard/a0/mechanism-night.png": "2d7a9120798bd36312862fc2b53550325d696dfbe8d6c004f7e496457adfd569",
+    "floodgate-maintenance-yard/b1/berth-day.png": "883cce79810d63636ce5220ebdd21e69dd76c9c4284ebc0490939c3a034c84c0",
+    "floodgate-maintenance-yard/b1/mechanism-day.png": "5cbc9fbf42eccc97990abe7e440df8f44027f2a3c6136222e8feac9507c012c9",
+    "floodgate-maintenance-yard/b1/berth-night.png": "294ebb6bca0ca4dc61731e296616c653f096bd70900368a414cd95bb1c30a1a8",
+    "floodgate-maintenance-yard/b1/mechanism-night.png": "bbf5def1bb5acfbe4a8313e3a36836d5024a76d018af74812eb8ba728fccc96e",
+    "floodgate-maintenance-yard/b2/day.png": "1d81803adad00c60efa655e883c8f4c39b30f4a4fc27c563b325db2b1f87cba2",
+    "floodgate-maintenance-yard/b2/day-4x.png": "36cc6c411a2bfcac2e064c6f9599f36ef69c828652586d203b3b2b087a523098",
+    "floodgate-maintenance-yard/b2/atlas-day.png": "c7e95b6333843381ceff2a36174d4bbfca5bf71baa787921f6f84c065d3534f9",
+    "floodgate-maintenance-yard/b2/tilemap-day.png": "4317235e5e7c6ffc03418b28405e702edbda9afaad098332502bcda34a4f9063",
+    "floodgate-maintenance-yard/b2/foreground-day.png": "fce8efe57b1eaa33616d471807e32f32f636f03fe01417b20a31185d523553a8",
+    "floodgate-maintenance-yard/b2/shore-day.png": "f4250f6431645ee7d5890fac86bee06b9359d73732552e79db481e5de5bf0875",
+    "floodgate-maintenance-yard/b2/scene-day.json": "939f607623e02203fbee70d11567f0bb0180cd793257978bd4b1e2568570d40e",
+    "floodgate-maintenance-yard/b2/tilemap-day.json": "efd9536016e9144b0327ddec78896f9c528f8e0c564f66b2b4ee53b9e710c665",
+    "floodgate-maintenance-yard/b2/flat.png": "e2b36a9e3c66e84e2c662df101015c40eda103cc63b29ec73287028b5cac1d5d",
+    "floodgate-maintenance-yard/b2/regions.png": "f83e5f79da4dfce50a71ce300ca35e9381efbf16525490a294eeb31f0c74cc05",
+    "floodgate-maintenance-yard/b2/walkability.png": "6fbed6e0256040ee24bbf582bb47f3ce367124bfd0c5c362d92c8e29fc66c605",
+    "floodgate-maintenance-yard/b2/collision.png": "66fedc1bf2b3455e7da677a8e6e027c954b4c15e76a40c1cfaa1b07ab2d21467",
+    "floodgate-maintenance-yard/b2/layers.png": "354483c1af6d588ee974000acea3aeb53f3979c1cc9eb5a07e23f1883635a186",
+    "floodgate-maintenance-yard/b2/material-modules.png": "966218954406366012274a736c702c5d7e1e750d10bff9fe904306eb91f501a1",
+    "floodgate-maintenance-yard/b2/diff-b1.png": "ef8647dc68aca958163abde1269867cfacfbc36b04cb6143eaed6433f4b47d0d",
+    "floodgate-maintenance-yard/b2/berth-day.png": "7e38eb63f9bbb51fba45c5b02976a3a8acd7ec8a274b2ecfebb0e984cae4936e",
+    "floodgate-maintenance-yard/b2/mechanism-day.png": "57a63fceba590461ce9fde21455cae0ec37390edd1b9af253fe565aa786b5751",
+    "floodgate-maintenance-yard/b2/night.png": "13bfd0cbf39a6ef33bb442397aa988e8ae80c954426c45d72aa2e0ede89512a9",
+    "floodgate-maintenance-yard/b2/night-4x.png": "2db7ad8696137004705caddf8fad43b36c4cbeb8a60989bf42a106f5b9d42caa",
+    "floodgate-maintenance-yard/b2/atlas-night.png": "25ec4b2c793dddc1af45628490d3164dc48bbe4a825291004d186f325225d855",
+    "floodgate-maintenance-yard/b2/tilemap-night.png": "e6502d63096344bb71cccdba27a16169fba1d5c4fee83a2264987aaf0ff18bbd",
+    "floodgate-maintenance-yard/b2/foreground-night.png": "9d1b458e46a4ca54a497c15896dedaf33fdbe7ef48f8cadbaa7e879d88441704",
+    "floodgate-maintenance-yard/b2/shore-night.png": "e1b4a9c4836c782ab05aa37fe5ce387f220a33fdd836264260b0bd4b5a42d404",
+    "floodgate-maintenance-yard/b2/scene-night.json": "d7b0982a8c41c81477950071db1503d58ec29a5609726e6c886188da4e557b31",
+    "floodgate-maintenance-yard/b2/tilemap-night.json": "e79259c43a909b6037cab888d74a96d09ead0d07ed4dbd72bffcd799f5916bce",
+    "floodgate-maintenance-yard/b2/berth-night.png": "fb5857b4f49e9a40d1b85c6c74c326018dd8fa45acb2feb525bcbfec1bae1bab",
+    "floodgate-maintenance-yard/b2/mechanism-night.png": "f8878ec9a6a2594f8c75fd771c39d217e298fb4c614f689bee5765ab1dfe4d54",
+    "canal-intake-service-platform/a0/day.png": "ea5bcec2ec183314d64469900108750923e64a820434b2f0a25a35a05712d353",
+    "canal-intake-service-platform/a0/day-4x.png": "26170838b45b2c60ad2e8a4fd989d6e48e69afa7c3792f57002b8a8d8294fbf9",
+    "canal-intake-service-platform/a0/atlas-day.png": "b78838125a5be79062dbab60e62db49569baaf8986a32ca29d9f0fa708f66915",
+    "canal-intake-service-platform/a0/tilemap-day.png": "0840f7a7d0151e7bcfe0bbcb3faaca3bee12a560c49db6320947edd0094f5967",
+    "canal-intake-service-platform/a0/foreground-day.png": "8ed41cd79b6858c8d0d007e28298f400f91e47045b0e926a4d8d9e52943534d4",
+    "canal-intake-service-platform/a0/shore-day.png": "b67d452c3fb31bdd6ba00d68550b85cad572daf9a91ae1b4ffd16fc6ec84c0db",
+    "canal-intake-service-platform/a0/scene-day.json": "7a52b94135e866c1a9235c926b2a39a2c9bcf458199d249393cdab3a362b5fbd",
+    "canal-intake-service-platform/a0/tilemap-day.json": "074bcbe48fad6d27d16a9b2849c86e5ff31dfdbf79193edab7e88cce5af09038",
+    "canal-intake-service-platform/a0/flat.png": "61c8a7f6411e63eefc50c43c893ee011dce0e9b2f2988b6162b5415d75aff52c",
+    "canal-intake-service-platform/a0/regions.png": "732092eacc2b227603b61c1448caeca1c3dfe219d8d652e00772a5065d8c0580",
+    "canal-intake-service-platform/a0/walkability.png": "ba5fde3e32e49d41ef6dede9eb1dadcc07ee992f4b17ddac6511cf15bcc8598a",
+    "canal-intake-service-platform/a0/collision.png": "870502e79de23f1de3ddbbeea2e8c7b486bef969a8dd5fb0b6edca691b7fa714",
+    "canal-intake-service-platform/a0/layers.png": "961c82415f4705ada3012d43e1b26f5b187891028dd1a922749369028e073f57",
+    "canal-intake-service-platform/a0/berth-day.png": "7b37ea6b9f537cdb6c406a14c4d3ad10903ab782432d5e95aae37b63a53c1b36",
+    "canal-intake-service-platform/a0/mechanism-day.png": "ff73c02ac4a9ff7062738be8d3116b4fb14a0d935e724cdf456bd65774ac78d1",
+    "canal-intake-service-platform/a0/night.png": "21fcc66e69afb120efc9d3e71cee09b712976021e3415e21a3733d9f0694d583",
+    "canal-intake-service-platform/a0/night-4x.png": "8d78b4c2de63665098c2b3f17a8d991dd0c858a0f69b22b1d71e257affc38345",
+    "canal-intake-service-platform/a0/atlas-night.png": "3e95b362701ed47315ebd262d8510035bedb5d3ffb7aca17243020dd9e740baf",
+    "canal-intake-service-platform/a0/tilemap-night.png": "4f2f4e4d008acf28d2c8ba9a67f90c3918e5beb30386a6f19a8fffd60067c563",
+    "canal-intake-service-platform/a0/foreground-night.png": "60168eadba68366a0d80ba1cdf2ad175988f1cffcc6257b5d6f05fb535b11247",
+    "canal-intake-service-platform/a0/shore-night.png": "2874703aec4404aac6c70398c4f7e8950c851d2a8eca5ab9fb4027df944fbb82",
+    "canal-intake-service-platform/a0/scene-night.json": "5cbe9f1ef984fcfbd2b4d50bd3474c403958177cbc83a612d5834797d46e7851",
+    "canal-intake-service-platform/a0/tilemap-night.json": "995be77452be3f48cd9d65b94c4e97358f009927a94ccf4dabd97d83824502c8",
+    "canal-intake-service-platform/a0/berth-night.png": "3eee4a9e1fc152aad927699c81b9951cb97ed936282f8399fea4f201e8492bae",
+    "canal-intake-service-platform/a0/mechanism-night.png": "5241ad77d95bc4965d68e51c7d6e96f85c340e1c6df2de5e1662176965446771",
+    "canal-intake-service-platform/b1/day.png": "b38064c3b5ac45bff60f15cc25bc912d084856fe8cf9bd1be8daa6d145a72cac",
+    "canal-intake-service-platform/b1/day-4x.png": "368cb494763e6ec56d992ec4632a89e4aeecb963087fb089be4d3a6c122e15b6",
+    "canal-intake-service-platform/b1/atlas-day.png": "fb4815bf69f858997d2a39906fc979b54062257e91d2438d8c5f614debf5264f",
+    "canal-intake-service-platform/b1/tilemap-day.png": "d88e4c5b957ed835bab7d75d4775407e1fed9af21c8e58d69aaa5d1f97635b87",
+    "canal-intake-service-platform/b1/foreground-day.png": "a1054807840a325cc9f7d83801678d4e2bbd3e9d811cf906fc5a7116b210b730",
+    "canal-intake-service-platform/b1/shore-day.png": "0cda6b692e0f94dc931d1fa9d04d982276febd4807c181a03e7b1df771e107b0",
+    "canal-intake-service-platform/b1/scene-day.json": "c5a4b45cc1a6cb4b56d16d4ca7062bf8f164e10fb556bbe8ee8e549dbecc631d",
+    "canal-intake-service-platform/b1/tilemap-day.json": "8e8225b171f6a4cae935aba33662ad4bbd10cb56a876d63b2882ecae3fd905f6",
+    "canal-intake-service-platform/b1/flat.png": "4c32988b71326bfd5afeff78f6bda20622f78d467eb3d3c4f56b0e14d22b5553",
+    "canal-intake-service-platform/b1/regions.png": "bbec45b1b2f05604eb1524f5aaee1c6d4782ef79f87c3591366fe567e5456503",
+    "canal-intake-service-platform/b1/walkability.png": "5bf0bacacd2da622c7b640b396aa3020cc6a99098a32883abdfd3519574b5ddc",
+    "canal-intake-service-platform/b1/collision.png": "9172c9e3f779ad801f7d6428f2d846dbacdcfca66ceb005b3ab852576dace8b3",
+    "canal-intake-service-platform/b1/layers.png": "9c5d99552135f3a51168533064ac49d4cfeaa59dd09211ab921c5b34faaa6282",
+    "canal-intake-service-platform/b1/berth-day.png": "8b2aef414eda061a400960c375736e21377a45b16321ea2047fb574a97b086f5",
+    "canal-intake-service-platform/b1/mechanism-day.png": "9d8d09291cdeea9ff0fe35fea784011054e1605d5f192d141f630c2bf35757c9",
+    "canal-intake-service-platform/b1/night.png": "aff31b16a561a3cac31cb4997e447732e3d5f42d2ca1e036b8ffe8c3e932a4a7",
+    "canal-intake-service-platform/b1/night-4x.png": "26dd214d3bff24c58db511180e7ef660ee2d295978f7ddff8627b7e04146c3cf",
+    "canal-intake-service-platform/b1/atlas-night.png": "af4d3875bb61be05aa3ed2f19c04218d860aba177feb646daf5bb9933f7eaeff",
+    "canal-intake-service-platform/b1/tilemap-night.png": "404bb3b258ffb3873173a1fc7e0d25145918cca5cd06ce285aefec3079414623",
+    "canal-intake-service-platform/b1/foreground-night.png": "67658bbc50297635c1e098f0ee89664aa84c02f5219f19b25ac76c3fc0b70d82",
+    "canal-intake-service-platform/b1/shore-night.png": "03aca83f26687cbb11a916d22020a85fe4a5354aad70ed4c2bcd9f8f6a185741",
+    "canal-intake-service-platform/b1/scene-night.json": "387bb5fd27fda92a4ad51822178f65a8562d95d30c79cbf482ae9eaf27899294",
+    "canal-intake-service-platform/b1/tilemap-night.json": "d62c8f82c1f3c4487795d8bd23c075698edca5b93a50dc59f0c180fefa34ee76",
+    "canal-intake-service-platform/b1/berth-night.png": "471ee97f72441f46647e09a550f470fd534d73b45fb56e51b13c20594e448278",
+    "canal-intake-service-platform/b1/mechanism-night.png": "f046f5bfc1ffc04e959a9cc5ce557caecb7213ac552d9d1d835d5a8c615609c8",
+    "canal-intake-service-platform/b2/day.png": "c7b98a8bd99a828aa75e019c220a582872b9c3227c4077ef9c29703e387ec714",
+    "canal-intake-service-platform/b2/day-4x.png": "a2237233247814f1ba8b639a406378253db52c5d56e2fb119aa5057f2e0d67ce",
+    "canal-intake-service-platform/b2/atlas-day.png": "0037719cfdff1e3e6c04d9cf2367cfe4dd4ea3df10bc318ffbee071b05fbfb45",
+    "canal-intake-service-platform/b2/tilemap-day.png": "4ba34d3994facdb8fbe15cacd6773e1d792e12a5e0e4f633cacf6400e1781796",
+    "canal-intake-service-platform/b2/foreground-day.png": "9180c2072ced3ce95872901706ec62b64948ad6c83f4b9123f99e65ba2ece4ef",
+    "canal-intake-service-platform/b2/shore-day.png": "f685bdc4ab8b4f1b4158a64a7b3393b697cc4d9588630c9fe5ed7d8abb34c585",
+    "canal-intake-service-platform/b2/scene-day.json": "b1feb36c26a13cc5b88dea18f637410930fa7e59d91c5862522ef9d9392735f7",
+    "canal-intake-service-platform/b2/tilemap-day.json": "b373906ce97d512afd6b16a9834deaa39ec9af7bc6e4d26f7c452c8cb6f117d4",
+    "canal-intake-service-platform/b2/flat.png": "4d68563af64c367a438a6c2d20648fa2ce0c9f72947b43f2d8b1c4faa8178310",
+    "canal-intake-service-platform/b2/regions.png": "bbec45b1b2f05604eb1524f5aaee1c6d4782ef79f87c3591366fe567e5456503",
+    "canal-intake-service-platform/b2/walkability.png": "d2173eb896343d1dd505da828b331c81210f6227a86a1adf157bc518875607cd",
+    "canal-intake-service-platform/b2/collision.png": "e3ccbaa94cfe434ec978655efc0d3815a73eb8dc15d4f849c27d8d7576119629",
+    "canal-intake-service-platform/b2/layers.png": "bc4de57e78b2072aec48464c11509cd98e66b623a5e4df7c987b6dc88181cf01",
+    "canal-intake-service-platform/b2/material-modules.png": "fad8d7ba36a3252a4c1f4f27f920678f15ae6d4ab41c7781b61c591397562fc1",
+    "canal-intake-service-platform/b2/diff-b1.png": "f10eb48a1107b1f118ab2fbca08e20177f9af07ef478202e3e0412dd54702be2",
+    "canal-intake-service-platform/b2/berth-day.png": "754ccb179455d2e6a2f1a20c310885533ad63b4a08041f0ccbcdd5545dcf0b94",
+    "canal-intake-service-platform/b2/mechanism-day.png": "cbc1704b70ba8e2da5496ff844da0c6d87ca9fa3946ea714e125abdb289f86f8",
+    "canal-intake-service-platform/b2/night.png": "7b728988f9f25047e5244d7bdf388b43ee818628732185c6e8928bf076a548d9",
+    "canal-intake-service-platform/b2/night-4x.png": "85b19cb2b659aa8fe3c3a6639a1a13d26eebd479c09bfd2eebc747d9ccb857f7",
+    "canal-intake-service-platform/b2/atlas-night.png": "e2dd387acbe4bf95d78713858a847bf67e372483b26f919085de6f2b115337c9",
+    "canal-intake-service-platform/b2/tilemap-night.png": "a22fab56c976553052cf6a07139bf86aade255c1ac703637d31a1214323fdf48",
+    "canal-intake-service-platform/b2/foreground-night.png": "51154e73b3fd42309b23c5ba0a41251bb5f2c661af9510ba8639b622ae3ed77e",
+    "canal-intake-service-platform/b2/shore-night.png": "ab2523024b476aec2c153c0a3aa8bfe99e453a20d4ab22e22b1667a639dadf73",
+    "canal-intake-service-platform/b2/scene-night.json": "b887f11f08fe0fe12eb5beb584f63d2c15aa10acc4d7fc9e9cc631f3e4bc47ff",
+    "canal-intake-service-platform/b2/tilemap-night.json": "bf60e4b01874adde10dd50a9c1747558d71f5b9c6bf199ff3da534ac6b7cd3de",
+    "canal-intake-service-platform/b2/berth-night.png": "81b158862e5375c84b1a6f8133c4ccad6b4bc8bbc2e4a1df7feca48320ca53d2",
+    "canal-intake-service-platform/b2/mechanism-night.png": "7e6a44970715fa5cde52840a8a09451c754efcdb38c491e142a937f18b8bf7d8"
+  }
+}

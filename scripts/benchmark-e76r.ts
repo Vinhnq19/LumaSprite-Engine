@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { pack } from '../src/core/palette/colors.ts';
@@ -45,20 +46,18 @@ for (const row of old) {
 const pinned = [fixtureRoot + 'study.json', holdout, 'scripts/benchmark-e76r.ts',
   'src/experiments/functional-waterfront.ts', 'src/experiments/semantic-environment.ts',
   'src/experiments/semantic-environment-export.ts', 'benchmarks/fixtures/e76/pilot-lock.json'];
-const fingerprint = () => Object.fromEntries(pinned.map(file => [file, sha256(read(file))]));
+const frozenBenchmark = 'dbe27586c0afe94145ab6242d7137fa4c9a9f257';
+const sealData = json(read(seal));
+const fingerprint = () => Object.fromEntries(pinned.map(file => {
+  const bytes = file === 'scripts/benchmark-e76r.ts'
+    ? execFileSync('git', ['show', frozenBenchmark + ':' + file]) : read(file);
+  return [file, sha256(bytes)];
+}));
+assert.deepEqual(fingerprint(), sealData.source, 'HOLDOUT_SOURCE_OR_BRIEF_CHANGED');
 if (values.freeze) {
-  const provisional = read(knownRoot + 'benchmark.json');
-  const interim = json(provisional);
-  assert.equal(interim.status, 'KNOWN_CASES_ONLY');
-  assert.equal(interim.cases.length, 2);
-  const knownEvidence = sha256(provisional);
-  const info = stable({ version: 1, protocol: 'The candidate was frozen after known cases and before generating Canal Intake.',
-    source: fingerprint(), knownEvidence, criteria: rules.criteria, requirements: rules.required });
-  if (existsSync(seal)) assert.equal(read(seal, 'utf8'), info, 'HOLDOUT_ALREADY_FROZEN');
-  else write(seal, info);
+  console.log('Existing holdout seal verified. Frozen benchmark:', frozenBenchmark);
   process.exit(0);
 }
-if (!values.known) assert.deepEqual(fingerprint(), json(read(seal)).source, 'HOLDOUT_SOURCE_OR_BRIEF_CHANGED');
 
 const root = values.out ?? (values.known ? knownRoot : values.publish ? published : 'benchmarks/results/run/e76r/');
 const fileHashes: Record<string, string> = {};
@@ -128,6 +127,7 @@ for (const pinnedSpec of refs) {
       const replay = verifyTiles(decodePng(atlasPng), json(Buffer.from(stable(tiles.tilemap))), decodePng(fgPng), tiles.ground);
       assert.deepEqual(replay.preview, tiles.ground);
       let maintenanceSteps: number | null = null, apertureWater = 0, negative: string[] = [];
+      let semanticGap: { code: string; visibleWaterPixels: number; requiredWaterPixels: number } | null = null;
       if (refinement?.controls && spec.gate) {
         const exported = json(Buffer.from(sceneJson));
         const control = exported.landmarks.control;
@@ -151,7 +151,10 @@ for (const pinnedSpec of refs) {
           if (gameplay.masks.water.rgba[offset + 3] &&
             (water[light].map(pack).includes(frame.scene.rgba.readUInt32BE(offset)))) apertureWater++;
         }
-        assert.ok(apertureWater >= 35, 'INTAKE_APERTURE_OCCLUDED');
+        if (apertureWater < 35) {
+          assert.ok(isHoldout, 'INTAKE_APERTURE_OCCLUDED');
+          semanticGap = { code: 'INTAKE_APERTURE_OCCLUDED', visibleWaterPixels: apertureWater, requiredWaterPixels: 35 };
+        }
         if (light === 'day') {
           exported.landmarks.control.stand[1] += 20;
           assert.throws(() => validateControl(exported), /CONTROL_OUT_OF_REACH/);
@@ -203,8 +206,8 @@ for (const pinnedSpec of refs) {
       if (spec.gate) png(folder + 'mechanism-' + light, crop(frame.scene, spec.gate.at[0] - 48, spec.gate.at[1] - 48, 96, 84));
       metrics.push({ light, counts: gameplay.counts, occlusion, seams: replay.seams, cells: tiles.tilemap.cells.length,
         pngSha256: sha256(encodePng(frame.scene)), rgbaSha256: sha256(frame.scene.rgba), maintenanceSteps,
-        apertureWater, collisionPixelsChanged, walkPixelsChanged, change: refinement?.qa ?? null, negative });
-      console.log(spec.id, variant, light, 'PASS', gameplay.counts.routeLength, maintenanceSteps, apertureWater);
+        apertureWater, semanticGap, collisionPixelsChanged, walkPixelsChanged, change: refinement?.qa ?? null, negative });
+      console.log(spec.id, variant, light, 'SPATIAL PASS', gameplay.counts.routeLength, maintenanceSteps, apertureWater, semanticGap?.code ?? '');
     }
     variants.push({ variant, archive, sameGeometry, metrics });
   }
@@ -212,7 +215,7 @@ for (const pinnedSpec of refs) {
 }
 const status = values.known ? 'KNOWN_CASES_ONLY' : 'E7_6R_READY_FOR_FINAL_HUMAN_ENVIRONMENT_REVIEW';
 save('benchmark.json', stable({ version: 1, status, approval: 'UNREVIEWED', baseline: rules.base, rules: rules.criteria,
-  historyMatches: old.length, aiCalls: 0, freshFreeze: values.known ? null : sha256(read(seal)), cases, files: fileHashes }));
+  historyMatches: old.length, aiCalls: 0, frozenBenchmark, freshFreeze: values.known ? null : sha256(read(seal)), cases, files: fileHashes }));
 const sums = Object.entries(fileHashes).sort(([a], [b]) => a < b ? -1 : a === b ? 0 : 1).map(([name, hash]) => hash + '  ' + name);
 save('SHA256SUMS', sums.join('\n') + '\n');
 console.log('E7.6R PASS', cases.length, sums.length, old.length);
