@@ -4,8 +4,9 @@
 
 | Cần xem | Báo cáo |
 | --- | --- |
-| E7.4R · Rain, Beacon và Wind Vane | [Portable Art Review](E7.4R-PORTABLE-ART-REVIEW.html) · [QA](../../benchmarks/results/e74r/verification.json) · [SHA-256](../../benchmarks/results/e74r/SHA256SUMS) · [Human Review](../../benchmarks/results/e74r/human-review.json) |
-| E7.4R · Semantic structure và context | [Audit và đề xuất](e74r-semantic-structure-audit.md) · [Performance](../../benchmarks/results/e74r/performance.json) |
+| E7.5 · Ridge Mechanic và Marsh Harvester | [Portable Art Review](E7.5-PORTABLE-ART-REVIEW.html) · [QA](../../benchmarks/results/e75/verification.json) · [SHA-256](../../benchmarks/results/e75/SHA256SUMS) · [Human Review](../../benchmarks/results/e75/human-review.json) |
+| E7.5 · Character pipeline, Animation Gate và E7.6 | [Audit và đề xuất](e75-character-pipeline-audit.md) · [Performance](../../benchmarks/results/e75/performance.json) |
+| E7.4R · Khuyến nghị mỹ thuật | [Artistic Closeout](e74r-artistic-closeout.md) · [Gallery gốc](E7.4R-PORTABLE-ART-REVIEW.html) · [Semantic Audit](e74r-semantic-structure-audit.md) |
 | E7.4 · Khuyến nghị chọn hướng thử | [Decision Record](e74-artistic-decision.md) · [Gallery gốc](E7.4-PORTABLE-ART-REVIEW.html) · [Kiến trúc](e74-pilot-architecture.md) |
 | E7.3R · Quyết định cuối của Owner | [Final Acceptance](e73r-final-artistic-acceptance.md) · [A/B/C gốc](E7.3R-PORTABLE-ART-REVIEW.html) · [Style Mapping Audit](e73r-semantic-style-audit.md) |
 | E7.3 · Quyết định của Owner | [Artistic Acceptance](e73-artistic-acceptance.md) · [A/B gốc](E7.3-PORTABLE-ART-REVIEW.html) · [Style Audit](e73-style-audit.md) |
