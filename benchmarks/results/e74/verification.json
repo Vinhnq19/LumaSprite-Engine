@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "checkpoint": "62a6a1a40a408a9ed9a1e97feb7091eb59c8eee3",
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "holdout": "TECHNICAL_PASS_ARTISTIC_MIXED",
+  "checks": [
+    [
+      "Lint, typecheck, build, CLI smoke",
+      "PASS",
+      "Build và CLI loopback"
+    ],
+    [
+      "Engine tests",
+      "PASS",
+      "73/73"
+    ],
+    [
+      "Historical SHA và artifact",
+      "PASS",
+      "805 SHA-256 và 361 artifact tái tạo"
+    ],
+    [
+      "Hồi quy E7.1–E7.3R",
+      "PASS",
+      "E7.1/E7.1R/Review, E7.2-A/B/R, E7.3 và E7.3R"
+    ],
+    [
+      "Determinism, binary alpha và PNG RGBA",
+      "PASS",
+      "81 PNG; 85 SHA-256 payload"
+    ],
+    [
+      "Shape, landmarks và ownership",
+      "PASS",
+      "Hai candidate mỗi brief giữ kết quả gate riêng, pivot và alpha được kiểm chứng"
+    ],
+    [
+      "Palette",
+      "PASS",
+      "Glass/metal và amber/metal lấy từ B1; tối đa 13 màu"
+    ],
+    [
+      "Edit mask, diff và vùng protected",
+      "PASS",
+      "3 pixel trong mask, SHA-256 protected khớp trước/sau"
+    ],
+    [
+      "Gameplay scenes Day/Night",
+      "PASS",
+      "Cùng camera, routes, collision, anchors và actor occlusion trong từng brief"
+    ],
+    [
+      "Studio PNG parity",
+      "PASS",
+      "10 ảnh khớp chính xác RGBA"
+    ],
+    [
+      "Gameplay runtime E8",
+      "NOT RUN",
+      "Phạm vi ảnh tĩnh trong bối cảnh Engine và tương thích raw PNG"
+    ]
+  ],
+  "findings": {
+    "rainGauge": "Ứng viên làm rõ ống và vạch, P10 biên Night A0=25 còn A1/A2=15.",
+    "harborBeacon": "Cả hai dáng có đầu đèn và support khác nhau. Tay gạt/bản lề khó đọc ở 1×. P10 biên Night A0=24 còn A1/A2=14.",
+    "local": "25 pixel điều chỉnh vật liệu và 3 pixel local; trung vị và P10 biên kính/vỏ Night giữ nguyên sau local.",
+    "capability": "Glass là vùng đục được tô bóng. Harbor bối cảnh cổng đá, thiếu mặt nước, thuyền và hệ phát sáng."
+  }
+}

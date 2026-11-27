@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "checkpoint": "62a6a1a40a408a9ed9a1e97feb7091eb59c8eee3",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "history": {
+    "file": "benchmarks/results/e73r/SHA256SUMS",
+    "sha256": "95a331d4891ceb777048a3dd25b6744182634f945b7d3267b3e9724bb3c169fe"
+  },
+  "cases": [
+    {
+      "file": "benchmarks/fixtures/e74/field-rain-gauge.json",
+      "sha256": "1b6a1b9b722b46d6498e18bee9a4d10ecf19481c3d73137a4e967d2001887856"
+    },
+    {
+      "file": "benchmarks/fixtures/e74/harbor-signal-beacon.json",
+      "sha256": "9e5a69ac5bede96aaf4110d89565feb40eeefc35f73fbfc01c453aec435f17f6"
+    }
+  ],
+  "bounds": {
+    "structuresBeyondBaseline": 2,
+    "materialRefinements": 1,
+    "localRefinements": 1,
+    "editablePixels": 8,
+    "paletteColors": 13,
+    "apiCalls": 0
+  },
+  "method": "Both briefs and the holdout evaluation mode were frozen before implementing the candidate rules. Development A1 receives the single optional refinement; the holdout runs the same shape and material gates with no interactive edit."
+}

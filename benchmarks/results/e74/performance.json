@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "node": "v26.13.1",
+  "platform": "win32",
+  "mode": "all",
+  "bytes": 986957,
+  "png": 81,
+  "payload": 86,
+  "deepSeekCalls": 0,
+  "otherAiApiCalls": 0,
+  "runs": [
+    {
+      "case": "field-rain-gauge",
+      "primary": {
+        "calls": {
+          "baseline": 1,
+          "flatShape": 2,
+          "material": 2,
+          "materialRefinement": 1,
+          "localRefinement": 1,
+          "scene": 10,
+          "ownership": 5
+        },
+        "cpuMicroseconds": {
+          "user": 2000000,
+          "system": 235000
+        }
+      },
+      "deterministicRepeat": {
+        "calls": {
+          "baseline": 1,
+          "flatShape": 2,
+          "material": 2,
+          "materialRefinement": 1,
+          "localRefinement": 1,
+          "scene": 10,
+          "ownership": 5
+        },
+        "cpuMicroseconds": {
+          "user": 1984000,
+          "system": 15000
+        }
+      },
+      "wallMillisecondsIncludingEncode": 3302
+    },
+    {
+      "case": "harbor-signal-beacon",
+      "primary": {
+        "calls": {
+          "baseline": 1,
+          "flatShape": 2,
+          "material": 2,
+          "materialRefinement": 0,
+          "localRefinement": 0,
+          "scene": 6,
+          "ownership": 3
+        },
+        "cpuMicroseconds": {
+          "user": 1390000,
+          "system": 31000
+        }
+      },
+      "deterministicRepeat": {
+        "calls": {
+          "baseline": 1,
+          "flatShape": 2,
+          "material": 2,
+          "materialRefinement": 0,
+          "localRefinement": 0,
+          "scene": 6,
+          "ownership": 3
+        },
+        "cpuMicroseconds": {
+          "user": 1328000,
+          "system": 47000
+        }
+      },
+      "wallMillisecondsIncludingEncode": 2242
+    }
+  ]
+}

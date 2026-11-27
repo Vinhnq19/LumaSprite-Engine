@@ -1,0 +1,2786 @@
+{
+  "version": 1,
+  "brief": {
+    "file": "benchmarks/fixtures/e74/field-rain-gauge.json",
+    "sha256": "1b6a1b9b722b46d6498e18bee9a4d10ecf19481c3d73137a4e967d2001887856"
+  },
+  "seed": 5821,
+  "role": "development",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "view": "three-quarter-right",
+  "light": "upper-left",
+  "bounds": {
+    "structuresBeyondBaseline": 2,
+    "materialRefinements": 1,
+    "localRefinements": 1,
+    "editablePixels": 8,
+    "paletteColors": 13,
+    "apiCalls": 0
+  },
+  "candidates": [
+    {
+      "id": "a0",
+      "parent": null,
+      "stage": "baseline",
+      "decision": null,
+      "passed": true,
+      "flat": {
+        "native": "field-rain-gauge/a0/flat.png",
+        "zoom": "field-rain-gauge/a0/flat-4x.png"
+      },
+      "silhouette": {
+        "native": "field-rain-gauge/a0/silhouette.png",
+        "zoom": "field-rain-gauge/a0/silhouette-4x.png"
+      },
+      "material": {
+        "native": "field-rain-gauge/a0/material.png",
+        "zoom": "field-rain-gauge/a0/material-4x.png"
+      },
+      "ownership": "field-rain-gauge/a0/ownership.png",
+      "inScene": {
+        "day": {
+          "native": "field-rain-gauge/a0/day.png",
+          "zoom": "field-rain-gauge/a0/day-4x.png"
+        },
+        "night": {
+          "native": "field-rain-gauge/a0/night.png",
+          "zoom": "field-rain-gauge/a0/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              13,
+              29
+            ],
+            "coverage": 400,
+            "visible": 400,
+            "hiddenBy": {},
+            "rgbaSha256": "b5e427640280b750c243d7f75d8edd7161ec7483041e043aa6298bf2d4748ccc",
+            "contrasts": {
+              "silhouette": {
+                "n": 92,
+                "p10": 62,
+                "median": 115,
+                "weak": 0
+              },
+              "outline": {
+                "n": 92,
+                "p10": 62,
+                "median": 115,
+                "weak": 0
+              },
+              "contact": {
+                "n": 19,
+                "p10": 62,
+                "median": 62,
+                "weak": 0
+              },
+              "outlineRuns": [
+                70
+              ],
+              "weakOutlineRuns": [],
+              "signal": {
+                "pixels": 10,
+                "clusters": [
+                  10
+                ],
+                "housing": {
+                  "n": 14,
+                  "p10": 116,
+                  "median": 116,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              13,
+              29
+            ],
+            "coverage": 400,
+            "visible": 400,
+            "hiddenBy": {},
+            "rgbaSha256": "7c19dd03b4b349d30ba0414e186668f75ad0612348184760b1940104d3ef06ba",
+            "contrasts": {
+              "silhouette": {
+                "n": 92,
+                "p10": 25,
+                "median": 60,
+                "weak": 0
+              },
+              "outline": {
+                "n": 92,
+                "p10": 25,
+                "median": 60,
+                "weak": 0
+              },
+              "contact": {
+                "n": 19,
+                "p10": 25,
+                "median": 25,
+                "weak": 0
+              },
+              "outlineRuns": [
+                70
+              ],
+              "weakOutlineRuns": [],
+              "signal": {
+                "pixels": 10,
+                "clusters": [
+                  10
+                ],
+                "housing": {
+                  "n": 14,
+                  "p10": 116,
+                  "median": 116,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "shapeQA": {
+        "status": "EXISTING_GENERATOR_REFERENCE",
+        "source": "E7.3 relay device",
+        "pivot": [
+          13,
+          29
+        ],
+        "geometrySha256": "c67cc4f0ac1e0e8ef73ae0adbf6cb2662ced85ceed4386754ebe280629bd3f93",
+        "stat": {
+          "coverage": 400,
+          "outline": 70,
+          "isolatedOutline": 0,
+          "components": [
+            400
+          ],
+          "bounds": {
+            "left": 5,
+            "top": 5,
+            "right": 24,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 101,
+            "samples": 567,
+            "per100": 17.8
+          },
+          "materialBoundaries": [
+            {
+              "roles": "#48425e/#98a0be",
+              "samples": 45,
+              "p10": 24,
+              "median": 57
+            },
+            {
+              "roles": "#48425e/#bc8862",
+              "samples": 41,
+              "p10": 20,
+              "median": 20
+            },
+            {
+              "roles": "#98a0be/#bc8862",
+              "samples": 87,
+              "p10": 4,
+              "median": 20
+            },
+            {
+              "roles": "#98a0be/#f9bb51",
+              "samples": 14,
+              "p10": 116,
+              "median": 116
+            }
+          ],
+          "used": [
+            "#201a24",
+            "#343344",
+            "#4a2927",
+            "#51546a",
+            "#723e2c",
+            "#777d8b",
+            "#a15a36",
+            "#e0a051",
+            "#ffe3a0"
+          ],
+          "rgbaSha256": "73d5c8f0b79ce2d5b0111e7fedf35f4263f0562ae5e16fa59f614376a978c492",
+          "alphaSha256": "c67cc4f0ac1e0e8ef73ae0adbf6cb2662ced85ceed4386754ebe280629bd3f93"
+        }
+      }
+    },
+    {
+      "id": "a1",
+      "parent": "a0",
+      "stage": "structure",
+      "decision": null,
+      "shapeQA": {
+        "status": "PASS",
+        "failures": [],
+        "functional": 70,
+        "negative": 14,
+        "contact": 9,
+        "projectedDepth": 5,
+        "window": [
+          13,
+          11,
+          20,
+          21
+        ],
+        "voidRegion": [
+          8,
+          13,
+          13,
+          22
+        ],
+        "aperture": {
+          "center": [
+            18.5,
+            5
+          ],
+          "width": 6,
+          "height": 1.3
+        },
+        "geometrySha256": "a27320a0d20c3e4942b84970879efbfbb31dd19e9ed93a3ea138aba11ea69473",
+        "pivot": [
+          15,
+          29
+        ],
+        "stat": {
+          "coverage": 552,
+          "outline": 105,
+          "isolatedOutline": 0,
+          "components": [
+            552
+          ],
+          "bounds": {
+            "left": 3,
+            "top": 2,
+            "right": 29,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 307,
+            "samples": 1036,
+            "per100": 29.6
+          },
+          "materialBoundaries": [],
+          "used": [
+            "#242534",
+            "#263b4a",
+            "#303845",
+            "#385666",
+            "#596a83",
+            "#81979f"
+          ],
+          "rgbaSha256": "0f4bd66b77ac0d403124da8d2fe72939bf6f06cf2c4d18759153cb8e14ce6690",
+          "alphaSha256": "a27320a0d20c3e4942b84970879efbfbb31dd19e9ed93a3ea138aba11ea69473"
+        }
+      },
+      "parts": [
+        {
+          "id": "left-foot",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                4,
+                25
+              ],
+              [
+                10,
+                25
+              ],
+              [
+                9,
+                28
+              ],
+              [
+                5,
+                28
+              ]
+            ],
+            "side": [
+              [
+                10,
+                25
+              ],
+              [
+                13,
+                23
+              ],
+              [
+                13,
+                25
+              ],
+              [
+                9,
+                28
+              ]
+            ],
+            "top": [
+              [
+                7,
+                23
+              ],
+              [
+                13,
+                23
+              ],
+              [
+                10,
+                25
+              ],
+              [
+                4,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "id": "right-foot",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                21,
+                25
+              ],
+              [
+                26,
+                25
+              ],
+              [
+                25,
+                28
+              ],
+              [
+                22,
+                28
+              ]
+            ],
+            "side": [
+              [
+                26,
+                25
+              ],
+              [
+                29,
+                23
+              ],
+              [
+                29,
+                25
+              ],
+              [
+                25,
+                28
+              ]
+            ],
+            "top": [
+              [
+                24,
+                23
+              ],
+              [
+                29,
+                23
+              ],
+              [
+                26,
+                25
+              ],
+              [
+                21,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "id": "support-rail",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                5,
+                10
+              ],
+              [
+                24,
+                10
+              ],
+              [
+                24,
+                12
+              ],
+              [
+                5,
+                12
+              ]
+            ],
+            "side": [
+              [
+                24,
+                10
+              ],
+              [
+                27,
+                8
+              ],
+              [
+                27,
+                10
+              ],
+              [
+                24,
+                12
+              ]
+            ],
+            "top": [
+              [
+                8,
+                8
+              ],
+              [
+                27,
+                8
+              ],
+              [
+                24,
+                10
+              ],
+              [
+                5,
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "id": "left-upright",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                5,
+                10
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                27
+              ],
+              [
+                5,
+                27
+              ]
+            ],
+            "side": [
+              [
+                7,
+                10
+              ],
+              [
+                9,
+                9
+              ],
+              [
+                9,
+                26
+              ],
+              [
+                7,
+                27
+              ]
+            ],
+            "top": [
+              [
+                7,
+                9
+              ],
+              [
+                9,
+                9
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                5,
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "id": "right-upright",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                22,
+                11
+              ],
+              [
+                24,
+                11
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                22,
+                27
+              ]
+            ],
+            "side": [
+              [
+                24,
+                11
+              ],
+              [
+                26,
+                10
+              ],
+              [
+                26,
+                26
+              ],
+              [
+                24,
+                27
+              ]
+            ],
+            "top": [
+              [
+                24,
+                10
+              ],
+              [
+                26,
+                10
+              ],
+              [
+                24,
+                11
+              ],
+              [
+                22,
+                11
+              ]
+            ]
+          }
+        },
+        {
+          "id": "lower-cradle",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                7,
+                23
+              ],
+              [
+                23,
+                23
+              ],
+              [
+                23,
+                26
+              ],
+              [
+                7,
+                26
+              ]
+            ],
+            "side": [
+              [
+                23,
+                23
+              ],
+              [
+                26,
+                21
+              ],
+              [
+                26,
+                24
+              ],
+              [
+                23,
+                26
+              ]
+            ],
+            "top": [
+              [
+                10,
+                21
+              ],
+              [
+                26,
+                21
+              ],
+              [
+                23,
+                23
+              ],
+              [
+                7,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "id": "glass-chamber",
+          "role": "roof",
+          "faces": {
+            "front": [
+              [
+                13,
+                9
+              ],
+              [
+                20,
+                9
+              ],
+              [
+                20,
+                24
+              ],
+              [
+                13,
+                24
+              ]
+            ],
+            "side": [
+              [
+                20,
+                9
+              ],
+              [
+                23,
+                7
+              ],
+              [
+                23,
+                22
+              ],
+              [
+                20,
+                24
+              ]
+            ],
+            "top": [
+              [
+                16,
+                7
+              ],
+              [
+                23,
+                7
+              ],
+              [
+                20,
+                9
+              ],
+              [
+                13,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "id": "drain-collar",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                12,
+                23
+              ],
+              [
+                21,
+                23
+              ],
+              [
+                20,
+                26
+              ],
+              [
+                13,
+                26
+              ]
+            ],
+            "side": [
+              [
+                21,
+                23
+              ],
+              [
+                24,
+                21
+              ],
+              [
+                24,
+                23
+              ],
+              [
+                20,
+                26
+              ]
+            ],
+            "top": [
+              [
+                15,
+                21
+              ],
+              [
+                24,
+                21
+              ],
+              [
+                21,
+                23
+              ],
+              [
+                12,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "id": "tapered-funnel",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                11,
+                6
+              ],
+              [
+                22,
+                6
+              ],
+              [
+                20,
+                10
+              ],
+              [
+                13,
+                10
+              ]
+            ],
+            "side": [
+              [
+                22,
+                6
+              ],
+              [
+                27,
+                3
+              ],
+              [
+                27,
+                5
+              ],
+              [
+                20,
+                10
+              ]
+            ],
+            "top": [
+              [
+                16,
+                3
+              ],
+              [
+                27,
+                3
+              ],
+              [
+                22,
+                6
+              ],
+              [
+                11,
+                6
+              ]
+            ]
+          }
+        }
+      ],
+      "flat": {
+        "native": "field-rain-gauge/a1/flat.png",
+        "zoom": "field-rain-gauge/a1/flat-4x.png"
+      },
+      "silhouette": {
+        "native": "field-rain-gauge/a1/silhouette.png",
+        "zoom": "field-rain-gauge/a1/silhouette-4x.png"
+      },
+      "ownership": "field-rain-gauge/a1/ownership.png",
+      "passed": true,
+      "material": {
+        "native": "field-rain-gauge/a1/material.png",
+        "zoom": "field-rain-gauge/a1/material-4x.png"
+      },
+      "materialQA": {
+        "coverage": 552,
+        "outline": 105,
+        "isolatedOutline": 0,
+        "components": [
+          552
+        ],
+        "bounds": {
+          "left": 3,
+          "top": 2,
+          "right": 29,
+          "bottom": 28
+        },
+        "detail": {
+          "edges": 200,
+          "samples": 855,
+          "per100": 23.4
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#789e94",
+            "samples": 9,
+            "p10": 43,
+            "median": 77
+          },
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 133,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#789e94/#98a0be",
+            "samples": 39,
+            "p10": 1,
+            "median": 48
+          }
+        ],
+        "used": [
+          "#242534",
+          "#263b4a",
+          "#303845",
+          "#385666",
+          "#577988",
+          "#596a83",
+          "#779aa5",
+          "#81979f",
+          "#bfcec6"
+        ],
+        "rgbaSha256": "2baa833a8d011e6e8fcca9cfd3b59af6b5e1c06a58cba1ab67704f1fbddc921b",
+        "alphaSha256": "a27320a0d20c3e4942b84970879efbfbb31dd19e9ed93a3ea138aba11ea69473"
+      },
+      "inScene": {
+        "day": {
+          "native": "field-rain-gauge/a1/day.png",
+          "zoom": "field-rain-gauge/a1/day-4x.png"
+        },
+        "night": {
+          "native": "field-rain-gauge/a1/night.png",
+          "zoom": "field-rain-gauge/a1/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 552,
+            "visible": 552,
+            "hiddenBy": {},
+            "rgbaSha256": "8ee88f3d9deecad6dc6e6bc1c844576414fcf31fb2793e3ace742648d95f701c",
+            "contrasts": {
+              "silhouette": {
+                "n": 136,
+                "p10": 52,
+                "median": 105,
+                "weak": 2
+              },
+              "outline": {
+                "n": 136,
+                "p10": 52,
+                "median": 105,
+                "weak": 2
+              },
+              "contact": {
+                "n": 25,
+                "p10": 52,
+                "median": 105,
+                "weak": 0
+              },
+              "outlineRuns": [
+                87,
+                18
+              ],
+              "weakOutlineRuns": [
+                2
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 48,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 552,
+            "visible": 552,
+            "hiddenBy": {},
+            "rgbaSha256": "d587f0063522c6e43fd33c6c360d43f977042600b9f57127b3fb99af14dc1946",
+            "contrasts": {
+              "silhouette": {
+                "n": 136,
+                "p10": 15,
+                "median": 50,
+                "weak": 16
+              },
+              "outline": {
+                "n": 136,
+                "p10": 15,
+                "median": 50,
+                "weak": 16
+              },
+              "contact": {
+                "n": 25,
+                "p10": 15,
+                "median": 50,
+                "weak": 10
+              },
+              "outlineRuns": [
+                87,
+                18
+              ],
+              "weakOutlineRuns": [
+                5,
+                5,
+                4
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 48,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a2",
+      "parent": "a0",
+      "stage": "structure",
+      "decision": null,
+      "shapeQA": {
+        "status": "PASS",
+        "failures": [],
+        "functional": 70,
+        "negative": 14,
+        "contact": 14,
+        "projectedDepth": 5,
+        "window": [
+          7,
+          11,
+          14,
+          21
+        ],
+        "voidRegion": [
+          18,
+          13,
+          22,
+          22
+        ],
+        "aperture": {
+          "center": [
+            12.5,
+            5
+          ],
+          "width": 6,
+          "height": 1.3
+        },
+        "geometrySha256": "db91bee3c91a9575c7906759f20aa984ec22f8ca5ab17e2f872645205321b0fa",
+        "pivot": [
+          15,
+          29
+        ],
+        "stat": {
+          "coverage": 546,
+          "outline": 103,
+          "isolatedOutline": 0,
+          "components": [
+            546
+          ],
+          "bounds": {
+            "left": 4,
+            "top": 2,
+            "right": 29,
+            "bottom": 28
+          },
+          "detail": {
+            "edges": 270,
+            "samples": 1026,
+            "per100": 26.3
+          },
+          "materialBoundaries": [],
+          "used": [
+            "#242534",
+            "#263b4a",
+            "#303845",
+            "#385666",
+            "#596a83",
+            "#81979f"
+          ],
+          "rgbaSha256": "997fbd702d128d32b9f218f2d98032e98cc3dfae2d95e4c0cb4f0f50959dc43c",
+          "alphaSha256": "db91bee3c91a9575c7906759f20aa984ec22f8ca5ab17e2f872645205321b0fa"
+        }
+      },
+      "parts": [
+        {
+          "id": "cantilever-base",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                7,
+                25
+              ],
+              [
+                24,
+                25
+              ],
+              [
+                22,
+                28
+              ],
+              [
+                9,
+                28
+              ]
+            ],
+            "side": [
+              [
+                24,
+                25
+              ],
+              [
+                28,
+                23
+              ],
+              [
+                28,
+                24
+              ],
+              [
+                22,
+                28
+              ]
+            ],
+            "top": [
+              [
+                11,
+                23
+              ],
+              [
+                28,
+                23
+              ],
+              [
+                24,
+                25
+              ],
+              [
+                7,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "id": "side-column",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                22,
+                9
+              ],
+              [
+                25,
+                9
+              ],
+              [
+                23,
+                26
+              ],
+              [
+                20,
+                26
+              ]
+            ],
+            "side": [
+              [
+                25,
+                9
+              ],
+              [
+                28,
+                7
+              ],
+              [
+                26,
+                24
+              ],
+              [
+                23,
+                26
+              ]
+            ],
+            "top": [
+              [
+                25,
+                7
+              ],
+              [
+                28,
+                7
+              ],
+              [
+                25,
+                9
+              ],
+              [
+                22,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "id": "upper-cantilever",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                9,
+                9
+              ],
+              [
+                26,
+                9
+              ],
+              [
+                26,
+                12
+              ],
+              [
+                9,
+                12
+              ]
+            ],
+            "side": [
+              [
+                26,
+                9
+              ],
+              [
+                29,
+                7
+              ],
+              [
+                29,
+                10
+              ],
+              [
+                26,
+                12
+              ]
+            ],
+            "top": [
+              [
+                12,
+                7
+              ],
+              [
+                29,
+                7
+              ],
+              [
+                26,
+                9
+              ],
+              [
+                9,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "id": "lower-cantilever",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                7,
+                23
+              ],
+              [
+                21,
+                23
+              ],
+              [
+                21,
+                26
+              ],
+              [
+                7,
+                26
+              ]
+            ],
+            "side": [
+              [
+                21,
+                23
+              ],
+              [
+                24,
+                21
+              ],
+              [
+                24,
+                24
+              ],
+              [
+                21,
+                26
+              ]
+            ],
+            "top": [
+              [
+                10,
+                21
+              ],
+              [
+                24,
+                21
+              ],
+              [
+                21,
+                23
+              ],
+              [
+                7,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "id": "glass-chamber",
+          "role": "roof",
+          "faces": {
+            "front": [
+              [
+                7,
+                9
+              ],
+              [
+                14,
+                9
+              ],
+              [
+                14,
+                24
+              ],
+              [
+                7,
+                24
+              ]
+            ],
+            "side": [
+              [
+                14,
+                9
+              ],
+              [
+                17,
+                7
+              ],
+              [
+                17,
+                22
+              ],
+              [
+                14,
+                24
+              ]
+            ],
+            "top": [
+              [
+                10,
+                7
+              ],
+              [
+                17,
+                7
+              ],
+              [
+                14,
+                9
+              ],
+              [
+                7,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "id": "drain-collar",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                6,
+                23
+              ],
+              [
+                15,
+                23
+              ],
+              [
+                14,
+                26
+              ],
+              [
+                7,
+                26
+              ]
+            ],
+            "side": [
+              [
+                15,
+                23
+              ],
+              [
+                18,
+                21
+              ],
+              [
+                18,
+                23
+              ],
+              [
+                14,
+                26
+              ]
+            ],
+            "top": [
+              [
+                9,
+                21
+              ],
+              [
+                18,
+                21
+              ],
+              [
+                15,
+                23
+              ],
+              [
+                6,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "id": "tapered-funnel",
+          "role": "metal",
+          "faces": {
+            "front": [
+              [
+                5,
+                6
+              ],
+              [
+                16,
+                6
+              ],
+              [
+                14,
+                10
+              ],
+              [
+                7,
+                10
+              ]
+            ],
+            "side": [
+              [
+                16,
+                6
+              ],
+              [
+                21,
+                3
+              ],
+              [
+                21,
+                5
+              ],
+              [
+                14,
+                10
+              ]
+            ],
+            "top": [
+              [
+                10,
+                3
+              ],
+              [
+                21,
+                3
+              ],
+              [
+                16,
+                6
+              ],
+              [
+                5,
+                6
+              ]
+            ]
+          }
+        }
+      ],
+      "flat": {
+        "native": "field-rain-gauge/a2/flat.png",
+        "zoom": "field-rain-gauge/a2/flat-4x.png"
+      },
+      "silhouette": {
+        "native": "field-rain-gauge/a2/silhouette.png",
+        "zoom": "field-rain-gauge/a2/silhouette-4x.png"
+      },
+      "ownership": "field-rain-gauge/a2/ownership.png",
+      "passed": true,
+      "material": {
+        "native": "field-rain-gauge/a2/material.png",
+        "zoom": "field-rain-gauge/a2/material-4x.png"
+      },
+      "materialQA": {
+        "coverage": 546,
+        "outline": 103,
+        "isolatedOutline": 0,
+        "components": [
+          546
+        ],
+        "bounds": {
+          "left": 4,
+          "top": 2,
+          "right": 29,
+          "bottom": 28
+        },
+        "detail": {
+          "edges": 183,
+          "samples": 863,
+          "per100": 21.2
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#48425e/#789e94",
+            "samples": 21,
+            "p10": 18,
+            "median": 43
+          },
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 115,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#789e94/#98a0be",
+            "samples": 27,
+            "p10": 1,
+            "median": 48
+          }
+        ],
+        "used": [
+          "#242534",
+          "#263b4a",
+          "#303845",
+          "#385666",
+          "#577988",
+          "#596a83",
+          "#779aa5",
+          "#81979f",
+          "#bfcec6"
+        ],
+        "rgbaSha256": "a1de1e3ce83f6946f8c75bbf7f5b17ac07b45ffb41e82d496d30f0201ccb3818",
+        "alphaSha256": "db91bee3c91a9575c7906759f20aa984ec22f8ca5ab17e2f872645205321b0fa"
+      },
+      "inScene": {
+        "day": {
+          "native": "field-rain-gauge/a2/day.png",
+          "zoom": "field-rain-gauge/a2/day-4x.png"
+        },
+        "night": {
+          "native": "field-rain-gauge/a2/night.png",
+          "zoom": "field-rain-gauge/a2/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 546,
+            "visible": 546,
+            "hiddenBy": {},
+            "rgbaSha256": "4a40a42a0d77b8ba7b308b7d16b5450b8237db66c9d62534ce63ee017e341aea",
+            "contrasts": {
+              "silhouette": {
+                "n": 132,
+                "p10": 52,
+                "median": 105,
+                "weak": 4
+              },
+              "outline": {
+                "n": 132,
+                "p10": 52,
+                "median": 105,
+                "weak": 4
+              },
+              "contact": {
+                "n": 19,
+                "p10": 52,
+                "median": 52,
+                "weak": 0
+              },
+              "outlineRuns": [
+                85,
+                18
+              ],
+              "weakOutlineRuns": [
+                4
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 43,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 546,
+            "visible": 546,
+            "hiddenBy": {},
+            "rgbaSha256": "534308a9d2cdc5b11f678790a8da942b367fb6ce586a582f9ce2088e782b0985",
+            "contrasts": {
+              "silhouette": {
+                "n": 132,
+                "p10": 15,
+                "median": 50,
+                "weak": 24
+              },
+              "outline": {
+                "n": 132,
+                "p10": 15,
+                "median": 50,
+                "weak": 24
+              },
+              "contact": {
+                "n": 19,
+                "p10": 15,
+                "median": 15,
+                "weak": 16
+              },
+              "outlineRuns": [
+                85,
+                18
+              ],
+              "weakOutlineRuns": [
+                16,
+                6
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 43,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "refinement": {
+    "candidate": "a1",
+    "stage": "local-refinement",
+    "decision": null,
+    "geometrySha256": "a27320a0d20c3e4942b84970879efbfbb31dd19e9ed93a3ea138aba11ea69473",
+    "materialRefinement": {
+      "parent": "a1/material",
+      "hypothesis": "Deeper liquid face separates the surface line from the tank.",
+      "changed": 25,
+      "native": "field-rain-gauge/a1/focused.png",
+      "zoom": "field-rain-gauge/a1/focused-4x.png",
+      "inScene": {
+        "day": {
+          "native": "field-rain-gauge/refinement-before/day.png",
+          "zoom": "field-rain-gauge/refinement-before/day-4x.png"
+        },
+        "night": {
+          "native": "field-rain-gauge/refinement-before/night.png",
+          "zoom": "field-rain-gauge/refinement-before/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 552,
+            "visible": 552,
+            "hiddenBy": {},
+            "rgbaSha256": "36e2af1d67824458d66c1f2f1dafb9f4c724acafa90f2d05764ee8c16690c8be",
+            "contrasts": {
+              "silhouette": {
+                "n": 136,
+                "p10": 52,
+                "median": 105,
+                "weak": 2
+              },
+              "outline": {
+                "n": 136,
+                "p10": 52,
+                "median": 105,
+                "weak": 2
+              },
+              "contact": {
+                "n": 25,
+                "p10": 52,
+                "median": 105,
+                "weak": 0
+              },
+              "outlineRuns": [
+                87,
+                18
+              ],
+              "weakOutlineRuns": [
+                2
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 48,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 552,
+            "visible": 552,
+            "hiddenBy": {},
+            "rgbaSha256": "d69980b4b211337a2b06fcf7428ded9f8211b78124ce57a20d597472a121fa45",
+            "contrasts": {
+              "silhouette": {
+                "n": 136,
+                "p10": 15,
+                "median": 50,
+                "weak": 16
+              },
+              "outline": {
+                "n": 136,
+                "p10": 15,
+                "median": 50,
+                "weak": 16
+              },
+              "contact": {
+                "n": 25,
+                "p10": 15,
+                "median": 50,
+                "weak": 10
+              },
+              "outlineRuns": [
+                87,
+                18
+              ],
+              "weakOutlineRuns": [
+                5,
+                5,
+                4
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 48,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "local": {
+      "parent": "a1/focused",
+      "changed": 3,
+      "protectedBefore": "3e26bef3aaaf4384dab1eceb4e593664e72c915f9caef2c4747b2cfd72ffcb9d",
+      "protectedAfter": "3e26bef3aaaf4384dab1eceb4e593664e72c915f9caef2c4747b2cfd72ffcb9d",
+      "editablePixels": 3,
+      "budget": 8,
+      "scope": "glass-meniscus",
+      "used": [
+        "#242534",
+        "#263b4a",
+        "#303845",
+        "#385666",
+        "#577988",
+        "#596a83",
+        "#779aa5",
+        "#81979f",
+        "#bfcec6"
+      ],
+      "native": "field-rain-gauge/a1/refined.png",
+      "zoom": "field-rain-gauge/a1/refined-4x.png",
+      "edit": "field-rain-gauge/a1/edit-mask.png",
+      "diff": {
+        "native": "field-rain-gauge/a1/pixel-diff.png",
+        "zoom": "field-rain-gauge/a1/pixel-diff-4x.png"
+      },
+      "inScene": {
+        "day": {
+          "native": "field-rain-gauge/refinement-after/day.png",
+          "zoom": "field-rain-gauge/refinement-after/day-4x.png"
+        },
+        "night": {
+          "native": "field-rain-gauge/refinement-after/night.png",
+          "zoom": "field-rain-gauge/refinement-after/night-4x.png"
+        },
+        "qa": {
+          "day": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 552,
+            "visible": 552,
+            "hiddenBy": {},
+            "rgbaSha256": "cda4cd404c44c8a7b7c3ea1ba10e4548643a599efaee544f5fe99001cf4d6f7c",
+            "contrasts": {
+              "silhouette": {
+                "n": 136,
+                "p10": 52,
+                "median": 105,
+                "weak": 2
+              },
+              "outline": {
+                "n": 136,
+                "p10": 52,
+                "median": 105,
+                "weak": 2
+              },
+              "contact": {
+                "n": 25,
+                "p10": 52,
+                "median": 105,
+                "weak": 0
+              },
+              "outlineRuns": [
+                87,
+                18
+              ],
+              "weakOutlineRuns": [
+                2
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 48,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          },
+          "night": {
+            "anchor": [
+              48,
+              168
+            ],
+            "pivot": [
+              15,
+              29
+            ],
+            "coverage": 552,
+            "visible": 552,
+            "hiddenBy": {},
+            "rgbaSha256": "f995b035feb3535537f8c79d24ca8dc513027380a1f149dec3490479f738cdbb",
+            "contrasts": {
+              "silhouette": {
+                "n": 136,
+                "p10": 15,
+                "median": 50,
+                "weak": 16
+              },
+              "outline": {
+                "n": 136,
+                "p10": 15,
+                "median": 50,
+                "weak": 16
+              },
+              "contact": {
+                "n": 25,
+                "p10": 15,
+                "median": 50,
+                "weak": 10
+              },
+              "outlineRuns": [
+                87,
+                18
+              ],
+              "weakOutlineRuns": [
+                5,
+                5,
+                4
+              ],
+              "signal": {
+                "pixels": 114,
+                "clusters": [
+                  114
+                ],
+                "housing": {
+                  "n": 48,
+                  "p10": 1,
+                  "median": 48,
+                  "weak": 5
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "cameraContract": "71880d22544a25c372b8293f7376848a1403f2bd9205ff33b65147454e6f473c",
+  "context": {
+    "version": 1,
+    "kind": "field-outpost-composition",
+    "id": "stormwatch",
+    "name": "Stormwatch Supply Station",
+    "size": [
+      320,
+      208
+    ],
+    "seed": 4471,
+    "source": {
+      "checkpoint": "24b8ca6",
+      "kit": "front-court",
+      "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+      "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+      "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+    },
+    "terrain": {
+      "origin": [
+        20,
+        11
+      ],
+      "rows": [
+        "####################",
+        "####################",
+        "######.....#########",
+        "#####........#######",
+        "####...........#####",
+        "###.............####",
+        "##...............###",
+        "##.................#",
+        "##..................",
+        "##.................#",
+        "###...............##",
+        "####...........#####",
+        "######......########"
+      ]
+    },
+    "building": [
+      96,
+      124
+    ],
+    "approach": [
+      [
+        146,
+        127
+      ],
+      [
+        165,
+        127
+      ],
+      [
+        172,
+        151
+      ],
+      [
+        157,
+        167
+      ],
+      [
+        138,
+        185
+      ],
+      [
+        127,
+        208
+      ],
+      [
+        87,
+        208
+      ],
+      [
+        111,
+        180
+      ],
+      [
+        132,
+        162
+      ]
+    ],
+    "paving": [
+      {
+        "role": "activity",
+        "points": [
+          [
+            23,
+            148
+          ],
+          [
+            42,
+            130
+          ],
+          [
+            74,
+            126
+          ],
+          [
+            100,
+            138
+          ],
+          [
+            111,
+            151
+          ],
+          [
+            96,
+            176
+          ],
+          [
+            76,
+            181
+          ],
+          [
+            29,
+            177
+          ]
+        ]
+      }
+    ],
+    "props": [
+      {
+        "id": "weather-signal-device",
+        "ref": "crate",
+        "at": [
+          48,
+          168
+        ]
+      },
+      {
+        "id": "water-barrel",
+        "ref": "barrel",
+        "at": [
+          87,
+          164
+        ]
+      },
+      {
+        "id": "survey-bench",
+        "ref": "workbench",
+        "at": [
+          60,
+          141
+        ]
+      }
+    ],
+    "spawns": [
+      {
+        "actor": "surveyor",
+        "at": [
+          104,
+          183
+        ]
+      },
+      {
+        "actor": "courier",
+        "at": [
+          264,
+          154
+        ]
+      }
+    ],
+    "walkable": [
+      [
+        [
+          23,
+          137
+        ],
+        [
+          72,
+          127
+        ],
+        [
+          101,
+          126
+        ],
+        [
+          175,
+          125
+        ],
+        [
+          240,
+          131
+        ],
+        [
+          294,
+          133
+        ],
+        [
+          292,
+          176
+        ],
+        [
+          230,
+          186
+        ],
+        [
+          185,
+          185
+        ],
+        [
+          135,
+          208
+        ],
+        [
+          28,
+          208
+        ]
+      ],
+      [
+        [
+          142,
+          118
+        ],
+        [
+          170,
+          118
+        ],
+        [
+          170,
+          137
+        ],
+        [
+          142,
+          137
+        ]
+      ],
+      [
+        [
+          142,
+          117
+        ],
+        [
+          184,
+          117
+        ],
+        [
+          184,
+          120
+        ],
+        [
+          142,
+          120
+        ]
+      ],
+      [
+        [
+          132,
+          124
+        ],
+        [
+          180,
+          124
+        ],
+        [
+          180,
+          132
+        ],
+        [
+          132,
+          132
+        ]
+      ]
+    ],
+    "zones": [
+      {
+        "id": "station",
+        "role": "primary",
+        "points": [
+          [
+            88,
+            22
+          ],
+          [
+            240,
+            22
+          ],
+          [
+            240,
+            132
+          ],
+          [
+            88,
+            132
+          ]
+        ]
+      },
+      {
+        "id": "work-area",
+        "role": "secondary",
+        "points": [
+          [
+            21,
+            126
+          ],
+          [
+            94,
+            125
+          ],
+          [
+            111,
+            172
+          ],
+          [
+            89,
+            183
+          ],
+          [
+            21,
+            176
+          ]
+        ]
+      },
+      {
+        "id": "upper-field",
+        "role": "background",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            320,
+            0
+          ],
+          [
+            320,
+            77
+          ],
+          [
+            246,
+            78
+          ],
+          [
+            232,
+            25
+          ],
+          [
+            89,
+            25
+          ],
+          [
+            62,
+            91
+          ],
+          [
+            0,
+            101
+          ]
+        ]
+      },
+      {
+        "id": "courtyard-entry",
+        "role": "foreground",
+        "points": [
+          [
+            24,
+            165
+          ],
+          [
+            113,
+            169
+          ],
+          [
+            158,
+            180
+          ],
+          [
+            139,
+            208
+          ],
+          [
+            24,
+            208
+          ]
+        ]
+      },
+      {
+        "id": "quiet-verge",
+        "role": "rest",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            320,
+            0
+          ],
+          [
+            320,
+            70
+          ],
+          [
+            250,
+            81
+          ],
+          [
+            230,
+            34
+          ],
+          [
+            94,
+            34
+          ],
+          [
+            62,
+            106
+          ],
+          [
+            0,
+            131
+          ]
+        ]
+      },
+      {
+        "id": "courier-backdrop",
+        "role": "rest",
+        "points": [
+          [
+            239,
+            88
+          ],
+          [
+            320,
+            81
+          ],
+          [
+            320,
+            186
+          ],
+          [
+            249,
+            176
+          ],
+          [
+            235,
+            143
+          ]
+        ]
+      },
+      {
+        "id": "surveyor-room",
+        "role": "readability",
+        "points": [
+          [
+            91,
+            147
+          ],
+          [
+            117,
+            147
+          ],
+          [
+            117,
+            196
+          ],
+          [
+            91,
+            196
+          ]
+        ]
+      },
+      {
+        "id": "courier-room",
+        "role": "readability",
+        "points": [
+          [
+            250,
+            112
+          ],
+          [
+            283,
+            112
+          ],
+          [
+            283,
+            169
+          ],
+          [
+            250,
+            169
+          ]
+        ]
+      }
+    ],
+    "interactions": [
+      {
+        "id": "door-landing",
+        "target": "entry",
+        "points": [
+          [
+            142,
+            125
+          ],
+          [
+            170,
+            125
+          ],
+          [
+            170,
+            142
+          ],
+          [
+            142,
+            142
+          ]
+        ]
+      },
+      {
+        "id": "study-table",
+        "target": "survey-bench",
+        "points": [
+          [
+            48,
+            141
+          ],
+          [
+            74,
+            141
+          ],
+          [
+            74,
+            155
+          ],
+          [
+            48,
+            155
+          ]
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "id": "entry-path",
+        "actor": "surveyor",
+        "points": [
+          [
+            104,
+            200
+          ],
+          [
+            125,
+            173
+          ],
+          [
+            146,
+            155
+          ],
+          [
+            156,
+            136
+          ]
+        ]
+      },
+      {
+        "id": "survey-station",
+        "actor": "surveyor",
+        "points": [
+          [
+            104,
+            183
+          ],
+          [
+            68,
+            180
+          ],
+          [
+            68,
+            148
+          ]
+        ]
+      }
+    ],
+    "probes": [
+      {
+        "id": "front",
+        "actor": "surveyor",
+        "at": [
+          156,
+          140
+        ]
+      },
+      {
+        "id": "threshold",
+        "actor": "courier",
+        "at": [
+          154,
+          121
+        ],
+        "occluder": "station-shell"
+      },
+      {
+        "id": "side",
+        "actor": "courier",
+        "at": [
+          243,
+          120
+        ],
+        "occluder": "station-shell"
+      },
+      {
+        "id": "rear",
+        "actor": "surveyor",
+        "at": [
+          188,
+          110
+        ],
+        "occluder": "station-shell"
+      },
+      {
+        "id": "between-props",
+        "actor": "surveyor",
+        "at": [
+          68,
+          152
+        ],
+        "occluder": "water-barrel"
+      },
+      {
+        "id": "foreground",
+        "actor": "surveyor",
+        "at": [
+          49,
+          152
+        ],
+        "occluder": "weather-signal-device"
+      }
+    ],
+    "depth": "ground-pivot-y",
+    "collision": "kit-and-prop-footprints",
+    "lighting": {
+      "door": true,
+      "workbench": "secondary",
+      "fill": [
+        {
+          "role": "grass",
+          "tone": 1,
+          "points": [
+            [
+              245,
+              88
+            ],
+            [
+              320,
+              83
+            ],
+            [
+              320,
+              163
+            ],
+            [
+              279,
+              166
+            ],
+            [
+              240,
+              156
+            ]
+          ]
+        },
+        {
+          "role": "dirt",
+          "tone": 2,
+          "points": [
+            [
+              241,
+              94
+            ],
+            [
+              277,
+              89
+            ],
+            [
+              304,
+              100
+            ],
+            [
+              320,
+              137
+            ],
+            [
+              297,
+              160
+            ],
+            [
+              245,
+              154
+            ]
+          ]
+        },
+        {
+          "role": "paving",
+          "tone": 3,
+          "points": [
+            [
+              48,
+              132
+            ],
+            [
+              73,
+              131
+            ],
+            [
+              88,
+              147
+            ],
+            [
+              74,
+              160
+            ],
+            [
+              42,
+              152
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "palette": {
+    "profile": {
+      "file": "benchmarks/fixtures/e61r/style-profile.json",
+      "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+    },
+    "outline": "#242534",
+    "metal": [
+      "#303845",
+      "#596a83",
+      "#81979f",
+      "#bfcec6"
+    ],
+    "glass": [
+      "#263b4a",
+      "#385666",
+      "#577988",
+      "#779aa5"
+    ],
+    "signal": [
+      "#704625",
+      "#ac713d",
+      "#edb063",
+      "#ffe3a1"
+    ]
+  }
+}
