@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "lumasprite.art-quality-rubric.v2",
+  "title": "LumaSprite Game-Ready Pixel Art Quality Rubric v2",
+  "purpose": "Chuẩn đánh giá chất lượng mỹ thuật dùng được trong game ở kích thước native 1× và bối cảnh gameplay thật. Điểm kỹ thuật (SHA-256, RGBA, bounds, palette) tách biệt hoàn toàn khỏi quyết định mỹ thuật.",
+  "policy": {
+    "scoreScale": {
+      "min": 1,
+      "max": 5,
+      "meanings": {
+        "1": "Không đọc được hoặc sai hình/chức năng rõ rệt ở 1×",
+        "2": "Đọc lờ mờ nhưng lỗi tỷ lệ, cụm pixel, vật liệu hoặc silhouette nghiêm trọng",
+        "3": "Đạt mức prototype/kỹ thuật, nhận ra ý đồ nhưng chưa đạt chất lượng game thương mại",
+        "4": "Tốt ở 1× trong bối cảnh gameplay thật, đọc rõ ngay không cần phóng to",
+        "5": "Xuất sắc, giàu cá tính và chuẩn sản xuất (sẵn sàng hòa nhập game hoàn chỉnh)"
+      }
+    },
+    "allowAutoArtisticPass": false,
+    "technicalPassImpliesArtisticPass": false,
+    "criticalDefectBlocksPass": true,
+    "disallowAveragingAwayCriticalDefects": true,
+    "requireNative1xInspection": true,
+    "authoritativeDecision": "PROJECT_OWNER_HUMAN_REVIEW_ONLY",
+    "passRule": "Một asset chỉ đạt ARTISTIC_PASS khi Owner duyệt trực tiếp, tất cả tiêu chí bắt buộc của dòng tài sản đạt >= 4/5 và criticalDefects.length === 0."
+  },
+  "dimensions": [
+    {
+      "id": "silhouette",
+      "name": "Silhouette",
+      "prompt": "Đọc khối, khoảng âm (negative space) và nhận dạng hình bóng ở native 1× không cần dựa vào màu.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "proportions",
+      "name": "Proportions",
+      "prompt": "Tỷ lệ đầu–thân–tay–chân hoặc chiều cao/rộng công trình phù hợp quy chuẩn scale của thế giới game.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "anatomy",
+      "name": "Anatomy",
+      "prompt": "Cấu trúc giải phẫu stylized (vai, cổ tay, bàn tay nắm, hông, đầu gối, bàn chân, trọng tâm) hợp lý, không biến dạng.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "functionalIdentity",
+      "name": "Functional Identity",
+      "prompt": "Nhận ra ngay nghề nghiệp, công cụ, cơ cấu máy hoặc công năng kiến trúc mà không cần đọc nhãn hay tooltip.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "pixelClusters",
+      "name": "Pixel Clusters",
+      "prompt": "Cụm pixel sạch, kiểm soát jagged/doubles/orphans, tránh nhiễu ngẫu nhiên hay mảng bệt hình chữ nhật.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "materials",
+      "name": "Materials",
+      "prompt": "Phân tách chất liệu rõ (vải, da, kim loại, gỗ, đá, kính, nước) bằng độ tương phản và specular đặc trưng thay vì chỉ đổi màu.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "colorHarmony",
+      "name": "Color Harmony",
+      "prompt": "Bảng màu hài hòa theo Day/Night, giữ độ tương phản value rõ ở vùng tiêu điểm và không bết tối trong cảnh đêm.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "pose",
+      "name": "Pose",
+      "prompt": "Tư thế tự nhiên, có trọng lượng, trục thân và tay nắm vật dụng có lực bám thật thay vì gắn hình nổi.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "animation",
+      "name": "Animation",
+      "prompt": "Nhịp bước/chuyển động, trọng lượng, follow-through của áo/phụ kiện, tiếp đất ổn định và vòng lặp không giật ở 1×.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "contextReadability",
+      "name": "Context Readability",
+      "prompt": "Đọc rõ trên nền địa hình/cảnh thật (320×208), không tranh chấp thị giác hay chìm viền/độ tương phản.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "styleConsistency",
+      "name": "Style Consistency",
+      "prompt": "Đồng nhất kiểu viền (outline/sel-out), hướng sáng key light và mật độ chi tiết giữa actor, prop và background.",
+      "weightType": "independent_gate"
+    },
+    {
+      "id": "assetProductionReadiness",
+      "name": "Asset Production Readiness",
+      "prompt": "Sẵn sàng đưa vào game: đủ hướng nhìn/trạng thái cần thiết, pivot/footprint/alpha chuẩn, không phụ thuộc chỉnh tay mỗi frame.",
+      "weightType": "independent_gate"
+    }
+  ],
+  "assetFamilies": {
+    "character": {
+      "required": [
+        "silhouette",
+        "proportions",
+        "anatomy",
+        "functionalIdentity",
+        "pixelClusters",
+        "materials",
+        "colorHarmony",
+        "pose",
+        "contextReadability",
+        "styleConsistency",
+        "assetProductionReadiness"
+      ],
+      "optional": ["animation"],
+      "notApplicable": []
+    },
+    "animation": {
+      "required": [
+        "silhouette",
+        "proportions",
+        "anatomy",
+        "functionalIdentity",
+        "pixelClusters",
+        "pose",
+        "animation",
+        "contextReadability",
+        "styleConsistency",
+        "assetProductionReadiness"
+      ],
+      "optional": ["materials", "colorHarmony"],
+      "notApplicable": []
+    },
+    "prop": {
+      "required": [
+        "silhouette",
+        "proportions",
+        "functionalIdentity",
+        "pixelClusters",
+        "materials",
+        "colorHarmony",
+        "contextReadability",
+        "styleConsistency",
+        "assetProductionReadiness"
+      ],
+      "optional": ["pose"],
+      "notApplicable": ["anatomy", "animation"]
+    },
+    "terrain": {
+      "required": [
+        "pixelClusters",
+        "materials",
+        "colorHarmony",
+        "contextReadability",
+        "styleConsistency",
+        "assetProductionReadiness"
+      ],
+      "optional": ["functionalIdentity", "silhouette"],
+      "notApplicable": ["anatomy", "pose", "animation"]
+    },
+    "environment": {
+      "required": [
+        "silhouette",
+        "proportions",
+        "functionalIdentity",
+        "pixelClusters",
+        "materials",
+        "colorHarmony",
+        "contextReadability",
+        "styleConsistency",
+        "assetProductionReadiness"
+      ],
+      "optional": ["animation"],
+      "notApplicable": ["anatomy", "pose"]
+    },
+    "ui": {
+      "required": [
+        "silhouette",
+        "functionalIdentity",
+        "pixelClusters",
+        "colorHarmony",
+        "contextReadability",
+        "styleConsistency",
+        "assetProductionReadiness"
+      ],
+      "optional": ["materials"],
+      "notApplicable": ["anatomy", "pose", "animation", "proportions"]
+    },
+    "vfx": {
+      "required": [
+        "silhouette",
+        "pixelClusters",
+        "colorHarmony",
+        "animation",
+        "contextReadability",
+        "styleConsistency",
+        "assetProductionReadiness"
+      ],
+      "optional": ["functionalIdentity"],
+      "notApplicable": ["anatomy", "proportions", "materials", "pose"]
+    }
+  },
+  "criticalDefects": [
+    {
+      "code": "ANATOMY_BROKEN",
+      "description": "Khớp biến dạng, chi đứt đoạn, mặt/đầu mất cấu trúc hoặc bàn chân gãy contact."
+    },
+    {
+      "code": "SILHOUETTE_UNREADABLE_1X",
+      "description": "Ở kích thước native 1× không thể nhận ra vật thể/nhân vật hoặc dính bệt vào nền."
+    },
+    {
+      "code": "GRIP_DISCONNECTED_OR_BLOB",
+      "description": "Bàn tay thành khối cầu 4×4 không thể hiện tư thế nắm hoặc đạo cụ gắn lệch khớp tay."
+    },
+    {
+      "code": "TEMPLATE_CLONE_IDENTITY",
+      "description": "Hai nghề nghiệp khác nhau chia sẻ cùng khung đầu/thân/dáng nên không phân biệt được nếu bỏ đạo cụ."
+    },
+    {
+      "code": "DIRECTIONAL_FACING_LOCK",
+      "description": "Nhân vật chỉ có một hướng nhìn khiến gameplay phải đi giật lùi hoặc trượt ngang."
+    },
+    {
+      "code": "MATERIAL_CLUSTER_NOISE",
+      "description": "Bề mặt bị loang cụm pixel từ shading phẳng theo trục UV hoặc viền đen đồng nhất ăn mất chi tiết nhỏ."
+    },
+    {
+      "code": "OUTLINE_MISMATCH_IN_SCENE",
+      "description": "Actor/prop có viền đậm nổi rời rạc như sticker đè lên nền/công trình không cùng ngôn ngữ viền."
+    },
+    {
+      "code": "GAMEPLAY_OCCLUSION_OR_BOUNDS",
+      "description": "Nhân vật hoặc prop che mất vùng chức năng (như khe nước) hoặc vi phạm bounds/clearance."
+    }
+  ]
+}
