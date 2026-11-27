@@ -64,3 +64,5 @@ scripts/e8-unity/** text eol=lf
 benchmarks/fixtures/e84/*.json text eol=lf
 benchmarks/results/e83/SHA256SUMS text eol=lf
 benchmarks/results/e83/*.xml text eol=lf
+benchmarks/fixtures/e91/*.json text eol=lf
+benchmarks/results/e91/SHA256SUMS text eol=lf

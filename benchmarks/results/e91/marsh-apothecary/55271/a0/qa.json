@@ -1,0 +1,211 @@
+{
+  "id": "a0",
+  "stage": "a0",
+  "shared": true,
+  "native": "1f2a6717a077f02fbdaa6a690374efa9fbe80f13a8f069d0bef5c11848964a58",
+  "changes": null,
+  "sourceRevision": "4b34ec262b33665a389d9ff3435423c64fdb07e7",
+  "seed": 55271,
+  "checks": {
+    "bounds": {
+      "left": 11,
+      "top": 5,
+      "right": 57,
+      "bottom": 57
+    },
+    "pixels": 1266,
+    "isolatedOutline": 0,
+    "place": [
+      32,
+      58
+    ],
+    "torsoWidth": 18,
+    "legGapRows": 6,
+    "handTests": [
+      {
+        "id": "tray",
+        "hand": "far-hand",
+        "socket": [
+          50,
+          36
+        ],
+        "overlap": 10,
+        "join": 9,
+        "shown": 128,
+        "occludes": true,
+        "total": 138
+      },
+      {
+        "id": "ladle",
+        "hand": "near-hand",
+        "socket": [
+          22,
+          42
+        ],
+        "overlap": 12,
+        "join": 12,
+        "shown": 44,
+        "occludes": true,
+        "total": 56
+      }
+    ],
+    "centerX": 33.7,
+    "outline": {
+      "lit": 96,
+      "shadow": 140,
+      "contact": 20,
+      "internal": 4
+    }
+  },
+  "scenes": [
+    {
+      "light": "day",
+      "edge": {
+        "samples": 314,
+        "weak": 21,
+        "p10": 52
+      },
+      "visible": 1266,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    },
+    {
+      "light": "night",
+      "edge": {
+        "samples": 314,
+        "weak": 32,
+        "p10": 15
+      },
+      "visible": 1266,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    }
+  ],
+  "hypothesis": "Production v3 silhouette and M2P, with shared E7.5 equipment proxies at the identical sockets.",
+  "techniqueStatus": "VERIFIED_BY_TEST",
+  "parts": {
+    "far-thigh": {
+      "role": "far-coat",
+      "maskSha256": "86ef9d88fa1f52f9cf114583dafe0209d84f54c4c452ef89d0c49420563eca08",
+      "owner": "#456678"
+    },
+    "far-shin": {
+      "role": "far-coat",
+      "maskSha256": "6bc21b8757aa0d26bc279d14108e20c2964b3fea6413da65c30010851a6a5a38",
+      "owner": "#46ff91"
+    },
+    "far-boot": {
+      "role": "far-coat",
+      "maskSha256": "334982634067af5e8136bf903acb83faef0e488e99972a27095657f1805dad6b",
+      "owner": "#4898aa"
+    },
+    "far-upper-arm": {
+      "role": "far-coat",
+      "maskSha256": "b80076f0df124b8ee762884a6014af0b12e6c16465dd428d7ca26fbffbbb44c2",
+      "owner": "#4a31c3"
+    },
+    "far-forearm": {
+      "role": "far-coat",
+      "maskSha256": "466351260adcc0e48a269665b413380c972208b56e45bce25b13f62a0c229b22",
+      "owner": "#4bcadc"
+    },
+    "far-tool": {
+      "role": "metal",
+      "maskSha256": "a297558074f5f6e265cd55df7a9dfb6db6bb3fa1e2f0aca90793da8b51c3ed83",
+      "owner": "#4d63f5"
+    },
+    "far-hand": {
+      "role": "skin",
+      "maskSha256": "78409eeb10e7dcacfc26144df6482f5bedbe3c7563193a85976edc47a08e78c3",
+      "owner": "#4efd0e"
+    },
+    "near-thigh": {
+      "role": "coat",
+      "maskSha256": "e556c172ed88cbf5ac409d7031063d974faeb33f6f9662c4199d3cc6c333470e",
+      "owner": "#509627"
+    },
+    "near-shin": {
+      "role": "coat",
+      "maskSha256": "a81d38894abf4b629ae9b113da5d0e2e1fff65a90fff280872137c606587e76f",
+      "owner": "#522f40"
+    },
+    "near-boot": {
+      "role": "coat",
+      "maskSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+      "owner": "#53c859"
+    },
+    "hips": {
+      "role": "coat",
+      "maskSha256": "244dd25c5a2a7584f7546ef7359d9717e9904adfc299aec3607c73037db2506d",
+      "owner": "#556172"
+    },
+    "jacket": {
+      "role": "coat",
+      "maskSha256": "e2a2c25517afe3b66b118f20a9efa60d3303e11c3b68bb857a029c837cd14af4",
+      "owner": "#56fa8b"
+    },
+    "strap": {
+      "role": "coat",
+      "maskSha256": "0f73475893b4219e208c4ba238235280b2e28fee8ff0b489dcefa683defc146b",
+      "owner": "#5893a4"
+    },
+    "satchel": {
+      "role": "coat",
+      "maskSha256": "beb4b29a781cf22a8b3fe1fc99ecef96c8d0e0893a3b4afea5e4a90da72704b1",
+      "owner": "#5a2cbd"
+    },
+    "neck": {
+      "role": "skin",
+      "maskSha256": "885e8d92ff676204e02e6b8a09fa2f29d62e4ed61e3bcc369ef5f06830e5d7d9",
+      "owner": "#5bc5d6"
+    },
+    "head": {
+      "role": "skin",
+      "maskSha256": "c3347c018ba7ee02d42b3ebdf5b9419824f33bdc9ec3136b0b0495f46be33506",
+      "owner": "#5d5eef"
+    },
+    "hood": {
+      "role": "cap",
+      "maskSha256": "6f0de606830d6c141de375efbfa0d160b0daa81fb0e775b61a81ab454c69565e",
+      "owner": "#5ef808"
+    },
+    "near-upper-arm": {
+      "role": "coat",
+      "maskSha256": "51f48506af4c813e1a314176f46ec426bdaf109c75eb2633fe86e9d16c595e49",
+      "owner": "#609121"
+    },
+    "near-forearm": {
+      "role": "coat",
+      "maskSha256": "8970e8084922dafa807af5d9bbf16b164500483636295c223f0074d5be2183e9",
+      "owner": "#622a3a"
+    },
+    "near-tool": {
+      "role": "metal",
+      "maskSha256": "dacce0d83b0786897e3b3d63d7dcd8f68a3ed6e969d03e4c4520e5ed25fa2d98",
+      "owner": "#63c353"
+    },
+    "near-hand": {
+      "role": "skin",
+      "maskSha256": "2a22f6270d06a64a6d2c1603dcb4591d8e9ece5b4fd59686dffd5244d548f030",
+      "owner": "#655c6c"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "lumasprite.e91.static-review.v1",
+  "reviewType": "STATIC_ART_REVIEW",
+  "status": "HUMAN_REVIEW_PENDING",
+  "reviewer": "",
+  "reviewedAt": "",
+  "nativeInspectionConfirmed": false,
+  "reviewChoices": [
+    "A0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "NEITHER",
+    "REQUEST_REVISION"
+  ],
+  "cases": [
+    {
+      "id": "harbor-lockkeeper",
+      "chosenVariant": "",
+      "comparison": "",
+      "scores": {
+        "silhouette": null,
+        "proportions": null,
+        "anatomy": null,
+        "grip": null,
+        "pixelClusters": null,
+        "materials": null,
+        "contextReadability": null,
+        "styleConsistency": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "marsh-apothecary",
+      "chosenVariant": "",
+      "comparison": "",
+      "scores": {
+        "silhouette": null,
+        "proportions": null,
+        "anatomy": null,
+        "grip": null,
+        "pixelClusters": null,
+        "materials": null,
+        "contextReadability": null,
+        "styleConsistency": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    }
+  ],
+  "decision": "",
+  "openProductionBlockers": [
+    "DIRECTIONAL_FACING_LOCK",
+    "ANATOMY_BROKEN:DYNAMIC",
+    "GRIP_DISCONNECTED_OR_BLOB:DYNAMIC",
+    "GAMEPLAY_OCCLUSION_OR_BOUNDS:RUNTIME"
+  ]
+}

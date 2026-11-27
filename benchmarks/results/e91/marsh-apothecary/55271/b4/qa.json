@@ -1,0 +1,205 @@
+{
+  "id": "b4",
+  "stage": "b4",
+  "shared": false,
+  "native": "31c4fa0c90108dffce0f9a8ec4baefe1771f309ae6a4a6523460bca8181bb49a",
+  "changes": {
+    "added": 0,
+    "removed": 0,
+    "paint": 31
+  },
+  "sourceRevision": "4b34ec262b33665a389d9ff3435423c64fdb07e7",
+  "seed": 55271,
+  "checks": null,
+  "scenes": [
+    {
+      "light": "day",
+      "edge": {
+        "samples": 348,
+        "weak": 14,
+        "p10": 52
+      },
+      "visible": 1322,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    },
+    {
+      "light": "night",
+      "edge": {
+        "samples": 348,
+        "weak": 20,
+        "p10": 23
+      },
+      "visible": 1322,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    }
+  ],
+  "hypothesis": "Retint selected upper-left outline pixels; preserve material ownership, geometry and all contact/dark edges.",
+  "techniqueStatus": "TECHNICAL_FAILURE",
+  "parts": {
+    "far-thigh": {
+      "role": "far-trousers",
+      "maskSha256": "a026d8986ed6596400da79cfcfe89bae644319d732724dcc451b50ca5ff74751",
+      "owner": "#456678"
+    },
+    "far-shin": {
+      "role": "far-trousers",
+      "maskSha256": "2652fdbd6f246d9b4e044c8a693927739ab78cfe2524dbed383ba19020306f13",
+      "owner": "#46ff91"
+    },
+    "far-boot": {
+      "role": "leather",
+      "maskSha256": "334982634067af5e8136bf903acb83faef0e488e99972a27095657f1805dad6b",
+      "owner": "#4898aa"
+    },
+    "near-thigh": {
+      "role": "trousers",
+      "maskSha256": "7682d125dd4262a09974eeca760c80fdd5c6252656a50774e7a2bba185a4bb6a",
+      "owner": "#4a31c3"
+    },
+    "near-shin": {
+      "role": "trousers",
+      "maskSha256": "bd54a9da231e5edf2923dcf74e4ec5ff3ae2285649f2de07a0008b83d5e93d6b",
+      "owner": "#4bcadc"
+    },
+    "near-boot": {
+      "role": "leather",
+      "maskSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+      "owner": "#4d63f5"
+    },
+    "pelvis": {
+      "role": "trousers",
+      "maskSha256": "a11f5e6cd1840d7f52a788462cc4984d8735c3767a6a4cbae71aacd2bf2deb03",
+      "owner": "#4efd0e"
+    },
+    "far-upper-arm": {
+      "role": "far-coat",
+      "maskSha256": "26623586be8a0c380685d63478db7dd7dd9524563bbe8f135448ca9759516bbf",
+      "owner": "#509627"
+    },
+    "far-forearm": {
+      "role": "far-coat",
+      "maskSha256": "69ece89f3e79abe9791005e283f5e3db73640a441a6c296f16a47bb615b294c7",
+      "owner": "#522f40"
+    },
+    "far-tool-shaft": {
+      "role": "leather",
+      "maskSha256": "9fc91e7d0985fb5e79112cbc2614fdda787f9d7a01f9da49f9347a45e5348c65",
+      "owner": "#53c859"
+    },
+    "far-tool-tray": {
+      "role": "leather",
+      "maskSha256": "2205f2365e5a87355f0737f8bcd81a108a1c5ba85907d682c45b2e7f65e180a4",
+      "owner": "#556172"
+    },
+    "far-tool-bottle": {
+      "role": "glass",
+      "maskSha256": "2126803b89dead5352f64f7299ec7499078a8f6ef2e1e356e00bfa89948dbbde",
+      "owner": "#56fa8b"
+    },
+    "far-tool-cork": {
+      "role": "leather",
+      "maskSha256": "1d9df84af6214c065f6946bc5e89adf8bd86ec6ae9e85fe7090465cdf0cc93e9",
+      "owner": "#5893a4"
+    },
+    "far-tool-small-bottle": {
+      "role": "glass",
+      "maskSha256": "1991737d8815726e5fc870e78a15d23663303a57f1a7d3b94897660749e7d336",
+      "owner": "#5a2cbd"
+    },
+    "far-hand": {
+      "role": "skin",
+      "maskSha256": "bfdbdbef9f69dbe1e1176a4f861f402ddaa579bd69b46e5054618e504ca2df01",
+      "owner": "#5bc5d6"
+    },
+    "torso": {
+      "role": "coat",
+      "maskSha256": "0d0a6e55494c24e65201aed28bf73eb7f22289977488152749f9dce576684e3f",
+      "owner": "#5d5eef"
+    },
+    "a-line-tunic": {
+      "role": "coat",
+      "maskSha256": "35181513467451cc425d3fef65fbaadcd0c05e7280361f98208b83b22356b271",
+      "owner": "#5ef808"
+    },
+    "shawl": {
+      "role": "cap",
+      "maskSha256": "0756b5befe70ce4bd8e23cc8d9684765f93202de0978f7eb447705bbb85c1a61",
+      "owner": "#609121"
+    },
+    "sash": {
+      "role": "leather",
+      "maskSha256": "f37021d3be182f8dd371a5fca62f34761488a34b60e90c4dd8a0f7b99435c431",
+      "owner": "#622a3a"
+    },
+    "neck": {
+      "role": "skin",
+      "maskSha256": "559a48fa56b06735978b2f4289db8c9097b1907238d4fe1297a6ff8c9900cf4e",
+      "owner": "#63c353"
+    },
+    "head": {
+      "role": "skin",
+      "maskSha256": "ee5de40cc71050203d7d828a54d7f82e38655bcb5b7ab26cc1bca4f86e9c5dde",
+      "owner": "#655c6c"
+    },
+    "hair": {
+      "role": "hair",
+      "maskSha256": "5fd50f09c994dd029e8620d219d079fc1a2ee75463d22f13df8691301d8cf342",
+      "owner": "#66f585"
+    },
+    "bun": {
+      "role": "hair",
+      "maskSha256": "5ff9e36cf73b41c60b097a2d7b0edca7655c9863a2e34ad68423a481fa3323e8",
+      "owner": "#688e9e"
+    },
+    "near-upper-arm": {
+      "role": "coat",
+      "maskSha256": "f08860eb9824394a93fe8e152be45e7153b40ff5f92aa6deec8fb8e46b15a115",
+      "owner": "#6a27b7"
+    },
+    "near-forearm": {
+      "role": "coat",
+      "maskSha256": "6c0a79247f29365ecc9c2a132ed9b76eeced111d961ab0ec892603427e57ce2c",
+      "owner": "#6bc0d0"
+    },
+    "near-tool-shaft": {
+      "role": "leather",
+      "maskSha256": "9cf339085c4c428c01eb5892f6ea3cbd121061f394eddcbe0195e2f94e23accc",
+      "owner": "#6d59e9"
+    },
+    "near-tool-cup": {
+      "role": "metal",
+      "maskSha256": "d9ccc70dd9a37b5006a65e3051084824b507d92b2f31dcaa79530955d8b22196",
+      "owner": "#6ef302"
+    },
+    "near-tool-cup-inside": {
+      "role": "glass",
+      "maskSha256": "743a402bd45a0523bb628fb8c4d357eab66a844ebfca097e255ccc9a56429a68",
+      "owner": "#708c1b"
+    },
+    "near-hand": {
+      "role": "skin",
+      "maskSha256": "2a86d4f9f58f45cdebf570d4c51665ee676c4d54850778a1ff2390534e0b63c1",
+      "owner": "#722534"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "procedure": "Frozen after development and before first Marsh Apothecary render.",
+  "selected": "b4",
+  "source": {
+    "benchmarks/fixtures/e91/study.json": "d85e40db56e71970b33b68be9d873c4e56cf0455c7e9d96aee826e2455199799",
+    "src/experiments/character-v4.ts": "c832ab7028a6c78415b7a0870d4f982ef51a5abc490b5fc88870a40557b5ef99",
+    "scripts/benchmark-e91.ts": "d5477ef264123deff6935b0dde80ed9c160aebb86294f08205cc9de556000a5c",
+    "benchmarks/fixtures/e75r/ridge.json": "62dd67dc7472c72c063e75d46abafa062cb998a9aaf1638d1928946e66b5709f",
+    "benchmarks/fixtures/e75r/marsh.json": "d86fd70363e791ba47d014e9d29dd06f94b8e7c7792ac7fd785960c2dfc70e45",
+    "benchmarks/fixtures/e73/art-direction-v1.json": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c",
+    "benchmarks/fixtures/e73/tidegate.json": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b",
+    "docs/reports/e90-art-quality-audit.md": "3839df75a20154cd6138e992ebd79b57dea0bea8b5015233cba8657fd37a12b0",
+    "docs/art-quality/art-quality-rubric-v2.json": "44b478c24c4fa5d4d00d3618a7e48947f709d3ca50f172a9cb48148583da81eb"
+  },
+  "developmentManifestSha256": "db090b644f56142fcbf52304b54a7be1edbcdb09dc55626d9c0eaa152622d28a"
+}
