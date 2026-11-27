@@ -1,0 +1,2351 @@
+{
+  "id": "stormwatch",
+  "role": "development",
+  "seed": 4471,
+  "scene": "Stormwatch Supply Station",
+  "description": "A roofed RPG supply courtyard for servicing weather signals. The technician carries a warm inspection lamp beside a compact hooded weather display.",
+  "device": "Compact Weather Signal Device",
+  "lock": {
+    "version": 1,
+    "kind": "lumasprite-character-shape-lock",
+    "candidate": "stormwatch",
+    "checkpoint": "a90ab95626f1cfc13dfe3723d11889181fb1679e",
+    "characterSpecVersion": 2,
+    "geometryRevision": 2,
+    "canvas": {
+      "w": 64,
+      "h": 64
+    },
+    "poseIntent": "standing-hold",
+    "source": {
+      "geometrySha256": "d5b6e3a5ff1509d42bceb3b55faf0f9bce2a747b4d80cfc93a39113a68075c5e",
+      "specSha256": "9b1c2ebe5466c582741e2c019a43b7a53c690b77e30bb7d053cc9bcb44434150",
+      "flatPngSha256": "41a927f656455a3e2b231d74db0981e2619781fa1be3f2dd45ba0e84f748e863",
+      "silhouettePngSha256": "76c312937a8cd3b63925f049a6e524c45ea6532c3d2cf0040ae2c7c22be5cc7c",
+      "flatRgbaSha256": "d8fe33b9335f7ccb02b9ece477e3f83ca7691c65673297e912abd1e4d6d8ccff"
+    },
+    "silhouetteAlphaSha256": "9cc64ab38e79d903f9c07308c33c8677068a5d40a7dca4e8980a9df0f01c8beb",
+    "landmarks": {
+      "crown": {
+        "point": [
+          34,
+          15
+        ],
+        "partId": "head"
+      },
+      "neck": {
+        "point": [
+          32,
+          20
+        ],
+        "partId": "neck"
+      },
+      "chest": {
+        "point": [
+          31,
+          25
+        ],
+        "partId": "jacket"
+      },
+      "pelvis": {
+        "point": [
+          31,
+          37
+        ],
+        "partId": "hips"
+      },
+      "far-shoulder": {
+        "point": [
+          36,
+          21
+        ],
+        "partId": "far-upper-arm"
+      },
+      "far-elbow": {
+        "point": [
+          38,
+          26
+        ],
+        "partId": "far-forearm"
+      },
+      "far-wrist": {
+        "point": [
+          37,
+          34
+        ],
+        "partId": "far-forearm"
+      },
+      "far-palm": {
+        "point": [
+          36,
+          36
+        ],
+        "partId": "far-hand"
+      },
+      "far-hip": {
+        "point": [
+          35,
+          36
+        ],
+        "partId": "far-thigh"
+      },
+      "far-knee": {
+        "point": [
+          38,
+          45
+        ],
+        "partId": "far-shin"
+      },
+      "far-ankle": {
+        "point": [
+          39,
+          53
+        ],
+        "partId": "far-boot"
+      },
+      "far-ground": {
+        "point": [
+          39,
+          56
+        ],
+        "partId": "far-boot"
+      },
+      "near-shoulder": {
+        "point": [
+          24,
+          25
+        ],
+        "partId": "near-upper-arm"
+      },
+      "near-elbow": {
+        "point": [
+          32,
+          36
+        ],
+        "partId": "near-forearm"
+      },
+      "near-wrist": {
+        "point": [
+          46,
+          33
+        ],
+        "partId": "near-forearm"
+      },
+      "near-palm": {
+        "point": [
+          49,
+          33
+        ],
+        "partId": "near-hand"
+      },
+      "near-hip": {
+        "point": [
+          27,
+          38
+        ],
+        "partId": "near-thigh"
+      },
+      "near-knee": {
+        "point": [
+          28,
+          45
+        ],
+        "partId": "near-shin"
+      },
+      "near-ankle": {
+        "point": [
+          27,
+          54
+        ],
+        "partId": "near-boot"
+      },
+      "near-ground": {
+        "point": [
+          27,
+          57
+        ],
+        "partId": "near-boot"
+      },
+      "grip-anchor": {
+        "point": [
+          50,
+          34
+        ],
+        "partId": "lantern"
+      }
+    },
+    "links": [
+      {
+        "from": "crown",
+        "to": "neck"
+      },
+      {
+        "from": "neck",
+        "to": "chest"
+      },
+      {
+        "from": "chest",
+        "to": "pelvis"
+      },
+      {
+        "from": "chest",
+        "to": "far-shoulder"
+      },
+      {
+        "from": "far-shoulder",
+        "to": "far-elbow"
+      },
+      {
+        "from": "far-elbow",
+        "to": "far-wrist"
+      },
+      {
+        "from": "far-wrist",
+        "to": "far-palm"
+      },
+      {
+        "from": "pelvis",
+        "to": "far-hip"
+      },
+      {
+        "from": "far-hip",
+        "to": "far-knee"
+      },
+      {
+        "from": "far-knee",
+        "to": "far-ankle"
+      },
+      {
+        "from": "far-ankle",
+        "to": "far-ground"
+      },
+      {
+        "from": "chest",
+        "to": "near-shoulder"
+      },
+      {
+        "from": "near-shoulder",
+        "to": "near-elbow"
+      },
+      {
+        "from": "near-elbow",
+        "to": "near-wrist"
+      },
+      {
+        "from": "near-wrist",
+        "to": "near-palm"
+      },
+      {
+        "from": "pelvis",
+        "to": "near-hip"
+      },
+      {
+        "from": "near-hip",
+        "to": "near-knee"
+      },
+      {
+        "from": "near-knee",
+        "to": "near-ankle"
+      },
+      {
+        "from": "near-ankle",
+        "to": "near-ground"
+      },
+      {
+        "from": "near-wrist",
+        "to": "grip-anchor"
+      }
+    ],
+    "gripAnchor": [
+      50,
+      34
+    ],
+    "groundPivot": [
+      30,
+      59
+    ],
+    "projectedGround": {
+      "near": 59,
+      "far": 58
+    },
+    "layerOrder": [
+      "far-thigh",
+      "far-shin",
+      "far-boot",
+      "far-upper-arm",
+      "far-forearm",
+      "far-hand",
+      "near-thigh",
+      "near-shin",
+      "near-boot",
+      "satchel",
+      "hips",
+      "jacket",
+      "strap",
+      "neck",
+      "head",
+      "cap",
+      "near-upper-arm",
+      "near-forearm",
+      "lantern",
+      "near-hand"
+    ],
+    "bodyParts": {
+      "far-thigh": {
+        "geometrySha256": "3df3035a0cfb3a330cbdc1ac7e866327273c30cb43eb282d8be2ab8f69749b3f",
+        "sourceRgbaSha256": "a5ba64d760834420060818802f1ca6dbd39f96ce1484a56b4bd4fe19dd16482a",
+        "alphaSha256": "066a0dc1c276f4eb80beaf3e0d068096e02337bc905d48ad244a8d9a25336694",
+        "pixels": 78
+      },
+      "far-shin": {
+        "geometrySha256": "8ddd357391cda674b4e4e7e7cd8d09ed6abf591dad58bd4aa86333414a0c8351",
+        "sourceRgbaSha256": "4d3b2fbda8e547f45530e9e9942e65892d0c4a2af7a07ffa73e2e32bcf061803",
+        "alphaSha256": "b190864784b6d415680a21b0b9bed6f6feaab7d134dbd756f0d7afa905b0ceb8",
+        "pixels": 51
+      },
+      "far-boot": {
+        "geometrySha256": "1d481166ca2dcd30bc7b3b479785b21bf45780459999d5b0db575a8cfffaa161",
+        "sourceRgbaSha256": "c7b97b3bce87c2f2008eac59366060bc271fc7aabedd74a8ed9d3d8606dc7ac4",
+        "alphaSha256": "629d211d3eaafdcf93ca52379a6b5a4c5a0fdadbaba0a8d44a66390e91e1f832",
+        "pixels": 40
+      },
+      "far-upper-arm": {
+        "geometrySha256": "31446d84bab0eb58c8b5691ceed7d6d0fdb48ddc4e6eae129c379237490a825e",
+        "sourceRgbaSha256": "454f23e8ecbf26a2f00d28731f221a6a13d6d89052beae80e2be98ddce5078e4",
+        "alphaSha256": "a62d2ded5de5055d7a10f183b64873c0134f67596d7da6cee4397334b0f74840",
+        "pixels": 40
+      },
+      "far-forearm": {
+        "geometrySha256": "650fa2e08fb4f9a2411b02c701710cc7672833b3458a23cea1150f212d1443e4",
+        "sourceRgbaSha256": "1981c39a98274151ef74006ed7860db4d12940a79ea2dfa45e956105114ad11c",
+        "alphaSha256": "0a1a98b4c3bc545567e4ae169aeaeebec7435c46ad69a0e2e321a2ba54964b0b",
+        "pixels": 41
+      },
+      "far-hand": {
+        "geometrySha256": "3049d5f3fd19d0ea02512c6b0462225fc872b86505da27833a3beacf1be573c6",
+        "sourceRgbaSha256": "035d20c9ab0feccda01998660c76ea813ee132b2cecccf4002c6dddece86c62d",
+        "alphaSha256": "e552a60b27d3de602320b5f8e57a2d88999a569f3cd355f97d0e8cba63d3f3f5",
+        "pixels": 16
+      },
+      "near-thigh": {
+        "geometrySha256": "a796db10797f1f9ecee26c5daf2b778d4cd830f4a2573ba15cd5b3c75f53c5ad",
+        "sourceRgbaSha256": "eb4998fad74883be33172a2a98d3defcb771244742f96a72928e99d238b83f86",
+        "alphaSha256": "0b63f988078c45531dd89fcfaf11cffc0c34a5399543a8a0388005885eac2e62",
+        "pixels": 77
+      },
+      "near-shin": {
+        "geometrySha256": "0fc4e1109f804201773849c84e425b3f37fdf274e64081efb9afa3771e62438c",
+        "sourceRgbaSha256": "3e22d838ee15cf51b6f298f051def5b65abddf4ca7029785f6f927fe675adafe",
+        "alphaSha256": "e49b7e0a663b3845ef33522b62e5673e57a899e697e82c7be794a4e823115784",
+        "pixels": 77
+      },
+      "near-boot": {
+        "geometrySha256": "4bef65c1829be1f96bac62b00ac7dc39870e9fe677df4f35da1719b807921aa5",
+        "sourceRgbaSha256": "70ca784624074c8be32148713584d623c70fe158f6c029219f8a79df6f36b881",
+        "alphaSha256": "132fdf6bd4d97bf104efdf84ba5d0c8fcc8733bf0ffa5bea79f68b938565931f",
+        "pixels": 46
+      },
+      "satchel": {
+        "geometrySha256": "e10060e9c4a60a1a1742c49e5c338c85695241229d77510f4ca8925b902c5eb4",
+        "sourceRgbaSha256": "f6d8a26f1a33590d5b80a7907d109d27ef613b0f044af3c1a4bf88e08af88f20",
+        "alphaSha256": "fd1595d332fa82a9f32c6f1663b185b1ec38a5b7081834c96de0f1aa71df0b70",
+        "pixels": 64
+      },
+      "hips": {
+        "geometrySha256": "cd5faa5c407ed2cd203570b2a9d5cc4b34ff7ae52b4242d16560a7c71d745375",
+        "sourceRgbaSha256": "dab093aecb6ab51a51e0d030a531163d5006bef6ca0a3b90078372b8329dbe92",
+        "alphaSha256": "40671a45919ca88f8f9c866da59ec8872fe410e62f9eb5ca7524d6580bd0a54e",
+        "pixels": 85
+      },
+      "jacket": {
+        "geometrySha256": "f5d80afc4bb2f33d2eb2519d92c1727bce300b330e830e7b762f20943ee37adf",
+        "sourceRgbaSha256": "d35677df81472f61555923ca29ef78a0bd9d90b9d10e31d7f8a48cfdd716fb81",
+        "alphaSha256": "023c27b9361c100e3cf6fbd58f5814c9a380e1150b6e720a9200b32e4d8162f1",
+        "pixels": 263
+      },
+      "strap": {
+        "geometrySha256": "6510a6de1cd594ffe95b464533337de80c7d90c896e439ff2638dda4f5576ff4",
+        "sourceRgbaSha256": "54d01910ee00e8e2412d949ba34a0dd5337cfe37382b0aff22d443293553373a",
+        "alphaSha256": "299b159ff7b8e865a128a8aa6d041aed60354a2d9ef89395efec5f1031fbb2da",
+        "pixels": 34
+      },
+      "neck": {
+        "geometrySha256": "81d003fc5259ad04d1ef09ad3aa8830e8c756cc26eabe41afe77c56bff09ec93",
+        "sourceRgbaSha256": "1a5d4a78b3a0bf832be7aae4235fefd7908a3c606e4426517ccd10bc0a8e6edc",
+        "alphaSha256": "f977a4cb5fd8c9743f04c382259b98078e99118be99022cd0f2e131914f10c11",
+        "pixels": 34
+      },
+      "head": {
+        "geometrySha256": "650a1a09c5306879d0c05d67db38b6be53dd8d6af6ee2ed5736bfd7cba519811",
+        "sourceRgbaSha256": "43a66846e7799d35448d4a3e67ade0420e21a13ef5dcf2750f3848eebe76eab6",
+        "alphaSha256": "851f8a59d25d16292b687b9254421654d860613187d9dd9f4f5ffa67fda04f2a",
+        "pixels": 134
+      },
+      "cap": {
+        "geometrySha256": "91b2bf3b1f6651025896dd84deb6224c490128778b716bcab1bbd1e1a9c638c1",
+        "sourceRgbaSha256": "8e3131ccc100efb68fe477d4c0a4cb2c5f186157b7f3dd45c928590e17ca34f3",
+        "alphaSha256": "48318377e7460048d0d06b351a7f786d63e86f07774e62e674c2d9d92f841bae",
+        "pixels": 100
+      },
+      "near-upper-arm": {
+        "geometrySha256": "94b279ada3248c9ffc2f644a5d03854cbd8a3d93f2bf2b783da22f56ce5d481e",
+        "sourceRgbaSha256": "b1e62e98abedef94d2d93f1d6d5495d665bbed7c460d4bc3a7810c38764e4cac",
+        "alphaSha256": "c378f18f1b85866ae573208144578f512af9e06444d0e0f88e27c6bc07bd7548",
+        "pixels": 98
+      },
+      "near-forearm": {
+        "geometrySha256": "01ec8207d4431724301d59cbb4e6b9262eeab412283ff5593be6a549817a4262",
+        "sourceRgbaSha256": "4305d074af292390eb9fa42f816f595e7a784517374bbee3c39fdb4a7d9375fd",
+        "alphaSha256": "9e2416f615a2fd4e2a873ba3103edd6f77b9d8ef781c9717f206db5eeb6fd7fa",
+        "pixels": 82
+      },
+      "lantern": {
+        "geometrySha256": "dd2bc1e0cb865bc20ce651382b8d3757cea390688eadbb2b22cb7c56c48604fa",
+        "sourceRgbaSha256": "3bee2af28c77fca6dadefd6370f63a88ace5a9fa3cae7876ead1234bc7deaeab",
+        "alphaSha256": "99778701eaadb1f4930ee967cea04d98fca38b46fbcaa6553dcd522d6cdf36a0",
+        "pixels": 78
+      },
+      "near-hand": {
+        "geometrySha256": "3236aa2e4274ece489d32e2f4aa26ae6fd8aea9929d9580a6dff5303e15eee4f",
+        "sourceRgbaSha256": "feb44afebb5d03fa26f1810d4216845d0aa7c2438663725647b61ff164421dbb",
+        "alphaSha256": "f3b4ba2e269717e9ea102eea116852715056e7cbbeb1ed47bd2480e4e0bb5519",
+        "pixels": 27
+      }
+    },
+    "lockedRegions": {
+      "format": "uint8-alpha-row-major",
+      "silhouette": {
+        "alphaSha256": "9cc64ab38e79d903f9c07308c33c8677068a5d40a7dca4e8980a9df0f01c8beb",
+        "pixels": 1090
+      },
+      "lowerLegClearance": {
+        "alphaSha256": "39ddacb349fdec0d79a0f58a485e92758f98717c89c3e806282404b82ee78391",
+        "pixels": 48
+      },
+      "gripContact": {
+        "alphaSha256": "9887b1920794f36fc2e1495ca007842a972cf4111b2e9da7121f5b107d7424e1",
+        "pixels": 7
+      },
+      "handleOpening": {
+        "alphaSha256": "52bafa71ff79671c00f908ec73447d3b3378584e1dde3a5999775ff1c39dce0a",
+        "pixels": 2
+      },
+      "bootSoles": {
+        "alphaSha256": "311168f30d1f68207f43a8ca1bfd67f8cf7fde29c6ddc7c4c7f432909f60d3e2",
+        "pixels": 17
+      }
+    }
+  },
+  "geometry": {
+    "day": {
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      },
+      "lights": "upper-left",
+      "portal": {
+        "at": [
+          160,
+          124
+        ],
+        "points": [
+          [
+            147,
+            120
+          ],
+          [
+            173,
+            120
+          ],
+          [
+            173,
+            128
+          ],
+          [
+            147,
+            128
+          ]
+        ]
+      },
+      "occlusion": [
+        {
+          "id": "station-shell",
+          "kind": "building",
+          "at": [
+            96,
+            124
+          ],
+          "left": 0,
+          "top": 0,
+          "w": 320,
+          "h": 208,
+          "visibleBefore": 12687,
+          "alphaSha256": "c9408a0d7d5dbe7dc68f9be93afc6f935cc9e67b6305ed383cc8889435cb2b71",
+          "visible": 12687,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "survey-bench",
+          "kind": "prop",
+          "at": [
+            60,
+            141
+          ],
+          "left": 44,
+          "top": 118,
+          "w": 35,
+          "h": 24,
+          "visibleBefore": 364,
+          "alphaSha256": "2e2fad62ea291ebbda7c8bb37b5fa065a5ccc8950ad175fc7f3a0cca022603ba",
+          "visible": 364,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "courier",
+          "kind": "actor",
+          "at": [
+            264,
+            154
+          ],
+          "left": 232,
+          "top": 96,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 997,
+          "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+          "visible": 997,
+          "hiddenBy": {},
+          "edgeSamples": 226,
+          "contactPixels": 44,
+          "visibleContactPixels": 44,
+          "groundClearance": 16
+        },
+        {
+          "id": "water-barrel",
+          "kind": "prop",
+          "at": [
+            87,
+            164
+          ],
+          "left": 71,
+          "top": 133,
+          "w": 32,
+          "h": 32,
+          "visibleBefore": 550,
+          "alphaSha256": "215ba7deba264afd6f97e9f1b10d581e4439fe4bae91818a1e6b7a3a5b9f6a32",
+          "visible": 511,
+          "hiddenBy": {
+            "surveyor": 39
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "weather-signal-device",
+          "kind": "prop",
+          "at": [
+            48,
+            168
+          ],
+          "left": 36,
+          "top": 139,
+          "w": 32,
+          "h": 32,
+          "visibleBefore": 479,
+          "alphaSha256": "27bf76075c99bc466dc26576998f1abffc53ad9ef8710f0b2e7892363ed2b847",
+          "visible": 479,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "surveyor",
+          "kind": "actor",
+          "at": [
+            104,
+            183
+          ],
+          "left": 74,
+          "top": 124,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 1090,
+          "alphaSha256": "9cc64ab38e79d903f9c07308c33c8677068a5d40a7dca4e8980a9df0f01c8beb",
+          "visible": 1090,
+          "hiddenBy": {},
+          "edgeSamples": 292,
+          "contactPixels": 50,
+          "visibleContactPixels": 50,
+          "groundClearance": 16
+        }
+      ],
+      "collisions": [
+        {
+          "id": "left-return",
+          "kind": "architecture",
+          "points": [
+            [
+              96,
+              124
+            ],
+            [
+              100,
+              124
+            ],
+            [
+              116,
+              116
+            ],
+            [
+              112,
+              116
+            ]
+          ]
+        },
+        {
+          "id": "right-return",
+          "kind": "architecture",
+          "points": [
+            [
+              220,
+              124
+            ],
+            [
+              224,
+              124
+            ],
+            [
+              240,
+              116
+            ],
+            [
+              236,
+              116
+            ]
+          ]
+        },
+        {
+          "id": "back-wall",
+          "kind": "architecture",
+          "points": [
+            [
+              112,
+              112
+            ],
+            [
+              240,
+              112
+            ],
+            [
+              240,
+              116
+            ],
+            [
+              112,
+              116
+            ]
+          ]
+        },
+        {
+          "id": "front-0-0",
+          "kind": "architecture",
+          "points": [
+            [
+              96,
+              120
+            ],
+            [
+              112,
+              120
+            ],
+            [
+              112,
+              124
+            ],
+            [
+              96,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-1-0",
+          "kind": "architecture",
+          "points": [
+            [
+              112,
+              120
+            ],
+            [
+              128,
+              120
+            ],
+            [
+              128,
+              124
+            ],
+            [
+              112,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-2-0",
+          "kind": "architecture",
+          "points": [
+            [
+              128,
+              120
+            ],
+            [
+              144,
+              120
+            ],
+            [
+              144,
+              124
+            ],
+            [
+              128,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-3-0",
+          "kind": "architecture",
+          "points": [
+            [
+              144,
+              120
+            ],
+            [
+              147,
+              120
+            ],
+            [
+              147,
+              124
+            ],
+            [
+              144,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-3-1",
+          "kind": "architecture",
+          "points": [
+            [
+              173,
+              120
+            ],
+            [
+              176,
+              120
+            ],
+            [
+              176,
+              124
+            ],
+            [
+              173,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-4-0",
+          "kind": "architecture",
+          "points": [
+            [
+              176,
+              120
+            ],
+            [
+              192,
+              120
+            ],
+            [
+              192,
+              124
+            ],
+            [
+              176,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-5-0",
+          "kind": "architecture",
+          "points": [
+            [
+              192,
+              120
+            ],
+            [
+              208,
+              120
+            ],
+            [
+              208,
+              124
+            ],
+            [
+              192,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-6-0",
+          "kind": "architecture",
+          "points": [
+            [
+              208,
+              120
+            ],
+            [
+              224,
+              120
+            ],
+            [
+              224,
+              124
+            ],
+            [
+              208,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "weather-signal-device",
+          "kind": "prop",
+          "points": [
+            [
+              38,
+              157
+            ],
+            [
+              58,
+              157
+            ],
+            [
+              58,
+              168
+            ],
+            [
+              38,
+              168
+            ]
+          ]
+        },
+        {
+          "id": "water-barrel",
+          "kind": "prop",
+          "points": [
+            [
+              80,
+              155
+            ],
+            [
+              95,
+              155
+            ],
+            [
+              95,
+              164
+            ],
+            [
+              80,
+              164
+            ]
+          ]
+        },
+        {
+          "id": "survey-bench",
+          "kind": "prop",
+          "points": [
+            [
+              47,
+              136
+            ],
+            [
+              72,
+              136
+            ],
+            [
+              72,
+              141
+            ],
+            [
+              47,
+              141
+            ]
+          ]
+        }
+      ],
+      "refinement": {
+        "wallHeight": 66,
+        "doorWidth": 32,
+        "doorHeight": 58,
+        "jamb": 3,
+        "fit": [
+          {
+            "id": "surveyor",
+            "nativeCanvas": 64,
+            "pivot": [
+              30,
+              59
+            ],
+            "silhouette": {
+              "left": 19,
+              "top": 6,
+              "right": 55,
+              "bottom": 58,
+              "width": 37,
+              "height": 53
+            },
+            "jacket": {
+              "left": 23,
+              "top": 20,
+              "right": 39,
+              "bottom": 39,
+              "width": 17,
+              "height": 20
+            },
+            "shoulderSpan": 12,
+            "bodyHalfWidth": 10,
+            "testedPixels": 420,
+            "clearWidth": 26,
+            "doorHeight": 58
+          },
+          {
+            "id": "courier",
+            "nativeCanvas": 64,
+            "pivot": [
+              32,
+              58
+            ],
+            "silhouette": {
+              "left": 18,
+              "right": 47,
+              "top": 6,
+              "bottom": 57,
+              "width": 30,
+              "height": 52
+            },
+            "jacket": {
+              "left": 26,
+              "right": 41,
+              "top": 22,
+              "bottom": 39,
+              "width": 16,
+              "height": 18
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 10,
+            "testedPixels": 420,
+            "clearWidth": 26,
+            "doorHeight": 58
+          }
+        ],
+        "roofOverhang": [
+          5,
+          7
+        ],
+        "footprint": [
+          [
+            96,
+            124
+          ],
+          [
+            224,
+            124
+          ],
+          [
+            240,
+            116
+          ],
+          [
+            112,
+            116
+          ]
+        ],
+        "windowSillsY": [
+          [
+            96,
+            96
+          ],
+          [
+            176,
+            96
+          ]
+        ]
+      },
+      "collisionPlane": "47eb96b539fdf72011049657d8544566e572e85f2a0dba6caf603e94844440c4",
+      "walkable": "4a360a034bfe7444648193778673e42144093a6c4c69b7df9d8cb86797d71d6c",
+      "routes": [
+        {
+          "id": "entry-path",
+          "actor": "surveyor",
+          "points": [
+            [
+              104,
+              200
+            ],
+            [
+              125,
+              173
+            ],
+            [
+              146,
+              155
+            ],
+            [
+              156,
+              136
+            ]
+          ],
+          "halfWidth": 10,
+          "tested": 1428
+        },
+        {
+          "id": "survey-station",
+          "actor": "surveyor",
+          "points": [
+            [
+              104,
+              183
+            ],
+            [
+              68,
+              180
+            ],
+            [
+              68,
+              148
+            ]
+          ],
+          "halfWidth": 10,
+          "tested": 1449
+        }
+      ],
+      "interactions": [
+        {
+          "id": "door-landing",
+          "target": "entry",
+          "walkablePixels": 476,
+          "nearest": 0
+        },
+        {
+          "id": "study-table",
+          "target": "survey-bench",
+          "walkablePixels": 364,
+          "nearest": 0
+        }
+      ]
+    },
+    "night": {
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      },
+      "lights": "upper-left",
+      "portal": {
+        "at": [
+          160,
+          124
+        ],
+        "points": [
+          [
+            147,
+            120
+          ],
+          [
+            173,
+            120
+          ],
+          [
+            173,
+            128
+          ],
+          [
+            147,
+            128
+          ]
+        ]
+      },
+      "occlusion": [
+        {
+          "id": "station-shell",
+          "kind": "building",
+          "at": [
+            96,
+            124
+          ],
+          "left": 0,
+          "top": 0,
+          "w": 320,
+          "h": 208,
+          "visibleBefore": 12687,
+          "alphaSha256": "c9408a0d7d5dbe7dc68f9be93afc6f935cc9e67b6305ed383cc8889435cb2b71",
+          "visible": 12687,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "survey-bench",
+          "kind": "prop",
+          "at": [
+            60,
+            141
+          ],
+          "left": 44,
+          "top": 118,
+          "w": 35,
+          "h": 24,
+          "visibleBefore": 364,
+          "alphaSha256": "2e2fad62ea291ebbda7c8bb37b5fa065a5ccc8950ad175fc7f3a0cca022603ba",
+          "visible": 364,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "courier",
+          "kind": "actor",
+          "at": [
+            264,
+            154
+          ],
+          "left": 232,
+          "top": 96,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 997,
+          "alphaSha256": "38f3149939af0fb52e5bd674ca22a98d919caf49ff3c872ebc291ba468d47a77",
+          "visible": 997,
+          "hiddenBy": {},
+          "edgeSamples": 226,
+          "contactPixels": 44,
+          "visibleContactPixels": 44,
+          "groundClearance": 16
+        },
+        {
+          "id": "water-barrel",
+          "kind": "prop",
+          "at": [
+            87,
+            164
+          ],
+          "left": 71,
+          "top": 133,
+          "w": 32,
+          "h": 32,
+          "visibleBefore": 550,
+          "alphaSha256": "215ba7deba264afd6f97e9f1b10d581e4439fe4bae91818a1e6b7a3a5b9f6a32",
+          "visible": 511,
+          "hiddenBy": {
+            "surveyor": 39
+          },
+          "edgeSamples": 0
+        },
+        {
+          "id": "weather-signal-device",
+          "kind": "prop",
+          "at": [
+            48,
+            168
+          ],
+          "left": 36,
+          "top": 139,
+          "w": 32,
+          "h": 32,
+          "visibleBefore": 479,
+          "alphaSha256": "27bf76075c99bc466dc26576998f1abffc53ad9ef8710f0b2e7892363ed2b847",
+          "visible": 479,
+          "hiddenBy": {},
+          "edgeSamples": 0
+        },
+        {
+          "id": "surveyor",
+          "kind": "actor",
+          "at": [
+            104,
+            183
+          ],
+          "left": 74,
+          "top": 124,
+          "w": 64,
+          "h": 64,
+          "visibleBefore": 1090,
+          "alphaSha256": "9cc64ab38e79d903f9c07308c33c8677068a5d40a7dca4e8980a9df0f01c8beb",
+          "visible": 1090,
+          "hiddenBy": {},
+          "edgeSamples": 292,
+          "contactPixels": 50,
+          "visibleContactPixels": 50,
+          "groundClearance": 16
+        }
+      ],
+      "collisions": [
+        {
+          "id": "left-return",
+          "kind": "architecture",
+          "points": [
+            [
+              96,
+              124
+            ],
+            [
+              100,
+              124
+            ],
+            [
+              116,
+              116
+            ],
+            [
+              112,
+              116
+            ]
+          ]
+        },
+        {
+          "id": "right-return",
+          "kind": "architecture",
+          "points": [
+            [
+              220,
+              124
+            ],
+            [
+              224,
+              124
+            ],
+            [
+              240,
+              116
+            ],
+            [
+              236,
+              116
+            ]
+          ]
+        },
+        {
+          "id": "back-wall",
+          "kind": "architecture",
+          "points": [
+            [
+              112,
+              112
+            ],
+            [
+              240,
+              112
+            ],
+            [
+              240,
+              116
+            ],
+            [
+              112,
+              116
+            ]
+          ]
+        },
+        {
+          "id": "front-0-0",
+          "kind": "architecture",
+          "points": [
+            [
+              96,
+              120
+            ],
+            [
+              112,
+              120
+            ],
+            [
+              112,
+              124
+            ],
+            [
+              96,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-1-0",
+          "kind": "architecture",
+          "points": [
+            [
+              112,
+              120
+            ],
+            [
+              128,
+              120
+            ],
+            [
+              128,
+              124
+            ],
+            [
+              112,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-2-0",
+          "kind": "architecture",
+          "points": [
+            [
+              128,
+              120
+            ],
+            [
+              144,
+              120
+            ],
+            [
+              144,
+              124
+            ],
+            [
+              128,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-3-0",
+          "kind": "architecture",
+          "points": [
+            [
+              144,
+              120
+            ],
+            [
+              147,
+              120
+            ],
+            [
+              147,
+              124
+            ],
+            [
+              144,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-3-1",
+          "kind": "architecture",
+          "points": [
+            [
+              173,
+              120
+            ],
+            [
+              176,
+              120
+            ],
+            [
+              176,
+              124
+            ],
+            [
+              173,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-4-0",
+          "kind": "architecture",
+          "points": [
+            [
+              176,
+              120
+            ],
+            [
+              192,
+              120
+            ],
+            [
+              192,
+              124
+            ],
+            [
+              176,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-5-0",
+          "kind": "architecture",
+          "points": [
+            [
+              192,
+              120
+            ],
+            [
+              208,
+              120
+            ],
+            [
+              208,
+              124
+            ],
+            [
+              192,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "front-6-0",
+          "kind": "architecture",
+          "points": [
+            [
+              208,
+              120
+            ],
+            [
+              224,
+              120
+            ],
+            [
+              224,
+              124
+            ],
+            [
+              208,
+              124
+            ]
+          ]
+        },
+        {
+          "id": "weather-signal-device",
+          "kind": "prop",
+          "points": [
+            [
+              38,
+              157
+            ],
+            [
+              58,
+              157
+            ],
+            [
+              58,
+              168
+            ],
+            [
+              38,
+              168
+            ]
+          ]
+        },
+        {
+          "id": "water-barrel",
+          "kind": "prop",
+          "points": [
+            [
+              80,
+              155
+            ],
+            [
+              95,
+              155
+            ],
+            [
+              95,
+              164
+            ],
+            [
+              80,
+              164
+            ]
+          ]
+        },
+        {
+          "id": "survey-bench",
+          "kind": "prop",
+          "points": [
+            [
+              47,
+              136
+            ],
+            [
+              72,
+              136
+            ],
+            [
+              72,
+              141
+            ],
+            [
+              47,
+              141
+            ]
+          ]
+        }
+      ],
+      "refinement": {
+        "wallHeight": 66,
+        "doorWidth": 32,
+        "doorHeight": 58,
+        "jamb": 3,
+        "fit": [
+          {
+            "id": "surveyor",
+            "nativeCanvas": 64,
+            "pivot": [
+              30,
+              59
+            ],
+            "silhouette": {
+              "left": 19,
+              "top": 6,
+              "right": 55,
+              "bottom": 58,
+              "width": 37,
+              "height": 53
+            },
+            "jacket": {
+              "left": 23,
+              "top": 20,
+              "right": 39,
+              "bottom": 39,
+              "width": 17,
+              "height": 20
+            },
+            "shoulderSpan": 12,
+            "bodyHalfWidth": 10,
+            "testedPixels": 420,
+            "clearWidth": 26,
+            "doorHeight": 58
+          },
+          {
+            "id": "courier",
+            "nativeCanvas": 64,
+            "pivot": [
+              32,
+              58
+            ],
+            "silhouette": {
+              "left": 18,
+              "right": 47,
+              "top": 6,
+              "bottom": 57,
+              "width": 30,
+              "height": 52
+            },
+            "jacket": {
+              "left": 26,
+              "right": 41,
+              "top": 22,
+              "bottom": 39,
+              "width": 16,
+              "height": 18
+            },
+            "shoulderSpan": 10,
+            "bodyHalfWidth": 10,
+            "testedPixels": 420,
+            "clearWidth": 26,
+            "doorHeight": 58
+          }
+        ],
+        "roofOverhang": [
+          5,
+          7
+        ],
+        "footprint": [
+          [
+            96,
+            124
+          ],
+          [
+            224,
+            124
+          ],
+          [
+            240,
+            116
+          ],
+          [
+            112,
+            116
+          ]
+        ],
+        "windowSillsY": [
+          [
+            96,
+            96
+          ],
+          [
+            176,
+            96
+          ]
+        ]
+      },
+      "collisionPlane": "47eb96b539fdf72011049657d8544566e572e85f2a0dba6caf603e94844440c4",
+      "walkable": "4a360a034bfe7444648193778673e42144093a6c4c69b7df9d8cb86797d71d6c",
+      "routes": [
+        {
+          "id": "entry-path",
+          "actor": "surveyor",
+          "points": [
+            [
+              104,
+              200
+            ],
+            [
+              125,
+              173
+            ],
+            [
+              146,
+              155
+            ],
+            [
+              156,
+              136
+            ]
+          ],
+          "halfWidth": 10,
+          "tested": 1428
+        },
+        {
+          "id": "survey-station",
+          "actor": "surveyor",
+          "points": [
+            [
+              104,
+              183
+            ],
+            [
+              68,
+              180
+            ],
+            [
+              68,
+              148
+            ]
+          ],
+          "halfWidth": 10,
+          "tested": 1449
+        }
+      ],
+      "interactions": [
+        {
+          "id": "door-landing",
+          "target": "entry",
+          "walkablePixels": 476,
+          "nearest": 0
+        },
+        {
+          "id": "study-table",
+          "target": "survey-bench",
+          "walkablePixels": 364,
+          "nearest": 0
+        }
+      ]
+    }
+  },
+  "diagnostics": {
+    "A": {
+      "day": {
+        "character": {
+          "silhouette": {
+            "n": 292,
+            "p10": 19,
+            "median": 99,
+            "weak": 24
+          },
+          "outline": {
+            "n": 292,
+            "p10": 19,
+            "median": 99,
+            "weak": 24
+          },
+          "contact": {
+            "n": 22,
+            "p10": 89,
+            "median": 89,
+            "weak": 0
+          },
+          "outlineRuns": [
+            207,
+            6
+          ],
+          "weakOutlineRuns": [
+            7,
+            7,
+            2,
+            2
+          ],
+          "signal": {
+            "pixels": 15,
+            "clusters": [
+              15
+            ],
+            "housing": {
+              "n": 16,
+              "p10": 3,
+              "median": 44,
+              "weak": 2
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 104,
+            "p10": 62,
+            "median": 115,
+            "weak": 0
+          },
+          "outline": {
+            "n": 104,
+            "p10": 62,
+            "median": 115,
+            "weak": 0
+          },
+          "contact": {
+            "n": 20,
+            "p10": 62,
+            "median": 62,
+            "weak": 0
+          },
+          "outlineRuns": [
+            76
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 14,
+            "clusters": [
+              14
+            ],
+            "housing": {
+              "n": 18,
+              "p10": 44,
+              "median": 116,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      },
+      "night": {
+        "character": {
+          "silhouette": {
+            "n": 292,
+            "p10": 19,
+            "median": 43,
+            "weak": 24
+          },
+          "outline": {
+            "n": 292,
+            "p10": 19,
+            "median": 43,
+            "weak": 24
+          },
+          "contact": {
+            "n": 22,
+            "p10": 33,
+            "median": 33,
+            "weak": 2
+          },
+          "outlineRuns": [
+            207,
+            6
+          ],
+          "weakOutlineRuns": [
+            7,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signal": {
+            "pixels": 15,
+            "clusters": [
+              15
+            ],
+            "housing": {
+              "n": 16,
+              "p10": 3,
+              "median": 44,
+              "weak": 2
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 104,
+            "p10": 25,
+            "median": 60,
+            "weak": 0
+          },
+          "outline": {
+            "n": 104,
+            "p10": 25,
+            "median": 60,
+            "weak": 0
+          },
+          "contact": {
+            "n": 20,
+            "p10": 25,
+            "median": 25,
+            "weak": 0
+          },
+          "outlineRuns": [
+            76
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 14,
+            "clusters": [
+              14
+            ],
+            "housing": {
+              "n": 18,
+              "p10": 44,
+              "median": 116,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      }
+    },
+    "B": {
+      "day": {
+        "character": {
+          "silhouette": {
+            "n": 292,
+            "p10": 17,
+            "median": 91,
+            "weak": 30
+          },
+          "outline": {
+            "n": 292,
+            "p10": 17,
+            "median": 91,
+            "weak": 30
+          },
+          "contact": {
+            "n": 22,
+            "p10": 79,
+            "median": 79,
+            "weak": 0
+          },
+          "outlineRuns": [
+            207,
+            6
+          ],
+          "weakOutlineRuns": [
+            15,
+            7
+          ],
+          "signal": {
+            "pixels": 15,
+            "clusters": [
+              15
+            ],
+            "housing": {
+              "n": 16,
+              "p10": 18,
+              "median": 22,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 104,
+            "p10": 52,
+            "median": 105,
+            "weak": 0
+          },
+          "outline": {
+            "n": 104,
+            "p10": 52,
+            "median": 105,
+            "weak": 0
+          },
+          "contact": {
+            "n": 20,
+            "p10": 52,
+            "median": 52,
+            "weak": 0
+          },
+          "outlineRuns": [
+            76
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 14,
+            "clusters": [
+              14
+            ],
+            "housing": {
+              "n": 18,
+              "p10": 67,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      },
+      "night": {
+        "character": {
+          "silhouette": {
+            "n": 292,
+            "p10": 13,
+            "median": 36,
+            "weak": 39
+          },
+          "outline": {
+            "n": 292,
+            "p10": 13,
+            "median": 36,
+            "weak": 39
+          },
+          "contact": {
+            "n": 22,
+            "p10": 23,
+            "median": 23,
+            "weak": 2
+          },
+          "outlineRuns": [
+            207,
+            6
+          ],
+          "weakOutlineRuns": [
+            20,
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "signal": {
+            "pixels": 15,
+            "clusters": [
+              15
+            ],
+            "housing": {
+              "n": 16,
+              "p10": 18,
+              "median": 22,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 104,
+            "p10": 15,
+            "median": 50,
+            "weak": 20
+          },
+          "outline": {
+            "n": 104,
+            "p10": 15,
+            "median": 50,
+            "weak": 20
+          },
+          "contact": {
+            "n": 20,
+            "p10": 15,
+            "median": 15,
+            "weak": 16
+          },
+          "outlineRuns": [
+            76
+          ],
+          "weakOutlineRuns": [
+            8,
+            8
+          ],
+          "signal": {
+            "pixels": 14,
+            "clusters": [
+              14
+            ],
+            "housing": {
+              "n": 18,
+              "p10": 67,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      }
+    },
+    "C": {
+      "day": {
+        "character": {
+          "silhouette": {
+            "n": 292,
+            "p10": 17,
+            "median": 91,
+            "weak": 30
+          },
+          "outline": {
+            "n": 292,
+            "p10": 17,
+            "median": 91,
+            "weak": 30
+          },
+          "contact": {
+            "n": 22,
+            "p10": 79,
+            "median": 79,
+            "weak": 0
+          },
+          "outlineRuns": [
+            207,
+            6
+          ],
+          "weakOutlineRuns": [
+            15,
+            7
+          ],
+          "signal": {
+            "pixels": 15,
+            "clusters": [
+              15
+            ],
+            "housing": {
+              "n": 16,
+              "p10": 18,
+              "median": 22,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 104,
+            "p10": 52,
+            "median": 105,
+            "weak": 0
+          },
+          "outline": {
+            "n": 104,
+            "p10": 52,
+            "median": 105,
+            "weak": 0
+          },
+          "contact": {
+            "n": 20,
+            "p10": 52,
+            "median": 52,
+            "weak": 0
+          },
+          "outlineRuns": [
+            76
+          ],
+          "weakOutlineRuns": [],
+          "signal": {
+            "pixels": 14,
+            "clusters": [
+              14
+            ],
+            "housing": {
+              "n": 18,
+              "p10": 67,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      },
+      "night": {
+        "character": {
+          "silhouette": {
+            "n": 292,
+            "p10": 15,
+            "median": 36,
+            "weak": 33
+          },
+          "outline": {
+            "n": 292,
+            "p10": 15,
+            "median": 36,
+            "weak": 33
+          },
+          "contact": {
+            "n": 22,
+            "p10": 23,
+            "median": 23,
+            "weak": 2
+          },
+          "outlineRuns": [
+            207,
+            6
+          ],
+          "weakOutlineRuns": [
+            12,
+            4,
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "signal": {
+            "pixels": 15,
+            "clusters": [
+              15
+            ],
+            "housing": {
+              "n": 16,
+              "p10": 18,
+              "median": 22,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        },
+        "prop": {
+          "silhouette": {
+            "n": 104,
+            "p10": 15,
+            "median": 50,
+            "weak": 20
+          },
+          "outline": {
+            "n": 104,
+            "p10": 15,
+            "median": 50,
+            "weak": 20
+          },
+          "contact": {
+            "n": 20,
+            "p10": 15,
+            "median": 15,
+            "weak": 16
+          },
+          "outlineRuns": [
+            76
+          ],
+          "weakOutlineRuns": [
+            8,
+            8
+          ],
+          "signal": {
+            "pixels": 14,
+            "clusters": [
+              14
+            ],
+            "housing": {
+              "n": 18,
+              "p10": 67,
+              "median": 128,
+              "weak": 0
+            },
+            "exterior": {
+              "n": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "candidate": {
+    "identity": {
+      "roles": [],
+      "exactPixels": 0
+    },
+    "prop": {
+      "amberPixelsExact": 14,
+      "woodShadowRuns": [
+        11,
+        10
+      ],
+      "materialBoundaries": {
+        "A": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 56,
+            "p10": 24,
+            "median": 57
+          },
+          {
+            "roles": "#48425e/#bc8862",
+            "samples": 42,
+            "p10": 20,
+            "median": 20
+          },
+          {
+            "roles": "#98a0be/#bc8862",
+            "samples": 82,
+            "p10": 4,
+            "median": 17
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 18,
+            "p10": 44,
+            "median": 116
+          }
+        ],
+        "B": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 56,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#48425e/#bc8862",
+            "samples": 42,
+            "p10": 8,
+            "median": 8
+          },
+          {
+            "roles": "#98a0be/#bc8862",
+            "samples": 82,
+            "p10": 9,
+            "median": 20
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 18,
+            "p10": 67,
+            "median": 128
+          }
+        ],
+        "C": [
+          {
+            "roles": "#48425e/#98a0be",
+            "samples": 56,
+            "p10": 17,
+            "median": 66
+          },
+          {
+            "roles": "#48425e/#bc8862",
+            "samples": 42,
+            "p10": 8,
+            "median": 46
+          },
+          {
+            "roles": "#98a0be/#bc8862",
+            "samples": 82,
+            "p10": 9,
+            "median": 20
+          },
+          {
+            "roles": "#98a0be/#f9bb51",
+            "samples": 18,
+            "p10": 67,
+            "median": 128
+          }
+        ]
+      }
+    },
+    "night": {
+      "outlineBudget": 42,
+      "outlineChanged": 6,
+      "ink": "#1e2133",
+      "environment": "B1_UNCHANGED"
+    },
+    "results": {
+      "geometryStable": true,
+      "masksExact": true,
+      "alphaExact": true,
+      "paletteValid": true
+    }
+  }
+}

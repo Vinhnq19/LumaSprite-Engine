@@ -1,0 +1,141 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "cases": [
+    {
+      "case": "stormwatch",
+      "view": "character-1",
+      "file": "benchmarks/results/e73r/stormwatch/c/character.png",
+      "w": 64,
+      "h": 64,
+      "pngSha256": "5c582fdb5bb84646d625c78506a9a626ee25c78f633233d28bec76a130fbb0bb",
+      "rgbaSha256": "d31b87c0a79797b888f42239014cd57e1481de3564d75978d8c3887324c016ea"
+    },
+    {
+      "case": "stormwatch",
+      "view": "character-night-1",
+      "file": "benchmarks/results/e73r/stormwatch/c/character-night.png",
+      "w": 64,
+      "h": 64,
+      "pngSha256": "c552110b36fae418ed8c127e41271055f26841eb18cd5b200e87f00587191f18",
+      "rgbaSha256": "900ba6a9fefb98c1530f62b54f1ee1ab8aeced6ddc004e5ec33251a9c802f325"
+    },
+    {
+      "case": "stormwatch",
+      "view": "prop-1",
+      "file": "benchmarks/results/e73r/stormwatch/c/prop.png",
+      "w": 32,
+      "h": 32,
+      "pngSha256": "605455625aad5a9832a3742e000b6ebc09dfc4dc6cc766704294cd3b36883a2e",
+      "rgbaSha256": "0fc0a2bf287f6f6e59f9676dd406a4fe940c74e1a2cc7ace926dca6a0d6c0d66"
+    },
+    {
+      "case": "stormwatch",
+      "view": "environment-1",
+      "file": "benchmarks/results/e73r/stormwatch/c/environment.png",
+      "w": 320,
+      "h": 208,
+      "pngSha256": "954b0e0dbc7fab77811b1d918bc7b77e7878c8c6367395289a6033174ee0634f",
+      "rgbaSha256": "876d588b3f14551cb86ee51eb2e339ee6a85875516fb07a279ca75d8b13cd6af"
+    },
+    {
+      "case": "stormwatch",
+      "view": "scene-night-1",
+      "file": "benchmarks/results/e73r/stormwatch/c/scene-night.png",
+      "w": 320,
+      "h": 208,
+      "pngSha256": "5cb81ad3dc0c9b7342d0a4d1caed7f3a19e24d0a80f81139a17cfe83586164d4",
+      "rgbaSha256": "6a9817e64a89af3cd8ca39c6377683c78fe5bcbf6161f319acc1f55784521a82"
+    },
+    {
+      "case": "tidegate",
+      "view": "character-1",
+      "file": "benchmarks/results/e73r/tidegate/c/character.png",
+      "w": 64,
+      "h": 64,
+      "pngSha256": "a99711d28964e8c4d44060a5b220703be51e982149a19fca0ca0a3dc590f5e30",
+      "rgbaSha256": "ad8de8846cbb29d98e2450a1f17e14c2b9df32c1bd52b839de9dff43b3af1b5b"
+    },
+    {
+      "case": "tidegate",
+      "view": "character-night-1",
+      "file": "benchmarks/results/e73r/tidegate/c/character-night.png",
+      "w": 64,
+      "h": 64,
+      "pngSha256": "bae1f9724eeb3218d63b10a323443bd8b7987168eb1a7fa0e4aa29e2dc3589d7",
+      "rgbaSha256": "d1b345c0f1cd44de64022e13aa400955be7f57c4a0b068b77cab1a46661a4247"
+    },
+    {
+      "case": "tidegate",
+      "view": "prop-1",
+      "file": "benchmarks/results/e73r/tidegate/c/prop.png",
+      "w": 32,
+      "h": 32,
+      "pngSha256": "85de59f1afba4f1722bd814788d58819ce91b71957f1caaf0eb107fa735e368e",
+      "rgbaSha256": "56f0535286fca104116d37b613c778b17abaa79bcddf7255c267c23dc33e1204"
+    },
+    {
+      "case": "tidegate",
+      "view": "environment-1",
+      "file": "benchmarks/results/e73r/tidegate/c/environment.png",
+      "w": 320,
+      "h": 208,
+      "pngSha256": "12796a9038319ea794d57843385ece7fcd20a5984493f915adda5443df019b81",
+      "rgbaSha256": "2146d79417b32c078ec2e0a35f5585a165a6f575dec5e1fac42a3c1a2109d932"
+    },
+    {
+      "case": "tidegate",
+      "view": "scene-night-1",
+      "file": "benchmarks/results/e73r/tidegate/c/scene-night.png",
+      "w": 320,
+      "h": 208,
+      "pngSha256": "e03fca40a89ef1f43062d2d405849f7863b0dd68f64af609ef5083d2bb5ae167",
+      "rgbaSha256": "f39612b6821849695a5d883006df8cd323b3987c9739fbbc5c3528edbe13b369"
+    },
+    {
+      "case": "mistfen",
+      "view": "character-1",
+      "file": "benchmarks/results/e73r/mistfen/c/character.png",
+      "w": 64,
+      "h": 64,
+      "pngSha256": "c28a1a72ae24fdf969b6c359712be69a887443c1d0a8bdd26247ffbd9bf3db89",
+      "rgbaSha256": "8263714e9bc9215e58af678ddc4c2f7dc323e72b330f4edb68f8dd25510ebd7c"
+    },
+    {
+      "case": "mistfen",
+      "view": "character-night-1",
+      "file": "benchmarks/results/e73r/mistfen/c/character-night.png",
+      "w": 64,
+      "h": 64,
+      "pngSha256": "138926749508d4ca42f3515608bacd812f13857d9a96611e59ff8b4fc088ae37",
+      "rgbaSha256": "aaa7b54b9c7a86b58e6a79416e4b2b902a476d84ef7ad6e8255505a4c3dd6e4d"
+    },
+    {
+      "case": "mistfen",
+      "view": "prop-1",
+      "file": "benchmarks/results/e73r/mistfen/c/prop.png",
+      "w": 32,
+      "h": 32,
+      "pngSha256": "27040074445f73d24cf38a38a2c6a90f03471f4a02b67bb38d20205a54d52661",
+      "rgbaSha256": "ac8a1517985c04a62f9db08a3107d37b25f5dc2a0e487c6f4f30dd899b24d18d"
+    },
+    {
+      "case": "mistfen",
+      "view": "environment-1",
+      "file": "benchmarks/results/e73r/mistfen/b/environment.png",
+      "w": 320,
+      "h": 208,
+      "pngSha256": "81fa9e33f2a2c13f29fd70ff6ecd0688bcb47e274a801cbe433885b4c2980e58",
+      "rgbaSha256": "9c3c7453aac03c363f1b83f8243b60ff9c51acbe032f5dbedb20210398bc8ef8"
+    },
+    {
+      "case": "mistfen",
+      "view": "scene-night-1",
+      "file": "benchmarks/results/e73r/mistfen/c/scene-night.png",
+      "w": 320,
+      "h": 208,
+      "pngSha256": "70067f5f97aa5971e7a35547c4dc1e6db4a29b11e8ba8640cd5220012cd0e01b",
+      "rgbaSha256": "2ecc52c25a1767f3bbf81ce731c6950106e80fdf2fdadacd20386e9cc48a6dd0"
+    }
+  ]
+}

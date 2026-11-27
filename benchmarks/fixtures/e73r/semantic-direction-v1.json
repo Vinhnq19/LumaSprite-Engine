@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "base": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "protectByBrief": {
+    "stormwatch": [],
+    "tidegate": [
+      "coat",
+      "far-coat"
+    ],
+    "mistfen": [
+      "coat",
+      "far-coat"
+    ]
+  },
+  "functional": "keep-baseline-amber",
+  "material": "lift-wood-foot-shadow-one-step",
+  "shared": "inherit-b1-day",
+  "night": {
+    "weakGap": 18,
+    "minCluster": 3,
+    "budgetPercent": 20
+  },
+  "structure": "locked"
+}

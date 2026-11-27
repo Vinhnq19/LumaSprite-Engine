@@ -1,0 +1,919 @@
+{
+  "id": "mistfen",
+  "role": "holdout",
+  "seed": 8367,
+  "brief": "A roofless fen ferry depot with a stepped sluice gate, low flood walls and a stone service landing. A hooded ferry steward checks a narrow amber water-level signal from the footpath.",
+  "scene": {
+    "version": 1,
+    "kind": "ruin-composition",
+    "id": "mistfen",
+    "name": "Mistfen Ferry Depot",
+    "size": [
+      320,
+      208
+    ],
+    "seed": 8367,
+    "source": {
+      "checkpoint": "24b8ca6",
+      "kit": "front-court",
+      "specSha256": "53478cc8d3403db9017a577defa0839d243a27a14dd9c2e8d8dc64423a562b27",
+      "styleSha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+      "terrainSha256": "ece0ecd126c87625d90ad44943bc73cde2cf0cbb16b4f4cea94fc9e2fa326405"
+    },
+    "terrain": {
+      "origin": [
+        -31,
+        13
+      ],
+      "rows": [
+        "####################",
+        "####################",
+        "####################",
+        "###...#####.....####",
+        "##......##.......###",
+        "##...............###",
+        "##................##",
+        "###...............##",
+        "#####...........####",
+        "######.........#####",
+        "######........######",
+        "#######.......######",
+        "########.....#######"
+      ]
+    },
+    "building": [
+      111,
+      123
+    ],
+    "approach": [
+      [
+        131,
+        125
+      ],
+      [
+        154,
+        125
+      ],
+      [
+        164,
+        150
+      ],
+      [
+        161,
+        170
+      ],
+      [
+        152,
+        208
+      ],
+      [
+        111,
+        208
+      ],
+      [
+        125,
+        169
+      ],
+      [
+        122,
+        152
+      ]
+    ],
+    "paving": [
+      {
+        "role": "activity",
+        "points": [
+          [
+            132,
+            94
+          ],
+          [
+            206,
+            92
+          ],
+          [
+            236,
+            111
+          ],
+          [
+            220,
+            130
+          ],
+          [
+            165,
+            132
+          ],
+          [
+            130,
+            116
+          ]
+        ]
+      },
+      {
+        "role": "route",
+        "points": [
+          [
+            128,
+            117
+          ],
+          [
+            152,
+            118
+          ],
+          [
+            159,
+            139
+          ],
+          [
+            150,
+            146
+          ],
+          [
+            130,
+            141
+          ],
+          [
+            124,
+            131
+          ]
+        ]
+      }
+    ],
+    "props": [
+      {
+        "id": "ferry-level-signal",
+        "ref": "crate",
+        "at": [
+          72,
+          169
+        ]
+      }
+    ],
+    "spawns": [
+      {
+        "actor": "surveyor",
+        "at": [
+          111,
+          173
+        ]
+      },
+      {
+        "actor": "courier",
+        "at": [
+          201,
+          160
+        ]
+      }
+    ],
+    "walkable": [
+      [
+        [
+          91,
+          103
+        ],
+        [
+          158,
+          90
+        ],
+        [
+          190,
+          89
+        ],
+        [
+          233,
+          94
+        ],
+        [
+          269,
+          115
+        ],
+        [
+          280,
+          171
+        ],
+        [
+          240,
+          182
+        ],
+        [
+          179,
+          181
+        ],
+        [
+          157,
+          208
+        ],
+        [
+          103,
+          208
+        ],
+        [
+          91,
+          187
+        ],
+        [
+          44,
+          176
+        ],
+        [
+          47,
+          133
+        ]
+      ],
+      [
+        [
+          127,
+          91
+        ],
+        [
+          160,
+          91
+        ],
+        [
+          160,
+          153
+        ],
+        [
+          127,
+          153
+        ]
+      ]
+    ],
+    "zones": [
+      {
+        "id": "gateway",
+        "role": "primary",
+        "points": [
+          [
+            107,
+            31
+          ],
+          [
+            193,
+            31
+          ],
+          [
+            193,
+            137
+          ],
+          [
+            107,
+            137
+          ]
+        ]
+      },
+      {
+        "id": "signal",
+        "role": "secondary",
+        "points": [
+          [
+            185,
+            63
+          ],
+          [
+            225,
+            63
+          ],
+          [
+            225,
+            125
+          ],
+          [
+            185,
+            125
+          ]
+        ]
+      },
+      {
+        "id": "tree-line",
+        "role": "background",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            320,
+            0
+          ],
+          [
+            320,
+            73
+          ],
+          [
+            273,
+            69
+          ],
+          [
+            222,
+            63
+          ],
+          [
+            185,
+            34
+          ],
+          [
+            100,
+            37
+          ],
+          [
+            53,
+            72
+          ],
+          [
+            0,
+            90
+          ]
+        ]
+      },
+      {
+        "id": "near-broken-column",
+        "role": "foreground",
+        "points": [
+          [
+            54,
+            119
+          ],
+          [
+            99,
+            119
+          ],
+          [
+            99,
+            188
+          ],
+          [
+            54,
+            188
+          ]
+        ]
+      },
+      {
+        "id": "quiet-canopy",
+        "role": "rest",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            320,
+            0
+          ],
+          [
+            320,
+            72
+          ],
+          [
+            268,
+            63
+          ],
+          [
+            213,
+            58
+          ],
+          [
+            178,
+            35
+          ],
+          [
+            110,
+            39
+          ],
+          [
+            43,
+            69
+          ],
+          [
+            0,
+            99
+          ]
+        ]
+      },
+      {
+        "id": "meadow-edge",
+        "role": "rest",
+        "points": [
+          [
+            175,
+            178
+          ],
+          [
+            247,
+            165
+          ],
+          [
+            320,
+            152
+          ],
+          [
+            320,
+            208
+          ],
+          [
+            171,
+            208
+          ]
+        ]
+      },
+      {
+        "id": "actor-space",
+        "role": "readability",
+        "points": [
+          [
+            79,
+            115
+          ],
+          [
+            228,
+            115
+          ],
+          [
+            229,
+            168
+          ],
+          [
+            129,
+            185
+          ],
+          [
+            84,
+            182
+          ]
+        ]
+      }
+    ],
+    "interactions": [
+      {
+        "id": "gateway-step",
+        "target": "entry",
+        "points": [
+          [
+            129,
+            123
+          ],
+          [
+            155,
+            123
+          ],
+          [
+            155,
+            144
+          ],
+          [
+            129,
+            144
+          ]
+        ]
+      },
+      {
+        "id": "read-signal",
+        "target": "signal-pedestal",
+        "points": [
+          [
+            173,
+            105
+          ],
+          [
+            206,
+            105
+          ],
+          [
+            206,
+            125
+          ],
+          [
+            173,
+            125
+          ]
+        ]
+      },
+      {
+        "id": "check-ferry-level",
+        "target": "ferry-level-signal",
+        "points": [
+          [
+            55,
+            164
+          ],
+          [
+            91,
+            164
+          ],
+          [
+            91,
+            177
+          ],
+          [
+            55,
+            177
+          ]
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "id": "gate-passage",
+        "actor": "surveyor",
+        "points": [
+          [
+            139,
+            196
+          ],
+          [
+            145,
+            159
+          ],
+          [
+            142,
+            137
+          ],
+          [
+            142,
+            96
+          ]
+        ]
+      },
+      {
+        "id": "signal-approach",
+        "actor": "courier",
+        "points": [
+          [
+            142,
+            140
+          ],
+          [
+            152,
+            154
+          ],
+          [
+            178,
+            154
+          ],
+          [
+            208,
+            140
+          ],
+          [
+            204,
+            119
+          ]
+        ]
+      }
+    ],
+    "probes": [
+      {
+        "id": "front",
+        "actor": "surveyor",
+        "at": [
+          142,
+          144
+        ]
+      },
+      {
+        "id": "threshold",
+        "actor": "courier",
+        "at": [
+          139,
+          120
+        ],
+        "occluder": "sluice-gateway"
+      },
+      {
+        "id": "side",
+        "actor": "courier",
+        "at": [
+          234,
+          130
+        ],
+        "occluder": "mooring-post"
+      },
+      {
+        "id": "rear",
+        "actor": "surveyor",
+        "at": [
+          171,
+          99
+        ],
+        "occluder": "sluice-gateway"
+      },
+      {
+        "id": "between-props",
+        "actor": "courier",
+        "at": [
+          177,
+          132
+        ]
+      },
+      {
+        "id": "foreground",
+        "actor": "surveyor",
+        "at": [
+          81,
+          141
+        ],
+        "occluder": "mooring-post"
+      }
+    ],
+    "depth": "ground-pivot-y",
+    "collision": "kit-and-prop-footprints",
+    "lighting": {
+      "door": true,
+      "workbench": "door",
+      "fill": [
+        {
+          "role": "dirt",
+          "tone": 2,
+          "points": [
+            [
+              135,
+              121
+            ],
+            [
+              200,
+              113
+            ],
+            [
+              252,
+              119
+            ],
+            [
+              259,
+              147
+            ],
+            [
+              236,
+              164
+            ],
+            [
+              172,
+              159
+            ],
+            [
+              139,
+              149
+            ]
+          ]
+        },
+        {
+          "role": "paving",
+          "tone": 2,
+          "points": [
+            [
+              177,
+              96
+            ],
+            [
+              223,
+              91
+            ],
+            [
+              235,
+              111
+            ],
+            [
+              223,
+              127
+            ],
+            [
+              185,
+              125
+            ]
+          ]
+        }
+      ]
+    },
+    "ruins": {
+      "version": 1,
+      "modules": [
+        {
+          "id": "sluice-gateway",
+          "kind": "gateway",
+          "at": [
+            111,
+            123
+          ],
+          "width": 62,
+          "height": 70,
+          "depth": 16,
+          "opening": 36,
+          "crown": "stepped"
+        },
+        {
+          "id": "west-flood-wall",
+          "kind": "wall",
+          "at": [
+            31,
+            134
+          ],
+          "width": 56,
+          "height": 31,
+          "depth": 10,
+          "fracture": "left",
+          "moss": 2
+        },
+        {
+          "id": "east-flood-wall",
+          "kind": "wall",
+          "at": [
+            242,
+            103
+          ],
+          "width": 53,
+          "height": 26,
+          "depth": 14,
+          "fracture": "right",
+          "moss": 1
+        },
+        {
+          "id": "landing-platform",
+          "kind": "platform",
+          "at": [
+            155,
+            115
+          ],
+          "width": 72,
+          "height": 12,
+          "depth": 18
+        },
+        {
+          "id": "signal-pedestal",
+          "kind": "signal",
+          "at": [
+            191,
+            106
+          ],
+          "width": 23,
+          "height": 31,
+          "depth": 9,
+          "lit": false
+        },
+        {
+          "id": "mooring-post",
+          "kind": "column",
+          "at": [
+            71,
+            151
+          ],
+          "width": 16,
+          "height": 22,
+          "depth": 10,
+          "moss": 1
+        }
+      ]
+    }
+  },
+  "character": {
+    "actor": "courier",
+    "spec": {
+      "version": 3,
+      "kind": "humanoid-traveler",
+      "canvas": {
+        "w": 64,
+        "h": 64,
+        "background": "transparent"
+      },
+      "view": "three-quarter-right",
+      "seed": 8367,
+      "palette": {
+        "mode": "authored"
+      },
+      "name": "Tide Marker Keeper",
+      "outfit": {
+        "headwear": "hood",
+        "satchel": "crossbody",
+        "cloth": "russet-moss"
+      },
+      "proportions": {
+        "head": [
+          16,
+          14
+        ],
+        "jacket": [
+          16,
+          13
+        ],
+        "hips": 14,
+        "arm": [
+          6,
+          4
+        ],
+        "leg": [
+          7,
+          5
+        ],
+        "boot": [
+          9,
+          4
+        ],
+        "satchel": [
+          8,
+          11
+        ]
+      },
+      "pose": {
+        "kind": "standing-free",
+        "hip": [
+          34,
+          37
+        ],
+        "lean": -2,
+        "turn": 3,
+        "pivot": [
+          32,
+          58
+        ],
+        "support": "near",
+        "secondaryGroundOffset": -1,
+        "near": {
+          "elbow": [
+            23,
+            34
+          ],
+          "wrist": [
+            21,
+            40
+          ],
+          "palm": [
+            22,
+            42
+          ],
+          "knee": [
+            30,
+            45
+          ],
+          "ankle": [
+            30,
+            53
+          ]
+        },
+        "far": {
+          "elbow": [
+            43,
+            32
+          ],
+          "wrist": [
+            45,
+            37
+          ],
+          "palm": [
+            44,
+            40
+          ],
+          "knee": [
+            41,
+            44
+          ],
+          "ankle": [
+            40,
+            52
+          ]
+        }
+      },
+      "geometryRevision": {
+        "number": 1,
+        "headOpening": 2,
+        "torsoPlaneOffset": 1,
+        "satchelOffset": [
+          -2,
+          2
+        ],
+        "satchelFlap": true
+      }
+    }
+  },
+  "prop": {
+    "id": "ferry-level-signal",
+    "label": "Ferry Level Signal",
+    "form": "depth-gauge",
+    "body": {
+      "width": 16,
+      "depth": 6,
+      "height": 15
+    },
+    "footprint": [
+      16,
+      9
+    ],
+    "brief": "Water level proxy with a narrow amber scale, slim housing and broad timber skids."
+  },
+  "architecture": {
+    "bays": [
+      "wall",
+      "wall",
+      "door",
+      "window",
+      "wall",
+      "window"
+    ],
+    "signBay": 1
+  },
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "direction": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "checkpoint": "3969177d8bd5c3fe56c58e924518742c54b013ec",
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "holdout": "MIXED_RESULT",
+  "e74": "DESIGN_ONLY",
+  "checks": [
+    [
+      "Lint, typecheck, build, CLI smoke",
+      "PASS",
+      "Production build và kiểm CLI loopback"
+    ],
+    [
+      "Engine tests",
+      "PASS",
+      "73/73"
+    ],
+    [
+      "Historical SHA và artifact",
+      "PASS",
+      "805 checksum và 361 artifact tái tạo"
+    ],
+    [
+      "E7.1–E7.3 regression",
+      "PASS",
+      "E7.1, E7.1R, E7.1R review, E7.2-A/B/R, E7.3"
+    ],
+    [
+      "E7.3R determinism và PNG",
+      "PASS",
+      "134 checksum, 129 file PNG tham chiếu gồm 67 mới và 62 E7.3"
+    ],
+    [
+      "Alpha, RGBA, palette và role",
+      "PASS",
+      "Ba brief A/B/C, mặt áo được bảo vệ và amber exact"
+    ],
+    [
+      "Camera, pivot, collision và occlusion",
+      "PASS",
+      "A/B/C khớp hình khối, mask và geometry QA Day/Night"
+    ],
+    [
+      "Context contrast",
+      "PASS",
+      "Cặp pixel biên, contact, cụm viền và focal signal đo ở native 1×"
+    ],
+    [
+      "Môi trường Night",
+      "PASS",
+      "A/B/C khớp pixel tại cả ba brief, chỉ viền nhân vật được xem xét ở Night"
+    ],
+    [
+      "Studio PNG parity",
+      "PASS",
+      "15 exact RGBA, save–reopen–export"
+    ],
+    [
+      "Runtime gameplay E8",
+      "NOT RUN",
+      "Pilot ảnh tĩnh và Studio raw PNG"
+    ]
+  ],
+  "limitations": [
+    "STRUCTURE_LIMITATION: Housed device silhouette and functional recognition at native scale.",
+    "CAPABILITY_GAP: Wetland water, ferry vehicle and dedicated wharf geometry.",
+    "Generalization and artistic selections are pending human review."
+  ]
+}
