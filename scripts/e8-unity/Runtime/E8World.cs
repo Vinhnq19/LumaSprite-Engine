@@ -14,14 +14,16 @@ public sealed class E8World
     public readonly float TilemapBuildMs;
     public readonly SpriteRenderer Actor;
     public readonly Sprite OriginalActor;
-    public readonly SpriteRenderer Indicator;
+    readonly E8SceneData.Landmark[] targets;
+    int lastInteractionFrame = -1;
     public readonly Dictionary<string, SpriteRenderer> Objects = new Dictionary<string, SpriteRenderer>();
     public readonly List<UnityEngine.Object> Transient = new List<UnityEngine.Object>();
     readonly int actorOrder;
 
     public Vector2Int Position { get; private set; }
     public int Interactions { get; private set; }
-    public bool Near => Distance(Position, Data.landmark.stand.Point) <= 5;
+    public E8SceneData.Landmark ActiveTarget { get; private set; }
+    public bool Near => ActiveTarget != null;
     public event Action<string> Interacted;
 
     public E8World(E8SceneData data)
@@ -77,20 +79,12 @@ public sealed class E8World
             collider.size = new Vector2(box.w / (float)data.pixelsPerUnit, box.h / (float)data.pixelsPerUnit);
         }
         Physics2D.SyncTransforms();
-        var icon = Own(new Texture2D(5, 5, TextureFormat.RGBA32, false));
-        icon.filterMode = FilterMode.Point;
-        var p = new Color32[25];
-        for (int i = 0; i < p.Length; i++)
-            if (Math.Abs(i % 5 - 2) + Math.Abs(i / 5 - 2) <= 2) p[i] = new Color32(251, 214, 112, 255);
-        icon.SetPixels32(p);
-        icon.Apply();
-        Indicator = Layer("Interaction indicator", icon, data.landmark.at.Point + new Vector2Int(0, -9), new Vector2Int(2, 3), 12000);
-        Indicator.enabled = false;
+        targets = new[] { data.landmark };
         Place(data.spawn.Point);
     }
 
     public static int Order(int y, int tie) => y * 32 + tie;
-    static int Distance(Vector2Int a, Vector2Int b) => Math.Abs(a.x - b.x) + Math.Abs(a.y - b.y);
+
 
     T Own<T>(T resource) where T : UnityEngine.Object
     {
@@ -131,6 +125,7 @@ public sealed class E8World
         E8Assets.Check(Data.Fits(point), "mask rejects actor placement at " + point);
         E8Assets.Check(!PhysicsBlocked(point), "Physics2D rejects actor placement at " + point);
         Position = point;
+        ActiveTarget = E8InteractionTarget.Select(point, targets, ActiveTarget);
         Actor.transform.position = Data.World(point);
         Actor.sortingOrder = Order(point.y, actorOrder);
     }
@@ -146,9 +141,10 @@ public sealed class E8World
 
     public bool Interact()
     {
-        if (!Near) return false;
+        if (ActiveTarget == null || lastInteractionFrame == Time.frameCount) return false;
+        lastInteractionFrame = Time.frameCount;
         Interactions++;
-        Interacted?.Invoke(Data.landmark.kind);
+        Interacted?.Invoke(ActiveTarget.kind);
         return true;
     }
 

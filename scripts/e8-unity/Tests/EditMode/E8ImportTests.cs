@@ -32,4 +32,39 @@ public sealed class E8ImportTests
         Assert.AreEqual(new Vector2(30, 5), walk.Sprites[0].pivot);
         foreach (var sprite in walk.Sprites) Object.DestroyImmediate(sprite);
     }
+    [Test]
+    public void NearbyTargetsRemainStableAndUseOriginalFivePixelRange()
+    {
+        var a = new E8SceneData.Landmark { stand = new E8Pixel { x = 10, y = 10 } };
+        var b = new E8SceneData.Landmark { stand = new E8Pixel { x = 13, y = 10 } };
+        var targets = new[] { a, b };
+        Assert.AreSame(a, E8InteractionTarget.Select(new Vector2Int(12, 10), targets, a));
+        Assert.AreSame(b, E8InteractionTarget.Select(new Vector2Int(13, 10), targets, a));
+        Assert.AreSame(a, E8InteractionTarget.Select(new Vector2Int(10, 15), targets, null));
+        Assert.IsNull(E8InteractionTarget.Select(new Vector2Int(10, 16), targets, a));
+        b.stand = a.stand;
+        Assert.AreSame(a, E8InteractionTarget.Select(a.stand.Point, targets, null));
+    }
+
+    [Test]
+    public void PromptIsInDedicatedRailAndMarkerStaysInsideAllSceneViewports()
+    {
+        var bundle = E8Bundle.Load();
+        foreach (var viewport in new[] { new Vector2Int(320, 232), new Vector2Int(704, 472), new Vector2Int(960, 680) })
+            for (int i = 0; i < bundle.cases.Length; i++)
+            {
+                var data = bundle.LoadScene(i, false);
+                var screen = E8InteractionHud.Viewport(viewport.x, viewport.y, data.width, data.height, out int scale);
+                var prompt = E8InteractionHud.Prompt(screen, scale);
+                Assert.GreaterOrEqual(prompt.yMin, 0);
+                Assert.Less(prompt.yMax, screen.yMin);
+                Assert.LessOrEqual(prompt.xMax, viewport.x);
+                Assert.AreEqual(data.pixelsPerUnit, 32);
+                var mark = E8InteractionHud.MarkerPixel(data, data.landmark);
+                Assert.GreaterOrEqual(mark.x, 5);
+                Assert.Less(mark.x, data.width - 4);
+                Assert.GreaterOrEqual(mark.y, 5);
+                Assert.Less(mark.y, data.height - 4);
+            }
+    }
 }

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "kind": "lumasprite-studio-scene-sidecar-proposal",
+  "caseId": "mistfen-ferry-landing",
+  "variant": "b2",
+  "light": "day",
+  "sourceRevision": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd",
+  "studioMain": "593650101ed0cd2a54d045197911fc5b7a8bdd83",
+  "approval": {
+    "state": "UNREVIEWED",
+    "decision": null
+  },
+  "space": {
+    "width": 320,
+    "height": 208,
+    "origin": "top-left",
+    "pixelsPerUnit": 32,
+    "sampling": "nearest"
+  },
+  "files": {
+    "scene": {
+      "file": "scene-day.json",
+      "sha256": "4550856f2351999d6bd3841c8997e56039e349cf5b0ae319f2e9f6eca178cc06"
+    },
+    "tilemap": {
+      "file": "tilemap-day.json",
+      "sha256": "363ab76318e4902e0dc4e02b4fd939b888ef5d4203dbbec7d0a0cef08b8e401e"
+    },
+    "atlas": {
+      "file": "atlas-day.png",
+      "sha256": "aa7234964fa6f455b24b82cb01c1d2c9d05bb8397cddcf48f07cc2f0202310ee"
+    },
+    "foreground": {
+      "file": "foreground-day.png",
+      "sha256": "aa86aa01cbb40592e6e8e3d7b4e1587afed024b3f5281d027277a7ddba226885"
+    }
+  },
+  "layerContract": {
+    "staticComposite": "tiles-then-foreground",
+    "foregroundCanEditAsNativeLayers": false
+  },
+  "gameplayFields": [
+    "colliders",
+    "masks.collision",
+    "masks.walkable",
+    "anchors",
+    "landmarks",
+    "layerOrder"
+  ],
+  "savePolicy": "lossless source retention; revisions and approval separated"
+}

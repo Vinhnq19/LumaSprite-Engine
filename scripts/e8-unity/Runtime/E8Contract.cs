@@ -169,12 +169,17 @@ public sealed class E8Animation
         public int durationMs;
         public RectData rect;
     }
+    [Serializable] public sealed class Foot { public string state; public int[] canvas, world; public int groundY, clearance, solePixels; }
+    [Serializable] public sealed class Feet { public Foot near, far; }
+    [Serializable] public sealed class Motion { public int index, rootX, advancePx; public Feet feet; }
+    [Serializable] public sealed class RootMotion { public int cyclePx; public Motion[] frames; }
     [Serializable] public sealed class Timing
     {
         public int version, totalDurationMs;
         public string sampling, loop;
         public int[] pivot;
         public Frame[] frames;
+        public RootMotion rootMotion;
     }
 
     public readonly Timing Data;

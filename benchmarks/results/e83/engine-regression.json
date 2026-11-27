@@ -1,0 +1,24 @@
+{
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "smoke": "PASS",
+  "engineTests": {
+    "passed": 76,
+    "total": 76
+  },
+  "historical": {
+    "sha256": 805,
+    "artifacts": 361,
+    "e76rPayloads": 142,
+    "e8Payloads": 42,
+    "adapterPayloads": 96
+  },
+  "studio": {
+    "working": "c56837e344dbb42369dc92ebd379e28255db7d84",
+    "main": "593650101ed0cd2a54d045197911fc5b7a8bdd83",
+    "nativeSceneImport": "NOT_RUN"
+  },
+  "e84Fixtures": "PASS",
+  "aiCalls": 0
+}

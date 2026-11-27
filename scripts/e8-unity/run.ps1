@@ -13,13 +13,13 @@ try {
   $assets = Join-Path $project 'Assets'
   $packages = Join-Path $project 'Packages'
   $settings = Join-Path $project 'ProjectSettings'
-  $out = [IO.Path]::GetFullPath('benchmarks/results/run/e8')
-  $bin = Join-Path $project 'Player'
-  $exe = Join-Path $bin 'LumaSpriteE8.exe'
+  $out = [IO.Path]::GetFullPath('benchmarks/results/run/e83')
+  $bin = Join-Path $project 'E83Player'
+  $exe = Join-Path $bin 'LumaSpriteE83.exe'
   [IO.Directory]::CreateDirectory($out) | Out-Null
 
-  function Process([string]$app, [string]$arguments, [string]$log, [string]$working, [int]$seconds, [string]$marker) {
-    $job = Start-Process -FilePath $app -WorkingDirectory $working -ArgumentList $arguments -WindowStyle Hidden -PassThru
+  function Process([string]$app, [string]$arguments, [string]$log, [string]$working, [int]$seconds, [string]$marker, [string]$window = 'Hidden') {
+    $job = Start-Process -FilePath $app -WorkingDirectory $working -ArgumentList $arguments -WindowStyle $window -PassThru
     if (-not $job.WaitForExit($seconds * 1000)) {
       Stop-Process -Id $job.Id
       if (Test-Path -LiteralPath $log) { Get-Content -LiteralPath $log -Tail 40 }
@@ -33,7 +33,7 @@ try {
   if (-not ($TestsOnly -or $PlayerOnly)) {
     foreach ($dir in @($assets, $packages, $settings, $bin)) { [IO.Directory]::CreateDirectory($dir) | Out-Null }
     [IO.File]::WriteAllText((Join-Path $settings 'ProjectVersion.txt'), "m_EditorVersion: 6000.3.21f1`nm_EditorVersionWithRevision: 6000.3.21f1 (c02631ffc030)`n")
-    [IO.File]::WriteAllText((Join-Path $packages 'manifest.json'), '{"dependencies":{"com.unity.modules.imageconversion":"1.0.0","com.unity.modules.jsonserialize":"1.0.0","com.unity.modules.tilemap":"1.0.0","com.unity.modules.physics2d":"1.0.0","com.unity.modules.imgui":"1.0.0","com.unity.test-framework":"1.6.0"}}')
+    [IO.File]::WriteAllText((Join-Path $packages 'manifest.json'), '{"dependencies":{"com.unity.modules.imageconversion":"1.0.0","com.unity.modules.jsonserialize":"1.0.0","com.unity.modules.tilemap":"1.0.0","com.unity.modules.physics2d":"1.0.0","com.unity.modules.imgui":"1.0.0","com.unity.modules.screencapture":"1.0.0","com.unity.test-framework":"1.6.0"}}')
     & node scripts/export-e8-runtime.ts --out (Join-Path $assets 'Resources/E8Input')
     if ($LASTEXITCODE) { throw 'E8 scene export failed.' }
     foreach ($folder in 'Runtime','Editor','Tests') {
@@ -63,6 +63,6 @@ try {
   }
   if ($TestsOnly) { return }
   $log = Join-Path $project 'e8-player.log'
-  Process $exe ('-force-d3d11 -screen-fullscreen 0 -screen-width 704 -screen-height 472 -e8-proof "' + $out + '" -logFile "' + $log + '"') $log $bin 125 'E8_PLAYER_PASS'
+  Process $exe ('-force-d3d11 -screen-fullscreen 0 -screen-width 704 -screen-height 472 -e8-proof "' + $out + '" -logFile "' + $log + '"') $log $bin 155 'E8_PLAYER_PASS' 'Normal'
   Write-Output 'Unity Windows Standalone runtime PASS'
 } finally { Pop-Location }

@@ -13,6 +13,7 @@ public sealed class E8NavigationTests
         try
         {
             Assert.IsTrue(world.Tilemap.HasTile(Vector3Int.zero));
+            Assert.IsNull(world.ActiveTarget);
             Assert.IsFalse(world.Interact());
             foreach (var probe in world.Data.probes)
             {
@@ -27,7 +28,12 @@ public sealed class E8NavigationTests
             }
             Assert.AreEqual(world.Data.landmark.stand.Point, world.Position);
             Assert.IsTrue(world.Interact());
+            Assert.IsFalse(world.Interact());
             Assert.AreEqual(1, world.Interactions);
+            Assert.AreSame(world.Data.landmark, world.ActiveTarget);
+            world.Place(world.Data.spawn.Point);
+            Assert.IsNull(world.ActiveTarget);
+            Assert.IsFalse(world.Interact());
         }
         finally { world.Deactivate(); world.Release(); }
         yield return SceneManager.UnloadSceneAsync(world.Scene);

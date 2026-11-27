@@ -26,13 +26,25 @@ public sealed class E8Game : MonoBehaviour
     bool loading, walking;
     double animationMs;
     float movementBudget;
+    E8InteractionHud interactionHud;
     string notice = "";
+    public bool ProofOverlay { get; set; }
+    public bool IsLoading => loading;
+    public string Feedback => Time.unscaledTimeAsDouble < noticeUntil ? notice : "";
+    public double StartupToAwakeMs { get; private set; }
+    public double AwakeToSceneMs { get; private set; }
+    public double ProcessUptimeMs => StartupToAwakeMs + (Time.realtimeSinceStartupAsDouble - awakeAt) * 1000;
+    double awakeAt;
     double noticeUntil;
     public float LastRenderMs { get; private set; }
     const float MoveSpeed = 42;
 
     void Awake()
     {
+        awakeAt = Time.realtimeSinceStartupAsDouble;
+        using (var process = System.Diagnostics.Process.GetCurrentProcess())
+            StartupToAwakeMs = (DateTime.UtcNow - process.StartTime.ToUniversalTime()).TotalMilliseconds;
+        interactionHud = new E8InteractionHud();
         Bundle = E8Bundle.Load();
         Idle = new E8Animation("idle", 32);
         Walk = new E8Animation("walk", 32);
@@ -64,6 +76,8 @@ public sealed class E8Game : MonoBehaviour
     {
         E8Assets.Check(index >= 0 && index < Bundle.cases.Length, "scene index");
         loading = true;
+        notice = "";
+        noticeUntil = 0;
         if (World != null)
         {
             var previous = World;
@@ -75,9 +89,9 @@ public sealed class E8Game : MonoBehaviour
         Index = index; Night = night;
         var data = Bundle.LoadScene(index, night);
         World = new E8World(data);
-        World.Interacted += message =>
+        World.Interacted += _ =>
         {
-            notice = message == "boarding-sill" ? "Boarding point acknowledged" : "Maintenance control acknowledged";
+            notice = E8InteractionHud.FeedbackFor(data.id);
             noticeUntil = Time.unscaledTimeAsDouble + 1.5;
         };
         if (position.HasValue) World.Place(position.Value);
@@ -85,6 +99,7 @@ public sealed class E8Game : MonoBehaviour
         Camera.transform.position = new Vector3(data.width / (2f * data.pixelsPerUnit), data.height / (2f * data.pixelsPerUnit), -10);
         movementBudget = 0; walking = false; animationMs = 0;
         loading = false;
+        if (AwakeToSceneMs == 0) AwakeToSceneMs = (Time.realtimeSinceStartupAsDouble - awakeAt) * 1000;
         yield return null;
     }
 
@@ -114,6 +129,9 @@ public sealed class E8Game : MonoBehaviour
     void Update()
     {
         if (ProofMode || World == null || loading) return;
+        if (Screen.width < Frame.width || Screen.height < Frame.height + E8InteractionHud.Rail)
+            Screen.SetResolution(Mathf.Max(Screen.width, Frame.width), Mathf.Max(Screen.height, Frame.height + E8InteractionHud.Rail),
+                FullScreenMode.Windowed);
         string savePath = Path.Combine(Application.persistentDataPath, "e8-local-save.json");
         if (Input.GetKeyDown(KeyCode.F5)) Save(savePath);
         if (Input.GetKeyDown(KeyCode.F9) && File.Exists(savePath)) { StartCoroutine(Reload(savePath)); return; }
@@ -139,9 +157,10 @@ public sealed class E8Game : MonoBehaviour
         }
         else movementBudget = 0;
         Animate(moving, Time.unscaledDeltaTime * 1000);
-        World.Indicator.enabled = World.Near;
-        if (Input.GetKeyDown(KeyCode.E)) World.Interact();
+        HandleInteractionPress(Input.GetKeyDown(KeyCode.E));
     }
+
+    public bool HandleInteractionPress(bool pressed) => pressed && !loading && World != null && World.Interact();
 
     static int Held(KeyCode a, KeyCode b) => Input.GetKey(a) || Input.GetKey(b) ? 1 : 0;
 
@@ -160,16 +179,10 @@ public sealed class E8Game : MonoBehaviour
     void OnGUI()
     {
         if (Event.current.type != EventType.Repaint || Frame == null) return;
-        var scale = Mathf.Max(1, Mathf.FloorToInt(Mathf.Min(Screen.width / (float)Frame.width, Screen.height / (float)Frame.height)));
-        var w = Frame.width * scale; var h = Frame.height * scale;
-        var x = Mathf.Floor((Screen.width - w) * .5f); var y = Mathf.Floor((Screen.height - h) * .5f);
-        GUI.DrawTexture(new Rect(x, y, w, h), Frame, ScaleMode.StretchToFill, false);
-        if (!ProofMode && Screen.height - h >= 38)
-        {
-            GUI.Label(new Rect(8, 3, Screen.width - 16, 25), "WASD / arrows • E interact • 1–3 scenes • N Day/Night • F5/F9 save/load");
-            if (Time.unscaledTimeAsDouble < noticeUntil)
-                GUI.Label(new Rect(8, Screen.height - 24, Screen.width - 16, 24), notice);
-        }
+        var viewport = E8InteractionHud.Viewport(Screen.width, Screen.height, Frame.width, Frame.height, out int scale);
+        GUI.DrawTexture(viewport, Frame, ScaleMode.StretchToFill, false);
+        if ((!ProofMode || ProofOverlay) && !loading && World != null)
+            interactionHud.Draw(World.Data, viewport, scale, World.ActiveTarget, Feedback);
     }
 
     void OnDestroy()
@@ -178,5 +191,6 @@ public sealed class E8Game : MonoBehaviour
         if (Idle != null) foreach (var sprite in Idle.Sprites) Destroy(sprite);
         if (Walk != null) foreach (var sprite in Walk.Sprites) Destroy(sprite);
         World?.Release();
+        interactionHud?.Release();
     }
 }
