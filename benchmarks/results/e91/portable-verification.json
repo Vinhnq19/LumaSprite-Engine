@@ -1,0 +1,22 @@
+{
+  "report": "docs/reports/E9.1-CHARACTER-ART-QUALITY-REVIEW.html",
+  "sha256": "f5180bd6a95cec95b65f8aaf6e37c088995be3b9fe75a219ec013db24840c611",
+  "bytes": 5447046,
+  "chrome": "158.0.0.0",
+  "location": "Standalone Windows Temp copy outside repository",
+  "offlineEmulation": "Offline",
+  "copySha256": "MATCH",
+  "embeddedImages": 582,
+  "imageSha256": "582/582 MATCH",
+  "nearestNeighborPairs": 291,
+  "manifestEntries": 616,
+  "externalDependencies": 0,
+  "consoleErrors": 0,
+  "viewports": [
+    1440,
+    390
+  ],
+  "gallery": "PASS",
+  "blindMode": "PASS",
+  "blankReviewJson": "PASS"
+}
