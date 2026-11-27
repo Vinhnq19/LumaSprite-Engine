@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "status": "PENDING_HUMAN_REVIEW",
+  "criteria": [
+    "identity",
+    "silhouette",
+    "anatomy",
+    "pose",
+    "tool",
+    "grip",
+    "balance",
+    "legs",
+    "feet",
+    "materials",
+    "context",
+    "generalization"
+  ],
+  "cases": [
+    {
+      "id": "ridge-mechanic",
+      "options": [
+        "a0",
+        "a1",
+        "a2",
+        "matched",
+        "refined",
+        "neither"
+      ],
+      "chosen": null,
+      "notes": "",
+      "scores": {
+        "a0": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "a1": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "a2": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "matched": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "refined": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        }
+      }
+    },
+    {
+      "id": "marsh-harvester",
+      "options": [
+        "a0",
+        "a1",
+        "a2",
+        "matched",
+        "refined",
+        "neither"
+      ],
+      "chosen": null,
+      "notes": "",
+      "scores": {
+        "a0": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "a1": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "a2": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "matched": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        },
+        "refined": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        }
+      }
+    },
+    {
+      "id": "canal-porter",
+      "options": [
+        "refined",
+        "neither"
+      ],
+      "chosen": null,
+      "notes": "",
+      "scores": {
+        "refined": {
+          "identity": null,
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "tool": null,
+          "grip": null,
+          "balance": null,
+          "legs": null,
+          "feet": null,
+          "materials": null,
+          "context": null,
+          "generalization": null
+        }
+      }
+    }
+  ]
+}

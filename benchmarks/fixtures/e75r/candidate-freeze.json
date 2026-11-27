@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "briefLock": "84d16b6ef1f95f9894f6e2bc5e00aeda09cd120e8b7e8bf020a1b512296294cf",
+  "development": [
+    "ridge-mechanic",
+    "marsh-harvester"
+  ],
+  "unseen": "canal-porter",
+  "hashMode": "UTF-8 LF",
+  "sources": {
+    "src/experiments/character-identity.ts": "6b6cb6f8a0401a2e87250e10afbfa3f2f4c70cb483a352a7744f278c67d5686d",
+    "src/experiments/identity-character-context.ts": "fc851e971727f6da7ec1f19e30a1f6f0e7040faa6d765a5accaf85e06d054048",
+    "scripts/benchmark-e75r.ts": "895166d6c6cac24f30623bb3d42a5ec5899e00feb5c480dc4c560b858eae59db"
+  },
+  "postHoldoutTypeOnlyCorrections": [
+    {
+      "file": "scripts/benchmark-e75r.ts",
+      "before": "8d3c3e0f1c21cf5358ce224852849c68c6d78cd4871474f04f62bd35806e7917",
+      "after": "895166d6c6cac24f30623bb3d42a5ec5899e00feb5c480dc4c560b858eae59db",
+      "identicalJavaScriptSha256": "e56a4960a2136a724b7560464d9c71fdfc12936dfe2833894522bb4117beaf2d"
+    },
+    {
+      "file": "src/experiments/character-identity.ts",
+      "before": "6057e6a97ad30467195dd1937bed9573abd940a950bc4c574dabb0fb7bd11faf",
+      "after": "6b6cb6f8a0401a2e87250e10afbfa3f2f4c70cb483a352a7744f278c67d5686d",
+      "identicalJavaScriptSha256": "b008d618c88628c27c4f7fa67dac42fb0bd51c0085468e58281839cd0731c8f6"
+    }
+  ]
+}

@@ -1,0 +1,1279 @@
+{
+  "version": 1,
+  "brief": {
+    "file": "benchmarks/fixtures/e75r/canal.json",
+    "sha256": "041bd41b24a511e15dcdbab483598ce531aba970c645ba4b67801af23af6d5d6"
+  },
+  "seed": 91403,
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "view": "three-quarter-right",
+  "historicalSelection": null,
+  "comparison": "HOLDOUT",
+  "selection": null,
+  "candidates": [
+    {
+      "id": "refined",
+      "status": "PASS",
+      "views": {
+        "flat": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/flat.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/flat-4x.png"
+        },
+        "silhouette": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/silhouette.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/silhouette-4x.png"
+        },
+        "parts": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/parts.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/parts-4x.png"
+        },
+        "pose": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/pose.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/pose-4x.png"
+        },
+        "material": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/material.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/material-4x.png"
+        },
+        "near": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/near.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/near-4x.png"
+        },
+        "far": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/far.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/far-4x.png"
+        },
+        "feet": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/feet.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/feet-4x.png"
+        },
+        "mask": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/mask.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/mask-4x.png"
+        },
+        "day": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/day.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/day-4x.png"
+        },
+        "night": {
+          "native": "benchmarks/results/e75r/canal-porter/refined/night.png",
+          "zoom": "benchmarks/results/e75r/canal-porter/refined/night-4x.png"
+        }
+      },
+      "qa": {
+        "defect": {
+          "id": "PORTER-SHARED-LOAD",
+          "cause": "Legacy standing-free rig cannot represent a horizontal shared carrier.",
+          "approach": "One pole crosses both palms and carries a suspended crate at one end. A broad work hat and short work jacket replace the hood."
+        },
+        "grip": {
+          "technical": "TECHNICAL_GRIP_VALID",
+          "artistic": "ARTISTIC_GRIP_READABLE_PENDING_HUMAN_REVIEW",
+          "anchors": [
+            {
+              "kind": "pole",
+              "hand": "near",
+              "anchor": [
+                20,
+                39
+              ],
+              "overlap": 12,
+              "exposed": 240
+            },
+            {
+              "kind": "pole",
+              "hand": "far",
+              "anchor": [
+                50,
+                35
+              ],
+              "overlap": 13,
+              "exposed": 240
+            }
+          ]
+        },
+        "pose": {
+          "errors": [],
+          "bounds": {
+            "left": 16,
+            "right": 52,
+            "top": 9,
+            "bottom": 57,
+            "area": 969,
+            "components": 1
+          },
+          "parts": {
+            "far-thigh": {
+              "left": 35,
+              "right": 45,
+              "top": 33,
+              "bottom": 46,
+              "area": 77,
+              "components": 1
+            },
+            "far-shin": {
+              "left": 40,
+              "right": 45,
+              "top": 42,
+              "bottom": 53,
+              "area": 51,
+              "components": 1
+            },
+            "far-boot": {
+              "left": 40,
+              "right": 47,
+              "top": 50,
+              "bottom": 55,
+              "area": 37,
+              "components": 1
+            },
+            "far-upper-arm": {
+              "left": 34,
+              "right": 46,
+              "top": 19,
+              "bottom": 33,
+              "area": 79,
+              "components": 1
+            },
+            "far-forearm": {
+              "left": 42,
+              "right": 49,
+              "top": 30,
+              "bottom": 35,
+              "area": 27,
+              "components": 1
+            },
+            "far-hand": {
+              "left": 47,
+              "right": 51,
+              "top": 33,
+              "bottom": 36,
+              "area": 16,
+              "components": 1
+            },
+            "near-thigh": {
+              "left": 27,
+              "right": 33,
+              "top": 35,
+              "bottom": 47,
+              "area": 81,
+              "components": 1
+            },
+            "near-shin": {
+              "left": 27,
+              "right": 33,
+              "top": 42,
+              "bottom": 55,
+              "area": 66,
+              "components": 1
+            },
+            "near-boot": {
+              "left": 28,
+              "right": 36,
+              "top": 51,
+              "bottom": 56,
+              "area": 40,
+              "components": 1
+            },
+            "hips": {
+              "left": 26,
+              "right": 42,
+              "top": 34,
+              "bottom": 40,
+              "area": 91,
+              "components": 1
+            },
+            "jacket": {
+              "left": 24,
+              "right": 41,
+              "top": 20,
+              "bottom": 39,
+              "area": 255,
+              "components": 1
+            },
+            "strap": {
+              "left": 29,
+              "right": 38,
+              "top": 22,
+              "bottom": 38,
+              "area": 37,
+              "components": 1
+            },
+            "satchel": {
+              "left": 28,
+              "right": 35,
+              "top": 34,
+              "bottom": 43,
+              "area": 58,
+              "components": 1
+            },
+            "neck": {
+              "left": 30,
+              "right": 36,
+              "top": 16,
+              "bottom": 23,
+              "area": 34,
+              "components": 1
+            },
+            "head": {
+              "left": 28,
+              "right": 41,
+              "top": 11,
+              "bottom": 21,
+              "area": 116,
+              "components": 1
+            },
+            "hood": {
+              "left": 24,
+              "right": 48,
+              "top": 10,
+              "bottom": 16,
+              "area": 91,
+              "components": 1
+            },
+            "near-upper-arm": {
+              "left": 21,
+              "right": 29,
+              "top": 22,
+              "bottom": 34,
+              "area": 66,
+              "components": 1
+            },
+            "near-forearm": {
+              "left": 17,
+              "right": 25,
+              "top": 30,
+              "bottom": 38,
+              "area": 45,
+              "components": 1
+            },
+            "near-hand": {
+              "left": 17,
+              "right": 22,
+              "top": 35,
+              "bottom": 40,
+              "area": 21,
+              "components": 1
+            }
+          },
+          "joints": {
+            "near-shoulder": 34,
+            "near-elbow": 21,
+            "near-wrist": 12,
+            "near-hip": 32,
+            "near-knee": 28,
+            "near-ankle": 22,
+            "far-shoulder": 28,
+            "far-elbow": 12,
+            "far-wrist": 9,
+            "far-hip": 32,
+            "far-knee": 21,
+            "far-ankle": 15
+          },
+          "centerX": 33.05612244897959,
+          "plantedFoot": "near",
+          "legGapRows": 8,
+          "maxGap": 6,
+          "gripPixels": 0,
+          "lampGapRows": 0,
+          "structure": "STRUCTURAL_VALID",
+          "constraints": "POSE_CONSTRAINTS_VALID",
+          "visual": "VISUAL_REVIEW_PENDING",
+          "pose": {
+            "errors": [],
+            "intent": "standing-free",
+            "headroom": 9,
+            "feet": {
+              "near": {
+                "projectedGroundY": 58,
+                "lowestContourY": 57,
+                "clearance": 0,
+                "solePixels": 8,
+                "soleBand": [
+                  28,
+                  35
+                ],
+                "toeRise": 0
+              },
+              "far": {
+                "projectedGroundY": 57,
+                "lowestContourY": 56,
+                "clearance": 0,
+                "solePixels": 7,
+                "soleBand": [
+                  40,
+                  46
+                ],
+                "toeRise": 0
+              }
+            },
+            "shoulderDrop": 4,
+            "hipDrop": 2,
+            "kneeBends": {
+              "near": 0,
+              "far": 3
+            },
+            "openHandleRows": 0,
+            "armTorsoGapRows": 0,
+            "lampBodyGap": 0
+          }
+        },
+        "lock": {
+          "version": 1,
+          "kind": "lumasprite-character-shape-lock",
+          "candidate": "canal-porter-refined",
+          "checkpoint": "278f26956cd598dd85e332b71a5c52d1b9d58d4d",
+          "characterSpecVersion": 3,
+          "geometryRevision": 1,
+          "canvas": {
+            "w": 64,
+            "h": 64
+          },
+          "poseIntent": "standing-free",
+          "source": {
+            "geometrySha256": "5f80523f4e2f38d298de3795c864792f14b91f6dec56d11ec39153733e4ac336",
+            "specSha256": "143d3684e549c033969abdeb39e3b0f6d1516559481972fd091331983349d24a",
+            "flatPngSha256": "5e89ab6d78d38267d5b62cb8ce97077877a1c119df3d6865f8f4be6e0c5a8b09",
+            "silhouettePngSha256": "1af2a0f59fb4f7cd76659dc99f27b60d11ca7aafdd258f5303e675f0334b45b6",
+            "flatRgbaSha256": "14cb25100c2633c8b0f5cc4070d7d7e69e2331f7f374606da6d89852729112b8"
+          },
+          "silhouetteAlphaSha256": "4013459eb01ac6e62094f6a8c7b2c5a171568fb7a5cda5e183d50ed4a5b95db5",
+          "landmarks": {
+            "crown": {
+              "point": [
+                35,
+                15
+              ],
+              "partId": "head"
+            },
+            "neck": {
+              "point": [
+                33,
+                20
+              ],
+              "partId": "neck"
+            },
+            "chest": {
+              "point": [
+                32,
+                25
+              ],
+              "partId": "jacket"
+            },
+            "pelvis": {
+              "point": [
+                34,
+                37
+              ],
+              "partId": "hips"
+            },
+            "far-shoulder": {
+              "point": [
+                36,
+                21
+              ],
+              "partId": "far-upper-arm"
+            },
+            "far-elbow": {
+              "point": [
+                44,
+                32
+              ],
+              "partId": "far-forearm"
+            },
+            "far-wrist": {
+              "point": [
+                48,
+                34
+              ],
+              "partId": "far-forearm"
+            },
+            "far-palm": {
+              "point": [
+                50,
+                35
+              ],
+              "partId": "far-hand"
+            },
+            "far-hip": {
+              "point": [
+                38,
+                36
+              ],
+              "partId": "far-thigh"
+            },
+            "far-knee": {
+              "point": [
+                43,
+                44
+              ],
+              "partId": "far-shin"
+            },
+            "far-ankle": {
+              "point": [
+                42,
+                52
+              ],
+              "partId": "far-boot"
+            },
+            "far-ground": {
+              "point": [
+                42,
+                55
+              ],
+              "partId": "far-boot"
+            },
+            "near-shoulder": {
+              "point": [
+                26,
+                25
+              ],
+              "partId": "near-upper-arm"
+            },
+            "near-elbow": {
+              "point": [
+                23,
+                32
+              ],
+              "partId": "near-forearm"
+            },
+            "near-wrist": {
+              "point": [
+                19,
+                37
+              ],
+              "partId": "near-forearm"
+            },
+            "near-palm": {
+              "point": [
+                20,
+                39
+              ],
+              "partId": "near-hand"
+            },
+            "near-hip": {
+              "point": [
+                30,
+                38
+              ],
+              "partId": "near-thigh"
+            },
+            "near-knee": {
+              "point": [
+                30,
+                45
+              ],
+              "partId": "near-shin"
+            },
+            "near-ankle": {
+              "point": [
+                30,
+                53
+              ],
+              "partId": "near-boot"
+            },
+            "near-ground": {
+              "point": [
+                30,
+                56
+              ],
+              "partId": "near-boot"
+            }
+          },
+          "links": [
+            {
+              "from": "crown",
+              "to": "neck"
+            },
+            {
+              "from": "neck",
+              "to": "chest"
+            },
+            {
+              "from": "chest",
+              "to": "pelvis"
+            },
+            {
+              "from": "chest",
+              "to": "far-shoulder"
+            },
+            {
+              "from": "far-shoulder",
+              "to": "far-elbow"
+            },
+            {
+              "from": "far-elbow",
+              "to": "far-wrist"
+            },
+            {
+              "from": "far-wrist",
+              "to": "far-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "far-hip"
+            },
+            {
+              "from": "far-hip",
+              "to": "far-knee"
+            },
+            {
+              "from": "far-knee",
+              "to": "far-ankle"
+            },
+            {
+              "from": "far-ankle",
+              "to": "far-ground"
+            },
+            {
+              "from": "chest",
+              "to": "near-shoulder"
+            },
+            {
+              "from": "near-shoulder",
+              "to": "near-elbow"
+            },
+            {
+              "from": "near-elbow",
+              "to": "near-wrist"
+            },
+            {
+              "from": "near-wrist",
+              "to": "near-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "near-hip"
+            },
+            {
+              "from": "near-hip",
+              "to": "near-knee"
+            },
+            {
+              "from": "near-knee",
+              "to": "near-ankle"
+            },
+            {
+              "from": "near-ankle",
+              "to": "near-ground"
+            }
+          ],
+          "gripAnchor": null,
+          "groundPivot": [
+            32,
+            58
+          ],
+          "projectedGround": {
+            "near": 58,
+            "far": 57
+          },
+          "layerOrder": [
+            "far-thigh",
+            "far-shin",
+            "far-boot",
+            "far-upper-arm",
+            "far-forearm",
+            "far-hand",
+            "near-thigh",
+            "near-shin",
+            "near-boot",
+            "hips",
+            "jacket",
+            "strap",
+            "satchel",
+            "neck",
+            "head",
+            "hood",
+            "near-upper-arm",
+            "near-forearm",
+            "near-hand"
+          ],
+          "bodyParts": {
+            "far-thigh": {
+              "geometrySha256": "b8d2d6c0bfac83facce769bae470129d93cf9f8eced02783d9228aaa8f3e8c7b",
+              "sourceRgbaSha256": "29feaf44199e35cb718c5ae9a7ffbdfb36ac1feddc1c35fa67a71730c0500db8",
+              "alphaSha256": "ab2b0f4d45fed110ceb89f138920affd8c6698ab9f15332fc7122dbd1313c079",
+              "pixels": 77
+            },
+            "far-shin": {
+              "geometrySha256": "d2777caffbf9a99cf2161aaaa364a670cf26959cff9b2a62c889d1a4634304ec",
+              "sourceRgbaSha256": "245d236010166508b881adef092c11f8e20b511d9b54d9d7226b97cc172850f5",
+              "alphaSha256": "81f00235b04fda3c58a6512102d89d84edbb83261655fb56789a0a767757ca64",
+              "pixels": 51
+            },
+            "far-boot": {
+              "geometrySha256": "e154b0346a9cd17864008a7fa20f3320bf806a77267fe8aaf75265266a93c825",
+              "sourceRgbaSha256": "6648d8b61c835efa220dabfecab1d01af07a734b4b99f8bb579ac7815771a584",
+              "alphaSha256": "12c3929c5178a17f0cec1d04c4108f23d806eec4005d0a503bbd643aa5bb880a",
+              "pixels": 37
+            },
+            "far-upper-arm": {
+              "geometrySha256": "c9a00d4cc1dd4cec311eb792b8593782ac09246d7e4cf6b109f73950c6ba7e38",
+              "sourceRgbaSha256": "a6fd2f13650766bbe880902b61e73be7a644da0ea17061d71a7c2edde10f0024",
+              "alphaSha256": "3d5f9915ff0865280019fad3dc5f201420829c7b4642517c5ef4815e116262ed",
+              "pixels": 79
+            },
+            "far-forearm": {
+              "geometrySha256": "cbf149b1fe2c830e98e81e582cfecc4a2723a7d74e9fb6aaefbef08b8badec91",
+              "sourceRgbaSha256": "c10ee034cd12f69eaec1f906fc2e48a8f79d3558c4af781e1be472a0e674e86d",
+              "alphaSha256": "a64e379475539a5f8ddce0d1eaf15b6305edc46193fa8bda24b23ee15a2cbda0",
+              "pixels": 27
+            },
+            "far-hand": {
+              "geometrySha256": "549d389f387f1ff796d5ed0aa6687a4fc7ec49a7e79038ae70f7870e0af87820",
+              "sourceRgbaSha256": "fd2cbff97fdebad66beb4cb998caeaa1d3c645b88282558bfa8297fabcc0d38a",
+              "alphaSha256": "44383f0647bd2ad52700e9e9ba03838dc33928169f688093ca3d68ea2c17c0ae",
+              "pixels": 16
+            },
+            "near-thigh": {
+              "geometrySha256": "c32e2364a4490760648e94adbfaf56c501b2e489e0a0eff41e793fc68addf2ea",
+              "sourceRgbaSha256": "e556c172ed88cbf5ac409d7031063d974faeb33f6f9662c4199d3cc6c333470e",
+              "alphaSha256": "1c63870a37423f6eda5bff90bec537ff807395d0c17d9f3362b7a72172f00735",
+              "pixels": 81
+            },
+            "near-shin": {
+              "geometrySha256": "e033bc201fcee89f4818d4f8504bc491aca9fa9694e6bb3feeaa3cfda738ff2e",
+              "sourceRgbaSha256": "a81d38894abf4b629ae9b113da5d0e2e1fff65a90fff280872137c606587e76f",
+              "alphaSha256": "12050469aa864be06a734871ba12a4685434e8581456bac60ed8b7b8e45de686",
+              "pixels": 66
+            },
+            "near-boot": {
+              "geometrySha256": "3aabc8555f781286192b785ef308e4327cf422e550899454710cf7c7962ab7d9",
+              "sourceRgbaSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+              "alphaSha256": "fd094e297b25791997375a79270cfbf07f3bfc31531bb28c4ffbd35594d4750b",
+              "pixels": 40
+            },
+            "hips": {
+              "geometrySha256": "4abca70a711d545a6dd7bac8e438a0e883758af3a2b24a63b35eae776e15b0ad",
+              "sourceRgbaSha256": "244dd25c5a2a7584f7546ef7359d9717e9904adfc299aec3607c73037db2506d",
+              "alphaSha256": "b4347fad8e3fdd4bf0c84c0bf5060f38d648708ac741ac13a92f557422bf95b3",
+              "pixels": 91
+            },
+            "jacket": {
+              "geometrySha256": "0100686f3b4f8c008d7a1c5d3046d04143a9f7a3aee29f95135ae613eea86c5d",
+              "sourceRgbaSha256": "244ce3eb38cbf0d87533035606d2caa9d467c62e470585a600e1067f2195ce44",
+              "alphaSha256": "1201ca6fad39ef974c137649059f7e10aefda8771319268030059ba0174c37fc",
+              "pixels": 255
+            },
+            "strap": {
+              "geometrySha256": "b1a6a39a1c3e8e9b6884bcb17e2d7ef9a78e694226f17f04b03173d9c9605559",
+              "sourceRgbaSha256": "b4deaad71035ce0eaf7e612b7e7ebdaca978d5eebf653dd248476d354f1972f6",
+              "alphaSha256": "cca207b870cc6fc0de8595914d4d9a3d3f18dac484499a1bed0dc6f78cce28cf",
+              "pixels": 37
+            },
+            "satchel": {
+              "geometrySha256": "0a2b2ce4d9f8d033add61a2da9b3162fad40ce21619873349ed5e226e26c1f83",
+              "sourceRgbaSha256": "3be3de9dbb6b026dac8827f24c333be7e9e9c046917921f060094b157e09a8b7",
+              "alphaSha256": "d60126966a24b56ca0233097abad20c3c13ad70b4d8120b75217ce0cdee3442f",
+              "pixels": 58
+            },
+            "neck": {
+              "geometrySha256": "85acbee705a6f29fda539a3d010de2cedf38e57a11ffb8d734421b5bd0973f97",
+              "sourceRgbaSha256": "77eeb31fb2e4145a9fba363c13071a5a2054275da8f86ed11fe581df6ac59b5b",
+              "alphaSha256": "1fe1e2303a9ef8cad4a7365939a16d2b9423b531861b254cde90e03ff6a699e4",
+              "pixels": 34
+            },
+            "head": {
+              "geometrySha256": "b54062534d4ee69a7789254238b19399323b7628f0dd826937568d1cacba41ae",
+              "sourceRgbaSha256": "99a1143ea5ec032675d507cd20648889df1751c891654cd82a7e27bb45793fe3",
+              "alphaSha256": "accc5b64a96b40e4a91c70d7a1eb21afc57bef32763446333222614c63106a7b",
+              "pixels": 116
+            },
+            "hood": {
+              "geometrySha256": "ebc04c064f37de016bc386c7d071b35b97335d4c6764a796f7070d675b7b4690",
+              "sourceRgbaSha256": "dd5d33cadfcb039a71f9e4d21fb9c1627cd95e204bc96bf79aa679126d92b01c",
+              "alphaSha256": "9c3d6adc3834e83c7add3b6a0af57b5799c56afd99894f3b02fc0ace853c730c",
+              "pixels": 91
+            },
+            "near-upper-arm": {
+              "geometrySha256": "280cea725878049b1b615ccb5fa15d60fced84f8f2e5aebc9d853f3a97616a2a",
+              "sourceRgbaSha256": "72edc9aeac3c764616c7aea8cccfe9c2ab010f3488db93be50ef0b60ee918581",
+              "alphaSha256": "b98854bc77b42ac0ebfb7a8e7d1b2e9cc6f33a60a567c699be4452bef42bd76a",
+              "pixels": 66
+            },
+            "near-forearm": {
+              "geometrySha256": "a3ee36eadd339e421f9ebd22272595eb9f655638e16b5b8d49e003aa694d0459",
+              "sourceRgbaSha256": "8df918d25190897989f0f4d8f7d0bdb4a2e9f270ef4d42c1a8f50d67bf620d5a",
+              "alphaSha256": "70aa0ab503736fec1549550d9939328449329e98bc48ae86b90309b8c9638e48",
+              "pixels": 45
+            },
+            "near-hand": {
+              "geometrySha256": "c09c63b6315f0e3441bb80f747ead2a105cacab951ff7edf5ebcc1e9850d49c2",
+              "sourceRgbaSha256": "285704615500f4afa13803db0620e85b569ca154082ea4941482aa6c78ec787d",
+              "alphaSha256": "c3c99a7ffef914360b1f3d57835bf204d7e1d6a0403e6d132f40d32a7dbcc594",
+              "pixels": 21
+            }
+          },
+          "lockedRegions": {
+            "format": "uint8-alpha-row-major",
+            "silhouette": {
+              "alphaSha256": "4013459eb01ac6e62094f6a8c7b2c5a171568fb7a5cda5e183d50ed4a5b95db5",
+              "pixels": 969
+            },
+            "lowerLegClearance": {
+              "alphaSha256": "e904f09b77c897e33c59500974356a4c2bb90293032d1be47f345f3e1542f31d",
+              "pixels": 58
+            },
+            "gripContact": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "handleOpening": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "bootSoles": {
+              "alphaSha256": "a783e2159053f9545d9b53f89603a9cd6db4ef397ab1ebcfa653747d6c47b8e1",
+              "pixels": 15
+            }
+          }
+        },
+        "shape": {
+          "coverage": 1222,
+          "outline": 239,
+          "isolatedOutline": 0,
+          "components": [
+            1222
+          ],
+          "bounds": {
+            "left": 7,
+            "top": 9,
+            "right": 57,
+            "bottom": 57
+          },
+          "detail": {
+            "edges": 534,
+            "samples": 2281,
+            "per100": 23.4
+          },
+          "materialBoundaries": [],
+          "used": [
+            "#262334",
+            "#36535b",
+            "#39454c",
+            "#424654",
+            "#437a76",
+            "#4d5e5c",
+            "#51433d",
+            "#525768",
+            "#596a83",
+            "#685044",
+            "#8e624a",
+            "#e0af82"
+          ],
+          "rgbaSha256": "35ee07342bca50875464085f5d1ca1d89d4761819c7383bd652ab5d0ba38f17b",
+          "alphaSha256": "7f48b3aaac7d9be37fc3aeca0bbdf4126faea85f4c169fde11a7012b06a6bc16"
+        },
+        "labels": {
+          "far-thigh": 1129734911,
+          "far-shin": 1156545535,
+          "far-boot": 1183356159,
+          "far-upper-arm": 1210166783,
+          "far-forearm": 1236977407,
+          "near-thigh": 1263788031,
+          "near-shin": 1290598655,
+          "near-boot": 1317409279,
+          "hips": 1344219903,
+          "jacket": 1371030527,
+          "strap": 1397841151,
+          "satchel": 1424651775,
+          "neck": 1451462399,
+          "head": 1478273023,
+          "hood": 1505083647,
+          "near-upper-arm": 1531894271,
+          "near-forearm": 1558704895,
+          "both-tool": 1585515519,
+          "far-hand": 1612326143,
+          "near-hand": 1639136767
+        },
+        "partOwnerSha256": "f4fcbe6fca049f2817b288550671cc29602eca9a43ab8b19a6f85d59fcd02449",
+        "palette": [
+          "#242534",
+          "#263b4a",
+          "#2c2c3b",
+          "#2d4346",
+          "#314452",
+          "#343344",
+          "#382c28",
+          "#392c37",
+          "#394b4d",
+          "#434a5c",
+          "#49677a",
+          "#513638",
+          "#525a6e",
+          "#536964",
+          "#596a83",
+          "#62858f",
+          "#674937",
+          "#685044",
+          "#777d8b",
+          "#798c7c",
+          "#896049",
+          "#916e51",
+          "#9cbdba",
+          "#a86a55",
+          "#b18059",
+          "#bc9366",
+          "#dca57a",
+          "#f5c393"
+        ],
+        "material": {
+          "coverage": 1222,
+          "outline": 239,
+          "isolatedOutline": 0,
+          "components": [
+            1222
+          ],
+          "bounds": {
+            "left": 7,
+            "top": 9,
+            "right": 57,
+            "bottom": 57
+          },
+          "detail": {
+            "edges": 425,
+            "samples": 1721,
+            "per100": 24.7
+          },
+          "materialBoundaries": [
+            {
+              "roles": "#242032/#376b71",
+              "samples": 29,
+              "p10": 8,
+              "median": 33
+            },
+            {
+              "roles": "#242032/#477763",
+              "samples": 32,
+              "p10": 18,
+              "median": 60
+            },
+            {
+              "roles": "#242032/#4c5792",
+              "samples": 31,
+              "p10": 7,
+              "median": 7
+            },
+            {
+              "roles": "#242032/#5c9e96",
+              "samples": 17,
+              "p10": 37,
+              "median": 72
+            },
+            {
+              "roles": "#242032/#62ac73",
+              "samples": 40,
+              "p10": 60,
+              "median": 88
+            },
+            {
+              "roles": "#242032/#69425e",
+              "samples": 2,
+              "p10": 0,
+              "median": 10
+            },
+            {
+              "roles": "#242032/#6f87c1",
+              "samples": 24,
+              "p10": 14,
+              "median": 22
+            },
+            {
+              "roles": "#242032/#bd7756",
+              "samples": 157,
+              "p10": 8,
+              "median": 46
+            },
+            {
+              "roles": "#242032/#eaa48c",
+              "samples": 32,
+              "p10": 0,
+              "median": 80
+            },
+            {
+              "roles": "#376b71/#5c9e96",
+              "samples": 12,
+              "p10": 0,
+              "median": 35
+            },
+            {
+              "roles": "#376b71/#69425e",
+              "samples": 3,
+              "p10": 23,
+              "median": 23
+            },
+            {
+              "roles": "#376b71/#eaa48c",
+              "samples": 12,
+              "p10": 23,
+              "median": 103
+            },
+            {
+              "roles": "#477763/#4c5792",
+              "samples": 1,
+              "p10": 34,
+              "median": 34
+            },
+            {
+              "roles": "#477763/#62ac73",
+              "samples": 9,
+              "p10": 9,
+              "median": 33
+            },
+            {
+              "roles": "#477763/#bd7756",
+              "samples": 29,
+              "p10": 5,
+              "median": 47
+            },
+            {
+              "roles": "#477763/#eaa48c",
+              "samples": 9,
+              "p10": 8,
+              "median": 48
+            },
+            {
+              "roles": "#4c5792/#6f87c1",
+              "samples": 7,
+              "p10": 0,
+              "median": 0
+            },
+            {
+              "roles": "#4c5792/#bd7756",
+              "samples": 7,
+              "p10": 51,
+              "median": 70
+            },
+            {
+              "roles": "#5c9e96/#eaa48c",
+              "samples": 5,
+              "p10": 17,
+              "median": 17
+            },
+            {
+              "roles": "#62ac73/#bd7756",
+              "samples": 29,
+              "p10": 5,
+              "median": 26
+            },
+            {
+              "roles": "#62ac73/#eaa48c",
+              "samples": 12,
+              "p10": 8,
+              "median": 64
+            },
+            {
+              "roles": "#69425e/#eaa48c",
+              "samples": 5,
+              "p10": 70,
+              "median": 70
+            },
+            {
+              "roles": "#6f87c1/#bd7756",
+              "samples": 27,
+              "p10": 8,
+              "median": 46
+            },
+            {
+              "roles": "#9ca7c2/#bd7756",
+              "samples": 10,
+              "p10": 20,
+              "median": 20
+            },
+            {
+              "roles": "#bd7756/#eaa48c",
+              "samples": 19,
+              "p10": 3,
+              "median": 3
+            }
+          ],
+          "used": [
+            "#242534",
+            "#263b4a",
+            "#2c2c3b",
+            "#2d4346",
+            "#314452",
+            "#343344",
+            "#382c28",
+            "#392c37",
+            "#394b4d",
+            "#434a5c",
+            "#49677a",
+            "#513638",
+            "#525a6e",
+            "#536964",
+            "#596a83",
+            "#62858f",
+            "#674937",
+            "#685044",
+            "#777d8b",
+            "#798c7c",
+            "#896049",
+            "#916e51",
+            "#9cbdba",
+            "#a86a55",
+            "#b18059",
+            "#bc9366",
+            "#dca57a",
+            "#f5c393"
+          ],
+          "rgbaSha256": "17cd094957011a2785a81d2add336497cfb992abac9b087fa3b6533024cde319",
+          "alphaSha256": "7f48b3aaac7d9be37fc3aeca0bbdf4126faea85f4c169fde11a7012b06a6bc16"
+        },
+        "protected": {
+          "changed": 0,
+          "budget": 0,
+          "protectedBefore": "17cd094957011a2785a81d2add336497cfb992abac9b087fa3b6533024cde319",
+          "protectedAfter": "17cd094957011a2785a81d2add336497cfb992abac9b087fa3b6533024cde319",
+          "rgbPatchApplied": false,
+          "postLockStatus": "NO_MEANINGFUL_VISUAL_GAIN"
+        },
+        "context": {
+          "day": {
+            "feet": {
+              "near": {
+                "projectedGroundY": 58,
+                "lowestContourY": 57,
+                "clearance": 0,
+                "solePixels": 8,
+                "soleBand": [
+                  28,
+                  35
+                ],
+                "toeRise": 0,
+                "visibleSolePixels": 8,
+                "shadow": 8
+              },
+              "far": {
+                "projectedGroundY": 57,
+                "lowestContourY": 56,
+                "clearance": 0,
+                "solePixels": 7,
+                "soleBand": [
+                  40,
+                  46
+                ],
+                "toeRise": 0,
+                "visibleSolePixels": 7,
+                "shadow": 0
+              }
+            },
+            "edges": {
+              "silhouette": {
+                "n": 326,
+                "p10": 25,
+                "median": 93,
+                "weak": 22
+              },
+              "outline": {
+                "n": 326,
+                "p10": 25,
+                "median": 93,
+                "weak": 22
+              },
+              "contact": {
+                "n": 29,
+                "p10": 58,
+                "median": 93,
+                "weak": 0
+              },
+              "outlineRuns": [
+                235,
+                4
+              ],
+              "weakOutlineRuns": [
+                8,
+                5,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "signal": {
+                "pixels": 6,
+                "clusters": [
+                  6
+                ],
+                "housing": {
+                  "n": 10,
+                  "p10": 20,
+                  "median": 20,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            },
+            "equipment": {
+              "pole": {
+                "pixels": 240,
+                "clusters": [
+                  149,
+                  76,
+                  15
+                ],
+                "housing": {
+                  "n": 162,
+                  "p10": 8,
+                  "median": 54,
+                  "weak": 42
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            },
+            "anchor": [
+              212,
+              178
+            ],
+            "rgbaSha256": "028e3153377413e967fa3a5c675fd8f7ef13186c83ae6cb0b75b00452f0918a3",
+            "visible": 1222,
+            "total": 1222
+          },
+          "night": {
+            "feet": {
+              "near": {
+                "projectedGroundY": 58,
+                "lowestContourY": 57,
+                "clearance": 0,
+                "solePixels": 8,
+                "soleBand": [
+                  28,
+                  35
+                ],
+                "toeRise": 0,
+                "visibleSolePixels": 8,
+                "shadow": 8
+              },
+              "far": {
+                "projectedGroundY": 57,
+                "lowestContourY": 56,
+                "clearance": 0,
+                "solePixels": 7,
+                "soleBand": [
+                  40,
+                  46
+                ],
+                "toeRise": 0,
+                "visibleSolePixels": 7,
+                "shadow": 0
+              }
+            },
+            "edges": {
+              "silhouette": {
+                "n": 326,
+                "p10": 23,
+                "median": 43,
+                "weak": 26
+              },
+              "outline": {
+                "n": 326,
+                "p10": 23,
+                "median": 43,
+                "weak": 26
+              },
+              "contact": {
+                "n": 29,
+                "p10": 14,
+                "median": 33,
+                "weak": 5
+              },
+              "outlineRuns": [
+                235,
+                4
+              ],
+              "weakOutlineRuns": [
+                8,
+                4,
+                3,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              "signal": {
+                "pixels": 6,
+                "clusters": [
+                  6
+                ],
+                "housing": {
+                  "n": 10,
+                  "p10": 20,
+                  "median": 20,
+                  "weak": 0
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            },
+            "equipment": {
+              "pole": {
+                "pixels": 240,
+                "clusters": [
+                  149,
+                  76,
+                  15
+                ],
+                "housing": {
+                  "n": 162,
+                  "p10": 8,
+                  "median": 54,
+                  "weak": 42
+                },
+                "exterior": {
+                  "n": 0,
+                  "p10": null,
+                  "median": null,
+                  "weak": 0
+                }
+              }
+            },
+            "anchor": [
+              212,
+              178
+            ],
+            "rgbaSha256": "9793cd93e60c3832b278caff2a0e4ae9562723938340c6df7a78c5d46cc8217c",
+            "visible": 1222,
+            "total": 1222
+          },
+          "scene": "Tidegate Calibration Stop",
+          "source": {
+            "file": "benchmarks/fixtures/e73/tidegate.json",
+            "sha256": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b"
+          }
+        }
+      }
+    }
+  ],
+  "diffs": {},
+  "negative": [
+    "landmark",
+    "owner mask",
+    "protected RGB",
+    "second anchor on shared prop"
+  ],
+  "animation": "DESIGN_ONLY_AWAITING_OWNER"
+}

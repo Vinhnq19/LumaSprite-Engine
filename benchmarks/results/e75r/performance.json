@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "node": "v26.13.1",
+  "platform": "win32",
+  "apiCalls": 0,
+  "bytes": 1220230,
+  "runs": [
+    {
+      "id": "ridge-mechanic",
+      "primaryCpuMicroseconds": {
+        "user": 1250000,
+        "system": 93000
+      },
+      "repeatCpuMicroseconds": {
+        "user": 906000,
+        "system": 63000
+      },
+      "bodyBuilds": 2,
+      "gameplayRenders": 4
+    },
+    {
+      "id": "marsh-harvester",
+      "primaryCpuMicroseconds": {
+        "user": 1235000,
+        "system": 15000
+      },
+      "repeatCpuMicroseconds": {
+        "user": 922000,
+        "system": 32000
+      },
+      "bodyBuilds": 2,
+      "gameplayRenders": 4
+    },
+    {
+      "id": "canal-porter",
+      "primaryCpuMicroseconds": {
+        "user": 406000,
+        "system": 31000
+      },
+      "repeatCpuMicroseconds": {
+        "user": 453000,
+        "system": 31000
+      },
+      "bodyBuilds": 1,
+      "gameplayRenders": 2
+    }
+  ]
+}
