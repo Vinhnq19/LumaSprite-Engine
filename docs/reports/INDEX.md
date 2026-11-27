@@ -4,8 +4,9 @@
 
 | Cần xem | Báo cáo |
 | --- | --- |
-| E7.3R · Stormwatch, Tidegate và Mistfen | [Portable Art Review](E7.3R-PORTABLE-ART-REVIEW.html) · [QA](../../benchmarks/results/e73r/verification.json) · [SHA-256](../../benchmarks/results/e73r/SHA256SUMS) · [Human Review JSON](../../benchmarks/results/e73r/human-review.json) |
-| E7.3R · Semantic roles | [Style Mapping Audit](e73r-semantic-style-audit.md) · [E7.4 Architecture Proposal](e74-quality-guided-generation-proposal.md) |
+| E7.4 · Rain Gauge và Harbor Beacon | [Portable Art Review](E7.4-PORTABLE-ART-REVIEW.html) · [QA](../../benchmarks/results/e74/verification.json) · [SHA-256](../../benchmarks/results/e74/SHA256SUMS) · [Human Review JSON](../../benchmarks/results/e74/human-review.json) |
+| E7.4 · Candidate contract và render budget | [Architecture Audit](e74-pilot-architecture.md) · [Performance](../../benchmarks/results/e74/performance.json) |
+| E7.3R · Quyết định cuối của Owner | [Final Acceptance](e73r-final-artistic-acceptance.md) · [A/B/C gốc](E7.3R-PORTABLE-ART-REVIEW.html) · [Style Mapping Audit](e73r-semantic-style-audit.md) |
 | E7.3 · Quyết định của Owner | [Artistic Acceptance](e73-artistic-acceptance.md) · [A/B gốc](E7.3-PORTABLE-ART-REVIEW.html) · [Style Audit](e73-style-audit.md) |
 | E7.2 · Quyết định cuối của Owner | [Final Artistic Decision Record](e72-final-artistic-acceptance.md) · [E7.2-R S0/S1/S2 và H4](E7.2-R-PORTABLE-ART-REVIEW.html) |
 | E7.1 · Quyết định của Project Owner | [Artistic Decision Record](e71-artistic-decision.md) |
