@@ -18,6 +18,10 @@ const selection = z.discriminatedUnion('mode', [
   z.strictObject({ mode: z.literal('locked'), colors: paletteColorsSchema }),
 ]);
 type Review = ReturnType<typeof characterReview>;
+export type MaterialDirection = {
+  ramps: Partial<Record<Surface, Record<keyof typeof characterRamps.skin, string>>>;
+  outline: string;
+};
 
 const outlineColor = chestColors.contour;
 const authoredPalette = [...new Set([outlineColor, ...Object.values(characterRamps).flatMap(ramp => Object.values(ramp))])];
@@ -49,19 +53,21 @@ function boundsFor(pixels: number[], width: number): SurfaceBounds {
   return { left: Math.min(...xs), top: Math.min(...ys), right: Math.max(...xs), bottom: Math.max(...ys) };
 }
 
-export function renderCharacterMaterials(review: Review, lock: ShapeLock, style: MaterialStyle, policy: unknown = { mode: 'authored' }) {
+export function renderCharacterMaterials(review: Review, lock: ShapeLock, style: MaterialStyle, policy: unknown = { mode: 'authored' }, direction?: MaterialDirection) {
   if (!materialStyles.includes(style)) throw new Error('Expected material style m1, m2 or m2p.');
   requireShapeLock(review, lock);
   const choice = selection.parse(policy);
-  const surfaceRamps = review.spec.version === 3 && review.spec.outfit.cloth === 'russet-moss'
+  const authoredRamps = review.spec.version === 3 && review.spec.outfit.cloth === 'russet-moss'
     ? { ...characterRamps, ...russetMossRamps } : characterRamps;
-  const defaultPalette = surfaceRamps === characterRamps ? authoredPalette
-    : [...new Set([outlineColor, ...Object.values(surfaceRamps).flatMap(ramp => Object.values(ramp))])];
+  const surfaceRamps = direction ? { ...authoredRamps, ...direction.ramps } : authoredRamps;
+  const outline = direction?.outline ?? outlineColor;
+  const defaultPalette = !direction && surfaceRamps === characterRamps ? authoredPalette
+    : [...new Set([outline, ...Object.values(surfaceRamps).flatMap(ramp => Object.values(ramp))])];
   const palette = choice.mode === 'locked' ? choice.colors : choice.mode === 'project'
     ? [...new Set([...productionProjectPalette, ...defaultPalette])] : defaultPalette;
   const ramps = Object.fromEntries(Object.entries(surfaceRamps).map(([key, colors]) =>
     [key, mapPalette(colors, palette)])) as Record<Surface, Record<keyof typeof characterRamps.skin, number>>;
-  const contour = mapPalette({ outline: outlineColor }, palette).outline;
+  const contour = mapPalette({ outline }, palette).outline;
   const { w, h } = review.flat;
   const directed = style !== 'm1';
   const sourceLayers = review.spec.palette.mode === 'authored' ? review.layers

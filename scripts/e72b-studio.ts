@@ -7,9 +7,10 @@ import { test } from 'node:test';
 import { decodePng } from '../src/core/renderer/png.ts';
 import { sha256 } from '../src/quality/raster.ts';
 
-test('Studio preserves the locked stone benchmark PNGs on save, reopen and export',async t=>{
+test('Studio preserves locked benchmark PNGs on save, reopen and export',async t=>{
+  const pilot=process.argv.includes('--pilot');
   const refined=process.argv.includes('--refine');
-  const edition=refined?'e72r':'e72b';
+  const edition=pilot?'e73':refined?'e72r':'e72b';
   const root='benchmarks/results/'+edition+'/';
   const studio=resolve(process.env.LUMASPRITE_STUDIO_ROOT??'../LumaSprite-Studio');
   const uri=(path:string)=>pathToFileURL(join(studio,path)).href;
@@ -27,7 +28,8 @@ test('Studio preserves the locked stone benchmark PNGs on save, reopen and expor
   t.after(()=>rm(folder,{recursive:true,force:true}));
   const store=new PixelStore(folder);
   const cases=[];
-  const files=refined?
+  const files=pilot?['stormwatch','tidegate'].flatMap(id=>
+    ['a','b'].flatMap(variant=>['character','prop','environment','scene-night'].map(file=>id+'/'+variant+'/'+file+'.png'))):refined?
     ['r1/day/s2/native.png','h1/night/s2/native.png','h3/night/s2/native.png','h4/day/s2/native.png',
       'h4/night/s2/material.png','h4/night/silhouette.png'] :
     ['r1/day/s0/native.png','r1/day/s1/native.png','h1/night/s1/native.png',
@@ -41,14 +43,13 @@ test('Studio preserves the locked stone benchmark PNGs on save, reopen and expor
     celFor(asset,layer.id,frame.id,true).data.set(data);
     const {id}=store.create(doc.name,raster.w,raster.h,0,doc);
     const original=store.load(id,true);
-    store.save(id,original.revision,original,'Save flattened stone benchmark');
+    store.save(id,original.revision,original,'Save flattened benchmark');
     const reopened=store.load(id,true);
     const result=exportPixel({document:reopened,assetId:asset.id,frameId:frame.id,format:'png'});
     assert.deepEqual(decodePng(Buffer.from(result.data)),raster);
     cases.push({file,canvas:[raster.w,raster.h],pngSha256:sha256(bytes),rgbaSha256:sha256(raster.rgba)});
   }
-  const flag=refined?process.env.LUMASPRITE_PUBLISH_E72R:process.env.LUMASPRITE_PUBLISH_E72B;
-  const output=flag==='1'?root:'benchmarks/results/run/'+edition+'/';
+  const output=process.env['LUMASPRITE_PUBLISH_'+edition.toUpperCase()]==='1'?root:'benchmarks/results/run/'+edition+'/';
   await mkdir(output,{recursive:true});
   await writeFile(output+'studio-parity.json',JSON.stringify({revision,mode:'RAW_PNG_ONLY',cases},null,2)+'\n');
   t.diagnostic('Studio '+revision.slice(0,7)+' · '+cases.length+' exact RGBA round-trips.');

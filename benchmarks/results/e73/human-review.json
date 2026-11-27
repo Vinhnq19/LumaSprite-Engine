@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "PENDING_HUMAN_REVIEW",
+  "choices": [
+    "A",
+    "B",
+    "Neither"
+  ],
+  "cases": [
+    {
+      "id": "stormwatch",
+      "choices": {
+        "character": null,
+        "prop": null,
+        "environment": null,
+        "setConsistency": null
+      },
+      "notes": ""
+    },
+    {
+      "id": "tidegate",
+      "choices": {
+        "character": null,
+        "prop": null,
+        "environment": null,
+        "setConsistency": null
+      },
+      "notes": ""
+    }
+  ]
+}
