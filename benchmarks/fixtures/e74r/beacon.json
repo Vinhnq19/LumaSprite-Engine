@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "id": "harbor-signal-beacon",
+  "name": "Harbor Signal Beacon",
+  "role": "development",
+  "kind": "beacon",
+  "seed": 9317,
+  "canvas": 32,
+  "dimensions": {
+    "height": 21,
+    "width": 8,
+    "depth": 5
+  },
+  "style": {
+    "file": "benchmarks/fixtures/e73/art-direction-v1.json",
+    "sha256": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c"
+  },
+  "view": "three-quarter-right",
+  "brief": "A hooded lens on braced feet with a separate angled control lever and knob, attached to the lit housing.",
+  "before": {
+    "brief": {
+      "file": "benchmarks/fixtures/e74/harbor-signal-beacon.json",
+      "sha256": "9e5a69ac5bede96aaf4110d89565feb40eeefc35f73fbfc01c453aec435f17f6"
+    },
+    "candidate": "a2"
+  },
+  "context": {
+    "file": "benchmarks/fixtures/e73r/mistfen.json",
+    "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe"
+  },
+  "priority": [
+    "lens and hood",
+    "control lever",
+    "braced feet"
+  ]
+}

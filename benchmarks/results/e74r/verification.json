@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "checkpoint": "4e341f3d43a1058cbd495272cd5c0442ebe7d541",
+  "technical": "PASS",
+  "artistic": "PENDING_HUMAN_REVIEW",
+  "holdout": "MIXED_ARTISTIC_RESULT",
+  "checks": [
+    [
+      "Lint, typecheck, build, CLI smoke",
+      "PASS",
+      "Production build và loopback"
+    ],
+    [
+      "Engine tests",
+      "PASS",
+      "73/73"
+    ],
+    [
+      "Historical SHA và artifact",
+      "PASS",
+      "805 checksum, 361 artifact tái tạo"
+    ],
+    [
+      "Regression E7.1–E7.4",
+      "PASS",
+      "E7.1/R, E7.2-A/B/R, E7.3/R, E7.4, các bộ review khóa"
+    ],
+    [
+      "Determinism, alpha, RGBA và palette",
+      "PASS",
+      "46 PNG mới, 44 PNG E7.4 giữ nguyên, 95 SHA-256; 13 màu là trần"
+    ],
+    [
+      "Shape gate, landmarks, anchor và ownership",
+      "PASS",
+      "Ba case, ba silhouette riêng; khớp geometry sau material"
+    ],
+    [
+      "Collision, context và occlusion",
+      "PASS",
+      "Day/Night đúng camera, anchor, actor và route; ảnh instrument hiện đủ pixel"
+    ],
+    [
+      "Vật liệu tối trong cảnh thật",
+      "PASS",
+      "Sample Day/Night ở biên silhouette, chân, landmark và mặt vật liệu bên trong"
+    ],
+    [
+      "Local patch và protected SHA-256",
+      "PASS",
+      "Beacon thay 6 pixel, 1.018 pixel protected; alpha và cảnh ngoài mask khớp"
+    ],
+    [
+      "Studio raw PNG parity",
+      "PASS",
+      "8 lượt save–reopen–export khớp RGBA"
+    ],
+    [
+      "Gameplay E8 và Studio product integration",
+      "NOT RUN",
+      "Phạm vi pilot offline và nhập/xuất PNG"
+    ]
+  ],
+  "findings": {
+    "rain": {
+      "outerNightP10": [
+        25,
+        15,
+        33
+      ],
+      "contactNightP10": [
+        25,
+        15,
+        15
+      ],
+      "local": "NO_MEANINGFUL_VISUAL_GAIN"
+    },
+    "beacon": {
+      "outerNightP10": [
+        24,
+        14,
+        14
+      ],
+      "weakNightBeforeAfter": [
+        39,
+        33
+      ],
+      "local": "NO_MEANINGFUL_VISUAL_GAIN",
+      "note": "Subtle roof-rim difference; no clear gameplay 1× gain. Both versions retained."
+    },
+    "vane": {
+      "nightP10": 15,
+      "reading": "Arrow and tail read more clearly than rotation mechanism.",
+      "gap": "Static vane shown in a locked roadway context; dedicated cliff geometry and rotation remain outside supported scope."
+    },
+    "judgment": "Assistant visual observation, Owner scores and choices left blank."
+  },
+  "cost": {
+    "primaryCpuMilliseconds": 2500,
+    "sceneRenders": 8,
+    "ownershipPasses": 4,
+    "apiCalls": 0
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "field-rain-gauge",
+      "variants": [
+        {
+          "id": "a0",
+          "day": {
+            "pixelsByRole": {
+              "#98a0be": 136,
+              "#bc8862": 123
+            },
+            "materialAndContour": {
+              "samples": 246,
+              "p10": 13,
+              "median": 20,
+              "weak": 50
+            },
+            "materialToMaterial": {
+              "samples": 136,
+              "p10": 4,
+              "median": 20,
+              "weak": 50
+            },
+            "cutoff": 90
+          },
+          "night": {
+            "pixelsByRole": {
+              "#98a0be": 136,
+              "#bc8862": 123
+            },
+            "materialAndContour": {
+              "samples": 246,
+              "p10": 13,
+              "median": 20,
+              "weak": 50
+            },
+            "materialToMaterial": {
+              "samples": 136,
+              "p10": 4,
+              "median": 20,
+              "weak": 50
+            },
+            "cutoff": 90
+          }
+        },
+        {
+          "id": "a1",
+          "day": {
+            "pixelsByRole": {
+              "#98a0be": 103,
+              "#789e94": 71
+            },
+            "materialAndContour": {
+              "samples": 228,
+              "p10": 17,
+              "median": 49,
+              "weak": 61
+            },
+            "materialToMaterial": {
+              "samples": 38,
+              "p10": 1,
+              "median": 48,
+              "weak": 10
+            },
+            "cutoff": 90
+          },
+          "night": {
+            "pixelsByRole": {
+              "#98a0be": 103,
+              "#789e94": 71
+            },
+            "materialAndContour": {
+              "samples": 228,
+              "p10": 17,
+              "median": 49,
+              "weak": 61
+            },
+            "materialToMaterial": {
+              "samples": 38,
+              "p10": 1,
+              "median": 48,
+              "weak": 10
+            },
+            "cutoff": 90
+          }
+        },
+        {
+          "id": "e74r",
+          "day": {
+            "pixelsByRole": {
+              "#789e94": 88,
+              "#98a0be": 79
+            },
+            "materialAndContour": {
+              "samples": 216,
+              "p10": 17,
+              "median": 49,
+              "weak": 53
+            },
+            "materialToMaterial": {
+              "samples": 54,
+              "p10": 1,
+              "median": 66,
+              "weak": 12
+            },
+            "cutoff": 90
+          },
+          "night": {
+            "pixelsByRole": {
+              "#789e94": 88,
+              "#98a0be": 79
+            },
+            "materialAndContour": {
+              "samples": 216,
+              "p10": 17,
+              "median": 49,
+              "weak": 53
+            },
+            "materialToMaterial": {
+              "samples": 54,
+              "p10": 1,
+              "median": 66,
+              "weak": 12
+            },
+            "cutoff": 90
+          }
+        }
+      ]
+    },
+    {
+      "id": "harbor-signal-beacon",
+      "variants": [
+        {
+          "id": "a0",
+          "day": {
+            "pixelsByRole": {
+              "#98a0be": 218,
+              "#bc8862": 97
+            },
+            "materialAndContour": {
+              "samples": 250,
+              "p10": 4,
+              "median": 20,
+              "weak": 71
+            },
+            "materialToMaterial": {
+              "samples": 141,
+              "p10": 4,
+              "median": 17,
+              "weak": 71
+            },
+            "cutoff": 90
+          },
+          "night": {
+            "pixelsByRole": {
+              "#98a0be": 218,
+              "#bc8862": 97
+            },
+            "materialAndContour": {
+              "samples": 250,
+              "p10": 4,
+              "median": 20,
+              "weak": 71
+            },
+            "materialToMaterial": {
+              "samples": 141,
+              "p10": 4,
+              "median": 17,
+              "weak": 71
+            },
+            "cutoff": 90
+          }
+        },
+        {
+          "id": "a2",
+          "day": {
+            "pixelsByRole": {
+              "#98a0be": 97
+            },
+            "materialAndContour": {
+              "samples": 116,
+              "p10": 17,
+              "median": 49,
+              "weak": 49
+            },
+            "materialToMaterial": {
+              "samples": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "cutoff": 90
+          },
+          "night": {
+            "pixelsByRole": {
+              "#98a0be": 97
+            },
+            "materialAndContour": {
+              "samples": 116,
+              "p10": 17,
+              "median": 49,
+              "weak": 49
+            },
+            "materialToMaterial": {
+              "samples": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "cutoff": 90
+          }
+        },
+        {
+          "id": "e74r",
+          "day": {
+            "pixelsByRole": {
+              "#98a0be": 102
+            },
+            "materialAndContour": {
+              "samples": 158,
+              "p10": 17,
+              "median": 49,
+              "weak": 54
+            },
+            "materialToMaterial": {
+              "samples": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "cutoff": 90
+          },
+          "night": {
+            "pixelsByRole": {
+              "#98a0be": 102
+            },
+            "materialAndContour": {
+              "samples": 158,
+              "p10": 17,
+              "median": 49,
+              "weak": 54
+            },
+            "materialToMaterial": {
+              "samples": 0,
+              "p10": null,
+              "median": null,
+              "weak": 0
+            },
+            "cutoff": 90
+          }
+        }
+      ]
+    },
+    {
+      "id": "cliffside-wind-vane",
+      "variants": [
+        {
+          "id": "e74r",
+          "day": {
+            "pixelsByRole": {
+              "#98a0be": 62
+            },
+            "materialAndContour": {
+              "samples": 72,
+              "p10": 17,
+              "median": 49,
+              "weak": 25
+            },
+            "materialToMaterial": {
+              "samples": 6,
+              "p10": 67,
+              "median": 128,
+              "weak": 0
+            },
+            "cutoff": 90
+          },
+          "night": {
+            "pixelsByRole": {
+              "#98a0be": 62
+            },
+            "materialAndContour": {
+              "samples": 72,
+              "p10": 17,
+              "median": 49,
+              "weak": 25
+            },
+            "materialToMaterial": {
+              "samples": 6,
+              "p10": 67,
+              "median": 128,
+              "weak": 0
+            },
+            "cutoff": 90
+          }
+        }
+      ]
+    }
+  ]
+}

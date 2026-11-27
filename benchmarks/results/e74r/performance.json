@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "node": "v26.13.1",
+  "platform": "win32",
+  "onlyDevelopment": false,
+  "apiCalls": 0,
+  "bytes": 497906,
+  "runs": [
+    {
+      "id": "field-rain-gauge",
+      "primary": {
+        "cpuMicroseconds": {
+          "user": 797000,
+          "system": 109000
+        },
+        "count": {
+          "structure": 1,
+          "material": 1,
+          "attemptedPatches": 1,
+          "effectivePatches": 0,
+          "scene": 2,
+          "ownership": 1
+        }
+      },
+      "deterministicRepeat": {
+        "cpuMicroseconds": {
+          "user": 406000,
+          "system": 16000
+        },
+        "count": {
+          "structure": 1,
+          "material": 1,
+          "attemptedPatches": 1,
+          "effectivePatches": 0,
+          "scene": 2,
+          "ownership": 1
+        }
+      },
+      "wallMs": 875
+    },
+    {
+      "id": "harbor-signal-beacon",
+      "primary": {
+        "cpuMicroseconds": {
+          "user": 797000,
+          "system": 156000
+        },
+        "count": {
+          "structure": 1,
+          "material": 1,
+          "attemptedPatches": 1,
+          "effectivePatches": 1,
+          "scene": 4,
+          "ownership": 2
+        }
+      },
+      "deterministicRepeat": {
+        "cpuMicroseconds": {
+          "user": 1125000,
+          "system": 47000
+        },
+        "count": {
+          "structure": 1,
+          "material": 1,
+          "attemptedPatches": 1,
+          "effectivePatches": 1,
+          "scene": 4,
+          "ownership": 2
+        }
+      },
+      "wallMs": 1460
+    },
+    {
+      "id": "cliffside-wind-vane",
+      "primary": {
+        "cpuMicroseconds": {
+          "user": 594000,
+          "system": 47000
+        },
+        "count": {
+          "structure": 1,
+          "material": 1,
+          "attemptedPatches": 1,
+          "effectivePatches": 0,
+          "scene": 2,
+          "ownership": 1
+        }
+      },
+      "deterministicRepeat": {
+        "cpuMicroseconds": {
+          "user": 453000,
+          "system": 15000
+        },
+        "count": {
+          "structure": 1,
+          "material": 1,
+          "attemptedPatches": 1,
+          "effectivePatches": 0,
+          "scene": 2,
+          "ownership": 1
+        }
+      },
+      "wallMs": 817
+    }
+  ]
+}
