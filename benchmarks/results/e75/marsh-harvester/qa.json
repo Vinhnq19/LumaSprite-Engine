@@ -1,0 +1,5007 @@
+{
+  "version": 1,
+  "provenance": {
+    "file": "benchmarks/fixtures/e75/marsh-harvester.json",
+    "sha256": "b40b60fec5add9f02a4b4c2011bca1f01cd75719414c59118ed1a41cf23639b3"
+  },
+  "id": "marsh-harvester",
+  "role": "holdout",
+  "seed": 27887,
+  "style": "weathered-station-v1",
+  "profile": {
+    "file": "benchmarks/fixtures/e61r/style-profile.json",
+    "sha256": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e"
+  },
+  "view": "three-quarter-right",
+  "keyLight": "upper-left",
+  "codeRevision": "61fec574d2cb76476167a57cc1cb10c2c5324319",
+  "candidates": [
+    {
+      "id": "a0",
+      "status": "PASS",
+      "note": "Existing v3 standing-free control.",
+      "scope": "CAPABILITY_GAP: base v3 has no dual toolkit or cloak layer.",
+      "geometry": {
+        "flat": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/flat.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/flat-4x.png"
+        },
+        "silhouette": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/silhouette.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/silhouette-4x.png"
+        },
+        "parts": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/parts.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/parts-4x.png"
+        },
+        "pose": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/pose.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/pose-4x.png"
+        }
+      },
+      "shapeQA": {
+        "body": {
+          "errors": [],
+          "bounds": {
+            "left": 18,
+            "right": 47,
+            "top": 5,
+            "bottom": 57,
+            "area": 1023,
+            "components": 1
+          },
+          "parts": {
+            "far-thigh": {
+              "left": 35,
+              "right": 43,
+              "top": 33,
+              "bottom": 46,
+              "area": 72,
+              "components": 1
+            },
+            "far-shin": {
+              "left": 38,
+              "right": 43,
+              "top": 42,
+              "bottom": 53,
+              "area": 51,
+              "components": 1
+            },
+            "far-boot": {
+              "left": 38,
+              "right": 45,
+              "top": 50,
+              "bottom": 55,
+              "area": 37,
+              "components": 1
+            },
+            "far-upper-arm": {
+              "left": 34,
+              "right": 45,
+              "top": 20,
+              "bottom": 33,
+              "area": 71,
+              "components": 1
+            },
+            "far-forearm": {
+              "left": 41,
+              "right": 46,
+              "top": 30,
+              "bottom": 38,
+              "area": 30,
+              "components": 1
+            },
+            "far-hand": {
+              "left": 43,
+              "right": 46,
+              "top": 36,
+              "bottom": 41,
+              "area": 18,
+              "components": 1
+            },
+            "near-thigh": {
+              "left": 27,
+              "right": 33,
+              "top": 35,
+              "bottom": 47,
+              "area": 81,
+              "components": 1
+            },
+            "near-shin": {
+              "left": 27,
+              "right": 33,
+              "top": 42,
+              "bottom": 55,
+              "area": 66,
+              "components": 1
+            },
+            "near-boot": {
+              "left": 28,
+              "right": 36,
+              "top": 51,
+              "bottom": 56,
+              "area": 40,
+              "components": 1
+            },
+            "hips": {
+              "left": 26,
+              "right": 42,
+              "top": 34,
+              "bottom": 40,
+              "area": 91,
+              "components": 1
+            },
+            "jacket": {
+              "left": 24,
+              "right": 41,
+              "top": 21,
+              "bottom": 39,
+              "area": 240,
+              "components": 1
+            },
+            "strap": {
+              "left": 28,
+              "right": 38,
+              "top": 23,
+              "bottom": 38,
+              "area": 38,
+              "components": 1
+            },
+            "satchel": {
+              "left": 27,
+              "right": 35,
+              "top": 34,
+              "bottom": 44,
+              "area": 75,
+              "components": 1
+            },
+            "neck": {
+              "left": 30,
+              "right": 36,
+              "top": 17,
+              "bottom": 24,
+              "area": 34,
+              "components": 1
+            },
+            "head": {
+              "left": 27,
+              "right": 43,
+              "top": 11,
+              "bottom": 22,
+              "area": 156,
+              "components": 1
+            },
+            "hood": {
+              "left": 25,
+              "right": 42,
+              "top": 6,
+              "bottom": 25,
+              "area": 164,
+              "components": 1
+            },
+            "near-upper-arm": {
+              "left": 21,
+              "right": 29,
+              "top": 23,
+              "bottom": 36,
+              "area": 72,
+              "components": 1
+            },
+            "near-forearm": {
+              "left": 19,
+              "right": 25,
+              "top": 32,
+              "bottom": 41,
+              "area": 45,
+              "components": 1
+            },
+            "near-hand": {
+              "left": 19,
+              "right": 24,
+              "top": 38,
+              "bottom": 43,
+              "area": 21,
+              "components": 1
+            }
+          },
+          "joints": {
+            "near-shoulder": 35,
+            "near-elbow": 21,
+            "near-wrist": 12,
+            "near-hip": 32,
+            "near-knee": 28,
+            "near-ankle": 22,
+            "far-shoulder": 29,
+            "far-elbow": 12,
+            "far-wrist": 9,
+            "far-hip": 33,
+            "far-knee": 21,
+            "far-ankle": 15
+          },
+          "centerX": 33.35251798561151,
+          "plantedFoot": "near",
+          "legGapRows": 6,
+          "maxGap": 4,
+          "gripPixels": 0,
+          "lampGapRows": 0,
+          "structure": "STRUCTURAL_VALID",
+          "constraints": "POSE_CONSTRAINTS_VALID",
+          "visual": "VISUAL_REVIEW_PENDING",
+          "pose": {
+            "errors": [],
+            "intent": "standing-free",
+            "headroom": 5,
+            "feet": {
+              "near": {
+                "projectedGroundY": 58,
+                "lowestContourY": 57,
+                "clearance": 0,
+                "solePixels": 8,
+                "soleBand": [
+                  28,
+                  35
+                ],
+                "toeRise": 0
+              },
+              "far": {
+                "projectedGroundY": 57,
+                "lowestContourY": 56,
+                "clearance": 0,
+                "solePixels": 7,
+                "soleBand": [
+                  38,
+                  44
+                ],
+                "toeRise": 0
+              }
+            },
+            "shoulderDrop": 4,
+            "hipDrop": 2,
+            "kneeBends": {
+              "near": 0,
+              "far": 2
+            },
+            "openHandleRows": 0,
+            "armTorsoGapRows": 0,
+            "lampBodyGap": 0
+          }
+        },
+        "lock": {
+          "version": 1,
+          "kind": "lumasprite-character-shape-lock",
+          "candidate": "marsh-harvester-a0",
+          "checkpoint": "61fec574d2cb76476167a57cc1cb10c2c5324319",
+          "characterSpecVersion": 3,
+          "geometryRevision": 1,
+          "canvas": {
+            "w": 64,
+            "h": 64
+          },
+          "poseIntent": "standing-free",
+          "source": {
+            "geometrySha256": "8f6f9aaf59b7710bd85729bdc9a1abe0d7235c354a43a0a8876ec372c9f74b1a",
+            "specSha256": "7369f8f0ea8400fbfe4641f609783b6ed3897b531d9f10687649773d591de18d",
+            "flatPngSha256": "aa048cc9a5edd0f84397f602a764260878eea7e04f99b419a758a360cd1ad0bc",
+            "silhouettePngSha256": "a85b3595b148ad8defa1152e03649991a870c17cc4839a5709bc2092bbf5fea4",
+            "flatRgbaSha256": "c9ee23141335af4758a65e554e84d22e0ff8198d63981a4307f4c7a2f0148802"
+          },
+          "silhouetteAlphaSha256": "1e77e71e9aa8127919702a3a85ce4189d64d463868b764c04e64bccf8a8df166",
+          "landmarks": {
+            "crown": {
+              "point": [
+                35,
+                15
+              ],
+              "partId": "head"
+            },
+            "neck": {
+              "point": [
+                33,
+                21
+              ],
+              "partId": "neck"
+            },
+            "chest": {
+              "point": [
+                32,
+                26
+              ],
+              "partId": "jacket"
+            },
+            "pelvis": {
+              "point": [
+                34,
+                37
+              ],
+              "partId": "hips"
+            },
+            "far-shoulder": {
+              "point": [
+                36,
+                22
+              ],
+              "partId": "far-upper-arm"
+            },
+            "far-elbow": {
+              "point": [
+                43,
+                32
+              ],
+              "partId": "far-forearm"
+            },
+            "far-wrist": {
+              "point": [
+                45,
+                37
+              ],
+              "partId": "far-forearm"
+            },
+            "far-palm": {
+              "point": [
+                44,
+                40
+              ],
+              "partId": "far-hand"
+            },
+            "far-hip": {
+              "point": [
+                38,
+                36
+              ],
+              "partId": "far-thigh"
+            },
+            "far-knee": {
+              "point": [
+                41,
+                44
+              ],
+              "partId": "far-shin"
+            },
+            "far-ankle": {
+              "point": [
+                40,
+                52
+              ],
+              "partId": "far-boot"
+            },
+            "far-ground": {
+              "point": [
+                40,
+                55
+              ],
+              "partId": "far-boot"
+            },
+            "near-shoulder": {
+              "point": [
+                26,
+                26
+              ],
+              "partId": "near-upper-arm"
+            },
+            "near-elbow": {
+              "point": [
+                23,
+                34
+              ],
+              "partId": "near-forearm"
+            },
+            "near-wrist": {
+              "point": [
+                21,
+                40
+              ],
+              "partId": "near-forearm"
+            },
+            "near-palm": {
+              "point": [
+                22,
+                42
+              ],
+              "partId": "near-hand"
+            },
+            "near-hip": {
+              "point": [
+                30,
+                38
+              ],
+              "partId": "near-thigh"
+            },
+            "near-knee": {
+              "point": [
+                30,
+                45
+              ],
+              "partId": "near-shin"
+            },
+            "near-ankle": {
+              "point": [
+                30,
+                53
+              ],
+              "partId": "near-boot"
+            },
+            "near-ground": {
+              "point": [
+                30,
+                56
+              ],
+              "partId": "near-boot"
+            }
+          },
+          "links": [
+            {
+              "from": "crown",
+              "to": "neck"
+            },
+            {
+              "from": "neck",
+              "to": "chest"
+            },
+            {
+              "from": "chest",
+              "to": "pelvis"
+            },
+            {
+              "from": "chest",
+              "to": "far-shoulder"
+            },
+            {
+              "from": "far-shoulder",
+              "to": "far-elbow"
+            },
+            {
+              "from": "far-elbow",
+              "to": "far-wrist"
+            },
+            {
+              "from": "far-wrist",
+              "to": "far-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "far-hip"
+            },
+            {
+              "from": "far-hip",
+              "to": "far-knee"
+            },
+            {
+              "from": "far-knee",
+              "to": "far-ankle"
+            },
+            {
+              "from": "far-ankle",
+              "to": "far-ground"
+            },
+            {
+              "from": "chest",
+              "to": "near-shoulder"
+            },
+            {
+              "from": "near-shoulder",
+              "to": "near-elbow"
+            },
+            {
+              "from": "near-elbow",
+              "to": "near-wrist"
+            },
+            {
+              "from": "near-wrist",
+              "to": "near-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "near-hip"
+            },
+            {
+              "from": "near-hip",
+              "to": "near-knee"
+            },
+            {
+              "from": "near-knee",
+              "to": "near-ankle"
+            },
+            {
+              "from": "near-ankle",
+              "to": "near-ground"
+            }
+          ],
+          "gripAnchor": null,
+          "groundPivot": [
+            32,
+            58
+          ],
+          "projectedGround": {
+            "near": 58,
+            "far": 57
+          },
+          "layerOrder": [
+            "far-thigh",
+            "far-shin",
+            "far-boot",
+            "far-upper-arm",
+            "far-forearm",
+            "far-hand",
+            "near-thigh",
+            "near-shin",
+            "near-boot",
+            "hips",
+            "jacket",
+            "strap",
+            "satchel",
+            "neck",
+            "head",
+            "hood",
+            "near-upper-arm",
+            "near-forearm",
+            "near-hand"
+          ],
+          "bodyParts": {
+            "far-thigh": {
+              "geometrySha256": "ea5ba2fac03f0afc1f09922103abc39f0f3b8880acca8138097b72197c84f2c7",
+              "sourceRgbaSha256": "86ef9d88fa1f52f9cf114583dafe0209d84f54c4c452ef89d0c49420563eca08",
+              "alphaSha256": "5986fab487d75fe160bef584bedd415e4b4cb9dadfbbf7f45b960fc44e48939e",
+              "pixels": 72
+            },
+            "far-shin": {
+              "geometrySha256": "0e6dfb9dff67ce32ab2d2df04070b421a4e9a5622417f61398622386e6e03c20",
+              "sourceRgbaSha256": "6bc21b8757aa0d26bc279d14108e20c2964b3fea6413da65c30010851a6a5a38",
+              "alphaSha256": "c6d144a1f5f41365aa2317edff54e8368a29c8693504a226ab83998944ffce93",
+              "pixels": 51
+            },
+            "far-boot": {
+              "geometrySha256": "9d13a7ebda15d3bb3af99313699fb879236d512a4064d65a417722e2d0d6fbd4",
+              "sourceRgbaSha256": "334982634067af5e8136bf903acb83faef0e488e99972a27095657f1805dad6b",
+              "alphaSha256": "397dd4f78d1ae99a735a74f1e8c728f25144bf1eb8db7e1d3f2908422f4f7401",
+              "pixels": 37
+            },
+            "far-upper-arm": {
+              "geometrySha256": "658e853a0d9f79f4cae344d115e52848e3c7ef152d9988f928c96b6ebdcf79bb",
+              "sourceRgbaSha256": "6420521f1ded6e0f12e446e3418dc9657f2afd0b088b8670260d228e83aaa375",
+              "alphaSha256": "b4c8c5a764942b62dbd5cd80510b5417fbbef3c8a8304d40442b62e0247ee384",
+              "pixels": 71
+            },
+            "far-forearm": {
+              "geometrySha256": "35f76ffcd60d55c1b03302361912752bab5f9c351b78ac7b4df8133f65de5a43",
+              "sourceRgbaSha256": "f8b86ff973e9a7042bc02263012a51a07a38cd831c30ae496a8649cec1101c90",
+              "alphaSha256": "5fc9291d6d475deaaa55998d5b6be9826e90c6989da0c3e5760177f80938cfb5",
+              "pixels": 30
+            },
+            "far-hand": {
+              "geometrySha256": "685a12dcf0898739a0d62f277dd0f5ff9608259f417e6669096603e41b4c3575",
+              "sourceRgbaSha256": "7c64592d1e72396f05313b6c27b029a0b6349244732f1ac394a037bf3ed1fe41",
+              "alphaSha256": "f2cae49f603382afee2f9977ebc774982fe4a4c45d9f48353f3ca5ecbe6c4114",
+              "pixels": 18
+            },
+            "near-thigh": {
+              "geometrySha256": "c32e2364a4490760648e94adbfaf56c501b2e489e0a0eff41e793fc68addf2ea",
+              "sourceRgbaSha256": "e556c172ed88cbf5ac409d7031063d974faeb33f6f9662c4199d3cc6c333470e",
+              "alphaSha256": "1c63870a37423f6eda5bff90bec537ff807395d0c17d9f3362b7a72172f00735",
+              "pixels": 81
+            },
+            "near-shin": {
+              "geometrySha256": "e033bc201fcee89f4818d4f8504bc491aca9fa9694e6bb3feeaa3cfda738ff2e",
+              "sourceRgbaSha256": "a81d38894abf4b629ae9b113da5d0e2e1fff65a90fff280872137c606587e76f",
+              "alphaSha256": "12050469aa864be06a734871ba12a4685434e8581456bac60ed8b7b8e45de686",
+              "pixels": 66
+            },
+            "near-boot": {
+              "geometrySha256": "3aabc8555f781286192b785ef308e4327cf422e550899454710cf7c7962ab7d9",
+              "sourceRgbaSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+              "alphaSha256": "fd094e297b25791997375a79270cfbf07f3bfc31531bb28c4ffbd35594d4750b",
+              "pixels": 40
+            },
+            "hips": {
+              "geometrySha256": "4abca70a711d545a6dd7bac8e438a0e883758af3a2b24a63b35eae776e15b0ad",
+              "sourceRgbaSha256": "244dd25c5a2a7584f7546ef7359d9717e9904adfc299aec3607c73037db2506d",
+              "alphaSha256": "b4347fad8e3fdd4bf0c84c0bf5060f38d648708ac741ac13a92f557422bf95b3",
+              "pixels": 91
+            },
+            "jacket": {
+              "geometrySha256": "cfc00f3c33420f56e844993239aa356f46d6c06200fc196893c2ba5fc33e35c1",
+              "sourceRgbaSha256": "e2a2c25517afe3b66b118f20a9efa60d3303e11c3b68bb857a029c837cd14af4",
+              "alphaSha256": "377e1e16fca66264910166c7cf811d45b8c4e6c4255f29f1b8976f339de8202d",
+              "pixels": 240
+            },
+            "strap": {
+              "geometrySha256": "60b6fd1bb9b20d51927519561f3768d92537605650abd6344e217d1964061d7d",
+              "sourceRgbaSha256": "0f73475893b4219e208c4ba238235280b2e28fee8ff0b489dcefa683defc146b",
+              "alphaSha256": "5d0d2cc6f5aabea70d2189bc014fa33025083ea0939bb00b621ae998967b48b0",
+              "pixels": 38
+            },
+            "satchel": {
+              "geometrySha256": "495d42b755aebb12a24ce68d4d31bc32e9b31fe8477d026a5268ee499d06fcc7",
+              "sourceRgbaSha256": "beb4b29a781cf22a8b3fe1fc99ecef96c8d0e0893a3b4afea5e4a90da72704b1",
+              "alphaSha256": "bb7eb721cd49ab05437493e26018afa460a7f6827748972ad57461ccbb52bdae",
+              "pixels": 75
+            },
+            "neck": {
+              "geometrySha256": "3dd9147669f69b4ff612c3cf66c82c348123804395862596acee06921692dfea",
+              "sourceRgbaSha256": "885e8d92ff676204e02e6b8a09fa2f29d62e4ed61e3bcc369ef5f06830e5d7d9",
+              "alphaSha256": "9fe1c68979ed61bb64e86d9c15172c6ef324291fdb46789cf5a2c420dfbe585c",
+              "pixels": 34
+            },
+            "head": {
+              "geometrySha256": "47ec00bd8aa5b52d9b229226cd5d8f878f4282a7d906b070c9ea6aeede05f569",
+              "sourceRgbaSha256": "c3347c018ba7ee02d42b3ebdf5b9419824f33bdc9ec3136b0b0495f46be33506",
+              "alphaSha256": "cd1bba31fbb33c18496f5661229a11d920d852601b923867b00df72c3fc433fd",
+              "pixels": 156
+            },
+            "hood": {
+              "geometrySha256": "590b66e1c60ebd3a12e9896c7648eef0005e56a954ff5d6fdefa61912de768e5",
+              "sourceRgbaSha256": "6f0de606830d6c141de375efbfa0d160b0daa81fb0e775b61a81ab454c69565e",
+              "alphaSha256": "c78cee12f9ee8db17b7fd5cedf98cb0de3293b70a68b66fd94c92befc43ac070",
+              "pixels": 164
+            },
+            "near-upper-arm": {
+              "geometrySha256": "b2954deebeda2028e0129e0c7203774d8c4de5253f8913e6d2ea13d55189cc81",
+              "sourceRgbaSha256": "51f48506af4c813e1a314176f46ec426bdaf109c75eb2633fe86e9d16c595e49",
+              "alphaSha256": "f3e6d7743be5e137fdb0549ae0c896779ecb16fa737729e2c08b265a471e54fe",
+              "pixels": 72
+            },
+            "near-forearm": {
+              "geometrySha256": "e3a04203222e9a5f0d13e95929115c83c73e6959629fc5999118f02df8f57362",
+              "sourceRgbaSha256": "8970e8084922dafa807af5d9bbf16b164500483636295c223f0074d5be2183e9",
+              "alphaSha256": "e3b15564c76617a8c88a954139a635008220b78cb0f8c9d2372e52170a4636be",
+              "pixels": 45
+            },
+            "near-hand": {
+              "geometrySha256": "cafa1efc8d2d4b548c6f9019961019f58b0fd3922c911df02e4991008aad49c7",
+              "sourceRgbaSha256": "2a22f6270d06a64a6d2c1603dcb4591d8e9ece5b4fd59686dffd5244d548f030",
+              "alphaSha256": "f55e574ced52e331534ed1429157c9a2171c91480d6e171ccb16ff136f06aa59",
+              "pixels": 21
+            }
+          },
+          "lockedRegions": {
+            "format": "uint8-alpha-row-major",
+            "silhouette": {
+              "alphaSha256": "1e77e71e9aa8127919702a3a85ce4189d64d463868b764c04e64bccf8a8df166",
+              "pixels": 1023
+            },
+            "lowerLegClearance": {
+              "alphaSha256": "ca25704ee2c9f804fe022474ae01ef235922b305262cfc0406dc2d81faaea639",
+              "pixels": 35
+            },
+            "gripContact": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "handleOpening": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "bootSoles": {
+              "alphaSha256": "21d08bb85dadda9487903dc7b9b5be79ed2babe9b026d185860b34cae7497678",
+              "pixels": 15
+            }
+          }
+        },
+        "combinedSha256": "1e77e71e9aa8127919702a3a85ce4189d64d463868b764c04e64bccf8a8df166",
+        "ownersSha256": "26efbdcd262455019301080fbd4405c3db15f41a9f25e96b2fd2200e4ed744ad",
+        "toolGrips": []
+      },
+      "partLegend": {
+        "far-thigh": 1129734911,
+        "far-shin": 1156545535,
+        "far-boot": 1183356159,
+        "far-upper-arm": 1210166783,
+        "far-forearm": 1236977407,
+        "far-hand": 1263788031,
+        "near-thigh": 1290598655,
+        "near-shin": 1317409279,
+        "near-boot": 1344219903,
+        "hips": 1371030527,
+        "jacket": 1397841151,
+        "strap": 1424651775,
+        "satchel": 1451462399,
+        "neck": 1478273023,
+        "head": 1505083647,
+        "hood": 1531894271,
+        "near-upper-arm": 1558704895,
+        "near-forearm": 1585515519,
+        "near-hand": 1612326143
+      },
+      "materialQA": {
+        "coverage": 1023,
+        "outline": 164,
+        "isolatedOutline": 0,
+        "components": [
+          1023
+        ],
+        "bounds": {
+          "left": 18,
+          "top": 5,
+          "right": 47,
+          "bottom": 57
+        },
+        "detail": {
+          "edges": 378,
+          "samples": 1479,
+          "per100": 25.6
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#242032/#376b71",
+            "samples": 1,
+            "p10": 62,
+            "median": 62
+          },
+          {
+            "roles": "#242032/#477763",
+            "samples": 32,
+            "p10": 16,
+            "median": 40
+          },
+          {
+            "roles": "#242032/#4c5792",
+            "samples": 25,
+            "p10": 17,
+            "median": 17
+          },
+          {
+            "roles": "#242032/#5c9e96",
+            "samples": 43,
+            "p10": 25,
+            "median": 37
+          },
+          {
+            "roles": "#242032/#62ac73",
+            "samples": 30,
+            "p10": 36,
+            "median": 71
+          },
+          {
+            "roles": "#242032/#6f87c1",
+            "samples": 31,
+            "p10": 21,
+            "median": 21
+          },
+          {
+            "roles": "#242032/#bd7756",
+            "samples": 55,
+            "p10": 22,
+            "median": 22
+          },
+          {
+            "roles": "#242032/#eaa48c",
+            "samples": 45,
+            "p10": 80,
+            "median": 84
+          },
+          {
+            "roles": "#376b71/#477763",
+            "samples": 1,
+            "p10": 7,
+            "median": 7
+          },
+          {
+            "roles": "#376b71/#5c9e96",
+            "samples": 8,
+            "p10": 8,
+            "median": 29
+          },
+          {
+            "roles": "#376b71/#62ac73",
+            "samples": 10,
+            "p10": 38,
+            "median": 38
+          },
+          {
+            "roles": "#376b71/#bd7756",
+            "samples": 3,
+            "p10": 32,
+            "median": 32
+          },
+          {
+            "roles": "#376b71/#eaa48c",
+            "samples": 9,
+            "p10": 47,
+            "median": 47
+          },
+          {
+            "roles": "#477763/#4c5792",
+            "samples": 1,
+            "p10": 1,
+            "median": 1
+          },
+          {
+            "roles": "#477763/#62ac73",
+            "samples": 11,
+            "p10": 5,
+            "median": 19
+          },
+          {
+            "roles": "#477763/#6f87c1",
+            "samples": 11,
+            "p10": 5,
+            "median": 5
+          },
+          {
+            "roles": "#477763/#bd7756",
+            "samples": 15,
+            "p10": 0,
+            "median": 49
+          },
+          {
+            "roles": "#477763/#eaa48c",
+            "samples": 5,
+            "p10": 9,
+            "median": 96
+          },
+          {
+            "roles": "#4c5792/#6f87c1",
+            "samples": 8,
+            "p10": 0,
+            "median": 4
+          },
+          {
+            "roles": "#4c5792/#bd7756",
+            "samples": 5,
+            "p10": 44,
+            "median": 77
+          },
+          {
+            "roles": "#4c5792/#eaa48c",
+            "samples": 3,
+            "p10": 63,
+            "median": 63
+          },
+          {
+            "roles": "#5c9e96/#62ac73",
+            "samples": 1,
+            "p10": 46,
+            "median": 46
+          },
+          {
+            "roles": "#5c9e96/#69425e",
+            "samples": 12,
+            "p10": 75,
+            "median": 75
+          },
+          {
+            "roles": "#5c9e96/#bd7756",
+            "samples": 2,
+            "p10": 40,
+            "median": 40
+          },
+          {
+            "roles": "#5c9e96/#eaa48c",
+            "samples": 14,
+            "p10": 17,
+            "median": 55
+          },
+          {
+            "roles": "#62ac73/#6f87c1",
+            "samples": 1,
+            "p10": 14,
+            "median": 14
+          },
+          {
+            "roles": "#62ac73/#bd7756",
+            "samples": 30,
+            "p10": 12,
+            "median": 30
+          },
+          {
+            "roles": "#62ac73/#eaa48c",
+            "samples": 7,
+            "p10": 65,
+            "median": 101
+          },
+          {
+            "roles": "#69425e/#eaa48c",
+            "samples": 12,
+            "p10": 58,
+            "median": 70
+          },
+          {
+            "roles": "#6f87c1/#bd7756",
+            "samples": 21,
+            "p10": 1,
+            "median": 45
+          },
+          {
+            "roles": "#bd7756/#eaa48c",
+            "samples": 1,
+            "p10": 15,
+            "median": 15
+          }
+        ],
+        "used": [
+          "#242534",
+          "#2d4346",
+          "#30383c",
+          "#303d41",
+          "#392c37",
+          "#394b4d",
+          "#465046",
+          "#512f32",
+          "#513638",
+          "#535e51",
+          "#536964",
+          "#674937",
+          "#6b4139",
+          "#71453d",
+          "#798c7c",
+          "#86503d",
+          "#88927a",
+          "#896049",
+          "#a36146",
+          "#a86a55",
+          "#b18059",
+          "#d79768",
+          "#dca57a",
+          "#f5c393"
+        ],
+        "rgbaSha256": "c3efda8e9e5d60d41fc707ae5c453dd205839aa01cbbe8ef21989d1dce46c412",
+        "alphaSha256": "16fb26f984eedc448f5eb6ab44ef1fffc96fda0898a55e118dc7ce1c4a1d26ce"
+      },
+      "art": {
+        "final": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/material.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/material-4x.png"
+        },
+        "mask": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/material-mask.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/material-mask-4x.png"
+        },
+        "day": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/day.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/day-4x.png"
+        },
+        "night": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/night.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/night-4x.png"
+        },
+        "near": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/near-grip.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/near-grip-4x.png",
+          "bounds": [
+            13,
+            36,
+            20,
+            23
+          ]
+        },
+        "far": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/far-grip.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/far-grip-4x.png",
+          "bounds": [
+            37,
+            25,
+            24,
+            28
+          ]
+        },
+        "feet": {
+          "native": "benchmarks/results/e75/marsh-harvester/a0/feet.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a0/feet-4x.png",
+          "bounds": [
+            20,
+            42,
+            33,
+            18
+          ]
+        },
+        "toolMasks": {}
+      },
+      "context": {
+        "scene": "Mistfen Ferry Depot",
+        "source": {
+          "file": "benchmarks/fixtures/e73r/mistfen.json",
+          "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe"
+        },
+        "camera": {
+          "width": 320,
+          "height": 208,
+          "sampling": "nearest",
+          "view": "three-quarter-right",
+          "pixelsPerUnit": 32
+        },
+        "light": "upper-left",
+        "anchor": [
+          201,
+          160
+        ],
+        "portal": {
+          "at": [
+            142,
+            123
+          ],
+          "points": [
+            [
+              124,
+              119
+            ],
+            [
+              160,
+              119
+            ],
+            [
+              160,
+              127
+            ],
+            [
+              124,
+              127
+            ]
+          ]
+        },
+        "collisions": [
+          {
+            "id": "sluice-gateway-0",
+            "kind": "architecture",
+            "points": [
+              [
+                111,
+                123
+              ],
+              [
+                124,
+                123
+              ],
+              [
+                124,
+                119
+              ],
+              [
+                132,
+                111
+              ],
+              [
+                119,
+                111
+              ],
+              [
+                111,
+                119
+              ]
+            ]
+          },
+          {
+            "id": "sluice-gateway-1",
+            "kind": "architecture",
+            "points": [
+              [
+                160,
+                123
+              ],
+              [
+                173,
+                123
+              ],
+              [
+                173,
+                119
+              ],
+              [
+                181,
+                111
+              ],
+              [
+                168,
+                111
+              ],
+              [
+                160,
+                119
+              ]
+            ]
+          },
+          {
+            "id": "west-flood-wall",
+            "kind": "architecture",
+            "points": [
+              [
+                31,
+                134
+              ],
+              [
+                87,
+                134
+              ],
+              [
+                87,
+                130
+              ],
+              [
+                92,
+                125
+              ],
+              [
+                36,
+                125
+              ],
+              [
+                31,
+                130
+              ]
+            ]
+          },
+          {
+            "id": "east-flood-wall",
+            "kind": "architecture",
+            "points": [
+              [
+                242,
+                103
+              ],
+              [
+                295,
+                103
+              ],
+              [
+                295,
+                99
+              ],
+              [
+                302,
+                92
+              ],
+              [
+                249,
+                92
+              ],
+              [
+                242,
+                99
+              ]
+            ]
+          },
+          {
+            "id": "signal-pedestal",
+            "kind": "architecture",
+            "points": [
+              [
+                191,
+                106
+              ],
+              [
+                214,
+                106
+              ],
+              [
+                214,
+                102
+              ],
+              [
+                218,
+                98
+              ],
+              [
+                195,
+                98
+              ],
+              [
+                191,
+                102
+              ]
+            ]
+          },
+          {
+            "id": "mooring-post",
+            "kind": "architecture",
+            "points": [
+              [
+                71,
+                151
+              ],
+              [
+                87,
+                151
+              ],
+              [
+                87,
+                147
+              ],
+              [
+                92,
+                142
+              ],
+              [
+                76,
+                142
+              ],
+              [
+                71,
+                147
+              ]
+            ]
+          },
+          {
+            "id": "ferry-level-signal",
+            "kind": "prop",
+            "points": [
+              [
+                62,
+                158
+              ],
+              [
+                82,
+                158
+              ],
+              [
+                82,
+                169
+              ],
+              [
+                62,
+                169
+              ]
+            ]
+          }
+        ],
+        "walkable": "caffa25150f801af6743d3fccb54b03b1c01a2ca2b2a5a1829ce0329f6c4bbdd",
+        "routes": [
+          {
+            "id": "gate-passage",
+            "actor": "surveyor",
+            "points": [
+              [
+                139,
+                196
+              ],
+              [
+                145,
+                159
+              ],
+              [
+                142,
+                137
+              ],
+              [
+                142,
+                96
+              ]
+            ],
+            "halfWidth": 9,
+            "tested": 1919
+          },
+          {
+            "id": "signal-approach",
+            "actor": "courier",
+            "points": [
+              [
+                142,
+                140
+              ],
+              [
+                152,
+                154
+              ],
+              [
+                178,
+                154
+              ],
+              [
+                208,
+                140
+              ],
+              [
+                204,
+                119
+              ]
+            ],
+            "halfWidth": 10,
+            "tested": 1932
+          }
+        ],
+        "secondaryActors": [
+          {
+            "id": "surveyor",
+            "visible": 1072,
+            "hiddenBy": {}
+          }
+        ],
+        "day": {
+          "visible": 1023,
+          "total": 1023,
+          "feet": {
+            "near": {
+              "projectedGroundY": 58,
+              "lowestContourY": 57,
+              "clearance": 0,
+              "solePixels": 8,
+              "soleBand": [
+                28,
+                35
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 8,
+              "shadowSamples": 8
+            },
+            "far": {
+              "projectedGroundY": 57,
+              "lowestContourY": 56,
+              "clearance": 0,
+              "solePixels": 7,
+              "soleBand": [
+                38,
+                44
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 7,
+              "shadowSamples": 0
+            }
+          },
+          "rgbaSha256": "225d746a2c66da9e37342205b5f1fa899addaeee4d46e7e3c06085f3d62d346f",
+          "edges": {
+            "silhouette": {
+              "n": 228,
+              "p10": 27,
+              "median": 80,
+              "weak": 6
+            },
+            "outline": {
+              "n": 228,
+              "p10": 27,
+              "median": 80,
+              "weak": 6
+            },
+            "contact": {
+              "n": 19,
+              "p10": 79,
+              "median": 79,
+              "weak": 0
+            },
+            "outlineRuns": [
+              164
+            ],
+            "weakOutlineRuns": [
+              2,
+              1
+            ],
+            "signal": {
+              "pixels": 0,
+              "clusters": [],
+              "housing": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "toolContrast": {},
+          "surfaces": {
+            "skin": {
+              "pixels": 139,
+              "clusters": [
+                100,
+                21,
+                18
+              ],
+              "housing": {
+                "n": 96,
+                "p10": 47,
+                "median": 80,
+                "weak": 6
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "coat": {
+              "pixels": 141,
+              "clusters": [
+                128,
+                13
+              ],
+              "housing": {
+                "n": 90,
+                "p10": 13,
+                "median": 36,
+                "weak": 16
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "leather": {
+              "pixels": 179,
+              "clusters": [
+                102,
+                40,
+                37
+              ],
+              "housing": {
+                "n": 132,
+                "p10": 5,
+                "median": 30,
+                "weak": 27
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "metal": {
+              "pixels": 0,
+              "clusters": [],
+              "housing": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        },
+        "night": {
+          "visible": 1023,
+          "total": 1023,
+          "feet": {
+            "near": {
+              "projectedGroundY": 58,
+              "lowestContourY": 57,
+              "clearance": 0,
+              "solePixels": 8,
+              "soleBand": [
+                28,
+                35
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 8,
+              "shadowSamples": 8
+            },
+            "far": {
+              "projectedGroundY": 57,
+              "lowestContourY": 56,
+              "clearance": 0,
+              "solePixels": 7,
+              "soleBand": [
+                38,
+                44
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 7,
+              "shadowSamples": 0
+            }
+          },
+          "rgbaSha256": "7bbf915a4f27fda3731489eb17530cc0554d4dc6b4da7a1b4a26c0e68a6f9b5b",
+          "edges": {
+            "silhouette": {
+              "n": 228,
+              "p10": 15,
+              "median": 50,
+              "weak": 29
+            },
+            "outline": {
+              "n": 228,
+              "p10": 15,
+              "median": 50,
+              "weak": 29
+            },
+            "contact": {
+              "n": 19,
+              "p10": 23,
+              "median": 23,
+              "weak": 1
+            },
+            "outlineRuns": [
+              164
+            ],
+            "weakOutlineRuns": [
+              12,
+              7,
+              1
+            ],
+            "signal": {
+              "pixels": 0,
+              "clusters": [],
+              "housing": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "toolContrast": {},
+          "surfaces": {
+            "skin": {
+              "pixels": 139,
+              "clusters": [
+                100,
+                21,
+                18
+              ],
+              "housing": {
+                "n": 96,
+                "p10": 47,
+                "median": 80,
+                "weak": 6
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "coat": {
+              "pixels": 141,
+              "clusters": [
+                128,
+                13
+              ],
+              "housing": {
+                "n": 90,
+                "p10": 13,
+                "median": 36,
+                "weak": 16
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "leather": {
+              "pixels": 179,
+              "clusters": [
+                102,
+                40,
+                37
+              ],
+              "housing": {
+                "n": 132,
+                "p10": 5,
+                "median": 30,
+                "weak": 27
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "metal": {
+              "pixels": 0,
+              "clusters": [],
+              "housing": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        }
+      },
+      "local": {
+        "defectId": "BODY_TOOL_TANGENCY",
+        "status": "NO_MEANINGFUL_VISUAL_GAIN",
+        "scope": "No RGB patch selected",
+        "firstAction": "Keep validated structure because RGB cannot recover tool clearance or hand articulation.",
+        "humanEvaluation": "PENDING_HUMAN_REVIEW",
+        "changed": 0,
+        "budget": 8,
+        "protectedBefore": "c3efda8e9e5d60d41fc707ae5c453dd205839aa01cbbe8ef21989d1dce46c412",
+        "protectedAfter": "c3efda8e9e5d60d41fc707ae5c453dd205839aa01cbbe8ef21989d1dce46c412"
+      }
+    },
+    {
+      "id": "a1",
+      "status": "PASS",
+      "note": "Low outward carry and a wider grounded stance.",
+      "scope": "Landmark-bound equipment on the existing body rig.",
+      "geometry": {
+        "flat": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/flat.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/flat-4x.png"
+        },
+        "silhouette": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/silhouette.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/silhouette-4x.png"
+        },
+        "parts": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/parts.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/parts-4x.png"
+        },
+        "pose": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/pose.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/pose-4x.png"
+        }
+      },
+      "shapeQA": {
+        "body": {
+          "errors": [],
+          "bounds": {
+            "left": 18,
+            "right": 52,
+            "top": 5,
+            "bottom": 57,
+            "area": 1046,
+            "components": 1
+          },
+          "parts": {
+            "far-thigh": {
+              "left": 35,
+              "right": 46,
+              "top": 33,
+              "bottom": 46,
+              "area": 79,
+              "components": 1
+            },
+            "far-shin": {
+              "left": 41,
+              "right": 46,
+              "top": 42,
+              "bottom": 53,
+              "area": 51,
+              "components": 1
+            },
+            "far-boot": {
+              "left": 41,
+              "right": 48,
+              "top": 50,
+              "bottom": 55,
+              "area": 37,
+              "components": 1
+            },
+            "far-upper-arm": {
+              "left": 34,
+              "right": 46,
+              "top": 20,
+              "bottom": 33,
+              "area": 74,
+              "components": 1
+            },
+            "far-forearm": {
+              "left": 42,
+              "right": 49,
+              "top": 30,
+              "bottom": 36,
+              "area": 28,
+              "components": 1
+            },
+            "far-hand": {
+              "left": 47,
+              "right": 51,
+              "top": 34,
+              "bottom": 37,
+              "area": 16,
+              "components": 1
+            },
+            "near-thigh": {
+              "left": 27,
+              "right": 33,
+              "top": 35,
+              "bottom": 47,
+              "area": 81,
+              "components": 1
+            },
+            "near-shin": {
+              "left": 27,
+              "right": 33,
+              "top": 42,
+              "bottom": 55,
+              "area": 66,
+              "components": 1
+            },
+            "near-boot": {
+              "left": 28,
+              "right": 36,
+              "top": 51,
+              "bottom": 56,
+              "area": 40,
+              "components": 1
+            },
+            "hips": {
+              "left": 26,
+              "right": 42,
+              "top": 34,
+              "bottom": 40,
+              "area": 91,
+              "components": 1
+            },
+            "jacket": {
+              "left": 24,
+              "right": 41,
+              "top": 21,
+              "bottom": 39,
+              "area": 240,
+              "components": 1
+            },
+            "strap": {
+              "left": 28,
+              "right": 38,
+              "top": 23,
+              "bottom": 38,
+              "area": 38,
+              "components": 1
+            },
+            "satchel": {
+              "left": 27,
+              "right": 35,
+              "top": 34,
+              "bottom": 44,
+              "area": 75,
+              "components": 1
+            },
+            "neck": {
+              "left": 30,
+              "right": 36,
+              "top": 17,
+              "bottom": 24,
+              "area": 34,
+              "components": 1
+            },
+            "head": {
+              "left": 27,
+              "right": 43,
+              "top": 11,
+              "bottom": 22,
+              "area": 156,
+              "components": 1
+            },
+            "hood": {
+              "left": 25,
+              "right": 42,
+              "top": 6,
+              "bottom": 25,
+              "area": 164,
+              "components": 1
+            },
+            "near-upper-arm": {
+              "left": 21,
+              "right": 29,
+              "top": 23,
+              "bottom": 36,
+              "area": 72,
+              "components": 1
+            },
+            "near-forearm": {
+              "left": 19,
+              "right": 25,
+              "top": 32,
+              "bottom": 41,
+              "area": 45,
+              "components": 1
+            },
+            "near-hand": {
+              "left": 19,
+              "right": 24,
+              "top": 38,
+              "bottom": 43,
+              "area": 21,
+              "components": 1
+            },
+            "cape": {
+              "left": 19,
+              "right": 35,
+              "top": 21,
+              "bottom": 43,
+              "area": 274,
+              "components": 1
+            }
+          },
+          "joints": {
+            "near-shoulder": 35,
+            "near-elbow": 21,
+            "near-wrist": 12,
+            "near-hip": 32,
+            "near-knee": 28,
+            "near-ankle": 22,
+            "far-shoulder": 26,
+            "far-elbow": 12,
+            "far-wrist": 9,
+            "far-hip": 33,
+            "far-knee": 21,
+            "far-ankle": 15
+          },
+          "centerX": 33.35251798561151,
+          "plantedFoot": "near",
+          "legGapRows": 9,
+          "maxGap": 7,
+          "gripPixels": 0,
+          "lampGapRows": 0,
+          "structure": "STRUCTURAL_VALID",
+          "constraints": "POSE_CONSTRAINTS_VALID",
+          "visual": "VISUAL_REVIEW_PENDING",
+          "pose": {
+            "errors": [],
+            "intent": "standing-free",
+            "headroom": 5,
+            "feet": {
+              "near": {
+                "projectedGroundY": 58,
+                "lowestContourY": 57,
+                "clearance": 0,
+                "solePixels": 8,
+                "soleBand": [
+                  28,
+                  35
+                ],
+                "toeRise": 0
+              },
+              "far": {
+                "projectedGroundY": 57,
+                "lowestContourY": 56,
+                "clearance": 0,
+                "solePixels": 7,
+                "soleBand": [
+                  41,
+                  47
+                ],
+                "toeRise": 0
+              }
+            },
+            "shoulderDrop": 4,
+            "hipDrop": 2,
+            "kneeBends": {
+              "near": 0,
+              "far": 3.5
+            },
+            "openHandleRows": 0,
+            "armTorsoGapRows": 0,
+            "lampBodyGap": 0
+          }
+        },
+        "lock": {
+          "version": 1,
+          "kind": "lumasprite-character-shape-lock",
+          "candidate": "marsh-harvester-a1",
+          "checkpoint": "61fec574d2cb76476167a57cc1cb10c2c5324319",
+          "characterSpecVersion": 3,
+          "geometryRevision": 1,
+          "canvas": {
+            "w": 64,
+            "h": 64
+          },
+          "poseIntent": "standing-free",
+          "source": {
+            "geometrySha256": "2fd2cc313ffb5ae4d9b328916516da0809ee3ea2494e8f835e2f137f93e79abc",
+            "specSha256": "6bb80f7e2b06cc9fef1f66cbe6c38fe61c50e2c4b84a29a53dd7e9868f80a5ca",
+            "flatPngSha256": "23de7f253d36d6bde231392960890b0d82f73454c01366af0ce611416b627d7f",
+            "silhouettePngSha256": "88bcd9ee421d2113768c9c5c5174fa8bd33388789d7bd8e50155135499f6a866",
+            "flatRgbaSha256": "2e9c0335db95de1cf5601b8a267d5105adde5221ce5e2a4d8298c5437b282289"
+          },
+          "silhouetteAlphaSha256": "e38cb1e8d8d82df73627e0addf4ab8434d40398d421fa47e738cd701a768e8bf",
+          "landmarks": {
+            "crown": {
+              "point": [
+                35,
+                15
+              ],
+              "partId": "head"
+            },
+            "neck": {
+              "point": [
+                33,
+                21
+              ],
+              "partId": "neck"
+            },
+            "chest": {
+              "point": [
+                32,
+                26
+              ],
+              "partId": "jacket"
+            },
+            "pelvis": {
+              "point": [
+                34,
+                37
+              ],
+              "partId": "hips"
+            },
+            "far-shoulder": {
+              "point": [
+                36,
+                22
+              ],
+              "partId": "far-upper-arm"
+            },
+            "far-elbow": {
+              "point": [
+                44,
+                32
+              ],
+              "partId": "far-forearm"
+            },
+            "far-wrist": {
+              "point": [
+                48,
+                35
+              ],
+              "partId": "far-forearm"
+            },
+            "far-palm": {
+              "point": [
+                50,
+                36
+              ],
+              "partId": "far-hand"
+            },
+            "far-hip": {
+              "point": [
+                38,
+                36
+              ],
+              "partId": "far-thigh"
+            },
+            "far-knee": {
+              "point": [
+                44,
+                44
+              ],
+              "partId": "far-shin"
+            },
+            "far-ankle": {
+              "point": [
+                43,
+                52
+              ],
+              "partId": "far-boot"
+            },
+            "far-ground": {
+              "point": [
+                43,
+                55
+              ],
+              "partId": "far-boot"
+            },
+            "near-shoulder": {
+              "point": [
+                26,
+                26
+              ],
+              "partId": "near-upper-arm"
+            },
+            "near-elbow": {
+              "point": [
+                23,
+                34
+              ],
+              "partId": "near-forearm"
+            },
+            "near-wrist": {
+              "point": [
+                21,
+                40
+              ],
+              "partId": "near-forearm"
+            },
+            "near-palm": {
+              "point": [
+                22,
+                42
+              ],
+              "partId": "near-hand"
+            },
+            "near-hip": {
+              "point": [
+                30,
+                38
+              ],
+              "partId": "near-thigh"
+            },
+            "near-knee": {
+              "point": [
+                30,
+                45
+              ],
+              "partId": "near-shin"
+            },
+            "near-ankle": {
+              "point": [
+                30,
+                53
+              ],
+              "partId": "near-boot"
+            },
+            "near-ground": {
+              "point": [
+                30,
+                56
+              ],
+              "partId": "near-boot"
+            }
+          },
+          "links": [
+            {
+              "from": "crown",
+              "to": "neck"
+            },
+            {
+              "from": "neck",
+              "to": "chest"
+            },
+            {
+              "from": "chest",
+              "to": "pelvis"
+            },
+            {
+              "from": "chest",
+              "to": "far-shoulder"
+            },
+            {
+              "from": "far-shoulder",
+              "to": "far-elbow"
+            },
+            {
+              "from": "far-elbow",
+              "to": "far-wrist"
+            },
+            {
+              "from": "far-wrist",
+              "to": "far-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "far-hip"
+            },
+            {
+              "from": "far-hip",
+              "to": "far-knee"
+            },
+            {
+              "from": "far-knee",
+              "to": "far-ankle"
+            },
+            {
+              "from": "far-ankle",
+              "to": "far-ground"
+            },
+            {
+              "from": "chest",
+              "to": "near-shoulder"
+            },
+            {
+              "from": "near-shoulder",
+              "to": "near-elbow"
+            },
+            {
+              "from": "near-elbow",
+              "to": "near-wrist"
+            },
+            {
+              "from": "near-wrist",
+              "to": "near-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "near-hip"
+            },
+            {
+              "from": "near-hip",
+              "to": "near-knee"
+            },
+            {
+              "from": "near-knee",
+              "to": "near-ankle"
+            },
+            {
+              "from": "near-ankle",
+              "to": "near-ground"
+            }
+          ],
+          "gripAnchor": null,
+          "groundPivot": [
+            32,
+            58
+          ],
+          "projectedGround": {
+            "near": 58,
+            "far": 57
+          },
+          "layerOrder": [
+            "far-thigh",
+            "far-shin",
+            "far-boot",
+            "far-upper-arm",
+            "far-forearm",
+            "far-hand",
+            "near-thigh",
+            "near-shin",
+            "near-boot",
+            "hips",
+            "cape",
+            "jacket",
+            "strap",
+            "satchel",
+            "neck",
+            "head",
+            "hood",
+            "near-upper-arm",
+            "near-forearm",
+            "near-hand"
+          ],
+          "bodyParts": {
+            "far-thigh": {
+              "geometrySha256": "5e2b342006b2a9af266d0ae56323cd4c1b3d43edc424bef2b1fe53b8c62d2685",
+              "sourceRgbaSha256": "da53700f26331aaffeacb1e60a680489f74a93b19c6d46b8631c17864e385000",
+              "alphaSha256": "9829787c00af5a497eb53dc9b2bab8870b214cc88f51d0cb793f1bb6594175b4",
+              "pixels": 79
+            },
+            "far-shin": {
+              "geometrySha256": "fb4d345336395bd1392d7cb3cc83024faea947f1e0a891690687083dccdb2849",
+              "sourceRgbaSha256": "ec12c3eef5f4180e38a194b5aa096692b58824b642d21d76fcd398292bbbd3e3",
+              "alphaSha256": "d69a38caa1f17a1cb72b18191c285c18ff1f5825847daf949732bc89aceecb27",
+              "pixels": 51
+            },
+            "far-boot": {
+              "geometrySha256": "be3312e3b63309fc99a487a7c042a3813e34c505313ec2004c4907ead8b18dff",
+              "sourceRgbaSha256": "3a3c7dfb2784c8a26ec585719cd1ab62d00e30dbabdf11a4a8c00985085db755",
+              "alphaSha256": "d43361f065410fc2e29778cb6e3c0126633c9b66c1ac708f892b60daf8c26743",
+              "pixels": 37
+            },
+            "far-upper-arm": {
+              "geometrySha256": "fad3d8e1bfbb0310476fa44923e0bee8c73dae94b7f683327e1f8cda78e7c183",
+              "sourceRgbaSha256": "b80076f0df124b8ee762884a6014af0b12e6c16465dd428d7ca26fbffbbb44c2",
+              "alphaSha256": "42071a611fbcb40f3e15e3557be19281d40916f3e877d2fe9160504118055042",
+              "pixels": 74
+            },
+            "far-forearm": {
+              "geometrySha256": "714496b07b41369c357108490cce9a1c41312259f72fb6a6e77bde5caa18dce4",
+              "sourceRgbaSha256": "466351260adcc0e48a269665b413380c972208b56e45bce25b13f62a0c229b22",
+              "alphaSha256": "d46a759a92305f5f9f47c24411926926cc41fb1c79c74067667d9a0023f46b09",
+              "pixels": 28
+            },
+            "far-hand": {
+              "geometrySha256": "8a53db7e5409717cfb897471678c07fa79402f9c56f79ab9d26002e1e4960671",
+              "sourceRgbaSha256": "78409eeb10e7dcacfc26144df6482f5bedbe3c7563193a85976edc47a08e78c3",
+              "alphaSha256": "16b320a27d663520ac902feb3cc95137cc857a81d9c079db1f2f98cc2d7cc4f7",
+              "pixels": 16
+            },
+            "near-thigh": {
+              "geometrySha256": "c32e2364a4490760648e94adbfaf56c501b2e489e0a0eff41e793fc68addf2ea",
+              "sourceRgbaSha256": "e556c172ed88cbf5ac409d7031063d974faeb33f6f9662c4199d3cc6c333470e",
+              "alphaSha256": "1c63870a37423f6eda5bff90bec537ff807395d0c17d9f3362b7a72172f00735",
+              "pixels": 81
+            },
+            "near-shin": {
+              "geometrySha256": "e033bc201fcee89f4818d4f8504bc491aca9fa9694e6bb3feeaa3cfda738ff2e",
+              "sourceRgbaSha256": "a81d38894abf4b629ae9b113da5d0e2e1fff65a90fff280872137c606587e76f",
+              "alphaSha256": "12050469aa864be06a734871ba12a4685434e8581456bac60ed8b7b8e45de686",
+              "pixels": 66
+            },
+            "near-boot": {
+              "geometrySha256": "3aabc8555f781286192b785ef308e4327cf422e550899454710cf7c7962ab7d9",
+              "sourceRgbaSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+              "alphaSha256": "fd094e297b25791997375a79270cfbf07f3bfc31531bb28c4ffbd35594d4750b",
+              "pixels": 40
+            },
+            "hips": {
+              "geometrySha256": "4abca70a711d545a6dd7bac8e438a0e883758af3a2b24a63b35eae776e15b0ad",
+              "sourceRgbaSha256": "244dd25c5a2a7584f7546ef7359d9717e9904adfc299aec3607c73037db2506d",
+              "alphaSha256": "b4347fad8e3fdd4bf0c84c0bf5060f38d648708ac741ac13a92f557422bf95b3",
+              "pixels": 91
+            },
+            "cape": {
+              "geometrySha256": "3101318787598db66ff96f625b505f6a17c59630291431e2f403b7f9dcb04267",
+              "sourceRgbaSha256": "a5f767c9685cb4b1c067c1fa1521052795906faf3032cb901b99c17047fc35f4",
+              "alphaSha256": "0ad1fe5b3c246d8bfbe7f7106c0be238d5a6acc774d1f388f4ea202f7136c6f7",
+              "pixels": 274
+            },
+            "jacket": {
+              "geometrySha256": "cfc00f3c33420f56e844993239aa356f46d6c06200fc196893c2ba5fc33e35c1",
+              "sourceRgbaSha256": "e2a2c25517afe3b66b118f20a9efa60d3303e11c3b68bb857a029c837cd14af4",
+              "alphaSha256": "377e1e16fca66264910166c7cf811d45b8c4e6c4255f29f1b8976f339de8202d",
+              "pixels": 240
+            },
+            "strap": {
+              "geometrySha256": "60b6fd1bb9b20d51927519561f3768d92537605650abd6344e217d1964061d7d",
+              "sourceRgbaSha256": "0f73475893b4219e208c4ba238235280b2e28fee8ff0b489dcefa683defc146b",
+              "alphaSha256": "5d0d2cc6f5aabea70d2189bc014fa33025083ea0939bb00b621ae998967b48b0",
+              "pixels": 38
+            },
+            "satchel": {
+              "geometrySha256": "495d42b755aebb12a24ce68d4d31bc32e9b31fe8477d026a5268ee499d06fcc7",
+              "sourceRgbaSha256": "beb4b29a781cf22a8b3fe1fc99ecef96c8d0e0893a3b4afea5e4a90da72704b1",
+              "alphaSha256": "bb7eb721cd49ab05437493e26018afa460a7f6827748972ad57461ccbb52bdae",
+              "pixels": 75
+            },
+            "neck": {
+              "geometrySha256": "3dd9147669f69b4ff612c3cf66c82c348123804395862596acee06921692dfea",
+              "sourceRgbaSha256": "885e8d92ff676204e02e6b8a09fa2f29d62e4ed61e3bcc369ef5f06830e5d7d9",
+              "alphaSha256": "9fe1c68979ed61bb64e86d9c15172c6ef324291fdb46789cf5a2c420dfbe585c",
+              "pixels": 34
+            },
+            "head": {
+              "geometrySha256": "47ec00bd8aa5b52d9b229226cd5d8f878f4282a7d906b070c9ea6aeede05f569",
+              "sourceRgbaSha256": "c3347c018ba7ee02d42b3ebdf5b9419824f33bdc9ec3136b0b0495f46be33506",
+              "alphaSha256": "cd1bba31fbb33c18496f5661229a11d920d852601b923867b00df72c3fc433fd",
+              "pixels": 156
+            },
+            "hood": {
+              "geometrySha256": "590b66e1c60ebd3a12e9896c7648eef0005e56a954ff5d6fdefa61912de768e5",
+              "sourceRgbaSha256": "6f0de606830d6c141de375efbfa0d160b0daa81fb0e775b61a81ab454c69565e",
+              "alphaSha256": "c78cee12f9ee8db17b7fd5cedf98cb0de3293b70a68b66fd94c92befc43ac070",
+              "pixels": 164
+            },
+            "near-upper-arm": {
+              "geometrySha256": "b2954deebeda2028e0129e0c7203774d8c4de5253f8913e6d2ea13d55189cc81",
+              "sourceRgbaSha256": "51f48506af4c813e1a314176f46ec426bdaf109c75eb2633fe86e9d16c595e49",
+              "alphaSha256": "f3e6d7743be5e137fdb0549ae0c896779ecb16fa737729e2c08b265a471e54fe",
+              "pixels": 72
+            },
+            "near-forearm": {
+              "geometrySha256": "e3a04203222e9a5f0d13e95929115c83c73e6959629fc5999118f02df8f57362",
+              "sourceRgbaSha256": "8970e8084922dafa807af5d9bbf16b164500483636295c223f0074d5be2183e9",
+              "alphaSha256": "e3b15564c76617a8c88a954139a635008220b78cb0f8c9d2372e52170a4636be",
+              "pixels": 45
+            },
+            "near-hand": {
+              "geometrySha256": "cafa1efc8d2d4b548c6f9019961019f58b0fd3922c911df02e4991008aad49c7",
+              "sourceRgbaSha256": "2a22f6270d06a64a6d2c1603dcb4591d8e9ece5b4fd59686dffd5244d548f030",
+              "alphaSha256": "f55e574ced52e331534ed1429157c9a2171c91480d6e171ccb16ff136f06aa59",
+              "pixels": 21
+            }
+          },
+          "lockedRegions": {
+            "format": "uint8-alpha-row-major",
+            "silhouette": {
+              "alphaSha256": "e38cb1e8d8d82df73627e0addf4ab8434d40398d421fa47e738cd701a768e8bf",
+              "pixels": 1046
+            },
+            "lowerLegClearance": {
+              "alphaSha256": "93583a7cccba60a6086b3c993f02691aa596bfe68bf3f3a5f8ee62f6a179ef1f",
+              "pixels": 70
+            },
+            "gripContact": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "handleOpening": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "bootSoles": {
+              "alphaSha256": "3f2e269632dbe30faf5cedf31006b82387b494cf3a459107966575f4dbc4924d",
+              "pixels": 15
+            }
+          }
+        },
+        "combinedSha256": "33354cc7e59bea66110c0f681b411cb06fcc82f9d25bfad0e23731d4f6ddec93",
+        "ownersSha256": "16abb61c0d4bcf87479ce65284e97b688a491cc69492a3fdaa36a349e4f5a309",
+        "toolGrips": [
+          {
+            "kind": "hook",
+            "hand": "far",
+            "anchor": [
+              50,
+              36
+            ],
+            "overlap": 8,
+            "exposed": 51,
+            "toolPixels": 59,
+            "clearance": 4,
+            "opening": null,
+            "rgbaSha256": "0bd5b84e9842d561db390b06f0e00c08ea42e149ea43ca5bd2cd39d4ab7bba8a"
+          }
+        ]
+      },
+      "partLegend": {
+        "far-thigh": 1129734911,
+        "far-shin": 1156545535,
+        "far-boot": 1183356159,
+        "far-upper-arm": 1210166783,
+        "far-forearm": 1236977407,
+        "far-tool": 1263788031,
+        "far-hand": 1290598655,
+        "near-thigh": 1317409279,
+        "near-shin": 1344219903,
+        "near-boot": 1371030527,
+        "hips": 1397841151,
+        "cape": 1424651775,
+        "jacket": 1451462399,
+        "strap": 1478273023,
+        "satchel": 1505083647,
+        "neck": 1531894271,
+        "head": 1558704895,
+        "hood": 1585515519,
+        "near-upper-arm": 1612326143,
+        "near-forearm": 1639136767,
+        "near-hand": 1665947391
+      },
+      "materialQA": {
+        "coverage": 1128,
+        "outline": 206,
+        "isolatedOutline": 0,
+        "components": [
+          1128
+        ],
+        "bounds": {
+          "left": 18,
+          "top": 5,
+          "right": 62,
+          "bottom": 57
+        },
+        "detail": {
+          "edges": 397,
+          "samples": 1582,
+          "per100": 25.1
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#242032/#376b71",
+            "samples": 1,
+            "p10": 62,
+            "median": 62
+          },
+          {
+            "roles": "#242032/#477763",
+            "samples": 46,
+            "p10": 16,
+            "median": 40
+          },
+          {
+            "roles": "#242032/#4c5792",
+            "samples": 32,
+            "p10": 17,
+            "median": 17
+          },
+          {
+            "roles": "#242032/#5c9e96",
+            "samples": 43,
+            "p10": 25,
+            "median": 37
+          },
+          {
+            "roles": "#242032/#62ac73",
+            "samples": 20,
+            "p10": 36,
+            "median": 88
+          },
+          {
+            "roles": "#242032/#6f87c1",
+            "samples": 25,
+            "p10": 21,
+            "median": 21
+          },
+          {
+            "roles": "#242032/#9ca7c2",
+            "samples": 57,
+            "p10": 66,
+            "median": 109
+          },
+          {
+            "roles": "#242032/#bd7756",
+            "samples": 52,
+            "p10": 22,
+            "median": 22
+          },
+          {
+            "roles": "#242032/#eaa48c",
+            "samples": 34,
+            "p10": 80,
+            "median": 80
+          },
+          {
+            "roles": "#376b71/#477763",
+            "samples": 1,
+            "p10": 7,
+            "median": 7
+          },
+          {
+            "roles": "#376b71/#5c9e96",
+            "samples": 8,
+            "p10": 8,
+            "median": 29
+          },
+          {
+            "roles": "#376b71/#62ac73",
+            "samples": 10,
+            "p10": 38,
+            "median": 38
+          },
+          {
+            "roles": "#376b71/#bd7756",
+            "samples": 3,
+            "p10": 32,
+            "median": 32
+          },
+          {
+            "roles": "#376b71/#eaa48c",
+            "samples": 9,
+            "p10": 47,
+            "median": 47
+          },
+          {
+            "roles": "#477763/#4c5792",
+            "samples": 1,
+            "p10": 37,
+            "median": 37
+          },
+          {
+            "roles": "#477763/#62ac73",
+            "samples": 17,
+            "p10": 5,
+            "median": 19
+          },
+          {
+            "roles": "#477763/#6f87c1",
+            "samples": 12,
+            "p10": 5,
+            "median": 5
+          },
+          {
+            "roles": "#477763/#bd7756",
+            "samples": 21,
+            "p10": 6,
+            "median": 49
+          },
+          {
+            "roles": "#477763/#eaa48c",
+            "samples": 10,
+            "p10": 40,
+            "median": 96
+          },
+          {
+            "roles": "#4c5792/#6f87c1",
+            "samples": 8,
+            "p10": 0,
+            "median": 18
+          },
+          {
+            "roles": "#4c5792/#bd7756",
+            "samples": 5,
+            "p10": 44,
+            "median": 77
+          },
+          {
+            "roles": "#5c9e96/#62ac73",
+            "samples": 1,
+            "p10": 46,
+            "median": 46
+          },
+          {
+            "roles": "#5c9e96/#69425e",
+            "samples": 12,
+            "p10": 75,
+            "median": 75
+          },
+          {
+            "roles": "#5c9e96/#bd7756",
+            "samples": 2,
+            "p10": 40,
+            "median": 40
+          },
+          {
+            "roles": "#5c9e96/#eaa48c",
+            "samples": 14,
+            "p10": 17,
+            "median": 55
+          },
+          {
+            "roles": "#62ac73/#6f87c1",
+            "samples": 1,
+            "p10": 14,
+            "median": 14
+          },
+          {
+            "roles": "#62ac73/#bd7756",
+            "samples": 32,
+            "p10": 12,
+            "median": 30
+          },
+          {
+            "roles": "#62ac73/#eaa48c",
+            "samples": 7,
+            "p10": 65,
+            "median": 101
+          },
+          {
+            "roles": "#69425e/#eaa48c",
+            "samples": 12,
+            "p10": 58,
+            "median": 70
+          },
+          {
+            "roles": "#6f87c1/#bd7756",
+            "samples": 16,
+            "p10": 1,
+            "median": 45
+          },
+          {
+            "roles": "#9ca7c2/#eaa48c",
+            "samples": 7,
+            "p10": 14,
+            "median": 29
+          },
+          {
+            "roles": "#bd7756/#eaa48c",
+            "samples": 1,
+            "p10": 15,
+            "median": 15
+          }
+        ],
+        "used": [
+          "#242534",
+          "#2d4346",
+          "#30383c",
+          "#303d41",
+          "#392c37",
+          "#394b4d",
+          "#465046",
+          "#512f32",
+          "#513638",
+          "#535e51",
+          "#536964",
+          "#596a83",
+          "#674937",
+          "#6b4139",
+          "#71453d",
+          "#798c7c",
+          "#81979f",
+          "#86503d",
+          "#88927a",
+          "#896049",
+          "#a36146",
+          "#a86a55",
+          "#b18059",
+          "#bfcec6",
+          "#d79768",
+          "#dca57a",
+          "#f5c393"
+        ],
+        "rgbaSha256": "90303308d8758cf915ecb14410f96d6e6409c27c1af045f8c8c41af8b9b18d55",
+        "alphaSha256": "2576fff77cc7bb5278d0b0e18cc96f0cf3420fa1baf3e6e4b826c7053fff07db"
+      },
+      "art": {
+        "final": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/material.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/material-4x.png"
+        },
+        "mask": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/material-mask.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/material-mask-4x.png"
+        },
+        "day": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/day.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/day-4x.png"
+        },
+        "night": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/night.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/night-4x.png"
+        },
+        "near": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/near-grip.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/near-grip-4x.png",
+          "bounds": [
+            13,
+            36,
+            20,
+            23
+          ]
+        },
+        "far": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/far-grip.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/far-grip-4x.png",
+          "bounds": [
+            40,
+            21,
+            24,
+            28
+          ]
+        },
+        "feet": {
+          "native": "benchmarks/results/e75/marsh-harvester/a1/feet.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a1/feet-4x.png",
+          "bounds": [
+            20,
+            42,
+            33,
+            18
+          ]
+        },
+        "toolMasks": {
+          "far-tool": {
+            "native": "benchmarks/results/e75/marsh-harvester/a1/far-tool-mask.png",
+            "zoom": "benchmarks/results/e75/marsh-harvester/a1/far-tool-mask-4x.png"
+          }
+        }
+      },
+      "context": {
+        "scene": "Mistfen Ferry Depot",
+        "source": {
+          "file": "benchmarks/fixtures/e73r/mistfen.json",
+          "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe"
+        },
+        "camera": {
+          "width": 320,
+          "height": 208,
+          "sampling": "nearest",
+          "view": "three-quarter-right",
+          "pixelsPerUnit": 32
+        },
+        "light": "upper-left",
+        "anchor": [
+          201,
+          160
+        ],
+        "portal": {
+          "at": [
+            142,
+            123
+          ],
+          "points": [
+            [
+              124,
+              119
+            ],
+            [
+              160,
+              119
+            ],
+            [
+              160,
+              127
+            ],
+            [
+              124,
+              127
+            ]
+          ]
+        },
+        "collisions": [
+          {
+            "id": "sluice-gateway-0",
+            "kind": "architecture",
+            "points": [
+              [
+                111,
+                123
+              ],
+              [
+                124,
+                123
+              ],
+              [
+                124,
+                119
+              ],
+              [
+                132,
+                111
+              ],
+              [
+                119,
+                111
+              ],
+              [
+                111,
+                119
+              ]
+            ]
+          },
+          {
+            "id": "sluice-gateway-1",
+            "kind": "architecture",
+            "points": [
+              [
+                160,
+                123
+              ],
+              [
+                173,
+                123
+              ],
+              [
+                173,
+                119
+              ],
+              [
+                181,
+                111
+              ],
+              [
+                168,
+                111
+              ],
+              [
+                160,
+                119
+              ]
+            ]
+          },
+          {
+            "id": "west-flood-wall",
+            "kind": "architecture",
+            "points": [
+              [
+                31,
+                134
+              ],
+              [
+                87,
+                134
+              ],
+              [
+                87,
+                130
+              ],
+              [
+                92,
+                125
+              ],
+              [
+                36,
+                125
+              ],
+              [
+                31,
+                130
+              ]
+            ]
+          },
+          {
+            "id": "east-flood-wall",
+            "kind": "architecture",
+            "points": [
+              [
+                242,
+                103
+              ],
+              [
+                295,
+                103
+              ],
+              [
+                295,
+                99
+              ],
+              [
+                302,
+                92
+              ],
+              [
+                249,
+                92
+              ],
+              [
+                242,
+                99
+              ]
+            ]
+          },
+          {
+            "id": "signal-pedestal",
+            "kind": "architecture",
+            "points": [
+              [
+                191,
+                106
+              ],
+              [
+                214,
+                106
+              ],
+              [
+                214,
+                102
+              ],
+              [
+                218,
+                98
+              ],
+              [
+                195,
+                98
+              ],
+              [
+                191,
+                102
+              ]
+            ]
+          },
+          {
+            "id": "mooring-post",
+            "kind": "architecture",
+            "points": [
+              [
+                71,
+                151
+              ],
+              [
+                87,
+                151
+              ],
+              [
+                87,
+                147
+              ],
+              [
+                92,
+                142
+              ],
+              [
+                76,
+                142
+              ],
+              [
+                71,
+                147
+              ]
+            ]
+          },
+          {
+            "id": "ferry-level-signal",
+            "kind": "prop",
+            "points": [
+              [
+                62,
+                158
+              ],
+              [
+                82,
+                158
+              ],
+              [
+                82,
+                169
+              ],
+              [
+                62,
+                169
+              ]
+            ]
+          }
+        ],
+        "walkable": "caffa25150f801af6743d3fccb54b03b1c01a2ca2b2a5a1829ce0329f6c4bbdd",
+        "routes": [
+          {
+            "id": "gate-passage",
+            "actor": "surveyor",
+            "points": [
+              [
+                139,
+                196
+              ],
+              [
+                145,
+                159
+              ],
+              [
+                142,
+                137
+              ],
+              [
+                142,
+                96
+              ]
+            ],
+            "halfWidth": 9,
+            "tested": 1919
+          },
+          {
+            "id": "signal-approach",
+            "actor": "courier",
+            "points": [
+              [
+                142,
+                140
+              ],
+              [
+                152,
+                154
+              ],
+              [
+                178,
+                154
+              ],
+              [
+                208,
+                140
+              ],
+              [
+                204,
+                119
+              ]
+            ],
+            "halfWidth": 10,
+            "tested": 1932
+          }
+        ],
+        "secondaryActors": [
+          {
+            "id": "surveyor",
+            "visible": 1072,
+            "hiddenBy": {}
+          }
+        ],
+        "day": {
+          "visible": 1128,
+          "total": 1128,
+          "feet": {
+            "near": {
+              "projectedGroundY": 58,
+              "lowestContourY": 57,
+              "clearance": 0,
+              "solePixels": 8,
+              "soleBand": [
+                28,
+                35
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 8,
+              "shadowSamples": 8
+            },
+            "far": {
+              "projectedGroundY": 57,
+              "lowestContourY": 56,
+              "clearance": 0,
+              "solePixels": 7,
+              "soleBand": [
+                41,
+                47
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 7,
+              "shadowSamples": 0
+            }
+          },
+          "rgbaSha256": "6bf1b49c786089c56164f6eb1fbb09b583bd5f0fce3670100c3728a541fbeed4",
+          "edges": {
+            "silhouette": {
+              "n": 308,
+              "p10": 52,
+              "median": 96,
+              "weak": 3
+            },
+            "outline": {
+              "n": 308,
+              "p10": 52,
+              "median": 96,
+              "weak": 3
+            },
+            "contact": {
+              "n": 20,
+              "p10": 79,
+              "median": 79,
+              "weak": 0
+            },
+            "outlineRuns": [
+              206
+            ],
+            "weakOutlineRuns": [
+              2
+            ],
+            "signal": {
+              "pixels": 51,
+              "clusters": [
+                45,
+                6
+              ],
+              "housing": {
+                "n": 64,
+                "p10": 66,
+                "median": 109,
+                "weak": 2
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "toolContrast": {
+            "hook": {
+              "pixels": 51,
+              "clusters": [
+                45,
+                6
+              ],
+              "housing": {
+                "n": 64,
+                "p10": 66,
+                "median": 109,
+                "weak": 2
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "surfaces": {
+            "skin": {
+              "pixels": 137,
+              "clusters": [
+                100,
+                21,
+                16
+              ],
+              "housing": {
+                "n": 94,
+                "p10": 29,
+                "median": 70,
+                "weak": 6
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "coat": {
+              "pixels": 149,
+              "clusters": [
+                136,
+                13
+              ],
+              "housing": {
+                "n": 88,
+                "p10": 13,
+                "median": 36,
+                "weak": 17
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "leather": {
+              "pixels": 179,
+              "clusters": [
+                102,
+                40,
+                37
+              ],
+              "housing": {
+                "n": 132,
+                "p10": 5,
+                "median": 27,
+                "weak": 29
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "metal": {
+              "pixels": 51,
+              "clusters": [
+                45,
+                6
+              ],
+              "housing": {
+                "n": 64,
+                "p10": 66,
+                "median": 109,
+                "weak": 2
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        },
+        "night": {
+          "visible": 1128,
+          "total": 1128,
+          "feet": {
+            "near": {
+              "projectedGroundY": 58,
+              "lowestContourY": 57,
+              "clearance": 0,
+              "solePixels": 8,
+              "soleBand": [
+                28,
+                35
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 8,
+              "shadowSamples": 8
+            },
+            "far": {
+              "projectedGroundY": 57,
+              "lowestContourY": 56,
+              "clearance": 0,
+              "solePixels": 7,
+              "soleBand": [
+                41,
+                47
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 7,
+              "shadowSamples": 0
+            }
+          },
+          "rgbaSha256": "06cabaa6fe41caa02fa22c364b3e5d9807d6b2323c14a3655b569bdfcd324353",
+          "edges": {
+            "silhouette": {
+              "n": 308,
+              "p10": 18,
+              "median": 53,
+              "weak": 29
+            },
+            "outline": {
+              "n": 308,
+              "p10": 18,
+              "median": 53,
+              "weak": 29
+            },
+            "contact": {
+              "n": 20,
+              "p10": 23,
+              "median": 31,
+              "weak": 1
+            },
+            "outlineRuns": [
+              206
+            ],
+            "weakOutlineRuns": [
+              12,
+              7,
+              1
+            ],
+            "signal": {
+              "pixels": 51,
+              "clusters": [
+                45,
+                6
+              ],
+              "housing": {
+                "n": 64,
+                "p10": 66,
+                "median": 109,
+                "weak": 2
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "toolContrast": {
+            "hook": {
+              "pixels": 51,
+              "clusters": [
+                45,
+                6
+              ],
+              "housing": {
+                "n": 64,
+                "p10": 66,
+                "median": 109,
+                "weak": 2
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "surfaces": {
+            "skin": {
+              "pixels": 137,
+              "clusters": [
+                100,
+                21,
+                16
+              ],
+              "housing": {
+                "n": 94,
+                "p10": 29,
+                "median": 70,
+                "weak": 6
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "coat": {
+              "pixels": 149,
+              "clusters": [
+                136,
+                13
+              ],
+              "housing": {
+                "n": 88,
+                "p10": 13,
+                "median": 36,
+                "weak": 17
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "leather": {
+              "pixels": 179,
+              "clusters": [
+                102,
+                40,
+                37
+              ],
+              "housing": {
+                "n": 132,
+                "p10": 5,
+                "median": 27,
+                "weak": 29
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "metal": {
+              "pixels": 51,
+              "clusters": [
+                45,
+                6
+              ],
+              "housing": {
+                "n": 64,
+                "p10": 66,
+                "median": 109,
+                "weak": 2
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        }
+      },
+      "local": {
+        "defectId": "BODY_TOOL_TANGENCY",
+        "status": "NO_MEANINGFUL_VISUAL_GAIN",
+        "scope": "No RGB patch selected",
+        "firstAction": "Keep validated structure because RGB cannot recover tool clearance or hand articulation.",
+        "humanEvaluation": "PENDING_HUMAN_REVIEW",
+        "changed": 0,
+        "budget": 8,
+        "protectedBefore": "90303308d8758cf915ecb14410f96d6e6409c27c1af045f8c8c41af8b9b18d55",
+        "protectedAfter": "90303308d8758cf915ecb14410f96d6e6409c27c1af045f8c8c41af8b9b18d55"
+      }
+    },
+    {
+      "id": "a2",
+      "status": "PASS",
+      "note": "Raised tool and a closer secondary foot to show a different load silhouette.",
+      "scope": "Landmark-bound equipment on the existing body rig.",
+      "geometry": {
+        "flat": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/flat.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/flat-4x.png"
+        },
+        "silhouette": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/silhouette.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/silhouette-4x.png"
+        },
+        "parts": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/parts.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/parts-4x.png"
+        },
+        "pose": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/pose.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/pose-4x.png"
+        }
+      },
+      "shapeQA": {
+        "body": {
+          "errors": [],
+          "bounds": {
+            "left": 15,
+            "right": 52,
+            "top": 5,
+            "bottom": 57,
+            "area": 1080,
+            "components": 1
+          },
+          "parts": {
+            "far-thigh": {
+              "left": 35,
+              "right": 44,
+              "top": 33,
+              "bottom": 47,
+              "area": 78,
+              "components": 1
+            },
+            "far-shin": {
+              "left": 39,
+              "right": 44,
+              "top": 43,
+              "bottom": 53,
+              "area": 47,
+              "components": 1
+            },
+            "far-boot": {
+              "left": 39,
+              "right": 46,
+              "top": 50,
+              "bottom": 55,
+              "area": 37,
+              "components": 1
+            },
+            "far-upper-arm": {
+              "left": 34,
+              "right": 46,
+              "top": 20,
+              "bottom": 31,
+              "area": 68,
+              "components": 1
+            },
+            "far-forearm": {
+              "left": 42,
+              "right": 50,
+              "top": 26,
+              "bottom": 31,
+              "area": 31,
+              "components": 1
+            },
+            "far-hand": {
+              "left": 48,
+              "right": 51,
+              "top": 24,
+              "bottom": 28,
+              "area": 16,
+              "components": 1
+            },
+            "near-thigh": {
+              "left": 27,
+              "right": 35,
+              "top": 35,
+              "bottom": 47,
+              "area": 78,
+              "components": 1
+            },
+            "near-shin": {
+              "left": 28,
+              "right": 35,
+              "top": 42,
+              "bottom": 55,
+              "area": 70,
+              "components": 1
+            },
+            "near-boot": {
+              "left": 28,
+              "right": 36,
+              "top": 51,
+              "bottom": 56,
+              "area": 40,
+              "components": 1
+            },
+            "hips": {
+              "left": 26,
+              "right": 42,
+              "top": 34,
+              "bottom": 40,
+              "area": 91,
+              "components": 1
+            },
+            "jacket": {
+              "left": 24,
+              "right": 41,
+              "top": 21,
+              "bottom": 39,
+              "area": 240,
+              "components": 1
+            },
+            "strap": {
+              "left": 28,
+              "right": 38,
+              "top": 23,
+              "bottom": 38,
+              "area": 38,
+              "components": 1
+            },
+            "satchel": {
+              "left": 27,
+              "right": 35,
+              "top": 34,
+              "bottom": 44,
+              "area": 75,
+              "components": 1
+            },
+            "neck": {
+              "left": 30,
+              "right": 36,
+              "top": 17,
+              "bottom": 24,
+              "area": 34,
+              "components": 1
+            },
+            "head": {
+              "left": 27,
+              "right": 43,
+              "top": 11,
+              "bottom": 22,
+              "area": 156,
+              "components": 1
+            },
+            "hood": {
+              "left": 25,
+              "right": 42,
+              "top": 6,
+              "bottom": 25,
+              "area": 164,
+              "components": 1
+            },
+            "near-upper-arm": {
+              "left": 19,
+              "right": 29,
+              "top": 23,
+              "bottom": 34,
+              "area": 68,
+              "components": 1
+            },
+            "near-forearm": {
+              "left": 16,
+              "right": 23,
+              "top": 30,
+              "bottom": 37,
+              "area": 38,
+              "components": 1
+            },
+            "near-hand": {
+              "left": 16,
+              "right": 20,
+              "top": 34,
+              "bottom": 40,
+              "area": 25,
+              "components": 1
+            },
+            "cape": {
+              "left": 19,
+              "right": 35,
+              "top": 21,
+              "bottom": 43,
+              "area": 274,
+              "components": 1
+            }
+          },
+          "joints": {
+            "near-shoulder": 29,
+            "near-elbow": 21,
+            "near-wrist": 12,
+            "near-hip": 32,
+            "near-knee": 28,
+            "near-ankle": 22,
+            "far-shoulder": 24,
+            "far-elbow": 12,
+            "far-wrist": 9,
+            "far-hip": 33,
+            "far-knee": 21,
+            "far-ankle": 15
+          },
+          "centerX": 33.35251798561151,
+          "plantedFoot": "near",
+          "legGapRows": 7,
+          "maxGap": 4,
+          "gripPixels": 0,
+          "lampGapRows": 0,
+          "structure": "STRUCTURAL_VALID",
+          "constraints": "POSE_CONSTRAINTS_VALID",
+          "visual": "VISUAL_REVIEW_PENDING",
+          "pose": {
+            "errors": [],
+            "intent": "standing-free",
+            "headroom": 5,
+            "feet": {
+              "near": {
+                "projectedGroundY": 58,
+                "lowestContourY": 57,
+                "clearance": 0,
+                "solePixels": 8,
+                "soleBand": [
+                  28,
+                  35
+                ],
+                "toeRise": 0
+              },
+              "far": {
+                "projectedGroundY": 57,
+                "lowestContourY": 56,
+                "clearance": 0,
+                "solePixels": 7,
+                "soleBand": [
+                  39,
+                  45
+                ],
+                "toeRise": 0
+              }
+            },
+            "shoulderDrop": 4,
+            "hipDrop": 2,
+            "kneeBends": {
+              "near": 2,
+              "far": 2.3125
+            },
+            "openHandleRows": 0,
+            "armTorsoGapRows": 0,
+            "lampBodyGap": 0
+          }
+        },
+        "lock": {
+          "version": 1,
+          "kind": "lumasprite-character-shape-lock",
+          "candidate": "marsh-harvester-a2",
+          "checkpoint": "61fec574d2cb76476167a57cc1cb10c2c5324319",
+          "characterSpecVersion": 3,
+          "geometryRevision": 1,
+          "canvas": {
+            "w": 64,
+            "h": 64
+          },
+          "poseIntent": "standing-free",
+          "source": {
+            "geometrySha256": "826b5012662abdcfb5d4d81463f787df180eb00d18aa3020037417b7ac623367",
+            "specSha256": "00fc266c20598155b66ce08c86dd978bb79cd50f6ff01550bdbd2678dfac04c7",
+            "flatPngSha256": "5cb4dad9067be84af000fbcb3ee9f8351544fd33dd6ceb047a4dd4443ef07b00",
+            "silhouettePngSha256": "618e301a8c40d02d3cae559a41e62331b20f592cfd37ead0a9d72ad3de1e4aa7",
+            "flatRgbaSha256": "f7c8dbc323a800df80d8e0190aacdac58e8a96fc98f021bab95c9537d41fe899"
+          },
+          "silhouetteAlphaSha256": "505709d0d9e3a5546549af74880382816f150c7ee91193371ade89705a830780",
+          "landmarks": {
+            "crown": {
+              "point": [
+                35,
+                15
+              ],
+              "partId": "head"
+            },
+            "neck": {
+              "point": [
+                33,
+                21
+              ],
+              "partId": "neck"
+            },
+            "chest": {
+              "point": [
+                32,
+                26
+              ],
+              "partId": "jacket"
+            },
+            "pelvis": {
+              "point": [
+                34,
+                37
+              ],
+              "partId": "hips"
+            },
+            "far-shoulder": {
+              "point": [
+                36,
+                22
+              ],
+              "partId": "far-upper-arm"
+            },
+            "far-elbow": {
+              "point": [
+                44,
+                30
+              ],
+              "partId": "far-forearm"
+            },
+            "far-wrist": {
+              "point": [
+                49,
+                27
+              ],
+              "partId": "far-forearm"
+            },
+            "far-palm": {
+              "point": [
+                50,
+                25
+              ],
+              "partId": "far-hand"
+            },
+            "far-hip": {
+              "point": [
+                38,
+                36
+              ],
+              "partId": "far-thigh"
+            },
+            "far-knee": {
+              "point": [
+                42,
+                45
+              ],
+              "partId": "far-shin"
+            },
+            "far-ankle": {
+              "point": [
+                41,
+                52
+              ],
+              "partId": "far-boot"
+            },
+            "far-ground": {
+              "point": [
+                41,
+                55
+              ],
+              "partId": "far-boot"
+            },
+            "near-shoulder": {
+              "point": [
+                26,
+                26
+              ],
+              "partId": "near-upper-arm"
+            },
+            "near-elbow": {
+              "point": [
+                21,
+                32
+              ],
+              "partId": "near-forearm"
+            },
+            "near-wrist": {
+              "point": [
+                18,
+                36
+              ],
+              "partId": "near-forearm"
+            },
+            "near-palm": {
+              "point": [
+                18,
+                39
+              ],
+              "partId": "near-hand"
+            },
+            "near-hip": {
+              "point": [
+                30,
+                38
+              ],
+              "partId": "near-thigh"
+            },
+            "near-knee": {
+              "point": [
+                32,
+                45
+              ],
+              "partId": "near-shin"
+            },
+            "near-ankle": {
+              "point": [
+                30,
+                53
+              ],
+              "partId": "near-boot"
+            },
+            "near-ground": {
+              "point": [
+                30,
+                56
+              ],
+              "partId": "near-boot"
+            }
+          },
+          "links": [
+            {
+              "from": "crown",
+              "to": "neck"
+            },
+            {
+              "from": "neck",
+              "to": "chest"
+            },
+            {
+              "from": "chest",
+              "to": "pelvis"
+            },
+            {
+              "from": "chest",
+              "to": "far-shoulder"
+            },
+            {
+              "from": "far-shoulder",
+              "to": "far-elbow"
+            },
+            {
+              "from": "far-elbow",
+              "to": "far-wrist"
+            },
+            {
+              "from": "far-wrist",
+              "to": "far-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "far-hip"
+            },
+            {
+              "from": "far-hip",
+              "to": "far-knee"
+            },
+            {
+              "from": "far-knee",
+              "to": "far-ankle"
+            },
+            {
+              "from": "far-ankle",
+              "to": "far-ground"
+            },
+            {
+              "from": "chest",
+              "to": "near-shoulder"
+            },
+            {
+              "from": "near-shoulder",
+              "to": "near-elbow"
+            },
+            {
+              "from": "near-elbow",
+              "to": "near-wrist"
+            },
+            {
+              "from": "near-wrist",
+              "to": "near-palm"
+            },
+            {
+              "from": "pelvis",
+              "to": "near-hip"
+            },
+            {
+              "from": "near-hip",
+              "to": "near-knee"
+            },
+            {
+              "from": "near-knee",
+              "to": "near-ankle"
+            },
+            {
+              "from": "near-ankle",
+              "to": "near-ground"
+            }
+          ],
+          "gripAnchor": null,
+          "groundPivot": [
+            32,
+            58
+          ],
+          "projectedGround": {
+            "near": 58,
+            "far": 57
+          },
+          "layerOrder": [
+            "far-thigh",
+            "far-shin",
+            "far-boot",
+            "far-upper-arm",
+            "far-forearm",
+            "far-hand",
+            "near-thigh",
+            "near-shin",
+            "near-boot",
+            "hips",
+            "cape",
+            "jacket",
+            "strap",
+            "satchel",
+            "neck",
+            "head",
+            "hood",
+            "near-upper-arm",
+            "near-forearm",
+            "near-hand"
+          ],
+          "bodyParts": {
+            "far-thigh": {
+              "geometrySha256": "49f5c5cbcc90e5763a67d57ab525c5dfb38773ba191ef8862a4a193a53b777ec",
+              "sourceRgbaSha256": "5436af3bf700bc6396b815f734162131468e5790f51f9499e2731ede31273199",
+              "alphaSha256": "c07d28df690defdd9def850f86cd08f11ae0b0c3c84b6d1daccdb6683abae857",
+              "pixels": 78
+            },
+            "far-shin": {
+              "geometrySha256": "59b1782720eb14007e5dd857b227795e92b867949a9da6e14f97012c8e6097d1",
+              "sourceRgbaSha256": "58cfeadc772d894942c2ac19d3045a0b7076f572003d6a790ee7222d4b5aafa8",
+              "alphaSha256": "2058581fad0dbb841d17f24198056bf4fb2643b06a648ffcc35fe0f7800d06bb",
+              "pixels": 47
+            },
+            "far-boot": {
+              "geometrySha256": "7092de47196d6daf450eaedd56a799d989511f94258f7bc2fb7331bfe1f73e5c",
+              "sourceRgbaSha256": "f06a4b7829e12f841e6d391ab8a11a251c2b6ef4d56db8032e0dde18c66f5ab5",
+              "alphaSha256": "7e17460f4ebc6699661242d3804dfe2c3333e819ff9e874bc4a1f8e3ad70b194",
+              "pixels": 37
+            },
+            "far-upper-arm": {
+              "geometrySha256": "f3ad7ae95e2b1d2a1354fa4106073cb2d562c9d6fe7399070b9e789358e198af",
+              "sourceRgbaSha256": "d9daa8c1ef5143e96dba008ade7fbf6353820163f9ade5c2f6444bbb2f80d867",
+              "alphaSha256": "674307abd86e5835395fde1cb4ca2d68cae253c91073a89734cbf486d2654446",
+              "pixels": 68
+            },
+            "far-forearm": {
+              "geometrySha256": "af707e9368f534ca1a2acdccb3732d149e7df4fce805912f18a98bf67560edc6",
+              "sourceRgbaSha256": "5beadd4563f2bcf2cb02076ba7d70b3fdff858ff274843c3799552de3a8794f9",
+              "alphaSha256": "941bfbfac180fb7da8c9b55a702ed80627a184503a236650909ecb97c4d955ce",
+              "pixels": 31
+            },
+            "far-hand": {
+              "geometrySha256": "e1101b0f7f26a94bf518156612ef5feee4426262d897df427ba638e4bbac1b90",
+              "sourceRgbaSha256": "0ce7bc123ffc6d95ed7568922a5ed7c19ef96009df29df356b0176822eba5db7",
+              "alphaSha256": "855eed6ae2653c0fab498c376198efeec9d87dc5c7444a8a6504c447cec26d2e",
+              "pixels": 16
+            },
+            "near-thigh": {
+              "geometrySha256": "680653fc16b8e458ddf2aef9459b17447a825143878002d08f46d2d4b6039c62",
+              "sourceRgbaSha256": "f6820fc489faf664a84e62576a322016046c9dea0300686eb6566d749d85643d",
+              "alphaSha256": "db79380f8d1b52b024458231b95f868b374fcc563df3da1d41a85b88a378f09c",
+              "pixels": 78
+            },
+            "near-shin": {
+              "geometrySha256": "8f1e1e0ba7ec3dac25966c7acf43b29a51994c3ce39aafbfc9ffcb2eb677782b",
+              "sourceRgbaSha256": "1a9d16cf2da248ce0fd5fb1478ac665b899a96b054b3993e113102e59d24c4b7",
+              "alphaSha256": "40636fc3158c539993246d70648dae883e00e116c57ddead0a17a565edd46ca0",
+              "pixels": 70
+            },
+            "near-boot": {
+              "geometrySha256": "3aabc8555f781286192b785ef308e4327cf422e550899454710cf7c7962ab7d9",
+              "sourceRgbaSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+              "alphaSha256": "fd094e297b25791997375a79270cfbf07f3bfc31531bb28c4ffbd35594d4750b",
+              "pixels": 40
+            },
+            "hips": {
+              "geometrySha256": "4abca70a711d545a6dd7bac8e438a0e883758af3a2b24a63b35eae776e15b0ad",
+              "sourceRgbaSha256": "244dd25c5a2a7584f7546ef7359d9717e9904adfc299aec3607c73037db2506d",
+              "alphaSha256": "b4347fad8e3fdd4bf0c84c0bf5060f38d648708ac741ac13a92f557422bf95b3",
+              "pixels": 91
+            },
+            "cape": {
+              "geometrySha256": "3101318787598db66ff96f625b505f6a17c59630291431e2f403b7f9dcb04267",
+              "sourceRgbaSha256": "a5f767c9685cb4b1c067c1fa1521052795906faf3032cb901b99c17047fc35f4",
+              "alphaSha256": "0ad1fe5b3c246d8bfbe7f7106c0be238d5a6acc774d1f388f4ea202f7136c6f7",
+              "pixels": 274
+            },
+            "jacket": {
+              "geometrySha256": "cfc00f3c33420f56e844993239aa356f46d6c06200fc196893c2ba5fc33e35c1",
+              "sourceRgbaSha256": "e2a2c25517afe3b66b118f20a9efa60d3303e11c3b68bb857a029c837cd14af4",
+              "alphaSha256": "377e1e16fca66264910166c7cf811d45b8c4e6c4255f29f1b8976f339de8202d",
+              "pixels": 240
+            },
+            "strap": {
+              "geometrySha256": "60b6fd1bb9b20d51927519561f3768d92537605650abd6344e217d1964061d7d",
+              "sourceRgbaSha256": "0f73475893b4219e208c4ba238235280b2e28fee8ff0b489dcefa683defc146b",
+              "alphaSha256": "5d0d2cc6f5aabea70d2189bc014fa33025083ea0939bb00b621ae998967b48b0",
+              "pixels": 38
+            },
+            "satchel": {
+              "geometrySha256": "495d42b755aebb12a24ce68d4d31bc32e9b31fe8477d026a5268ee499d06fcc7",
+              "sourceRgbaSha256": "beb4b29a781cf22a8b3fe1fc99ecef96c8d0e0893a3b4afea5e4a90da72704b1",
+              "alphaSha256": "bb7eb721cd49ab05437493e26018afa460a7f6827748972ad57461ccbb52bdae",
+              "pixels": 75
+            },
+            "neck": {
+              "geometrySha256": "3dd9147669f69b4ff612c3cf66c82c348123804395862596acee06921692dfea",
+              "sourceRgbaSha256": "885e8d92ff676204e02e6b8a09fa2f29d62e4ed61e3bcc369ef5f06830e5d7d9",
+              "alphaSha256": "9fe1c68979ed61bb64e86d9c15172c6ef324291fdb46789cf5a2c420dfbe585c",
+              "pixels": 34
+            },
+            "head": {
+              "geometrySha256": "47ec00bd8aa5b52d9b229226cd5d8f878f4282a7d906b070c9ea6aeede05f569",
+              "sourceRgbaSha256": "c3347c018ba7ee02d42b3ebdf5b9419824f33bdc9ec3136b0b0495f46be33506",
+              "alphaSha256": "cd1bba31fbb33c18496f5661229a11d920d852601b923867b00df72c3fc433fd",
+              "pixels": 156
+            },
+            "hood": {
+              "geometrySha256": "590b66e1c60ebd3a12e9896c7648eef0005e56a954ff5d6fdefa61912de768e5",
+              "sourceRgbaSha256": "6f0de606830d6c141de375efbfa0d160b0daa81fb0e775b61a81ab454c69565e",
+              "alphaSha256": "c78cee12f9ee8db17b7fd5cedf98cb0de3293b70a68b66fd94c92befc43ac070",
+              "pixels": 164
+            },
+            "near-upper-arm": {
+              "geometrySha256": "4a67d771baf375588f7a3db352f2517daa9ec79fd50cef0a1e6c9414bf69a42c",
+              "sourceRgbaSha256": "07f5422e8c0931a545fa0244d7249a59ca025e04cbc137697aaa46c9fe6c2b71",
+              "alphaSha256": "d586980fd6080c828335e0b3e53a2eaf972567adf3b3b7eb6d2a9bda8da555cc",
+              "pixels": 68
+            },
+            "near-forearm": {
+              "geometrySha256": "8dedd81fd7f15d19301ce1e1590c918279fbac3a76866936b82184cab7139b38",
+              "sourceRgbaSha256": "9302b9140b36f7e0d2e21a1c519f5fec4c8d4a16a63d6b8f18dd03990b7bb337",
+              "alphaSha256": "9c966b3d3b674fc2800eb3b514f2bcbc2c4ac1780c99bfd9c971745876c3b80a",
+              "pixels": 38
+            },
+            "near-hand": {
+              "geometrySha256": "a8d87a9d891565be8e98d85acd688fdb93be127b248538f93d601b191af0598e",
+              "sourceRgbaSha256": "fa8f86fed20b3f74ec956cf23413cc00c57291450f991f60d2ad315f7122c806",
+              "alphaSha256": "31b755e8ebde896859bc5398dec33d6c8a0ad9e8b8bcb602ab9d6b235749a7a7",
+              "pixels": 25
+            }
+          },
+          "lockedRegions": {
+            "format": "uint8-alpha-row-major",
+            "silhouette": {
+              "alphaSha256": "505709d0d9e3a5546549af74880382816f150c7ee91193371ade89705a830780",
+              "pixels": 1080
+            },
+            "lowerLegClearance": {
+              "alphaSha256": "b910f4288d026dbfe8db14b772fe244560e8b17489a30887cd0584b3f8265009",
+              "pixels": 35
+            },
+            "gripContact": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "handleOpening": {
+              "alphaSha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+              "pixels": 0
+            },
+            "bootSoles": {
+              "alphaSha256": "50fb27c7209f3c576929727c522b308879f35d61a6d3247fc5e60efdcabec23a",
+              "pixels": 15
+            }
+          }
+        },
+        "combinedSha256": "f0a51a2cf8681986101a8756a3f68dbb4267ae59f0f19bce160d0b434dcd7e3d",
+        "ownersSha256": "a77331d0ba4e688d392ea716ea475422380cffb0b205de28edbeb377e731f1fd",
+        "toolGrips": [
+          {
+            "kind": "hook",
+            "hand": "far",
+            "anchor": [
+              50,
+              25
+            ],
+            "overlap": 13,
+            "exposed": 46,
+            "toolPixels": 59,
+            "clearance": 7,
+            "opening": null,
+            "rgbaSha256": "7bc6f20d90a877a07f402635935524f413f6d0cec2e3496ed3167487ecc41b05"
+          }
+        ]
+      },
+      "partLegend": {
+        "far-thigh": 1129734911,
+        "far-shin": 1156545535,
+        "far-boot": 1183356159,
+        "far-upper-arm": 1210166783,
+        "far-forearm": 1236977407,
+        "far-tool": 1263788031,
+        "far-hand": 1290598655,
+        "near-thigh": 1317409279,
+        "near-shin": 1344219903,
+        "near-boot": 1371030527,
+        "hips": 1397841151,
+        "cape": 1424651775,
+        "jacket": 1451462399,
+        "strap": 1478273023,
+        "satchel": 1505083647,
+        "neck": 1531894271,
+        "head": 1558704895,
+        "hood": 1585515519,
+        "near-upper-arm": 1612326143,
+        "near-forearm": 1639136767,
+        "near-hand": 1665947391
+      },
+      "materialQA": {
+        "coverage": 1156,
+        "outline": 207,
+        "isolatedOutline": 0,
+        "components": [
+          1156
+        ],
+        "bounds": {
+          "left": 15,
+          "top": 5,
+          "right": 58,
+          "bottom": 57
+        },
+        "detail": {
+          "edges": 397,
+          "samples": 1628,
+          "per100": 24.4
+        },
+        "materialBoundaries": [
+          {
+            "roles": "#242032/#376b71",
+            "samples": 1,
+            "p10": 62,
+            "median": 62
+          },
+          {
+            "roles": "#242032/#477763",
+            "samples": 51,
+            "p10": 16,
+            "median": 40
+          },
+          {
+            "roles": "#242032/#4c5792",
+            "samples": 29,
+            "p10": 4,
+            "median": 17
+          },
+          {
+            "roles": "#242032/#5c9e96",
+            "samples": 43,
+            "p10": 25,
+            "median": 37
+          },
+          {
+            "roles": "#242032/#62ac73",
+            "samples": 19,
+            "p10": 36,
+            "median": 88
+          },
+          {
+            "roles": "#242032/#6f87c1",
+            "samples": 29,
+            "p10": 21,
+            "median": 21
+          },
+          {
+            "roles": "#242032/#9ca7c2",
+            "samples": 46,
+            "p10": 66,
+            "median": 109
+          },
+          {
+            "roles": "#242032/#bd7756",
+            "samples": 52,
+            "p10": 22,
+            "median": 22
+          },
+          {
+            "roles": "#242032/#eaa48c",
+            "samples": 36,
+            "p10": 56,
+            "median": 84
+          },
+          {
+            "roles": "#376b71/#477763",
+            "samples": 1,
+            "p10": 7,
+            "median": 7
+          },
+          {
+            "roles": "#376b71/#5c9e96",
+            "samples": 8,
+            "p10": 8,
+            "median": 29
+          },
+          {
+            "roles": "#376b71/#62ac73",
+            "samples": 10,
+            "p10": 38,
+            "median": 38
+          },
+          {
+            "roles": "#376b71/#bd7756",
+            "samples": 3,
+            "p10": 32,
+            "median": 32
+          },
+          {
+            "roles": "#376b71/#eaa48c",
+            "samples": 9,
+            "p10": 47,
+            "median": 47
+          },
+          {
+            "roles": "#477763/#4c5792",
+            "samples": 1,
+            "p10": 23,
+            "median": 23
+          },
+          {
+            "roles": "#477763/#62ac73",
+            "samples": 32,
+            "p10": 5,
+            "median": 31
+          },
+          {
+            "roles": "#477763/#6f87c1",
+            "samples": 11,
+            "p10": 5,
+            "median": 5
+          },
+          {
+            "roles": "#477763/#bd7756",
+            "samples": 21,
+            "p10": 6,
+            "median": 49
+          },
+          {
+            "roles": "#477763/#eaa48c",
+            "samples": 15,
+            "p10": 40,
+            "median": 40
+          },
+          {
+            "roles": "#4c5792/#6f87c1",
+            "samples": 7,
+            "p10": 0,
+            "median": 18
+          },
+          {
+            "roles": "#4c5792/#bd7756",
+            "samples": 5,
+            "p10": 44,
+            "median": 59
+          },
+          {
+            "roles": "#5c9e96/#62ac73",
+            "samples": 1,
+            "p10": 46,
+            "median": 46
+          },
+          {
+            "roles": "#5c9e96/#69425e",
+            "samples": 12,
+            "p10": 75,
+            "median": 75
+          },
+          {
+            "roles": "#5c9e96/#bd7756",
+            "samples": 2,
+            "p10": 40,
+            "median": 40
+          },
+          {
+            "roles": "#5c9e96/#eaa48c",
+            "samples": 14,
+            "p10": 17,
+            "median": 55
+          },
+          {
+            "roles": "#62ac73/#6f87c1",
+            "samples": 1,
+            "p10": 14,
+            "median": 14
+          },
+          {
+            "roles": "#62ac73/#bd7756",
+            "samples": 32,
+            "p10": 12,
+            "median": 30
+          },
+          {
+            "roles": "#62ac73/#eaa48c",
+            "samples": 7,
+            "p10": 41,
+            "median": 93
+          },
+          {
+            "roles": "#69425e/#eaa48c",
+            "samples": 12,
+            "p10": 58,
+            "median": 70
+          },
+          {
+            "roles": "#6f87c1/#bd7756",
+            "samples": 16,
+            "p10": 1,
+            "median": 31
+          },
+          {
+            "roles": "#9ca7c2/#eaa48c",
+            "samples": 2,
+            "p10": 55,
+            "median": 70
+          },
+          {
+            "roles": "#bd7756/#eaa48c",
+            "samples": 1,
+            "p10": 15,
+            "median": 15
+          }
+        ],
+        "used": [
+          "#242534",
+          "#2d4346",
+          "#30383c",
+          "#303d41",
+          "#392c37",
+          "#394b4d",
+          "#465046",
+          "#512f32",
+          "#513638",
+          "#535e51",
+          "#536964",
+          "#596a83",
+          "#674937",
+          "#6b4139",
+          "#71453d",
+          "#798c7c",
+          "#81979f",
+          "#86503d",
+          "#88927a",
+          "#896049",
+          "#a36146",
+          "#a86a55",
+          "#b18059",
+          "#bfcec6",
+          "#d79768",
+          "#dca57a",
+          "#f5c393"
+        ],
+        "rgbaSha256": "f3fafce63412637ada237180cb8417c619d267647f0a04c7e273702a0033a998",
+        "alphaSha256": "3f9b24c5f9ffbff31b2d7bfd64af90a0c1c480c79e336a8970b65f61cfbea8b0"
+      },
+      "art": {
+        "final": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/material.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/material-4x.png"
+        },
+        "mask": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/material-mask.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/material-mask-4x.png"
+        },
+        "day": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/day.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/day-4x.png"
+        },
+        "night": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/night.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/night-4x.png"
+        },
+        "near": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/near-grip.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/near-grip-4x.png",
+          "bounds": [
+            9,
+            33,
+            20,
+            23
+          ]
+        },
+        "far": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/far-grip.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/far-grip-4x.png",
+          "bounds": [
+            40,
+            10,
+            24,
+            28
+          ]
+        },
+        "feet": {
+          "native": "benchmarks/results/e75/marsh-harvester/a2/feet.png",
+          "zoom": "benchmarks/results/e75/marsh-harvester/a2/feet-4x.png",
+          "bounds": [
+            20,
+            42,
+            33,
+            18
+          ]
+        },
+        "toolMasks": {
+          "far-tool": {
+            "native": "benchmarks/results/e75/marsh-harvester/a2/far-tool-mask.png",
+            "zoom": "benchmarks/results/e75/marsh-harvester/a2/far-tool-mask-4x.png"
+          }
+        }
+      },
+      "context": {
+        "scene": "Mistfen Ferry Depot",
+        "source": {
+          "file": "benchmarks/fixtures/e73r/mistfen.json",
+          "sha256": "dcbb818673e66acf9dab1b4f847b0be55230ac636fc61a663fe77ad92972befe"
+        },
+        "camera": {
+          "width": 320,
+          "height": 208,
+          "sampling": "nearest",
+          "view": "three-quarter-right",
+          "pixelsPerUnit": 32
+        },
+        "light": "upper-left",
+        "anchor": [
+          201,
+          160
+        ],
+        "portal": {
+          "at": [
+            142,
+            123
+          ],
+          "points": [
+            [
+              124,
+              119
+            ],
+            [
+              160,
+              119
+            ],
+            [
+              160,
+              127
+            ],
+            [
+              124,
+              127
+            ]
+          ]
+        },
+        "collisions": [
+          {
+            "id": "sluice-gateway-0",
+            "kind": "architecture",
+            "points": [
+              [
+                111,
+                123
+              ],
+              [
+                124,
+                123
+              ],
+              [
+                124,
+                119
+              ],
+              [
+                132,
+                111
+              ],
+              [
+                119,
+                111
+              ],
+              [
+                111,
+                119
+              ]
+            ]
+          },
+          {
+            "id": "sluice-gateway-1",
+            "kind": "architecture",
+            "points": [
+              [
+                160,
+                123
+              ],
+              [
+                173,
+                123
+              ],
+              [
+                173,
+                119
+              ],
+              [
+                181,
+                111
+              ],
+              [
+                168,
+                111
+              ],
+              [
+                160,
+                119
+              ]
+            ]
+          },
+          {
+            "id": "west-flood-wall",
+            "kind": "architecture",
+            "points": [
+              [
+                31,
+                134
+              ],
+              [
+                87,
+                134
+              ],
+              [
+                87,
+                130
+              ],
+              [
+                92,
+                125
+              ],
+              [
+                36,
+                125
+              ],
+              [
+                31,
+                130
+              ]
+            ]
+          },
+          {
+            "id": "east-flood-wall",
+            "kind": "architecture",
+            "points": [
+              [
+                242,
+                103
+              ],
+              [
+                295,
+                103
+              ],
+              [
+                295,
+                99
+              ],
+              [
+                302,
+                92
+              ],
+              [
+                249,
+                92
+              ],
+              [
+                242,
+                99
+              ]
+            ]
+          },
+          {
+            "id": "signal-pedestal",
+            "kind": "architecture",
+            "points": [
+              [
+                191,
+                106
+              ],
+              [
+                214,
+                106
+              ],
+              [
+                214,
+                102
+              ],
+              [
+                218,
+                98
+              ],
+              [
+                195,
+                98
+              ],
+              [
+                191,
+                102
+              ]
+            ]
+          },
+          {
+            "id": "mooring-post",
+            "kind": "architecture",
+            "points": [
+              [
+                71,
+                151
+              ],
+              [
+                87,
+                151
+              ],
+              [
+                87,
+                147
+              ],
+              [
+                92,
+                142
+              ],
+              [
+                76,
+                142
+              ],
+              [
+                71,
+                147
+              ]
+            ]
+          },
+          {
+            "id": "ferry-level-signal",
+            "kind": "prop",
+            "points": [
+              [
+                62,
+                158
+              ],
+              [
+                82,
+                158
+              ],
+              [
+                82,
+                169
+              ],
+              [
+                62,
+                169
+              ]
+            ]
+          }
+        ],
+        "walkable": "caffa25150f801af6743d3fccb54b03b1c01a2ca2b2a5a1829ce0329f6c4bbdd",
+        "routes": [
+          {
+            "id": "gate-passage",
+            "actor": "surveyor",
+            "points": [
+              [
+                139,
+                196
+              ],
+              [
+                145,
+                159
+              ],
+              [
+                142,
+                137
+              ],
+              [
+                142,
+                96
+              ]
+            ],
+            "halfWidth": 9,
+            "tested": 1919
+          },
+          {
+            "id": "signal-approach",
+            "actor": "courier",
+            "points": [
+              [
+                142,
+                140
+              ],
+              [
+                152,
+                154
+              ],
+              [
+                178,
+                154
+              ],
+              [
+                208,
+                140
+              ],
+              [
+                204,
+                119
+              ]
+            ],
+            "halfWidth": 10,
+            "tested": 1932
+          }
+        ],
+        "secondaryActors": [
+          {
+            "id": "surveyor",
+            "visible": 1072,
+            "hiddenBy": {}
+          }
+        ],
+        "day": {
+          "visible": 1156,
+          "total": 1156,
+          "feet": {
+            "near": {
+              "projectedGroundY": 58,
+              "lowestContourY": 57,
+              "clearance": 0,
+              "solePixels": 8,
+              "soleBand": [
+                28,
+                35
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 8,
+              "shadowSamples": 8
+            },
+            "far": {
+              "projectedGroundY": 57,
+              "lowestContourY": 56,
+              "clearance": 0,
+              "solePixels": 7,
+              "soleBand": [
+                39,
+                45
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 7,
+              "shadowSamples": 0
+            }
+          },
+          "rgbaSha256": "a3fdcb1113a2094665c1c1a4fa07f4f92e6372fa27cd7ce72877c155a0b71211",
+          "edges": {
+            "silhouette": {
+              "n": 310,
+              "p10": 44,
+              "median": 96,
+              "weak": 7
+            },
+            "outline": {
+              "n": 310,
+              "p10": 44,
+              "median": 96,
+              "weak": 7
+            },
+            "contact": {
+              "n": 20,
+              "p10": 79,
+              "median": 79,
+              "weak": 0
+            },
+            "outlineRuns": [
+              207
+            ],
+            "weakOutlineRuns": [
+              5
+            ],
+            "signal": {
+              "pixels": 46,
+              "clusters": [
+                46
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 66,
+                "median": 109,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "toolContrast": {
+            "hook": {
+              "pixels": 46,
+              "clusters": [
+                46
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 66,
+                "median": 109,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "surfaces": {
+            "skin": {
+              "pixels": 141,
+              "clusters": [
+                100,
+                25,
+                16
+              ],
+              "housing": {
+                "n": 96,
+                "p10": 40,
+                "median": 64,
+                "weak": 6
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "coat": {
+              "pixels": 160,
+              "clusters": [
+                147,
+                13
+              ],
+              "housing": {
+                "n": 102,
+                "p10": 12,
+                "median": 31,
+                "weak": 21
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "leather": {
+              "pixels": 179,
+              "clusters": [
+                102,
+                40,
+                37
+              ],
+              "housing": {
+                "n": 132,
+                "p10": 5,
+                "median": 30,
+                "weak": 29
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "metal": {
+              "pixels": 46,
+              "clusters": [
+                46
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 66,
+                "median": 109,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        },
+        "night": {
+          "visible": 1156,
+          "total": 1156,
+          "feet": {
+            "near": {
+              "projectedGroundY": 58,
+              "lowestContourY": 57,
+              "clearance": 0,
+              "solePixels": 8,
+              "soleBand": [
+                28,
+                35
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 8,
+              "shadowSamples": 8
+            },
+            "far": {
+              "projectedGroundY": 57,
+              "lowestContourY": 56,
+              "clearance": 0,
+              "solePixels": 7,
+              "soleBand": [
+                39,
+                45
+              ],
+              "toeRise": 0,
+              "visibleSolePixels": 7,
+              "shadowSamples": 0
+            }
+          },
+          "rgbaSha256": "622c1d83fff4269e352aae66d3eb4a5b9ef6095a29c0d63c8e7120aceb5bcc94",
+          "edges": {
+            "silhouette": {
+              "n": 310,
+              "p10": 18,
+              "median": 50,
+              "weak": 30
+            },
+            "outline": {
+              "n": 310,
+              "p10": 18,
+              "median": 50,
+              "weak": 30
+            },
+            "contact": {
+              "n": 20,
+              "p10": 23,
+              "median": 31,
+              "weak": 1
+            },
+            "outlineRuns": [
+              207
+            ],
+            "weakOutlineRuns": [
+              12,
+              6,
+              1
+            ],
+            "signal": {
+              "pixels": 46,
+              "clusters": [
+                46
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 66,
+                "median": 109,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "toolContrast": {
+            "hook": {
+              "pixels": 46,
+              "clusters": [
+                46
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 66,
+                "median": 109,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          },
+          "surfaces": {
+            "skin": {
+              "pixels": 141,
+              "clusters": [
+                100,
+                25,
+                16
+              ],
+              "housing": {
+                "n": 96,
+                "p10": 40,
+                "median": 64,
+                "weak": 6
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "coat": {
+              "pixels": 160,
+              "clusters": [
+                147,
+                13
+              ],
+              "housing": {
+                "n": 102,
+                "p10": 12,
+                "median": 31,
+                "weak": 21
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "leather": {
+              "pixels": 179,
+              "clusters": [
+                102,
+                40,
+                37
+              ],
+              "housing": {
+                "n": 132,
+                "p10": 5,
+                "median": 30,
+                "weak": 29
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            },
+            "metal": {
+              "pixels": 46,
+              "clusters": [
+                46
+              ],
+              "housing": {
+                "n": 48,
+                "p10": 66,
+                "median": 109,
+                "weak": 0
+              },
+              "exterior": {
+                "n": 0,
+                "p10": null,
+                "median": null,
+                "weak": 0
+              }
+            }
+          }
+        }
+      },
+      "local": {
+        "defectId": "BODY_TOOL_TANGENCY",
+        "status": "NO_MEANINGFUL_VISUAL_GAIN",
+        "scope": "No RGB patch selected",
+        "firstAction": "Keep validated structure because RGB cannot recover tool clearance or hand articulation.",
+        "humanEvaluation": "PENDING_HUMAN_REVIEW",
+        "changed": 0,
+        "budget": 8,
+        "protectedBefore": "f3fafce63412637ada237180cb8417c619d267647f0a04c7e273702a0033a998",
+        "protectedAfter": "f3fafce63412637ada237180cb8417c619d267647f0a04c7e273702a0033a998"
+      }
+    }
+  ],
+  "negative": [],
+  "animation": "DESIGN_ONLY_AWAITING_STATIC_OWNER_APPROVAL"
+}

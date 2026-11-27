@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "node": "v26.13.1",
+  "platform": "win32",
+  "apiCalls": 0,
+  "bytes": 1136783,
+  "developmentOnly": false,
+  "timings": [
+    {
+      "id": "ridge-mechanic",
+      "primaryCpuMicroseconds": {
+        "user": 2016000,
+        "system": 250000
+      },
+      "repeatCpuMicroseconds": {
+        "user": 1609000,
+        "system": 172000
+      },
+      "counters": {
+        "structures": 3,
+        "materials": 3,
+        "compositionRenders": 6,
+        "ownershipPasses": 3,
+        "localPatches": 0
+      },
+      "wallMsIncludingEncoding": 3239
+    },
+    {
+      "id": "marsh-harvester",
+      "primaryCpuMicroseconds": {
+        "user": 1985000,
+        "system": 31000
+      },
+      "repeatCpuMicroseconds": {
+        "user": 1422000,
+        "system": 47000
+      },
+      "counters": {
+        "structures": 3,
+        "materials": 3,
+        "compositionRenders": 6,
+        "ownershipPasses": 3,
+        "localPatches": 0
+      },
+      "wallMsIncludingEncoding": 2997
+    }
+  ]
+}

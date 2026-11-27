@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "status": "PENDING_HUMAN_REVIEW",
+  "options": [
+    "A0",
+    "A1",
+    "A2",
+    "Neither"
+  ],
+  "criteria": [
+    "silhouette",
+    "anatomy",
+    "pose",
+    "grip",
+    "legs",
+    "footContact",
+    "material",
+    "clusters",
+    "context",
+    "identity",
+    "generalization"
+  ],
+  "cases": [
+    {
+      "id": "ridge-mechanic",
+      "selected": null,
+      "notes": "",
+      "scores": {
+        "A0": {
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "grip": null,
+          "legs": null,
+          "footContact": null,
+          "material": null,
+          "clusters": null,
+          "context": null,
+          "identity": null,
+          "generalization": null
+        },
+        "A1": {
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "grip": null,
+          "legs": null,
+          "footContact": null,
+          "material": null,
+          "clusters": null,
+          "context": null,
+          "identity": null,
+          "generalization": null
+        },
+        "A2": {
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "grip": null,
+          "legs": null,
+          "footContact": null,
+          "material": null,
+          "clusters": null,
+          "context": null,
+          "identity": null,
+          "generalization": null
+        }
+      }
+    },
+    {
+      "id": "marsh-harvester",
+      "selected": null,
+      "notes": "",
+      "scores": {
+        "A0": {
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "grip": null,
+          "legs": null,
+          "footContact": null,
+          "material": null,
+          "clusters": null,
+          "context": null,
+          "identity": null,
+          "generalization": null
+        },
+        "A1": {
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "grip": null,
+          "legs": null,
+          "footContact": null,
+          "material": null,
+          "clusters": null,
+          "context": null,
+          "identity": null,
+          "generalization": null
+        },
+        "A2": {
+          "silhouette": null,
+          "anatomy": null,
+          "pose": null,
+          "grip": null,
+          "legs": null,
+          "footContact": null,
+          "material": null,
+          "clusters": null,
+          "context": null,
+          "identity": null,
+          "generalization": null
+        }
+      }
+    }
+  ]
+}

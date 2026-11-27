@@ -1,0 +1,56 @@
+{
+  "revision": "c56837e344dbb42369dc92ebd379e28255db7d84",
+  "mode": "RAW_PNG_ONLY",
+  "samples": [
+    {
+      "file": "benchmarks/results/e75/ridge-mechanic/a0/material.png",
+      "pngSha256": "5f03d695f07dd6f0737b138439477f4cb5e639208957e5aa9f71c9b0047e35d7",
+      "rgbaSha256": "ed7e5cb7877e4b554e11f02b11cd9943367a5f6a1eb34618a6a69d2f00b1350a"
+    },
+    {
+      "file": "benchmarks/results/e75/ridge-mechanic/a1/material.png",
+      "pngSha256": "e531b9aed8bd057d7fdd16f3d5d53e7b6dd027e7392608268d8fbf9942cfc726",
+      "rgbaSha256": "78fb8cfccdbc7d7301f8fe62c9ffc759b0c17ef290441fee5d7ebf1828274736"
+    },
+    {
+      "file": "benchmarks/results/e75/ridge-mechanic/a2/material.png",
+      "pngSha256": "1cab3af98e7c6f40933d186de4420d8900742862733db25de775235a67c25d2a",
+      "rgbaSha256": "b64e9b9a722163550d9ea9d8d5d86ed45405bde1d5480548eeed6cf92e17b3df"
+    },
+    {
+      "file": "benchmarks/results/e75/ridge-mechanic/a1/parts.png",
+      "pngSha256": "45ec04e8add59c1117e7a456d2494fb3b39df401bf442e5a59942741f1e06fd2",
+      "rgbaSha256": "57496c96f191677660198160df5726ac23fbb3610bfd49fd846c7ffee71ea7db"
+    },
+    {
+      "file": "benchmarks/results/e75/ridge-mechanic/a2/night.png",
+      "pngSha256": "a61fb996fe1c835490459f193739c2ab76fc43ea87d168486324fba36e161683",
+      "rgbaSha256": "7db76244ae08aa41c2c1f0a5bf3bd875cf1dd75764eb5508fa7b0277e6094f22"
+    },
+    {
+      "file": "benchmarks/results/e75/marsh-harvester/a0/material.png",
+      "pngSha256": "e6930e1a2b6ce6044e8b44dd248e5200d921dfb88cc5ab8b1d58c36325fb960c",
+      "rgbaSha256": "c3efda8e9e5d60d41fc707ae5c453dd205839aa01cbbe8ef21989d1dce46c412"
+    },
+    {
+      "file": "benchmarks/results/e75/marsh-harvester/a1/material.png",
+      "pngSha256": "23ed68b22ad7f242d3b38d1c57bbe8760e707f36b89173ee19e433f9156db1c8",
+      "rgbaSha256": "90303308d8758cf915ecb14410f96d6e6409c27c1af045f8c8c41af8b9b18d55"
+    },
+    {
+      "file": "benchmarks/results/e75/marsh-harvester/a2/material.png",
+      "pngSha256": "baed6e9057c3eaff3173546825ccfbfea69ab50d2393df746c3f07e0383f29a4",
+      "rgbaSha256": "f3fafce63412637ada237180cb8417c619d267647f0a04c7e273702a0033a998"
+    },
+    {
+      "file": "benchmarks/results/e75/marsh-harvester/a1/parts.png",
+      "pngSha256": "cf53816314ca7eedac9c7006ec09b01c4ddf6639e7a93d1a31aa007d6d42d359",
+      "rgbaSha256": "16abb61c0d4bcf87479ce65284e97b688a491cc69492a3fdaa36a349e4f5a309"
+    },
+    {
+      "file": "benchmarks/results/e75/marsh-harvester/a2/night.png",
+      "pngSha256": "4e63e5b33606f8a165e3201029c1d24c23e48208c3348a92f0183ae3beced40e",
+      "rgbaSha256": "622c1d83fff4269e352aae66d3eb4a5b9ef6095a29c0d63c8e7120aceb5bcc94"
+    }
+  ]
+}

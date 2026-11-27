@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "briefLock": "316a49cad68afee2a10b037d97351724d00289dd0f2ae99f5cd849ab3181ef12",
+  "development": "ridge-mechanic",
+  "unseen": "marsh-harvester",
+  "hashMode": "UTF-8 LF",
+  "sources": {
+    "src/experiments/character-equipment.ts": "4c048a82459dd48028ba79c4f42e0dbf30b014f3b813e90de25ffac499833c94",
+    "src/experiments/quality-guided-character.ts": "c44635e5e5be367c1d71b8e9dc4cb26aa16c3a9dee644e7f216a2bf4617b480a",
+    "src/experiments/character-pilot-context.ts": "7e6bf700337971e5ad7800d4f62252372400a9c1f7c4d292d1b88385bcb673f8",
+    "scripts/benchmark-e75.ts": "0d5a66eb3bb1b49b6d39b0df132e0f99025b94093d32ab9b28840a1dfd744abc"
+  }
+}
