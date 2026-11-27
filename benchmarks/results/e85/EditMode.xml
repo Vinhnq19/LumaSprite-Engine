@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:41Z" duration="0.181327">
+  <test-suite type="TestSuite" id="1000" name="LumaSprite E8.5 End-to-End Acceptance" fullname="LumaSprite E8.5 End-to-End Acceptance" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:41Z" duration="0.181327" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1009" name="E8EditMode.dll" fullname="D:/LumaSprite-Engine/.cache/e8-runtime-acceptance/Library/ScriptAssemblies/E8EditMode.dll" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:41Z" duration="0.172217" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="22676" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="E8ImportTests" fullname="E8ImportTests" classname="E8ImportTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:41Z" duration="0.170917" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1003" name="AnimationFrameBoundariesFollowLockedMetadata" fullname="E8ImportTests.AnimationFrameBoundariesFollowLockedMetadata" methodname="AnimationFrameBoundariesFollowLockedMetadata" classname="E8ImportTests" runstate="Runnable" seed="557368222" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:40Z" duration="0.024100" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1002" name="ImportedAtlasAndForegroundRetainNativeMetrics" fullname="E8ImportTests.ImportedAtlasAndForegroundRetainNativeMetrics" methodname="ImportedAtlasAndForegroundRetainNativeMetrics" classname="E8ImportTests" runstate="Runnable" seed="1993279683" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:40Z" duration="0.014155" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1004" name="NearbyTargetsRemainStableAndUseOriginalFivePixelRange" fullname="E8ImportTests.NearbyTargetsRemainStableAndUseOriginalFivePixelRange" methodname="NearbyTargetsRemainStableAndUseOriginalFivePixelRange" classname="E8ImportTests" runstate="Runnable" seed="987318401" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:40Z" duration="0.001431" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1005" name="PromptIsInDedicatedRailAndMarkerStaysInsideAllSceneViewports" fullname="E8ImportTests.PromptIsInDedicatedRailAndMarkerStaysInsideAllSceneViewports" methodname="PromptIsInDedicatedRailAndMarkerStaysInsideAllSceneViewports" classname="E8ImportTests" runstate="Runnable" seed="593151105" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:40Z" duration="0.010643" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1007" name="StudioDynamicInteractionLabelOverridesHardcodedDefaultAndPreservesLegacy" fullname="E8ImportTests.StudioDynamicInteractionLabelOverridesHardcodedDefaultAndPreservesLegacy" methodname="StudioDynamicInteractionLabelOverridesHardcodedDefaultAndPreservesLegacy" classname="E8ImportTests" runstate="Runnable" seed="964058969" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:40Z" duration="0.000457" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1006" name="StudioZipImporterImportsRealOwnerMistfenZipAtX117" fullname="E8ImportTests.StudioZipImporterImportsRealOwnerMistfenZipAtX117" methodname="StudioZipImporterImportsRealOwnerMistfenZipAtX117" classname="E8ImportTests" runstate="Runnable" seed="261951316" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:40Z" duration="0.061281" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1008" name="StudioZipImporterRejectsTraversalAndTamperedOrUnapprovedPackages" fullname="E8ImportTests.StudioZipImporterRejectsTraversalAndTamperedOrUnapprovedPackages" methodname="StudioZipImporterRejectsTraversalAndTamperedOrUnapprovedPackages" classname="E8ImportTests" runstate="Runnable" seed="1623502111" result="Passed" start-time="2026-11-27 12:48:40Z" end-time="2026-11-27 12:48:41Z" duration="0.044597" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: D:\LumaSprite-Engine\benchmarks\results\run\e85\EditMode.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

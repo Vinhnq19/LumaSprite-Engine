@@ -1,0 +1,1081 @@
+{
+    "editor": "6000.3.21f1",
+    "target": "StandaloneWindows64",
+    "renderPipeline": "Built-in",
+    "input": "built-in keyboard input",
+    "contractRevision": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd",
+    "testFramework": "1.6.0",
+    "pixelPerfect": "orthographic camera and native point RenderTexture",
+    "maps": 6,
+    "foregroundTextures": 6,
+    "tileSize": 16,
+    "ppu": 32,
+    "texturesCount": 105,
+    "studioZipsCount": 9,
+    "textures": [
+        {
+            "path": "Assets/Resources/E8Input/actor/idle.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/actor/walk.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 512,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 192,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-intake-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-intake-crate.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-sluice.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 63,
+            "height": 49,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-station-shell.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 192,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-intake-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-intake-crate.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-sluice.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 63,
+            "height": 49,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-station-shell.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/day-staging/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 192,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-intake-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-intake-crate.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-sluice.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 63,
+            "height": 49,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-station-shell.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/canal-intake-service-platform/night/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 224,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-east-flood-wall.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 67,
+            "height": 33,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-gauge-crate.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-maintenance-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-mooring-post.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 26,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-signal-pedestal.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 36,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-sluice-gateway.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 78,
+            "height": 78,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-sluice.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 73,
+            "height": 56,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/layer-west-flood-wall.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 66,
+            "height": 36,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/day/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 224,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-east-flood-wall.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 67,
+            "height": 33,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-gauge-crate.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-maintenance-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-mooring-post.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 26,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-signal-pedestal.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 36,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-sluice-gateway.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 78,
+            "height": 78,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-sluice.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 73,
+            "height": 56,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/layer-west-flood-wall.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 66,
+            "height": 36,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/floodgate-maintenance-yard/night/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 240,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/layer-station-shell.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/layer-supply-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/layer-survey-bench.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 35,
+            "height": 24,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 240,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/layer-station-shell.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/layer-supply-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/layer-survey-bench.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 35,
+            "height": 24,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-e84/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 240,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/layer-station-shell.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/layer-supply-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/layer-survey-bench.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 35,
+            "height": 24,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/day-rollback/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/atlas.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 256,
+            "height": 240,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/foreground.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/layer-courier.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/layer-mooring-1.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/layer-mooring-2.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 16,
+            "height": 27,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/layer-station-shell.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/layer-supply-barrel.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 32,
+            "height": 32,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/layer-survey-bench.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 35,
+            "height": 24,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/layer-surveyor.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 64,
+            "height": 64,
+            "mipCount": 1
+        },
+        {
+            "path": "Assets/Resources/E8Input/mistfen-ferry-landing/night/underlay-correction.png",
+            "format": "RGBA32",
+            "filter": "Point",
+            "compression": "Uncompressed",
+            "width": 320,
+            "height": 208,
+            "mipCount": 1
+        }
+    ],
+    "studioZips": [
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "day",
+            "subdir": "mistfen-ferry-landing/day-e84",
+            "zipName": "e8-mistfen-ferry-landing-day-e84-export.zip",
+            "zipSha256": "b7606778e555e2f048356c1dbb6c89be7bbc9315683e7c0e88d99c6c4d779754",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "",
+            "linkedEntityId": "",
+            "studioRevision": 8,
+            "spawnX": 117,
+            "spawnY": 174
+        },
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "day",
+            "subdir": "mistfen-ferry-landing/day",
+            "zipName": "e8-mistfen-ferry-landing-day-label-e85.zip",
+            "zipSha256": "2a9c0fe04be4bb9dca216e807488c32d603dc72f1d9d6b68cd99ea9bc2008b2a",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "Kiểm tra cầu phà E8.5",
+            "linkedEntityId": "mooring-2",
+            "studioRevision": 2,
+            "spawnX": 117,
+            "spawnY": 174
+        },
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "night",
+            "subdir": "mistfen-ferry-landing/night",
+            "zipName": "e8-mistfen-ferry-landing-night-e85.zip",
+            "zipSha256": "47e61bda1ebfcd73c9bc45c33d72b8663eb96cc460d576c3af528f100e271461",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "Kiểm tra cầu phà đêm E8.5",
+            "linkedEntityId": "mooring-2",
+            "studioRevision": 2,
+            "spawnX": 117,
+            "spawnY": 174
+        },
+        {
+            "id": "floodgate-maintenance-yard",
+            "light": "day",
+            "subdir": "floodgate-maintenance-yard/day",
+            "zipName": "e8-floodgate-maintenance-yard-day-e85.zip",
+            "zipSha256": "363488b5b9505b91192063e42313faa9ec3935bdaa627f461fe7dee360773d1b",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "Vận hành tay quay E8.5",
+            "linkedEntityId": "sluice",
+            "studioRevision": 2,
+            "spawnX": 140,
+            "spawnY": 174
+        },
+        {
+            "id": "floodgate-maintenance-yard",
+            "light": "night",
+            "subdir": "floodgate-maintenance-yard/night",
+            "zipName": "e8-floodgate-maintenance-yard-night-e85.zip",
+            "zipSha256": "f54eae4433139143728d33330062b68b116ad46ee63b443f9d31c429451ff04a",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "Vận hành tay quay đêm E8.5",
+            "linkedEntityId": "sluice",
+            "studioRevision": 2,
+            "spawnX": 140,
+            "spawnY": 174
+        },
+        {
+            "id": "canal-intake-service-platform",
+            "light": "day",
+            "subdir": "canal-intake-service-platform/day",
+            "zipName": "e8-canal-intake-service-platform-day-e85.zip",
+            "zipSha256": "adef43129f66f8d4a72197184898644981dd852e64299dea83f036c285ecb397",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "Kiểm tra cửa lấy nước E8.5",
+            "linkedEntityId": "sluice",
+            "studioRevision": 2,
+            "spawnX": 147,
+            "spawnY": 156
+        },
+        {
+            "id": "canal-intake-service-platform",
+            "light": "night",
+            "subdir": "canal-intake-service-platform/night",
+            "zipName": "e8-canal-intake-service-platform-night-e85.zip",
+            "zipSha256": "5a345d4a3d42501f5c6a68aa310b279bc653b7035b2047505700f6fef280e506",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "Kiểm tra cửa lấy nước đêm E8.5",
+            "linkedEntityId": "sluice",
+            "studioRevision": 2,
+            "spawnX": 147,
+            "spawnY": 156
+        },
+        {
+            "id": "canal-intake-service-platform",
+            "light": "day",
+            "subdir": "canal-intake-service-platform/day-staging",
+            "zipName": "e8-canal-intake-service-platform-day-staging-e85.zip",
+            "zipSha256": "96a040c3f065f88d67faae1948c760d357ff801575b92d9108030bac58467529",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "Kiểm tra cửa lấy nước (Staging E8.5)",
+            "linkedEntityId": "sluice",
+            "studioRevision": 2,
+            "spawnX": 147,
+            "spawnY": 156
+        },
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "day",
+            "subdir": "mistfen-ferry-landing/day-rollback",
+            "zipName": "e8-mistfen-ferry-landing-day-rollback-e85.zip",
+            "zipSha256": "33631133d888c7c9e2f991a39f4a8dc5050b2071713d8e2a92b76b07cb209fc3",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "",
+            "linkedEntityId": "",
+            "studioRevision": 1,
+            "spawnX": 113,
+            "spawnY": 174
+        }
+    ]
+}

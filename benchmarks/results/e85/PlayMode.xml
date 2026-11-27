@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-27 12:48:48Z" end-time="2026-11-27 12:48:48Z" duration="0.1548604">
+  <test-suite type="TestSuite" id="1006" name="LumaSprite E8.5 End-to-End Acceptance" fullname="LumaSprite E8.5 End-to-End Acceptance" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-27 12:48:48Z" end-time="2026-11-27 12:48:48Z" duration="0.154860" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1004" name="E8PlayMode.dll" fullname="D:/LumaSprite-Engine/.cache/e8-runtime-acceptance/Library/ScriptAssemblies/E8PlayMode.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-27 12:48:48Z" end-time="2026-11-27 12:48:48Z" duration="0.137896" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="28120" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="E8NavigationTests" fullname="E8NavigationTests" classname="E8NavigationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-27 12:48:48Z" end-time="2026-11-27 12:48:48Z" duration="0.135269" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1002" name="MistfenGameplayUsesRealTilemapAndPhysics" fullname="E8NavigationTests.MistfenGameplayUsesRealTilemapAndPhysics" methodname="MistfenGameplayUsesRealTilemapAndPhysics" classname="E8NavigationTests" runstate="Runnable" seed="1743058084" result="Passed" start-time="2026-11-27 12:48:48Z" end-time="2026-11-27 12:48:48Z" duration="0.093954" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1003" name="StudioApprovedSceneSpawnsAtX117AndShowsDynamicInteractionLabelAndLinkedEntity" fullname="E8NavigationTests.StudioApprovedSceneSpawnsAtX117AndShowsDynamicInteractionLabelAndLinkedEntity" methodname="StudioApprovedSceneSpawnsAtX117AndShowsDynamicInteractionLabelAndLinkedEntity" classname="E8NavigationTests" runstate="Runnable" seed="1327831804" result="Passed" start-time="2026-11-27 12:48:48Z" end-time="2026-11-27 12:48:48Z" duration="0.022900" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: D:\LumaSprite-Engine\benchmarks\results\run\e85\PlayMode.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "lumasprite.e85.human-review.v1",
+  "milestone": "E8.5 End-to-End Production Pipeline Acceptance",
+  "ownerAuthorization": "E8_5_RESEARCH_INTEGRATION_AUTHORIZED",
+  "approvalStatus": "PENDING_OWNER_END_TO_END_ACCEPTANCE",
+  "reviewer": "",
+  "reviewedAt": "",
+  "decision": "",
+  "checklist": {
+    "studioToUnityZipImport": "",
+    "surveyorX117AndRollback": "",
+    "dynamicInteractionLabelAndLinkedEntity": "",
+    "threeSceneDayNightAndCanalStaging": "",
+    "physicalKeyboardPlaythrough": "",
+    "gameReadyArtisticApproval": ""
+  },
+  "notes": ""
+}

@@ -1,0 +1,446 @@
+{
+  "status": "E8_5_READY_FOR_OWNER_END_TO_END_ACCEPTANCE",
+  "engineBase": "74c6e7722d92e5570977cd7760e6130c771c9179",
+  "studioHead": "471ac90555d3545beff5182146e291ba97b9ae20",
+  "studioSourceCommit": "59353475334bf0ef9635b01f606a2f8de509d5d9",
+  "ownerStudioZip": {
+    "file": "e8-mistfen-ferry-landing-day-e84-export.zip",
+    "bytes": 163438,
+    "sha256": "b7606778e555e2f048356c1dbb6c89be7bbc9315683e7c0e88d99c6c4d779754",
+    "diffPixelsVsX113": 1189
+  },
+  "mistfenDayDynamicLabel": {
+    "zipFile": "e8-mistfen-ferry-landing-day-label-e85.zip",
+    "spawnX": 117,
+    "diffPixelsVsX113": 1189,
+    "label": "Kiểm tra cầu phà E8.5",
+    "linkedEntityId": "mooring-2"
+  },
+  "manualKeyboard": {
+    "status": "NOT_RUN",
+    "reason": "Scripted Player proof mode exercised E8World.Step/HandleInteractionPress/Save/Reload in LumaSpriteE85.exe; physical Owner keyboard playthrough remains part of Owner Acceptance checklist."
+  },
+  "tests": [
+    {
+      "mode": "EditMode",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "mode": "PlayMode",
+      "passed": 2,
+      "total": 2
+    }
+  ],
+  "studioZipsImported": 9,
+  "worldRgbaParity": {
+    "exact": 6,
+    "total": 6,
+    "extraVariantsExact": 2
+  },
+  "cues": [
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "state": "out-of-range",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 1755,
+      "worldMatches": 66479
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "state": "in-range",
+      "markerGold": 48,
+      "promptGold": 747,
+      "textLight": 1376,
+      "worldMatches": 0
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "state": "activated",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 2619,
+      "worldMatches": 0
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "state": "out-of-range",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 1755,
+      "worldMatches": 66479
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "state": "in-range",
+      "markerGold": 48,
+      "promptGold": 747,
+      "textLight": 1686,
+      "worldMatches": 0
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "state": "activated",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 2934,
+      "worldMatches": 0
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "state": "out-of-range",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 1755,
+      "worldMatches": 66479
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "state": "in-range",
+      "markerGold": 48,
+      "promptGold": 747,
+      "textLight": 1387,
+      "worldMatches": 0
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "state": "activated",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 2682,
+      "worldMatches": 0
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "state": "out-of-range",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 1755,
+      "worldMatches": 66479
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "state": "in-range",
+      "markerGold": 48,
+      "promptGold": 747,
+      "textLight": 1673,
+      "worldMatches": 0
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "state": "activated",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 2901,
+      "worldMatches": 0
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "state": "out-of-range",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 1755,
+      "worldMatches": 66479
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "state": "in-range",
+      "markerGold": 48,
+      "promptGold": 747,
+      "textLight": 1585,
+      "worldMatches": 0
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "state": "activated",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 2842,
+      "worldMatches": 0
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "state": "out-of-range",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 1755,
+      "worldMatches": 66479
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "state": "in-range",
+      "markerGold": 48,
+      "promptGold": 747,
+      "textLight": 1896,
+      "worldMatches": 0
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "state": "activated",
+      "markerGold": 48,
+      "promptGold": 0,
+      "textLight": 1744,
+      "worldMatches": 0
+    }
+  ],
+  "captures": [
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day-e84",
+      "kind": "studio-variant",
+      "file": "mistfen-ferry-landing-day-e84-spawn.png",
+      "promptFile": "mistfen-ferry-landing-day-e84-prompt.png"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day-rollback",
+      "kind": "studio-variant",
+      "file": "mistfen-ferry-landing-day-rollback-spawn.png",
+      "promptFile": "mistfen-ferry-landing-day-rollback-prompt.png"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "kind": "spawn",
+      "file": "mistfen-ferry-landing-day-spawn.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "kind": "interaction",
+      "file": "mistfen-ferry-landing-day-interaction.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "kind": "out-of-range",
+      "file": "mistfen-ferry-landing-day-discover.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "kind": "in-range",
+      "file": "mistfen-ferry-landing-day-prompt.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "day",
+      "kind": "activated",
+      "file": "mistfen-ferry-landing-day-feedback.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "kind": "spawn",
+      "file": "mistfen-ferry-landing-night-spawn.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "kind": "interaction",
+      "file": "mistfen-ferry-landing-night-interaction.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "kind": "out-of-range",
+      "file": "mistfen-ferry-landing-night-discover.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "kind": "in-range",
+      "file": "mistfen-ferry-landing-night-prompt.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "mistfen-ferry-landing",
+      "light": "night",
+      "kind": "activated",
+      "file": "mistfen-ferry-landing-night-feedback.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "kind": "spawn",
+      "file": "floodgate-maintenance-yard-day-spawn.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "kind": "interaction",
+      "file": "floodgate-maintenance-yard-day-interaction.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "kind": "out-of-range",
+      "file": "floodgate-maintenance-yard-day-discover.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "kind": "in-range",
+      "file": "floodgate-maintenance-yard-day-prompt.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "day",
+      "kind": "activated",
+      "file": "floodgate-maintenance-yard-day-feedback.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "kind": "spawn",
+      "file": "floodgate-maintenance-yard-night-spawn.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "kind": "interaction",
+      "file": "floodgate-maintenance-yard-night-interaction.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "kind": "out-of-range",
+      "file": "floodgate-maintenance-yard-night-discover.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "kind": "in-range",
+      "file": "floodgate-maintenance-yard-night-prompt.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "floodgate-maintenance-yard",
+      "light": "night",
+      "kind": "activated",
+      "file": "floodgate-maintenance-yard-night-feedback.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "kind": "spawn",
+      "file": "canal-intake-service-platform-day-spawn.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "kind": "interaction",
+      "file": "canal-intake-service-platform-day-interaction.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "kind": "staging",
+      "file": "canal-intake-service-platform-day-staging.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "kind": "out-of-range",
+      "file": "canal-intake-service-platform-day-discover.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "kind": "in-range",
+      "file": "canal-intake-service-platform-day-prompt.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "day",
+      "kind": "activated",
+      "file": "canal-intake-service-platform-day-feedback.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "kind": "spawn",
+      "file": "canal-intake-service-platform-night-spawn.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "kind": "interaction",
+      "file": "canal-intake-service-platform-night-interaction.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "kind": "staging",
+      "file": "canal-intake-service-platform-night-staging.png",
+      "type": "WORLD_RENDER_PARITY"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "kind": "out-of-range",
+      "file": "canal-intake-service-platform-night-discover.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "kind": "in-range",
+      "file": "canal-intake-service-platform-night-prompt.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    },
+    {
+      "scene": "canal-intake-service-platform",
+      "light": "night",
+      "kind": "activated",
+      "file": "canal-intake-service-platform-night-feedback.png",
+      "type": "COMPOSITED_RUNTIME_UI_CAPTURE"
+    }
+  ],
+  "aiCalls": 0
+}

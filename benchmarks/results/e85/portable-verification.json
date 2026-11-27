@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-27 ICT",
+  "html": "docs/reports/E8.5-END-TO-END-PRODUCTION-ACCEPTANCE.html",
+  "sha256": "c1862c0f0a0d306e078e50fdc5851263a784e45bb1f509ff866192e17d6a177d",
+  "bytes": 1754209,
+  "location": "Standalone Windows Temp copy outside the repository",
+  "offline": true,
+  "images": 48,
+  "hudImages": 21,
+  "externalDependencies": 0,
+  "consoleErrors": 0,
+  "pageErrors": 0,
+  "failedRequests": 0,
+  "blankReviewExport": "PASS",
+  "evidenceDownload": "PASS",
+  "fitNativeAndX4": "PASS",
+  "chrome": "Chrome/158.0.0.0"
+}

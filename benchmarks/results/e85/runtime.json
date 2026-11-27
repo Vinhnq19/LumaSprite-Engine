@@ -1,0 +1,1165 @@
+{
+    "editor": "6000.3.21f1",
+    "platform": "WindowsPlayer",
+    "graphics": "Direct3D11",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "cpu": "AMD Ryzen 7 4800H with Radeon Graphics ",
+    "revision": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd",
+    "systemRamMB": 15791,
+    "screenWidth": 704,
+    "screenHeight": 472,
+    "width": 320,
+    "height": 208,
+    "targetFps": 60,
+    "ppu": 32,
+    "idleDurations": [
+        360,
+        480,
+        360,
+        600
+    ],
+    "walkDurations": [
+        120,
+        115,
+        95,
+        110,
+        120,
+        115,
+        95,
+        110
+    ],
+    "idleCycleMs": 1800,
+    "walkCycleMs": 880,
+    "timingBoundaries": true,
+    "cases": [
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "day",
+            "staticCapture": "mistfen-ferry-landing-day-spawn.png",
+            "routeCapture": "mistfen-ferry-landing-day-interaction.png",
+            "interaction": "boarding-sill",
+            "stagingCapture": "",
+            "steps": 182,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 29,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 17.823200225830079,
+            "tilemapBuildMs": 1.2958999872207642,
+            "meanFrameMs": 16.585098266601564,
+            "p95FrameMs": 16.897300720214845,
+            "meanCameraSubmitMs": 0.31718242168426516,
+            "meanStepMs": 0.07271428406238556,
+            "meanAnimationSubmitMs": 0.0085434066131711,
+            "allocatedBytes": 87015428,
+            "reservedBytes": 167591936,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "supply-barrel",
+                    "from": {
+                        "x": 155,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 156,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "front-2-1",
+                    "from": {
+                        "x": 98,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 98,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 203,
+                        "y": 180
+                    },
+                    "to": {
+                        "x": 204,
+                        "y": 180
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-2",
+                    "from": {
+                        "x": 266,
+                        "y": 158
+                    },
+                    "to": {
+                        "x": 267,
+                        "y": 158
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ],
+            "outOfRangeCapture": "mistfen-ferry-landing-day-discover.png",
+            "promptCapture": "mistfen-ferry-landing-day-prompt.png",
+            "feedbackCapture": "mistfen-ferry-landing-day-feedback.png",
+            "prompt": "E · Kiểm tra cầu phà E8.5",
+            "feedback": "Đã kích hoạt: Kiểm tra cầu phà E8.5 (demo)",
+            "stagingInteraction": "",
+            "marker": {
+                "x": 270,
+                "y": 154
+            },
+            "stand": {
+                "x": 270,
+                "y": 145
+            },
+            "sharedPress": true,
+            "duplicateRejected": true,
+            "promptLeavesRange": true,
+            "promptReset": true,
+            "feedbackResets": true,
+            "feedbackExpires": true,
+            "stagingWalkable": false,
+            "stagingDepth": false,
+            "stagingPath": false,
+            "warmupMs": 750.1492919921875,
+            "steadyMeanMs": 16.669193267822267,
+            "steadyP95Ms": 16.897300720214845,
+            "steadyMaxMs": 19.7096004486084,
+            "firstMovementFrameMs": 0.8080000281333923,
+            "captureMs": 61.929996490478519,
+            "switchMs": 0.0,
+            "steadyFrames": 172,
+            "spikesOver25ms": 0,
+            "garbageCollections": 3,
+            "spawnX": 117,
+            "spawnY": 174,
+            "studioRevision": 2,
+            "approvalStatus": "APPROVED",
+            "zipSha256": "2a9c0fe04be4bb9dca216e807488c32d603dc72f1d9d6b68cd99ea9bc2008b2a",
+            "zipName": "e8-mistfen-ferry-landing-day-label-e85.zip",
+            "interactionId": "primary-landmark",
+            "interactionLabel": "Kiểm tra cầu phà E8.5",
+            "linkedEntityId": "mooring-2",
+            "linkedEntityResolved": true
+        },
+        {
+            "id": "mistfen-ferry-landing",
+            "light": "night",
+            "staticCapture": "mistfen-ferry-landing-night-spawn.png",
+            "routeCapture": "mistfen-ferry-landing-night-interaction.png",
+            "interaction": "boarding-sill",
+            "stagingCapture": "",
+            "steps": 182,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 29,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 28.97610092163086,
+            "tilemapBuildMs": 1.2223999500274659,
+            "meanFrameMs": 16.585554122924806,
+            "p95FrameMs": 16.76129913330078,
+            "meanCameraSubmitMs": 0.21805439889431,
+            "meanStepMs": 0.05878901109099388,
+            "meanAnimationSubmitMs": 0.003302197903394699,
+            "allocatedBytes": 88140055,
+            "reservedBytes": 167591936,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "supply-barrel",
+                    "from": {
+                        "x": 155,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 156,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "front-2-1",
+                    "from": {
+                        "x": 98,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 98,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 203,
+                        "y": 180
+                    },
+                    "to": {
+                        "x": 204,
+                        "y": 180
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-2",
+                    "from": {
+                        "x": 266,
+                        "y": 158
+                    },
+                    "to": {
+                        "x": 267,
+                        "y": 158
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ],
+            "outOfRangeCapture": "mistfen-ferry-landing-night-discover.png",
+            "promptCapture": "mistfen-ferry-landing-night-prompt.png",
+            "feedbackCapture": "mistfen-ferry-landing-night-feedback.png",
+            "prompt": "E · Kiểm tra cầu phà đêm E8.5",
+            "feedback": "Đã kích hoạt: Kiểm tra cầu phà đêm E8.5 (demo)",
+            "stagingInteraction": "",
+            "marker": {
+                "x": 270,
+                "y": 154
+            },
+            "stand": {
+                "x": 270,
+                "y": 145
+            },
+            "sharedPress": true,
+            "duplicateRejected": true,
+            "promptLeavesRange": true,
+            "promptReset": true,
+            "feedbackResets": true,
+            "feedbackExpires": true,
+            "stagingWalkable": false,
+            "stagingDepth": false,
+            "stagingPath": false,
+            "warmupMs": 749.74365234375,
+            "steadyMeanMs": 16.675378799438478,
+            "steadyP95Ms": 16.76799964904785,
+            "steadyMaxMs": 17.10650062561035,
+            "firstMovementFrameMs": 0.3878999948501587,
+            "captureMs": 48.03020095825195,
+            "switchMs": 28.97610092163086,
+            "steadyFrames": 172,
+            "spikesOver25ms": 0,
+            "garbageCollections": 3,
+            "spawnX": 117,
+            "spawnY": 174,
+            "studioRevision": 2,
+            "approvalStatus": "APPROVED",
+            "zipSha256": "47e61bda1ebfcd73c9bc45c33d72b8663eb96cc460d576c3af528f100e271461",
+            "zipName": "e8-mistfen-ferry-landing-night-e85.zip",
+            "interactionId": "primary-landmark",
+            "interactionLabel": "Kiểm tra cầu phà đêm E8.5",
+            "linkedEntityId": "mooring-2",
+            "linkedEntityResolved": true
+        },
+        {
+            "id": "floodgate-maintenance-yard",
+            "light": "day",
+            "staticCapture": "floodgate-maintenance-yard-day-spawn.png",
+            "routeCapture": "floodgate-maintenance-yard-day-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "",
+            "steps": 109,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 23,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 33.26969909667969,
+            "tilemapBuildMs": 1.0673999786376954,
+            "meanFrameMs": 16.53032112121582,
+            "p95FrameMs": 16.781099319458009,
+            "meanCameraSubmitMs": 0.20927706360816956,
+            "meanStepMs": 0.047168806195259097,
+            "meanAnimationSubmitMs": 0.0030082568991929294,
+            "allocatedBytes": 88974095,
+            "reservedBytes": 167591936,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "maintenance-barrel",
+                    "from": {
+                        "x": 150,
+                        "y": 175
+                    },
+                    "to": {
+                        "x": 150,
+                        "y": 176
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 191,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 192,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "sluice-gateway-0",
+                    "from": {
+                        "x": 133,
+                        "y": 124
+                    },
+                    "to": {
+                        "x": 132,
+                        "y": 124
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-post",
+                    "from": {
+                        "x": 96,
+                        "y": 152
+                    },
+                    "to": {
+                        "x": 95,
+                        "y": 152
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ],
+            "outOfRangeCapture": "floodgate-maintenance-yard-day-discover.png",
+            "promptCapture": "floodgate-maintenance-yard-day-prompt.png",
+            "feedbackCapture": "floodgate-maintenance-yard-day-feedback.png",
+            "prompt": "E · Vận hành tay quay E8.5",
+            "feedback": "Đã kích hoạt: Vận hành tay quay E8.5 (demo)",
+            "stagingInteraction": "",
+            "marker": {
+                "x": 226,
+                "y": 160
+            },
+            "stand": {
+                "x": 226,
+                "y": 151
+            },
+            "sharedPress": true,
+            "duplicateRejected": true,
+            "promptLeavesRange": true,
+            "promptReset": true,
+            "feedbackResets": true,
+            "feedbackExpires": true,
+            "stagingWalkable": false,
+            "stagingDepth": false,
+            "stagingPath": false,
+            "warmupMs": 750.54248046875,
+            "steadyMeanMs": 16.68168830871582,
+            "steadyP95Ms": 16.782100677490236,
+            "steadyMaxMs": 17.25589942932129,
+            "firstMovementFrameMs": 0.29919999837875368,
+            "captureMs": 51.71790313720703,
+            "switchMs": 33.26969909667969,
+            "steadyFrames": 99,
+            "spikesOver25ms": 0,
+            "garbageCollections": 0,
+            "spawnX": 140,
+            "spawnY": 174,
+            "studioRevision": 2,
+            "approvalStatus": "APPROVED",
+            "zipSha256": "363488b5b9505b91192063e42313faa9ec3935bdaa627f461fe7dee360773d1b",
+            "zipName": "e8-floodgate-maintenance-yard-day-e85.zip",
+            "interactionId": "primary-landmark",
+            "interactionLabel": "Vận hành tay quay E8.5",
+            "linkedEntityId": "sluice",
+            "linkedEntityResolved": true
+        },
+        {
+            "id": "floodgate-maintenance-yard",
+            "light": "night",
+            "staticCapture": "floodgate-maintenance-yard-night-spawn.png",
+            "routeCapture": "floodgate-maintenance-yard-night-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "",
+            "steps": 109,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": -1,
+            "apertureStaging": -1,
+            "apertureThreshold": -1,
+            "sortOrderChanges": 23,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 33.02090072631836,
+            "tilemapBuildMs": 1.1263999938964844,
+            "meanFrameMs": 16.530956268310548,
+            "p95FrameMs": 16.84819984436035,
+            "meanCameraSubmitMs": 0.32322293519973757,
+            "meanStepMs": 0.06254404038190842,
+            "meanAnimationSubmitMs": 0.004885321017354727,
+            "allocatedBytes": 90182615,
+            "reservedBytes": 167591936,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "maintenance-barrel",
+                    "from": {
+                        "x": 150,
+                        "y": 175
+                    },
+                    "to": {
+                        "x": 150,
+                        "y": 176
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 191,
+                        "y": 174
+                    },
+                    "to": {
+                        "x": 192,
+                        "y": 174
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "sluice-gateway-0",
+                    "from": {
+                        "x": 133,
+                        "y": 124
+                    },
+                    "to": {
+                        "x": 132,
+                        "y": 124
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-post",
+                    "from": {
+                        "x": 96,
+                        "y": 152
+                    },
+                    "to": {
+                        "x": 95,
+                        "y": 152
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ],
+            "outOfRangeCapture": "floodgate-maintenance-yard-night-discover.png",
+            "promptCapture": "floodgate-maintenance-yard-night-prompt.png",
+            "feedbackCapture": "floodgate-maintenance-yard-night-feedback.png",
+            "prompt": "E · Vận hành tay quay đêm E8.5",
+            "feedback": "Đã kích hoạt: Vận hành tay quay đêm E8.5 (demo)",
+            "stagingInteraction": "",
+            "marker": {
+                "x": 226,
+                "y": 160
+            },
+            "stand": {
+                "x": 226,
+                "y": 151
+            },
+            "sharedPress": true,
+            "duplicateRejected": true,
+            "promptLeavesRange": true,
+            "promptReset": true,
+            "feedbackResets": true,
+            "feedbackExpires": true,
+            "stagingWalkable": false,
+            "stagingDepth": false,
+            "stagingPath": false,
+            "warmupMs": 750.0087280273438,
+            "steadyMeanMs": 16.67603302001953,
+            "steadyP95Ms": 16.843399047851564,
+            "steadyMaxMs": 17.021499633789064,
+            "firstMovementFrameMs": 0.7731000185012817,
+            "captureMs": 55.04650115966797,
+            "switchMs": 33.02090072631836,
+            "steadyFrames": 99,
+            "spikesOver25ms": 0,
+            "garbageCollections": 0,
+            "spawnX": 140,
+            "spawnY": 174,
+            "studioRevision": 2,
+            "approvalStatus": "APPROVED",
+            "zipSha256": "f54eae4433139143728d33330062b68b116ad46ee63b443f9d31c429451ff04a",
+            "zipName": "e8-floodgate-maintenance-yard-night-e85.zip",
+            "interactionId": "primary-landmark",
+            "interactionLabel": "Vận hành tay quay đêm E8.5",
+            "linkedEntityId": "sluice",
+            "linkedEntityResolved": true
+        },
+        {
+            "id": "canal-intake-service-platform",
+            "light": "day",
+            "staticCapture": "canal-intake-service-platform-day-spawn.png",
+            "routeCapture": "canal-intake-service-platform-day-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "canal-intake-service-platform-day-staging.png",
+            "steps": 126,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": 19,
+            "apertureStaging": 140,
+            "apertureThreshold": 35,
+            "sortOrderChanges": 47,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 33.00830078125,
+            "tilemapBuildMs": 1.0393999814987183,
+            "meanFrameMs": 16.67929458618164,
+            "p95FrameMs": 16.7716007232666,
+            "meanCameraSubmitMs": 0.20988889038562776,
+            "meanStepMs": 0.05994126945734024,
+            "meanAnimationSubmitMs": 0.0030650794506073,
+            "allocatedBytes": 90899575,
+            "reservedBytes": 167591936,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "intake-crate",
+                    "from": {
+                        "x": 144,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 143,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 198,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 199,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "back-wall",
+                    "from": {
+                        "x": 180,
+                        "y": 112
+                    },
+                    "to": {
+                        "x": 180,
+                        "y": 111
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-1",
+                    "from": {
+                        "x": 213,
+                        "y": 100
+                    },
+                    "to": {
+                        "x": 213,
+                        "y": 99
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ],
+            "outOfRangeCapture": "canal-intake-service-platform-day-discover.png",
+            "promptCapture": "canal-intake-service-platform-day-prompt.png",
+            "feedbackCapture": "canal-intake-service-platform-day-feedback.png",
+            "prompt": "E · Kiểm tra cửa lấy nước E8.5",
+            "feedback": "Đã kích hoạt: Kiểm tra cửa lấy nước E8.5 (demo)",
+            "stagingInteraction": "Kiểm tra cửa lấy nước (Staging E8.5)",
+            "marker": {
+                "x": 226,
+                "y": 118
+            },
+            "stand": {
+                "x": 226,
+                "y": 109
+            },
+            "sharedPress": true,
+            "duplicateRejected": true,
+            "promptLeavesRange": true,
+            "promptReset": true,
+            "feedbackResets": true,
+            "feedbackExpires": true,
+            "stagingWalkable": true,
+            "stagingDepth": true,
+            "stagingPath": true,
+            "warmupMs": 750.8621215820313,
+            "steadyMeanMs": 16.680221557617189,
+            "steadyP95Ms": 16.7716007232666,
+            "steadyMaxMs": 17.11750030517578,
+            "firstMovementFrameMs": 16.645299911499025,
+            "captureMs": 53.91699981689453,
+            "switchMs": 33.00830078125,
+            "steadyFrames": 116,
+            "spikesOver25ms": 0,
+            "garbageCollections": 3,
+            "spawnX": 147,
+            "spawnY": 156,
+            "studioRevision": 2,
+            "approvalStatus": "APPROVED",
+            "zipSha256": "adef43129f66f8d4a72197184898644981dd852e64299dea83f036c285ecb397",
+            "zipName": "e8-canal-intake-service-platform-day-e85.zip",
+            "interactionId": "primary-landmark",
+            "interactionLabel": "Kiểm tra cửa lấy nước E8.5",
+            "linkedEntityId": "sluice",
+            "linkedEntityResolved": true
+        },
+        {
+            "id": "canal-intake-service-platform",
+            "light": "night",
+            "staticCapture": "canal-intake-service-platform-night-spawn.png",
+            "routeCapture": "canal-intake-service-platform-night-interaction.png",
+            "interaction": "static-maintenance-wheel",
+            "stagingCapture": "canal-intake-service-platform-night-staging.png",
+            "steps": 126,
+            "atlasCells": 260,
+            "interactionEvents": 1,
+            "apertureVisible": 19,
+            "apertureStaging": 140,
+            "apertureThreshold": 35,
+            "sortOrderChanges": 47,
+            "atDestination": true,
+            "saveReload": true,
+            "colliderAgreement": true,
+            "stablePivot": true,
+            "reachRejectsRemote": true,
+            "dayNightAligned": true,
+            "idleFramesSeen": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "walkFramesSeen": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "loadMs": 32.44110107421875,
+            "tilemapBuildMs": 0.9291999936103821,
+            "meanFrameMs": 16.672090530395509,
+            "p95FrameMs": 16.756799697875978,
+            "meanCameraSubmitMs": 0.21933016180992127,
+            "meanStepMs": 0.0590507946908474,
+            "meanAnimationSubmitMs": 0.003131746081635356,
+            "allocatedBytes": 90899391,
+            "reservedBytes": 167591936,
+            "probes": [
+                {
+                    "kind": "prop",
+                    "collider": "intake-crate",
+                    "from": {
+                        "x": 144,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 143,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "stone",
+                    "collider": "right-return",
+                    "from": {
+                        "x": 165,
+                        "y": 120
+                    },
+                    "to": {
+                        "x": 165,
+                        "y": 119
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "water",
+                    "collider": "open-water",
+                    "from": {
+                        "x": 198,
+                        "y": 160
+                    },
+                    "to": {
+                        "x": 199,
+                        "y": 160
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "building",
+                    "collider": "back-wall",
+                    "from": {
+                        "x": 180,
+                        "y": 112
+                    },
+                    "to": {
+                        "x": 180,
+                        "y": 111
+                    },
+                    "physics": true,
+                    "rejected": true
+                },
+                {
+                    "kind": "mooring",
+                    "collider": "mooring-1",
+                    "from": {
+                        "x": 213,
+                        "y": 100
+                    },
+                    "to": {
+                        "x": 213,
+                        "y": 99
+                    },
+                    "physics": true,
+                    "rejected": true
+                }
+            ],
+            "outOfRangeCapture": "canal-intake-service-platform-night-discover.png",
+            "promptCapture": "canal-intake-service-platform-night-prompt.png",
+            "feedbackCapture": "canal-intake-service-platform-night-feedback.png",
+            "prompt": "E · Kiểm tra cửa lấy nước đêm E8.5",
+            "feedback": "Đã kích hoạt: Kiểm tra cửa lấy nước đêm E8.5 (demo)",
+            "stagingInteraction": "Kiểm tra cửa lấy nước đêm E8.5",
+            "marker": {
+                "x": 226,
+                "y": 118
+            },
+            "stand": {
+                "x": 226,
+                "y": 109
+            },
+            "sharedPress": true,
+            "duplicateRejected": true,
+            "promptLeavesRange": true,
+            "promptReset": true,
+            "feedbackResets": true,
+            "feedbackExpires": true,
+            "stagingWalkable": true,
+            "stagingDepth": true,
+            "stagingPath": true,
+            "warmupMs": 750.07861328125,
+            "steadyMeanMs": 16.672739028930665,
+            "steadyP95Ms": 16.752899169921876,
+            "steadyMaxMs": 17.028499603271486,
+            "firstMovementFrameMs": 16.688100814819337,
+            "captureMs": 52.71860122680664,
+            "switchMs": 32.44110107421875,
+            "steadyFrames": 116,
+            "spikesOver25ms": 0,
+            "garbageCollections": 3,
+            "spawnX": 147,
+            "spawnY": 156,
+            "studioRevision": 2,
+            "approvalStatus": "APPROVED",
+            "zipSha256": "5a345d4a3d42501f5c6a68aa310b279bc653b7035b2047505700f6fef280e506",
+            "zipName": "e8-canal-intake-service-platform-night-e85.zip",
+            "interactionId": "primary-landmark",
+            "interactionLabel": "Kiểm tra cửa lấy nước đêm E8.5",
+            "linkedEntityId": "sluice",
+            "linkedEntityResolved": true
+        }
+    ],
+    "studioVariants": [
+        {
+            "variant": "day-e84",
+            "id": "mistfen-ferry-landing",
+            "light": "day",
+            "capture": "mistfen-ferry-landing-day-e84-spawn.png",
+            "promptCapture": "mistfen-ferry-landing-day-e84-prompt.png",
+            "zipName": "e8-mistfen-ferry-landing-day-e84-export.zip",
+            "zipSha256": "b7606778e555e2f048356c1dbb6c89be7bbc9315683e7c0e88d99c6c4d779754",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "",
+            "prompt": "E · Kiểm tra bến phà",
+            "studioRevision": 8,
+            "spawnX": 117,
+            "spawnY": 174,
+            "validated": true
+        },
+        {
+            "variant": "day-rollback",
+            "id": "mistfen-ferry-landing",
+            "light": "day",
+            "capture": "mistfen-ferry-landing-day-rollback-spawn.png",
+            "promptCapture": "mistfen-ferry-landing-day-rollback-prompt.png",
+            "zipName": "e8-mistfen-ferry-landing-day-rollback-e85.zip",
+            "zipSha256": "33631133d888c7c9e2f991a39f4a8dc5050b2071713d8e2a92b76b07cb209fc3",
+            "approvalStatus": "APPROVED",
+            "interactionLabel": "",
+            "prompt": "E · Kiểm tra bến phà",
+            "studioRevision": 1,
+            "spawnX": 113,
+            "spawnY": 174,
+            "validated": true
+        }
+    ],
+    "animation": [
+        {
+            "file": "animation-00.png",
+            "stage": "walk",
+            "nearState": "planted",
+            "farState": "planted",
+            "frame": 0,
+            "atMs": 0,
+            "durationMs": 120,
+            "authoredRootX": 0,
+            "plantedFeet": 2,
+            "position": {
+                "x": 117,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-01.png",
+            "stage": "walk",
+            "nearState": "swing",
+            "farState": "planted",
+            "frame": 1,
+            "atMs": 120,
+            "durationMs": 115,
+            "authoredRootX": 4,
+            "plantedFeet": 1,
+            "position": {
+                "x": 121,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-02.png",
+            "stage": "walk",
+            "nearState": "swing",
+            "farState": "planted",
+            "frame": 2,
+            "atMs": 235,
+            "durationMs": 95,
+            "authoredRootX": 8,
+            "plantedFeet": 1,
+            "position": {
+                "x": 125,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-03.png",
+            "stage": "walk",
+            "nearState": "swing",
+            "farState": "planted",
+            "frame": 3,
+            "atMs": 330,
+            "durationMs": 110,
+            "authoredRootX": 12,
+            "plantedFeet": 1,
+            "position": {
+                "x": 129,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-04.png",
+            "stage": "walk",
+            "nearState": "planted",
+            "farState": "planted",
+            "frame": 4,
+            "atMs": 440,
+            "durationMs": 120,
+            "authoredRootX": 16,
+            "plantedFeet": 2,
+            "position": {
+                "x": 133,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-05.png",
+            "stage": "walk",
+            "nearState": "planted",
+            "farState": "swing",
+            "frame": 5,
+            "atMs": 560,
+            "durationMs": 115,
+            "authoredRootX": 20,
+            "plantedFeet": 1,
+            "position": {
+                "x": 137,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-06.png",
+            "stage": "walk",
+            "nearState": "planted",
+            "farState": "swing",
+            "frame": 6,
+            "atMs": 675,
+            "durationMs": 95,
+            "authoredRootX": 24,
+            "plantedFeet": 1,
+            "position": {
+                "x": 141,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-07.png",
+            "stage": "walk",
+            "nearState": "planted",
+            "farState": "swing",
+            "frame": 7,
+            "atMs": 770,
+            "durationMs": 110,
+            "authoredRootX": 28,
+            "plantedFeet": 1,
+            "position": {
+                "x": 145,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-08.png",
+            "stage": "loop",
+            "nearState": "planted",
+            "farState": "planted",
+            "frame": 0,
+            "atMs": 880,
+            "durationMs": 120,
+            "authoredRootX": 32,
+            "plantedFeet": 2,
+            "position": {
+                "x": 149,
+                "y": 174
+            }
+        },
+        {
+            "file": "animation-idle-return.png",
+            "stage": "idle-return",
+            "nearState": "",
+            "farState": "",
+            "frame": 0,
+            "atMs": 880,
+            "durationMs": 360,
+            "authoredRootX": 0,
+            "plantedFeet": 0,
+            "position": {
+                "x": 149,
+                "y": 174
+            }
+        }
+    ],
+    "startupToAwakeMs": 6986.379,
+    "awakeToSceneMs": 97.5003000000001,
+    "processToFirstWorldCaptureMs": 9846.529999999999,
+    "performanceClock": "Windows process start and Unity real-time frame intervals",
+    "facing": "Existing E5 one-way sheet. Cardinal movement does not select a new directional sprite."
+}

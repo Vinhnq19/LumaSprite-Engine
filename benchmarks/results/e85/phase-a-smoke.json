@@ -1,0 +1,31 @@
+{
+  "phase": "Phase A — Real Studio ZIP Smoke Test (Pre-Bridge Audit)",
+  "zipPath": "D:/LumaSprite-Engine/.cache/e85-studio-zips/e8-mistfen-ferry-landing-day-e84-export.zip",
+  "zipBytes": 163438,
+  "zipSha256": "b7606778e555e2f048356c1dbb6c89be7bbc9315683e7c0e88d99c6c4d779754",
+  "sourceEngineRevision": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd",
+  "protectedSha256": "1711cd35dcb627a2f2fc1beba4784dd0ee6e1b3c39f1aaedc8cee28b2d734941",
+  "studioRevision": 8,
+  "approval": {
+    "status": "APPROVED",
+    "approvedRevision": 8,
+    "approvedSourceRevision": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd",
+    "reviewedAt": "2026-11-27T09:33:43.679Z",
+    "note": "Live QA verified"
+  },
+  "sceneSpawn": {
+    "x": 117,
+    "y": 174
+  },
+  "routeLength": 183,
+  "layersCount": 7,
+  "manifestFilesVerified": 12,
+  "studioZipRgbaSha256": "9000bb86151990896731735ab77f69c3806d478638692c45fcff35671df43d61",
+  "pixelDiffVsLockedEngineX113": 1189,
+  "preBridgeUnityGaps": [
+    "UNMODIFIED_E8BUILD_READS_RESOURCES_NOT_ZIP: E8Build.cs reads pre-extracted Resources/E8Input/ and has no ZIP + export-manifest.json + studio-scene-sidecar.json importer.",
+    "UNMODIFIED_HUD_HARDCODES_PROMPTS: E8InteractionHud.PromptFor(scene.id) hardcodes scene prompt strings instead of reading Studio interaction.label / linkedEntityId.",
+    "UNMODIFIED_E8SMOKE_ASSUMES_EQUAL_STEPS: E8Smoke.cs compares Day/Night step counts directly, which fails when Day has Studio spawn override (X=117, 182 steps) vs original (X=113, 186 steps)."
+  ],
+  "status": "SMOKE_VERIFIED_BRIDGE_NEEDED"
+}
