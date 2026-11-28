@@ -76,3 +76,5 @@ docs/reports/E9-HTML-REPORT-INVENTORY.csv text eol=lf
 benchmarks/fixtures/e9h1/*.json text eol=lf
 benchmarks/results/e9h1/SHA256SUMS text eol=lf
 benchmarks/results/e9h1/first-holdout-attempt.txt text eol=lf
+benchmarks/fixtures/e9h1r/*.json text eol=lf
+benchmarks/results/e9h1r/SHA256SUMS text eol=lf

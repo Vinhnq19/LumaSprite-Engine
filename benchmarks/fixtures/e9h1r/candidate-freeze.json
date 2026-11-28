@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "holdout": {
+    "id": "breakwater-screen-inspector",
+    "name": "Breakwater Screen Inspector",
+    "seed": 60857,
+    "role": "fresh",
+    "brief": "Stocky breakwater intake inspector with a wide braced stance, a raised compact screen hook and a gauge case. Emphasize the upper forearm gesture and show the air cylinder and guarded face.",
+    "torso": "broad",
+    "identity": {
+      "archetype": "mantled",
+      "outfit": "collar",
+      "tools": "tether"
+    },
+    "hookFamily": "screen",
+    "pose": {
+      "hip": [
+        33,
+        36
+      ],
+      "lean": 0,
+      "turn": 3,
+      "near": {
+        "elbow": [
+          22,
+          34
+        ],
+        "wrist": [
+          19,
+          35
+        ],
+        "palm": [
+          17,
+          37
+        ],
+        "knee": [
+          27,
+          44
+        ],
+        "ankle": [
+          29,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          43,
+          29
+        ],
+        "wrist": [
+          47,
+          32
+        ],
+        "palm": [
+          49,
+          34
+        ],
+        "knee": [
+          44,
+          45
+        ],
+        "ankle": [
+          43,
+          52
+        ]
+      }
+    }
+  },
+  "criteria": {
+    "maxOutsideMaskedPixels": 0,
+    "pivot": [
+      32,
+      58
+    ],
+    "context": [
+      320,
+      208,
+      32
+    ],
+    "criticalDefects": 0,
+    "holdoutAttempts": 1
+  },
+  "sources": {
+    "benchmarks/fixtures/e61r/style-profile.json": "3a8e958515ea1c62dbe03e8e6007c40240aa28d851c77a47dce65f9c0368ed9e",
+    "benchmarks/fixtures/e62/c2-supply-stop.json": "b50e8a39159cedd9d4c2062867d31c848e2b819d8731a6b6f82ecff563e92db6",
+    "benchmarks/fixtures/e73/art-direction-v1.json": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c",
+    "benchmarks/fixtures/e73/tidegate.json": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b",
+    "benchmarks/fixtures/e75r/ridge.json": "62dd67dc7472c72c063e75d46abafa062cb998a9aaf1638d1928946e66b5709f",
+    "benchmarks/fixtures/e91/study.json": "d85e40db56e71970b33b68be9d873c4e56cf0455c7e9d96aee826e2455199799",
+    "benchmarks/fixtures/e9h1/kit.json": "a46967f1b4bd58db642e9421b1c0efde18552eae7d649687d3c7d84ac60ef592",
+    "benchmarks/fixtures/e9h1/study.json": "6f62f999c046ff787a6f063c438d6049e575f163a445be329b182cb087f385a7",
+    "benchmarks/fixtures/e9h1r/masked-edits.json": "650d9e5a03046fc668fd1f7615b015846a406867693e2e8d4412605aff126f2e",
+    "benchmarks/fixtures/e9h1r/references.json": "058c52201d2b90a56a5aee17cf79a702b63af59c22c4dc77c3ab6da95f3678cb",
+    "benchmarks/fixtures/e9h1r/revisions.json": "f5c5c71ff934019c0ddd788dc185d3b9b15b30e38c079d99e0e58f430827ee24",
+    "benchmarks/fixtures/e9h1r/study.json": "81b259019a5f709160c43e3002f724855381ce5507aa2e91992e1d122c43e65b",
+    "benchmarks/fixtures/e9h1r/visibility.json": "982e21af403cf4f8d66dbba93104ea9ec083a8dc173f8f049d525b1d08277824",
+    "benchmarks/results/e9h1/SHA256SUMS": "9473cb421a1b79a01ab173f5c65a6ecc16eea89542a25a9831ccea4a5c5cba73",
+    "benchmarks/results/e9h1/benchmark.json": "605321a59c3cecfd0b9521dfd86a4ca21b223509b25c8e61e45ae479e0fc43a2",
+    "docs/art-quality/art-quality-rubric-v2-static-addendum.md": "946d09a33437f7cea163606bb71cef2e37168ad1d616512f3e98264926794c5b",
+    "package-lock.json": "5bd02165735c8ed6a363305582af57c2af9c88575b8ccd4f31f29f0735e1c512",
+    "scripts/benchmark-e9h1r.ts": "bbf6e7c5b0198ad0f535f7a48a0066843207009abcffe31d49b9941b2d359684",
+    "scripts/e9h1r-composition.ts": "d1ecf0877981961db96756b0b439ca12836be51bc8848608e381c5bfc975646f",
+    "scripts/e9h1r-visibility.ts": "22ed36996872af320aa97f79fd22abf820c43b1c805fc3809820e5d0ba6f2684",
+    "src/adapters/studio/contract.ts": "dc10b7b456c456e8de2c3e65838fa47a6f6594bfaaab832289a095562a1e1c24",
+    "src/cli/animation.ts": "71755af5ed88a53a315082e6b4cd482e937671997a002fb0101333420caa6916",
+    "src/cli/benchmark.ts": "cf3c5f09b489c3854612a13e68a153552d31f4fa630279473ef6562f65f3ae98",
+    "src/cli/character.ts": "695f19b37bce354a5d6a44836ba1a0f8732154784b88fad6a47c5c4a62a259e1",
+    "src/cli/composition.ts": "6e6a2c9cfb3955c35285aade449b875b7d59dba03f86369a374071c81faff071",
+    "src/cli/environment.ts": "5e7923ccebab3d345380c03f18db878bc12661da3b4e892c843aa4075f3239e6",
+    "src/cli/main.ts": "e939a0e34738fca0c7bf85db67e917eb723b0c2c2b4e0a1bab8875aa686ae240",
+    "src/cli/pixel-effects.ts": "e104095493b72cfb30fc2897c3d0510fcad8ddd3cd56612472bafcb4026b9c53",
+    "src/cli/terrain.ts": "91cbd8d481fdaac77e5beca7e35fc249a6969d512518b4a0d1b8d0002a633384",
+    "src/core/geometry/faces.ts": "e9c74ccecd8d5d24af92e5cfc41d2ad260b0dc7bac2265de585899004af41424",
+    "src/core/geometry/projection.ts": "bb89ef771b4b53dc5ceee2fca38febee77bce321077dabde6a96831f131e4121",
+    "src/core/geometry/shapes.ts": "4052913942fa1254831b8ea1648dfb2780a7187cc665289d7d01043e5f407ecb",
+    "src/core/materials/faces.ts": "5266e0990c0c69bbec7b175161d6837c12805e9126d2e819bc206f64cba4d717",
+    "src/core/materials/ramps.ts": "bb35a0ece7e2974c8f52cb39f32066707d5b836c362de1ae560d148c9b0d0374",
+    "src/core/materials/surface.ts": "38eb3ba73bcdcf5e7ac086ac692a70001637e861465a3719773a1a934250cb6e",
+    "src/core/palette/colors.ts": "036c7ee702d7437a683da62d30569d8b3ef74337819c178f5137bc25317960c4",
+    "src/core/pixels/raster.ts": "0ab0adf055f859f38d845c0c19321fcf6780c2ec7046ed1431dfdab22aebd210",
+    "src/core/renderer/layers.ts": "1aef88771523be16a13190554c552e5c25242198715e7cb9895364ed4f9fab00",
+    "src/core/renderer/png.ts": "59efcf70cc51e99c67c50ab84d57b720f5db93fd3bd0e7e56d3c275976ced3a3",
+    "src/experiments/art-direction.ts": "9d4f25394ee0c566983c5c8a31f28dbf1bc504a0f30e2b6462684f4e4c9822d5",
+    "src/experiments/character-equipment.ts": "4c048a82459dd48028ba79c4f42e0dbf30b014f3b813e90de25ffac499833c94",
+    "src/experiments/character-headwear-fit.ts": "0579d8de7bf630e4f5b35f3b64b0d191293675516e1960ae62cce657cd6eec5f",
+    "src/experiments/character-identity-study.ts": "a376e0e9873ce0217658c323c27f79fc8dcf03e42012e1003dc324172b183e71",
+    "src/experiments/character-identity.ts": "6b6cb6f8a0401a2e87250e10afbfa3f2f4c70cb483a352a7744f278c67d5686d",
+    "src/experiments/character-pilot-context.ts": "7e6bf700337971e5ad7800d4f62252372400a9c1f7c4d292d1b88385bcb673f8",
+    "src/experiments/character-v4-recovery.ts": "7784dbcb9e217d3d9d7f83bed229c35629f0b1f117fd3489d39b8b5c8418a19e",
+    "src/experiments/character-v4.ts": "c832ab7028a6c78415b7a0870d4f982ef51a5abc490b5fc88870a40557b5ef99",
+    "src/experiments/context-contrast.ts": "43e673b98c564508ddaeacdd46ae3e1e3d3247ae6ce1f4e310e155c7bea57c25",
+    "src/experiments/costume-stance.ts": "804d0cb6f242e60b909da5f5e93348c9cecee446ace6a5af620673af34a6e18c",
+    "src/experiments/cross-asset-pilot.ts": "47d31049f5f734f7b7b6369b2aed9453a79b1ca7814fe0d4b7b725359e04b36b",
+    "src/experiments/functional-waterfront.ts": "5981b1566cea61614313c58523411cea0f64b91c5f1d4801adf1211b9dbc5d81",
+    "src/experiments/hybrid-character-kit.ts": "22bf02453a49b5c5a34cad5d92264d17bcf3706fde3379b0abd61c2884145e30",
+    "src/experiments/identity-character-context.ts": "fc851e971727f6da7ec1f19e30a1f6f0e7040faa6d765a5accaf85e06d054048",
+    "src/experiments/quality-guided-character.ts": "c44635e5e5be367c1d71b8e9dc4cb26aa16c3a9dee644e7f216a2bf4617b480a",
+    "src/experiments/quality-guided-context.ts": "095eef28f5d0201958468e5be5be1dc31b24ea9a9cea4faa8be682a3d6eb6aa6",
+    "src/experiments/quality-guided-prop.ts": "50b40b60015cb84e41a0771fff7059172c9515dc8d15104abf30d1ad3e0e4e79",
+    "src/experiments/runtime-integration.ts": "23dd8e7a10f06331d351a33b27d7583905576b9cb6a7695195f5dc3dd346cf98",
+    "src/experiments/semantic-environment-export.ts": "8688f3601f5c29ae68dc16d6e9095ef1f1c1e2afa6a67424398bd1cf3e455a7d",
+    "src/experiments/semantic-environment.ts": "f0839e63672dd9df157e9744e546a2935b4685abe65f735b85d778f4b64c1897",
+    "src/experiments/semantic-instrument-context.ts": "225e754b6fcf4a8e8a6db48cf151b30384fb87fa5dd250b6af21dcb19176aa29",
+    "src/experiments/semantic-instrument.ts": "8ac2e347fec27ad65e54ec972d59e8dc0c0d4f3ed66782fe9d82595e6034ee39",
+    "src/experiments/semantic-pilot.ts": "c630b10cfe647baadffc110f2bffa79a4f38ce6b0975590c95c053339b0b9783",
+    "src/experiments/semantic-style.ts": "162e8cb108c59b9ca506be34b44896ebb1e4028f1e2dda921585d873e61c683c",
+    "src/experiments/stone-material.ts": "726c819862151e3c64897d73c86fadb811b283ad9261d93ad9f7ac00b26438f6",
+    "src/experiments/structure-quality/diagnostics.ts": "4462351919a0501a0f9df7fd2ebcdf49ddfb771342972fe136c02b12eadf39ff",
+    "src/experiments/structure-quality/masonry.ts": "8cffcb07ec4d1c49bbcad828dd4b96472f42c77d97a3e6b8e9a96aace4ce1869",
+    "src/experiments/structure-quality/relay.ts": "d7f3e45e4384f124cf723592dbcdcbac4704b645c6597762a14e6eebf4f499ac",
+    "src/experiments/structure-quality/ruins.ts": "f95309a820b8a8ecfd1f06cbff2ae310d72b1a273cbe4ba27b134d5180fd0c01",
+    "src/generators/character/animation-export.ts": "1ceede37f3878d1c40b954814419ddaa29574166ccae464ba63fd8f92a47ac0a",
+    "src/generators/character/animation.ts": "9277c2c8d140d0c38acd7d3b3ba51aaea7a6e89fc25f724b66332e9707a57add",
+    "src/generators/character/export.ts": "b1c9348eca87b29af6bcf2ae6c1732316a66d5dff321d5112f8a67fd862dccba",
+    "src/generators/character/geometry.ts": "914eb369ad9b2342341b12acede778cc52eb4104af86e10fbd3de5ff35be8aed",
+    "src/generators/character/material-export.ts": "41a5abf8acb285dac0384c355deecac9b9af2f554508c8edec1bec402df9004c",
+    "src/generators/character/material-planes.ts": "f7af9ac406b5205f4ddc811e69162b775895a12f8c40a92c05fadaf611dbfb29",
+    "src/generators/character/materials.ts": "7d5a2650cfc4ca48262298d7487c2d47f9874da2425de53eb5ae220ca1c421c0",
+    "src/generators/character/presets.ts": "03138fa29776ef8560155876d67e90663f0b99a66c242e4e8cb2d56c23cf36aa",
+    "src/generators/character/production.ts": "1e2bcb4db7683c3770aaf68bb1031f32e9283f734aefb1b99b1183b1f51c2a9f",
+    "src/generators/character/render.ts": "0f96ec4427673301ae366e3f636686e919fe63363a9b5bfa3c8b6b11f24abb77",
+    "src/generators/character/shape-lock.ts": "b41ce59b0581daa590ebf1c750242ddf4c4f40709cd8958549f816f8c724527e",
+    "src/generators/character/walk-pose.ts": "081f1e4962c7ec0942dee2515d8a2232eed87ef61e83e959889a8b5643a815a2",
+    "src/generators/character/walk.ts": "7502f0432ec2f7becae19b31cd30c2e8dbc6465622d83736ee70c6f628931a02",
+    "src/generators/environment/architecture.ts": "5e9173633b7522af1eab652114dfb1641d95e6b70be1432767b4fe77db351e71",
+    "src/generators/environment/composition-export.ts": "1fa0dff8d3f82bf9778fee09982df2dfcb39818155f5895b58ca8f591dfb1609",
+    "src/generators/environment/composition.ts": "94333e730be6d4254e6927bd0c05f22e5ec20899daa951b48a4c07238be42af6",
+    "src/generators/environment/export.ts": "191e3a0e570ba0ec94bfdd0d68940b5a417b589b1901eadf3d11387d3a1378fa",
+    "src/generators/environment/kit.ts": "f1b0bd0d23926d1de4dbc52feab93dbace2ad24c50915ca1343f0fefa56c67db",
+    "src/generators/environment/refinement.ts": "5f43474858a0391312d1eff9ae69d751dcc5fb1e1bc67f3a26b004c9ea65d56a",
+    "src/generators/environment/render.ts": "1b71dffd19cc44cea59a80971343c19ea3e03d1403cc01262e6d40701db09232",
+    "src/generators/environment/ruins.ts": "953a2cb8ce3044b2a4a3bc922fa182b92208c378a83875dffc26b586e62baec0",
+    "src/generators/pixel-effects/export.ts": "e04d6da5c841baaae173461612af40f3293df00398d1cee09a5bb251ad7bebcb",
+    "src/generators/pixel-effects/ui.ts": "4f488f2bf10a16fbd546b8950920ead74354a2dd8479664d97c2c242c138c253",
+    "src/generators/pixel-effects/vfx.ts": "813b9e500f9700cd30260300d20e1f0bed80d4a222c05f6c011a658bca4ee2d1",
+    "src/generators/props/barrel.ts": "37423e747b4b0c65dbd62b03eb32f95d60f8a9f93da633b611bcfaab8b1987c5",
+    "src/generators/props/composed-prop.ts": "1ae7525237c4aaebd75b8e4c5fe697a28159b661549ad85c9294bb1846ed19d2",
+    "src/generators/props/presets.ts": "4a8a942371d9df985d7dc5fdb1c90ac9f60b7530cabf1b0bcd55f5e718c50351",
+    "src/generators/props/render.ts": "9eb2c476ab9ad3f5717f4095b38416c021d19e9473ad8bbfcb07377a28de1696",
+    "src/generators/props/supply-chest.ts": "90eced3d939c3f7d7da81b9a47bf7a2951a076de709c3319cd25910c6a7b6cb4",
+    "src/generators/terrain/adjacency.ts": "e30ccbd1e928ca898c8cd7f7a30c89687f10b2d2ee33cf543ca0a8eb82415d36",
+    "src/generators/terrain/baked.ts": "8260bdef8525766573d0726323030f46435e3c9b9b36f5e5972f48f47465dd06",
+    "src/generators/terrain/clusters.ts": "8363abcaff939d2fcf40edd1a4b8affd7828fa1b081dbff8c3561d38e1387b66",
+    "src/generators/terrain/detail.ts": "cc6fbb442c791db50c181ae8cbd56933338be1e090c37c0d781faeb641bbe820",
+    "src/generators/terrain/edges.ts": "1e54c58a6868c4c79f625ca40789fbf6c03cb93a3e7db820da17c3a4186a396a",
+    "src/generators/terrain/export.ts": "cbcecc198cc6a1d9acd97c6094e28891f1d1dd34ff97ff06864513d224ea5b3e",
+    "src/generators/terrain/materials.ts": "aae6b14484e0685d854f63d2e2e2d81c418e8f4b7d195ed7d3701865079148df",
+    "src/generators/terrain/project-palette.ts": "9c04e33a4940bab8005a3906c894a73130037f6ebf718af63355a0cee866db7e",
+    "src/generators/terrain/render.ts": "9fe809054b01c21f5e854663d2aa18adb579069c64102cad3b913aa16f7ce0fb",
+    "src/jobs/manager.ts": "356e7d5aedb7485d12775df4e99ddffc81cb26918469982964a5775e6331a7ad",
+    "src/providers/deepseek/config.ts": "b49c9e5b602787f16e670970a8326bebe3d2ea166c4a1f6667055e1abb268f81",
+    "src/providers/deepseek/scaffold.ts": "de5692302cf23c2d48f5fb47617d40ef7e5246a3fb90bcc1445d960b0c194bb6",
+    "src/providers/mock/planner.ts": "6640d9e5191eea5900a14d61a855a8db1588f9b3f73892337801f40130fb9be8",
+    "src/providers/planner.ts": "cd2cd1abe3ccb8c75ce9a1a50b0f25cb99e780b88f4564bef8815f7973f36ca7",
+    "src/quality/artistic.ts": "010a1352630d24ac23bec5c4ed353872a94a763f961baeeb7e4041fd0d05953a",
+    "src/quality/character-materials.ts": "f2ee51e041c4617bd88c6eda3f5cd8799745ff5207bee6e7c59c3beb5f604572",
+    "src/quality/character.ts": "67a185294778b1be4e559875b4f3f1ada797b9e1ce7accae8c184a9a6e4aac3b",
+    "src/quality/prop-palette.ts": "685a728d651245ca0a0fc86fefcfcdbf96bd234f5c5e7f931693d86e57a9ee58",
+    "src/quality/raster.ts": "c8f3736b137985e2ef29ac8abc28c6eb29de766e69197b835b492b89b2753ce5",
+    "src/quality/terrain.ts": "b27024e979c6994cb8925e17c89c7161c3fcf0af95807a4e3c4fba4edfe4c7c4",
+    "src/server/http.ts": "d7261838f21f79bd504fd95a8bcf2c21acb9748b32411425d6e42c53e148ba6f",
+    "src/server/main.ts": "f197b38919f96f8dc9e9e0e3549f24f8e82ac7e4dee1a21993512630eb19b13e",
+    "src/specs/animation.ts": "e78a3ac65e767a09fd3a2153520c55f9f224aa49505f6f5c57bba4837c886b30",
+    "src/specs/asset.ts": "9dbf7b4ab6e9d6ff777c94555f19400e46ac47bcfef4ea0e632e3729e40346b4",
+    "src/specs/barrel-shape.ts": "0f027695da8507671640f1c4dd265dccc55a8835d8429e81dcfd4b2bb2a630e1",
+    "src/specs/character.ts": "79279c6b0fcabfc952f136482adcd9981d92bbaea4463bf83cacdbcd0184c5b0",
+    "src/specs/environment.ts": "9c1c49bf44381f310b42b3e878e8abed99e677259cec31e2a6d61c66947b5e9d",
+    "src/specs/palette.ts": "8f527fa07b64440b172a0ff86cfb53cfc527ee977382265a083e5e3d10bae2f8",
+    "src/specs/pixel-effects.ts": "7c6b7de5ea318ec1eb6484703546795ef449ec43aa1aab3a9cd71a03dd1505c3",
+    "src/specs/prop-shape.ts": "dbdad4b6fc86113c08979a6373c6a4259102ec9d1eb7ea3bad6855753154b9c9",
+    "src/specs/scene-composition.ts": "b8a677f270b4096d3e1b6501665cfe0068cb8794dbd6f346525d2149060ab36b",
+    "src/specs/terrain.ts": "6fd7010608b9aa69580abfb3616e3d35f45dbea9b7035dd8706138946d95b7bc"
+  },
+  "baseSha": "9473cb421a1b79a01ab173f5c65a6ecc16eea89542a25a9831ccea4a5c5cba73",
+  "developmentSha256": "842bbbe07ce1a9388c40282efd013f5074defd782a94065ec84174337fe3121f",
+  "process": "Sealed after development and Saltmarsh diagnostic, before first Breakwater holdout raster."
+}

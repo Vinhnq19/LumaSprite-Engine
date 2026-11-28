@@ -53,7 +53,7 @@ export function buildArms(a:CharacterRender, point:(name:string)=>Point, kit:Kit
   const [head,suit,tools]=placed;
   if(entry.hookFamily==='screen') {
     const hook=structuredClone(kit.groups[2]);
-    const scale=([x,y]:Point):Point=>[x < -4?Math.round(-4+(x+4)*.67):x,y];
+    const scale=([x,y]:Point):[number,number]=>[x < -4?Math.round(-4+(x+4)*.67):x,y];
     const p=hook.layers[0];
     p.points=p.points.map(scale);
     for(const patch of p.patches) patch.points=patch.points.map(scale);
