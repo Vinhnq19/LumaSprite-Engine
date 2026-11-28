@@ -1,0 +1,83 @@
+{
+  "historical": 805,
+  "catalogs": {
+    "e76r": 142,
+    "e8": 42,
+    "e83": 52,
+    "e85": 56,
+    "e90": 3,
+    "e91": 616
+  },
+  "htmlE90E91": "MATCH",
+  "deterministicFiles": 277,
+  "studio": {
+    "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "mode": "RAW_PNG_ONLY",
+    "pngs": [
+      {
+        "file": "harbor-lockkeeper/24137/recovered-field/sprite.png",
+        "sha256": "3eddfb5cf2b0a7e95fa351c7ed6d8c133edb72777e646648fbe7a6ee275063d3",
+        "rgbaSha256": "83c59ee8bd482387ab4c0d9c7479f0dca3dc5f8d10c256877e0f1c28d0ead8ee"
+      },
+      {
+        "file": "harbor-lockkeeper/24137/recovered-field/parts.png",
+        "sha256": "6860defddb394e0448aa4aa85fd61844abe33eb5bb2cdae06a46765323a52016",
+        "rgbaSha256": "ef7e49e7fa511cd0e052631a96fe5bdf846eb3a71ed5606c0396655cfd2c7586"
+      },
+      {
+        "file": "harbor-lockkeeper/24137/recovered-field/night.png",
+        "sha256": "d4b1faf79283c91ad31b14bfb3ca324b546eb6d87f8c224b44f2ae674c609954",
+        "rgbaSha256": "f3d59cb828ad51042328b289a1e7127ec9edf83cd2a4949200907066e5f3faf9"
+      },
+      {
+        "file": "harbor-lockkeeper/24138/recovered-field/sprite.png",
+        "sha256": "2c53cbdf59b76faf4f601134a986f4c43d2dda5d470e7e48b7c97d2bd0004d1d",
+        "rgbaSha256": "e154c37e78d702b41381faf8cbf4644f72e5e09ba7e4fede62583d1fd06ca57a"
+      },
+      {
+        "file": "harbor-lockkeeper/24138/recovered-field/parts.png",
+        "sha256": "1824f8c0b4308f158fbf418d1d99b6ef5735ad1b8b4efe99ce225f821695aa89",
+        "rgbaSha256": "306c7e5538edf647931333cf9c82926e3adc7a55bb5ada5f82f4a85a2accdab2"
+      },
+      {
+        "file": "harbor-lockkeeper/24138/recovered-field/night.png",
+        "sha256": "59bd63105e91ae14eda0ef8d1e0d826e2a5e647c5834091a867e90e739c121a0",
+        "rgbaSha256": "c916fa5a68ade2c91bccd3eadbb2f757594e91dfd1b3e64fbe0a943df39a15a9"
+      },
+      {
+        "file": "marsh-apothecary/55271/recovered-field/sprite.png",
+        "sha256": "41ac67f3cbeeae93f0bcfe01c800bf9ee1d98616dd644abe078d66fa3f269642",
+        "rgbaSha256": "a0787daf6d2129bfc1021344cc974499de6fa20715dba2bd0875ea21378d39ac"
+      },
+      {
+        "file": "marsh-apothecary/55271/recovered-field/parts.png",
+        "sha256": "7c7111755bb0c9b6a48ba77c66d7638dcc8bdb76992847346f6dfc9b0a8217cf",
+        "rgbaSha256": "4473c5864f4969a5fd7a5f8ed9fa473e2ffcc0841ce2af21117d56c34349a0f0"
+      },
+      {
+        "file": "marsh-apothecary/55271/recovered-field/night.png",
+        "sha256": "3ab27cc2281ac812149b7bb171dd6e619ff5be9688207764fc4fce5bb1932226",
+        "rgbaSha256": "d666e184ea626c289c18f86e98f74e15e7f7b943bfd1f18c8cd0a98d573b90ff"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/b3-field/sprite.png",
+        "sha256": "a5ca5937936dbfe79793a7c94455d50616d347dd37513f86fdb9c3624adb5175",
+        "rgbaSha256": "ff09c3c20d4bf52f6e3325760bc45bea0be5f1db886a82146af9fa2db694b226"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/b3-field/parts.png",
+        "sha256": "a8a76ec744a770be2f1b25d6123ef3229ba6600123f34d84d4d7768ee93b9173",
+        "rgbaSha256": "ce3804c64569ff46c0472c65ac72b515f71dc199678e813a53ea8e3675f8ff0a"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/b3-field/night.png",
+        "sha256": "6ad3656550337fa30e215730e51eed802b85f2e2a477fb01d417e8ad76ec0e4e",
+        "rgbaSha256": "933f5c1091a8a969cfa08aa4ca33b1a6a2fc9d111b7cf762e65ad456932621fe"
+      }
+    ]
+  },
+  "verifiedScenes": 36,
+  "production": "UNCHANGED",
+  "runtime": "NOT_RUN",
+  "art": "STATIC_ART_REVIEW_PENDING"
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "lumasprite.e91r.static-review.v1",
+  "reviewType": "STATIC_ART_REVIEW",
+  "status": "STATIC_ART_REVIEW_PENDING",
+  "reviewer": "",
+  "reviewedAt": "",
+  "nativeInspectionConfirmed": false,
+  "options": [
+    "A0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "E91R-B3",
+    "NEITHER",
+    "REQUEST_REVISION"
+  ],
+  "cases": [
+    {
+      "id": "harbor-lockkeeper",
+      "variant": "",
+      "scope": "",
+      "score": {
+        "silhouette": null,
+        "proportions": null,
+        "anatomy": null,
+        "grip": null,
+        "pixelClusters": null,
+        "materials": null,
+        "contextReadability": null,
+        "styleConsistency": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "marsh-apothecary",
+      "variant": "",
+      "scope": "",
+      "score": {
+        "silhouette": null,
+        "proportions": null,
+        "anatomy": null,
+        "grip": null,
+        "pixelClusters": null,
+        "materials": null,
+        "contextReadability": null,
+        "styleConsistency": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "cliffside-lantern-keeper",
+      "variant": "",
+      "scope": "",
+      "score": {
+        "silhouette": null,
+        "proportions": null,
+        "anatomy": null,
+        "grip": null,
+        "pixelClusters": null,
+        "materials": null,
+        "contextReadability": null,
+        "styleConsistency": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    }
+  ],
+  "decision": "",
+  "productionBlockers": [
+    "DIRECTIONAL_FACING_LOCK",
+    "ANATOMY_BROKEN:DYNAMIC",
+    "GRIP_DISCONNECTED_OR_BLOB:DYNAMIC",
+    "GAMEPLAY_OCCLUSION_OR_BOUNDS:RUNTIME"
+  ]
+}
