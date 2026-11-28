@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "gate": "E10_1_READY_FOR_OWNER_ART_REFERENCE_REVIEW",
+  "checkpoint": "996b01032d346d69e808e80d2fd62d1f3efe1dd8",
+  "historical": 805,
+  "protectedE9": {
+    "h1": 101,
+    "h1r": 172,
+    "closeout": 81
+  },
+  "originalStudioRoundTrips": 18,
+  "deterministicEntries": 24,
+  "legacyReports": {
+    "retained": 38,
+    "manifestProtected": 13,
+    "removed": 0
+  },
+  "proof": {
+    "component": "kiln-glove-study",
+    "width": 64,
+    "height": 64,
+    "ownershipPixels": 358,
+    "anchors": {
+      "grip": [
+        34,
+        36
+      ],
+      "wrist": [
+        46,
+        31
+      ]
+    },
+    "shaftVisibleOnGripSides": [
+      309,
+      106
+    ],
+    "editIntent": "Raise the cuff plane one value step within the selected owner region.",
+    "changed": 24,
+    "outside": 0,
+    "previewChanged": 24,
+    "rollbackRgbaSha256": "fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb",
+    "revision1RgbaSha256": "fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb",
+    "revision2RgbaSha256": "b63af0952b6a0989a034d4d45bf81519c82c38647d747fd7ed5fcda4e1cfd100",
+    "revisions": [
+      {
+        "revision": 1,
+        "sha256": "e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65"
+      },
+      {
+        "revision": 2,
+        "sha256": "cdaf33b69ba46f96b28ec345526fc5b129c375ed185afd416149b601c823c149",
+        "parent": "e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65"
+      }
+    ]
+  },
+  "studio": {
+    "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "operation": "PNG_IMPORT_DOCUMENT_SAVE_PNG_EXPORT",
+    "samples": [
+      {
+        "name": "input-r1",
+        "pngSha256": "db9a11900947762dc54e47fb058444638eb28ffddda635943c70f86830f4c0a8",
+        "rgbaSha256": "fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb"
+      },
+      {
+        "name": "export-r2",
+        "pngSha256": "c5b8dc2ca0e0f0b454f4eb3f13efa35b106fdcceb0ae6e6484294a7bdb3dbf42",
+        "rgbaSha256": "b63af0952b6a0989a034d4d45bf81519c82c38647d747fd7ed5fcda4e1cfd100"
+      },
+      {
+        "name": "preview-r1",
+        "pngSha256": "e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a",
+        "rgbaSha256": "3a09940f43e1d4284569690f80f03816a79c483dbd839cda18985a047d685bb2"
+      },
+      {
+        "name": "preview-r2",
+        "pngSha256": "eee5cb4df75b320834307088444152e9b5face00c78827bf06d3ff902b71e616",
+        "rgbaSha256": "7b905c1ef3c10b97873e3d1c1f18281eec165c05281403c3f9a482825b864887"
+      }
+    ]
+  },
+  "referenceGroups": 9,
+  "artisticOwnerApproval": "PENDING",
+  "productionRightsConfirmation": "PENDING",
+  "e102": "NOT_AUTHORIZED"
+}

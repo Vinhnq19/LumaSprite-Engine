@@ -1,0 +1,667 @@
+{
+  "schema": "lumasprite.e101.reference-pack.v1",
+  "state": "PENDING_OWNER_ART_DIRECTION",
+  "checkpoint": "996b01032d346d69e808e80d2fd62d1f3efe1dd8",
+  "referenceGroups": [
+    "overall-silhouette",
+    "head-and-face",
+    "body-proportions",
+    "outfit-and-garment",
+    "material-clusters",
+    "pixel-shading",
+    "equipment",
+    "hand-grip",
+    "outline-hierarchy"
+  ],
+  "candidates": [
+    {
+      "id": "kiln-silhouette",
+      "group": "overall-silhouette",
+      "brief": "ceramic-kiln-warden",
+      "title": "Thân thấp và tấm chắn nhiệt",
+      "intendedUse": "Test khối nghề ở 1×",
+      "proposedFeatures": [
+        "Lưng thấp và đế rộng.",
+        "Khoảng âm giữa kìm và tạp dề."
+      ],
+      "forbiddenCopying": "Chỉ dùng nguyên tắc phân bố khối. Dựng lại đầu và khớp theo brief đã duyệt.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "20d37d7b4649e8dee0be4ea49c7829938ec45b1e62f2fd10deb354ed6ec173b9",
+      "pngPath": "benchmarks/results/e101/references/kiln-silhouette.png",
+      "pngSha256": "64e478de3ce93d57da827f26cfacbcae0e228436268d34d4b407a93d048c202e",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "kite-silhouette",
+      "group": "overall-silhouette",
+      "brief": "canopy-kite-rigger",
+      "title": "Trục cao và vạt buồm chéo",
+      "intendedUse": "Test đường chéo không phụ thuộc màu",
+      "proposedFeatures": [
+        "Mảng vải chính nghiêng về sau.",
+        "Khoảng hở dưới vạt và giữa hai chân."
+      ],
+      "forbiddenCopying": "Không lấy dáng này làm pose animation đã duyệt.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "d2032fdb3a10a36674f0aadf2c8a0b19f9ef2b7f7e7780d086980fb09cbe0c5a",
+      "pngPath": "benchmarks/results/e101/references/kite-silhouette.png",
+      "pngSha256": "34a882b08d9497d4a3ed3c1969777b72cd38231374011b0316be70252dd559fc",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "seed-silhouette",
+      "group": "overall-silhouette",
+      "brief": "seed-archive-registrar",
+      "title": "Mantle ngang và khay thấp",
+      "intendedUse": "Test dáng ngang phân biệt hai brief còn lại",
+      "proposedFeatures": [
+        "Một gấu cape bậc.",
+        "Mặt dưới khay nổi khỏi bụng."
+      ],
+      "forbiddenCopying": "Tránh copy bề rộng mantle sang nhân vật cao.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "6eaceb11f576785d79b87acf3078bb79433bb793a5e725c7f5e0ae477754feb6",
+      "pngPath": "benchmarks/results/e101/references/seed-silhouette.png",
+      "pngSha256": "1cff46c22f39177b6934c79a11200d95df8fe6730295b1e26f86ae49bf43645a",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "kiln-head",
+      "group": "head-and-face",
+      "brief": "ceramic-kiln-warden",
+      "title": "Đầu quấn vải và mày hạ",
+      "intendedUse": "Nghiên cứu cá tính từ mảng 2–3 pixel",
+      "proposedFeatures": [
+        "Vải quấn chừa mảng mặt rõ.",
+        "Mày và mũi hướng về tay gần."
+      ],
+      "forbiddenCopying": "Dùng nhịp khối sáng. Tạo khuôn mặt riêng theo brief sản xuất.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "c06fd9a89066c72506a95451b3116a9e3cc46959430983919d005368cb4905a1",
+      "pngPath": "benchmarks/results/e101/references/kiln-head.png",
+      "pngSha256": "4cc63d395360e1d761807859075286d1e590e39adb8776ae50654fb33522eeed",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "kite-proportions",
+      "group": "body-proportions",
+      "brief": "canopy-kite-rigger",
+      "title": "Tỷ lệ thân cao và gót chân so le",
+      "intendedUse": "Nghiên cứu chiều dài tay/chân trên canvas 64 × 64",
+      "proposedFeatures": [
+        "Near hip thấp hơn far hip.",
+        "Đế gần chạm dải y57."
+      ],
+      "forbiddenCopying": "Mốc kẻ là hướng dẫn thiết kế, không phải pose validator hay rig đã duyệt.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "1fbb6e2ab1f3a3e34ece97ad5ab539972241945cc954b26015dd2c86d42c9e56",
+      "pngPath": "benchmarks/results/e101/references/kite-proportions.png",
+      "pngSha256": "8f90d13f668b232185e5bb225316f9057cba016dba4ee0de87e39474c2c84657",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "seed-mantle",
+      "group": "outfit-and-garment",
+      "brief": "seed-archive-registrar",
+      "title": "Mantle rêu với gấu bậc",
+      "intendedUse": "Nghiên cứu trang phục đọc được qua gấu và viền cổ",
+      "proposedFeatures": [
+        "Vai gần có khối lớn hơn.",
+        "Gấu tách khỏi tay đỡ khay."
+      ],
+      "forbiddenCopying": "Giữ shape language của gấu. Dựng lại nếp theo socket thật.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "1f662863d424b5288badf62e7ac5e212bb3358f7fdfe935ad5bf8081e5724305",
+      "pngPath": "benchmarks/results/e101/references/seed-mantle.png",
+      "pngSha256": "6aa53baf8b0d9691c3975ed85c9ce4a43c6d3e428bf18387f288abd0bf5dd45b",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "kiln-ceramic",
+      "group": "material-clusters",
+      "brief": "ceramic-kiln-warden",
+      "title": "Men gốm và cạnh đất nung",
+      "intendedUse": "So mảng men bóng với phần gốm xốp",
+      "proposedFeatures": [
+        "Men có cụm sáng liền 4–6 px.",
+        "Vật liệu nền có cạnh tối dày hơn."
+      ],
+      "forbiddenCopying": "Tránh lấy màu trực tiếp nếu palette pilot được đổi.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "f7925474eb705a5af0279691b37087500a6e8e439dbe7bc7790633adae61410d",
+      "pngPath": "benchmarks/results/e101/references/kiln-ceramic.png",
+      "pngSha256": "1b11bfe9b6a24c7d69ba7f08b53d867af01716e44f9ec02c0f981f4bdd4b9de5",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "kite-fold",
+      "group": "pixel-shading",
+      "brief": "canopy-kite-rigger",
+      "title": "Vải xanh ngọc gấp chéo",
+      "intendedUse": "So nhịp mảng sáng dài và bóng gấp",
+      "proposedFeatures": [
+        "Hai mảng tối có biên chung theo nếp.",
+        "Sáng lớn trên mặt quay upper-left."
+      ],
+      "forbiddenCopying": "Giữ hệ thống sắc độ. Không nhân bản nét nếp qua toàn bộ áo.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "84c356c32ee2b6decbedec8084b725cdc96067e6615ade053b1a2f85fd5343c7",
+      "pngPath": "benchmarks/results/e101/references/kite-fold.png",
+      "pngSha256": "ecfddf52f759cff9e514afa7e09e38d0583e0f130a978eecdcb7a90f88773255",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "seed-tray",
+      "group": "equipment",
+      "brief": "seed-archive-registrar",
+      "title": "Khay kiểm hạt ba ngăn",
+      "intendedUse": "Kiểm đọc công năng và vị trí đỡ",
+      "proposedFeatures": [
+        "Thành khay thấp, ba ngăn tách nhau.",
+        "Tay đặt vào mép dưới."
+      ],
+      "forbiddenCopying": "Không sao chép trang trí hoặc duyệt làm đạo cụ runtime.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "bd95a450679794d69049b1d02206a435a8c545078f1b9a2cf98e356f75282ecf",
+      "pngPath": "benchmarks/results/e101/references/seed-tray.png",
+      "pngSha256": "e30e6e2f72b3e95b5ffde0d2cc3334855145f859804188d58baf8d66a62207e7",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "kiln-grip",
+      "group": "hand-grip",
+      "brief": "ceramic-kiln-warden",
+      "title": "Găng ôm cán kìm",
+      "intendedUse": "Nghiên cứu contact và proof ownership",
+      "proposedFeatures": [
+        "Cán hiện ở hai đầu bàn tay.",
+        "Ngón cái khóa trục cán và nối với cổ tay."
+      ],
+      "forbiddenCopying": "Giữ cơ chế che cán. Thiết kế lại tỷ lệ tay cho nhân vật đã chọn.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "673ad0dcbbb40d51dc34962942670a7ffcafbb31e23f75f82181f78123b7a2ad",
+      "pngPath": "benchmarks/results/e101/references/kiln-grip.png",
+      "pngSha256": "e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "contour-hierarchy",
+      "group": "outline-hierarchy",
+      "brief": "canopy-kite-rigger",
+      "title": "Sườn sáng, bóng gấp và nét ngoài",
+      "intendedUse": "So phân cấp biên qua mảng vai và face plane",
+      "proposedFeatures": [
+        "Giữ nét ngoài sâu ở mép dưới.",
+        "Nét nội tại theo vật liệu, tránh viền đen quanh mọi mảng."
+      ],
+      "forbiddenCopying": "Dùng làm reference phân cấp. Không chuyển pixel của decal hoặc mặt vào final.",
+      "kind": "REFERENCE_STUDY",
+      "source": "benchmarks/fixtures/e101/reference-source.json",
+      "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+      "revision": 1,
+      "plateSha256": "7d625a9fd157d2ce2964ec13c02fbf74b5475834385fd796bb069dcabd0962d2",
+      "pngPath": "benchmarks/results/e101/references/contour-hierarchy.png",
+      "pngSha256": "2711637628493104fd299742ae1490f2548167ac9a43f1288fe7a9b2de9dda18",
+      "extent": [
+        64,
+        64
+      ],
+      "view": "three-quarter-right",
+      "style": "e101-original-study-v1",
+      "light": "upper-left",
+      "provenance": {
+        "creator": "Codex",
+        "classification": "ENGINEER_CURATED",
+        "sourceKind": "Original local pixel polygons authored for this task",
+        "license": null,
+        "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+        "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+        "externalArt": false,
+        "modelGenerated": false
+      },
+      "license": null,
+      "licenseStatus": "INTERNAL_REVIEW_SCOPE_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "silhouette",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/development/a/silhouette.png",
+      "pngSha256": "a6944c4714dfe41a32ac956a8a8cb992430c69b570eaf2d1f5d9080d856d7c3b",
+      "view": "three-quarter-right",
+      "extent": [
+        64,
+        64
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Contour diagnostic",
+      "proposedFeatures": [
+        "Separate legs and gesture with negative space"
+      ],
+      "forbiddenCopying": "The oilskin profile is specific to the old baseline.",
+      "source": "benchmarks/results/e9h1/development/a/silhouette.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "head-face",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/development/a/helmet.png",
+      "pngSha256": "9bc32961bafa439238ccbe5192c1a9e6ffd948be039a6acfdefe8ec5debdf294",
+      "view": "three-quarter-right",
+      "extent": [
+        32,
+        28
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Readability diagnostic",
+      "proposedFeatures": [
+        "One dominant face plane with a distinct edge"
+      ],
+      "forbiddenCopying": "Oilskin outline, eye position and facial identity.",
+      "source": "benchmarks/results/e9h1/development/a/helmet.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "proportions",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/development/a/body.png",
+      "pngSha256": "69f25c4e727b6ac61baa4c65f924019075fe7a5a4e5b66ac3e7766b5bdc487d0",
+      "view": "three-quarter-right",
+      "extent": [
+        64,
+        64
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Rig and scale",
+      "proposedFeatures": [
+        "Retain planted feet and 64×64 readable arm–body relationships"
+      ],
+      "forbiddenCopying": "The narrow body silhouette on broad occupational types.",
+      "source": "benchmarks/results/e9h1/development/a/body.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "garments",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/kit/suit-torso/native.png",
+      "pngSha256": "2c860a773c39f94719993cc317f163f38bc66e29d659c9c29f408fc3a743a31e",
+      "view": "three-quarter-right",
+      "extent": [
+        64,
+        64
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Component edit target",
+      "proposedFeatures": [
+        "Retain the hose route, tank mount and neck interface"
+      ],
+      "forbiddenCopying": "The patchwork arrangement of small torso planes.",
+      "source": "benchmarks/results/e9h1/kit/suit-torso/native.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "hand-tool",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/development/matched/grip.png",
+      "pngSha256": "b9d098b0ccee6d86a639724f6646bd8ab0ae71ca18f0e32a6c5de54aa352276a",
+      "view": "three-quarter-right",
+      "extent": [
+        36,
+        26
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Grip comparison",
+      "proposedFeatures": [
+        "Socket occlusion and visible shaft on both sides"
+      ],
+      "forbiddenCopying": "The bulky single brown mass.",
+      "source": "benchmarks/results/e9h1/development/matched/grip.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "material",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/kit/helmet-visor/native.png",
+      "pngSha256": "38ad929ee46229c2c42e11c006e0552b3d7c46e41d95532e74f61b3c8aeb3350",
+      "view": "three-quarter-right",
+      "extent": [
+        64,
+        64
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Material hierarchy",
+      "proposedFeatures": [
+        "Upper-left shell light and a dark visor anchor"
+      ],
+      "forbiddenCopying": "The long bright neck ring and unbroken mirrored arc.",
+      "source": "benchmarks/results/e9h1/kit/helmet-visor/native.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "pixel-clusters",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/development/full/helmet.png",
+      "pngSha256": "265c25bbec21630fe0b346a3fa296a4d53ee69c40d15a8c5ad8f65921e83fe54",
+      "view": "three-quarter-right",
+      "extent": [
+        32,
+        28
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Value-block diagnostic",
+      "proposedFeatures": [
+        "Use contiguous bright clusters and a dark opening"
+      ],
+      "forbiddenCopying": "The original broad arc and extended bright copper span.",
+      "source": "benchmarks/results/e9h1/development/full/helmet.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "outline",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/development/full/silhouette.png",
+      "pngSha256": "78082269b5a53205258b1fecfea1847d1c9af2eb94bbe292387894e15ac8e26b",
+      "view": "three-quarter-right",
+      "extent": [
+        64,
+        64
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Outer edge hierarchy",
+      "proposedFeatures": [
+        "Keep edge thickness crisp at 1× and preserve limb gaps"
+      ],
+      "forbiddenCopying": "Any outline directly traced from another sprite.",
+      "source": "benchmarks/results/e9h1/development/full/silhouette.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "functional-equipment",
+      "kind": "DIAGNOSTIC_REFERENCE",
+      "pngPath": "benchmarks/results/e9h1/kit/assembly/shaft-before-hand.png",
+      "pngSha256": "c4b6f8d144ad7286f4aedf36d378fbd05be4b4ed7a2ed40b354072de35da85af",
+      "view": "three-quarter-right",
+      "extent": [
+        64,
+        64
+      ],
+      "style": "weathered-station-v1",
+      "intendedUse": "Functional silhouette reference",
+      "proposedFeatures": [
+        "Show open interior and direction of the hook tip"
+      ],
+      "forbiddenCopying": "The exact curvature, opening proportions and shaft length.",
+      "source": "benchmarks/results/e9h1/kit/assembly/shaft-before-hand.png",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.",
+      "license": null,
+      "licenseStatus": "RESEARCH_DIAGNOSTIC_ONLY",
+      "approvedFeatures": [],
+      "humanReview": "PENDING"
+    }
+  ]
+}

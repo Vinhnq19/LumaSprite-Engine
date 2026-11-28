@@ -1,0 +1,69 @@
+{
+  "schema": "lumasprite.e101.component-intake.v1",
+  "state": "DRAFT",
+  "id": "kiln-glove-study",
+  "ownerPart": "glove",
+  "extent": [
+    64,
+    64
+  ],
+  "view": "three-quarter-right",
+  "palette": [
+    "#26303d",
+    "#17232e",
+    "#65788a",
+    "#e4d8ba",
+    "#fff0ca",
+    "#8e503d",
+    "#ab6746",
+    "#ce8650",
+    "#ecad6b",
+    "#ffce81",
+    "#b78048",
+    "#694136",
+    "#925c43",
+    "#8d553d",
+    "#be8258",
+    "#e8ac73",
+    "#445364",
+    "#71878e",
+    "#bacbc0",
+    "#4c3953",
+    "#805261",
+    "#264b52",
+    "#447879",
+    "#7eafa3",
+    "#b0cdb4",
+    "#394a41",
+    "#65764c",
+    "#8d9760",
+    "#b3af70",
+    "#f1b075",
+    "#92e9cd"
+  ],
+  "revision": 2,
+  "parent": "e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65",
+  "anchors": {
+    "grip": [
+      34,
+      36
+    ],
+    "wrist": [
+      46,
+      31
+    ]
+  },
+  "sourceSha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+  "pngSha256": "c5b8dc2ca0e0f0b454f4eb3f13efa35b106fdcceb0ae6e6484294a7bdb3dbf42",
+  "maskSha256": "25a4d392f2518e035feb889bc5321ace46ab7da54ac9b6f78e6cb6725fbf7ec0",
+  "provenance": {
+    "creator": "Codex",
+    "classification": "ENGINEER_CURATED",
+    "sourceKind": "Original local pixel polygons authored for this task",
+    "license": null,
+    "rightsScope": "OWNER_AUTHORIZED_E101_INTERNAL_REVIEW",
+    "productionRights": "OWNER_CONFIRMATION_REQUIRED",
+    "externalArt": false,
+    "modelGenerated": false
+  }
+}
