@@ -2,6 +2,7 @@
 
 | Cần xem | Nguồn |
 | --- | --- |
+| E9.H1R · Art-Directed Quality Recovery | [HTML portable](E9-H1R-ART-DIRECTED-QUALITY-REVIEW.html) · [Workflow và nguồn](E9-H1R-WORKFLOW-RESEARCH.md) · [Phiếu trống](../../benchmarks/results/e9h1r/human-review.json) · [First holdout](../../benchmarks/results/e9h1r/first-holdout-attempt.json) · [QA](../../benchmarks/results/e9h1r/technical-qa.json) |
 | E9.H1 · Hybrid Art-Directed Character Pilot | [HTML portable](E9-H1-HYBRID-CHARACTER-PILOT.html) · [Phiếu duyệt trống](../../benchmarks/results/e9h1/human-review.json) · [Holdout](../../benchmarks/results/e9h1/frozen-replay-proof.json) · [QA](../../benchmarks/results/e9h1/technical-qa.json) · [Chrome](../../benchmarks/results/e9h1/portable-verification.json) |
 | E9 · Closeout và Hybrid Feasibility | [Character Architecture Decision](E9-CHARACTER-ARCHITECTURE-DECISION.md) · [Hybrid Feasibility Proposal](E9-HYBRID-FEASIBILITY-PROPOSAL.md) |
 | E9.1S-R · Final Character Review | [HTML portable](E9.1S-R-FINAL-CHARACTER-REVIEW.html) · [Option B](../../benchmarks/results/e91sr/art-recommendation.json) · [Phiếu Owner](../../benchmarks/results/e91sr/human-review.json) · [QA](../../benchmarks/results/e91sr/technical-qa.json) · [SHA-256](../../benchmarks/results/e91sr/SHA256SUMS) · [Chrome](../../benchmarks/results/e91sr/portable-verification.json) |
