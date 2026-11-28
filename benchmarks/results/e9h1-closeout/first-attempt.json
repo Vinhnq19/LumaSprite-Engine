@@ -1,0 +1,1131 @@
+{
+  "status": "TECHNICAL_PASS",
+  "sourceCommit": "410f99b352c08c2a457cebae736a154e60144881",
+  "sealSha256": "6d3ac9baec55b913cff44b612b815b8cc41c13c2c670fd7c5e40bcf5efa4b52a",
+  "benchmarkSha256": "9a13da2c031b577790cb062d1d33081e4bb088f39f068100332124459a926667",
+  "manifestSha256": "eda4c06e4f502511a3decb287ea0b3800546d4c556c97618f8dcdec8c886c9e4",
+  "holdout": {
+    "id": "tidegate-grate-maintainer",
+    "seed": 73193,
+    "role": "fresh",
+    "brief": "A broader protective maintenance worker checks a drain grate. Keep a planted near boot, stagger the far boot, hold a compact open hook at waist height and carry the existing maintenance case.",
+    "pose": {
+      "kind": "standing-free",
+      "hip": [
+        34,
+        37
+      ],
+      "lean": -1,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "near": {
+        "elbow": [
+          23,
+          35
+        ],
+        "wrist": [
+          22,
+          38
+        ],
+        "palm": [
+          20,
+          40
+        ],
+        "knee": [
+          32,
+          45
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          43,
+          31
+        ],
+        "wrist": [
+          46,
+          33
+        ],
+        "palm": [
+          48,
+          35
+        ],
+        "knee": [
+          42,
+          45
+        ],
+        "ankle": [
+          42,
+          52
+        ]
+      },
+      "turn": 2,
+      "secondaryGroundOffset": -1
+    },
+    "joints": [
+      {
+        "side": "near",
+        "hip": [
+          30,
+          38
+        ],
+        "knee": [
+          32,
+          45
+        ],
+        "ankle": [
+          30,
+          53
+        ],
+        "forward": 2,
+        "toePixels": 11,
+        "relativeToHip": 2,
+        "foot": {
+          "projectedGroundY": 58,
+          "lowestContourY": 57,
+          "clearance": 0,
+          "solePixels": 8,
+          "soleBand": [
+            28,
+            35
+          ],
+          "toeRise": 0
+        }
+      },
+      {
+        "side": "far",
+        "hip": [
+          38,
+          36
+        ],
+        "knee": [
+          42,
+          45
+        ],
+        "ankle": [
+          42,
+          52
+        ],
+        "forward": 1.75,
+        "toePixels": 8,
+        "relativeToHip": 4,
+        "foot": {
+          "projectedGroundY": 57,
+          "lowestContourY": 56,
+          "clearance": 0,
+          "solePixels": 7,
+          "soleBand": [
+            40,
+            46
+          ],
+          "toeRise": 0
+        }
+      }
+    ],
+    "headwear": {
+      "adjustment": [
+        0,
+        0
+      ],
+      "nominal": {
+        "left": 28,
+        "right": 47,
+        "top": 3,
+        "bottom": 13
+      },
+      "placed": {
+        "left": 28,
+        "right": 47,
+        "top": 3,
+        "bottom": 13
+      }
+    },
+    "layout": {
+      "id": "case-higher",
+      "attempts": [
+        {
+          "id": "original",
+          "raw": 51,
+          "visible": 10,
+          "obscured": {
+            "far-tool": 24,
+            "far-boot": 17
+          },
+          "rows": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "longest": 7,
+          "pass": false
+        },
+        {
+          "id": "case-higher",
+          "raw": 51,
+          "visible": 26,
+          "obscured": {
+            "far-tool": 8,
+            "far-boot": 17
+          },
+          "rows": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "longest": 8,
+          "pass": true
+        }
+      ]
+    },
+    "variants": [
+      {
+        "arm": "a0",
+        "qa": {
+          "bounds": {
+            "left": 9,
+            "top": 2,
+            "right": 55,
+            "bottom": 57
+          },
+          "pixels": 1288,
+          "isolatedOutline": 0,
+          "place": [
+            32,
+            58
+          ],
+          "torsoWidth": 16,
+          "legGapRows": 9,
+          "handTests": [
+            {
+              "id": "tray",
+              "hand": "far-hand",
+              "socket": [
+                48,
+                35
+              ],
+              "overlap": 10,
+              "join": 9,
+              "shown": 120,
+              "occludes": true,
+              "total": 130
+            },
+            {
+              "id": "ladle",
+              "hand": "near-hand",
+              "socket": [
+                20,
+                40
+              ],
+              "overlap": 12,
+              "join": 12,
+              "shown": 44,
+              "occludes": true,
+              "total": 56
+            }
+          ],
+          "centerX": 34.4,
+          "outline": {
+            "lit": 99,
+            "shadow": 130,
+            "contact": 21,
+            "internal": 101
+          }
+        },
+        "stance": {
+          "rows": [
+            {
+              "y": 47,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 48,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 49,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 50,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 51,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 52,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 53,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 54,
+              "left": 35,
+              "right": 40,
+              "mid": 37,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 55,
+              "left": 36,
+              "right": 40,
+              "mid": 38,
+              "cloth": false,
+              "clear": true
+            }
+          ],
+          "anatomicalGapRows": 9,
+          "visibleGapRows": 9,
+          "feet": [
+            {
+              "left": 28,
+              "right": 36,
+              "contact": 56,
+              "expected": 56,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 8
+            },
+            {
+              "left": 40,
+              "right": 47,
+              "contact": 55,
+              "expected": 55,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 7
+            }
+          ]
+        },
+        "visibility": {
+          "raw": 51,
+          "visible": 26,
+          "obscured": {
+            "far-tool": 8,
+            "far-boot": 17
+          },
+          "rows": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "longest": 8,
+          "pass": true
+        },
+        "scenes": [
+          {
+            "mode": "day",
+            "visible": 1288,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          },
+          {
+            "mode": "night",
+            "visible": 1288,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          }
+        ]
+      },
+      {
+        "arm": "matched-r1",
+        "qa": {
+          "bounds": {
+            "left": 9,
+            "top": 2,
+            "right": 55,
+            "bottom": 57
+          },
+          "pixels": 1301,
+          "isolatedOutline": 0,
+          "place": [
+            32,
+            58
+          ],
+          "torsoWidth": 16,
+          "legGapRows": 9,
+          "handTests": [
+            {
+              "id": "tray",
+              "hand": "far-hand",
+              "socket": [
+                48,
+                35
+              ],
+              "overlap": 10,
+              "join": 9,
+              "shown": 120,
+              "occludes": true,
+              "total": 130
+            },
+            {
+              "id": "ladle",
+              "hand": "near-hand",
+              "socket": [
+                20,
+                40
+              ],
+              "overlap": 18,
+              "join": 16,
+              "shown": 38,
+              "occludes": true,
+              "total": 56
+            }
+          ],
+          "centerX": 34,
+          "outline": {
+            "lit": 99,
+            "shadow": 130,
+            "contact": 21,
+            "internal": 101
+          }
+        },
+        "stance": {
+          "rows": [
+            {
+              "y": 47,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 48,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 49,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 50,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 51,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 52,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 53,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 54,
+              "left": 35,
+              "right": 40,
+              "mid": 37,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 55,
+              "left": 36,
+              "right": 40,
+              "mid": 38,
+              "cloth": false,
+              "clear": true
+            }
+          ],
+          "anatomicalGapRows": 9,
+          "visibleGapRows": 9,
+          "feet": [
+            {
+              "left": 28,
+              "right": 36,
+              "contact": 56,
+              "expected": 56,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 8
+            },
+            {
+              "left": 40,
+              "right": 47,
+              "contact": 55,
+              "expected": 55,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 7
+            }
+          ]
+        },
+        "visibility": {
+          "raw": 51,
+          "visible": 26,
+          "obscured": {
+            "far-tool": 8,
+            "far-boot": 17
+          },
+          "rows": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "longest": 8,
+          "pass": true
+        },
+        "scenes": [
+          {
+            "mode": "day",
+            "visible": 1301,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          },
+          {
+            "mode": "night",
+            "visible": 1301,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          }
+        ]
+      },
+      {
+        "arm": "matched-r2",
+        "qa": {
+          "bounds": {
+            "left": 9,
+            "top": 2,
+            "right": 55,
+            "bottom": 57
+          },
+          "pixels": 1295,
+          "isolatedOutline": 0,
+          "place": [
+            32,
+            58
+          ],
+          "torsoWidth": 16,
+          "legGapRows": 9,
+          "handTests": [
+            {
+              "id": "tray",
+              "hand": "far-hand",
+              "socket": [
+                48,
+                35
+              ],
+              "overlap": 10,
+              "join": 9,
+              "shown": 120,
+              "occludes": true,
+              "total": 130
+            },
+            {
+              "id": "ladle",
+              "hand": "near-hand",
+              "socket": [
+                20,
+                40
+              ],
+              "overlap": 14,
+              "join": 17,
+              "shown": 42,
+              "occludes": true,
+              "total": 56
+            }
+          ],
+          "centerX": 34.1,
+          "outline": {
+            "lit": 99,
+            "shadow": 130,
+            "contact": 21,
+            "internal": 101
+          }
+        },
+        "stance": {
+          "rows": [
+            {
+              "y": 47,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 48,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 49,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 50,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 51,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 52,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 53,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 54,
+              "left": 35,
+              "right": 40,
+              "mid": 37,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 55,
+              "left": 36,
+              "right": 40,
+              "mid": 38,
+              "cloth": false,
+              "clear": true
+            }
+          ],
+          "anatomicalGapRows": 9,
+          "visibleGapRows": 9,
+          "feet": [
+            {
+              "left": 28,
+              "right": 36,
+              "contact": 56,
+              "expected": 56,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 8
+            },
+            {
+              "left": 40,
+              "right": 47,
+              "contact": 55,
+              "expected": 55,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 7
+            }
+          ]
+        },
+        "visibility": {
+          "raw": 51,
+          "visible": 26,
+          "obscured": {
+            "far-tool": 8,
+            "far-boot": 17
+          },
+          "rows": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "longest": 8,
+          "pass": true
+        },
+        "scenes": [
+          {
+            "mode": "day",
+            "visible": 1295,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          },
+          {
+            "mode": "night",
+            "visible": 1295,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          }
+        ]
+      },
+      {
+        "arm": "full-r1",
+        "qa": {
+          "bounds": {
+            "left": 8,
+            "top": 4,
+            "right": 55,
+            "bottom": 57
+          },
+          "pixels": 1500,
+          "isolatedOutline": 0,
+          "place": [
+            32,
+            58
+          ],
+          "torsoWidth": 25,
+          "legGapRows": 9,
+          "handTests": [
+            {
+              "id": "tray",
+              "hand": "far-hand",
+              "socket": [
+                48,
+                35
+              ],
+              "overlap": 10,
+              "join": 9,
+              "shown": 120,
+              "occludes": true,
+              "total": 130
+            },
+            {
+              "id": "compact-screen-hook",
+              "hand": "near-hand",
+              "socket": [
+                20,
+                40
+              ],
+              "overlap": 29,
+              "join": 16,
+              "shown": 51,
+              "occludes": true,
+              "total": 80
+            }
+          ],
+          "centerX": 34.5,
+          "outline": {
+            "lit": 99,
+            "shadow": 130,
+            "contact": 21,
+            "internal": 101
+          }
+        },
+        "stance": {
+          "rows": [
+            {
+              "y": 47,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 48,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 49,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 50,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 51,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 52,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 53,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 54,
+              "left": 35,
+              "right": 40,
+              "mid": 37,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 55,
+              "left": 36,
+              "right": 40,
+              "mid": 38,
+              "cloth": false,
+              "clear": true
+            }
+          ],
+          "anatomicalGapRows": 9,
+          "visibleGapRows": 9,
+          "feet": [
+            {
+              "left": 28,
+              "right": 36,
+              "contact": 56,
+              "expected": 56,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 8
+            },
+            {
+              "left": 40,
+              "right": 47,
+              "contact": 55,
+              "expected": 55,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 7
+            }
+          ]
+        },
+        "visibility": {
+          "raw": 51,
+          "visible": 26,
+          "obscured": {
+            "far-tool": 8,
+            "far-boot": 17
+          },
+          "rows": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "longest": 8,
+          "pass": true
+        },
+        "scenes": [
+          {
+            "mode": "day",
+            "visible": 1500,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          },
+          {
+            "mode": "night",
+            "visible": 1500,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          }
+        ]
+      },
+      {
+        "arm": "full-r2",
+        "qa": {
+          "bounds": {
+            "left": 7,
+            "top": 5,
+            "right": 55,
+            "bottom": 57
+          },
+          "pixels": 1499,
+          "isolatedOutline": 0,
+          "place": [
+            32,
+            58
+          ],
+          "torsoWidth": 25,
+          "legGapRows": 9,
+          "handTests": [
+            {
+              "id": "tray",
+              "hand": "far-hand",
+              "socket": [
+                48,
+                35
+              ],
+              "overlap": 10,
+              "join": 9,
+              "shown": 120,
+              "occludes": true,
+              "total": 130
+            },
+            {
+              "id": "compact-screen-hook",
+              "hand": "near-hand",
+              "socket": [
+                20,
+                40
+              ],
+              "overlap": 23,
+              "join": 17,
+              "shown": 64,
+              "occludes": true,
+              "total": 87
+            }
+          ],
+          "centerX": 34.7,
+          "outline": {
+            "lit": 99,
+            "shadow": 130,
+            "contact": 21,
+            "internal": 101
+          }
+        },
+        "stance": {
+          "rows": [
+            {
+              "y": 47,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 48,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 49,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 50,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 51,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 52,
+              "left": 32,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 53,
+              "left": 33,
+              "right": 40,
+              "mid": 36,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 54,
+              "left": 35,
+              "right": 40,
+              "mid": 37,
+              "cloth": false,
+              "clear": true
+            },
+            {
+              "y": 55,
+              "left": 36,
+              "right": 40,
+              "mid": 38,
+              "cloth": false,
+              "clear": true
+            }
+          ],
+          "anatomicalGapRows": 9,
+          "visibleGapRows": 9,
+          "feet": [
+            {
+              "left": 28,
+              "right": 36,
+              "contact": 56,
+              "expected": 56,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 8
+            },
+            {
+              "left": 40,
+              "right": 47,
+              "contact": 55,
+              "expected": 55,
+              "knee": true,
+              "ankle": true,
+              "shin": true,
+              "exposedSole": 7
+            }
+          ]
+        },
+        "visibility": {
+          "raw": 51,
+          "visible": 26,
+          "obscured": {
+            "far-tool": 8,
+            "far-boot": 17
+          },
+          "rows": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "longest": 8,
+          "pass": true
+        },
+        "scenes": [
+          {
+            "mode": "day",
+            "visible": 1499,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          },
+          {
+            "mode": "night",
+            "visible": 1499,
+            "collision": "2bc5d6aec7fce03a4dbece170f2c88a3f7771aace02039c2dc6cd71010dce103"
+          }
+        ]
+      }
+    ],
+    "status": "TECHNICAL_PASS",
+    "failures": []
+  },
+  "exitCode": 0
+}

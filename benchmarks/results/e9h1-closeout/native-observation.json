@@ -1,0 +1,45 @@
+{
+  "authority": "ASSISTANT_REVIEW_RECOMMENDATION",
+  "method": "E9.H1R original PNGs, label-hidden side-by-side at native 1x on dark background. Order was exposed after noting each observation. The reviewer had prior familiarity with these sprites. Independent Owner review is pending.",
+  "case": "Tidal Salvage Diver",
+  "takenBeforeAdditionalArt": "None. The closeout retains both revisions as evidence.",
+  "observations": [
+    {
+      "criterion": "grip",
+      "left": "matched-refined",
+      "right": "matched-draft",
+      "choice": "X_LOCAL",
+      "finding": "X shows a slimmer glove mass and a slightly clearer break around the thumb. Grip realism at 1× remains close."
+    },
+    {
+      "criterion": "helmet",
+      "left": "full-draft",
+      "right": "full-refined",
+      "choice": "Y_LOCAL",
+      "finding": "Y separates the bright port edge and dark glass more clearly. Both silhouettes already read as protective helmets."
+    },
+    {
+      "criterion": "suit",
+      "left": "full-refined",
+      "right": "full-draft",
+      "choice": "NEITHER_CLEAR",
+      "finding": "X reduces the bright collar band. Torso mass, straps and function read similarly at native size."
+    },
+    {
+      "criterion": "day",
+      "left": "full-draft",
+      "right": "full-refined",
+      "choice": "NEITHER_CLEAR",
+      "finding": "Both keep the same occupational silhouette and contrast against the props. Collar readability differs locally."
+    },
+    {
+      "criterion": "night",
+      "left": "full-draft",
+      "right": "full-refined",
+      "choice": "NEITHER_CLEAR",
+      "finding": "X has a brighter collar and Y has a brighter rim. The silhouette and profession did not become meaningfully easier to read."
+    }
+  ],
+  "additionalArtRevision": false,
+  "reason": "The available references are diagnostic and unapproved. Local substitutions do not supply evidence of a better whole character."
+}
