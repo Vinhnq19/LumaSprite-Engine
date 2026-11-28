@@ -66,3 +66,5 @@ benchmarks/results/e83/SHA256SUMS text eol=lf
 benchmarks/results/e83/*.xml text eol=lf
 benchmarks/fixtures/e91/*.json text eol=lf
 benchmarks/results/e91/SHA256SUMS text eol=lf
+benchmarks/fixtures/e91r/*.json text eol=lf
+benchmarks/results/e91r/SHA256SUMS text eol=lf
