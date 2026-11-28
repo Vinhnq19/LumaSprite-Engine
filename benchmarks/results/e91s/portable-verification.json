@@ -1,0 +1,22 @@
+{
+  "report": "docs/reports/E9.1S-SEMANTIC-CHARACTER-REVIEW.html",
+  "sha256": "d43dc733e695768c9f042da973bebaa25fdf98856bab40274302db6af3c32b81",
+  "bytes": 776437,
+  "chrome": "158.0.0.0",
+  "mode": "Offline",
+  "location": "Windows Temp copy outside Engine",
+  "copySha256": "MATCH",
+  "embedded": 95,
+  "placements": 96,
+  "externalDependencies": 0,
+  "sha256PerPlacement": "96/96 MATCH",
+  "zoom": "Native 1× and nearest 4× verified",
+  "blindComparison": "PASS",
+  "backgroundToggle": "PASS",
+  "blankReviewJson": "PASS",
+  "viewports": [
+    1440,
+    390
+  ],
+  "consoleErrors": 0
+}

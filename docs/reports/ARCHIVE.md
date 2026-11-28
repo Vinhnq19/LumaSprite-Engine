@@ -2,10 +2,11 @@
 
 Các báo cáo và bằng chứng giữ tại đường dẫn ban đầu. [Báo cáo hiện hành](INDEX.md)
 
-## E7.1 đến E9.1
+## E7.1 đến E9.1R
 
 | Milestone | Báo cáo và evidence |
 | --- | --- |
+| E9.1R · Character Recovery | [HTML portable](E9.1R-CHARACTER-ART-REVIEW.html) · [Tóm tắt kỹ thuật](e91r-technical-summary.md) · [Phiếu duyệt](../../benchmarks/results/e91r/human-review.json) · [SHA-256](../../benchmarks/results/e91r/SHA256SUMS) · [Chrome](../../benchmarks/results/e91r/portable-verification.json) |
 | E9.1 · Nhân vật v4 và holdout geometry | [Portable Character Art Quality Review](E9.1-CHARACTER-ART-QUALITY-REVIEW.html) · [QA](../../benchmarks/results/e91/regression-integrity.json) · [Chrome](../../benchmarks/results/e91/portable-verification.json) · [SHA-256](../../benchmarks/results/e91/SHA256SUMS) · [Phiếu duyệt](../../benchmarks/results/e91/human-review.json) |
 | E9.0 · Game-Ready Art Quality Audit & E9.1 Design | [Portable Art Quality Architecture Review](E9.0-ART-QUALITY-ARCHITECTURE-REVIEW.html) · [Audit Doc](e90-art-quality-audit.md) · [Rubric v2](../art-quality/art-quality-rubric-v2.json) · [Evidence](../../benchmarks/results/e90/audit-evidence.json) · [Chrome](../../benchmarks/results/e90/portable-verification.json) · [SHA-256](../../benchmarks/results/e90/SHA256SUMS) · [Human Review](../../benchmarks/results/e90/human-review.json) |
 | E8.5 · End-to-End Production Pipeline Acceptance | [Portable End-to-End Report](E8.5-END-TO-END-PRODUCTION-ACCEPTANCE.html) · [QA](../../benchmarks/results/e85/verification.json) · [Chrome](../../benchmarks/results/e85/portable-verification.json) · [SHA-256](../../benchmarks/results/e85/SHA256SUMS) · [Human Review](../../benchmarks/results/e85/human-review.json) |
