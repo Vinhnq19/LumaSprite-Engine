@@ -1,0 +1,37 @@
+{
+  "editSource": {
+    "id": "a-procedural-handle",
+    "revision": 2,
+    "baseline": "character-equipment.ts",
+    "band": {
+      "role": "metal",
+      "tone": 1,
+      "points": [
+        [
+          20.233224947427058,
+          42.8406796398633
+        ],
+        [
+          12.579918395584869,
+          36.28070259542714
+        ],
+        [
+          14.271975966570386,
+          34.306635429277364
+        ],
+        [
+          21.925282518412576,
+          40.86661247371353
+        ]
+      ]
+    },
+    "socket": [
+      19,
+      40
+    ]
+  },
+  "revision": 2,
+  "sourceSha256": "4c048a82459dd48028ba79c4f42e0dbf30b014f3b813e90de25ffac499833c94",
+  "editedRevisionSha256": "75c6b1499073192947673b64673717c867cf5562319375de9b03425d14c6cd8d",
+  "provenance": "PROCEDURALLY_GENERATED"
+}
