@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "style": "weathered-station-v1",
+  "checkpoint": "dcc8a16d34c86f7346379cbc6f50ac506959128c",
+  "posePolicy": "Author both knees along their projected hip-to-ankle axis using a depth fraction and forward bend. Apply the existing v3 validator. A negative offset of one pixel is tolerance for hand-authored input, and screen-left of hip alone is uninformative.",
+  "matrix": [
+    {
+      "id": "narrow-rest",
+      "fixture": "tidal",
+      "size": {
+        "jacket": [
+          15,
+          14
+        ],
+        "hips": 12,
+        "leg": [
+          6,
+          4
+        ]
+      },
+      "bend": {
+        "near": {
+          "depth": 0.48,
+          "forward": 1
+        },
+        "far": {
+          "depth": 0.55,
+          "forward": 2
+        }
+      },
+      "expect": [],
+      "pose": {
+        "near": {
+          "ankle": [
+            30,
+            53
+          ]
+        }
+      }
+    },
+    {
+      "id": "broad-braced",
+      "fixture": "breakwater",
+      "size": {
+        "jacket": [
+          19,
+          14
+        ],
+        "hips": 15,
+        "leg": [
+          8,
+          5
+        ]
+      },
+      "bend": {
+        "near": {
+          "depth": 0.46,
+          "forward": 2
+        },
+        "far": {
+          "depth": 0.59,
+          "forward": 2
+        }
+      },
+      "expect": []
+    },
+    {
+      "id": "screen-left-valid",
+      "fixture": "tidal",
+      "size": {
+        "hips": 13,
+        "leg": [
+          7,
+          5
+        ]
+      },
+      "pose": {
+        "near": {
+          "ankle": [
+            29,
+            53
+          ]
+        }
+      },
+      "bend": {
+        "near": {
+          "depth": 0.57,
+          "forward": 0
+        },
+        "far": {
+          "depth": 0.54,
+          "forward": 2
+        }
+      },
+      "verifyLeft": "near",
+      "expect": []
+    },
+    {
+      "id": "quantization-tolerance",
+      "fixture": "breakwater",
+      "pose": {
+        "near": {
+          "knee": [
+            28,
+            44
+          ]
+        }
+      },
+      "expect": []
+    },
+    {
+      "id": "breakwater-original",
+      "fixture": "breakwater",
+      "expect": [
+        "KNEE_DIRECTION/near"
+      ],
+      "rejectOnly": true
+    },
+    {
+      "id": "reverse-far",
+      "fixture": "tidal",
+      "pose": {
+        "far": {
+          "knee": [
+            34,
+            45
+          ]
+        }
+      },
+      "expect": [
+        "KNEE_DIRECTION/far"
+      ]
+    },
+    {
+      "id": "overbent-near",
+      "fixture": "breakwater",
+      "pose": {
+        "near": {
+          "knee": [
+            35,
+            44
+          ]
+        }
+      },
+      "expect": [
+        "KNEE_DIRECTION/near"
+      ]
+    },
+    {
+      "id": "lifted-support",
+      "fixture": "tidal",
+      "pose": {
+        "near": {
+          "ankle": [
+            29,
+            51
+          ]
+        }
+      },
+      "bend": {
+        "near": {
+          "depth": 0.48,
+          "forward": 2
+        },
+        "far": {
+          "depth": 0.55,
+          "forward": 2
+        }
+      },
+      "expect": [
+        "PLANTED_SOLE"
+      ]
+    },
+    {
+      "id": "unsupported-weight",
+      "fixture": "tidal",
+      "pose": {
+        "lean": 3,
+        "near": {
+          "ankle": [
+            26,
+            53
+          ]
+        }
+      },
+      "bend": {
+        "near": {
+          "depth": 0.48,
+          "forward": 2
+        },
+        "far": {
+          "depth": 0.55,
+          "forward": 2
+        }
+      },
+      "expect": [
+        "STANDING_BALANCE"
+      ]
+    }
+  ],
+  "breakwaterSourceIntent": {
+    "near": {
+      "depth": 0.46,
+      "forward": 2
+    },
+    "far": {
+      "depth": 0.59,
+      "forward": 2
+    }
+  },
+  "holdout": {
+    "entry": {
+      "id": "tidegate-grate-maintainer",
+      "name": "Tidegate Grate Maintainer",
+      "seed": 73193,
+      "role": "fresh",
+      "brief": "A broader protective maintenance worker checks a drain grate. Keep a planted near boot, stagger the far boot, hold a compact open hook at waist height and carry the existing maintenance case.",
+      "torso": "broad",
+      "hookFamily": "screen",
+      "pose": {
+        "hip": [
+          34,
+          37
+        ],
+        "lean": -1,
+        "turn": 2,
+        "near": {
+          "elbow": [
+            23,
+            35
+          ],
+          "wrist": [
+            22,
+            38
+          ],
+          "palm": [
+            20,
+            40
+          ],
+          "ankle": [
+            30,
+            53
+          ]
+        },
+        "far": {
+          "elbow": [
+            43,
+            31
+          ],
+          "wrist": [
+            46,
+            33
+          ],
+          "palm": [
+            48,
+            35
+          ],
+          "ankle": [
+            42,
+            52
+          ]
+        }
+      }
+    },
+    "bend": {
+      "near": {
+        "depth": 0.48,
+        "forward": 2
+      },
+      "far": {
+        "depth": 0.56,
+        "forward": 2
+      }
+    }
+  },
+  "criteria": {
+    "view": "three-quarter-right",
+    "pivot": [
+      32,
+      58
+    ],
+    "camera": [
+      320,
+      208,
+      32
+    ],
+    "historicalCutoff": 805,
+    "review": "docs/art-quality/art-quality-rubric-v2-static-addendum.md",
+    "freshSeeds": 1,
+    "holdoutRenderPolicy": "First fixed result is archived. A deterministic replay is permitted for QA only."
+  }
+}

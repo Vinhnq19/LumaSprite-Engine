@@ -78,3 +78,5 @@ benchmarks/results/e9h1/SHA256SUMS text eol=lf
 benchmarks/results/e9h1/first-holdout-attempt.txt text eol=lf
 benchmarks/fixtures/e9h1r/*.json text eol=lf
 benchmarks/results/e9h1r/SHA256SUMS text eol=lf
+benchmarks/fixtures/e9h1-closeout/*.json text eol=lf
+benchmarks/results/e9h1-closeout/SHA256SUMS text eol=lf

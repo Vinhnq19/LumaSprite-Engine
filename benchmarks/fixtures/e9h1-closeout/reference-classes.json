@@ -1,0 +1,18 @@
+{
+  "schema": "lumasprite.e9h1.closeout.reference-review.v1",
+  "status": "ART_REFERENCE_QUALITY_GAP",
+  "approval": "PENDING",
+  "source": "benchmarks/fixtures/e9h1r/references.json",
+  "threshold": "Owner approval with appropriate provenance is required before a reference can direct new production art.",
+  "classes": {
+    "silhouette": "Geometry Reference",
+    "head-face": "Diagnostic Reference",
+    "proportions": "Geometry Reference",
+    "garments": "Style Candidate",
+    "hand-tool": "Diagnostic Reference",
+    "material": "Material Candidate",
+    "pixel-clusters": "Material Candidate",
+    "outline": "Geometry Reference",
+    "functional-equipment": "Diagnostic Reference"
+  }
+}
