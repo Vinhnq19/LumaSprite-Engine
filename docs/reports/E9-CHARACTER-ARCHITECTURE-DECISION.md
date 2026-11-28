@@ -26,6 +26,6 @@ Checkpoint `7bd0080a9a2474ac9c2bc5085df9c97f6bd8ffec`, fix `71b927e0cf7e14eb637c
 
 Giữ part ownership, costume-aware stance, grip/socket, cụm sáng tối nhỏ quanh mặt, fit mũ trước viền, palette lock và kiểm định raw pixel. Dùng chúng làm công cụ cho nghiên cứu và đối chứng, chọn nghệ thuật theo từng nhân vật. Kết quả Highland cho thấy lỗi nhận diện đồ nghề vẫn tồn tại dù đủ lề, stance và grip. Đây là câu hỏi về silhouette và ngôn ngữ hình của dụng cụ ở 1×.
 
-Giữ Option B làm hướng hiện hành. Đưa proposal Hybrid ra Owner để quyết định có đầu tư một bộ component phù hợp hay tiếp tục chọn thành phần từ pipeline hiện có. Nếu Hybrid không tạo ra cải thiện rõ ở 1× hoặc làm việc chỉnh art khó hơn, phương án tiếp theo là giữ Option B hoặc cân nhắc thư viện curate thủ công qua một quyết định riêng. [Current Report Index](INDEX.md)
+Giữ Option B làm hướng hiện hành. Đưa proposal Hybrid ra Owner để quyết định có đầu tư một bộ component phù hợp hay tiếp tục chọn thành phần từ pipeline hiện có. Nếu Hybrid không tạo ra cải thiện rõ ở 1× hoặc làm việc chỉnh art khó hơn, phương án tiếp theo là giữ Option B hoặc cân nhắc thư viện curate thủ công qua một quyết định riêng. [Proposal Hybrid và thiết kế A/B/C](E9-HYBRID-FEASIBILITY-PROPOSAL.md)
 
 Static art vẫn `STATIC_ART_REVIEW_PENDING`. Unity runtime và directional animation ở `NOT_RUN`. Chưa có milestone triển khai tiếp theo được ủy quyền.
