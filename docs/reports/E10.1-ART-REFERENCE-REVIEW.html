@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline';">
+<title>LumaSprite E10.1 · Art Reference Review</title><style>
+:root{
+  color-scheme:light;--page:#f6f1e6;--paper:#fffcf5;--text:#26313b;--muted:#5a6370;--line:#d6c9b3;
+  --accent:#8b472d;--canvas:#ebe1ce;--focus:#99522d;--night:#282f3b;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:78px}
+body{margin:0;background:var(--page);color:var(--text);font:16px/1.55 system-ui,"Segoe UI",sans-serif}
+main{max-width:1152px;margin:auto;padding:clamp(14px,3vw,40px)}
+header{max-width:78ch;padding:20px 0}
+h1,h2,h3,p{margin:0 0 .55em}
+h1{font:700 clamp(2.65rem,7.5vw,5rem)/.99 Georgia,serif;letter-spacing:-.045em;text-wrap:balance}
+h2{font:700 clamp(1.8rem,4.4vw,2.75rem)/1.12 Georgia,serif;letter-spacing:-.022em}
+h3{font-size:1.05rem}
+.lead{margin-top:14px;font-size:1.12rem}
+.muted,figcaption{color:var(--muted)}
+.status{display:inline-block;color:var(--accent);font:600 .83em ui-monospace,Consolas,monospace;overflow-wrap:anywhere}
+nav,.tools{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+nav{margin:10px 0 18px}
+a{color:var(--accent);text-underline-offset:4px}
+nav a{display:inline-flex;align-items:center;min-height:44px}
+.tools{position:sticky;top:0;z-index:2;padding:8px 0;background:var(--page);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+button,.download{padding:0 14px;min-height:44px;border-radius:5px;border:1px solid var(--line);font:600 1rem system-ui,sans-serif}
+button{background:var(--paper);color:var(--text);cursor:pointer}
+button[aria-pressed=true],.download{background:var(--text);color:var(--paper);border-color:var(--text)}
+.download{display:inline-flex;align-items:center;text-decoration:none}
+section{padding:26px 0;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:14px 0}
+.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card,figure{min-width:0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:12px}
+figure{margin:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--paper)}
+.canvas{display:grid;grid-template-columns:max-content;justify-content:safe center;align-items:center;min-height:96px;overflow:auto;padding:12px;background:var(--canvas)}
+body[data-background="night"] .canvas{background:var(--night)}
+img{display:block;width:calc(var(--w)*1px);height:calc(var(--h)*1px);image-rendering:pixelated}
+body[data-zoom="4"] img{width:calc(var(--w)*4px);height:calc(var(--h)*4px)}
+figcaption{padding:7px 10px;font-size:.88rem}
+.card p,.card ul{margin-top:.65em}
+.card ul{padding-left:1.1em}
+details{margin:8px 0}
+summary{min-height:44px;padding:.58em 0;color:var(--accent);cursor:pointer;font-weight:650}
+pre{padding:9px;background:var(--page);border:1px solid var(--line);border-radius:5px;white-space:pre-wrap;overflow-wrap:anywhere;overflow:auto;max-height:26rem}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.canvas:focus-visible{outline-offset:-4px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:565px){.grid:not(.two){grid-template-columns:minmax(0,1fr)}.tools{gap:7px}.tools span{display:none}}
+</style></head>
+<body data-zoom="1" data-background="day"><main>
+<header><p class="muted">LumaSprite Engine · E10.1</p><h1>Art Reference Review</h1>
+<p class="status">E10_1_READY_FOR_OWNER_ART_REFERENCE_REVIEW</p>
+<p class="lead">So ba silhouette ở 1×, chọn một brief và ghi những đặc điểm được phép dùng trong Reference Pack. Toàn bộ nghiên cứu mới đang chờ Owner duyệt.</p>
+<nav aria-label="Mục lục"><a href="#briefs">Ba brief</a><a href="#pack">Reference Pack</a><a href="#proof">Proof</a><a href="#review">Phiếu duyệt</a></nav></header>
+<div class="tools" aria-label="Chế độ xem"><span>Tỷ lệ và nền</span><button type="button" data-scale="1" aria-pressed="true">Native 1×</button>
+<button type="button" data-scale="4" aria-pressed="false">Nearest 4×</button><button type="button" id="backdrop" aria-pressed="false">Nền tối</button></div>
+<noscript><p>Bật JavaScript cục bộ để xem PNG nhúng.</p></noscript>
+<section id="briefs"><h2>Ba brief pilot</h2>
+<p>Cùng canvas 64 × 64, góc three-quarter-right, pivot (32, 58) và ánh sáng upper-left. Các ảnh bên dưới là phác khối dáng.</p>
+<div class="grid"><article class="card brief"><h3>Ceramic Kiln Warden</h3><figure><div class="canvas" tabindex="0" aria-label="Silhouette · Ceramic Kiln Warden"><img data-digest="64e478de3ce93d57da827f26cfacbcae0e228436268d34d4b407a93d048c202e" width="64" height="64" alt="Silhouette · Ceramic Kiln Warden"></div><figcaption>Silhouette · Ceramic Kiln Warden</figcaption></figure><p><strong>Thân thấp, tấm chắn nhiệt hình thang và kìm lệch vai.</strong> Đất nung và men hổ phách. Mày hạ một bên, chú ý trục kìm–cổ tay khi pha dáng.</p><details><summary>Nguồn silhouette và SHA-256</summary><pre>{
+  &quot;id&quot;: &quot;kiln-silhouette&quot;,
+  &quot;group&quot;: &quot;overall-silhouette&quot;,
+  &quot;brief&quot;: &quot;ceramic-kiln-warden&quot;,
+  &quot;title&quot;: &quot;Thân thấp và tấm chắn nhiệt&quot;,
+  &quot;intendedUse&quot;: &quot;Test khối nghề ở 1×&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Lưng thấp và đế rộng.&quot;,
+    &quot;Khoảng âm giữa kìm và tạp dề.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Chỉ dùng nguyên tắc phân bố khối. Dựng lại đầu và khớp theo brief đã duyệt.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;20d37d7b4649e8dee0be4ea49c7829938ec45b1e62f2fd10deb354ed6ec173b9&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/kiln-silhouette.png&quot;,
+  &quot;pngSha256&quot;: &quot;64e478de3ce93d57da827f26cfacbcae0e228436268d34d4b407a93d048c202e&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card brief"><h3>Canopy Kite Rigger</h3><figure><div class="canvas" tabindex="0" aria-label="Silhouette · Canopy Kite Rigger"><img data-digest="34a882b08d9497d4a3ed3c1969777b72cd38231374011b0316be70252dd559fc" width="64" height="64" alt="Silhouette · Canopy Kite Rigger"></div><figcaption>Silhouette · Canopy Kite Rigger</figcaption></figure><p><strong>Dáng cao, vạt buồm chéo và ống cuộn gọn.</strong> Xanh ngọc pha mận. Giữ khoảng âm dưới vạt và đường kéo dây qua bàn tay.</p><details><summary>Nguồn silhouette và SHA-256</summary><pre>{
+  &quot;id&quot;: &quot;kite-silhouette&quot;,
+  &quot;group&quot;: &quot;overall-silhouette&quot;,
+  &quot;brief&quot;: &quot;canopy-kite-rigger&quot;,
+  &quot;title&quot;: &quot;Trục cao và vạt buồm chéo&quot;,
+  &quot;intendedUse&quot;: &quot;Test đường chéo không phụ thuộc màu&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Mảng vải chính nghiêng về sau.&quot;,
+    &quot;Khoảng hở dưới vạt và giữa hai chân.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Không lấy dáng này làm pose animation đã duyệt.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;d2032fdb3a10a36674f0aadf2c8a0b19f9ef2b7f7e7780d086980fb09cbe0c5a&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/kite-silhouette.png&quot;,
+  &quot;pngSha256&quot;: &quot;34a882b08d9497d4a3ed3c1969777b72cd38231374011b0316be70252dd559fc&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card brief"><h3>Seed Archive Registrar</h3><figure><div class="canvas" tabindex="0" aria-label="Silhouette · Seed Archive Registrar"><img data-digest="1cff46c22f39177b6934c79a11200d95df8fe6730295b1e26f86ae49bf43645a" width="64" height="64" alt="Silhouette · Seed Archive Registrar"></div><figcaption>Silhouette · Seed Archive Registrar</figcaption></figure><p><strong>Mantle ngang, gấu bậc và khay ba ngăn thấp.</strong> Xanh rêu và kem. Tay đỡ khay phải đọc ở 1× và vẫn có điểm tựa cho pose sau này.</p><details><summary>Nguồn silhouette và SHA-256</summary><pre>{
+  &quot;id&quot;: &quot;seed-silhouette&quot;,
+  &quot;group&quot;: &quot;overall-silhouette&quot;,
+  &quot;brief&quot;: &quot;seed-archive-registrar&quot;,
+  &quot;title&quot;: &quot;Mantle ngang và khay thấp&quot;,
+  &quot;intendedUse&quot;: &quot;Test dáng ngang phân biệt hai brief còn lại&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Một gấu cape bậc.&quot;,
+    &quot;Mặt dưới khay nổi khỏi bụng.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Tránh copy bề rộng mantle sang nhân vật cao.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;6eaceb11f576785d79b87acf3078bb79433bb793a5e725c7f5e0ae477754feb6&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/seed-silhouette.png&quot;,
+  &quot;pngSha256&quot;: &quot;1cff46c22f39177b6934c79a11200d95df8fe6730295b1e26f86ae49bf43645a&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article></div></section>
+<section id="pack"><h2>Reference Pack v1</h2>
+<p>11 plate gốc cho 9 nhóm, gồm ba silhouette ở trên. Mỗi plate có mục đích, SHA-256 và nguồn polygon chỉnh được. Các nghiên cứu do Codex tạo cho duyệt nội bộ E10.1. Quyền cho production chờ Owner xác nhận.</p>
+<div class="grid"><article class="card"><h3>Đầu và khuôn mặt</h3><figure><div class="canvas" tabindex="0" aria-label="Đầu quấn vải và mày hạ"><img data-digest="4cc63d395360e1d761807859075286d1e590e39adb8776ae50654fb33522eeed" width="64" height="64" alt="Đầu quấn vải và mày hạ"></div><figcaption>Đầu quấn vải và mày hạ</figcaption></figure><p>Nghiên cứu cá tính từ mảng 2–3 pixel</p><ul><li>Vải quấn chừa mảng mặt rõ.</li><li>Mày và mũi hướng về tay gần.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;kiln-head&quot;,
+  &quot;group&quot;: &quot;head-and-face&quot;,
+  &quot;brief&quot;: &quot;ceramic-kiln-warden&quot;,
+  &quot;title&quot;: &quot;Đầu quấn vải và mày hạ&quot;,
+  &quot;intendedUse&quot;: &quot;Nghiên cứu cá tính từ mảng 2–3 pixel&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Vải quấn chừa mảng mặt rõ.&quot;,
+    &quot;Mày và mũi hướng về tay gần.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Dùng nhịp khối sáng. Tạo khuôn mặt riêng theo brief sản xuất.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;c06fd9a89066c72506a95451b3116a9e3cc46959430983919d005368cb4905a1&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/kiln-head.png&quot;,
+  &quot;pngSha256&quot;: &quot;4cc63d395360e1d761807859075286d1e590e39adb8776ae50654fb33522eeed&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>Tỷ lệ</h3><figure><div class="canvas" tabindex="0" aria-label="Tỷ lệ thân cao và gót chân so le"><img data-digest="8f90d13f668b232185e5bb225316f9057cba016dba4ee0de87e39474c2c84657" width="64" height="64" alt="Tỷ lệ thân cao và gót chân so le"></div><figcaption>Tỷ lệ thân cao và gót chân so le</figcaption></figure><p>Nghiên cứu chiều dài tay/chân trên canvas 64 × 64</p><ul><li>Near hip thấp hơn far hip.</li><li>Đế gần chạm dải y57.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;kite-proportions&quot;,
+  &quot;group&quot;: &quot;body-proportions&quot;,
+  &quot;brief&quot;: &quot;canopy-kite-rigger&quot;,
+  &quot;title&quot;: &quot;Tỷ lệ thân cao và gót chân so le&quot;,
+  &quot;intendedUse&quot;: &quot;Nghiên cứu chiều dài tay/chân trên canvas 64 × 64&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Near hip thấp hơn far hip.&quot;,
+    &quot;Đế gần chạm dải y57.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Mốc kẻ là hướng dẫn thiết kế, không phải pose validator hay rig đã duyệt.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;1fbb6e2ab1f3a3e34ece97ad5ab539972241945cc954b26015dd2c86d42c9e56&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/kite-proportions.png&quot;,
+  &quot;pngSha256&quot;: &quot;8f90d13f668b232185e5bb225316f9057cba016dba4ee0de87e39474c2c84657&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>Trang phục</h3><figure><div class="canvas" tabindex="0" aria-label="Mantle rêu với gấu bậc"><img data-digest="6aa53baf8b0d9691c3975ed85c9ce4a43c6d3e428bf18387f288abd0bf5dd45b" width="64" height="64" alt="Mantle rêu với gấu bậc"></div><figcaption>Mantle rêu với gấu bậc</figcaption></figure><p>Nghiên cứu trang phục đọc được qua gấu và viền cổ</p><ul><li>Vai gần có khối lớn hơn.</li><li>Gấu tách khỏi tay đỡ khay.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;seed-mantle&quot;,
+  &quot;group&quot;: &quot;outfit-and-garment&quot;,
+  &quot;brief&quot;: &quot;seed-archive-registrar&quot;,
+  &quot;title&quot;: &quot;Mantle rêu với gấu bậc&quot;,
+  &quot;intendedUse&quot;: &quot;Nghiên cứu trang phục đọc được qua gấu và viền cổ&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Vai gần có khối lớn hơn.&quot;,
+    &quot;Gấu tách khỏi tay đỡ khay.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Giữ shape language của gấu. Dựng lại nếp theo socket thật.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;1f662863d424b5288badf62e7ac5e212bb3358f7fdfe935ad5bf8081e5724305&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/seed-mantle.png&quot;,
+  &quot;pngSha256&quot;: &quot;6aa53baf8b0d9691c3975ed85c9ce4a43c6d3e428bf18387f288abd0bf5dd45b&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>Cụm vật liệu</h3><figure><div class="canvas" tabindex="0" aria-label="Men gốm và cạnh đất nung"><img data-digest="1b11bfe9b6a24c7d69ba7f08b53d867af01716e44f9ec02c0f981f4bdd4b9de5" width="64" height="64" alt="Men gốm và cạnh đất nung"></div><figcaption>Men gốm và cạnh đất nung</figcaption></figure><p>So mảng men bóng với phần gốm xốp</p><ul><li>Men có cụm sáng liền 4–6 px.</li><li>Vật liệu nền có cạnh tối dày hơn.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;kiln-ceramic&quot;,
+  &quot;group&quot;: &quot;material-clusters&quot;,
+  &quot;brief&quot;: &quot;ceramic-kiln-warden&quot;,
+  &quot;title&quot;: &quot;Men gốm và cạnh đất nung&quot;,
+  &quot;intendedUse&quot;: &quot;So mảng men bóng với phần gốm xốp&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Men có cụm sáng liền 4–6 px.&quot;,
+    &quot;Vật liệu nền có cạnh tối dày hơn.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Tránh lấy màu trực tiếp nếu palette pilot được đổi.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;f7925474eb705a5af0279691b37087500a6e8e439dbe7bc7790633adae61410d&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/kiln-ceramic.png&quot;,
+  &quot;pngSha256&quot;: &quot;1b11bfe9b6a24c7d69ba7f08b53d867af01716e44f9ec02c0f981f4bdd4b9de5&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>Sắc độ</h3><figure><div class="canvas" tabindex="0" aria-label="Vải xanh ngọc gấp chéo"><img data-digest="ecfddf52f759cff9e514afa7e09e38d0583e0f130a978eecdcb7a90f88773255" width="64" height="64" alt="Vải xanh ngọc gấp chéo"></div><figcaption>Vải xanh ngọc gấp chéo</figcaption></figure><p>So nhịp mảng sáng dài và bóng gấp</p><ul><li>Hai mảng tối có biên chung theo nếp.</li><li>Sáng lớn trên mặt quay upper-left.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;kite-fold&quot;,
+  &quot;group&quot;: &quot;pixel-shading&quot;,
+  &quot;brief&quot;: &quot;canopy-kite-rigger&quot;,
+  &quot;title&quot;: &quot;Vải xanh ngọc gấp chéo&quot;,
+  &quot;intendedUse&quot;: &quot;So nhịp mảng sáng dài và bóng gấp&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Hai mảng tối có biên chung theo nếp.&quot;,
+    &quot;Sáng lớn trên mặt quay upper-left.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Giữ hệ thống sắc độ. Không nhân bản nét nếp qua toàn bộ áo.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;84c356c32ee2b6decbedec8084b725cdc96067e6615ade053b1a2f85fd5343c7&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/kite-fold.png&quot;,
+  &quot;pngSha256&quot;: &quot;ecfddf52f759cff9e514afa7e09e38d0583e0f130a978eecdcb7a90f88773255&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>Dụng cụ</h3><figure><div class="canvas" tabindex="0" aria-label="Khay kiểm hạt ba ngăn"><img data-digest="e30e6e2f72b3e95b5ffde0d2cc3334855145f859804188d58baf8d66a62207e7" width="64" height="64" alt="Khay kiểm hạt ba ngăn"></div><figcaption>Khay kiểm hạt ba ngăn</figcaption></figure><p>Kiểm đọc công năng và vị trí đỡ</p><ul><li>Thành khay thấp, ba ngăn tách nhau.</li><li>Tay đặt vào mép dưới.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;seed-tray&quot;,
+  &quot;group&quot;: &quot;equipment&quot;,
+  &quot;brief&quot;: &quot;seed-archive-registrar&quot;,
+  &quot;title&quot;: &quot;Khay kiểm hạt ba ngăn&quot;,
+  &quot;intendedUse&quot;: &quot;Kiểm đọc công năng và vị trí đỡ&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Thành khay thấp, ba ngăn tách nhau.&quot;,
+    &quot;Tay đặt vào mép dưới.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Không sao chép trang trí hoặc duyệt làm đạo cụ runtime.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;bd95a450679794d69049b1d02206a435a8c545078f1b9a2cf98e356f75282ecf&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/seed-tray.png&quot;,
+  &quot;pngSha256&quot;: &quot;e30e6e2f72b3e95b5ffde0d2cc3334855145f859804188d58baf8d66a62207e7&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>Tay nắm</h3><figure><div class="canvas" tabindex="0" aria-label="Găng ôm cán kìm"><img data-digest="e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a" width="64" height="64" alt="Găng ôm cán kìm"></div><figcaption>Găng ôm cán kìm</figcaption></figure><p>Nghiên cứu contact và proof ownership</p><ul><li>Cán hiện ở hai đầu bàn tay.</li><li>Ngón cái khóa trục cán và nối với cổ tay.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;kiln-grip&quot;,
+  &quot;group&quot;: &quot;hand-grip&quot;,
+  &quot;brief&quot;: &quot;ceramic-kiln-warden&quot;,
+  &quot;title&quot;: &quot;Găng ôm cán kìm&quot;,
+  &quot;intendedUse&quot;: &quot;Nghiên cứu contact và proof ownership&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Cán hiện ở hai đầu bàn tay.&quot;,
+    &quot;Ngón cái khóa trục cán và nối với cổ tay.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Giữ cơ chế che cán. Thiết kế lại tỷ lệ tay cho nhân vật đã chọn.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;673ad0dcbbb40d51dc34962942670a7ffcafbb31e23f75f82181f78123b7a2ad&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/kiln-grip.png&quot;,
+  &quot;pngSha256&quot;: &quot;e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>Phân cấp viền</h3><figure><div class="canvas" tabindex="0" aria-label="Sườn sáng, bóng gấp và nét ngoài"><img data-digest="2711637628493104fd299742ae1490f2548167ac9a43f1288fe7a9b2de9dda18" width="64" height="64" alt="Sườn sáng, bóng gấp và nét ngoài"></div><figcaption>Sườn sáng, bóng gấp và nét ngoài</figcaption></figure><p>So phân cấp biên qua mảng vai và face plane</p><ul><li>Giữ nét ngoài sâu ở mép dưới.</li><li>Nét nội tại theo vật liệu, tránh viền đen quanh mọi mảng.</li></ul><details><summary>Nguồn, quyền dùng và giới hạn</summary><pre>{
+  &quot;id&quot;: &quot;contour-hierarchy&quot;,
+  &quot;group&quot;: &quot;outline-hierarchy&quot;,
+  &quot;brief&quot;: &quot;canopy-kite-rigger&quot;,
+  &quot;title&quot;: &quot;Sườn sáng, bóng gấp và nét ngoài&quot;,
+  &quot;intendedUse&quot;: &quot;So phân cấp biên qua mảng vai và face plane&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Giữ nét ngoài sâu ở mép dưới.&quot;,
+    &quot;Nét nội tại theo vật liệu, tránh viền đen quanh mọi mảng.&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Dùng làm reference phân cấp. Không chuyển pixel của decal hoặc mặt vào final.&quot;,
+  &quot;kind&quot;: &quot;REFERENCE_STUDY&quot;,
+  &quot;source&quot;: &quot;benchmarks/fixtures/e101/reference-source.json&quot;,
+  &quot;sourceSha256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;revision&quot;: 1,
+  &quot;plateSha256&quot;: &quot;7d625a9fd157d2ce2964ec13c02fbf74b5475834385fd796bb069dcabd0962d2&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e101/references/contour-hierarchy.png&quot;,
+  &quot;pngSha256&quot;: &quot;2711637628493104fd299742ae1490f2548167ac9a43f1288fe7a9b2de9dda18&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;style&quot;: &quot;e101-original-study-v1&quot;,
+  &quot;light&quot;: &quot;upper-left&quot;,
+  &quot;provenance&quot;: {
+    &quot;creator&quot;: &quot;Codex&quot;,
+    &quot;classification&quot;: &quot;ENGINEER_CURATED&quot;,
+    &quot;sourceKind&quot;: &quot;Original local pixel polygons authored for this task&quot;,
+    &quot;license&quot;: null,
+    &quot;rightsScope&quot;: &quot;OWNER_AUTHORIZED_E101_INTERNAL_REVIEW&quot;,
+    &quot;productionRights&quot;: &quot;OWNER_CONFIRMATION_REQUIRED&quot;,
+    &quot;externalArt&quot;: false,
+    &quot;modelGenerated&quot;: false
+  },
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;INTERNAL_REVIEW_SCOPE_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article></div>
+<details><summary>Chín ảnh E9.H1R · chỉ dùng chẩn đoán</summary><div class="grid"><article class="card"><h3>silhouette</h3><figure><div class="canvas" tabindex="0" aria-label="Contour diagnostic"><img data-digest="a6944c4714dfe41a32ac956a8a8cb992430c69b570eaf2d1f5d9080d856d7c3b" width="64" height="64" alt="Contour diagnostic"></div><figcaption>Contour diagnostic</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;silhouette&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/development/a/silhouette.png&quot;,
+  &quot;pngSha256&quot;: &quot;a6944c4714dfe41a32ac956a8a8cb992430c69b570eaf2d1f5d9080d856d7c3b&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Contour diagnostic&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Separate legs and gesture with negative space&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;The oilskin profile is specific to the old baseline.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/development/a/silhouette.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>head-face</h3><figure><div class="canvas" tabindex="0" aria-label="Readability diagnostic"><img data-digest="9bc32961bafa439238ccbe5192c1a9e6ffd948be039a6acfdefe8ec5debdf294" width="32" height="28" alt="Readability diagnostic"></div><figcaption>Readability diagnostic</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;head-face&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/development/a/helmet.png&quot;,
+  &quot;pngSha256&quot;: &quot;9bc32961bafa439238ccbe5192c1a9e6ffd948be039a6acfdefe8ec5debdf294&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    32,
+    28
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Readability diagnostic&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;One dominant face plane with a distinct edge&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Oilskin outline, eye position and facial identity.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/development/a/helmet.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>proportions</h3><figure><div class="canvas" tabindex="0" aria-label="Rig and scale"><img data-digest="69f25c4e727b6ac61baa4c65f924019075fe7a5a4e5b66ac3e7766b5bdc487d0" width="64" height="64" alt="Rig and scale"></div><figcaption>Rig and scale</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;proportions&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/development/a/body.png&quot;,
+  &quot;pngSha256&quot;: &quot;69f25c4e727b6ac61baa4c65f924019075fe7a5a4e5b66ac3e7766b5bdc487d0&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Rig and scale&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Retain planted feet and 64×64 readable arm–body relationships&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;The narrow body silhouette on broad occupational types.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/development/a/body.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>garments</h3><figure><div class="canvas" tabindex="0" aria-label="Component edit target"><img data-digest="2c860a773c39f94719993cc317f163f38bc66e29d659c9c29f408fc3a743a31e" width="64" height="64" alt="Component edit target"></div><figcaption>Component edit target</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;garments&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/kit/suit-torso/native.png&quot;,
+  &quot;pngSha256&quot;: &quot;2c860a773c39f94719993cc317f163f38bc66e29d659c9c29f408fc3a743a31e&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Component edit target&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Retain the hose route, tank mount and neck interface&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;The patchwork arrangement of small torso planes.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/kit/suit-torso/native.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>hand-tool</h3><figure><div class="canvas" tabindex="0" aria-label="Grip comparison"><img data-digest="b9d098b0ccee6d86a639724f6646bd8ab0ae71ca18f0e32a6c5de54aa352276a" width="36" height="26" alt="Grip comparison"></div><figcaption>Grip comparison</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;hand-tool&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/development/matched/grip.png&quot;,
+  &quot;pngSha256&quot;: &quot;b9d098b0ccee6d86a639724f6646bd8ab0ae71ca18f0e32a6c5de54aa352276a&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    36,
+    26
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Grip comparison&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Socket occlusion and visible shaft on both sides&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;The bulky single brown mass.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/development/matched/grip.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>material</h3><figure><div class="canvas" tabindex="0" aria-label="Material hierarchy"><img data-digest="38ad929ee46229c2c42e11c006e0552b3d7c46e41d95532e74f61b3c8aeb3350" width="64" height="64" alt="Material hierarchy"></div><figcaption>Material hierarchy</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;material&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/kit/helmet-visor/native.png&quot;,
+  &quot;pngSha256&quot;: &quot;38ad929ee46229c2c42e11c006e0552b3d7c46e41d95532e74f61b3c8aeb3350&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Material hierarchy&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Upper-left shell light and a dark visor anchor&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;The long bright neck ring and unbroken mirrored arc.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/kit/helmet-visor/native.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>pixel-clusters</h3><figure><div class="canvas" tabindex="0" aria-label="Value-block diagnostic"><img data-digest="265c25bbec21630fe0b346a3fa296a4d53ee69c40d15a8c5ad8f65921e83fe54" width="32" height="28" alt="Value-block diagnostic"></div><figcaption>Value-block diagnostic</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;pixel-clusters&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/development/full/helmet.png&quot;,
+  &quot;pngSha256&quot;: &quot;265c25bbec21630fe0b346a3fa296a4d53ee69c40d15a8c5ad8f65921e83fe54&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    32,
+    28
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Value-block diagnostic&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Use contiguous bright clusters and a dark opening&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;The original broad arc and extended bright copper span.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/development/full/helmet.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>outline</h3><figure><div class="canvas" tabindex="0" aria-label="Outer edge hierarchy"><img data-digest="78082269b5a53205258b1fecfea1847d1c9af2eb94bbe292387894e15ac8e26b" width="64" height="64" alt="Outer edge hierarchy"></div><figcaption>Outer edge hierarchy</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;outline&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/development/full/silhouette.png&quot;,
+  &quot;pngSha256&quot;: &quot;78082269b5a53205258b1fecfea1847d1c9af2eb94bbe292387894e15ac8e26b&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Outer edge hierarchy&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Keep edge thickness crisp at 1× and preserve limb gaps&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;Any outline directly traced from another sprite.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/development/full/silhouette.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article><article class="card"><h3>functional-equipment</h3><figure><div class="canvas" tabindex="0" aria-label="Functional silhouette reference"><img data-digest="c4b6f8d144ad7286f4aedf36d378fbd05be4b4ed7a2ed40b354072de35da85af" width="64" height="64" alt="Functional silhouette reference"></div><figcaption>Functional silhouette reference</figcaption></figure><details><summary>Ghi chú nguồn chẩn đoán</summary><pre>{
+  &quot;id&quot;: &quot;functional-equipment&quot;,
+  &quot;kind&quot;: &quot;DIAGNOSTIC_REFERENCE&quot;,
+  &quot;pngPath&quot;: &quot;benchmarks/results/e9h1/kit/assembly/shaft-before-hand.png&quot;,
+  &quot;pngSha256&quot;: &quot;c4b6f8d144ad7286f4aedf36d378fbd05be4b4ed7a2ed40b354072de35da85af&quot;,
+  &quot;view&quot;: &quot;three-quarter-right&quot;,
+  &quot;extent&quot;: [
+    64,
+    64
+  ],
+  &quot;style&quot;: &quot;weathered-station-v1&quot;,
+  &quot;intendedUse&quot;: &quot;Functional silhouette reference&quot;,
+  &quot;proposedFeatures&quot;: [
+    &quot;Show open interior and direction of the hook tip&quot;
+  ],
+  &quot;forbiddenCopying&quot;: &quot;The exact curvature, opening proportions and shaft length.&quot;,
+  &quot;source&quot;: &quot;benchmarks/results/e9h1/kit/assembly/shaft-before-hand.png&quot;,
+  &quot;provenance&quot;: &quot;Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted.&quot;,
+  &quot;license&quot;: null,
+  &quot;licenseStatus&quot;: &quot;RESEARCH_DIAGNOSTIC_ONLY&quot;,
+  &quot;approvedFeatures&quot;: [],
+  &quot;humanReview&quot;: &quot;PENDING&quot;
+}</pre></details></article></div></details>
+</section>
+<section id="proof"><h2>Proof trên một component tay DRAFT</h2>
+<p>Đọc PNG cùng ownership mask. Khớp grip vào cán. Sửa sắc độ cuff trên bản sao, liên kết về r1 rồi xuất r2. 24 pixel đổi trong vùng cho phép, 0 pixel ngoài vùng. Bốn PNG qua Studio import, lưu và export giữ đúng RGBA.</p>
+<div class="grid two"><figure><div class="canvas" tabindex="0" aria-label="r1 · Source gốc"><img data-digest="e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a" width="64" height="64" alt="r1 · Source gốc"></div><figcaption>r1 · Source gốc</figcaption></figure><figure><div class="canvas" tabindex="0" aria-label="r2 · Sửa mặt cuff"><img data-digest="eee5cb4df75b320834307088444152e9b5face00c78827bf06d3ff902b71e616" width="64" height="64" alt="r2 · Sửa mặt cuff"></div><figcaption>r2 · Sửa mặt cuff</figcaption></figure></div>
+<details><summary>Mask, anchors, bản xuất và SHA-256</summary><div class="grid two"><figure><div class="canvas" tabindex="0" aria-label="Mask ownership"><img data-digest="25a4d392f2518e035feb889bc5321ace46ab7da54ac9b6f78e6cb6725fbf7ec0" width="64" height="64" alt="Mask ownership"></div><figcaption>Mask ownership</figcaption></figure><figure><div class="canvas" tabindex="0" aria-label="Vùng cho phép"><img data-digest="bf28ea23f8a819159735619c694cf7789d2a2bd35a0edd618e74190996ddb2b3" width="64" height="64" alt="Vùng cho phép"></div><figcaption>Vùng cho phép</figcaption></figure><figure><div class="canvas" tabindex="0" aria-label="PNG được nhập"><img data-digest="db9a11900947762dc54e47fb058444638eb28ffddda635943c70f86830f4c0a8" width="64" height="64" alt="PNG được nhập"></div><figcaption>PNG được nhập</figcaption></figure><figure><div class="canvas" tabindex="0" aria-label="Grip xanh · wrist vàng"><img data-digest="59becb34f8883204fb04bf63a8cfe16ce2666cf90ae503f908376f5f379ae623" width="64" height="64" alt="Grip xanh · wrist vàng"></div><figcaption>Grip xanh · wrist vàng</figcaption></figure><figure><div class="canvas" tabindex="0" aria-label="PNG được xuất"><img data-digest="c5b8dc2ca0e0f0b454f4eb3f13efa35b106fdcceb0ae6e6484294a7bdb3dbf42" width="64" height="64" alt="PNG được xuất"></div><figcaption>PNG được xuất</figcaption></figure><figure><div class="canvas" tabindex="0" aria-label="Pixel đổi"><img data-digest="104b49584bc5f447820591517984524be065018b004b53c3aabebb80622e000e" width="64" height="64" alt="Pixel đổi"></div><figcaption>Pixel đổi</figcaption></figure></div><pre>{
+  &quot;component&quot;: &quot;kiln-glove-study&quot;,
+  &quot;width&quot;: 64,
+  &quot;height&quot;: 64,
+  &quot;ownershipPixels&quot;: 358,
+  &quot;anchors&quot;: {
+    &quot;grip&quot;: [
+      34,
+      36
+    ],
+    &quot;wrist&quot;: [
+      46,
+      31
+    ]
+  },
+  &quot;shaftVisibleOnGripSides&quot;: [
+    309,
+    106
+  ],
+  &quot;editIntent&quot;: &quot;Raise the cuff plane one value step within the selected owner region.&quot;,
+  &quot;changed&quot;: 24,
+  &quot;outside&quot;: 0,
+  &quot;previewChanged&quot;: 24,
+  &quot;rollbackRgbaSha256&quot;: &quot;fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb&quot;,
+  &quot;revision1RgbaSha256&quot;: &quot;fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb&quot;,
+  &quot;revision2RgbaSha256&quot;: &quot;b63af0952b6a0989a034d4d45bf81519c82c38647d747fd7ed5fcda4e1cfd100&quot;,
+  &quot;revisions&quot;: [
+    {
+      &quot;revision&quot;: 1,
+      &quot;sha256&quot;: &quot;e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65&quot;
+    },
+    {
+      &quot;revision&quot;: 2,
+      &quot;sha256&quot;: &quot;cdaf33b69ba46f96b28ec345526fc5b129c375ed185afd416149b601c823c149&quot;,
+      &quot;parent&quot;: &quot;e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65&quot;
+    }
+  ]
+}</pre></details>
+<p class="muted">Proof đạt TECHNICAL_VALID. STATIC_ART_APPROVED và GAME_READY thuộc các cổng riêng do Owner duyệt.</p>
+<details><summary>QA và Git source</summary><pre>{
+  &quot;status&quot;: &quot;PASS&quot;,
+  &quot;gate&quot;: &quot;E10_1_READY_FOR_OWNER_ART_REFERENCE_REVIEW&quot;,
+  &quot;checkpoint&quot;: &quot;996b01032d346d69e808e80d2fd62d1f3efe1dd8&quot;,
+  &quot;historical&quot;: 805,
+  &quot;protectedE9&quot;: {
+    &quot;h1&quot;: 101,
+    &quot;h1r&quot;: 172,
+    &quot;closeout&quot;: 81
+  },
+  &quot;originalStudioRoundTrips&quot;: 18,
+  &quot;deterministicEntries&quot;: 24,
+  &quot;legacyReports&quot;: {
+    &quot;retained&quot;: 38,
+    &quot;manifestProtected&quot;: 13,
+    &quot;removed&quot;: 0
+  },
+  &quot;proof&quot;: {
+    &quot;component&quot;: &quot;kiln-glove-study&quot;,
+    &quot;width&quot;: 64,
+    &quot;height&quot;: 64,
+    &quot;ownershipPixels&quot;: 358,
+    &quot;anchors&quot;: {
+      &quot;grip&quot;: [
+        34,
+        36
+      ],
+      &quot;wrist&quot;: [
+        46,
+        31
+      ]
+    },
+    &quot;shaftVisibleOnGripSides&quot;: [
+      309,
+      106
+    ],
+    &quot;editIntent&quot;: &quot;Raise the cuff plane one value step within the selected owner region.&quot;,
+    &quot;changed&quot;: 24,
+    &quot;outside&quot;: 0,
+    &quot;previewChanged&quot;: 24,
+    &quot;rollbackRgbaSha256&quot;: &quot;fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb&quot;,
+    &quot;revision1RgbaSha256&quot;: &quot;fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb&quot;,
+    &quot;revision2RgbaSha256&quot;: &quot;b63af0952b6a0989a034d4d45bf81519c82c38647d747fd7ed5fcda4e1cfd100&quot;,
+    &quot;revisions&quot;: [
+      {
+        &quot;revision&quot;: 1,
+        &quot;sha256&quot;: &quot;e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65&quot;
+      },
+      {
+        &quot;revision&quot;: 2,
+        &quot;sha256&quot;: &quot;cdaf33b69ba46f96b28ec345526fc5b129c375ed185afd416149b601c823c149&quot;,
+        &quot;parent&quot;: &quot;e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65&quot;
+      }
+    ]
+  },
+  &quot;studio&quot;: {
+    &quot;revision&quot;: &quot;471ac90555d3545beff5182146e291ba97b9ae20&quot;,
+    &quot;operation&quot;: &quot;PNG_IMPORT_DOCUMENT_SAVE_PNG_EXPORT&quot;,
+    &quot;samples&quot;: [
+      {
+        &quot;name&quot;: &quot;input-r1&quot;,
+        &quot;pngSha256&quot;: &quot;db9a11900947762dc54e47fb058444638eb28ffddda635943c70f86830f4c0a8&quot;,
+        &quot;rgbaSha256&quot;: &quot;fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb&quot;
+      },
+      {
+        &quot;name&quot;: &quot;export-r2&quot;,
+        &quot;pngSha256&quot;: &quot;c5b8dc2ca0e0f0b454f4eb3f13efa35b106fdcceb0ae6e6484294a7bdb3dbf42&quot;,
+        &quot;rgbaSha256&quot;: &quot;b63af0952b6a0989a034d4d45bf81519c82c38647d747fd7ed5fcda4e1cfd100&quot;
+      },
+      {
+        &quot;name&quot;: &quot;preview-r1&quot;,
+        &quot;pngSha256&quot;: &quot;e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a&quot;,
+        &quot;rgbaSha256&quot;: &quot;3a09940f43e1d4284569690f80f03816a79c483dbd839cda18985a047d685bb2&quot;
+      },
+      {
+        &quot;name&quot;: &quot;preview-r2&quot;,
+        &quot;pngSha256&quot;: &quot;eee5cb4df75b320834307088444152e9b5face00c78827bf06d3ff902b71e616&quot;,
+        &quot;rgbaSha256&quot;: &quot;7b905c1ef3c10b97873e3d1c1f18281eec165c05281403c3f9a482825b864887&quot;
+      }
+    ]
+  },
+  &quot;referenceGroups&quot;: 9,
+  &quot;artisticOwnerApproval&quot;: &quot;PENDING&quot;,
+  &quot;productionRightsConfirmation&quot;: &quot;PENDING&quot;,
+  &quot;e102&quot;: &quot;NOT_AUTHORIZED&quot;
+}</pre><pre>{
+  &quot;Engine checkpoint&quot;: &quot;996b01032d346d69e808e80d2fd62d1f3efe1dd8&quot;,
+  &quot;Evidence commit&quot;: &quot;6197737372f6da4c580ec7b08b7272b455069623&quot;,
+  &quot;Studio revision&quot;: &quot;471ac90555d3545beff5182146e291ba97b9ae20&quot;,
+  &quot;Source SHA-256&quot;: &quot;30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092&quot;,
+  &quot;Manifest retained E9&quot;: {
+    &quot;h1&quot;: 101,
+    &quot;h1r&quot;: 172,
+    &quot;closeout&quot;: 81
+  }
+}</pre></details>
+</section>
+<section id="review"><h2>Phiếu Owner</h2>
+<p>Ghi brief được chọn, reference được dùng, đặc điểm được duyệt và quyền sử dụng. Kiến trúc Option B vẫn là đề xuất. E10.2 cần quyết định riêng sau vòng duyệt này.</p>
+<p><a class="download" download="E10.1-OWNER-REVIEW.json" href="data:application/json;base64,ewogICJzY2hlbWEiOiAibHVtYXNwcml0ZS5lMTAxLm93bmVyLXJldmlldy52MSIsCiAgInN0YXRlIjogIlVOU0lHTkVEIiwKICAiYXV0aG9yaXR5IjogIlBST0pFQ1RfT1dORVIiLAogICJyZXZpZXdlciI6IG51bGwsCiAgInJldmlld2VkQXQiOiBudWxsLAogICJzaWduYXR1cmUiOiBudWxsLAogICJhcmNoaXRlY3R1cmVSZWNvbW1lbmRhdGlvbiI6ICJPUFRJT05fQl9BUlRJU1RfRElSRUNURURfQ09NUE9ORU5UX1BJUEVMSU5FIiwKICAiYXJjaGl0ZWN0dXJlRGVjaXNpb24iOiBudWxsLAogICJzZWxlY3RlZFBpbG90IjogbnVsbCwKICAicGlsb3RPcHRpb25zIjogWwogICAgImNlcmFtaWMta2lsbi13YXJkZW4iLAogICAgImNhbm9weS1raXRlLXJpZ2dlciIsCiAgICAic2VlZC1hcmNoaXZlLXJlZ2lzdHJhciIKICBdLAogICJhcnREaXJlY3Rpb25EZWNpc2lvbiI6IG51bGwsCiAgInJlZmVyZW5jZURlY2lzaW9ucyI6IHsKICAgICJraWxuLXNpbGhvdWV0dGUiOiB7CiAgICAgICJjaG9pY2UiOiBudWxsLAogICAgICAiYXBwcm92ZWRGZWF0dXJlcyI6IFtdLAogICAgICAibm90ZXMiOiBudWxsLAogICAgICAicHJvZHVjdGlvblJpZ2h0c0NvbmZpcm1lZCI6IG51bGwKICAgIH0sCiAgICAia2l0ZS1zaWxob3VldHRlIjogewogICAgICAiY2hvaWNlIjogbnVsbCwKICAgICAgImFwcHJvdmVkRmVhdHVyZXMiOiBbXSwKICAgICAgIm5vdGVzIjogbnVsbCwKICAgICAgInByb2R1Y3Rpb25SaWdodHNDb25maXJtZWQiOiBudWxsCiAgICB9LAogICAgInNlZWQtc2lsaG91ZXR0ZSI6IHsKICAgICAgImNob2ljZSI6IG51bGwsCiAgICAgICJhcHByb3ZlZEZlYXR1cmVzIjogW10sCiAgICAgICJub3RlcyI6IG51bGwsCiAgICAgICJwcm9kdWN0aW9uUmlnaHRzQ29uZmlybWVkIjogbnVsbAogICAgfSwKICAgICJraWxuLWhlYWQiOiB7CiAgICAgICJjaG9pY2UiOiBudWxsLAogICAgICAiYXBwcm92ZWRGZWF0dXJlcyI6IFtdLAogICAgICAibm90ZXMiOiBudWxsLAogICAgICAicHJvZHVjdGlvblJpZ2h0c0NvbmZpcm1lZCI6IG51bGwKICAgIH0sCiAgICAia2l0ZS1wcm9wb3J0aW9ucyI6IHsKICAgICAgImNob2ljZSI6IG51bGwsCiAgICAgICJhcHByb3ZlZEZlYXR1cmVzIjogW10sCiAgICAgICJub3RlcyI6IG51bGwsCiAgICAgICJwcm9kdWN0aW9uUmlnaHRzQ29uZmlybWVkIjogbnVsbAogICAgfSwKICAgICJzZWVkLW1hbnRsZSI6IHsKICAgICAgImNob2ljZSI6IG51bGwsCiAgICAgICJhcHByb3ZlZEZlYXR1cmVzIjogW10sCiAgICAgICJub3RlcyI6IG51bGwsCiAgICAgICJwcm9kdWN0aW9uUmlnaHRzQ29uZmlybWVkIjogbnVsbAogICAgfSwKICAgICJraWxuLWNlcmFtaWMiOiB7CiAgICAgICJjaG9pY2UiOiBudWxsLAogICAgICAiYXBwcm92ZWRGZWF0dXJlcyI6IFtdLAogICAgICAibm90ZXMiOiBudWxsLAogICAgICAicHJvZHVjdGlvblJpZ2h0c0NvbmZpcm1lZCI6IG51bGwKICAgIH0sCiAgICAia2l0ZS1mb2xkIjogewogICAgICAiY2hvaWNlIjogbnVsbCwKICAgICAgImFwcHJvdmVkRmVhdHVyZXMiOiBbXSwKICAgICAgIm5vdGVzIjogbnVsbCwKICAgICAgInByb2R1Y3Rpb25SaWdodHNDb25maXJtZWQiOiBudWxsCiAgICB9LAogICAgInNlZWQtdHJheSI6IHsKICAgICAgImNob2ljZSI6IG51bGwsCiAgICAgICJhcHByb3ZlZEZlYXR1cmVzIjogW10sCiAgICAgICJub3RlcyI6IG51bGwsCiAgICAgICJwcm9kdWN0aW9uUmlnaHRzQ29uZmlybWVkIjogbnVsbAogICAgfSwKICAgICJraWxuLWdyaXAiOiB7CiAgICAgICJjaG9pY2UiOiBudWxsLAogICAgICAiYXBwcm92ZWRGZWF0dXJlcyI6IFtdLAogICAgICAibm90ZXMiOiBudWxsLAogICAgICAicHJvZHVjdGlvblJpZ2h0c0NvbmZpcm1lZCI6IG51bGwKICAgIH0sCiAgICAiY29udG91ci1oaWVyYXJjaHkiOiB7CiAgICAgICJjaG9pY2UiOiBudWxsLAogICAgICAiYXBwcm92ZWRGZWF0dXJlcyI6IFtdLAogICAgICAibm90ZXMiOiBudWxsLAogICAgICAicHJvZHVjdGlvblJpZ2h0c0NvbmZpcm1lZCI6IG51bGwKICAgIH0KICB9LAogICJlMTAyQXV0aG9yaXphdGlvbiI6IG51bGwsCiAgIm5vdGVzIjogbnVsbAp9Cg==">Tải phiếu JSON trống</a></p></section>
+</main>
+<script id="pngs" type="application/json">{"64e478de3ce93d57da827f26cfacbcae0e228436268d34d4b407a93d048c202e":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABtUlEQVR4Ae3BwXEcWwhA0Qv1Y2FNAkRPAqxJBnvhhepX2dLMvDetVvc53G632+12uyzhAOYx/NGVwoGENzCP4RNdKRxA2Mg8hid0pfAmwibmMbygK4U3EDYwj2GBrhQ2ExYzj2GhrhQ2EhYyj2GDrhQ2UU7APIZNlJMwj2ED5eKUi1MuTrk45eKExcxj2KArhQ2UE+hKYRNhA/MYFulKYSNlMfMYTkRYxDyGjbpS2EBYwDyGN+hKYTHhReYxvFFXCgspLzCP4Rszj+ETysmYx/AF5jH8Zh7DPwhPMo/hG+hK4X/MY/igK4W/UE7OPIYXKE8wj+EbMY/hD/MYHiA8yDyGk+lK4S+UH64rhX9QLk55UFcKP4jyg3Wl8In/OKmuFPMYPuhK4UHCk8xjOFBXCgsoJ9SVwiLCi8xjeJOuFBYTFjKPYZOuFDZQDtSVwsGUg3WlcCBloa4UTkY5SFcKDzCPYQPl4pSLUxYyj+EJXSl8gXkMiyknYx7DQspBzGN4knkMiyiLmMfwIPMYnmQewwLKxSnfRFcKB1AW6UrhQV0pfNCVwpsJi5nH8EVdKdxut9vtdphfB9aVwd/qhc8AAAAASUVORK5CYII=","34a882b08d9497d4a3ed3c1969777b72cd38231374011b0316be70252dd559fc":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACHklEQVR4Ae3BsXUjVwxA0YdvdeDE2WaI0QB6s2pDA4gRKlKiGuANFPDomBKH/DMkd+ZeDofD4bBjwgNQ8+ZTZQgbEu5EzZsfVIawMmFjat4sVBnCSoQNqXlzpcoQViBsRM2bG1WGMNngiah5M9lgA2rePKjBzg12brBzg5WpefPABjs32LnBE6kMYTJhA2re3KAyhJUMHlxlCCsaPLDKEFYmTKLmzYnKEE6oeXOFyhBWJEyg5s2KKkNYiXAjNW82UBnCCoQbqHmzocoQJhNuoObNHVSGMMngCal58w01bzVvLiBcSc2bO6sM4ZOaN/+jMoRvDP4Aat5cSbiSmjdPojKEMwY7N9gBNW/OGFxBzZs/xGAHKkM4Y/AEKkMqQ1jBYCE1b+6kMoTJhIXUvNlQZQhfqHlXhvBJzZszKkP4xl8soObNxj7e31754uP97ZUTH+9vr3//8+tfvqgM4QfCAmrebKgyhIXUvPmtMoQLCBdS8+YClSH8pubNjSpDWNkLk1SG8IQGE1SGsFBlSGUIdza4gJo3E1WG8KkyhDPUvFnZ4EaVIXyh5s0ClSHcyQs/UPPmRGUIN6gM4YG88IPKECapDOHBDHZu8ADUvLmTwWRq3jyRwc4NJlLz5skMNqTmzUJq3qxImETNmwtVhnBCzZsLVYYwkTCJmjcLVIZwQs2bBSpDmGBwB5Uh3KAyhEkGk1SGcIPKEA6Hw+Fw2NR/46PMiGgGSvIAAAAASUVORK5CYII=","1cff46c22f39177b6934c79a11200d95df8fe6730295b1e26f86ae49bf43645a":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABs0lEQVR4Ae3Bu7EbMQxA0QsWgxgNoHo0gBjNwA4ceDzjp12JXP14Dtu2bdu2bduXEi6m5s0flSE8mXABNW8OqAzhYsJiat6cVBnCRYSF1Ly5U2UIFxAWUfPmQZUhLCYsoObNJJUhLCRMpubNZJUhLDL4coMvN3gDat4sMvhygy83eAOVISwiLKDmzSSVISwkLKLmzYMqQ1hMWEDNmwdVhnABYTI1byapDGExYRI1bxaoDGEh4UFq3lygMoQFhDupeXOxyhAmE+6g5s2TVIYw0eAkNW8+yODNqHkzkXCCmjcvojKECQYHqXnzgQZvqDKESQYHqHnzoYQb1Lx5U5Uh3DD4YGre3CAcoObNG6sM4T8GB1SG8KEGB1WG8IGEk9S8eSOVIfxgcFJlCB9EeJCaNy+sMoQfCBOoefNiKkM4QJhIzZvFKkP4Tc2bv1SGcAdhMjVvDqgMUfPmpMoQJho8QWUIv1WGcEJlCJMNJlLz5obKEF7I4EKVIbyYwZNVhnCQmjeTDb7cYBI1by6g5s1EgwupefNiBhdT8+YflSE8yeAJ1Lx5EYNJKkN4QGUI27Zt23apXyx1mriAr7YLAAAAAElFTkSuQmCC","4cc63d395360e1d761807859075286d1e590e39adb8776ae50654fb33522eeed":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAD2klEQVR4Ae3BsYvbVgDA4d+7OINpMQTV8h0yXBPwgzoYZAjuJLAPunXo0OzdXLKFbpnO0KVD2imDt/wRnX2mGgoeahWDA89LOSJy0tWEcoOXgmq5cVCEk7uLJafQ931omqZpmqZpmqZp/0OCHZC2E7GB8lzBBybIgbSdiBRZNElTi5A05bmCHRJkTNpOxCuyaBI7qoRsMghM0tQiJKY8V7ADggxJ24lYkkWTo0rIWrtl8C7D0Zy1QWCiFiFrynMFORJkRNpOxJIsmhxVQmLtlsFlhqM5mwwCE7UIiSnPFeREkAFpOxFLsmhyVAmJtVsGbzMczbmKQWCiFiEx5bmCHOyREVk0OaqExNotg7ThaE7zwSOaDx7x8OljrkoWTfIkyIC0nejbT1lptwyShqM5D58+JvbTN98RGwQmmxxVQtIGgUlMLUKU5woyJsjAj185Ea+0WwZrw9GctUFgsg21CIkpzxVkqECG2i2DteFoTmwQmFymUw3Z5OS5yZosmqhFSNYKZGg4mpM0CEzSOtWQtGbDYjOftZPnJrJogu1EynMFGSmwJWk7ERsMApO0TjUk1mxYrNXrFm9Tr1tMpz7/8jl5bpK1PbYgbSeSRZNBYJI0CEzSOtWQWLNhEavXLep1i8vU6xZrahGStQIZGgQmm3SqIbFmwyJWr1tcV7NhwcxHea4gQwXek7SdiIRBYLJJpxoSazYsLtN74rLJ/c4d8rLHltQi5G061ZCr6j1x+RBu8J7mZ6c9Y//wmCXj5kekdaoha82GRVK5XCLN/LjA9I+X3O/c4e7tW9y9fYvvf3nBs7/+5mu7TOzLz0r8+vLW8fzstEdGCmRALULSOlxuOvVJut+5Q9LvP3xB0nTqE5O2EynPFWTgBluYn532jP3DYza4Z/DaQaVE0vn5BefnF1zm/PyCcrnEWrlc4vNP4OdnFxj7h8fzs9MeW9rjP2469UkaT3y6NVak7URsSZABaTsRKd0arzUbFtsYT3yS+jNWlOcKtlRgB8YTn2bDYhv9GW9QnivIgCAj0nYiEro13tBsWFyH95vPWnQT+jNWlOcKMnSDjMzPTnvG/uExr9wzeMNZeMFBpcRV7R+U2D8o8eLPC/ozVpTnCjK2R4aU5wreYTzxuY7xxCdve2RMea5gqT9jo/HE5yrGE58k5bmCHAhyIm0nYqlbYyv9GSvKcwU5EORI2k7EUrfGe+nPWFGeK8iJIGfSdiKWujWupT9jRXmuIEeCHZC2E5HQrfFO/RkrynMFORPskLSdiCtSnivYAcEHJm0nIkV5rkDTNE3TNE3TNE3TNE3TcvEPpQBBcxAGs28AAAAASUVORK5CYII=","8f90d13f668b232185e5bb225316f9057cba016dba4ee0de87e39474c2c84657":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC7ElEQVR4Ae3BsWorRxSA4f8Mfod0LscQEIabIiaNH2Ag4CGFa3PThUC6QIpbGDcpg+s8wnTnAdQIqUi1INhTbpenmDjgDULYsmTvjDZov4/JZDKZnDChMh9i5g2mSahEqMiHmNmTaRIqECrxIWaeXc+ueM28WdIzTUJhQgU+xMyz69kVb5k3S3qmSShIKMyHmHl2PbtiX/NmSc80CYU4KrmeXXGI69kVNThOnOPEOQozTcKIOSowTcJIOUZq3iypQajox19/z+xh3izpmSahIEdF82bJvFmyy7xZ0jNNQmFCZT7EzB5Mk1CBY4RMk1CJ48QJlfgQM1vOZxds6pqWnmkSKhAK8iFmNpzPLnhL17T0TJNQmFCADzGz5fbzDb3Fas0uXdPSM01CQcLAfIiZLbefb9i2WK3ZpWtaeqZJKEQYkA8xs+X28w3bFqs1++ialp5pEgpwDMSHmNnDYrVmTBwnzjEAH2KmMB9ipgBHRYvVmrERPsiHmNnhfHbBd99+zb8WqzWv6ZqW9zJNwjs5CuualkOYJuFAPsTMO53xAT7EzB4WqzWHME3CEx9ipjDHgEyTmCbhQF3T8hLTJKZJeINpEt7pjHfyIWY2mCbhmWkSnvgQMzt8/8sPbHq8e+Alpkl44kPMDEz4AB9i5olpEnbwIebz2QWv6ZqWnmkSKhIq8SHm89kFL+malp5pEio6o6Kuafnpz9/Y9Hj3wDGdUYEPMfPs8e6BMXGMjA8xU5HjxDlGyIeYqUQozIeYeYFpEp74EDOvME1CYY4jME3CSDgqM03CBtMkHJGjIB9iZuQcFZkmYWQchfgQMx/kQ8wU5ijAh5jZYpqEEXIcmQ8xc0SOgfkQM/8jZ1RgmoQDtPeX/Of+MsunL0IhwoB8iJkN7f0lm+TTF2GLDzGzJ9MkDEwYiA8xswfTJGzwIWYOYJqEATkq8yFmNpgm4YgcI2CahCMRBuRDzOzBNMkff/+V2fLzV98Ik8lkMplU8w+pKAeyvIruowAAAABJRU5ErkJggg==","6aa53baf8b0d9691c3975ed85c9ce4a43c6d3e428bf18387f288abd0bf5dd45b":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADoklEQVR4Ae3BsWvcVhzA8e+7ig4RnWQyCIoxGOHhQbV6eIM7BuKh2KRkLHTt4K2F0IYO3jr0D+gcKGTw2CFQNHjV8BsO1XAdiqbTUMJLFpHXE1ggDt+ddCe7Q97ng+d5nud5nud5nud5nveRUTyQJDWOHoo8UzwgxT1KUuO49ebVC/r48uufaRR5pngAipElqXF0vHn1gqHOLy6pyppWkWeKe6IYSZIaR0cUB/z+y/fs4vzikqqsaRV5phiZYgRJahy3ojhA65DWj998x7bOLy7pqsqaRpFnipEodpCkxnErigO0DmkcHezR9ezkOUOdX1yySlXWFHmmGIFiS0lqHAtRHNDQOuToYI9Vnp08Z52Xv/3KMhHLKlVZ0yjyTLEDxRaS1LgoDmhoHXJ0sMcuprM5q4hYVqnKmkaRZ4otKQZKUuOiOKBx9nSfXU1nc1YRsWxSlTWNIs8UW1AMkKTGRXFA4+zpPkNMZ3OWffWopuv1u4AuEUtL65AuEUurKmsaRZ4pBpowQBQHNM6e7tPHdDZnOpsznc0ZSsTS0jpkmdYhrSgOaCSpcQwU0FOSGseC1iGbTGdz+nj9LmATrUNW0TpExNKI4oCqrBlqQg9JalwUB2gdcnSwxzrT2ZxdiVgaWodsonVIV5IaxwATeojigE2msznT2ZxdiVgaWof0pXVII4oDGklqHD1N2CBJjWNB65BVprM5YxCx7CqKAxpJahw9TNggigNaRwd7LJvO5qxzenxIHyKWltYhQ2kdsg3FGklqXBQHaB0y1OnxIY2r6xs2EbG0tA7ZhoilUZU1jSLPFD0EjOz0+JDW1fUN64hYxiBi6SryTNFTwBpFnqkE4wSL1iGN0+ND+ri6vmEdEcsyrUOGErG0qrJmqAkbFHmmWBCxiFj6uLq+YRURi4hlDCKWVlXWNIo8Uwyg6On4yYnj1g/ffkHX1fUN64hYNtE6pA8RS6sqa7qKPFMMpBjg+MmJ4x5oHbKOiKVVlTXLijxTbOkTBvjnr79fPgo//+n92w88+mzCWB4//pRVRCxVWfP+7Qfev/3AsiLPFDtQ7CBJjWMhigN2oXXIXf7841/uUuSZYiSKESSpcSxEccA2tA5piFgaVVmzrMgzxT1QjCRJjeNWFAd0VWVNVxQH3KUqa7qKPFPcM8XIktQ4Ooo8U3QkqXF0RHFAoyprWkWeKR6I4n+SpMZxhyLPFB+TJDUuSY3D8zzP8zzP8zzP8zzPexj/AVmlS8NJ+3XhAAAAAElFTkSuQmCC","1b11bfe9b6a24c7d69ba7f08b53d867af01716e44f9ec02c0f981f4bdd4b9de5":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADyElEQVR4Ae3BwWrbZgDA8f+XeWg2g8YEktGQOMFUueow8EmXmD5KIY/RHfwOhj5KUS56AV39GRHLwmUKBFmMSogeNH+lGpqIk9qWs8K+3w9N0zRN0zRN0zRN0zTtf0bwgzItu+Ab6bmCPRH8AEzLLqi5ueAf4xlfSc8VNEzwwkzLLqi5ueBfzk7aVIVRhjKe8ZX0XEFDBC/AtOyCipsLODtps6kwyiiNZyA9V7AjwZ6Zll2wMhq0eU6/1+ExfpBSFUYZyngG0nMFOxDskWnZBSujQZu6fq/DNvwgRQmjDGU8A+m5gi212BPTsgtWRoM2pX6vQ9351SnPmU8W1J2dtAmjjF0J9sC07IKV0aBNqd/rcH51Suno8ph1Hu7uqZtPFpT8IEUJowxlPAPpuYIttGiYadkFK6NBG6Xf63B+dYpydHlM1cPdPevMJwse4wcppbOTNmGUsQtBg0zLLlgZDdoo/V6H86tTlKPLY6oe7u6pmk8WPMcPUurCKEMZz0B6rmBDLRpiWnbBymjQRun3OpxfnaIcXR6jPNzdUzWfLPhefpBSF0YZu/qJhhz91nt/cwGvfv2Zfq/D+dUppWz5mWz5mdJ8siB5+Ivn+EFKnHwhTr5QF0YZVb8fwt0vvfcPf87/YAMtGmBadnFzAWcnbZ4znyxYxw9StjVNcsBgUy1e0HyyoM4PUjYVRhlV0yRnWwc0rN/r8Jj5ZEGdH6RsKowyqqZJjuLEBtJzBRtqsSPTsoubCzg7aVM1nyx4ih+kbCqMMqqmSc6uWjTMD1L6vQ7r+EHKpsIoo26a5DThgAaMZ3Arl5T8IKXOD1L8IGUTYZQRRhl10ySnyokNtnXAjqTnClbevDK4lUtKfpBS8oOUTYVRxmOmSU6VExso0nMFW2jRkPEMhl24lUuuzUMUP0jZVBhl1E2TnMc4sYEiPVewJUFDTMsuWBl2c0rX5iHfK4wy6qZJzjpObKBIzxXsQNAg07KLYTen7to8ZJ0wyqibJjlPcWIDRXquYEctGubEBsNuTtWtXFK6Ng9RwiijaprkfA8nNlCk5woacECDpOcKVt68MljnVi65lUtK0yRnmuQo796+5ilObKBIzxU0pMUejGcw7PKkaZKjvHv7mtKHj59Yx4kNFOm5ggYJ9sC07IKVYTfnKe/evkb58PETj3FigyrpuYKGCfbEtOyClWE3Z1NObFCSnivYI8EemZZdUDHs5jzFiQ0U6bmCFyJ4IaZlF1QMuzmKExuUpOcKXpjgP2BadsE30nMFmqZpmqZpmqZpmqZpL+hvu1x977P4DrAAAAAASUVORK5CYII=","ecfddf52f759cff9e514afa7e09e38d0583e0f130a978eecdcb7a90f88773255":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADo0lEQVR4Ae3BP6rjRgDA4d8QpRaGgLppJDLCMCrcGHyFdDlRcoe9xZ5jBWpcaMBoQGqmUyAYFSnSrOKBJxjM81vbz+8PZL6PKIqiKIqiKIqiKIqi/xvBJ5Tl1UxgHFrBGxF8AllezQTSsuDc1PUsxqEVPIjgg2R5NRNIy4KF1IqQM5bnTF2PNw6t4E6Cd5Ll1UwgLQtCUitu4YwlNHU949AKbiR4Q1lezQTSsiAkteKS3XbNJXVzIOSMxZu6nnFoBTdIeCNZXs2cpGVBSGrFc3bbNdeomwOPlPAGsryaOUnLAk9qxXN22zWhjVyx2Lsj5+rmwKMJHizLq5mTtCzwpFaEdts1oY1csdi7I4u6OXAtZyyLqesZh1ZwpYQHyfJq5klaFnhSK0K77RpvI1eE9u5I3Ry4hzOW1xA8QJZXMydpWbCQWrHYbdds5IpzX75+4x7OWF4ydT3j0AqukPBKWV7NnKRlgSe1YrHbrtnIFee+fP3GPZyxPJrgFbK8mjlJywJPasVit12zkStCe3ekbg5c4ozltaauZxxawZUEd8ryauYkLQs8qRXebrvG28gVi7074tXNgec4Y3mEqesZh1Zwg4Q7ZHk1c5KWBZ7UCm+3XeNt5Apv744s6ubAOWcsjzJ1PfdIuFGWVzMnaVngSa3wdts13kau8PbuyKJuDpxzxnIrqRULZyznxqEV3CjhDmlZ4Emt8HbbNaG9O7KomwMhZyzXklrxHGcsoanrGYdWcIeEG2R5NfNEaoW3264J7d2RRd0cCDlj+RGpFbeYup7XSLhRWhZco24OhJyxvERqxTWcsSymrscbh1Zwp4Q7SK14Sd0cCDljuURqxY84YwlNXc9iHFrBKyRcKcurOS0LQrvtmnN1cyDkjOUSqRXPccYSmrqec+PQCh4g4YHq5sA1pFZc4ozFm7qexTi0gjciuEGWV3NaFkituIYzlnNSKy5xxuJNXc84tIJ3kPBGnLGEpFZc4ozFm7oebxxawTv5iRv8cxz/TL7//Me/32fS7Bee44xl+utvQlIrLnHG4k1djzcOreAdCe7w62+/z5xIrfCcsVwiteISZyze1PWMQyv4AAl3mLqetCxwxvISqRXnnLEspq7HG4dW8EEEd8ryak7LgkukViycsZybuh5vHFrBBxK8QpZXMydpWXCNqesJjUMr+GCCB8jyauYkLQsWU9dzbhxawScjeKAsr2aejEMriKIoiqIoiqIoiqIoij6f/wAbC17uppD6ywAAAABJRU5ErkJggg==","e30e6e2f72b3e95b5ffde0d2cc3334855145f859804188d58baf8d66a62207e7":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADzklEQVR4Ae3BMYvbZgCA4fdzpBw9jU4hMWgIJOK8CQIHGjRbWYS5P5DuHg5E5iPxXFw8ZE//wHFoUqCEggaBQ0GbizoUYnBuiCGLDoxE1XwUgTF39dnWpUO/50FRFEVRFEVRFEVRFEVRFEX5HxF8A5btVtxClsaCb0xwxyzbrcZ9g9s4vci5jSyNBQ0R3BHLdiu+GvcNPN9hkyhMuK3Ti5wsjQUNENwBy3arcd9A8nyHpkRhQu30IidLY8GeBA2ybLfiq3HfwPMdrhOFCZt4vsNNojChdnqRk6WxYA+Chli2W437Bp7vcJMoTJimObWubbCv04ucLI0FO7pHAyzbrcZ9A893uMlPw1/4fFmw6vuH91l1fqUxLVpMixbTosW0aNHV/6L25p3B8ZOCVc+P7vPhy6NXi8uPr9mBYA+W7VbjvoHnO9wkChOmac5NuraBdH6lcZ2TwxLpzTuDVYNezqrTi5wsjQVbuseOLNutxn0Dz3e4SRQmTNOcm3Rtg9q0aHGdadHi/fvvWHf8pGDV86P7fPjy6NXi8uNrttBiB5btVmwQhQnTNKf29MUznr54Rq1rG9TOrzSko8cPOHr8gFWf4gOkty8f8vblQ6RBL6fm+Q61dkfDst2KLWjsqN3RGE6WQILnO1ynaxtM0xzpj59/o9a1Da7z+5+fWfUpPqD2w4+XSINejuT5DquGkyW70NjTcLJkOPmVs+MDPN+h5vkOUZjQtQ2kaZojdW2DVedXGtc5OSx5wwGrBr0cz3eoRWHCcLJkHy32EJg6teFkSRQmrPJ8h1rXNujaButODktODktWnRyWSINejjTo5Qx6OZ7vUIvChOFkiRSYOtJiXrItjT0Fpo40mhUMJ0sgQfJ8B8nzHf5NFCZIJ4cl1xn0cjzfoRaFCcPJEikwddZlaSzYgkZDAlNnNCsYTpb8I8HzHTbxfIfbiMIEaThZIgWmThMEO7Jst2p3NAJTZ91oViCdHR+wiec7bBKFCcPJEikwddaNZgXSYl6SpbFgC4I9WLZbtTsaUmDqrBvNCjY5Oz5gk+FkSWDqrBvNCmqLeYmUpbFgC4I9WbZb8VW7oxGYOtsazQo2CUyddaNZQW0xL5GyNBZsSdAQy3ardkdDCkyduzKaFdQW8xIpS2PBjgQNsmy3anc0aoGp05TRrKC2mJfUsjQW7EFwByzbrdodjdsITJ1NRrOC2mJeImVpLGiA4I5Ytlu1OxpNWcxLpCyNBQ0S3CHLdis2aHc0NlnMS6QsjQUNE/zHLNut2CBLY4GiKIqiKIqiKIqiKIqiNOJvqLxUgUirnvkAAAAASUVORK5CYII=","e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAF80lEQVR4Ae3BzWsb6QHA4d8rCQ1Z2+v6C3/BmGbwjCMiMxDRS3egYFJwe+juoduLr7kVcigYH6U/Yc/9B7anhkJxaK3TuKcIM0hEtsZoF16qRbQdKamSNHKSzvoFDwhjb2xJlm1Wz8PQ0NDQ0NDQ0NDQ0NCPkaAPTNsJOeF7ruAWEfTAtJ2QM/ieK7gg03ZCjvmeK7gGgi6ZthNyTDcsOslqBcX3XMFHmLYT0sH3XMGAxeiBblgom1sbbG5toOiGhWLaTsgF6IaFblhclzhdMG0n1A0LZXNrg8jPP1vlH7tFxienedkMmJpbygZ1meMMpu2EHBufnEYZn5wmoY1kg7rMMUAxepDOpDhtc2sDRTcsFNN2Qs6hGxZKOpNC0Q0L03ZCBihGj7Z39lC2d/aIbG5toOiGhWLaTkgH03ZCTqQzKa5TjD7Y3tlD2d7ZI7K5tYGiGxaKaTshx0zbCTmRzqToJKsVfM8VDFCMSzJtJ+QHbO/soWzv7JHOpFB0w0IxbSfkhG5Y3AQxrsD2zh6RdCaFohsWim5Y6IZFOpMiUiqUuS4xBiCdSaHohkU6kyKdSREpFcooslrB91zBgCUYkHQmxXlktcJ1iXFJvucK+qRUKCOrFRTfcwUXZNpOaNpOSB8IumDaTsgx3bBIZ1J0o1QoI6sVOvmeKziHaTshJ9Ym2ij5pobvuYIeCLpk2k6oGxbpTIqLKhXKRGS1QmRtok0k39TwPVdwzLSdkA5rE22Uw8lVlOVGkXxTw/dcQZcEPTBtJ9QNi3QmxUWUCmVktUJkbaLNWfJNjcjaRBvlcHKVSDqTQikVyiw3iuSbGr7nCroQpwdBXeYS2ki2/TZkdmGGj5ldmOHw+QHK2kQb5dHDBR4YYzwwxtj7poVy984H7t75wN07H1AOJ1dJZ1LMLswwuzBDZHZhhv1mjJfNgKAuc3QhTo+CuswltJFs+23I7MIMH3P4/IC1iTaPHi7wxa9WGJ/+lPHpT3kZtHhgjLH3TYtOh5OrpDMpzvOv7/7N+OQ0CW0kG9RljktK0Ae+5wog5BzpTIpOjx4uoFuLRGSlRjdKhTLKcqOIRKMbMfrE91whqxVktYKsVuhUKpRR/vqnP/P1l1Po1iIRWakR+ePfv+OiSoUy/SC4IqbthJzQDQtZrfD1l1Po1iKKrNTotFtu0Wm/1kI5nFxFSWdSKKVCmU7LjSL5pobvuYIuCAbAtJ3w9/eTfJYaQ9ktt7iov/zvp5xnuVEk39TwPVfQpRgDtltucRnLjSJnWW4UyTc1ehVjgHbLLS7r3uIYy40ikeVGEVmtkG9qKL7nCnqQYED2ay3uLY4Ref/qCCUxmuSH7NdaKMuNIvmmhkRD8T1X0AcJrsH7V0f84mdTdNottzhtv9Yikm9qKL7nCvooxg3x/tURnfZrLSL5pobie66gzwQDYtpOuDbR5t7iGO9fHXGexGgSZb/WQsk3NRTfcwVXIM6ABHWZ++9P7mbH3r1hdvoT/n/0gdMSo0mU/VqLyLdvE/ieK7giMQYs39TYr7VIjCaJJEaTJEaTnJZvavz6d19g2k7IFYkzQEFd5qbmlrLfvk0w9u4NjfYHZqc/IbJfa/Gf1hGR1G9+i2Lev0cjeJMN6jJHnwmugWk7IR3WJtp0yjc1dMPiD+l/0unxk9covucK+kRwzUzbCenge64wbSf86vMRzvL4yWsU33MFfSC4oUzbCb/6fISzPH7yGsX3XEGP4txQQV3mnr2Yz66vJDltfSXJ04N3TM0tZYO6zNGDODdYUJe5Zy/ms+srSU5bX0ny9OAdU3NL2aAuc3Qpzg0X1GXu2Yv57PpKktPWV5I8PXjH1NxSNqjLHF2IcwsEdZl79mI+u76SpNPftF9i3r/H4fMDpuaWskFd5rikOLdEUJe5Zy/ms+srSSLVhIHSfhvyshkwNbeUDeoyxyUIbhnTdkLdsDiLrFbwPVdwCTFuGd9zhaxWOE1WK3Qjzi0U1GUuoY1kxyenUWS1guJ7ruDHxLSd0LSdkKGhoaGhoaGhLnwPHvMxjQaLscMAAAAASUVORK5CYII=","2711637628493104fd299742ae1490f2548167ac9a43f1288fe7a9b2de9dda18":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADfElEQVR4Ae3BsWrjSACA4X8cB1IcDATBdGokkM4gtQZ32SdJdVy/L2A/wPVb+knuSCOiLkggJJA4UCdzPqPCRRrrInYNJsRZ25rsFjffh2EYhmEYhmEYhmEYxv+N4AdQTtgxQFMlgg8i+CDKCTsOSN/lEm1e0muqRPABBJopJ+z4RvouOrR5yV5TJQKNBBopJ+x4IX2XQ3bgcY46LXhLm5fsNVUi0ECgiXLCjhfSd+nZgcdrs+mE74nijF6dFhzT5iW9pkoEA43QSPouPTvw2JtNJ8ymE2bTCaeYTSf07MDjGOm79JQTdgw0RgPlhB3f2IHH3mw64RxRnLG8v+O3XxVf3XHo0+cv7Enfpc1LhhIMpJyw44X0XXp24NGbTSecIoozesv7O0716fMXem1e0lSJYIARGkjfpWcHHr3ZdML3RHFGFGf0lvd3nOPPP35HlxEDKCfs+MYOPHqz6YT3RHFGFGfoIH0X5YQdA4wZSPoue7PphPdEccZQi+UTD+kjuozQwA483hPFGVGcccz98i9OsVg+oduICykn7DhBFGecYrF8YrF84pjF8oneQ/rIXpuXNFUiGGDMANJ32ZtNJ7wWxRnnWiyfOOYhfWSvzUuaKhEMNGIgO/B4SxRnnONvNrznIX1kr81LmioRaDBGsyjOOFedFvRqvq/NS5oqEWgyRpMozrhEnRa8xw489uq0QLcrLqCcsJO+ix14DFGnBa/ZgYdUFlJZSGVxSCqL513HeHc9326aBRqM+UnqtOCQHXj8DFdc4JdbNb+xbmlXa6SyOEedFrSrNXt24CGVxamksnjedYx31/Ptplkw0BUX2G6axXh3Pb+xbmlXa6SyOEWdFvTswEMqC6ksLiGVxfOuY7y7nm83zYIBrrjQdtMsxrvr+Y11S7ta067WSGVxqE4L2tWadrVGKgupLKSyGKpOC3rP//zLdtMsGGCMRnVa8BY78NClTgt6bV7SVIlgoCsG2G6axXh3Pb+xbjnGDjx0qdOCXpuXNFUi0GCEBm1e8hY78NClTgt6bV6ik0AD5YQdL6Tv8podeAxVpwW9Ni/pNVUi0ESgiXLCjhfSdznGDjxOVacFh9q8pNdUiUAjgUbKCTsOSN9lqDYv2WuqRKCZ4IMoJ+w4IH2Xc7V5Sa+pEsEHEfwAygk7LtRUicAwDMMwDMMwDMMwDMPQ5z87X0AdkV0kzgAAAABJRU5ErkJggg==","a6944c4714dfe41a32ac956a8a8cb992430c69b570eaf2d1f5d9080d856d7c3b":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACOklEQVR4Ae3Bu5EbQQxAwYepiwIWYkD+MSAGWEgDokFDBo/arZ39iezm6+uzCRdSGc1f1FzYmXCyymjeUHNhR8KJKqNZSM2FHQgnqYxmJTUXJhvcSGU0kw0+nHCSymg2UHNhAuEEldFMoubCBoObq4xmg8GHE05SGc0Eai5s8MPNqLkw0eBG1FyYbHAjldFMNriZymgmGnw44USV0ayk5sJEwkkqo1lJzYXJhBNURrOCmgs7GRysMpoLGdxAZTQ7EQ5UGc0Gai5MNjhIZTQXNLiRymgmEw5QGc1Eai5MIuysMpodqLkwweCmKqOZ4IeVKqN5UnPhjcpoLk5YqDKaF9RceKEymoOpubCSsEBlNC+oufBCZTQnUnNhocE/VEbzgpoLL1RGM5maCytURrPQYCU1Fx4qoyujOYiai5oLkw1WqozmL5XRPFVGszM1FyYaTFAZzY4qo9mJsEBlNBeg5sJDZTRPai48VUbzpObCAoMF1Fz4TwkrVEazkppLZTQnUXPhDWGDymjeUHPhqTKak6i58IvBBmouvFEZzcUNNlJz4cZ+mEDNhafKaJ7UXLi4wWRqLjyoubCCmgsnGOxAzYUV1Fx4UHPhYIOLUXPhQc2FCdRceGNwQWouTKDmwj8MLqoymg3UXFhg8B9Sc2GhHy6oMppfqLkw0eDDDW6mMpqJBhdQGV0ZzUKV0UwyuJDKaBaqjGYC4SCV0Uyk5sIEg4tRc1Fz4Q01FyYRDlQZzRtqLnx9fX19fR3mD/OU5GMTmMTQAAAAAElFTkSuQmCC","9bc32961bafa439238ccbe5192c1a9e6ffd948be039a6acfdefe8ec5debdf294":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAADW0lEQVR4AcXBT2hbdQDA8e97fQOjrcEWY1ZrwOT9HNhiE/ghaEmg2kFuwiB4EFH0EHba0Qo7pKAV8eilXry4kx68lk4JmDXk8CArmEHzkhbTmtSWvRIs1Lluz/5WHzxK/rVO/Xw0zsAU0s1k03RTre+w9sNtlJptaQxgiAGZQrqZbJpe7u4fEI6GCUfD3G/rOcdpLtCHzr9kei6OKaRLHwaPQbW+w3kZ/EPV+g7dTM/FOeZyrGZbGh1oDMAU0p2ei3Me1WoD5bDhoNRsS8NH5z8SiIwSiIxiCunio/M/G2IAjtNcuN/Wc+FomLPaLm9y1D7kqH3IUfuQmm1p+BicwauHv6Lc2HqA3/cfSC5GLuJpNVqkcysoNdvS6MHgDEp39lFMTnxx7Q385q7eQPnm4zdRaral0YfOOb0tX6Cbdz/7kbWv38MU0qWPIQY0Ojaeey6g45kaDzIeGcMzEhzh8ivPciUZ5UoyykhwhKtvxfn21l7OcZoLdKHzmLQaLU5rNVr0M8SAHKe5cPRkOOe6Gh++FkFpbjmMR8bo5KB9QDq3Qs22NHowGJAppMuxa6kI3VirNsr1m5soNdvS6ENjAKaQbiab5ruvllE+ufwifnJG4EnnVqjZlsaADPowhXQz2TRKJpvmkY11/KxVGzkjsFZtzkrnjKY31unEWrX5vPoAxRTSZUBD9GAK6WayafzC+3dR5IxgPDJGc8tB+XS9zUP+5EIwwIVggKeNZ3KO01ygD4MuTCHdTDaNEkukqJd/YnpjHc9Ht3Y5EeREm/PQ6SGWSBFLpFB+uzfGyvOvsxa9xFr0Er3c+8NAD4UwhXTpQ6cDU0h3fmkRT7FUYVCGNsxTgSdQ9FAIU0iXHnROMYV055cW8RRLFTzlfIHl5TsoL8XCnGZow3hiU3EUPRTCFNKlC50eiqUKnnK+gJJOv0wnhjbMabGpOIoeCmEK6dKBjo8ppDu/tIhSLFXwlPMFPNX6Dkq1voMnODGJX2I2iSc2FacXjb+ZQrrzS4soxVIFTzlfwJOYTdLeruAXnJhEKecLeBKzSZRWYw9P/efbPNzdxa9mW5rGMVNId35pkWKpgl85X8CTmE3iaW9X8AQnJlHK+QKe339pkHr/HZRWY48vUzxirdr4Xb+5yV+QpiYaXte9uAAAAABJRU5ErkJggg==","69f25c4e727b6ac61baa4c65f924019075fe7a5a4e5b66ac3e7766b5bdc487d0":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB/0lEQVR4Ae3BwW0cSQxA0c/yRMETY2BSvi6wCawCEKCrkmIMPDENWkdBsOWZnarpbky/x+l0emrCjlRG84maC4sJG6uM5htqLiwkbKgymiupubDA4CAqo1lg8OQGB1IZzWTCRiqjuYOaCxMIG6mMZgI1F+4weHLChiqjuZGaCxNdOAg1FxYYPLnBQVRGs8DgQCqjmWzw5ISNVUZzJTUXJrtwAGouLDLYSGU0H9Rc+IaaCwsJG6iM5kpqLiw0eHLCg1VG8z+oubDA4IEqo9mZwUFURrOA8CCV0Uyg5sJEwgNURjORmguTDA6oMppJBotVRrNjwkKV0Syk5sKdhEUqo5lEzaUymr9Qc+FGP1igMppJ1Fz48Pr2/vL69v7y7z8//+MPXt/eX7jR4GDUXPiDymhuNJisMprfUHNhEjUXNRe+UHPhRhceQM2FBdRcuNNg5yqjK6NZ5MKdKqP5hpoLHyqj2aHBQmouTFIZzQKDO6m58BtqLnyi5sIODRZQc2GBymgmuzCBmgsHNdgBNRc1FzYw2BE1F/6iMpqJBhtTc+ETNRc+qLmoubDYYIfUXHiQwcGouTDRYMcqo1ls8OQGO1UZzRdqLkw2eHKDA6mMZrLBxiqjuUFlNBMNdqAyujKaK1VGM8lgRyqjuYKaC5MID1QZzTfUXDidTqfT6fQovwA3JrWxU8Fe3AAAAABJRU5ErkJggg==","2c860a773c39f94719993cc317f163f38bc66e29d659c9c29f408fc3a743a31e":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADS0lEQVR4Ae3BQUhbZwDA8f+LObRjFOkStofba2H02U2Gq0zcwGgFLwa8pEMQdrIHQXqRURBLoUXqxcMusuFAxmBsIJodMl4oRGIqDMtY4qbB17iABiEZqcVe9CRv/WAPHsGszn0vPez7/VAURVEURVEURVEURVH+ZzRegYHRSYeXSM5NazSAhmSL4xEHj0+/WNV4YWB00uGMknPTGj7RkGhxPOLgkTdHENbWtzmL7wb+5LPkm7iSc9MakmlItDgecfp6TYTZcjdeLWYLtZYWVqjn5mur9PWaCOlMgfnDCEJyblpDoiYkGvrk0r2d3X12dvf5+qctnnOOXx4+xP5tg5Z3LnPhjQt4vd92ma38Dif5vP8crp3dfZL2Ea9fDHHlo8i9P35dvY8kASTKmyMI84cR9PZObgxd59aD2wg/fvs9s3dmqEc3wuhGGN0IoxthXOlMgfnDCEKlaFMp2gyMTjpIEkSS+1994/BC3hyB9W1uDF2nnp/X8rh0I0yt6NM4YFJPpWgjSwAJhsemHP7BrQe3cc3emeG00pkCgm6E8UsASXq6WunpauU0sgkLr2zCIpuwcPX1mqQzBRohiM+WFlYQOgajZBMWrmzColY2YbE8YZDOFHBZoRi59Cp+CeKTpYUVXLoRRugYjJJNWNSzPGHgZYVi+C2ADz7+8Ar1dAxGOcnyhIGQzhQQrFCMRgjik+am8xwcHyGUS1V0I4yrYzCK10zbJkI6U0CwQjEaJYCPmpvO8zIzbZsI6UyB08ql4hqSBJHk0eMn/FszbZsI6UwBlxWK4VUuVfHKpeIaEgWRYCv7iK0sJ9LbOzlJ9GkcMJktd4PZjbD77ACvcqlKpWjjyqXiGpIF8JHe3omrXKpS63fjJj1drfR0tSJcutiMq1yqUinauHKpuIYPgkjwXkcPVz94G5e9sYdwcHxEPXlzBB4/wWttfRtXpWjTCAEksTf2EOyNPeopl6qUS1WE3WcH1FMp2jSKhiTDY1MONQ6OjxAqRRuvt969Sq1K0aaeXCqu4RMNiYbHphxq2IUc/1UuFdfwiYYPhsemHP72w5d3tWv9MYczyKXiGj7TeEWu9cccTpBLxTUURVEURVEURVEURVEURVEURfHDX6HtFTIY2AyrAAAAAElFTkSuQmCC","b9d098b0ccee6d86a639724f6646bd8ab0ae71ca18f0e32a6c5de54aa352276a":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAYAAADfcP5FAAADGUlEQVR4Ac3BQWhbZQDA8f8XAxY9rFo6hc0x1vfZ0qIu8JWNSgudDDs97CCiMAp6GDv01lM8KHrJSXMQCgEvQk/Ok4dNVLZAg49X+iBqeGHdezGuLaMOtpe5SweZn/10nzxiYtMVY38/QY84Uuk3L8xgDGWmqJWXeOnnVawv9QGMND00lJnC+vX+AN8emuCZx2/zp9omRooecKTS2UIOy/UCOhH8xxypdLaQw3K9AKtcLGHMzIxiXK9tkqKHXC/AKhdLGDMzoyQJdsmRSvNQFPqCf+FIpbOFHIbrBVjlYgnrmHya54ee5XptE0PQJUcqzbbZ+TmsxfwCUegL2nCk0tlCDsP1AqxysYSVmZ7k7kZAkqALjlR6dn6OpMX8AlHoC9pwpNLZQg7XC0gqF0tYmelJrLsbAVaaHThS6dn5OazF/AJGFPqCNhypdLaQI6lcLGFlpidpdeDwGCtXv2b81BlS7MJifoEo9AXbHKm0I5WmA9cLaJWZnqST8VNnMNJ0YerEMEvLqxiOVHr89FkSNAnZQo6kcrGEce/GGsbEyTHacb0AI02Xpk4Mw/wci/kFjJEXDnOtssH46bNs+ZcwKnGTS+99gHFwQPOXQ9y7sYYxcXKMnQi64EilP/viU4yl5VWS+pYvMnK0H+Pzy3WMgwOapCvRA4xsIYe18vH7tPMYXbhz5+ZH31/98cP+I8dI6lu+yMjRfqzj8il+CBs8+QR/u3VbcGvrd7KFHEk33SLtCHbBkUqT8Mk5iXHtlwZJXjXGqsRNjGwhRyvXC2gleESOVPr8y4O041VjjErcJAp9wTZHKj31zjl2kmIPvGpMK68aY/Sp12k1uNWkVSOo0wjqWCkeURT6ohI38aoxXjXGq8Z41Rjj+LsX6GRwq4nRCOo0gjpWI6hjpNmDKPQFUmla9FU2WPnuK6LQF7TRCOok/bTiYrwIpNmjKPQF/6Sj0Be0CGvryKHnSFpbrWJEoS8ALegRRyr9xttvYVy5/A1HhkdZW63S+K1BFPqCh1L0WFhb55XXXqWTFP+DsLZOJyn2mRT7TIp95g8GYS/oBnb/OwAAAABJRU5ErkJggg==","38ad929ee46229c2c42e11c006e0552b3d7c46e41d95532e74f61b3c8aeb3350":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC10lEQVR4Ae3BsWsbVxzA8e+TBDGkkzMUyuFRnIZrgrxkkiNEPBfqRdBOERr0DySLJmVIl3rTIJTBBKKhdpIhQ6g5hM5DvEg1eJA58KIaYw/WZIE1hFc/mgNhlEay1KdCf58PQggh/scU/xH5UkVzQ6NaVvzLEixQvlTRfFYs5BhDM6JRLSvmTLEA+VJFc61YyDGpWt3HaFTLijlSWJYvVTTXioUc06rVfSKNalkxBwqL8qWK5lqxkGOcWt3H9Rz+ydHhCZFGtayYUQzLioUcN9XqPrW6j+s5fI3rObieg5EvVTQzimFJvlTRxUKOm2p1H8P1HKbheg7zEGOBanUfw/UcFiXGgrmew225nkO+VNHMIIYlxUKOUbW6j+s5GEeHJ9zG263XzCqBBflSRTPG0eEJhus5RLa3G0wiPtAY3U7ALBJYcvHqKca9n39hlOs5RLa3G3yzdIdH2ftEwuMzjNPeOZHLqyGf7iriA82sYljw453fya4lya4l+b73klFvt15jfHj/hmRyhUfZ+0TC4zNOe+ec9s6JXF4NiXy6q5hVAkuWVzMY/XbAxaunwDrdToDx4f0bvlv5FiM8PiMMe0zjwcPH+mB/V3ELCSzptwO+5PJqSCQMe9iUwJJmK+RL4gNNGPZYhBgLlEpniMQHmmnFBxrjYH9XcUsxLNjY3FN8tjNcZ2e4TiSVzhCJDzTxgWYS8YFmHhJY8vzjEn8LMFLpDJFUOoPR7QQY8YHGlgSW+c9WyL3o0e0EjJNKZzC6nYBJHOzvKmagsOjBw8f6j99+ot8OiORe9JiU/2yFZivEeP5xiYP9XcWMFJbpP7c0I/rtgEk0WyGjNjb3FHOQwLJ+O2B5NUNkeTXD1+z8WmfUxuaeYk4UC3Dx7oleXs0wTr8dMKrZChm1sbmnmCPFgly8e6KZQLMVYmTXktz74aVCCCGEEEIIIYQQQgghhBBCCCGEEEJM5y+0VOkePYGYMgAAAABJRU5ErkJggg==","265c25bbec21630fe0b346a3fa296a4d53ee69c40d15a8c5ad8f65921e83fe54":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAEBUlEQVR4Aa3BX2gTdwDA8e81B1Z0smnFPw19WP5wxQU1JmyDGVtifBgbYQY6GMjAhT71aVAsuAcFAxvCXtanUiciKEhrkYnIJJxJWRtomrrV0HIXEYJU3dZUZjPbh3Lrb+Y3jpC2Sefno7BJbk/AokrBzCo0SKEBbk/AoiIYiVJt4t4t7ApmVmEDKnVwewIWq4KRKFJ3PEwdrIKZVViHwgbcnoAVjEQRuuNh6jUwmESYuHcLoWBmFWpwsA63J2AFI1GE7niYRhzxv8tk7jGtLo1Wl8bSi5fnSqW581RRWIPbE7CCkShCdzxMLQODSTSfk/XMTj9Bmrh3i4KZVbBxsIadu/afa3VpdMfDVBsYTDKZe4zmc7KRlj07aNmzgz9//4tWl8bSi5fnSqW581Q0UYPbE7CCkSjd8TDVBgaTCJrPSSM0n5NammjAwGASQfM5eVOaaJDmc7JZms9JMBLF7QlYVDSxhu54GLuBwSSaz4kwO/2EzRi5co1qKlXcnoAVjESpZXb6CYLmcyINDV2nHo6yhTCTS2Onsob5q2cQdp36DjvN50QaGrrO9uYtdHQeRDIePUOYKz5HWlxaZmWbgqNsUU11ewIWVWJbfqbzmJd/FS/xW9tXSCNXrvHZl19w9/ZNvN42vK69SMajZ8wVn2O3uLSMtLJNwVG2sFO//WQrdn23XyHsPBJCKE2mmb96BjjBTC6NcPf2Tfa37UEwHj3DMIo0Yvuud3ATsApmVlGxyXtPc+prwPiR0mSatSwuLSMZRpH/Q+085kXof/oRdnrKYC2OsoVhFHkTVD1lIIyMF9l3MMjTXyc48CE1tftDzOTSCI6yxco2hUY4yhbC4vwCBTOrsKqJVZf+Psq+g0FiXR30JHq5MN6MNLx8guHlE0jt/hCSo2zhKFvUw1G2qEXNe0/DA5NYVwd2F8abeS2N0O4PIbX7QwgzuTSCo2yxWSo19CR66T97ESHZ18bIW5/Tf/YitbT7QwgzuTT1WJxfoGBmFSpU1tGT6GWE1/yffoyQ++kOdjO5NGtJ9rWhpwyEC+PNLM4vUDCzCjYqVYZv3EfoSfQijWXySMm+Nuqhpwz0lIG0OL9AwcwqVFGpGL5xHynW1YE0lskjTemjHNchdznKeoa/H8QuMb0bKFKLyqoPDnnIPDCpNpbJI03powi5y1HsSpNp7PSUgV1iejfrUal427GVFyuviHV1IIxl8khT+ihSaTJNPTqPeTnev8BGVGxiXR0IY5k80pQ+inS48yjwEEFPGUh3Wk7yn5b3mNJHSUwvIO11aZRfLeEmYGFTMLOKSkU49j5jmTx2U/oo0uHOo1w88BBBTxlId1pOYve0+Ad2e10aP4SA0CGyv5jYfQPWP2aldM2LCN4FAAAAAElFTkSuQmCC","78082269b5a53205258b1fecfea1847d1c9af2eb94bbe292387894e15ac8e26b":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB+UlEQVR4Ae3By5HiUAxA0atXRKGVYlD+MSgGrZSGZha9oKjm0/hhjPE5HA6HwzcTNqIymgtqLryY8EaV0fyBmguTCW9QGc2T1FyYSFhZZTQTqLkwgbCiymgmUnNhIWElldG8gJoLCww+XGU0CwxWUBnNRg2+3GAHKqN50uDLDV6sMpoNG3y5E5NVRvNBhIkqo3kjNRf+aDBJZTQfaPDlBjuh5sITBl9uMEFlNB9KWKgymjdTc+FJgw+n5sICgw+m5sJCJ66ojOYXai7syOAXldFcURnNjgwuVEZzR2U0OyGcqYzmD9RcKqPZCDUX/kg4UxnNDqi58KDBDlVG86DBHWouai5sgJoLkw0epObCBqi5MNHgjJoLFyqj+aHmoubCjgwuqLlwRs2FC2oubISai5qLmgtPOPELNRe+hPCkymg+gJoLNwxeTM2FN6qM5obBi1VGq7mwUYMnqbmwA4MF1Fy4Q82FDTuxkJoLZyqj+aHmwoPUXCqjWZmwksporlBz4UdlNJOpuXDFYGPUXPhPzYUJ1Fy4YbBBai5MoObCHYONqoxmATUXHjDYITUXHnRigyqjuULNhYkGX27wYSqjmWiwAZXRldE8qDKaSQYbUhnNgyqjmUBYSWU0E6m5MMFgY9Rc1Fy4Qc2FSYQVVUZzg5oLh8PhcDis5h+hg62DpqKU5AAAAABJRU5ErkJggg==","c4b6f8d144ad7286f4aedf36d378fbd05be4b4ed7a2ed40b354072de35da85af":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABp0lEQVR4Ae3BMYvTYBwH4N8/nUIPSnUQIZNS6GDAwaOzV5eCg2tGobSY7xBMyHeINAQcM99wLQjhDifD0e0WoWTrUIS76XB8zQvpUno6XIam/p4HRERERERERERERERERET/A8EDHDdU2CONPMEREezhuKGajIfYFScZtDTyBEdCsMNxQzUZD6HFSQZtMh5iK04yaGnkCY6AgQfESYatOMkQJxm0yXgIzXFDhSNg4B/SyJM08gSlOMmg9W0LmuOGCg1n4C/SyBNU0sgTlL7nP6H1bQua44YKDWZgjzjJsE8aefL500dBpW9b0Bw3VGioFnbcXF8G9umZj5J9eubfXF8G2HF1cR68ff/BR+kdfuBV+xc6ZttfrtYBGkbwCMGXr+r15hu25nmB2SIXNEgLj3B1cR50zLbfs7rQelYXHbPtL1frAA1hoAbzvMA8L7A1HQ0UGkJQg+looFB58ewJtGJzi9kiFxy4FmqwXK2DNz3LR+nu/je6Jya6JyZePn/qL1frAAfMQE1mi1xQKTa3aApBzaajgUJltsgFRERERERERERERAfkDwv6eqZ56F4vAAAAAElFTkSuQmCC","eee5cb4df75b320834307088444152e9b5face00c78827bf06d3ff902b71e616":"data:image/png;base64,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","25a4d392f2518e035feb889bc5321ace46ab7da54ac9b6f78e6cb6725fbf7ec0":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAtElEQVR4Ae3BOQ7CQBREwdcj7n/lTwcEBCBgPIstuoqIiIiIiIiIiIiIiIg4sXpgALFZGQ8y3ijjBRkHiI3KeEGGlfEFGZ3EJmUMJKNDY4MyTkIsVsYkMn7U+HONhco4GbFIGRPJ6CAWKGMiGZ0af65xcTIOuHFRMga4cTEyBmpciIzBxCJlHCBjArFQGR1kTNI4ORkTicXK+JKMycQGZXwgYwGxWRlPZERERERERERERExzB9rqRCbEJQ4HAAAAAElFTkSuQmCC","bf28ea23f8a819159735619c694cf7789d2a2bd35a0edd618e74190996ddb2b3":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAOklEQVR4Ae3BsQEAEBAEsPP774wBdCo+SQAAAAAAAAA6GHnA3HIwtlyqNFdprtJcBQAAAAAAAAC+twBiLAQKJZFnCQAAAABJRU5ErkJggg==","db9a11900947762dc54e47fb058444638eb28ffddda635943c70f86830f4c0a8":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC20lEQVR4Ae3BQWvbZhzA4d+bCAu6uJkdQ0cMGduwspjFCGZ2mmBgctltl36D3PYhks/RL9DzbqPoJMN2CEPIYBOFrWBQCNsisSl0lZtO6wsViJCMxonlHv7PgxBCCCGEEEIIIYQQQgghhHiPWbaTW7aTcw8US2bZTs5boe8pbmDZTs5bg0aG5iYmoe8p7kCxRJbt5LwxaGQU3MQk9D3FG5bt5JQMGhnaSbOH1okD3MQk9D3FnBRLYtlOPmhkXMdNTAqDRoZ20uxR2O130UZHYzpxgJuYhL6nmIPBEli2kw8aGdr+3iaFJ89O0QaNjLKTZo/dfperdvtdRkdAcsy8VqmYZTv5oJGxv7fJd99+znrrIeuth/x1nvLlZ3V++S2l7KTZY7ff5Sa/n/7BerOFYX5wcH42PeSWVliC/b1NtrbbFKbHEfMYHY3ROnHAvFaokGU7+dPHG2xttylMjyMKT56d8q5GR2Pug6Iilu3kTx9vsLXdRpseR5QNxyllkyhFO2n20Hb7XbTR0ZiyThzgJiah7ynmoKiAZTv591/U+LpbRxuOU97VD/98wk06cYCbmIS+p5jTChUbjlNuoxMHXKcTB7iJyV2tUKHhOOW2dtp1OnFAoRMHTH89xk1MtND3FHdgUJFJlLLTrlO4vJihGWs1/s8kStE6cYCbmEwx0ULfU9wDgyW4vJjxzVcblA3HKVdNopSCm5hooe8p7tEK74nLixllkyil4CYmWuh7inumqIhlO/mgkbHTrnN5MeMmxloNbRKlaG5iooW+p1iAVSpyfjY9/PvDTw/qr17wqPWAf2evucpYq6FNopTC85cGoe8pFsSgYm5iAik77TqXFzM0Y63GddzEJPQ9xQKtUqHzs+nhxkcfHzx/aVB/9YI4e82j1gMKkyjlz3RG4ceff1IsmGIJLNvJKRk0MsrcxCT0PUUFFEtm2U5OSeh7CiGEEEIIIYQQQgghFuY/bSEFFgI9BAkAAAAASUVORK5CYII=","59becb34f8883204fb04bf63a8cfe16ce2666cf90ae503f908376f5f379ae623":"data:image/png;base64,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":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC5ElEQVR4Ae3BwWvbZhjA4d/nCAu6uJkdQ0cMGduwspTNCDZ2mmBgctltl55yzW3nkGNyK/0Xeu2h591G0UmG7hCGcMAm8taCQVnYFolNoavcdFo/qEAUZzROIvfwPg9CCCGEEEIIIYQQQgghhBDiHWbZTmbZTsYVUMyZZTsZrwW+pziHZTsZr3XrKZobmwS+p7gExRxZtpPxSreeknNjk8D3FK9YtpNR0K2naKNGB60d9XFjk8D3FDNSzIllO1m3njKNG5vkuvUUbdTokPv8y9toB/sD2lEfNzYJfE8xA4M5sGwn69ZTtK2NFXL3Hx2hdespRaNGh+2dTaY52AfiQ2a1QMks28m69ZStjRW++/ZTlpo3WWre5K+ThC8+qfHzk4SiUaPD9s4m0/zy5Dd+P/qDpUYTw3xv9+R4vMcFVZiDrY0VVtda5MaHIbM42B+gtaM+s6pQIst2sod3lllda5EbH4bk7j864m3du/uAq6AoiWU72cM7y6yutdDGhyFFvUFC0TBM0EaNDtr2zibavbsPKGpHfdzYJPA9xQwUJbBsJ/v+sypf366h9QYJb+uHfz7iPO2ojxubBL6nmFGFkvUGCRfRjvpM0476uLHJZVUoUW+QcFHrrRrtqE+uHfUZ/3qIG5toge8pLsGgJMMwYb1VI3d2OkEzFqv8n2GYoLWjPm5sMsZEC3xPcQUM5uDsdMI3Xy1T1BskvGkYJuTc2EQLfE9xhSq8I85OJxQNw4ScG5toge8prpiiJJbtZN16ynqrxtnphPMYi1W0YZigubGJFvie4hosUJKT4/He3+9/vFt78YxbzRv8O3nJm4zFKtowTMg9fW4Q+J7imhiUzI1NIGG9VePsdIJmLFaZxo1NAt9TXKMFSnRyPN5b/uDD3afPDWovnhGlL7nVvEFuGCb8mUzI/fjTY8U1U8yBZTsZBd16SpEbmwS+pyiBYs4s28koCHxPIYQQQgghhBBCCCHEtfkP2oAH6+/Oqo4AAAAASUVORK5CYII=","104b49584bc5f447820591517984524be065018b004b53c3aabebb80622e000e":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAUElEQVR4Ae3BsQ3EMAwEsJNHyoKBF/RKSv/dI0hhmGQAAAAAAAAATlDZRK/Z+VHXXXlpZAO9ZucjI4cb2VRdd+UkvWb3mh0AAAAAAAAA+NsDkqEOov4hkMMAAAAASUVORK5CYII="}</script>
+<script id="extents" type="application/json">{"64e478de3ce93d57da827f26cfacbcae0e228436268d34d4b407a93d048c202e":[64,64],"34a882b08d9497d4a3ed3c1969777b72cd38231374011b0316be70252dd559fc":[64,64],"1cff46c22f39177b6934c79a11200d95df8fe6730295b1e26f86ae49bf43645a":[64,64],"4cc63d395360e1d761807859075286d1e590e39adb8776ae50654fb33522eeed":[64,64],"8f90d13f668b232185e5bb225316f9057cba016dba4ee0de87e39474c2c84657":[64,64],"6aa53baf8b0d9691c3975ed85c9ce4a43c6d3e428bf18387f288abd0bf5dd45b":[64,64],"1b11bfe9b6a24c7d69ba7f08b53d867af01716e44f9ec02c0f981f4bdd4b9de5":[64,64],"ecfddf52f759cff9e514afa7e09e38d0583e0f130a978eecdcb7a90f88773255":[64,64],"e30e6e2f72b3e95b5ffde0d2cc3334855145f859804188d58baf8d66a62207e7":[64,64],"e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a":[64,64],"2711637628493104fd299742ae1490f2548167ac9a43f1288fe7a9b2de9dda18":[64,64],"a6944c4714dfe41a32ac956a8a8cb992430c69b570eaf2d1f5d9080d856d7c3b":[64,64],"9bc32961bafa439238ccbe5192c1a9e6ffd948be039a6acfdefe8ec5debdf294":[32,28],"69f25c4e727b6ac61baa4c65f924019075fe7a5a4e5b66ac3e7766b5bdc487d0":[64,64],"2c860a773c39f94719993cc317f163f38bc66e29d659c9c29f408fc3a743a31e":[64,64],"b9d098b0ccee6d86a639724f6646bd8ab0ae71ca18f0e32a6c5de54aa352276a":[36,26],"38ad929ee46229c2c42e11c006e0552b3d7c46e41d95532e74f61b3c8aeb3350":[64,64],"265c25bbec21630fe0b346a3fa296a4d53ee69c40d15a8c5ad8f65921e83fe54":[32,28],"78082269b5a53205258b1fecfea1847d1c9af2eb94bbe292387894e15ac8e26b":[64,64],"c4b6f8d144ad7286f4aedf36d378fbd05be4b4ed7a2ed40b354072de35da85af":[64,64],"eee5cb4df75b320834307088444152e9b5face00c78827bf06d3ff902b71e616":[64,64],"25a4d392f2518e035feb889bc5321ace46ab7da54ac9b6f78e6cb6725fbf7ec0":[64,64],"bf28ea23f8a819159735619c694cf7789d2a2bd35a0edd618e74190996ddb2b3":[64,64],"db9a11900947762dc54e47fb058444638eb28ffddda635943c70f86830f4c0a8":[64,64],"59becb34f8883204fb04bf63a8cfe16ce2666cf90ae503f908376f5f379ae623":[64,64],"c5b8dc2ca0e0f0b454f4eb3f13efa35b106fdcceb0ae6e6484294a7bdb3dbf42":[64,64],"104b49584bc5f447820591517984524be065018b004b53c3aabebb80622e000e":[64,64]}</script>
+<script>
+const registry=JSON.parse(document.getElementById('pngs').textContent);
+const sizes=JSON.parse(document.getElementById('extents').textContent);
+for(const img of document.querySelectorAll('img[data-digest]')){
+ const digest=img.dataset.digest;
+ img.style.setProperty('--w',sizes[digest][0]);
+ img.style.setProperty('--h',sizes[digest][1]);
+ img.src=registry[digest];
+}
+for(const button of document.querySelectorAll('[data-scale]')){
+ button.addEventListener('click',()=>{
+  document.body.dataset.zoom=button.dataset.scale;
+  for(const option of document.querySelectorAll('[data-scale]')) option.setAttribute('aria-pressed',String(option===button));
+ });
+}
+const backdrop=document.querySelector('#backdrop');
+backdrop.addEventListener('click',()=>{
+ const night=document.body.dataset.background!=='night';
+ document.body.dataset.background=night?'night':'day';
+ backdrop.setAttribute('aria-pressed',String(night));
+});
+</script></body></html>

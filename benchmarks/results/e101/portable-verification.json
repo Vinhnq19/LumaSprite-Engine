@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "html": "docs/reports/E10.1-ART-REFERENCE-REVIEW.html",
+  "sha256": "a99e6e985601d0be19f51ce72190a2269211d09d049525b08e098bae3dc25200",
+  "bytes": 94470,
+  "chrome": "158.0.0.0",
+  "standalone": "Single SHA-matched HTML outside both repositories",
+  "offline": true,
+  "uniquePngPayloads": 27,
+  "imagePlacements": 28,
+  "pngSha256Verified": true,
+  "consoleErrorsOrWarnings": 0,
+  "externalRequests": 0,
+  "relativeDependencies": 0,
+  "briefs": 3,
+  "candidateStudies": 11,
+  "diagnostics": 9,
+  "native": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "nearest": [
+    256,
+    256,
+    "pixelated"
+  ],
+  "restored": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "backgrounds": [
+    "rgb(235, 225, 206)",
+    "rgb(40, 47, 59)"
+  ],
+  "mobile": {
+    "native": [
+      390,
+      390,
+      64
+    ],
+    "nearest": [
+      390,
+      390,
+      256
+    ],
+    "toolbar": true
+  },
+  "unsignedOwnerReview": true
+}

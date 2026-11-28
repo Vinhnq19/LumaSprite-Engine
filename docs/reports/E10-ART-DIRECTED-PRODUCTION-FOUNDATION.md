@@ -50,6 +50,12 @@ E10.1 trình các brief và nghiên cứu theo nhóm để Owner chọn. E10.2 c
 
 [Mức điểm Rubric v2](../art-quality/art-quality-rubric-v2.json) · [Static Addendum](../art-quality/art-quality-rubric-v2-static-addendum.md)
 
+## Kết quả proof và phạm vi bàn giao
+
+**`E10_1_READY_FOR_OWNER_ART_REFERENCE_REVIEW`**. Reference Pack có 11 plate mới cho 9 nhóm và 9 ảnh chẩn đoán đã khóa. Studio tiếp nhận cả hai revision PNG của găng và hai preview ghép cán, kết quả RGBA khớp byte qua nhập, lưu và xuất. Bản sửa tăng sáng mặt cuff làm đổi 24 pixel trong mask và 0 ngoài mask. Rollback khôi phục đúng SHA RGBA của r1. [Reference Pack](../../benchmarks/results/e101/reference-pack.json) · [Proof và SHA](../../benchmarks/results/e101/workflow-proof.json)
+
+86/86 test, lint, typecheck, build và smoke đạt. 805 SHA lịch sử và các manifest E9.H1, E9.H1R, E9.H1 Closeout được xác minh lại. Đối chiếu Chrome xác nhận gallery và phiếu trống hoạt động offline từ bản sao ngoài repository. [Technical QA](../../benchmarks/results/e101/technical-qa.json) · [Chrome](../../benchmarks/results/e101/portable-verification.json) · [Phiếu Owner](../../benchmarks/results/e101/human-review.json)
+
 ## Checkpoint và bảo vệ báo cáo
 
 Working tree sạch khi mở nhánh. Ba mươi tám tệp E7–E8 từng được ghi là xóa chưa stage đều đã có mặt và khớp với Git ở checkpoint E10. Lịch sử ghi lại trạng thái trước đó và phiên bản đã commit, còn ý định thao tác bên ngoài commit chưa được xác nhận. Mỗi dòng audit ghi tham chiếu và dấu vết manifest đã tìm. [Bảng audit 38 tệp](../../benchmarks/results/e101/legacy-report-audit.csv)
