@@ -1,0 +1,2812 @@
+{
+  "status": "E9_1S_TECHNICAL_BLOCKED",
+  "base": "cb2eb3f046f0f6694100327a1baa29bc67ab7278",
+  "baselineSource": "c33707192550c19a96c4cff58d50597554138810",
+  "style": "weathered-station-v1",
+  "freeze": "ef14e21b1167805ed5b91f3956823156f2c92b158b744b9005db5a57658377c5",
+  "sources": {
+    "benchmarks/fixtures/e91s/study.json": "a746934fa4dee73bc820bb6385f900aedeea4c235ea49ea3ab425d2eac23f4ef",
+    "scripts/benchmark-e91s.ts": "a1ff95a07430ff7d92fa21728d0fc2b276d5352e19ee1acaaef56b3a8a1ac941",
+    "src/experiments/character-identity-study.ts": "a376e0e9873ce0217658c323c27f79fc8dcf03e42012e1003dc324172b183e71",
+    "src/experiments/character-v4.ts": "c832ab7028a6c78415b7a0870d4f982ef51a5abc490b5fc88870a40557b5ef99",
+    "src/experiments/character-v4-recovery.ts": "7784dbcb9e217d3d9d7f83bed229c35629f0b1f117fd3489d39b8b5c8418a19e",
+    "src/experiments/costume-stance.ts": "804d0cb6f242e60b909da5f5e93348c9cecee446ace6a5af620673af34a6e18c",
+    "benchmarks/fixtures/e91/study.json": "d85e40db56e71970b33b68be9d873c4e56cf0455c7e9d96aee826e2455199799",
+    "benchmarks/fixtures/e91r/study.json": "a7971fcc16e7be48dc96f3ef9aca9c9afb11c65ce9b06cba0c9ce1ecfb6d0481",
+    "benchmarks/fixtures/e91r/candidate-freeze.json": "b8cf208b01b6e82f889604c4482faa354886d12404fd2bc16d3032d607e8e3b7",
+    "benchmarks/results/e91r/benchmark.json": "b407ee0e533e9a89a1fbfd8aa85761eef6176d44ef8e716cad16241fbae3afd1",
+    "benchmarks/results/e91r/SHA256SUMS": "59fae1e9e5af8d3bb796bbc9515bfeae1889adaa54e4f339833d5fffade064cb",
+    "benchmarks/fixtures/e75r/ridge.json": "62dd67dc7472c72c063e75d46abafa062cb998a9aaf1638d1928946e66b5709f",
+    "benchmarks/fixtures/e75r/marsh.json": "d86fd70363e791ba47d014e9d29dd06f94b8e7c7792ac7fd785960c2dfc70e45",
+    "benchmarks/fixtures/e73/art-direction-v1.json": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c",
+    "benchmarks/fixtures/e73/tidegate.json": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b",
+    "docs/art-quality/art-quality-rubric-v2.json": "44b478c24c4fa5d4d00d3618a7e48947f709d3ca50f172a9cb48148583da81eb",
+    "docs/art-quality/art-quality-rubric-v2-static-addendum.md": "946d09a33437f7cea163606bb71cef2e37168ad1d616512f3e98264926794c5b"
+  },
+  "human": "STATIC_ART_REVIEW_PENDING",
+  "cases": [
+    {
+      "id": "harbor-lockkeeper",
+      "role": "known",
+      "seed": 24137,
+      "reference": "harbor-lockkeeper/24137/recovered-field/sprite.png",
+      "brief": "Broad steady stance, waterproof leather apron over folded knit, short-bill oilskin, diagonal wood/brass valve handle and secondary belt key.",
+      "scope": "harbor-lockkeeper/24137",
+      "steps": [
+        {
+          "stage": "s0",
+          "path": "harbor-lockkeeper/24137/s0",
+          "qa": {
+            "bounds": {
+              "left": 2,
+              "top": 2,
+              "right": 57,
+              "bottom": 57
+            },
+            "pixels": 1376,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 22,
+            "legGapRows": 5,
+            "handTests": [
+              {
+                "id": "key",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 14,
+                "join": 9,
+                "shown": 28,
+                "occludes": true,
+                "total": 42
+              },
+              {
+                "id": "valve",
+                "hand": "near-hand",
+                "socket": [
+                  16,
+                  40
+                ],
+                "overlap": 13,
+                "join": 12,
+                "shown": 111,
+                "occludes": true,
+                "total": 124
+              }
+            ],
+            "centerX": 33.4,
+            "outline": {
+              "lit": 98,
+              "shadow": 146,
+              "contact": 20,
+              "internal": 81
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 16,
+              "height": 17,
+              "pixels": 196
+            },
+            "torso": {
+              "width": 22,
+              "height": 19,
+              "pixels": 321
+            },
+            "bare": {
+              "width": 40,
+              "height": 50,
+              "pixels": 894
+            }
+          },
+          "delta": null,
+          "grip": [
+            "key",
+            "valve"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 19,
+              "edges": 364,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 31,
+              "edges": 364,
+              "p10": 23,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s1",
+          "path": "harbor-lockkeeper/24137/s1",
+          "qa": {
+            "bounds": {
+              "left": 2,
+              "top": 2,
+              "right": 57,
+              "bottom": 57
+            },
+            "pixels": 1391,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 24,
+            "legGapRows": 6,
+            "handTests": [
+              {
+                "id": "key",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 14,
+                "join": 9,
+                "shown": 28,
+                "occludes": true,
+                "total": 42
+              },
+              {
+                "id": "valve",
+                "hand": "near-hand",
+                "socket": [
+                  16,
+                  40
+                ],
+                "overlap": 13,
+                "join": 12,
+                "shown": 111,
+                "occludes": true,
+                "total": 124
+              }
+            ],
+            "centerX": 33,
+            "outline": {
+              "lit": 98,
+              "shadow": 146,
+              "contact": 20,
+              "internal": 81
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 6,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 17,
+              "height": 17,
+              "pixels": 209
+            },
+            "torso": {
+              "width": 24,
+              "height": 19,
+              "pixels": 350
+            },
+            "bare": {
+              "width": 40,
+              "height": 50,
+              "pixels": 909
+            }
+          },
+          "delta": {
+            "added": 39,
+            "removed": 24,
+            "colors": 205
+          },
+          "grip": [
+            "key",
+            "valve"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 17,
+              "edges": 360,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 29,
+              "edges": 360,
+              "p10": 33,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s2",
+          "path": "harbor-lockkeeper/24137/s2",
+          "qa": {
+            "bounds": {
+              "left": 2,
+              "top": 2,
+              "right": 57,
+              "bottom": 57
+            },
+            "pixels": 1391,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 24,
+            "legGapRows": 6,
+            "handTests": [
+              {
+                "id": "key",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 14,
+                "join": 9,
+                "shown": 28,
+                "occludes": true,
+                "total": 42
+              },
+              {
+                "id": "valve",
+                "hand": "near-hand",
+                "socket": [
+                  16,
+                  40
+                ],
+                "overlap": 13,
+                "join": 12,
+                "shown": 111,
+                "occludes": true,
+                "total": 124
+              }
+            ],
+            "centerX": 33,
+            "outline": {
+              "lit": 98,
+              "shadow": 146,
+              "contact": 20,
+              "internal": 81
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 6,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 17,
+              "height": 17,
+              "pixels": 209
+            },
+            "torso": {
+              "width": 24,
+              "height": 19,
+              "pixels": 350
+            },
+            "bare": {
+              "width": 40,
+              "height": 50,
+              "pixels": 909
+            }
+          },
+          "delta": {
+            "added": 0,
+            "removed": 0,
+            "colors": 64
+          },
+          "grip": [
+            "key",
+            "valve"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 17,
+              "edges": 360,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 29,
+              "edges": 360,
+              "p10": 33,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s3",
+          "path": "harbor-lockkeeper/24137/s3",
+          "qa": {
+            "bounds": {
+              "left": 1,
+              "top": 2,
+              "right": 58,
+              "bottom": 57
+            },
+            "pixels": 1380,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 24,
+            "legGapRows": 6,
+            "handTests": [
+              {
+                "id": "lock-pin",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 14,
+                "join": 9,
+                "shown": 34,
+                "occludes": true,
+                "total": 48
+              },
+              {
+                "id": "valve-wheel",
+                "hand": "near-hand",
+                "socket": [
+                  16,
+                  40
+                ],
+                "overlap": 14,
+                "join": 12,
+                "shown": 99,
+                "occludes": true,
+                "total": 113
+              }
+            ],
+            "centerX": 33,
+            "outline": {
+              "lit": 98,
+              "shadow": 146,
+              "contact": 20,
+              "internal": 81
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 6,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 17,
+              "height": 17,
+              "pixels": 209
+            },
+            "torso": {
+              "width": 24,
+              "height": 19,
+              "pixels": 350
+            },
+            "bare": {
+              "width": 40,
+              "height": 50,
+              "pixels": 909
+            }
+          },
+          "delta": {
+            "added": 29,
+            "removed": 40,
+            "colors": 117
+          },
+          "grip": [
+            "lock-pin",
+            "valve-wheel"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 18,
+              "edges": 352,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 30,
+              "edges": 352,
+              "p10": 23,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "marsh-apothecary",
+      "role": "known",
+      "seed": 55271,
+      "reference": "marsh-apothecary/55271/recovered-field/sprite.png",
+      "brief": "Slender body, asymmetric shoulder shawl, A-line tunic and visible bun, long-handled brass dipper in near hand and corked glass vials in tray supported by far hand.",
+      "scope": "marsh-apothecary/55271",
+      "steps": [
+        {
+          "stage": "s0",
+          "path": "marsh-apothecary/55271/s0",
+          "qa": {
+            "bounds": {
+              "left": 4,
+              "top": 3,
+              "right": 59,
+              "bottom": 57
+            },
+            "pixels": 1300,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 14,
+            "legGapRows": 5,
+            "handTests": [
+              {
+                "id": "tray",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 18,
+                "join": 9,
+                "shown": 120,
+                "occludes": true,
+                "total": 138
+              },
+              {
+                "id": "ladle",
+                "hand": "near-hand",
+                "socket": [
+                  22,
+                  42
+                ],
+                "overlap": 14,
+                "join": 12,
+                "shown": 126,
+                "occludes": true,
+                "total": 140
+              }
+            ],
+            "centerX": 33.9,
+            "outline": {
+              "lit": 96,
+              "shadow": 164,
+              "contact": 20,
+              "internal": 93
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 12,
+              "height": 17,
+              "pixels": 140
+            },
+            "torso": {
+              "width": 14,
+              "height": 19,
+              "pixels": 192
+            },
+            "bare": {
+              "width": 34,
+              "height": 50,
+              "pixels": 740
+            }
+          },
+          "delta": null,
+          "grip": [
+            "tray",
+            "ladle"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 14,
+              "edges": 368,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 20,
+              "edges": 368,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s1",
+          "path": "marsh-apothecary/55271/s1",
+          "qa": {
+            "bounds": {
+              "left": 4,
+              "top": 2,
+              "right": 59,
+              "bottom": 57
+            },
+            "pixels": 1292,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 14,
+            "legGapRows": 5,
+            "handTests": [
+              {
+                "id": "tray",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 18,
+                "join": 9,
+                "shown": 120,
+                "occludes": true,
+                "total": 138
+              },
+              {
+                "id": "ladle",
+                "hand": "near-hand",
+                "socket": [
+                  22,
+                  42
+                ],
+                "overlap": 14,
+                "join": 12,
+                "shown": 126,
+                "occludes": true,
+                "total": 140
+              }
+            ],
+            "centerX": 34.2,
+            "outline": {
+              "lit": 96,
+              "shadow": 164,
+              "contact": 20,
+              "internal": 93
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 11,
+              "height": 17,
+              "pixels": 122
+            },
+            "torso": {
+              "width": 14,
+              "height": 19,
+              "pixels": 183
+            },
+            "bare": {
+              "width": 34,
+              "height": 51,
+              "pixels": 715
+            }
+          },
+          "delta": {
+            "added": 28,
+            "removed": 36,
+            "colors": 173
+          },
+          "grip": [
+            "tray",
+            "ladle"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 16,
+              "edges": 386,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 22,
+              "edges": 386,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s2",
+          "path": "marsh-apothecary/55271/s2",
+          "qa": {
+            "bounds": {
+              "left": 4,
+              "top": 2,
+              "right": 59,
+              "bottom": 57
+            },
+            "pixels": 1292,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 14,
+            "legGapRows": 5,
+            "handTests": [
+              {
+                "id": "tray",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 18,
+                "join": 9,
+                "shown": 120,
+                "occludes": true,
+                "total": 138
+              },
+              {
+                "id": "ladle",
+                "hand": "near-hand",
+                "socket": [
+                  22,
+                  42
+                ],
+                "overlap": 14,
+                "join": 12,
+                "shown": 126,
+                "occludes": true,
+                "total": 140
+              }
+            ],
+            "centerX": 34.2,
+            "outline": {
+              "lit": 96,
+              "shadow": 164,
+              "contact": 20,
+              "internal": 93
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 11,
+              "height": 17,
+              "pixels": 122
+            },
+            "torso": {
+              "width": 14,
+              "height": 19,
+              "pixels": 183
+            },
+            "bare": {
+              "width": 34,
+              "height": 51,
+              "pixels": 715
+            }
+          },
+          "delta": {
+            "added": 0,
+            "removed": 0,
+            "colors": 49
+          },
+          "grip": [
+            "tray",
+            "ladle"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 16,
+              "edges": 386,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 22,
+              "edges": 386,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s3",
+          "path": "marsh-apothecary/55271/s3",
+          "qa": {
+            "bounds": {
+              "left": 4,
+              "top": 2,
+              "right": 57,
+              "bottom": 57
+            },
+            "pixels": 1302,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 14,
+            "legGapRows": 5,
+            "handTests": [
+              {
+                "id": "apothecary-vial-rack",
+                "hand": "far-hand",
+                "socket": [
+                  50,
+                  36
+                ],
+                "overlap": 18,
+                "join": 9,
+                "shown": 132,
+                "occludes": true,
+                "total": 150
+              },
+              {
+                "id": "ladle",
+                "hand": "near-hand",
+                "socket": [
+                  22,
+                  42
+                ],
+                "overlap": 14,
+                "join": 12,
+                "shown": 126,
+                "occludes": true,
+                "total": 140
+              }
+            ],
+            "centerX": 34.2,
+            "outline": {
+              "lit": 96,
+              "shadow": 164,
+              "contact": 20,
+              "internal": 93
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 47,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              },
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 11,
+              "height": 17,
+              "pixels": 122
+            },
+            "torso": {
+              "width": 14,
+              "height": 19,
+              "pixels": 183
+            },
+            "bare": {
+              "width": 34,
+              "height": 51,
+              "pixels": 715
+            }
+          },
+          "delta": {
+            "added": 38,
+            "removed": 28,
+            "colors": 99
+          },
+          "grip": [
+            "apothecary-vial-rack",
+            "ladle"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 17,
+              "edges": 384,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 23,
+              "edges": 384,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "cliffside-lantern-keeper",
+      "role": "known",
+      "seed": 61947,
+      "reference": "cliffside-lantern-keeper/61947/b3-field/sprite.png",
+      "brief": "Cliffside lantern keeper at three-quarter-right: short shoulder cloak with trailing back, lantern dangling from the raised near-hand grip, far hand pinches a leather strap; staggered feet on the same ground anchor.",
+      "scope": "cliffside-lantern-keeper/61947",
+      "steps": [
+        {
+          "stage": "s0",
+          "path": "cliffside-lantern-keeper/61947/s0",
+          "qa": {
+            "bounds": {
+              "left": 14,
+              "top": 2,
+              "right": 49,
+              "bottom": 57
+            },
+            "pixels": 1171,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 14,
+            "legGapRows": 6,
+            "handTests": [
+              {
+                "id": "strap",
+                "hand": "far-hand",
+                "socket": [
+                  46,
+                  32
+                ],
+                "overlap": 15,
+                "join": 9,
+                "shown": 65,
+                "occludes": true,
+                "total": 80
+              },
+              {
+                "id": "lantern",
+                "hand": "near-hand",
+                "socket": [
+                  20,
+                  32
+                ],
+                "overlap": 21,
+                "join": 12,
+                "shown": 112,
+                "occludes": true,
+                "total": 133
+              }
+            ],
+            "centerX": 33.6,
+            "outline": {
+              "lit": 90,
+              "shadow": 119,
+              "contact": 20,
+              "internal": 105
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 6,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 12,
+              "height": 17,
+              "pixels": 140
+            },
+            "torso": {
+              "width": 14,
+              "height": 19,
+              "pixels": 195
+            },
+            "bare": {
+              "width": 32,
+              "height": 50,
+              "pixels": 703
+            }
+          },
+          "delta": null,
+          "grip": [
+            "strap",
+            "lantern"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 13,
+              "edges": 276,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 19,
+              "edges": 276,
+              "p10": 33,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s1",
+          "path": "cliffside-lantern-keeper/61947/s1",
+          "qa": {
+            "bounds": {
+              "left": 14,
+              "top": 2,
+              "right": 49,
+              "bottom": 57
+            },
+            "pixels": 1194,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 16,
+            "legGapRows": 6,
+            "handTests": [
+              {
+                "id": "strap",
+                "hand": "far-hand",
+                "socket": [
+                  46,
+                  32
+                ],
+                "overlap": 15,
+                "join": 9,
+                "shown": 65,
+                "occludes": true,
+                "total": 80
+              },
+              {
+                "id": "lantern",
+                "hand": "near-hand",
+                "socket": [
+                  20,
+                  32
+                ],
+                "overlap": 21,
+                "join": 12,
+                "shown": 112,
+                "occludes": true,
+                "total": 133
+              }
+            ],
+            "centerX": 33.8,
+            "outline": {
+              "lit": 90,
+              "shadow": 119,
+              "contact": 20,
+              "internal": 105
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 6,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 13,
+              "height": 17,
+              "pixels": 149
+            },
+            "torso": {
+              "width": 16,
+              "height": 19,
+              "pixels": 233
+            },
+            "bare": {
+              "width": 32,
+              "height": 50,
+              "pixels": 740
+            }
+          },
+          "delta": {
+            "added": 41,
+            "removed": 18,
+            "colors": 186
+          },
+          "grip": [
+            "strap",
+            "lantern"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 13,
+              "edges": 264,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 19,
+              "edges": 264,
+              "p10": 33,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s2",
+          "path": "cliffside-lantern-keeper/61947/s2",
+          "qa": {
+            "bounds": {
+              "left": 14,
+              "top": 2,
+              "right": 49,
+              "bottom": 57
+            },
+            "pixels": 1194,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 16,
+            "legGapRows": 6,
+            "handTests": [
+              {
+                "id": "strap",
+                "hand": "far-hand",
+                "socket": [
+                  46,
+                  32
+                ],
+                "overlap": 15,
+                "join": 9,
+                "shown": 65,
+                "occludes": true,
+                "total": 80
+              },
+              {
+                "id": "lantern",
+                "hand": "near-hand",
+                "socket": [
+                  20,
+                  32
+                ],
+                "overlap": 21,
+                "join": 12,
+                "shown": 112,
+                "occludes": true,
+                "total": 133
+              }
+            ],
+            "centerX": 33.8,
+            "outline": {
+              "lit": 90,
+              "shadow": 119,
+              "contact": 20,
+              "internal": 105
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 6,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 13,
+              "height": 17,
+              "pixels": 149
+            },
+            "torso": {
+              "width": 16,
+              "height": 19,
+              "pixels": 233
+            },
+            "bare": {
+              "width": 32,
+              "height": 50,
+              "pixels": 740
+            }
+          },
+          "delta": {
+            "added": 0,
+            "removed": 0,
+            "colors": 47
+          },
+          "grip": [
+            "strap",
+            "lantern"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 13,
+              "edges": 264,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 19,
+              "edges": 264,
+              "p10": 33,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s3",
+          "path": "cliffside-lantern-keeper/61947/s3",
+          "qa": {
+            "bounds": {
+              "left": 14,
+              "top": 2,
+              "right": 51,
+              "bottom": 57
+            },
+            "pixels": 1166,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 16,
+            "legGapRows": 6,
+            "handTests": [
+              {
+                "id": "shoulder-tether",
+                "hand": "far-hand",
+                "socket": [
+                  46,
+                  32
+                ],
+                "overlap": 11,
+                "join": 9,
+                "shown": 75,
+                "occludes": true,
+                "total": 90
+              },
+              {
+                "id": "lantern",
+                "hand": "near-hand",
+                "socket": [
+                  20,
+                  32
+                ],
+                "overlap": 21,
+                "join": 12,
+                "shown": 112,
+                "occludes": true,
+                "total": 133
+              }
+            ],
+            "centerX": 33.8,
+            "outline": {
+              "lit": 90,
+              "shadow": 119,
+              "contact": 20,
+              "internal": 105
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 48,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 38,
+                "mid": 35,
+                "cloth": false,
+                "clear": false
+              }
+            ],
+            "anatomicalGapRows": 6,
+            "visibleGapRows": 5,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 38,
+                "right": 45,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 13,
+              "height": 17,
+              "pixels": 149
+            },
+            "torso": {
+              "width": 16,
+              "height": 19,
+              "pixels": 233
+            },
+            "bare": {
+              "width": 32,
+              "height": 50,
+              "pixels": 740
+            }
+          },
+          "delta": {
+            "added": 13,
+            "removed": 41,
+            "colors": 83
+          },
+          "grip": [
+            "shoulder-tether",
+            "lantern"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 8,
+              "edges": 278,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 14,
+              "edges": 278,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "coastal-cartographer",
+      "role": "holdout",
+      "seed": 73763,
+      "reference": null,
+      "brief": "Coastal field cartographer, 64×64 three-quarter-right. Narrow clear neck and fitted short coat, standing with a sighting compass in the near hand and a folded chart supported in the far hand. Avoid worker proportions and light-emitting tools.",
+      "scope": "coastal-cartographer/73763",
+      "steps": [
+        {
+          "stage": "s0",
+          "path": "coastal-cartographer/73763/s0",
+          "qa": {
+            "bounds": {
+              "left": 10,
+              "top": 2,
+              "right": 52,
+              "bottom": 57
+            },
+            "pixels": 1158,
+            "isolatedOutline": 0,
+            "place": [
+              32,
+              58
+            ],
+            "torsoWidth": 14,
+            "legGapRows": 7,
+            "handTests": [
+              {
+                "id": "tray",
+                "hand": "far-hand",
+                "socket": [
+                  45,
+                  35
+                ],
+                "overlap": 12,
+                "join": 9,
+                "shown": 111,
+                "occludes": true,
+                "total": 138
+              },
+              {
+                "id": "key",
+                "hand": "near-hand",
+                "socket": [
+                  21,
+                  41
+                ],
+                "overlap": 10,
+                "join": 12,
+                "shown": 46,
+                "occludes": true,
+                "total": 56
+              }
+            ],
+            "centerX": 34.3,
+            "outline": {
+              "lit": 94,
+              "shadow": 122,
+              "contact": 21,
+              "internal": 79
+            }
+          },
+          "stance": {
+            "rows": [
+              {
+                "y": 48,
+                "left": 32,
+                "right": 40,
+                "mid": 36,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 49,
+                "left": 32,
+                "right": 40,
+                "mid": 36,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 50,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 51,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 52,
+                "left": 32,
+                "right": 39,
+                "mid": 35,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 53,
+                "left": 33,
+                "right": 39,
+                "mid": 36,
+                "cloth": false,
+                "clear": true
+              },
+              {
+                "y": 54,
+                "left": 35,
+                "right": 39,
+                "mid": 37,
+                "cloth": false,
+                "clear": true
+              }
+            ],
+            "anatomicalGapRows": 7,
+            "visibleGapRows": 7,
+            "feet": [
+              {
+                "left": 28,
+                "right": 36,
+                "contact": 56,
+                "expected": 56,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 8
+              },
+              {
+                "left": 39,
+                "right": 46,
+                "contact": 55,
+                "expected": 55,
+                "knee": true,
+                "ankle": true,
+                "shin": true,
+                "exposedSole": 7
+              }
+            ]
+          },
+          "shape": {
+            "head": {
+              "width": 12,
+              "height": 17,
+              "pixels": 140
+            },
+            "torso": {
+              "width": 14,
+              "height": 19,
+              "pixels": 196
+            },
+            "bare": {
+              "width": 29,
+              "height": 50,
+              "pixels": 719
+            }
+          },
+          "delta": null,
+          "grip": [
+            "tray",
+            "key"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 15,
+              "edges": 298,
+              "p10": 47,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 20,
+              "edges": 298,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s1",
+          "path": "coastal-cartographer/73763/s1",
+          "qa": null,
+          "stance": null,
+          "shape": {
+            "head": {
+              "width": 11,
+              "height": 17,
+              "pixels": 129
+            },
+            "torso": {
+              "width": 12,
+              "height": 19,
+              "pixels": 161
+            },
+            "bare": {
+              "width": 29,
+              "height": 52,
+              "pixels": 679
+            }
+          },
+          "delta": {
+            "added": 44,
+            "removed": 54,
+            "colors": 300
+          },
+          "grip": [
+            "tray",
+            "key"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 16,
+              "edges": 324,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 21,
+              "edges": 324,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s2",
+          "path": "coastal-cartographer/73763/s2",
+          "qa": null,
+          "stance": null,
+          "shape": {
+            "head": {
+              "width": 11,
+              "height": 17,
+              "pixels": 129
+            },
+            "torso": {
+              "width": 12,
+              "height": 19,
+              "pixels": 161
+            },
+            "bare": {
+              "width": 29,
+              "height": 52,
+              "pixels": 679
+            }
+          },
+          "delta": {
+            "added": 0,
+            "removed": 0,
+            "colors": 44
+          },
+          "grip": [
+            "tray",
+            "key"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 16,
+              "edges": 324,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 21,
+              "edges": 324,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "s3",
+          "path": "coastal-cartographer/73763/s3",
+          "qa": null,
+          "stance": null,
+          "shape": {
+            "head": {
+              "width": 11,
+              "height": 17,
+              "pixels": 129
+            },
+            "torso": {
+              "width": 12,
+              "height": 19,
+              "pixels": 161
+            },
+            "bare": {
+              "width": 29,
+              "height": 52,
+              "pixels": 679
+            }
+          },
+          "delta": {
+            "added": 154,
+            "removed": 117,
+            "colors": 166
+          },
+          "grip": [
+            "folded-chart",
+            "survey-compass"
+          ],
+          "contexts": [
+            {
+              "light": "day",
+              "weak": 16,
+              "edges": 322,
+              "p10": 52,
+              "anchor": [
+                212,
+                178
+              ]
+            },
+            {
+              "light": "night",
+              "weak": 21,
+              "edges": 322,
+              "p10": 38,
+              "anchor": [
+                212,
+                178
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": [
+        "s1: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(silhouetteData.bounds .left>=limits.padding && silhouetteData.bounds .right<size-limits.padding && silhouetteData.bounds .top>=limits.padding)\n",
+        "s2: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(silhouetteData.bounds .left>=limits.padding && silhouetteData.bounds .right<size-limits.padding && silhouetteData.bounds .top>=limits.padding)\n",
+        "s3: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(silhouetteData.bounds .left>=limits.padding && silhouetteData.bounds .right<size-limits.padding && silhouetteData.bounds .top>=limits.padding)\n"
+      ]
+    }
+  ],
+  "files": {
+    "harbor-lockkeeper/24137/s0/sprite.png": "3eddfb5cf2b0a7e95fa351c7ed6d8c133edb72777e646648fbe7a6ee275063d3",
+    "harbor-lockkeeper/24137/s0/silhouette.png": "97577df2d21dbeea43842d30b806be0d181cefbf9ce43d13fdd59b478fe1ffbf",
+    "harbor-lockkeeper/24137/s0/body.png": "1056904670f607e01c83b7c85c2820b8062524111ac0dea9fa882c501b88c7de",
+    "harbor-lockkeeper/24137/s0/outfit.png": "1817ec8dfa89f74c5b9283293c4ceecd5b4f952a3f23531a41bc36d381ed41a1",
+    "harbor-lockkeeper/24137/s0/parts.png": "6860defddb394e0448aa4aa85fd61844abe33eb5bb2cdae06a46765323a52016",
+    "harbor-lockkeeper/24137/s0/material.png": "f54163ae616ee3cf6cc5dd5c0a8892d97964a618d7510b437bdfb0f2341102c1",
+    "harbor-lockkeeper/24137/s0/face.png": "314414de9a843c86a922ca48d8c48ae17c39c40b4b4a7caae09ade0e60bab802",
+    "harbor-lockkeeper/24137/s0/far.png": "ec65a06c148696993f141b30239a811c28e64469e88f9fbd1b089d4b7ac8b6bd",
+    "harbor-lockkeeper/24137/s0/near.png": "dabc9bf9f3b9542fa8ce40648a0e40553a661497af1ef76f87a20002a1159eda",
+    "harbor-lockkeeper/24137/s0/day.png": "482e9fafee4f649a74f6312f8a6283a1b7824be64630cb91c9196ac808393c53",
+    "harbor-lockkeeper/24137/s0/night.png": "d4b1faf79283c91ad31b14bfb3ca324b546eb6d87f8c224b44f2ae674c609954",
+    "harbor-lockkeeper/24137/s1/sprite.png": "52d296dc4eb0a6c723a78617e14553362ba2e0357fa420146e639e20cc0df607",
+    "harbor-lockkeeper/24137/s1/silhouette.png": "537808c0b5ec5dd591772271a6361483b0e271b916d9fda1dcb8e9c51d0daffb",
+    "harbor-lockkeeper/24137/s1/body.png": "5db3ad0f2bdb4dc71f2d90546583168dbca76ff6abfa0955bbbee930979f5b13",
+    "harbor-lockkeeper/24137/s1/outfit.png": "acaddc3a2e4aeb450f0133515eac443ea2dc1d33506293a377628e07ca6ade03",
+    "harbor-lockkeeper/24137/s1/parts.png": "926c13a96ce9b17b3962b3dcb20964ea4ef920f224fa7596ac515179379a34b7",
+    "harbor-lockkeeper/24137/s1/material.png": "b3470aba89acc18b367a07b6d05922e284bf6d488ce00ba7b4d11c8e20745d7d",
+    "harbor-lockkeeper/24137/s1/face.png": "31fd57ba15d7b647afbb407a10a8e20f1a791bc42bc0c483b3b378889d224d5c",
+    "harbor-lockkeeper/24137/s1/far.png": "c10702b0a415f3faac5c6b83c3ff17b0278714fae36bf0755d3e0070e6867d12",
+    "harbor-lockkeeper/24137/s1/near.png": "b76a124d08bcd3d4ec04041ff9781c71360622d96978f88e85ab204b69f9ffd7",
+    "harbor-lockkeeper/24137/s1/diff.png": "5cf4d040c64fb5d5e3811ccd2fbdea4738218bfa26b4a27e0dcdfafff5ce8138",
+    "harbor-lockkeeper/24137/s1/day.png": "53492e8de53e85714339803a9291f920100e816512c12f28c41ae9fe7317840a",
+    "harbor-lockkeeper/24137/s1/night.png": "cd943d729ba3d91b64f32954deed6b57fb9d59b94b5b749795ec376f126a9e4a",
+    "harbor-lockkeeper/24137/s2/sprite.png": "092f92d1c7e4cdcaa8eb99a383010e1a3b0cbc56c0d0fb115adb25a9b1b4b816",
+    "harbor-lockkeeper/24137/s2/silhouette.png": "537808c0b5ec5dd591772271a6361483b0e271b916d9fda1dcb8e9c51d0daffb",
+    "harbor-lockkeeper/24137/s2/body.png": "5db3ad0f2bdb4dc71f2d90546583168dbca76ff6abfa0955bbbee930979f5b13",
+    "harbor-lockkeeper/24137/s2/outfit.png": "acaddc3a2e4aeb450f0133515eac443ea2dc1d33506293a377628e07ca6ade03",
+    "harbor-lockkeeper/24137/s2/parts.png": "926c13a96ce9b17b3962b3dcb20964ea4ef920f224fa7596ac515179379a34b7",
+    "harbor-lockkeeper/24137/s2/material.png": "b3470aba89acc18b367a07b6d05922e284bf6d488ce00ba7b4d11c8e20745d7d",
+    "harbor-lockkeeper/24137/s2/face.png": "056be3bc3a3041318f0abd9424cee12ca94be78d8887294ab725d9aea83faae4",
+    "harbor-lockkeeper/24137/s2/far.png": "c10702b0a415f3faac5c6b83c3ff17b0278714fae36bf0755d3e0070e6867d12",
+    "harbor-lockkeeper/24137/s2/near.png": "b76a124d08bcd3d4ec04041ff9781c71360622d96978f88e85ab204b69f9ffd7",
+    "harbor-lockkeeper/24137/s2/diff.png": "0a260b521906a78c3df62dd9c95dc009c555176e20fc4341386fe81ab784ea97",
+    "harbor-lockkeeper/24137/s2/day.png": "a761763e2b08281a42c3d1cd112ef259feb6c2322753aba597d1474e8b90e031",
+    "harbor-lockkeeper/24137/s2/night.png": "35d844b5fa61fe543edac76f766b279d38dda728824fb6a013d6d90af57bf01b",
+    "harbor-lockkeeper/24137/s3/sprite.png": "30a05bc81740d44b6bbbb80bc0c3c7c49cc016bbde7a07e3e76d69ad8e291f0d",
+    "harbor-lockkeeper/24137/s3/silhouette.png": "bff9413b727b5a078cce6b603e2981d80b7470df8054e10d3eb3b937626c456a",
+    "harbor-lockkeeper/24137/s3/body.png": "5db3ad0f2bdb4dc71f2d90546583168dbca76ff6abfa0955bbbee930979f5b13",
+    "harbor-lockkeeper/24137/s3/outfit.png": "acaddc3a2e4aeb450f0133515eac443ea2dc1d33506293a377628e07ca6ade03",
+    "harbor-lockkeeper/24137/s3/parts.png": "84901cef96ad9b36aea31c5e21af92a535b954a69e8308149a77ba2245d34e54",
+    "harbor-lockkeeper/24137/s3/material.png": "ec6a48dc9f26bc6c8d189e0f05f37b4357c00ffeeba1f6de8addcb907c769829",
+    "harbor-lockkeeper/24137/s3/face.png": "056be3bc3a3041318f0abd9424cee12ca94be78d8887294ab725d9aea83faae4",
+    "harbor-lockkeeper/24137/s3/far.png": "53825a000a2b7c7c5b6c701bc003eec9cbad0a2368c9376ea0eecb769c4fe471",
+    "harbor-lockkeeper/24137/s3/near.png": "dbfaed92c4ea42c03e1c398f08edc74d1405db0d9749cf46752fbb600358c856",
+    "harbor-lockkeeper/24137/s3/diff.png": "e39e411368247b036c13780aa45ae737d51df1c5795d9e262906b726afe2172d",
+    "harbor-lockkeeper/24137/s3/day.png": "1fbfde2935c26775ebe380112ae9bdfb118358057e965f173c17b8f337e40e0b",
+    "harbor-lockkeeper/24137/s3/night.png": "2600c57960a7504aa1be9a9751ab0bc0209448472d34ad9c873c1d5049fce518",
+    "marsh-apothecary/55271/s0/sprite.png": "41ac67f3cbeeae93f0bcfe01c800bf9ee1d98616dd644abe078d66fa3f269642",
+    "marsh-apothecary/55271/s0/silhouette.png": "e33d9133c972f55c39640d18e9c415e1429ab12e268a29a972335478d1b30965",
+    "marsh-apothecary/55271/s0/body.png": "60c0005182fb9fb115b073fd0076e0ddd08da949583b33eeb0c0c20baf3da397",
+    "marsh-apothecary/55271/s0/outfit.png": "9d1e21632aa9c98feaefbec3d2867b174b6d1d8afdf37dc88895c31d059a216a",
+    "marsh-apothecary/55271/s0/parts.png": "7c7111755bb0c9b6a48ba77c66d7638dcc8bdb76992847346f6dfc9b0a8217cf",
+    "marsh-apothecary/55271/s0/material.png": "459ba74a94e6dbe1356fb8d0f5e3cadbef35efb31790a7385ad98fd9c9b2658d",
+    "marsh-apothecary/55271/s0/face.png": "890103b99f575713282e4ccda47c586cb179cc25338b1877110c00d9e4ca9d13",
+    "marsh-apothecary/55271/s0/far.png": "90ab4ca42f57f318fbbe0bb895a9c33d782890b7ef5931f229a70875a44b2585",
+    "marsh-apothecary/55271/s0/near.png": "65efd78688bbd62fb19ddf208de2cb4074bd329a199f22e56a29aa06a5c42b00",
+    "marsh-apothecary/55271/s0/day.png": "0cf250ce573b2ed9922c154e81ae5b6e34983d3941c3187840e4c8f71971cca0",
+    "marsh-apothecary/55271/s0/night.png": "3ab27cc2281ac812149b7bb171dd6e619ff5be9688207764fc4fce5bb1932226",
+    "marsh-apothecary/55271/s1/sprite.png": "c418a4e0bfd3968f38fadc330a7152cf488fa3d2c675b424f32e19b25d2ab28e",
+    "marsh-apothecary/55271/s1/silhouette.png": "b853a9a9104c37023b35d22700007d1a3a763dd93a35c2dc0464694ec516d215",
+    "marsh-apothecary/55271/s1/body.png": "c6ceece6c54ebe7b3290c6c6cc4dee60925687b905a6a0963197c9ba4bdefe77",
+    "marsh-apothecary/55271/s1/outfit.png": "cbf8500358fd20a85adaa11bbc3fc2e2cfa562f131f4f9e4d4e76a5ac9a0697c",
+    "marsh-apothecary/55271/s1/parts.png": "fb267dae62b4c6c11fc735e002d7755be0b30dc89ba05a4adafd364f7c95072d",
+    "marsh-apothecary/55271/s1/material.png": "067d17191f453ebe77012f8bab23931e3aec0acd1fd2601125aa8a27d4ba8f01",
+    "marsh-apothecary/55271/s1/face.png": "539beb57509dcc27d0623da2fbd2547789600c2aced7d7c43e8b4d7edf066b39",
+    "marsh-apothecary/55271/s1/far.png": "23fd3477db1c1aa618fc4c95cb0d10f5193831d74f4b382778e2bee7c9136008",
+    "marsh-apothecary/55271/s1/near.png": "6e9d6632a028ac7cc5843b882398b4fb4069a78f1826a7005bca7cf4510e5f60",
+    "marsh-apothecary/55271/s1/diff.png": "36a573026eee61a6812cf0a38e007db8844d6c46b3152cf5bfeacaa325e6d354",
+    "marsh-apothecary/55271/s1/day.png": "799d1b9a7d2c60318bd923fda882ed62f3a8eae10fec2659f9fefefe88166ff1",
+    "marsh-apothecary/55271/s1/night.png": "def88a87551951709777064619acee38c5757ca03b11f870291266a19fc13956",
+    "marsh-apothecary/55271/s2/sprite.png": "39ce9073d7b97995f3c3a95ff0846aaef17db4a3aadd47231827eb27bfdd97e4",
+    "marsh-apothecary/55271/s2/silhouette.png": "b853a9a9104c37023b35d22700007d1a3a763dd93a35c2dc0464694ec516d215",
+    "marsh-apothecary/55271/s2/body.png": "c6ceece6c54ebe7b3290c6c6cc4dee60925687b905a6a0963197c9ba4bdefe77",
+    "marsh-apothecary/55271/s2/outfit.png": "cbf8500358fd20a85adaa11bbc3fc2e2cfa562f131f4f9e4d4e76a5ac9a0697c",
+    "marsh-apothecary/55271/s2/parts.png": "fb267dae62b4c6c11fc735e002d7755be0b30dc89ba05a4adafd364f7c95072d",
+    "marsh-apothecary/55271/s2/material.png": "067d17191f453ebe77012f8bab23931e3aec0acd1fd2601125aa8a27d4ba8f01",
+    "marsh-apothecary/55271/s2/face.png": "4ce9f2716ff9b1064d53156fa887d462560b805af02bf38dfd6b1bebc1b2f21c",
+    "marsh-apothecary/55271/s2/far.png": "c52f8d7ad6253851ec650d253e2dad9929ff1f128c833a4f8bb07a9e82e9251e",
+    "marsh-apothecary/55271/s2/near.png": "6e9d6632a028ac7cc5843b882398b4fb4069a78f1826a7005bca7cf4510e5f60",
+    "marsh-apothecary/55271/s2/diff.png": "fe0a21d2c479ca605d76154afa8291e8b8a3cabebe36a5a97e339c2323d09e08",
+    "marsh-apothecary/55271/s2/day.png": "e3182c2b97677f714aac8f818f036ea3ee99d35223c185ccf7df25b2aff7225a",
+    "marsh-apothecary/55271/s2/night.png": "a235d660f7e3bb7cea5b1da827bd1e1b48968780dfd71fcf75779efc3f61e903",
+    "marsh-apothecary/55271/s3/sprite.png": "be28037076c4d6179e532d51fcd5e4a1a278863bcc9beeeda3a7b85bfdca37cb",
+    "marsh-apothecary/55271/s3/silhouette.png": "1a8cd34059dba0cd32c6490df8aaae4bacdf59897ff1c7a12585a272d30c37b9",
+    "marsh-apothecary/55271/s3/body.png": "c6ceece6c54ebe7b3290c6c6cc4dee60925687b905a6a0963197c9ba4bdefe77",
+    "marsh-apothecary/55271/s3/outfit.png": "cbf8500358fd20a85adaa11bbc3fc2e2cfa562f131f4f9e4d4e76a5ac9a0697c",
+    "marsh-apothecary/55271/s3/parts.png": "7b3af6c8091d77847ee9b5f294beb68b1b0fd7b1df9819487ee6d71785136120",
+    "marsh-apothecary/55271/s3/material.png": "bfcff9f92ae751160ac239cd882ecb6f0493102432c814756f2dd9e4f3cb307c",
+    "marsh-apothecary/55271/s3/face.png": "071226a704e124ff2d7a10b6c581b91f94240f9d48dbc8efa234e05a8f7ab1a6",
+    "marsh-apothecary/55271/s3/far.png": "91d8242ee8d1db1155a3ee7f8807c45f750361eed76236752609ce50dab4e959",
+    "marsh-apothecary/55271/s3/near.png": "6e9d6632a028ac7cc5843b882398b4fb4069a78f1826a7005bca7cf4510e5f60",
+    "marsh-apothecary/55271/s3/diff.png": "9f1a4a838087dd5fda7e166338e6aef7b003450dd1acc58ecac8228ac8210e3c",
+    "marsh-apothecary/55271/s3/day.png": "950c51ef31f70a046aec3771beba03c3e940c85e3dc424589f3201ac452cdedb",
+    "marsh-apothecary/55271/s3/night.png": "4111cef5c3f17b3cebe04f3b3eee2bb8bfb3f8445023b04cc1cd9e8e3d8739d6",
+    "cliffside-lantern-keeper/61947/s0/sprite.png": "a5ca5937936dbfe79793a7c94455d50616d347dd37513f86fdb9c3624adb5175",
+    "cliffside-lantern-keeper/61947/s0/silhouette.png": "2701417288f4e0112b08b4c7ade7ecf2d2ab844f36079ab0abc5638f2be1528f",
+    "cliffside-lantern-keeper/61947/s0/body.png": "820d5e389af31f6890e092630c289f362c6c317956b5015354a12859a0a07f9d",
+    "cliffside-lantern-keeper/61947/s0/outfit.png": "40955577b32a7f1fb7e987e31c9e7625f34248970072450a1f539280f0520c0c",
+    "cliffside-lantern-keeper/61947/s0/parts.png": "a8a76ec744a770be2f1b25d6123ef3229ba6600123f34d84d4d7768ee93b9173",
+    "cliffside-lantern-keeper/61947/s0/material.png": "873601bc9ea603ec5ce691bfa8d9ed871100a7c1cda0ffe271b46929e3979cd9",
+    "cliffside-lantern-keeper/61947/s0/face.png": "bad70297fddfb7aacc76a6ed6f92e8d45e764fee88bc4930bb13114824372a5c",
+    "cliffside-lantern-keeper/61947/s0/far.png": "e0b7717a643bdb94135d386e55fd0907691362c48b3272b5732d4f89a2a0c44f",
+    "cliffside-lantern-keeper/61947/s0/near.png": "27399f00c2a4896366841e8c5c97a6c4ea8c31f7eec128408f1a53f761ce0f50",
+    "cliffside-lantern-keeper/61947/s0/day.png": "326b435c1bf62025aa9a41f61abcfb1f027bb592c041bf952e76b3553d77b19b",
+    "cliffside-lantern-keeper/61947/s0/night.png": "6ad3656550337fa30e215730e51eed802b85f2e2a477fb01d417e8ad76ec0e4e",
+    "cliffside-lantern-keeper/61947/s1/sprite.png": "eb2e35289ff8753348dbcd55d47d298057fdac628432677d9551c878b488a656",
+    "cliffside-lantern-keeper/61947/s1/silhouette.png": "f0b26c7bd87bb7eebaed85b9be487c7664bcd6df98f0309d334c5e7881a393be",
+    "cliffside-lantern-keeper/61947/s1/body.png": "838111dbe095841ff15e9508c3bc968ebd1b3938ac0d84eb3e1abda529c725d0",
+    "cliffside-lantern-keeper/61947/s1/outfit.png": "88d3198769d539c4194f3a9d97d5716b9d5da5760444a7b8677ca4f818a9f74a",
+    "cliffside-lantern-keeper/61947/s1/parts.png": "2bec1f3c3c0a9e39b00512403a588888b59841eee1b881454053b2d1523de1b8",
+    "cliffside-lantern-keeper/61947/s1/material.png": "80c3c213304010615909de8544b88f55c6cc4dc84cfbf5eabbdb2336e968f1b1",
+    "cliffside-lantern-keeper/61947/s1/face.png": "6eb5e6dec3f4178531fe7be432e024cd243c887e651a752906be526ddac97822",
+    "cliffside-lantern-keeper/61947/s1/far.png": "c39023c24ea3ef6ca1d60d06259e1c8f14877446ec319f9c5cce78749f974847",
+    "cliffside-lantern-keeper/61947/s1/near.png": "f7c49311ab0ff80d4c2e74ada20132548161a6047c020bdac956cc142b0ac6bc",
+    "cliffside-lantern-keeper/61947/s1/diff.png": "be6bb4ca8ffa6f823acf51e914e17ae80ce491c6851e58b51d0ecbb3cbb0527d",
+    "cliffside-lantern-keeper/61947/s1/day.png": "e708d61e25f984b15d01a130b3780e57d9ada2bc7275a157d430e19fca2f9302",
+    "cliffside-lantern-keeper/61947/s1/night.png": "ab3f9c78dd8c9f584128e4ea7bad219e7bf23936f52a540059fd152c6b57bc4d",
+    "cliffside-lantern-keeper/61947/s2/sprite.png": "928ec8e046108da48fc51adba968ea6126fb3dfd2c69acaecd955eff3e25282c",
+    "cliffside-lantern-keeper/61947/s2/silhouette.png": "f0b26c7bd87bb7eebaed85b9be487c7664bcd6df98f0309d334c5e7881a393be",
+    "cliffside-lantern-keeper/61947/s2/body.png": "838111dbe095841ff15e9508c3bc968ebd1b3938ac0d84eb3e1abda529c725d0",
+    "cliffside-lantern-keeper/61947/s2/outfit.png": "88d3198769d539c4194f3a9d97d5716b9d5da5760444a7b8677ca4f818a9f74a",
+    "cliffside-lantern-keeper/61947/s2/parts.png": "2bec1f3c3c0a9e39b00512403a588888b59841eee1b881454053b2d1523de1b8",
+    "cliffside-lantern-keeper/61947/s2/material.png": "80c3c213304010615909de8544b88f55c6cc4dc84cfbf5eabbdb2336e968f1b1",
+    "cliffside-lantern-keeper/61947/s2/face.png": "9db7f8edcff7f47e2155ef2108618ed735611db13c7db4b172ee055b3d7d3ebe",
+    "cliffside-lantern-keeper/61947/s2/far.png": "c2aa2b2b9367660463670c811fdf04b80f73f322a3e41286aadc85b4dfa86228",
+    "cliffside-lantern-keeper/61947/s2/near.png": "7ce0a451163f3cd72d6800c55c88e8345df4462501728a451f6e85ea3e4910f3",
+    "cliffside-lantern-keeper/61947/s2/diff.png": "3f1682992cdbb57429df3b6a6f754a1897680b89af8269ee0d9c26c4ba5ab8cd",
+    "cliffside-lantern-keeper/61947/s2/day.png": "ccc47106064ddd4ef28649b1f268dc349fc943a533273589a96bdadcd105361a",
+    "cliffside-lantern-keeper/61947/s2/night.png": "5e53f8846221f3c316a66caea60dc73f691232c876c8e6670a3f1f5ce075f0d2",
+    "cliffside-lantern-keeper/61947/s3/sprite.png": "f0d392bcc7654a8abb4775449de590a6d1218a14dbf439822d34170c604aefc3",
+    "cliffside-lantern-keeper/61947/s3/silhouette.png": "c5bd4050ca2c74295fa0ca91105cb81ccf99205aa5140f0bb8e0ae62c6e0774f",
+    "cliffside-lantern-keeper/61947/s3/body.png": "838111dbe095841ff15e9508c3bc968ebd1b3938ac0d84eb3e1abda529c725d0",
+    "cliffside-lantern-keeper/61947/s3/outfit.png": "88d3198769d539c4194f3a9d97d5716b9d5da5760444a7b8677ca4f818a9f74a",
+    "cliffside-lantern-keeper/61947/s3/parts.png": "b27e3619b27ef909f9edf408ddfcf7a647c976944395895687e72131f4732798",
+    "cliffside-lantern-keeper/61947/s3/material.png": "e0e61bdc840b179660fdba8e549019fa690811ab06746fc3a9c7c5fdaf431f8f",
+    "cliffside-lantern-keeper/61947/s3/face.png": "7b896d1fd09ac3bee56b60d47ecb110e67f796a60e7a924265495657925b3ad4",
+    "cliffside-lantern-keeper/61947/s3/far.png": "479b6ffe3e0e0158d43fd02bb5f6e2fe4f4fa86f255bf1373f77ce8d18be4809",
+    "cliffside-lantern-keeper/61947/s3/near.png": "43b7ae8b929f8a8c842aa9afcb47d550207ce56dd637fde9779f89c8dc44deff",
+    "cliffside-lantern-keeper/61947/s3/diff.png": "ca4b5523d29a9cb85a3dd2311546e53a6035aae32fa1c756e5828a19fe56f2c3",
+    "cliffside-lantern-keeper/61947/s3/day.png": "79e5f9602be2a16c1c21c90b5d0f0531c8c1ab177cddd13f8bce7837fdcc86d0",
+    "cliffside-lantern-keeper/61947/s3/night.png": "692b714844863868f7f26ffa934076ab6fcc31c5aad0564fba5689135621030c",
+    "coastal-cartographer/73763/s0/sprite.png": "991e7a3bdbcd2db0e0b12244f53843ededbbaf2f259a822655291ba24254da94",
+    "coastal-cartographer/73763/s0/silhouette.png": "1a203a56eaafef12c88ba738a2b9f0cfef820d517154117e6044eebb3bd85c50",
+    "coastal-cartographer/73763/s0/body.png": "2ed62ea0bdcfe8c57897d8225105736ce7d0157e8c9b7da921e15c58d1bce764",
+    "coastal-cartographer/73763/s0/outfit.png": "03dbfab0d8344424cc714ebb59575901ca6dfd243604261f9d43220f82f4fcc3",
+    "coastal-cartographer/73763/s0/parts.png": "6a138b9f2016e997a2ae877a6c0b8971661e52da9bf480d0c421fa892bfdb0b5",
+    "coastal-cartographer/73763/s0/material.png": "0347ab3bebcbb6c3b275d5d16e624395561c560e8fa4b42fbaac4cbdd221b1f0",
+    "coastal-cartographer/73763/s0/face.png": "eb7832444315fe1d38befcadc92c412d909a9a33d05d2f1eeee00687e8d099ab",
+    "coastal-cartographer/73763/s0/far.png": "8d32deb4f359830808f258f695b02659b3a8dc36a040cd840b0dc07a52868cd9",
+    "coastal-cartographer/73763/s0/near.png": "23c131f0c767d10cca916720d7df0a9e75132d275e24cc1e9a5444d14cfb9d28",
+    "coastal-cartographer/73763/s0/day.png": "e68fa0fb1818c1c7c4a13d8032d28426d999a06bdb83e45035a6689ba2ec2689",
+    "coastal-cartographer/73763/s0/night.png": "d2b321dd4a01de45d64dec66e5bdbd153522c491ebdf9697d2114f08a1c9ec3d",
+    "coastal-cartographer/73763/s1/sprite.png": "1a70980147f57279a13aa5689843c7bc449d98404ef3106dbc842de810b9dbc3",
+    "coastal-cartographer/73763/s1/silhouette.png": "690f5cbd661e241caa4cbd9c2a66c55d63b7e00711543156930c5b16e1c47069",
+    "coastal-cartographer/73763/s1/body.png": "fb7b301def9c2c89a3ee39bf0604b5d36e95e77820f62168ea736122830194dd",
+    "coastal-cartographer/73763/s1/outfit.png": "8219ee35b2f416e99b6c26fe7fa663810e48391c483d4c650700c1c286235854",
+    "coastal-cartographer/73763/s1/parts.png": "dd94b09e7df86c67d8ff895ba0032c95914307b399f5a89d23b3f5cb5d49e248",
+    "coastal-cartographer/73763/s1/material.png": "cff854e663122bcd2a2c8234fb9326e7e26e1d946c7af2d71a1877edd5a27b8a",
+    "coastal-cartographer/73763/s1/face.png": "3c3a08c7af5e7679ee8843848b79783f68822586643855094774d20c70ebe709",
+    "coastal-cartographer/73763/s1/far.png": "17e944337022f0754996a414d4dddd521b1e6a1801117eb200e9580e63c1beb4",
+    "coastal-cartographer/73763/s1/near.png": "50dee025c1549217d688dd4aa9c741ce505f80abb41cd93194784c26118d0cd3",
+    "coastal-cartographer/73763/s1/diff.png": "a1a5763e5da0d1222845409bfa040318f2f79ada98a4e5d65a730082188fee78",
+    "coastal-cartographer/73763/s1/day.png": "9d456285c1f2364f1a02700eb831958fc0be129ff0f2360f3a56f950f80ffbca",
+    "coastal-cartographer/73763/s1/night.png": "5914ed7bcc54932c4394d807a9ed6dc22ca3f8ace27516ee209a69f6d1931262",
+    "coastal-cartographer/73763/s2/sprite.png": "b8c5aa207b1ec97b711eaf3b6e2804d1fdd7bad25182a44400ad4139b585d8a9",
+    "coastal-cartographer/73763/s2/silhouette.png": "690f5cbd661e241caa4cbd9c2a66c55d63b7e00711543156930c5b16e1c47069",
+    "coastal-cartographer/73763/s2/body.png": "fb7b301def9c2c89a3ee39bf0604b5d36e95e77820f62168ea736122830194dd",
+    "coastal-cartographer/73763/s2/outfit.png": "8219ee35b2f416e99b6c26fe7fa663810e48391c483d4c650700c1c286235854",
+    "coastal-cartographer/73763/s2/parts.png": "dd94b09e7df86c67d8ff895ba0032c95914307b399f5a89d23b3f5cb5d49e248",
+    "coastal-cartographer/73763/s2/material.png": "cff854e663122bcd2a2c8234fb9326e7e26e1d946c7af2d71a1877edd5a27b8a",
+    "coastal-cartographer/73763/s2/face.png": "e84d33ba784bd2b13d926eac8e12b142430ac2170aa5f244bbe541590a9d95d3",
+    "coastal-cartographer/73763/s2/far.png": "99e0a883fbf2e5c872585ddcf93ba04c10383ff95a7877bf12c0882214dc2eae",
+    "coastal-cartographer/73763/s2/near.png": "50dee025c1549217d688dd4aa9c741ce505f80abb41cd93194784c26118d0cd3",
+    "coastal-cartographer/73763/s2/diff.png": "bbda0038b9de30a25797419f32ce83ede6b0a5507f208b801c9ef6eb3e946c52",
+    "coastal-cartographer/73763/s2/day.png": "d469b1934bc7535bf7d4f738d51e50b06ecfe85ab378ac1ae491c0727e1e4e67",
+    "coastal-cartographer/73763/s2/night.png": "fb14a69a4832ac2249e129fe17e0eabca2ad1a45ff548762107fae97aad3fd56",
+    "coastal-cartographer/73763/s3/sprite.png": "6064f455747f072e8e0b3d8e465f6a6cc37cd91a775c91f5d3587423f1482121",
+    "coastal-cartographer/73763/s3/silhouette.png": "b675ff319a8207a4f73db3e03f3fd14a14b0d35cfff4621f027ccb38c02bdd37",
+    "coastal-cartographer/73763/s3/body.png": "fb7b301def9c2c89a3ee39bf0604b5d36e95e77820f62168ea736122830194dd",
+    "coastal-cartographer/73763/s3/outfit.png": "8219ee35b2f416e99b6c26fe7fa663810e48391c483d4c650700c1c286235854",
+    "coastal-cartographer/73763/s3/parts.png": "384405cc5fa921dcdda1ee3cc77c8b7e14bf6a54f226b4cffd84f96424c89aa9",
+    "coastal-cartographer/73763/s3/material.png": "1050026df7d38d1ad7516523b938599ceb6d25b710aa657f5ecc3fbf1572ce5d",
+    "coastal-cartographer/73763/s3/face.png": "d9ba90a3356e2130fcaf0e36b6c0888c534bbb7f6042d5c900c9cecdb0ba9713",
+    "coastal-cartographer/73763/s3/far.png": "8461211f8bb18d1ab857eff1e1be5f75009e4718c6b052d9b3e86d777c39c6c1",
+    "coastal-cartographer/73763/s3/near.png": "ea4f62c234738f87528e960a3cd9ae82037a3fa245c785138ca1189abd349ba1",
+    "coastal-cartographer/73763/s3/diff.png": "693e41d036a6bf6c0d0881ad0b153bd7b24b7d57a8559eb38ba2125b0037b08d",
+    "coastal-cartographer/73763/s3/day.png": "ed2d8942c43bfa5dd033f3303208e900a47a538930139881414b9fcedbaed4b1",
+    "coastal-cartographer/73763/s3/night.png": "0f2a560d1782a34d8ca695738dc77400fac9bba60a08454337235c43146e075a"
+  }
+}

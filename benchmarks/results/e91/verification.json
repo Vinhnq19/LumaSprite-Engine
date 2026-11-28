@@ -1,0 +1,17 @@
+{
+  "node": "26.13.1",
+  "replayWallSeconds": 12.765,
+  "scenario": "27 renders with repeat-per-variant, 54 Day/Night scenes, native and exact 4× PNG serialization and QA, Windows",
+  "engine": {
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "smoke": "PASS",
+    "tests": {
+      "passed": 78,
+      "total": 78
+    }
+  },
+  "historicalReplay": "805 historical hashes and 54 reproducible research files PASS",
+  "aiCalls": 0
+}

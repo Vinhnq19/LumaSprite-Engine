@@ -1,0 +1,121 @@
+{
+  "schema": "lumasprite.e91sr.study.v1",
+  "checkpoint": "c4a78e771cd1698354f01d6ee8e612a0e5474c9e",
+  "previousSource": "fa28feeca9117f8da4ab747851b7922e9441785e",
+  "style": "weathered-station-v1",
+  "keyLight": "upper-left",
+  "view": "three-quarter-right",
+  "canvas": 64,
+  "pivot": [
+    32,
+    58
+  ],
+  "padding": 1,
+  "outlineRadius": 1,
+  "holdout": {
+    "id": "highland-weather-observer",
+    "seed": 86327,
+    "seeds": [
+      86327
+    ],
+    "role": "holdout",
+    "brief": "Highland weather observer. Taller crown with a nearly flat top and short asymmetrical brim. Short collared walking coat. Near hand reads a twin-cup wind instrument; far hand holds the tether. Angular body, staggered boot stance.",
+    "wardrobe": "a-line",
+    "archetype": "mantled",
+    "outfit": "collar",
+    "tools": "tether",
+    "torso": "narrow",
+    "garment": "a-line",
+    "headwear": "oilskin",
+    "equipment": [
+      "key",
+      "tray"
+    ],
+    "grips": [
+      "overhand",
+      "pinch"
+    ],
+    "legacy": "benchmarks/fixtures/e75r/ridge.json",
+    "pose": {
+      "hip": [
+        34,
+        38
+      ],
+      "lean": -1,
+      "turn": 3,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "secondaryGroundOffset": -1,
+      "near": {
+        "elbow": [
+          23,
+          34
+        ],
+        "wrist": [
+          21,
+          38
+        ],
+        "palm": [
+          19,
+          40
+        ],
+        "knee": [
+          29,
+          46
+        ],
+        "ankle": [
+          29,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          43,
+          30
+        ],
+        "wrist": [
+          46,
+          33
+        ],
+        "palm": [
+          49,
+          34
+        ],
+        "knee": [
+          42,
+          45
+        ],
+        "ankle": [
+          40,
+          52
+        ]
+      }
+    }
+  },
+  "acceptance": {
+    "stanceVersion": "costume-stance-v2",
+    "minimumLegGapRows": 2,
+    "minimumGripOverlap": 2,
+    "minimumShaftVisible": 6,
+    "capSkullContact": 2,
+    "requireScene": [
+      320,
+      208,
+      32
+    ],
+    "rubric": "docs/art-quality/art-quality-rubric-v2-static-addendum.md",
+    "dimensions": [
+      "occupationalIdentity",
+      "silhouetteDistinctiveness",
+      "faceReadability",
+      "gripPlausibility",
+      "functionalEquipment",
+      "pixelClusters",
+      "formAwareMaterials",
+      "gameplayReadability"
+    ]
+  }
+}

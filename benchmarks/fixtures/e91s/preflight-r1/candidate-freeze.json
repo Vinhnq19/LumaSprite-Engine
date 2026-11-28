@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "source": {
+    "benchmarks/fixtures/e91s/study.json": "ae22e6fb1855853b48877114b04d17fc75a21bad6435b248b60cc0cc2545be7a",
+    "scripts/benchmark-e91s.ts": "a1ff95a07430ff7d92fa21728d0fc2b276d5352e19ee1acaaef56b3a8a1ac941",
+    "src/experiments/character-identity-study.ts": "a376e0e9873ce0217658c323c27f79fc8dcf03e42012e1003dc324172b183e71",
+    "src/experiments/character-v4.ts": "c832ab7028a6c78415b7a0870d4f982ef51a5abc490b5fc88870a40557b5ef99",
+    "src/experiments/character-v4-recovery.ts": "7784dbcb9e217d3d9d7f83bed229c35629f0b1f117fd3489d39b8b5c8418a19e",
+    "src/experiments/costume-stance.ts": "804d0cb6f242e60b909da5f5e93348c9cecee446ace6a5af620673af34a6e18c",
+    "benchmarks/fixtures/e91/study.json": "d85e40db56e71970b33b68be9d873c4e56cf0455c7e9d96aee826e2455199799",
+    "benchmarks/fixtures/e91r/study.json": "a7971fcc16e7be48dc96f3ef9aca9c9afb11c65ce9b06cba0c9ce1ecfb6d0481",
+    "benchmarks/fixtures/e91r/candidate-freeze.json": "b8cf208b01b6e82f889604c4482faa354886d12404fd2bc16d3032d607e8e3b7",
+    "benchmarks/results/e91r/benchmark.json": "b407ee0e533e9a89a1fbfd8aa85761eef6176d44ef8e716cad16241fbae3afd1",
+    "benchmarks/results/e91r/SHA256SUMS": "59fae1e9e5af8d3bb796bbc9515bfeae1889adaa54e4f339833d5fffade064cb",
+    "benchmarks/fixtures/e75r/ridge.json": "62dd67dc7472c72c063e75d46abafa062cb998a9aaf1638d1928946e66b5709f",
+    "benchmarks/fixtures/e75r/marsh.json": "d86fd70363e791ba47d014e9d29dd06f94b8e7c7792ac7fd785960c2dfc70e45",
+    "benchmarks/fixtures/e73/art-direction-v1.json": "1bac2be168f29f4d5fe96e3258fd5fab08baf721ce2f62cd91486c8f28ca295c",
+    "benchmarks/fixtures/e73/tidegate.json": "436779f67da3b23505f69b69d96575e25a504798ed6d29efa638873fae73a22b",
+    "docs/art-quality/art-quality-rubric-v2.json": "44b478c24c4fa5d4d00d3618a7e48947f709d3ca50f172a9cb48148583da81eb",
+    "docs/art-quality/art-quality-rubric-v2-static-addendum.md": "946d09a33437f7cea163606bb71cef2e37168ad1d616512f3e98264926794c5b"
+  },
+  "selected": "s3",
+  "beforeFirstRender": "coastal-cartographer",
+  "seed": 73763,
+  "developmentResult": "983aac1c04653308351eb09f22247d39ddf22af68ea8cde08c5507891240d216"
+}

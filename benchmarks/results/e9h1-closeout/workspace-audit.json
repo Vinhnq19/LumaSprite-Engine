@@ -1,0 +1,208 @@
+{
+  "checkpoint": "dcc8a16d34c86f7346379cbc6f50ac506959128c",
+  "fourCommitRange": [
+    "5fef43d97ddfc09404754c5f027ca93f7037017d",
+    "dcc8a16d34c86f7346379cbc6f50ac506959128c"
+  ],
+  "stagedCount": 0,
+  "unstagedDeletionCount": 38,
+  "committedReportDiff": [
+    "A\tdocs/reports/E9-H1R-ART-DIRECTED-QUALITY-REVIEW.html",
+    "A\tdocs/reports/E9-H1R-WORKFLOW-RESEARCH.md",
+    "M\tdocs/reports/INDEX.md"
+  ],
+  "files": [
+    {
+      "path": "docs/reports/E7.1R-Ruin-Structure.html",
+      "initialAdd": "ee8a4c9970ac2998a1328e67ef693d2396374a34",
+      "lastCommittedChange": "ee8a4c9970ac2998a1328e67ef693d2396374a34"
+    },
+    {
+      "path": "docs/reports/E7.2-A-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "f1494699077aeb4bd697d1e00f6ca3aa5aa423a0",
+      "lastCommittedChange": "f1494699077aeb4bd697d1e00f6ca3aa5aa423a0"
+    },
+    {
+      "path": "docs/reports/E7.2-A-Relay-Material.html",
+      "initialAdd": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174",
+      "lastCommittedChange": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174"
+    },
+    {
+      "path": "docs/reports/E7.2-B-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "ff101af29617f7b80d6f5aab03da31a06e754939",
+      "lastCommittedChange": "ff101af29617f7b80d6f5aab03da31a06e754939"
+    },
+    {
+      "path": "docs/reports/E7.2-R-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "a90ab95626f1cfc13dfe3723d11889181fb1679e",
+      "lastCommittedChange": "a90ab95626f1cfc13dfe3723d11889181fb1679e"
+    },
+    {
+      "path": "docs/reports/E7.3-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "3969177d8bd5c3fe56c58e924518742c54b013ec",
+      "lastCommittedChange": "3969177d8bd5c3fe56c58e924518742c54b013ec"
+    },
+    {
+      "path": "docs/reports/E7.3R-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "62a6a1a40a408a9ed9a1e97feb7091eb59c8eee3",
+      "lastCommittedChange": "62a6a1a40a408a9ed9a1e97feb7091eb59c8eee3"
+    },
+    {
+      "path": "docs/reports/E7.4-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "4e341f3d43a1058cbd495272cd5c0442ebe7d541",
+      "lastCommittedChange": "4e341f3d43a1058cbd495272cd5c0442ebe7d541"
+    },
+    {
+      "path": "docs/reports/E7.4R-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "61fec574d2cb76476167a57cc1cb10c2c5324319",
+      "lastCommittedChange": "61fec574d2cb76476167a57cc1cb10c2c5324319"
+    },
+    {
+      "path": "docs/reports/E7.5-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "278f26956cd598dd85e332b71a5c52d1b9d58d4d",
+      "lastCommittedChange": "278f26956cd598dd85e332b71a5c52d1b9d58d4d"
+    },
+    {
+      "path": "docs/reports/E7.5R-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "80c0fe247cfa2e8438d9c73e744cbbb4df1da00c",
+      "lastCommittedChange": "80c0fe247cfa2e8438d9c73e744cbbb4df1da00c"
+    },
+    {
+      "path": "docs/reports/E7.6-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "1f5350a67e599c4228591693c995cee49d21b7b8",
+      "lastCommittedChange": "1f5350a67e599c4228591693c995cee49d21b7b8"
+    },
+    {
+      "path": "docs/reports/E7.6R-PORTABLE-ART-REVIEW.html",
+      "initialAdd": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd",
+      "lastCommittedChange": "bdc5114bcc92e7a4603f2fd65d4726dd0ee8f7dd"
+    },
+    {
+      "path": "docs/reports/E8-RUNTIME-ACCEPTANCE-REPORT.html",
+      "initialAdd": "a2f7ebb88c03f51bcbe94119f8e99b6a0c61a5e9",
+      "lastCommittedChange": "a2f7ebb88c03f51bcbe94119f8e99b6a0c61a5e9"
+    },
+    {
+      "path": "docs/reports/E8.3-RUNTIME-HARDENING-REPORT.html",
+      "initialAdd": "74c6e7722d92e5570977cd7760e6130c771c9179",
+      "lastCommittedChange": "74c6e7722d92e5570977cd7760e6130c771c9179"
+    },
+    {
+      "path": "docs/reports/E8.5-END-TO-END-PRODUCTION-ACCEPTANCE.html",
+      "initialAdd": "2933cf4675f69f8bac9d01b1be60cd07854f3896",
+      "lastCommittedChange": "2933cf4675f69f8bac9d01b1be60cd07854f3896"
+    },
+    {
+      "path": "docs/reports/e71-artistic-decision.md",
+      "initialAdd": "ee8a4c9970ac2998a1328e67ef693d2396374a34",
+      "lastCommittedChange": "ee8a4c9970ac2998a1328e67ef693d2396374a34"
+    },
+    {
+      "path": "docs/reports/e71r-cleanup.md",
+      "initialAdd": "ee8a4c9970ac2998a1328e67ef693d2396374a34",
+      "lastCommittedChange": "ee8a4c9970ac2998a1328e67ef693d2396374a34"
+    },
+    {
+      "path": "docs/reports/e71r-human-review.md",
+      "initialAdd": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174",
+      "lastCommittedChange": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174"
+    },
+    {
+      "path": "docs/reports/e71r-structure-and-qa.md",
+      "initialAdd": "ee8a4c9970ac2998a1328e67ef693d2396374a34",
+      "lastCommittedChange": "ee8a4c9970ac2998a1328e67ef693d2396374a34"
+    },
+    {
+      "path": "docs/reports/e72-artistic-decision.md",
+      "initialAdd": "3d28b8067fe83ed669e30fe59307248523c8c457",
+      "lastCommittedChange": "3d28b8067fe83ed669e30fe59307248523c8c457"
+    },
+    {
+      "path": "docs/reports/e72-final-artistic-acceptance.md",
+      "initialAdd": "14333c6c9df5bfeb4dbf88f604878b3d01779a2c",
+      "lastCommittedChange": "14333c6c9df5bfeb4dbf88f604878b3d01779a2c"
+    },
+    {
+      "path": "docs/reports/e72a-material-and-qa.md",
+      "initialAdd": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174",
+      "lastCommittedChange": "c97a36f0da15ee630ccbb38b2e0471dd6f44a174"
+    },
+    {
+      "path": "docs/reports/e73-artistic-acceptance.md",
+      "initialAdd": "5133434b02bb07f32c6859536061db90842b704b",
+      "lastCommittedChange": "5133434b02bb07f32c6859536061db90842b704b"
+    },
+    {
+      "path": "docs/reports/e73-cross-asset-architecture.md",
+      "initialAdd": "3d28b8067fe83ed669e30fe59307248523c8c457",
+      "lastCommittedChange": "3d28b8067fe83ed669e30fe59307248523c8c457"
+    },
+    {
+      "path": "docs/reports/e73-style-audit.md",
+      "initialAdd": "14333c6c9df5bfeb4dbf88f604878b3d01779a2c",
+      "lastCommittedChange": "14333c6c9df5bfeb4dbf88f604878b3d01779a2c"
+    },
+    {
+      "path": "docs/reports/e73r-final-artistic-acceptance.md",
+      "initialAdd": "98588cc1e6ef779adf8fa50cfc97c7aabf7cfe70",
+      "lastCommittedChange": "98588cc1e6ef779adf8fa50cfc97c7aabf7cfe70"
+    },
+    {
+      "path": "docs/reports/e73r-semantic-style-audit.md",
+      "initialAdd": "5133434b02bb07f32c6859536061db90842b704b",
+      "lastCommittedChange": "5133434b02bb07f32c6859536061db90842b704b"
+    },
+    {
+      "path": "docs/reports/e74-artistic-decision.md",
+      "initialAdd": "d057d6e3a5d7619686d22f42385d7db7207f23b8",
+      "lastCommittedChange": "d057d6e3a5d7619686d22f42385d7db7207f23b8"
+    },
+    {
+      "path": "docs/reports/e74-pilot-architecture.md",
+      "initialAdd": "98588cc1e6ef779adf8fa50cfc97c7aabf7cfe70",
+      "lastCommittedChange": "98588cc1e6ef779adf8fa50cfc97c7aabf7cfe70"
+    },
+    {
+      "path": "docs/reports/e74-quality-guided-generation-proposal.md",
+      "initialAdd": "5133434b02bb07f32c6859536061db90842b704b",
+      "lastCommittedChange": "5133434b02bb07f32c6859536061db90842b704b"
+    },
+    {
+      "path": "docs/reports/e74r-artistic-closeout.md",
+      "initialAdd": "5998899d64fc8b2030b31354023af17e6bcef73b",
+      "lastCommittedChange": "5998899d64fc8b2030b31354023af17e6bcef73b"
+    },
+    {
+      "path": "docs/reports/e74r-semantic-structure-audit.md",
+      "initialAdd": "d057d6e3a5d7619686d22f42385d7db7207f23b8",
+      "lastCommittedChange": "d057d6e3a5d7619686d22f42385d7db7207f23b8"
+    },
+    {
+      "path": "docs/reports/e75-artistic-closeout.md",
+      "initialAdd": "fcf9c3d638fea6d6b23608c1bdae671ce0a2df63",
+      "lastCommittedChange": "fcf9c3d638fea6d6b23608c1bdae671ce0a2df63"
+    },
+    {
+      "path": "docs/reports/e75-character-pipeline-audit.md",
+      "initialAdd": "5998899d64fc8b2030b31354023af17e6bcef73b",
+      "lastCommittedChange": "5998899d64fc8b2030b31354023af17e6bcef73b"
+    },
+    {
+      "path": "docs/reports/e75r-fair-comparison.md",
+      "initialAdd": "fcf9c3d638fea6d6b23608c1bdae671ce0a2df63",
+      "lastCommittedChange": "fcf9c3d638fea6d6b23608c1bdae671ce0a2df63"
+    },
+    {
+      "path": "docs/reports/e76-environment-pilot.md",
+      "initialAdd": "ec5d8c6ec3d9130bd118dfcb8bcc1528a1158faa",
+      "lastCommittedChange": "ec5d8c6ec3d9130bd118dfcb8bcc1528a1158faa"
+    },
+    {
+      "path": "docs/reports/e76r-functional-environment.md",
+      "initialAdd": "6cfc654e8e9f6c3d585d541038ede428136d929a",
+      "lastCommittedChange": "6cfc654e8e9f6c3d585d541038ede428136d929a"
+    }
+  ],
+  "disposition": "PRESERVED_OUTSIDE_CLOSEOUT",
+  "origin": "Index blobs match the checkpoint. Last committed file history is listed. Git contains no attribution or intent for an unstaged deletion."
+}

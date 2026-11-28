@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "html": "docs/reports/E9-H1-HYBRID-CHARACTER-PILOT.html",
+  "bytes": 661606,
+  "sha256": "b0d4b047c78215ac42439f5b6b109fa24580b7e14e6607007a6faf80aa230694",
+  "copy": "Windows Temp outside both repositories, only HTML in directory, exact SHA-256",
+  "chrome": "158.0.0.0",
+  "offlineVerified": true,
+  "renderedImages": 117,
+  "uniquePngPayloads": 88,
+  "uniqueSourceArtifacts": 97,
+  "pngSha256Verified": true,
+  "externalResourceRequests": 0,
+  "relativeDependencies": 0,
+  "consoleErrorsOrWarnings": 0,
+  "native": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "nearest": [
+    256,
+    256,
+    "pixelated"
+  ],
+  "restored": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "mobile": {
+    "native": {
+      "w": 64,
+      "viewport": 390,
+      "doc": 390
+    },
+    "nearest": {
+      "w": 256,
+      "viewport": 390,
+      "doc": 390
+    }
+  },
+  "blindLabelsHiddenByDefault": true,
+  "blindRevealTested": true,
+  "humanReviewJsonUnsigned": true
+}

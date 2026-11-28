@@ -13,6 +13,7 @@
     "test": "node --test tests/*.test.ts",
     "smoke": "node scripts/cli-smoke.ts",
     "generate": "node dist/cli/main.js",
+    "component": "node dist/cli/component.js",
     "benchmark": "node dist/cli/benchmark.js",
     "benchmark:e2": "node scripts/benchmark-e2.ts",
     "benchmark:e23": "node scripts/benchmark-e2.ts --e23",
@@ -96,7 +97,8 @@
     "report:e3": "node scripts/report-e3.ts",
     "test:terrain-studio": "node --test scripts/terrain-studio.ts",
     "serve": "node dist/server/main.js",
-    "test:studio": "node --test scripts/studio-preview.ts"
+    "test:studio": "node --test scripts/studio-preview.ts",
+    "test:e85-studio": "node --test scripts/e85-studio-pipeline.ts"
   },
   "dependencies": {
     "pngjs": "^7.0.0",

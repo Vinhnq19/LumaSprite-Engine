@@ -1,0 +1,97 @@
+{
+  "all": {
+    "files": 35110,
+    "bytes": 1107480541
+  },
+  "reportLike": {
+    "files": 8588,
+    "bytes": 170866631
+  },
+  "byCategory": {
+    "KEEP": {
+      "files": 23912,
+      "bytes": 366018126
+    },
+    "ARCHIVE": {
+      "files": 4,
+      "bytes": 33798
+    },
+    "SAFE_TO_REMOVE": {
+      "files": 67,
+      "bytes": 2490809
+    },
+    "NEEDS_REVIEW": {
+      "files": 11127,
+      "bytes": 738937808
+    }
+  },
+  "inventorySha256": "34ede212fde21534db20bc6d1ac48cd2d62e25d24f8474b08a3ed10d6d0b804b",
+  "removed": {
+    "files": 57,
+    "bytes": 2287556
+  },
+  "removedReports": {
+    "files": 1,
+    "bytes": 2042521
+  },
+  "additionalHeld": [
+    {
+      "path": ".cache/e76r-preview/floodgate-maintenance-yard/b1-day.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": ".cache/e76r-preview/floodgate-maintenance-yard/b1-night.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": ".cache/e76r-preview/mistfen-ferry-landing/b1-day.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": ".cache/e76r-preview/mistfen-ferry-landing/b1-night.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": ".cache/e76r-preview/mistfen-ferry-landing/b2-day.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": ".cache/e76r-preview/mistfen-ferry-landing/b2-night.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": "benchmarks/results/run/e72b-dev/h1-day.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": "benchmarks/results/run/e72b-dev/h1-night.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": "benchmarks/results/run/e72b-dev/r1-day.png",
+      "reason": "active replay/preview namespace"
+    },
+    {
+      "path": "benchmarks/results/run/e72b-dev/r1-night.png",
+      "reason": "active replay/preview namespace"
+    }
+  ],
+  "existingArchivePaths": [
+    "../LumaSprite-Coordination/archive/2026-11-26-pre-e71r/CHATGPT-HANDOFF.md",
+    "../LumaSprite-Coordination/archive/2026-11-26-pre-e71r/LUMASPRITE-UNIFIED-REPORT.md",
+    "benchmarks/results/run/e71r-report-archive/e3-test-report.md",
+    "benchmarks/results/run/e71r-report-archive/e33-audit.md"
+  ],
+  "cleanupOnlyAfter": {
+    "all": {
+      "files": 35053,
+      "bytes": 1105192985
+    },
+    "reportLike": {
+      "files": 8587,
+      "bytes": 168824110
+    }
+  },
+  "decision": "57 duplicates verified removed from the original inventory population",
+  "fullInventory": ".cache/e91r-audit/inventory-before.tsv"
+}

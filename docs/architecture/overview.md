@@ -1,5 +1,11 @@
 # Architecture
 
+## v1 production paths
+
+Artist PNGs enter through the [component contract](../engine-cli-api.md#artist-authored-png-or-components). The intake verifies native RGBA, hashes, palette, binary masks, ownership, pivot and anchors. Pixel Core composites ordered layers on the original grid. Revisions repeat validation, bind the prior manifest and enforce the edit mask. Export contains the original layers, masks and a flattened native sprite. Studio can edit the PNGs and the sidecar retains the asset metadata. Unity consumes the resulting sprite using Point filtering and the declared PPU. Native scene ZIPs use the separate E8.5 importer.
+
+Existing generator commands and the Studio prop adapter keep their defaults and versioned inputs. The flow below is the original prop path.
+
 ```mermaid
 flowchart LR
   A[CLI brief or Studio request] --> B[Local mock planner]

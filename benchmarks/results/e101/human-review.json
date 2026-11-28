@@ -1,0 +1,87 @@
+{
+  "schema": "lumasprite.e101.owner-review.v1",
+  "state": "UNSIGNED",
+  "authority": "PROJECT_OWNER",
+  "reviewer": null,
+  "reviewedAt": null,
+  "signature": null,
+  "architectureRecommendation": "OPTION_B_ARTIST_DIRECTED_COMPONENT_PIPELINE",
+  "architectureDecision": null,
+  "selectedPilot": null,
+  "pilotOptions": [
+    "ceramic-kiln-warden",
+    "canopy-kite-rigger",
+    "seed-archive-registrar"
+  ],
+  "artDirectionDecision": null,
+  "referenceDecisions": {
+    "kiln-silhouette": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "kite-silhouette": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "seed-silhouette": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "kiln-head": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "kite-proportions": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "seed-mantle": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "kiln-ceramic": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "kite-fold": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "seed-tray": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "kiln-grip": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    },
+    "contour-hierarchy": {
+      "choice": null,
+      "approvedFeatures": [],
+      "notes": null,
+      "productionRightsConfirmed": null
+    }
+  },
+  "e102Authorization": null,
+  "notes": null
+}

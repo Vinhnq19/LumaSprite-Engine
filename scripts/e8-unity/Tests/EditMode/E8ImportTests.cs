@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -30,8 +34,9 @@ public sealed class E8ImportTests
         Assert.AreEqual(1, walk.FrameAt(120));
         Assert.AreEqual(0, walk.FrameAt(880));
         Assert.AreEqual(new Vector2(30, 5), walk.Sprites[0].pivot);
-        foreach (var sprite in walk.Sprites) Object.DestroyImmediate(sprite);
+        foreach (var sprite in walk.Sprites) UnityEngine.Object.DestroyImmediate(sprite);
     }
+
     [Test]
     public void NearbyTargetsRemainStableAndUseOriginalFivePixelRange()
     {
@@ -66,5 +71,109 @@ public sealed class E8ImportTests
                 Assert.GreaterOrEqual(mark.y, 5);
                 Assert.Less(mark.y, data.height - 4);
             }
+    }
+
+    [Test]
+    public void StudioZipImporterImportsRealOwnerMistfenZipAtX117()
+    {
+        string ownerZip = Path.GetFullPath("../.cache/e85-studio-zips/e8-mistfen-ferry-landing-day-e84-export.zip");
+        if (!File.Exists(ownerZip)) ownerZip = @"D:\LumaSprite-Engine\.cache\e85-studio-zips\e8-mistfen-ferry-landing-day-e84-export.zip";
+        Assert.IsTrue(File.Exists(ownerZip), "Missing Owner E8.4 ZIP: " + ownerZip);
+        string tempOut = Path.Combine(Path.GetTempPath(), "e85-edit-owner-" + Guid.NewGuid().ToString("N"));
+        try
+        {
+            var imported = E8StudioZipImporter.ImportZipToDirectory(ownerZip, tempOut, null, true);
+            Assert.AreEqual("mistfen-ferry-landing", imported.SceneKey);
+            Assert.AreEqual("day", imported.Light);
+            Assert.AreEqual(117, imported.SpawnX);
+            Assert.AreEqual(174, imported.SpawnY);
+            Assert.AreEqual(8, imported.StudioRevision);
+            Assert.AreEqual("APPROVED", imported.ApprovalStatus);
+            Assert.AreEqual("b7606778e555e2f048356c1dbb6c89be7bbc9315683e7c0e88d99c6c4d779754", imported.ZipSha256);
+            var parsed = JsonUtility.FromJson<E8SceneData>(File.ReadAllText(Path.Combine(tempOut, "mistfen-ferry-landing/day/scene.json")));
+            parsed.Validate(parsed.revision, parsed.id, false);
+            Assert.AreEqual(117, parsed.spawn.x);
+            Assert.AreEqual(183, parsed.route.Length);
+        }
+        finally { if (Directory.Exists(tempOut)) Directory.Delete(tempOut, true); }
+    }
+
+    [Test]
+    public void StudioDynamicInteractionLabelOverridesHardcodedDefaultAndPreservesLegacy()
+    {
+        var data = new E8SceneData { id = "mistfen-ferry-landing" };
+        Assert.AreEqual("Kiểm tra bến phà", E8InteractionHud.PromptFor(data, new E8SceneData.Landmark { kind = "boarding-sill" }));
+        Assert.AreEqual("Kiểm tra cầu phà E8.5", E8InteractionHud.PromptFor(data, new E8SceneData.Landmark { kind = "boarding-sill", label = "Kiểm tra cầu phà E8.5" }));
+    }
+
+    [Test]
+    public void StudioZipImporterRejectsTraversalAndTamperedOrUnapprovedPackages()
+    {
+        Assert.Throws<InvalidDataException>(() => E8StudioZipImporter.ValidateZipEntryPath("../evil.png"));
+        Assert.Throws<InvalidDataException>(() => E8StudioZipImporter.ValidateZipEntryPath("/abs/path.json"));
+        Assert.Throws<InvalidDataException>(() => E8StudioZipImporter.ValidateZipEntryPath("C:\\win.json"));
+
+        string validZip = @"D:\LumaSprite-Engine\.cache\e85-studio-zips\e8-mistfen-ferry-landing-day-e84-export.zip";
+        var entries = E8StudioZipImporter.ReadZip(File.ReadAllBytes(validZip));
+        string tmpZip = Path.Combine(Path.GetTempPath(), "e85-neg-" + Guid.NewGuid().ToString("N") + ".zip");
+        string tmpDir = Path.Combine(Path.GetTempPath(), "e85-neg-out-" + Guid.NewGuid().ToString("N"));
+        try
+        {
+            // 1) Tamper scene.json so manifest hash check fails
+            var tampered = new Dictionary<string, byte[]>(entries);
+            tampered["mistfen-ferry-landing/day/scene.json"] = Encoding.UTF8.GetBytes("{}");
+            WriteStoredZip(tmpZip, tampered);
+            Assert.Throws<InvalidDataException>(() => E8StudioZipImporter.ImportZipToDirectory(tmpZip, tmpDir));
+
+            // 2) Unapproved sidecar with updated matching manifest hash must still be rejected by requireApproved
+            var unapproved = new Dictionary<string, byte[]>(entries);
+            string sidecarText = Encoding.UTF8.GetString(unapproved["studio-scene-sidecar.json"]).Replace("\"APPROVED\"", "\"UNREVIEWED\"");
+            unapproved["studio-scene-sidecar.json"] = Encoding.UTF8.GetBytes(sidecarText);
+            string mfText = Encoding.UTF8.GetString(unapproved["export-manifest.json"]).Replace(
+                E8StudioZipImporter.Sha256Hex(entries["studio-scene-sidecar.json"]),
+                E8StudioZipImporter.Sha256Hex(unapproved["studio-scene-sidecar.json"]));
+            unapproved["export-manifest.json"] = Encoding.UTF8.GetBytes(mfText);
+            WriteStoredZip(tmpZip, unapproved);
+            Assert.Throws<InvalidDataException>(() => E8StudioZipImporter.ImportZipToDirectory(tmpZip, tmpDir, null, true));
+        }
+        finally
+        {
+            if (File.Exists(tmpZip)) File.Delete(tmpZip);
+            if (Directory.Exists(tmpDir)) Directory.Delete(tmpDir, true);
+        }
+    }
+
+    static void WriteStoredZip(string path, Dictionary<string, byte[]> entries)
+    {
+        using var fs = File.Create(path);
+        using var bw = new BinaryWriter(fs, Encoding.UTF8);
+        var cd = new List<byte[]>();
+        uint offset = 0;
+        foreach (var kv in entries)
+        {
+            byte[] name = Encoding.UTF8.GetBytes(kv.Key);
+            byte[] data = kv.Value;
+            bw.Write((uint)0x04034b50); bw.Write((ushort)20); bw.Write((ushort)0); bw.Write((ushort)0);
+            bw.Write((ushort)0); bw.Write((ushort)0); bw.Write((uint)0);
+            bw.Write((uint)data.Length); bw.Write((uint)data.Length);
+            bw.Write((ushort)name.Length); bw.Write((ushort)0);
+            bw.Write(name); bw.Write(data);
+
+            using var cms = new MemoryStream();
+            using var cw = new BinaryWriter(cms);
+            cw.Write((uint)0x02014b50); cw.Write((ushort)20); cw.Write((ushort)20); cw.Write((ushort)0); cw.Write((ushort)0);
+            cw.Write((ushort)0); cw.Write((ushort)0); cw.Write((uint)0);
+            cw.Write((uint)data.Length); cw.Write((uint)data.Length);
+            cw.Write((ushort)name.Length); cw.Write((ushort)0); cw.Write((ushort)0);
+            cw.Write((ushort)0); cw.Write((ushort)0); cw.Write((uint)0); cw.Write(offset);
+            cw.Write(name);
+            cd.Add(cms.ToArray());
+            offset += (uint)(30 + name.Length + data.Length);
+        }
+        uint cdSize = 0;
+        foreach (var rec in cd) { bw.Write(rec); cdSize += (uint)rec.Length; }
+        bw.Write((uint)0x06054b50); bw.Write((ushort)0); bw.Write((ushort)0);
+        bw.Write((ushort)cd.Count); bw.Write((ushort)cd.Count);
+        bw.Write(cdSize); bw.Write(offset); bw.Write((ushort)0);
     }
 }

@@ -1,0 +1,21 @@
+{
+  "report": "docs/reports/E9.1S-R-FINAL-CHARACTER-REVIEW.html",
+  "sha256": "700d48e08cffba3abef2e9690697d74bc94355171ed5c108ffaedf5d9e85d15f",
+  "bytes": 937714,
+  "chrome": "158.0.0.0",
+  "mode": "Offline",
+  "location": "Standalone Windows Temp copy outside Engine",
+  "copySha256": "MATCH",
+  "embeddedPngs": 101,
+  "placements": 120,
+  "sha256PerPlacement": "120/120 MATCH",
+  "nearestNeighbor": "Native 1× and 4× verified",
+  "backgroundToggle": "PASS",
+  "blankOwnerReview": "PASS",
+  "externalDependencies": 0,
+  "consoleErrors": 0,
+  "viewports": [
+    1440,
+    390
+  ]
+}

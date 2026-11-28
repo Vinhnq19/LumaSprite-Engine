@@ -1,0 +1,53 @@
+{
+  "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+  "branch": "main",
+  "mode": "RAW_PNG_ONLY",
+  "v4Contract": "STUDIO_V4_CONTRACT_GAP",
+  "samples": [
+    {
+      "file": "benchmarks/results/e91/harbor-lockkeeper/24137/a0/sprite.png",
+      "pngSha256": "452f43a4a25842f2859e24be51dcf599e2bd1be933e11fe96e1ddf4c933bc567",
+      "rgbaSha256": "2b79a2e05bf2ea9f732c8711ba8b8391a6b13faac5a96a4bb89aafd1605b1d28"
+    },
+    {
+      "file": "benchmarks/results/e91/harbor-lockkeeper/24137/b4/sprite.png",
+      "pngSha256": "454930b9bcb62721374f5665faa243b0f351538ff4c5b1fbc2fb866ccf7149ba",
+      "rgbaSha256": "6dd8aa7b967a0b0c387306c5dda7425ca8f230879ad3f3c9b8f587d01da022c2"
+    },
+    {
+      "file": "benchmarks/results/e91/harbor-lockkeeper/24137/b4/parts.png",
+      "pngSha256": "6860defddb394e0448aa4aa85fd61844abe33eb5bb2cdae06a46765323a52016",
+      "rgbaSha256": "ef7e49e7fa511cd0e052631a96fe5bdf846eb3a71ed5606c0396655cfd2c7586"
+    },
+    {
+      "file": "benchmarks/results/e91/harbor-lockkeeper/24138/a0/sprite.png",
+      "pngSha256": "452f43a4a25842f2859e24be51dcf599e2bd1be933e11fe96e1ddf4c933bc567",
+      "rgbaSha256": "2b79a2e05bf2ea9f732c8711ba8b8391a6b13faac5a96a4bb89aafd1605b1d28"
+    },
+    {
+      "file": "benchmarks/results/e91/harbor-lockkeeper/24138/b4/sprite.png",
+      "pngSha256": "e38eef9c1e0ece023fb66f16548b4bbe9edb7d32f510eb6c39e517bb2c6aa06c",
+      "rgbaSha256": "3b641e9eb844fe5916aec299e05b5e1b0f5fd079680ee158ac64ce66efda3282"
+    },
+    {
+      "file": "benchmarks/results/e91/harbor-lockkeeper/24138/b4/parts.png",
+      "pngSha256": "1824f8c0b4308f158fbf418d1d99b6ef5735ad1b8b4efe99ce225f821695aa89",
+      "rgbaSha256": "306c7e5538edf647931333cf9c82926e3adc7a55bb5ada5f82f4a85a2accdab2"
+    },
+    {
+      "file": "benchmarks/results/e91/marsh-apothecary/55271/a0/sprite.png",
+      "pngSha256": "1f2a6717a077f02fbdaa6a690374efa9fbe80f13a8f069d0bef5c11848964a58",
+      "rgbaSha256": "add02ebf5c368c5b4c5ca9ffb9d84a583abf3034433b3761aa7c6d96c9501cfe"
+    },
+    {
+      "file": "benchmarks/results/e91/marsh-apothecary/55271/b4/sprite.png",
+      "pngSha256": "31c4fa0c90108dffce0f9a8ec4baefe1771f309ae6a4a6523460bca8181bb49a",
+      "rgbaSha256": "a819e779591693eeb615aebbdb95bf464957e4e06c65eacbbc74451c64160969"
+    },
+    {
+      "file": "benchmarks/results/e91/marsh-apothecary/55271/b4/parts.png",
+      "pngSha256": "d4b302e38b9ba71c0da7aa5c388cd20c2152f454976363360102739d9b09f6e7",
+      "rgbaSha256": "b872048d50dc4c6f0adc6ad2dd811aa9aa403e9c4e54608f500b6d6ddbff84d7"
+    }
+  ]
+}

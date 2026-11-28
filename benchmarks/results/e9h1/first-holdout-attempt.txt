@@ -1,0 +1,21 @@
+tidal-salvage-diver [
+  [ 'a', { left: 8, top: 3, right: 56, bottom: 57 }, 11, 9 ],
+  [ 'matched', { left: 8, top: 3, right: 56, bottom: 57 }, 11, 9 ],
+  [ 'full', { left: 3, top: 5, right: 56, bottom: 57 }, 11, 9 ]
+] 65
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: far-shin has no visible ownership
+    at visible (file:///D:/LumaSprite-Engine/scripts/benchmark-e9h1.ts:150:10)
+    at file:///D:/LumaSprite-Engine/scripts/benchmark-e9h1.ts:239:22 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 0,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.13.1

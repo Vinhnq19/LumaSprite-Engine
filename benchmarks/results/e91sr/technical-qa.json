@@ -1,0 +1,117 @@
+{
+  "status": "E9_1SR_READY_FOR_FINAL_OWNER_STATIC_ART_REVIEW",
+  "historical": 805,
+  "catalogs": {
+    "e76r": 142,
+    "e8": 42,
+    "e83": 52,
+    "e85": 56,
+    "e90": 3,
+    "e91": 616,
+    "e91r": 277,
+    "e91s": 189
+  },
+  "regenerated": 79,
+  "firstHoldoutPngsUnchanged": 78,
+  "firstFreeze": "88228dcd6883e09b9e7f8d2b3bd4b2a01d51807da59512c5323570a77600f7bc",
+  "studio": {
+    "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "mode": "RAW_PNG_ONLY",
+    "pngs": [
+      {
+        "file": "harbor-lockkeeper/24137/s0/sprite.png",
+        "milestone": "e91s",
+        "pngSha256": "3eddfb5cf2b0a7e95fa351c7ed6d8c133edb72777e646648fbe7a6ee275063d3",
+        "rgbaSha256": "83c59ee8bd482387ab4c0d9c7479f0dca3dc5f8d10c256877e0f1c28d0ead8ee"
+      },
+      {
+        "file": "harbor-lockkeeper/24137/s3/sprite.png",
+        "milestone": "e91s",
+        "pngSha256": "30a05bc81740d44b6bbbb80bc0c3c7c49cc016bbde7a07e3e76d69ad8e291f0d",
+        "rgbaSha256": "a8d206da8a03290161c7ce34135d5eeff2849f2e724906c7f1639601939c65f8"
+      },
+      {
+        "file": "harbor-lockkeeper/24137/s3/night.png",
+        "milestone": "e91s",
+        "pngSha256": "2600c57960a7504aa1be9a9751ab0bc0209448472d34ad9c873c1d5049fce518",
+        "rgbaSha256": "9af0b0a80d1ec95208ace8f890088f85b6a6e350f1308493a69619f21d3bfe8d"
+      },
+      {
+        "file": "marsh-apothecary/55271/s0/sprite.png",
+        "milestone": "e91s",
+        "pngSha256": "41ac67f3cbeeae93f0bcfe01c800bf9ee1d98616dd644abe078d66fa3f269642",
+        "rgbaSha256": "a0787daf6d2129bfc1021344cc974499de6fa20715dba2bd0875ea21378d39ac"
+      },
+      {
+        "file": "marsh-apothecary/55271/s3/sprite.png",
+        "milestone": "e91s",
+        "pngSha256": "be28037076c4d6179e532d51fcd5e4a1a278863bcc9beeeda3a7b85bfdca37cb",
+        "rgbaSha256": "127565a8da9b9cf6d57c1bf568b2dd7aa0da213782d9c8f91cff286e4ecadd52"
+      },
+      {
+        "file": "marsh-apothecary/55271/s3/night.png",
+        "milestone": "e91s",
+        "pngSha256": "4111cef5c3f17b3cebe04f3b3eee2bb8bfb3f8445023b04cc1cd9e8e3d8739d6",
+        "rgbaSha256": "b911d4ae7d93a0368f13871e36d42600b0de27d9680a713355e2b5dd92287655"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/s0/sprite.png",
+        "milestone": "e91s",
+        "pngSha256": "a5ca5937936dbfe79793a7c94455d50616d347dd37513f86fdb9c3624adb5175",
+        "rgbaSha256": "ff09c3c20d4bf52f6e3325760bc45bea0be5f1db886a82146af9fa2db694b226"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/s3/sprite.png",
+        "milestone": "e91s",
+        "pngSha256": "f0d392bcc7654a8abb4775449de590a6d1218a14dbf439822d34170c604aefc3",
+        "rgbaSha256": "c19b4f5da97ecb0af093fb1c7e613ee54c27926b1ab1c2b57de5419919807ccd"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/s3/night.png",
+        "milestone": "e91s",
+        "pngSha256": "692b714844863868f7f26ffa934076ab6fcc31c5aad0564fba5689135621030c",
+        "rgbaSha256": "f027c8d9aaa923bb2d75db17e6c2de64e63df59f8c77cbaeed61bbfe76207986"
+      },
+      {
+        "file": "coastal-cartographer/73763/s0/sprite.png",
+        "milestone": "e91s",
+        "pngSha256": "991e7a3bdbcd2db0e0b12244f53843ededbbaf2f259a822655291ba24254da94",
+        "rgbaSha256": "322498fb579085d61b010fdfedf2c2fc680405328dc844c559057b1f810c73c5"
+      },
+      {
+        "file": "coastal-cartographer/73763/s3/sprite.png",
+        "milestone": "e91sr",
+        "pngSha256": "d0937f7bf6688e18ab0258e690b39c1562f5e30391991ecbf1d71f382e8e70d7",
+        "rgbaSha256": "f8554c01593ff6f894041b0867148aacc57b9624f031c3b7fdd6735f9d797fdf"
+      },
+      {
+        "file": "coastal-cartographer/73763/s3/night.png",
+        "milestone": "e91sr",
+        "pngSha256": "ef8393b3ab092240818b83b1c6ad014c6a7b19a9182adfdb9ca6b5392426a1e3",
+        "rgbaSha256": "b6d6e8b1f19459120992787ded3b516d9656f314618ab8efbf548b9f0b0c384e"
+      },
+      {
+        "file": "highland-weather-observer/86327/s0/sprite.png",
+        "milestone": "e91sr",
+        "pngSha256": "c572f5d35e1436e73c27977971ba90a87347b322933a712e22df4daf5205aaad",
+        "rgbaSha256": "6dceeda28d2728b3914f3139ccb5e2d2450c88b2364999893b1ca293554e857e"
+      },
+      {
+        "file": "highland-weather-observer/86327/s3/sprite.png",
+        "milestone": "e91sr",
+        "pngSha256": "252e289a201438f1e26db7d3325f446213cd45f321b2c27fd621344eaa3d9e80",
+        "rgbaSha256": "a48b96775e4f55ad32371b7f0f3d982af4eeb641abd13fee53b38b0142ea1928"
+      },
+      {
+        "file": "highland-weather-observer/86327/s3/night.png",
+        "milestone": "e91sr",
+        "pngSha256": "8f3eac4b648cf826575335d21f21fbb08c02d850af632e0e089a2a7368c7bea5",
+        "rgbaSha256": "e0c5aec0a03141939d25987f823b5ea1a12639bdf802093e9f20ed58544e45e7"
+      }
+    ]
+  },
+  "staticScenes": 40,
+  "unityRuntime": "NOT_RUN",
+  "productionDefaults": "UNCHANGED",
+  "owner": "STATIC_ART_REVIEW_PENDING"
+}

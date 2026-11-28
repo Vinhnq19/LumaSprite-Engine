@@ -1,0 +1,24 @@
+{
+  "version": 4,
+  "kind": "experimental-part-character",
+  "seed": 24137,
+  "id": "harbor-lockkeeper",
+  "profile": "weathered-station-v1",
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "pivot": [
+    32,
+    58
+  ],
+  "view": "three-quarter-right",
+  "equipment": [
+    "valve",
+    "key"
+  ],
+  "grips": [
+    "overhand",
+    "pinch"
+  ]
+}

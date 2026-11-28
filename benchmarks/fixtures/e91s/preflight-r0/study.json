@@ -1,0 +1,153 @@
+{
+  "schema": "lumasprite.e91s.study.v1",
+  "e91r": "cb2eb3f046f0f6694100327a1baa29bc67ab7278",
+  "e91rSource": "c33707192550c19a96c4cff58d50597554138810",
+  "style": "weathered-station-v1",
+  "view": "three-quarter-right",
+  "keyLight": "upper-left",
+  "canvas": 64,
+  "pivot": [
+    32,
+    58
+  ],
+  "stages": {
+    "s0": "Frozen E9.1R B3 candidate. Fresh case uses B3 with the matched E7 proxy equipment.",
+    "s1": "Change proportion, neck pitch and garment geometry. Retain tool masks and all hand/leg landmarks.",
+    "s2": "Add brow, nose, cheek and jaw planes within S1 geometry.",
+    "s3": "Change equipment and orient contact surfaces through the same hand sockets. Keep other masks and the Cliffside lantern."
+  },
+  "cases": [
+    {
+      "id": "harbor-lockkeeper",
+      "seed": 24137,
+      "role": "known",
+      "wardrobe": "apron",
+      "archetype": "braced",
+      "outfit": "apron",
+      "tools": "wheel-and-pin",
+      "reference": "recovered-field"
+    },
+    {
+      "id": "marsh-apothecary",
+      "seed": 55271,
+      "role": "known",
+      "wardrobe": "a-line",
+      "archetype": "tapered",
+      "outfit": "shawl",
+      "tools": "vial-rack",
+      "reference": "recovered-field"
+    },
+    {
+      "id": "cliffside-lantern-keeper",
+      "seed": 61947,
+      "role": "known",
+      "wardrobe": "cloak",
+      "archetype": "mantled",
+      "outfit": "cape",
+      "tools": "tether",
+      "reference": "b3-field"
+    }
+  ],
+  "holdout": {
+    "id": "coastal-cartographer",
+    "seed": 73763,
+    "seeds": [
+      73763
+    ],
+    "role": "holdout",
+    "wardrobe": "a-line",
+    "archetype": "tailored",
+    "outfit": "collar",
+    "tools": "survey-kit",
+    "brief": "Coastal field cartographer, 64×64 three-quarter-right. Narrow clear neck and fitted short coat, standing with a sighting compass in the near hand and a folded chart supported in the far hand. Avoid worker proportions and light-emitting tools.",
+    "torso": "narrow",
+    "garment": "a-line",
+    "headwear": "oilskin",
+    "equipment": [
+      "key",
+      "tray"
+    ],
+    "grips": [
+      "overhand",
+      "supporting"
+    ],
+    "legacy": "benchmarks/fixtures/e75r/ridge.json",
+    "pose": {
+      "hip": [
+        34,
+        36
+      ],
+      "lean": 0,
+      "turn": 2,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "secondaryGroundOffset": -1,
+      "near": {
+        "elbow": [
+          23,
+          35
+        ],
+        "wrist": [
+          21,
+          39
+        ],
+        "palm": [
+          21,
+          41
+        ],
+        "knee": [
+          30,
+          46
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          41,
+          32
+        ],
+        "wrist": [
+          44,
+          34
+        ],
+        "palm": [
+          45,
+          35
+        ],
+        "knee": [
+          42,
+          45
+        ],
+        "ankle": [
+          41,
+          52
+        ]
+      }
+    }
+  },
+  "criteria": {
+    "criticalDefectScope": "Rubric v2 Static Addendum; owner decides by each independent criterion and critical defects.",
+    "stanceVersion": "costume-stance-v2",
+    "minimumLegGapRows": 2,
+    "minimumGripOverlap": 2,
+    "pad": 1,
+    "minimumShaftVisible": 6,
+    "quality": [
+      "silhouetteDistinctiveness",
+      "functionalIdentity",
+      "stylizedAnatomy",
+      "faceReadability",
+      "gripPlausibility",
+      "pixelClusters",
+      "materials",
+      "styleConsistency",
+      "gameplayReadability"
+    ]
+  }
+}

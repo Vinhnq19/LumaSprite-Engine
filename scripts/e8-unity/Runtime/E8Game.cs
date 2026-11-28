@@ -8,10 +8,9 @@ public sealed class E8Game : MonoBehaviour
 {
     [Serializable] sealed class SaveState
     {
-        public string revision;
-        public int index;
+        public string revision, zipSha256;
+        public int index, x, y, studioRevision;
         public bool night;
-        public int x, y;
     }
 
     public E8Bundle Bundle { get; private set; }
@@ -75,6 +74,18 @@ public sealed class E8Game : MonoBehaviour
     public IEnumerator Load(int index, bool night, Vector2Int? position = null)
     {
         E8Assets.Check(index >= 0 && index < Bundle.cases.Length, "scene index");
+        var data = Bundle.LoadScene(index, night);
+        yield return LoadSceneData(index, night, data, position);
+    }
+
+    public IEnumerator LoadPath(string resourcePath, string expectedId, bool night, int index = 0, Vector2Int? position = null)
+    {
+        var data = Bundle.LoadPath(resourcePath, expectedId, night);
+        yield return LoadSceneData(index, night, data, position);
+    }
+
+    IEnumerator LoadSceneData(int index, bool night, E8SceneData data, Vector2Int? position)
+    {
         loading = true;
         notice = "";
         noticeUntil = 0;
@@ -87,11 +98,10 @@ public sealed class E8Game : MonoBehaviour
             previous.Release();
         }
         Index = index; Night = night;
-        var data = Bundle.LoadScene(index, night);
         World = new E8World(data);
         World.Interacted += _ =>
         {
-            notice = E8InteractionHud.FeedbackFor(data.id);
+            notice = E8InteractionHud.FeedbackFor(data, World.ActiveTarget);
             noticeUntil = Time.unscaledTimeAsDouble + 1.5;
         };
         if (position.HasValue) World.Place(position.Value);
@@ -105,7 +115,16 @@ public sealed class E8Game : MonoBehaviour
 
     public void Save(string path)
     {
-        var save = new SaveState { revision = Bundle.revision, index = Index, night = Night, x = World.Position.x, y = World.Position.y };
+        var save = new SaveState
+        {
+            revision = Bundle.revision,
+            index = Index,
+            night = Night,
+            x = World.Position.x,
+            y = World.Position.y,
+            studioRevision = World.Data.studio?.studioRevision ?? 0,
+            zipSha256 = World.Data.studio?.zipSha256 ?? "",
+        };
         File.WriteAllText(path, JsonUtility.ToJson(save));
     }
 
@@ -114,6 +133,8 @@ public sealed class E8Game : MonoBehaviour
         var saved = JsonUtility.FromJson<SaveState>(File.ReadAllText(path));
         E8Assets.Check(saved.revision == Bundle.revision, "save revision mismatch");
         yield return Load(saved.index, saved.night, new Vector2Int(saved.x, saved.y));
+        E8Assets.Check((World.Data.studio?.studioRevision ?? 0) == saved.studioRevision &&
+            (World.Data.studio?.zipSha256 ?? "") == (saved.zipSha256 ?? ""), "studio save provenance mismatch");
     }
 
     public int Animate(bool moving, double deltaMs)

@@ -1,0 +1,24 @@
+{
+  "version": 4,
+  "kind": "experimental-part-character",
+  "seed": 55271,
+  "id": "marsh-apothecary",
+  "profile": "weathered-station-v1",
+  "canvas": {
+    "w": 64,
+    "h": 64
+  },
+  "pivot": [
+    32,
+    58
+  ],
+  "view": "three-quarter-right",
+  "equipment": [
+    "ladle",
+    "tray"
+  ],
+  "grips": [
+    "underhand",
+    "supporting"
+  ]
+}

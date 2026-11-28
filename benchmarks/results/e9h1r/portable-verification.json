@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "html": "docs/reports/E9-H1R-ART-DIRECTED-QUALITY-REVIEW.html",
+  "sha256": "75f1b8ba329c00c99275ccd70ba321e4e443182ab543c5cf1c9c9e2421836cab",
+  "bytes": 1157247,
+  "copy": "Single exact SHA-256 HTML in Windows Temp outside repositories",
+  "chrome": "158.0.0.0",
+  "offline": true,
+  "uniquePngPayloads": 155,
+  "pngSourcePaths": 172,
+  "imagePlacements": 195,
+  "payloadSha256Verified": true,
+  "relativeDependencies": 0,
+  "externalResourceRequests": 0,
+  "consoleWarningsOrErrors": 0,
+  "native": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "nearest": [
+    256,
+    256,
+    "pixelated"
+  ],
+  "nativeAfterToggle": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "light": "rgb(216, 226, 233)",
+  "dark": "rgb(41, 53, 67)",
+  "blindLabels": true,
+  "unsignedReview": true,
+  "workflowDownload": true
+}

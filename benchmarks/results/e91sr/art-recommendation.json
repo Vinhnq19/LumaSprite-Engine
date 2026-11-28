@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "lumasprite.e91sr.art-recommendation.v1",
+  "authority": "ASSISTANT_REVIEW_RECOMMENDATION",
+  "ownerDecision": "PENDING",
+  "technical": "E9_1SR_READY_FOR_FINAL_OWNER_STATIC_ART_REVIEW",
+  "artistic": "STATIC_ART_REVIEW_PENDING",
+  "architecture": {
+    "option": "B",
+    "decision": "RETAIN_SELECTED_COMPONENTS_ONLY",
+    "retain": [
+      "costume-aware stance",
+      "bounded part-based silhouette",
+      "grip-aware sockets and hand motifs",
+      "local face planes",
+      "pre-outline headwear fit"
+    ],
+    "reason": "The bounded fit generalizes technically and selected shape/face/gear changes improve readability, but gear preference varies and the wind instrument remains ambiguous at 1×. Use human selection per character.",
+    "baseline": "E9.1R B3 / E9.1S S0 research control"
+  },
+  "candidateOptions": [
+    {
+      "id": "harbor-lockkeeper",
+      "compare": [
+        "S2",
+        "S3"
+      ],
+      "recommended": "S2",
+      "notes": "Clearer Night contour. Retain S3 valve variant for function comparison."
+    },
+    {
+      "id": "marsh-apothecary",
+      "compare": [
+        "S2",
+        "S3"
+      ],
+      "recommended": "S3",
+      "notes": "Flask sizes and colors separate. Night gains are not established."
+    },
+    {
+      "id": "cliffside-lantern-keeper",
+      "compare": [
+        "S2",
+        "S3"
+      ],
+      "recommended": "S3",
+      "notes": "Tether is visibly connected to the shoulder, lantern pixels preserved."
+    },
+    {
+      "id": "coastal-cartographer",
+      "compare": [
+        "S0",
+        "S3-R"
+      ],
+      "recommended": "S3-R",
+      "notes": "Narrow-coat form, compass and folded chart read closer to brief. Unfitted E9.1S S1–S3 rejected by padding."
+    },
+    {
+      "id": "highland-weather-observer",
+      "compare": [
+        "S0",
+        "S3-R"
+      ],
+      "recommended": "S3-R",
+      "notes": "Tall crown and clear coat. Twin cup wind reader can be read as a T-shaped handheld gauge."
+    }
+  ],
+  "rejected": [
+    "B4 Selective Outline remains NOT_SELECTED from E9.1R",
+    "Unfitted Coastal S1–S3 fail padding",
+    "A single global v4 production default is not proposed"
+  ],
+  "productionBlockers": [
+    "STATIC_ART_REVIEW_PENDING",
+    "DIRECTIONAL_FACING_LOCK",
+    "GAME_READY_ART_NOT_APPROVED",
+    "UNITY_RUNTIME_NOT_RUN",
+    "STUDIO_V4_CONTRACT_GAP"
+  ],
+  "gates": {
+    "E85": "OWNER_RUNTIME_REVIEW_PENDING",
+    "E92": "NOT_AUTHORIZED",
+    "production": "UNCHANGED",
+    "deepSeek": "DEFERRED",
+    "nextAuthorizedMilestone": "NONE",
+    "nextAction": "OWNER_STATIC_ART_REVIEW"
+  }
+}

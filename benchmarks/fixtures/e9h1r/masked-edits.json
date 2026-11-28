@@ -1,0 +1,38 @@
+[
+  {
+    "id": "visor",
+    "group": 0,
+    "layer": "visor",
+    "description": "Change only visor tint to the locked coat ramp for inspection under a different signal color.",
+    "reference": "material",
+    "ramp": "coat"
+  },
+  {
+    "id": "glove",
+    "group": 2,
+    "layer": "near-hand",
+    "description": "Lighten the thumb fold only and preserve the shaft and wrist.",
+    "reference": "hand-tool",
+    "region": [
+      -2,
+      -3,
+      2,
+      -1
+    ],
+    "tone": "base"
+  },
+  {
+    "id": "suit-edge",
+    "group": 1,
+    "layer": "torso",
+    "description": "Reduce torso waist seam glare with one masked tone change.",
+    "reference": "garments",
+    "region": [
+      -8,
+      10,
+      0,
+      13
+    ],
+    "tone": "accent"
+  }
+]

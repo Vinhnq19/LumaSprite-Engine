@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "purpose": "Required visible far-shin segment during carried case placement. Evaluate layer masks before final compositing.",
+  "constraint": {
+    "part": "far-shin",
+    "minimumPixels": 9,
+    "minimumRows": 3,
+    "minimumFraction": 0.25
+  },
+  "layouts": [
+    {
+      "id": "original",
+      "advance": 0,
+      "lift": 0
+    },
+    {
+      "id": "case-higher",
+      "advance": 0,
+      "lift": 4
+    },
+    {
+      "id": "case-higher-outboard",
+      "advance": 3,
+      "lift": 4
+    },
+    {
+      "id": "case-short-bail-outboard",
+      "advance": 4,
+      "lift": 6
+    }
+  ],
+  "sameEquipment": "Procedural bail-and-case with fixed far-palm socket, same material ramps, body width and height. Case body and bail length may change placement within safe canvas.",
+  "blocker": "COMPOSITION_FAILURE"
+}

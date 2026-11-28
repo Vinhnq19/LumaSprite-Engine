@@ -1,0 +1,104 @@
+{
+  "schema": "lumasprite.e9h1r.reference-pack.v1",
+  "style": "weathered-station-v1",
+  "scale": {
+    "canvas": [
+      64,
+      64
+    ],
+    "native": 1,
+    "reviewZoom": 4,
+    "view": "three-quarter-right",
+    "context": [
+      320,
+      208
+    ],
+    "pixelsPerUnit": 32,
+    "keyLight": "upper-left"
+  },
+  "sourceCommit": "5fef43d97ddfc09404754c5f027ca93f7037017d",
+  "humanApproval": "PENDING",
+  "references": [
+    {
+      "id": "silhouette",
+      "source": "benchmarks/results/e9h1/development/a/silhouette.png",
+      "role": "Contour diagnostic",
+      "preserve": "Separate legs and gesture with negative space",
+      "avoid": "The oilskin profile is specific to the old baseline.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "head-face",
+      "source": "benchmarks/results/e9h1/development/a/helmet.png",
+      "role": "Readability diagnostic",
+      "preserve": "One dominant face plane with a distinct edge",
+      "avoid": "Oilskin outline, eye position and facial identity.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "proportions",
+      "source": "benchmarks/results/e9h1/development/a/body.png",
+      "role": "Rig and scale",
+      "preserve": "Retain planted feet and 64×64 readable arm–body relationships",
+      "avoid": "The narrow body silhouette on broad occupational types.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "garments",
+      "source": "benchmarks/results/e9h1/kit/suit-torso/native.png",
+      "role": "Component edit target",
+      "preserve": "Retain the hose route, tank mount and neck interface",
+      "avoid": "The patchwork arrangement of small torso planes.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "hand-tool",
+      "source": "benchmarks/results/e9h1/development/matched/grip.png",
+      "role": "Grip comparison",
+      "preserve": "Socket occlusion and visible shaft on both sides",
+      "avoid": "The bulky single brown mass.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "material",
+      "source": "benchmarks/results/e9h1/kit/helmet-visor/native.png",
+      "role": "Material hierarchy",
+      "preserve": "Upper-left shell light and a dark visor anchor",
+      "avoid": "The long bright neck ring and unbroken mirrored arc.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "pixel-clusters",
+      "source": "benchmarks/results/e9h1/development/full/helmet.png",
+      "role": "Value-block diagnostic",
+      "preserve": "Use contiguous bright clusters and a dark opening",
+      "avoid": "The original broad arc and extended bright copper span.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "outline",
+      "source": "benchmarks/results/e9h1/development/full/silhouette.png",
+      "role": "Outer edge hierarchy",
+      "preserve": "Keep edge thickness crisp at 1× and preserve limb gaps",
+      "avoid": "Any outline directly traced from another sprite.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    },
+    {
+      "id": "functional-equipment",
+      "source": "benchmarks/results/e9h1/kit/assembly/shaft-before-hand.png",
+      "role": "Functional silhouette reference",
+      "preserve": "Show open interior and direction of the hook tip",
+      "avoid": "The exact curvature, opening proportions and shaft length.",
+      "humanApproval": "PENDING",
+      "provenance": "Project-local original Engine raster, with procedural or ENGINEER_CURATED ancestry. Research use only. Public license and owner artistic approval unasserted."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "checkpoint": "996b01032d346d69e808e80d2fd62d1f3efe1dd8",
+  "files": 38,
+  "trackedClean": 38,
+  "manifestExactMatches": 13,
+  "filesRemoved": 0,
+  "method": "Git diff through checkpoint, links and current SHA-256 in tracked documentation and benchmark manifests, and three Coordination documents.",
+  "attribution": "Git records the last committed revisions. The previous unstaged removals and their subsequent absence from status have no attributable commit."
+}

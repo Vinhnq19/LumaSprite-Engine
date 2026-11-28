@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED_PREVIEWS_ARCHIVED",
+  "activeFilesRemoved": 2,
+  "activeBytesRemoved": 4527186,
+  "archived": [
+    {
+      "source": ".cache/e75-preview.html",
+      "backup": "D:\\LumaSprite-Coordination\\archive\\2026-11-28-e9h1-report-previews\\e75-preview.html",
+      "bytes": 1629899,
+      "sha256": "7b81fe79c2a6a3d76233c0421ac54eb1bffabf349cec74cc068c33305a7c117e",
+      "canonical": "docs/reports/E7.5-PORTABLE-ART-REVIEW.html",
+      "matchingUniquePngs": 144
+    },
+    {
+      "source": ".cache/e75r-preview.html",
+      "backup": "D:\\LumaSprite-Coordination\\archive\\2026-11-28-e9h1-report-previews\\e75r-preview.html",
+      "bytes": 2897287,
+      "sha256": "28789caec3c686d92c375091d1546db43c8450a2d493c5b14e10f0e84153e78b",
+      "canonical": "docs/reports/E7.5R-PORTABLE-ART-REVIEW.html",
+      "matchingUniquePngs": 256
+    }
+  ],
+  "retained": {
+    "source": ".cache/portable-art-review/E7.1R-PORTABLE-ART-REVIEW.html",
+    "sha256": "93d3fc53ec1b988ab19826b49dc50eab64068ff8de14f0a1e6c75ffc0530e160",
+    "reason": "User-requested portable review with 112 unique inline PNGs. The canonical relative-link HTML does not replace it."
+  }
+}

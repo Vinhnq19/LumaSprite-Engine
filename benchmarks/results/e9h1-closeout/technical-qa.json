@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "closeoutStatus": "E9_H1_NO_MEANINGFUL_ART_QUALITY_GAIN",
+  "originalH1": 101,
+  "originalH1R": 172,
+  "historical": 805,
+  "baselineSha256": {
+    "a0": "36cb49b20c4ff63b6055362cb2aeb001399a49d7a52fa349cabe1899699ddea0",
+    "matched-draft": "d94ed39005ec04a9a6e4d6ee6d6e7983c241a74821a3af278254f66a6c60d47e",
+    "matched-refined": "9507ed13d464c16ec82adb5280bb4718e0a3ea7e5345661664bd73cc09eea411",
+    "full-draft": "f4f4807fb34d1d911b399e626693c03688317ceeb08c5d52243299d795ed220b",
+    "full-refined": "3239b4c8dc3a8c501fd18dfb088626e1afe422246cf21b53cdaf8713614ba3df"
+  },
+  "deterministicEntries": 81,
+  "poseMatrix": {
+    "passed": 4,
+    "expectedRejections": 5
+  },
+  "studio": {
+    "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "images": [
+      {
+        "name": "diagnostic/a0/sprite.png",
+        "sha256": "5f213d9db0f029d64f9a22da7d8bc0f25ddb32efc97d5fcac50f02e9c7aafa88",
+        "rgbaSha256": "4751a0cfce021311902cc5b78a47b924805772c28400dca6be8a82a0ce6cdd06",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "diagnostic/a0/day.png",
+        "sha256": "f765429d196466d328c1d6982ce787135039b2efc3eeb4504d20dc925bb0e043",
+        "rgbaSha256": "bbcf4aa47a7ace165e845f40e033cd280874adff8734ee47a5c078c2381bdcd1",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "diagnostic/a0/night.png",
+        "sha256": "17be4983b1ec63362c3a8e0de4ee0816c3085bda27c0291028dea07f27e82563",
+        "rgbaSha256": "b63ce9c69dd3ac51a1b5294cdafe28f0eb1d21c8056990d7bda581b77a6220bc",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "diagnostic/matched-r2/sprite.png",
+        "sha256": "9d15a6110355ca8745e0b1fbdfd4a585c1fbafc176df962d8a7ac322891f16ae",
+        "rgbaSha256": "73e4aa8eb0d8baa4719d8b8f650ea68120c416286953784db22be3b8291f226a",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "diagnostic/matched-r2/day.png",
+        "sha256": "c415f25858281b4d9d8682e48d463a5572d2f605cfd52d4d330dec84c43144ad",
+        "rgbaSha256": "df498ca755b7066db69c9be711f678d7f5ca949944d19328971b12a112eb32c8",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "diagnostic/matched-r2/night.png",
+        "sha256": "89f423a3a06579b3c533f80e8c807421bc83e2333738af692517e354f9b8d39b",
+        "rgbaSha256": "fd92240fa0abf34642264cc99dde6ee7f878ad0050110bd37bd9f3d2d81d4f8a",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "diagnostic/full-r2/sprite.png",
+        "sha256": "7e2a49c6fce91cbb486b87371054b1b8982b8a11ee57e096f9cdbe847afb05ec",
+        "rgbaSha256": "93f0d817eae2151bd5777165e657c3dfe8ad97698e8990aadc3b07a5d76202ca",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "diagnostic/full-r2/day.png",
+        "sha256": "7fc16fad1943f611029abeb3879db31ab5ab7db7298ba06532ad44cdde15a9fd",
+        "rgbaSha256": "d43f25356dddcdf318c9414320f0302474bdef9ad01b8fc77a70ccb9a0d6de79",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "diagnostic/full-r2/night.png",
+        "sha256": "07b4ca234f59c6bc7eaa40807f2fefc240722527699e8a78a21044741830c7a4",
+        "rgbaSha256": "d9674baea7b3238b78e6003d2187c93549de5db509575deca9ec07b16bc72a67",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "fresh/a0/sprite.png",
+        "sha256": "f496162468043e60f711f276d88be0b0db253e99f4944e5eb81dc4ec28043021",
+        "rgbaSha256": "a98b279fc25e4940de2fe6741f32c03981d6da30b7a7a479f4eb9fd67c37c79f",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "fresh/a0/day.png",
+        "sha256": "d6557a18b8d23611ce7a2cf84950a854288dd069b36fe18416e2bd0119bf1af9",
+        "rgbaSha256": "57bc68b909e57a61db4f0d0891a0228c22e8295c295b6c374f099a7a1fb29aef",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "fresh/a0/night.png",
+        "sha256": "a135b2b596716e5c486482ec963e2e53ed65b41e1a0c44630ebeb25e586b5e63",
+        "rgbaSha256": "4b7f19d1bb17b7ca981f8286f13acc368372d8549e9716fd7f1249e70de112c4",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "fresh/matched-r2/sprite.png",
+        "sha256": "54eae7d9cb6210d09fe72af92e22d47fd5a407590dcb443705e7c156c61b90a3",
+        "rgbaSha256": "d15f33c3067194845d989c4ceaf179671bf28c36b4a0f966812714af294371c6",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "fresh/matched-r2/day.png",
+        "sha256": "a27d89c613d084af74dbe8ce38f76b4ba6d6ceff2ac9e5a70d9c27bb43b93c59",
+        "rgbaSha256": "1d9f4d935db0bf5767d85e09e6c1360350a59314159e8aac759af2ec07996c08",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "fresh/matched-r2/night.png",
+        "sha256": "3d6306a3af77850bcb3e0d6c1bb158155a298ec257c344ad8b2ad1d779792f3d",
+        "rgbaSha256": "079f3acbc37846342a3a6f6d4d35e672179e62a9cb53761d07a906a43458f2bc",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "fresh/full-r2/sprite.png",
+        "sha256": "198a71264bfd3b168095123de7277113297a8c5be9948f9bcde6a7c4cd892a08",
+        "rgbaSha256": "a8712ed20d17f01a383c496821d10e39256039fe4bc1d8eee4cd5ffeb04f9657",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "fresh/full-r2/day.png",
+        "sha256": "7c73ccbe57a22512278c264fe4abd47bdae82284f4cfb522dbd644379ef3f745",
+        "rgbaSha256": "34be78a6fd026cd52e30ff0efe9c5ebea8cde39086c49249c598d201bfdfce25",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "name": "fresh/full-r2/night.png",
+        "sha256": "7cbbc758c580b65c8ab67afa6d8837904947707a1467f89c647e0a510d435940",
+        "rgbaSha256": "3839c63045f54ed3a046e4f799eea9fd398f4acc06720111d57aea774fa89bf6",
+        "dimensions": [
+          320,
+          208
+        ]
+      }
+    ]
+  },
+  "holdout": "TECHNICAL_PASS",
+  "owner": "PENDING",
+  "unity": "NOT_RUN_STATIC_RESEARCH"
+}

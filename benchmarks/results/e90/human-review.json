@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "lumasprite.e90.human-review.v1",
+  "milestone": "E9.0 Game-Ready Pixel Art Quality Audit & E9.1 Design Gate",
+  "e85OwnerReviewStatus": "E8_5_OWNER_REVIEW_PENDING",
+  "e90Status": "E9_0_READY_FOR_OWNER_ART_DIRECTION_REVIEW",
+  "reviewer": "",
+  "reviewedAt": "",
+  "e85ManualDecision": "",
+  "e90ArchitectureDecision": "",
+  "authorizeE91CharacterPilot": "",
+  "preferredE91Approach": "",
+  "checklist": {
+    "e85PhysicalKeyboardAndEndToEnd": "",
+    "e90RootCauseAuditAccepted": "",
+    "artQualityRubricV2Approved": "",
+    "referenceLibraryPolicyApproved": "",
+    "e91HarborLockkeeperBriefApproved": "",
+    "e91MarshApothecaryHoldoutApproved": ""
+  },
+  "notes": ""
+}

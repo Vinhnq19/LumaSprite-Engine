@@ -1,0 +1,175 @@
+{
+  "id": "b3-shared",
+  "stage": "b3",
+  "shared": true,
+  "native": "c87d1e7c206b69c06743066c64dd0eecd8ff674bd660c6fe4b3af999443113e7",
+  "changes": {
+    "added": 0,
+    "removed": 0,
+    "paint": 407
+  },
+  "sourceRevision": "4b34ec262b33665a389d9ff3435423c64fdb07e7",
+  "seed": 55271,
+  "checks": null,
+  "scenes": [
+    {
+      "light": "day",
+      "edge": {
+        "samples": 310,
+        "weak": 22,
+        "p10": 52
+      },
+      "visible": 1248,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    },
+    {
+      "light": "night",
+      "edge": {
+        "samples": 310,
+        "weak": 33,
+        "p10": 15
+      },
+      "visible": 1248,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    }
+  ],
+  "hypothesis": "Change paint planes inside unchanged masks; preserve palette, pose, silhouettes and tools.",
+  "techniqueStatus": "TECHNICAL_FAILURE",
+  "parts": {
+    "far-thigh": {
+      "role": "far-trousers",
+      "maskSha256": "a026d8986ed6596400da79cfcfe89bae644319d732724dcc451b50ca5ff74751",
+      "owner": "#456678"
+    },
+    "far-shin": {
+      "role": "far-trousers",
+      "maskSha256": "2652fdbd6f246d9b4e044c8a693927739ab78cfe2524dbed383ba19020306f13",
+      "owner": "#46ff91"
+    },
+    "far-boot": {
+      "role": "leather",
+      "maskSha256": "334982634067af5e8136bf903acb83faef0e488e99972a27095657f1805dad6b",
+      "owner": "#4898aa"
+    },
+    "near-thigh": {
+      "role": "trousers",
+      "maskSha256": "7682d125dd4262a09974eeca760c80fdd5c6252656a50774e7a2bba185a4bb6a",
+      "owner": "#4a31c3"
+    },
+    "near-shin": {
+      "role": "trousers",
+      "maskSha256": "bd54a9da231e5edf2923dcf74e4ec5ff3ae2285649f2de07a0008b83d5e93d6b",
+      "owner": "#4bcadc"
+    },
+    "near-boot": {
+      "role": "leather",
+      "maskSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+      "owner": "#4d63f5"
+    },
+    "pelvis": {
+      "role": "trousers",
+      "maskSha256": "a11f5e6cd1840d7f52a788462cc4984d8735c3767a6a4cbae71aacd2bf2deb03",
+      "owner": "#4efd0e"
+    },
+    "far-upper-arm": {
+      "role": "far-coat",
+      "maskSha256": "26623586be8a0c380685d63478db7dd7dd9524563bbe8f135448ca9759516bbf",
+      "owner": "#509627"
+    },
+    "far-forearm": {
+      "role": "far-coat",
+      "maskSha256": "69ece89f3e79abe9791005e283f5e3db73640a441a6c296f16a47bb615b294c7",
+      "owner": "#522f40"
+    },
+    "far-tool": {
+      "role": "metal",
+      "maskSha256": "a297558074f5f6e265cd55df7a9dfb6db6bb3fa1e2f0aca90793da8b51c3ed83",
+      "owner": "#53c859"
+    },
+    "far-hand": {
+      "role": "skin",
+      "maskSha256": "bfdbdbef9f69dbe1e1176a4f861f402ddaa579bd69b46e5054618e504ca2df01",
+      "owner": "#556172"
+    },
+    "torso": {
+      "role": "coat",
+      "maskSha256": "0d0a6e55494c24e65201aed28bf73eb7f22289977488152749f9dce576684e3f",
+      "owner": "#56fa8b"
+    },
+    "a-line-tunic": {
+      "role": "coat",
+      "maskSha256": "35181513467451cc425d3fef65fbaadcd0c05e7280361f98208b83b22356b271",
+      "owner": "#5893a4"
+    },
+    "shawl": {
+      "role": "cap",
+      "maskSha256": "0756b5befe70ce4bd8e23cc8d9684765f93202de0978f7eb447705bbb85c1a61",
+      "owner": "#5a2cbd"
+    },
+    "sash": {
+      "role": "leather",
+      "maskSha256": "f37021d3be182f8dd371a5fca62f34761488a34b60e90c4dd8a0f7b99435c431",
+      "owner": "#5bc5d6"
+    },
+    "neck": {
+      "role": "skin",
+      "maskSha256": "559a48fa56b06735978b2f4289db8c9097b1907238d4fe1297a6ff8c9900cf4e",
+      "owner": "#5d5eef"
+    },
+    "head": {
+      "role": "skin",
+      "maskSha256": "ee5de40cc71050203d7d828a54d7f82e38655bcb5b7ab26cc1bca4f86e9c5dde",
+      "owner": "#5ef808"
+    },
+    "hair": {
+      "role": "hair",
+      "maskSha256": "5fd50f09c994dd029e8620d219d079fc1a2ee75463d22f13df8691301d8cf342",
+      "owner": "#609121"
+    },
+    "bun": {
+      "role": "hair",
+      "maskSha256": "5ff9e36cf73b41c60b097a2d7b0edca7655c9863a2e34ad68423a481fa3323e8",
+      "owner": "#622a3a"
+    },
+    "near-upper-arm": {
+      "role": "coat",
+      "maskSha256": "f08860eb9824394a93fe8e152be45e7153b40ff5f92aa6deec8fb8e46b15a115",
+      "owner": "#63c353"
+    },
+    "near-forearm": {
+      "role": "coat",
+      "maskSha256": "6c0a79247f29365ecc9c2a132ed9b76eeced111d961ab0ec892603427e57ce2c",
+      "owner": "#655c6c"
+    },
+    "near-tool": {
+      "role": "metal",
+      "maskSha256": "dacce0d83b0786897e3b3d63d7dcd8f68a3ed6e969d03e4c4520e5ed25fa2d98",
+      "owner": "#66f585"
+    },
+    "near-hand": {
+      "role": "skin",
+      "maskSha256": "2a86d4f9f58f45cdebf570d4c51665ee676c4d54850778a1ff2390534e0b63c1",
+      "owner": "#688e9e"
+    }
+  }
+}

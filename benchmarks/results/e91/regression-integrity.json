@@ -1,0 +1,42 @@
+{
+  "historical": 805,
+  "catalogs": {
+    "e76r": 142,
+    "e8": 42,
+    "e83": 52,
+    "e85": 56,
+    "e90": 3
+  },
+  "e90EvidencePngs": 30,
+  "protectedPaths": [
+    "src/generators",
+    "src/specs",
+    "src/cli",
+    "src/server",
+    "package.json",
+    "package-lock.json",
+    "docs/art-quality/art-quality-rubric-v2.json",
+    "benchmarks/results/e90",
+    "benchmarks/results/e85",
+    "benchmarks/results/e83",
+    "benchmarks/results/e8",
+    "benchmarks/results/e76r"
+  ],
+  "rebuiltFiles": 616,
+  "deterministic": true,
+  "studioPngs": 9,
+  "sceneChecks": 54,
+  "failures": [
+    "b1:AssertionError [ERR_ASSERTION]: STANCE_GAP",
+    "b2:AssertionError [ERR_ASSERTION]: STANCE_GAP",
+    "b3:AssertionError [ERR_ASSERTION]: STANCE_GAP",
+    "b4:AssertionError [ERR_ASSERTION]: STANCE_GAP",
+    "b1-shared:AssertionError [ERR_ASSERTION]: STANCE_GAP",
+    "b2-shared:AssertionError [ERR_ASSERTION]: STANCE_GAP",
+    "b3-shared:AssertionError [ERR_ASSERTION]: STANCE_GAP",
+    "b4-shared:AssertionError [ERR_ASSERTION]: STANCE_GAP"
+  ],
+  "unity": "NOT_RUN",
+  "gameplay": "STATIC_PLACEMENT_ONLY",
+  "human": "HUMAN_REVIEW_PENDING"
+}

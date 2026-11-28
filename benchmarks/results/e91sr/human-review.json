@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "lumasprite.e91sr.static-review.v1",
+  "reviewType": "STATIC_ART_REVIEW",
+  "status": "STATIC_ART_REVIEW_PENDING",
+  "reviewer": "",
+  "reviewedAt": "",
+  "nativeInspectionConfirmed": false,
+  "cases": [
+    {
+      "id": "harbor-lockkeeper",
+      "options": [
+        "S2",
+        "S3",
+        "NEITHER",
+        "REQUEST_REVISION"
+      ],
+      "variant": "",
+      "scores": {
+        "occupationalIdentity": null,
+        "silhouetteDistinctiveness": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "functionalEquipment": null,
+        "pixelClusters": null,
+        "formAwareMaterials": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "marsh-apothecary",
+      "options": [
+        "S2",
+        "S3",
+        "NEITHER",
+        "REQUEST_REVISION"
+      ],
+      "variant": "",
+      "scores": {
+        "occupationalIdentity": null,
+        "silhouetteDistinctiveness": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "functionalEquipment": null,
+        "pixelClusters": null,
+        "formAwareMaterials": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "cliffside-lantern-keeper",
+      "options": [
+        "S2",
+        "S3",
+        "NEITHER",
+        "REQUEST_REVISION"
+      ],
+      "variant": "",
+      "scores": {
+        "occupationalIdentity": null,
+        "silhouetteDistinctiveness": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "functionalEquipment": null,
+        "pixelClusters": null,
+        "formAwareMaterials": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "coastal-cartographer",
+      "options": [
+        "S0",
+        "S3-R",
+        "NEITHER",
+        "REQUEST_REVISION"
+      ],
+      "variant": "",
+      "scores": {
+        "occupationalIdentity": null,
+        "silhouetteDistinctiveness": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "functionalEquipment": null,
+        "pixelClusters": null,
+        "formAwareMaterials": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "highland-weather-observer",
+      "options": [
+        "S0",
+        "S3-R",
+        "NEITHER",
+        "REQUEST_REVISION"
+      ],
+      "variant": "",
+      "scores": {
+        "occupationalIdentity": null,
+        "silhouetteDistinctiveness": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "functionalEquipment": null,
+        "pixelClusters": null,
+        "formAwareMaterials": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    }
+  ],
+  "architectureDecision": "",
+  "decision": ""
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "lumasprite.e9h1.human-review.v1",
+  "authority": "PROJECT_OWNER_OR_DESIGNATED_HUMAN_REVIEWER",
+  "state": "UNSIGNED",
+  "reviewer": null,
+  "date": null,
+  "blindKeyOpenedBeforeScoring": null,
+  "development": {
+    "choice": null,
+    "x": {
+      "occupationalIdentity": null,
+      "silhouette": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "material": null,
+      "dayRead": null,
+      "nightRead": null
+    },
+    "y": {
+      "occupationalIdentity": null,
+      "silhouette": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "material": null,
+      "dayRead": null,
+      "nightRead": null
+    },
+    "criticalDefects": [],
+    "notes": null
+  },
+  "holdout": {
+    "choice": null,
+    "x": {
+      "occupationalIdentity": null,
+      "silhouette": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "material": null,
+      "dayRead": null,
+      "nightRead": null
+    },
+    "y": {
+      "occupationalIdentity": null,
+      "silhouette": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "material": null,
+      "dayRead": null,
+      "nightRead": null
+    },
+    "criticalDefects": [],
+    "notes": null
+  },
+  "fullTrack": {
+    "development": {
+      "occupationalIdentity": null,
+      "silhouette": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "material": null,
+      "dayRead": null,
+      "nightRead": null
+    },
+    "holdout": {
+      "occupationalIdentity": null,
+      "silhouette": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "material": null,
+      "dayRead": null,
+      "nightRead": null
+    },
+    "criticalDefects": [],
+    "notes": null
+  },
+  "editability": null,
+  "artDecision": null,
+  "signature": null
+}

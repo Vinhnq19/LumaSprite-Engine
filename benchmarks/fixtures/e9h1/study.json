@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "checkpoint": "cc17cb1ca4340dc7a7730c54d305641ac2ca315d",
+  "studio": "471ac90555d3545beff5182146e291ba97b9ae20",
+  "pivot": [
+    32,
+    58
+  ],
+  "camera": [
+    320,
+    208,
+    32
+  ],
+  "style": "weathered-station-v1",
+  "keyLight": "upper-left",
+  "view": "three-quarter-right",
+  "recipe": {
+    "legacy": "benchmarks/fixtures/e75r/ridge.json",
+    "torso": "narrow",
+    "garment": "a-line",
+    "headwear": "oilskin",
+    "equipment": [
+      "ladle",
+      "tray"
+    ],
+    "grips": [
+      "overhand",
+      "pinch"
+    ]
+  },
+  "identity": {
+    "archetype": "mantled",
+    "outfit": "collar",
+    "tools": "tether"
+  },
+  "basePose": {
+    "hip": [
+      34,
+      38
+    ],
+    "lean": -1,
+    "turn": 3,
+    "pivot": [
+      32,
+      58
+    ],
+    "support": "near",
+    "secondaryGroundOffset": -1,
+    "near": {
+      "elbow": [
+        23,
+        34
+      ],
+      "wrist": [
+        21,
+        38
+      ],
+      "palm": [
+        19,
+        40
+      ],
+      "knee": [
+        29,
+        46
+      ],
+      "ankle": [
+        29,
+        53
+      ]
+    },
+    "far": {
+      "elbow": [
+        43,
+        30
+      ],
+      "wrist": [
+        46,
+        33
+      ],
+      "palm": [
+        49,
+        34
+      ],
+      "knee": [
+        42,
+        45
+      ],
+      "ankle": [
+        40,
+        52
+      ]
+    }
+  },
+  "development": {
+    "id": "tidal-salvage-diver",
+    "name": "Tidal Salvage Diver",
+    "seed": 48311,
+    "role": "development",
+    "brief": "Heavy diving visor, mounted cylinder with hose, protected torso and open salvage hook. Retain grounded boots and maintenance case."
+  },
+  "holdout": {
+    "id": "saltmarsh-rescue-technician",
+    "name": "Saltmarsh Rescue Technician",
+    "seed": 69041,
+    "role": "holdout",
+    "brief": "Marsh rescue technician with protective cuff closer to the body, a short rescue hook and a dedicated flotation pouch. Keep the same protection family and use a compact braced pose.",
+    "near": {
+      "elbow": [
+        24,
+        36
+      ],
+      "wrist": [
+        24,
+        40
+      ],
+      "palm": [
+        22,
+        42
+      ]
+    },
+    "far": {
+      "elbow": [
+        42,
+        30
+      ],
+      "wrist": [
+        45,
+        34
+      ],
+      "palm": [
+        45,
+        36
+      ]
+    },
+    "capabilityGaps": [
+      "A and B lack a dedicated flotation pouch. The shared maintenance case remains as a proxy.",
+      "A and B reuse a full-size hook. The compact hook silhouette required by the brief remains unsupported.",
+      "B reuses the sealed gloves and cuff as-is. The closer placement comes from the rig, with no rescue-specific cuff."
+    ]
+  },
+  "thresholds": {
+    "minimumArtByDimension": 4,
+    "minimumMatchedDeltaIdentityOrSilhouette": 1,
+    "noLossIn": [
+      "anatomy",
+      "grip",
+      "material",
+      "dayRead",
+      "nightRead"
+    ],
+    "criticalDefects": 0,
+    "rubric": "docs/art-quality/art-quality-rubric-v2-static-addendum.md"
+  },
+  "capabilityGaps": [
+    "A has oilskin and an A-line garment. It cannot represent a sealed diving visor, air tank or protective suit harness.",
+    "The paired track fixes exactly the same procedural hook and equipment. Only the forehand glove shape and paint differ.",
+    "The full Hybrid panel includes helmet, protected torso and a differently shaped open hook. Judge its brief coverage separately."
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "lumasprite.e91r.study.v1",
+  "base": "a37870e1806c306790a8a2c01364fc57d57f9b12",
+  "sourceE91": "2fa4f441b319eca97b0e993688637e6f52a56c4c",
+  "parentStudy": "benchmarks/fixtures/e91/study.json",
+  "stanceRule": "costume-stance-v2",
+  "preferredStage": "b3",
+  "controls": [
+    {
+      "id": "harbor-lockkeeper",
+      "role": "development",
+      "seeds": [
+        24137,
+        24138
+      ],
+      "wardrobe": "apron"
+    },
+    {
+      "id": "marsh-apothecary",
+      "role": "diagnostic",
+      "seeds": [
+        55271
+      ],
+      "wardrobe": "a-line"
+    }
+  ],
+  "holdout": {
+    "id": "cliffside-lantern-keeper",
+    "role": "holdout",
+    "seeds": [
+      61947
+    ],
+    "wardrobe": "cloak",
+    "brief": "Cliffside lantern keeper at three-quarter-right: short shoulder cloak with trailing back, lantern dangling from the raised near-hand grip, far hand pinches a leather strap; staggered feet on the same ground anchor.",
+    "torso": "narrow",
+    "garment": "a-line",
+    "headwear": "oilskin",
+    "equipment": [
+      "ladle",
+      "tray"
+    ],
+    "grips": [
+      "overhand",
+      "pinch"
+    ],
+    "legacy": "benchmarks/fixtures/e75r/ridge.json",
+    "pose": {
+      "hip": [
+        34,
+        37
+      ],
+      "lean": -1,
+      "turn": 3,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "secondaryGroundOffset": -1,
+      "near": {
+        "elbow": [
+          24,
+          35
+        ],
+        "wrist": [
+          22,
+          34
+        ],
+        "palm": [
+          20,
+          32
+        ],
+        "knee": [
+          30,
+          46
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          41,
+          30
+        ],
+        "wrist": [
+          44,
+          31
+        ],
+        "palm": [
+          46,
+          32
+        ],
+        "knee": [
+          41,
+          44
+        ],
+        "ankle": [
+          40,
+          52
+        ]
+      }
+    }
+  },
+  "criteria": {
+    "minimumLegGapRows": 2,
+    "minimumExposedSolePixels": 2,
+    "sceneFootAnchor": [
+      32,
+      58
+    ],
+    "nightWeakEdgeLuma": 18,
+    "guide": "Check knee/ankle overlaps, visible soles and outline clearance, grip continuity, exact palette/alpha, and Day/Night scenery. Owner checks outline/material and gameplay readability at native size."
+  }
+}

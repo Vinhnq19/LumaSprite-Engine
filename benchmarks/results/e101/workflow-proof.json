@@ -1,0 +1,106 @@
+{
+  "status": "TECHNICAL_VALID",
+  "owner": "PENDING",
+  "authority": "ASSISTANT_REVIEW_RECOMMENDATION",
+  "checkpoint": "996b01032d346d69e808e80d2fd62d1f3efe1dd8",
+  "source": {
+    "path": "benchmarks/fixtures/e101/reference-source.json",
+    "sha256": "30437c23cd9b2ae8ed15f41aad8c0433f7250e2fa659a06e0e140273632a9092",
+    "creator": "Codex",
+    "state": "DRAFT"
+  },
+  "refs": {
+    "groups": 9,
+    "candidates": 11,
+    "diagnostics": 9
+  },
+  "proof": {
+    "component": "kiln-glove-study",
+    "width": 64,
+    "height": 64,
+    "ownershipPixels": 358,
+    "anchors": {
+      "grip": [
+        34,
+        36
+      ],
+      "wrist": [
+        46,
+        31
+      ]
+    },
+    "shaftVisibleOnGripSides": [
+      309,
+      106
+    ],
+    "editIntent": "Raise the cuff plane one value step within the selected owner region.",
+    "changed": 24,
+    "outside": 0,
+    "previewChanged": 24,
+    "rollbackRgbaSha256": "fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb",
+    "revision1RgbaSha256": "fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb",
+    "revision2RgbaSha256": "b63af0952b6a0989a034d4d45bf81519c82c38647d747fd7ed5fcda4e1cfd100",
+    "revisions": [
+      {
+        "revision": 1,
+        "sha256": "e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65"
+      },
+      {
+        "revision": 2,
+        "sha256": "cdaf33b69ba46f96b28ec345526fc5b129c375ed185afd416149b601c823c149",
+        "parent": "e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65"
+      }
+    ]
+  },
+  "studio": {
+    "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "operation": "PNG_IMPORT_DOCUMENT_SAVE_PNG_EXPORT",
+    "samples": [
+      {
+        "name": "input-r1",
+        "pngSha256": "db9a11900947762dc54e47fb058444638eb28ffddda635943c70f86830f4c0a8",
+        "rgbaSha256": "fb074fdd139780366f551be885f75414616e02d0b458cb6eba39950139349dbb"
+      },
+      {
+        "name": "export-r2",
+        "pngSha256": "c5b8dc2ca0e0f0b454f4eb3f13efa35b106fdcceb0ae6e6484294a7bdb3dbf42",
+        "rgbaSha256": "b63af0952b6a0989a034d4d45bf81519c82c38647d747fd7ed5fcda4e1cfd100"
+      },
+      {
+        "name": "preview-r1",
+        "pngSha256": "e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a",
+        "rgbaSha256": "3a09940f43e1d4284569690f80f03816a79c483dbd839cda18985a047d685bb2"
+      },
+      {
+        "name": "preview-r2",
+        "pngSha256": "eee5cb4df75b320834307088444152e9b5face00c78827bf06d3ff902b71e616",
+        "rgbaSha256": "7b905c1ef3c10b97873e3d1c1f18281eec165c05281403c3f9a482825b864887"
+      }
+    ]
+  },
+  "files": {
+    "references/kiln-silhouette.png": "64e478de3ce93d57da827f26cfacbcae0e228436268d34d4b407a93d048c202e",
+    "references/kite-silhouette.png": "34a882b08d9497d4a3ed3c1969777b72cd38231374011b0316be70252dd559fc",
+    "references/seed-silhouette.png": "1cff46c22f39177b6934c79a11200d95df8fe6730295b1e26f86ae49bf43645a",
+    "references/kiln-head.png": "4cc63d395360e1d761807859075286d1e590e39adb8776ae50654fb33522eeed",
+    "references/kite-proportions.png": "8f90d13f668b232185e5bb225316f9057cba016dba4ee0de87e39474c2c84657",
+    "references/seed-mantle.png": "6aa53baf8b0d9691c3975ed85c9ce4a43c6d3e428bf18387f288abd0bf5dd45b",
+    "references/kiln-ceramic.png": "1b11bfe9b6a24c7d69ba7f08b53d867af01716e44f9ec02c0f981f4bdd4b9de5",
+    "references/kite-fold.png": "ecfddf52f759cff9e514afa7e09e38d0583e0f130a978eecdcb7a90f88773255",
+    "references/seed-tray.png": "e30e6e2f72b3e95b5ffde0d2cc3334855145f859804188d58baf8d66a62207e7",
+    "references/kiln-grip.png": "e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a",
+    "references/contour-hierarchy.png": "2711637628493104fd299742ae1490f2548167ac9a43f1288fe7a9b2de9dda18",
+    "reference-pack.json": "5b2c451a5bf2fc8b0450da250ea8873d248992ba773da35f2e40f82d7e14984e",
+    "proof/input-r1.png": "db9a11900947762dc54e47fb058444638eb28ffddda635943c70f86830f4c0a8",
+    "proof/ownership.png": "25a4d392f2518e035feb889bc5321ace46ab7da54ac9b6f78e6cb6725fbf7ec0",
+    "proof/r1.json": "e69d8627cde5cbb2b2fb0200b1d16eddb25d5f5b5319c7cc31436a8a175c4e65",
+    "proof/anchor-preview.png": "59becb34f8883204fb04bf63a8cfe16ce2666cf90ae503f908376f5f379ae623",
+    "proof/shaft-context.png": "0fe6cfa03935eb31aea2db0e7f625dada30c32147d74c7beee61492a54101622",
+    "proof/preview-r1.png": "e47a87b221ed7ee7605de66cc4daf49220e3418a43cbbc85dd3ea1d1045a278a",
+    "proof/export-r2.png": "c5b8dc2ca0e0f0b454f4eb3f13efa35b106fdcceb0ae6e6484294a7bdb3dbf42",
+    "proof/r2.json": "cdaf33b69ba46f96b28ec345526fc5b129c375ed185afd416149b601c823c149",
+    "proof/allowed-mask.png": "bf28ea23f8a819159735619c694cf7789d2a2bd35a0edd618e74190996ddb2b3",
+    "proof/diff.png": "104b49584bc5f447820591517984524be065018b004b53c3aabebb80622e000e",
+    "proof/preview-r2.png": "eee5cb4df75b320834307088444152e9b5face00c78827bf06d3ff902b71e616"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "ORIGINAL_GATE_FAILURE_REPRODUCED",
+  "exitCode": 1,
+  "frozenSource": "a465a2eef48cfde7e470fd9a741d690515bf20e9",
+  "frozenBenchmarkSha256": "e706e4742abbc0780c1ea898c4b49318bdf9fe59a604157666866f44e581d9db",
+  "exportHarnessSha256": "a4bf8dd768c1ec19b22cf1293c7c3fee9a729e9b5cd2f5ab30ea7c613fa3fcf3",
+  "firstLogSha256": "c3c41084f90b5400ed5a76af4dc0c8c5074fbf29558b818f9d706cd7e3d60348",
+  "instrumentation": "Replay exact sealed source with three reporting-only insertions: redirect output to cache, inject the sealed source SHA, and serialize five in-memory rasters per arm before the original assertion. The original assertion still fails.",
+  "firstHoldoutMatchedRasters": {
+    "holdout/a/sprite.png": "2093ad4562f0eecd4931e2f2b2028e518c20fbc6d2f4ee5f2139eec8fc9a6fd9",
+    "holdout/a/materials.png": "e9ecbd44265b72e73c895107f1502cda2373c6ed38ed467c1ec61093ffef7e9f",
+    "holdout/a/owners.png": "b1f0347ab7b36dca744310fb034e7f2c8d6619b2e8f1ae9d101ca331a1d0cb27",
+    "holdout/a/day.png": "fd149c5bf19035c472f6bbbaf2dab2e82ae2aab7afcb501a7cfea998d6365f60",
+    "holdout/a/night.png": "a433e256fbecc6abfb92095bf1a79b4d774a28fe7f20b4ff24d49f5d62305e10",
+    "holdout/matched/sprite.png": "3d8c228df364f032cf63963b4506ead221f4b654d2247bd5ac52a53b9529fcd4",
+    "holdout/matched/materials.png": "9c4576ff0faa9fe48c7db285634c019932e74fa3d5f66b17fdf08d90641bd08e",
+    "holdout/matched/owners.png": "39c9bcfa84d93aa38b989732a694a77326047d438230dabf752369b815a21128",
+    "holdout/matched/day.png": "6bab6366e8b4d79e0256da6a7821a9ec218af42fb317e0d02a3f9575a15e36b4",
+    "holdout/matched/night.png": "fd0189cce5ae3eb2a4421a8101a4445476952b26f38c095ec7a007360b15e918",
+    "holdout/full/sprite.png": "7a4000c237fe4507206023495e5541d4a3468d7159d570b15c0a586ed55ef888",
+    "holdout/full/materials.png": "488688867bcbbcc307e7214c341ec5f598b872a7a0301bcb6074f033b45b0b6c",
+    "holdout/full/owners.png": "d68490e4b06370d0e42c1893cd34a8e1a8e7d7bccb97e7ea6a7c970053ea3a41",
+    "holdout/full/day.png": "53fa0e55a07f5c70ef0bf841a11452821e57fdc3e182930e7d60c685f5233ae1",
+    "holdout/full/night.png": "fe96f740003d9c9725cb1a01ea26c2f6be25b44a975722b9aa4892416bf0e5a2"
+  },
+  "blocked": "far-shin has no visible ownership"
+}

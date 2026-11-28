@@ -1,0 +1,225 @@
+{
+  "id": "b2-shared",
+  "stage": "b2",
+  "shared": true,
+  "native": "5c849bb5325a8b351116dac83a319a2c488e94b15e13c9e1b946409bccd4e810",
+  "changes": {
+    "added": 4,
+    "removed": 0,
+    "paint": 13
+  },
+  "sourceRevision": "4b34ec262b33665a389d9ff3435423c64fdb07e7",
+  "seed": 24138,
+  "checks": {
+    "bounds": {
+      "left": 5,
+      "top": 2,
+      "right": 57,
+      "bottom": 57
+    },
+    "pixels": 1400,
+    "isolatedOutline": 0,
+    "place": [
+      32,
+      58
+    ],
+    "torsoWidth": 22,
+    "legGapRows": 5,
+    "handTests": [
+      {
+        "id": "key",
+        "hand": "far-hand",
+        "socket": [
+          50,
+          36
+        ],
+        "overlap": 11,
+        "join": 9,
+        "shown": 127,
+        "occludes": true,
+        "total": 138
+      },
+      {
+        "id": "valve",
+        "hand": "near-hand",
+        "socket": [
+          16,
+          40
+        ],
+        "overlap": 12,
+        "join": 12,
+        "shown": 43,
+        "occludes": true,
+        "total": 55
+      }
+    ],
+    "centerX": 33.4,
+    "outline": {
+      "lit": 96,
+      "shadow": 144,
+      "contact": 20,
+      "internal": 78
+    }
+  },
+  "scenes": [
+    {
+      "light": "day",
+      "edge": {
+        "samples": 332,
+        "weak": 23,
+        "p10": 46
+      },
+      "visible": 1400,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    },
+    {
+      "light": "night",
+      "edge": {
+        "samples": 332,
+        "weak": 34,
+        "p10": 15
+      },
+      "visible": 1400,
+      "anchor": [
+        212,
+        178
+      ],
+      "camera": {
+        "width": 320,
+        "height": 208,
+        "sampling": "nearest",
+        "view": "three-quarter-right",
+        "pixelsPerUnit": 32
+      }
+    }
+  ],
+  "hypothesis": "Replace only hand masks and local thumb/crease motifs; preserve every other part and tool geometry.",
+  "techniqueStatus": "VERIFIED_BY_TEST",
+  "parts": {
+    "far-thigh": {
+      "role": "far-trousers",
+      "maskSha256": "122d2c223a5e40697b405573aad88c569d493fbd28c042cb2823dbc20a506626",
+      "owner": "#456678"
+    },
+    "far-shin": {
+      "role": "far-trousers",
+      "maskSha256": "2652fdbd6f246d9b4e044c8a693927739ab78cfe2524dbed383ba19020306f13",
+      "owner": "#46ff91"
+    },
+    "far-boot": {
+      "role": "leather",
+      "maskSha256": "334982634067af5e8136bf903acb83faef0e488e99972a27095657f1805dad6b",
+      "owner": "#4898aa"
+    },
+    "near-thigh": {
+      "role": "trousers",
+      "maskSha256": "229b9f2f583c8d4971cca5e1d92b98065a84e2f33d1b66fe1c0aec04c9d34bbc",
+      "owner": "#4a31c3"
+    },
+    "near-shin": {
+      "role": "trousers",
+      "maskSha256": "bd54a9da231e5edf2923dcf74e4ec5ff3ae2285649f2de07a0008b83d5e93d6b",
+      "owner": "#4bcadc"
+    },
+    "near-boot": {
+      "role": "leather",
+      "maskSha256": "bbb43afa000054426d93d9b97a31b8b29a94f945119be5f96f57b3ddfd4ca941",
+      "owner": "#4d63f5"
+    },
+    "pelvis": {
+      "role": "trousers",
+      "maskSha256": "26ea45d976ed9778162bdb859469d5094a6cae4613f4c7cd70116980eb40d2c3",
+      "owner": "#4efd0e"
+    },
+    "far-upper-arm": {
+      "role": "far-coat",
+      "maskSha256": "69ada8d2a0aaf4ad2b76b091bfc84db2d5820d6378fc2659bdbf88cc1946e66f",
+      "owner": "#509627"
+    },
+    "far-forearm": {
+      "role": "far-coat",
+      "maskSha256": "69ece89f3e79abe9791005e283f5e3db73640a441a6c296f16a47bb615b294c7",
+      "owner": "#522f40"
+    },
+    "far-tool": {
+      "role": "metal",
+      "maskSha256": "a297558074f5f6e265cd55df7a9dfb6db6bb3fa1e2f0aca90793da8b51c3ed83",
+      "owner": "#53c859"
+    },
+    "far-hand": {
+      "role": "skin",
+      "maskSha256": "84cfa9215631e58c94bd0d5629c0ad05fe1a28a13cd38f2c209abbde04b48589",
+      "owner": "#556172"
+    },
+    "torso": {
+      "role": "coat",
+      "maskSha256": "b2f4f5aba0800fb10c9d654d848d6fa91644d504b218746d01b971c07154f7d3",
+      "owner": "#56fa8b"
+    },
+    "apron": {
+      "role": "leather",
+      "maskSha256": "35c3065a71c0c7bea8845070766fb5f401dd992ed0b71c20ba03666fc702653b",
+      "owner": "#5893a4"
+    },
+    "apron-strap": {
+      "role": "leather",
+      "maskSha256": "27f0c38ae12ae5f14f79d158c7a1fa3ebe0c446c63acd6a16f1f2d87b113e442",
+      "owner": "#5a2cbd"
+    },
+    "belt": {
+      "role": "leather",
+      "maskSha256": "6014316e549753e37da2c6bb81a07439650c07fa2510765d8cb78a95cd633dad",
+      "owner": "#5bc5d6"
+    },
+    "neck": {
+      "role": "skin",
+      "maskSha256": "559a48fa56b06735978b2f4289db8c9097b1907238d4fe1297a6ff8c9900cf4e",
+      "owner": "#5d5eef"
+    },
+    "head": {
+      "role": "skin",
+      "maskSha256": "78a86619eaf2f18cd1c4b9efac2e52e351b54881bf8aa75fd1e8c4784448d427",
+      "owner": "#5ef808"
+    },
+    "hair": {
+      "role": "hair",
+      "maskSha256": "df1a209b9068c454144f5cf92540fa387ba2fa896c61864bc5273e0a4c9915a4",
+      "owner": "#609121"
+    },
+    "oilskin": {
+      "role": "cap",
+      "maskSha256": "7ab13006a50f3b2676eb0caf153ea7cbb8c100817ae2ef9cef9ade9f7a282b1d",
+      "owner": "#622a3a"
+    },
+    "near-upper-arm": {
+      "role": "coat",
+      "maskSha256": "e5d9efb0ff55e0972c82ad6c50d44500133b628a7350ae045f357beeda2302be",
+      "owner": "#63c353"
+    },
+    "near-forearm": {
+      "role": "coat",
+      "maskSha256": "733a7156688d7171aa39305c5513b7f166487c620890c4122d5241439a58ac10",
+      "owner": "#655c6c"
+    },
+    "near-tool": {
+      "role": "metal",
+      "maskSha256": "4c7a6428994863dd3eaa14d7e06c8e33aff6e2be33be9d8b1c95c833ce854871",
+      "owner": "#66f585"
+    },
+    "near-hand": {
+      "role": "skin",
+      "maskSha256": "2009ca61f193e2d00cf442a11c1035154bb08522f0e2a45561f177787d7287cf",
+      "owner": "#688e9e"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "report": "docs/reports/E9.1R-CHARACTER-ART-REVIEW.html",
+  "sha256": "934d04fd4106f17ab31691c08148f357835df84625cea67e6e27b703a196e9c3",
+  "bytes": 495452,
+  "chrome": "158.0.0.0",
+  "mode": "Offline",
+  "location": "Windows Temp copy outside Engine",
+  "copySha256": "MATCH",
+  "embeddedPngs": 57,
+  "sha256PerImage": "57/57 MATCH",
+  "externalDependencies": 0,
+  "zoom": "Native 1× and nearest 4× CSS verified",
+  "review": "Blank embedded JSON verified",
+  "backgroundToggle": "PASS",
+  "viewports": [
+    1440,
+    390
+  ],
+  "consoleErrors": 0
+}

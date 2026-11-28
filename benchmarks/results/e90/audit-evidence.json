@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "lumasprite.e90.audit-evidence.v1",
+  "milestone": "E9.0",
+  "status": "E9_0_READY_FOR_OWNER_ART_DIRECTION_REVIEW",
+  "e85Closeout": {
+    "gateStatus": "E8_5_OWNER_REVIEW_PENDING",
+    "engineBranch": "codex/e8-5-end-to-end-integration",
+    "engineSourceCommit": "b2540a1e69238d1273033b28801ca97c6081f164",
+    "engineHeadCommit": "2933cf4675f69f8bac9d01b1be60cd07854f3896",
+    "studioBranch": "antigravity/e8-4-native-scene-adapter",
+    "studioHeadCommit": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "manualKeyboard": "NOT_RUN",
+    "ownerZipSha256": "b7606778e555e2f048356c1dbb6c89be7bbc9315683e7c0e88d99c6c4d779754",
+    "ownerZipBytes": 163438,
+    "studioZipsImported": 9,
+    "unityTests": [
+      {
+        "mode": "EditMode",
+        "passed": 7,
+        "total": 7
+      },
+      {
+        "mode": "PlayMode",
+        "passed": 2,
+        "total": 2
+      }
+    ],
+    "manifestCountExplanation": {
+      "htmlEmbeddedEntries": 55,
+      "diskSha256SumsEntries": 56,
+      "extraEntry": "portable-verification.json (records HTML SHA-256 post-generation; appended to SHA256SUMS after HTML emit)"
+    }
+  },
+  "historicalIntegrity": {
+    "catalogHashesVerified": 805,
+    "e76rE8E83E85Verified": true,
+    "productionDefaultsChanged": false,
+    "studioModified": false
+  },
+  "rubricV2": {
+    "file": "docs/art-quality/art-quality-rubric-v2.json",
+    "sha256": "44b478c24c4fa5d4d00d3618a7e48947f709d3ca50f172a9cb48148583da81eb",
+    "dimensionCount": 12,
+    "criticalDefectCount": 8,
+    "allowAutoArtisticPass": false
+  },
+  "auditDocSha256": "3839df75a20154cd6138e992ebd79b57dea0bea8b5015233cba8657fd37a12b0",
+  "evidencePngCount": 30,
+  "evidencePngs": [
+    {
+      "id": "char-surveyor-lineup-1x",
+      "family": "character",
+      "scale": "1x",
+      "file": "benchmarks/results/e44/lineup-1x.png",
+      "label": "Character Lineup R1/R2/B1 (1x)",
+      "w": 240,
+      "h": 88,
+      "bytes": 5218,
+      "sha256": "e95ea6f51ab97ba4f3c1e4af292fdb89daf84ffb29fcd03ae871e46c4f1b1178"
+    },
+    {
+      "id": "char-surveyor-b1-4x",
+      "family": "character",
+      "scale": "4x",
+      "file": "benchmarks/results/e44/b1-4x.png",
+      "label": "Surveyor B1 (4x)",
+      "w": 256,
+      "h": 256,
+      "bytes": 2927,
+      "sha256": "8a73eefc81cebaa6b63b8240eabc500baa9c0fecf53c7fa0688284846df3487d"
+    },
+    {
+      "id": "char-courier-rev-4x",
+      "family": "character",
+      "scale": "4x",
+      "file": "benchmarks/results/e44/courier-rev-4x.png",
+      "label": "Courier Revised Hood/Satchel (4x)",
+      "w": 256,
+      "h": 256,
+      "bytes": 2920,
+      "sha256": "6bd5c63d3a522814e5d4bb2fe00c9a37dc9c661aa97f930a6d4a039325787f5e"
+    },
+    {
+      "id": "char-ridge-a0-1x",
+      "family": "character",
+      "scale": "1x",
+      "file": "benchmarks/results/e75/ridge-mechanic/a0/day.png",
+      "label": "Ridge Mechanic A0 Control (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 20252,
+      "sha256": "d95ee726d206ccde1701c608727d5dca939984d1400116660af0e8785a58a739"
+    },
+    {
+      "id": "char-ridge-refined-1x",
+      "family": "character",
+      "scale": "1x",
+      "file": "benchmarks/results/e75r/ridge-mechanic/refined/day.png",
+      "label": "Ridge Mechanic E7.5R Refined (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 20743,
+      "sha256": "289e9a7d3a9174852af5176ea49d20d086036254733c4274ef9676dd81dc2176"
+    },
+    {
+      "id": "char-ridge-refined-4x",
+      "family": "character",
+      "scale": "4x",
+      "file": "benchmarks/results/e75r/ridge-mechanic/refined/material-4x.png",
+      "label": "Ridge Mechanic E7.5R Material (4x)",
+      "w": 256,
+      "h": 256,
+      "bytes": 3389,
+      "sha256": "8083a5e3385418b9f52d1693624f1f25e8e550e3dc792f197681fd6a386975d3"
+    },
+    {
+      "id": "char-marsh-a0-1x",
+      "family": "character",
+      "scale": "1x",
+      "file": "benchmarks/results/e75/marsh-harvester/a0/day.png",
+      "label": "Marsh Harvester A0 Control (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 22610,
+      "sha256": "3d028335008cf9c426936055b1e6dc99c9c46f34e13ea6f8e2e3e63e65c88dab"
+    },
+    {
+      "id": "char-marsh-refined-1x",
+      "family": "character",
+      "scale": "1x",
+      "file": "benchmarks/results/e75r/marsh-harvester/refined/day.png",
+      "label": "Marsh Harvester E7.5R Refined (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 22942,
+      "sha256": "4d05821b2cd43aef430f9e17233389d2d93b40549d7378fb992fdd5e41ad7720"
+    },
+    {
+      "id": "char-marsh-refined-4x",
+      "family": "character",
+      "scale": "4x",
+      "file": "benchmarks/results/e75r/marsh-harvester/refined/material-4x.png",
+      "label": "Marsh Harvester E7.5R Material (4x)",
+      "w": 256,
+      "h": 256,
+      "bytes": 3358,
+      "sha256": "c9971f5d5fc21631bc7a46b44a65e24fd7787d4a080b318fc1f893b386f3c411"
+    },
+    {
+      "id": "char-porter-refined-1x",
+      "family": "character",
+      "scale": "1x",
+      "file": "benchmarks/results/e75r/canal-porter/refined/day.png",
+      "label": "Canal Porter E7.5R Refined (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 21076,
+      "sha256": "277e846534d4c7783ac340e326a05f8c395fdeda4083eadbc0712e295cbbf8ba"
+    },
+    {
+      "id": "char-porter-refined-4x",
+      "family": "character",
+      "scale": "4x",
+      "file": "benchmarks/results/e75r/canal-porter/refined/material-4x.png",
+      "label": "Canal Porter E7.5R Material (4x)",
+      "w": 256,
+      "h": 256,
+      "bytes": 3062,
+      "sha256": "e0af828c2d1bce2d713b7c10490634494a082f709a90593b3154438fbd3c130f"
+    },
+    {
+      "id": "anim-surveyor-walk-1x",
+      "family": "animation",
+      "scale": "1x",
+      "file": "benchmarks/results/e54/packages/surveyor/walk/spritesheet.png",
+      "label": "Surveyor W2 Walk Strip 8 Frames (1x)",
+      "w": 512,
+      "h": 64,
+      "bytes": 13772,
+      "sha256": "c53d40c7632a13da1c1884bbbde7731357aba6f85c14c2cb03f457d5989f07c7"
+    },
+    {
+      "id": "anim-courier-walk-1x",
+      "family": "animation",
+      "scale": "1x",
+      "file": "benchmarks/results/e54/packages/courier/walk/spritesheet.png",
+      "label": "Courier Walk Strip 8 Frames (1x)",
+      "w": 512,
+      "h": 64,
+      "bytes": 13535,
+      "sha256": "9aa076a9dfe1c18af7854e5ddcada877dd235689064d8e4b3001c775cedb3c99"
+    },
+    {
+      "id": "anim-unity-00-1x",
+      "family": "animation",
+      "scale": "1x",
+      "file": "benchmarks/results/e85/animation-00.png",
+      "label": "Unity Player Animation Frame 00 (320x208)",
+      "w": 320,
+      "h": 208,
+      "bytes": 15735,
+      "sha256": "dda58717775ae58c2218cd88a9609c4c634df9d535afbb7100585947b33bfed4"
+    },
+    {
+      "id": "anim-unity-04-1x",
+      "family": "animation",
+      "scale": "1x",
+      "file": "benchmarks/results/e85/animation-04.png",
+      "label": "Unity Player Animation Frame 04 (320x208)",
+      "w": 320,
+      "h": 208,
+      "bytes": 15892,
+      "sha256": "870cd471ddd0ed6f91c825f61580c83143ec9bea432e588aca576e1cf9e816de"
+    },
+    {
+      "id": "prop-barrel-1x",
+      "family": "prop",
+      "scale": "1x",
+      "file": "benchmarks/results/e24/barrel-tall-1x.png",
+      "label": "Locked Baseline Barrel Tall (1x)",
+      "w": 32,
+      "h": 32,
+      "bytes": 702,
+      "sha256": "d54b60717451ff14622237079df6a8a3633a0f3bd961e2ae187fbcefa68efec2"
+    },
+    {
+      "id": "prop-barrel-4x",
+      "family": "prop",
+      "scale": "4x",
+      "file": "benchmarks/results/e24/barrel-tall-4x.png",
+      "label": "Locked Baseline Barrel Tall (4x)",
+      "w": 128,
+      "h": 128,
+      "bytes": 1001,
+      "sha256": "22ca375c3cae20d59a062597ad73ab19b401e6b0a82d9292e5905bdfe909644e"
+    },
+    {
+      "id": "prop-rain-1x",
+      "family": "prop",
+      "scale": "1x",
+      "file": "benchmarks/results/e74r/field-rain-gauge/day.png",
+      "label": "Field Rain Gauge E7.4R (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 20293,
+      "sha256": "3f5451d53259e58b1ec48ab3cf9b95295e20a6bb30a1961aa33ea4fddfcea153"
+    },
+    {
+      "id": "prop-rain-4x",
+      "family": "prop",
+      "scale": "4x",
+      "file": "benchmarks/results/e74r/field-rain-gauge/material-4x.png",
+      "label": "Field Rain Gauge E7.4R (4x)",
+      "w": 128,
+      "h": 128,
+      "bytes": 1065,
+      "sha256": "f08c4d2b9a417974b2575f0c547fb49ee63ba5268f1640023c2695ca44714bbe"
+    },
+    {
+      "id": "prop-beacon-1x",
+      "family": "prop",
+      "scale": "1x",
+      "file": "benchmarks/results/e74r/harbor-signal-beacon/day.png",
+      "label": "Harbor Signal Beacon E7.4R (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 22626,
+      "sha256": "95d7622d2273ba65f6f2a5fc3595a5d0ed7d08a61d21eddbfcea07bbc9289fa3"
+    },
+    {
+      "id": "prop-beacon-4x",
+      "family": "prop",
+      "scale": "4x",
+      "file": "benchmarks/results/e74r/harbor-signal-beacon/material-4x.png",
+      "label": "Harbor Signal Beacon E7.4R Day (4x)",
+      "w": 128,
+      "h": 128,
+      "bytes": 1067,
+      "sha256": "9ce6b6937e4aa074db520125e6d02e50c069d1c955dc6c545c3d53f489f07c3e"
+    },
+    {
+      "id": "prop-beacon-night-4x",
+      "family": "prop",
+      "scale": "4x",
+      "file": "benchmarks/results/e74r/harbor-signal-beacon/night-4x.png",
+      "label": "Harbor Signal Beacon E7.4R Night (4x)",
+      "w": 1280,
+      "h": 832,
+      "bytes": 32728,
+      "sha256": "037883d67a60a4c2e92380ab7ed9d16ca650f1b1d45228b648903312395348ac"
+    },
+    {
+      "id": "prop-vane-1x",
+      "family": "prop",
+      "scale": "1x",
+      "file": "benchmarks/results/e74r/cliffside-wind-vane/day.png",
+      "label": "Cliffside Wind Vane E7.4R (1x)",
+      "w": 320,
+      "h": 208,
+      "bytes": 20857,
+      "sha256": "b0c5d055308d93b0aae00cf04de8ee542369a73c2b79b49838b0f04679728b88"
+    },
+    {
+      "id": "prop-vane-4x",
+      "family": "prop",
+      "scale": "4x",
+      "file": "benchmarks/results/e74r/cliffside-wind-vane/material-4x.png",
+      "label": "Cliffside Wind Vane E7.4R (4x)",
+      "w": 128,
+      "h": 128,
+      "bytes": 887,
+      "sha256": "0d1ccb22ee5672ea10922b18f484cb0db8edd66cfb21e8679884250a5e378a4b"
+    },
+    {
+      "id": "env-mistfen-unity-1x",
+      "family": "environment",
+      "scale": "1x",
+      "file": "benchmarks/results/e85/mistfen-ferry-landing-day-e84-spawn.png",
+      "label": "Mistfen Day Owner E8.4 ZIP in Unity Player (320x208)",
+      "w": 320,
+      "h": 208,
+      "bytes": 15786,
+      "sha256": "22562f071c8ce4c835744ed9cabd64e2ab8f4370082ad8d3f0c7c8a575b889be"
+    },
+    {
+      "id": "env-mistfen-b2-4x",
+      "family": "environment",
+      "scale": "4x",
+      "file": "benchmarks/results/e76r/mistfen-ferry-landing/b2/day-4x.png",
+      "label": "Mistfen B2 Context (4x)",
+      "w": 1280,
+      "h": 832,
+      "bytes": 28621,
+      "sha256": "e06d818ce2a6278a7341769628730dbdeba790b5cc380863e12c3a6f564c808e"
+    },
+    {
+      "id": "env-floodgate-unity-1x",
+      "family": "environment",
+      "scale": "1x",
+      "file": "benchmarks/results/e85/floodgate-maintenance-yard-day-spawn.png",
+      "label": "Floodgate Day in Unity Player (320x208)",
+      "w": 320,
+      "h": 208,
+      "bytes": 17081,
+      "sha256": "f987242ce2dde6c2f98bb359b8903e61f357891017bcd3cd88f3f0cdb85faf5f"
+    },
+    {
+      "id": "env-canal-unity-1x",
+      "family": "environment",
+      "scale": "1x",
+      "file": "benchmarks/results/e85/canal-intake-service-platform-day-spawn.png",
+      "label": "Canal Intake Day Locked 19/35 in Unity Player (320x208)",
+      "w": 320,
+      "h": 208,
+      "bytes": 14696,
+      "sha256": "8f9f3a0306da89de602140d9b37185b19a4b4b69e2fb77d3f5bd3cde58f98974"
+    },
+    {
+      "id": "env-canal-staging-1x",
+      "family": "environment",
+      "scale": "1x",
+      "file": "benchmarks/results/e85/canal-intake-service-platform-day-staging.png",
+      "label": "Canal Intake Studio Staging 140/140 in Unity Player (320x208)",
+      "w": 320,
+      "h": 208,
+      "bytes": 14737,
+      "sha256": "b20c6b72047bba15556a9190484eeabc891ebe3ab3ae643c6f1d9d119ebb22e7"
+    },
+    {
+      "id": "env-gameplay-e44-1x",
+      "family": "character",
+      "scale": "1x",
+      "file": "benchmarks/results/e44/gameplay-r2-1x.png",
+      "label": "Surveyor R2 Gameplay Context E4.4 (1x)",
+      "w": 416,
+      "h": 224,
+      "bytes": 22295,
+      "sha256": "014d5e9b955918c17b956c3886687a62f26c36d1fca63d822399a20176216b3e"
+    }
+  ]
+}

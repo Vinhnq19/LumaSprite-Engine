@@ -1,0 +1,22 @@
+{
+  "type": "OBSERVED_ELAPSED_NOT_HUMAN_LABOR",
+  "externalComponentFee": 0,
+  "externalFeeCurrency": "USD",
+  "apiGenerationCalls": 0,
+  "authoring": {
+    "humanMinutes": null,
+    "kitFileCreatedUtc": "2026-11-28T07:47:38Z",
+    "firstGalleryCreatedUtc": "2026-11-28T07:51:19Z",
+    "sourceToFirstGallerySeconds": 221,
+    "sealCreatedUtc": "2026-11-28T07:53:38Z",
+    "sourceToSealSeconds": 360,
+    "method": "Elapsed filesystem timestamps include coding, checks and review. They do not measure hands-on drawing time."
+  },
+  "scriptExecutionMs": {
+    "bVisor": 5.2644,
+    "bHandle": 4.2025,
+    "aHandle": 2.1351,
+    "aVisor": null
+  },
+  "timingNote": "One development run, measured from the copied source edit through integer raster assembly. Studio I/O and manual author time are outside this latency sample."
+}
