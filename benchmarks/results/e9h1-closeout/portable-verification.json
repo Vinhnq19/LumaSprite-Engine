@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "html": "docs/reports/E9-H1-CLOSEOUT-ART-QUALITY-DECISION.html",
+  "sha256": "76f9ab11f635e6d25611b595288240d592fa18aa5eac9e3ee8eda6d33f3cb6a8",
+  "bytes": 563650,
+  "copy": "Single SHA-matched HTML outside repositories, in Windows Temp",
+  "chrome": "158.0.0.0",
+  "offline": true,
+  "uniquePngPayloads": 57,
+  "sourcePngPaths": 61,
+  "imagePlacements": 69,
+  "sha256Verified": true,
+  "relativeDependencies": 0,
+  "externalRequests": 0,
+  "consoleErrorsOrWarnings": 0,
+  "native": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "nearest": [
+    256,
+    256,
+    "pixelated"
+  ],
+  "restored": [
+    64,
+    64,
+    "pixelated"
+  ],
+  "backgrounds": [
+    "rgb(216, 226, 233)",
+    "rgb(41, 53, 67)"
+  ],
+  "blindReveal": true,
+  "unsignedReview": true
+}
