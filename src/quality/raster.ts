@@ -14,7 +14,7 @@ export type Diagnostic = 'CANVAS' | 'FRAME' | 'ALPHA' | 'TRANSPARENT_RGB' | 'PAL
 
 export const sha256 = (bytes: string | Buffer) => createHash('sha256').update(bytes).digest('hex');
 
-export function validateRaster(raster: Raster, spec: AssetSpecV1, frame: FrameMetadata,
+export function validateRaster(raster: Raster, spec: Pick<AssetSpecV1, 'palette'> & { canvas: { w: number; h: number } }, frame: FrameMetadata,
   protection?: { rgba: Buffer; editable: Buffer }): Diagnostic[] {
   const errors = new Set<Diagnostic>();
   const { w, h, rgba } = raster;

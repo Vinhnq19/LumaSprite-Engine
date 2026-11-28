@@ -2,6 +2,8 @@
 
 ## Current checkpoint
 
+[v1 scope](v1-scope.md) · [Installation](installation.md) · [Engine CLI and API](engine-cli-api.md) · [Known limitations](known-limitations.md) · [AI integration contract draft](ai-integration-contract.md)
+
 [Official report index](reports/INDEX.md) · [E7.2-R portable art review](reports/E7.2-R-PORTABLE-ART-REVIEW.html) · [E7.2 artistic decisions](reports/e72-artistic-decision.md) · [E7.3 architecture proposal](reports/e73-cross-asset-architecture.md) · [Reporting Standard v1](reports/REPORTING-STANDARD.md)
 
 - [E7.1 structure gallery and review sheet](LumaSprite-Engine-E7.1-Report.html), [QA and handoff](e71-structure-quality.md), [root-cause audit](art-quality/e7-root-cause.md) and [Quality Contract v1](art-quality/quality-contract-v1.md).

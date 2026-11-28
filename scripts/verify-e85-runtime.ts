@@ -1,11 +1,15 @@
 import assert from 'node:assert/strict';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
+import { parseArgs } from 'node:util';
 import { decodePng } from '../src/core/renderer/png.ts';
 import { sha256 } from '../src/quality/raster.ts';
 
 const raw = 'benchmarks/results/run/e85/';
-const out = 'benchmarks/results/e85/';
+const { values } = parseArgs({ options: { out: { type: 'string' }, 'skip-screen-captures': { type: 'boolean' } } });
+const out = values.out ? values.out.replace(/[\\/]+$/, '') + '/' : 'benchmarks/results/e85/';
+const skipScreenCaptures = values['skip-screen-captures'];
+assert.ok(!skipScreenCaptures || values.out, 'Screen capture omissions require a separate evidence directory.');
 const zipsDir = '.cache/e85-studio-zips/';
 const read = readFileSync;
 const json = (path: string) => JSON.parse(read(path, 'utf8'));
@@ -149,7 +153,8 @@ for (const row of report.cases) {
     captures.push({ scene: row.id, light: row.light, kind, file: name, type: 'WORLD_RENDER_PARITY' });
   }
 
-  for (const [state, name] of [['out-of-range', row.outOfRangeCapture], ['in-range', row.promptCapture], ['activated', row.feedbackCapture]]) {
+  const screenshots = [['out-of-range', row.outOfRangeCapture], ['in-range', row.promptCapture], ['activated', row.feedbackCapture]];
+  for (const [state, name] of skipScreenCaptures ? [] : screenshots) {
     const screenshot = decodePng(read(raw + name));
     assert.equal(screenshot.w, report.screenWidth);
     assert.equal(screenshot.h, report.screenHeight);
@@ -242,10 +247,12 @@ const verification = {
   worldRgbaParity: { exact: 6, total: 6, extraVariantsExact: 2 },
   cues,
   captures,
+  ...(skipScreenCaptures ? { compositedHud: { status: 'NOT_RUN', reason: 'The hidden player does not capture its on-screen UI.' } } : {}),
   aiCalls: 0,
 };
 write('verification.json', JSON.stringify(verification, null, 2) + '\n');
 writeFileSync(out + 'SHA256SUMS', Object.entries(hashes).sort(([a], [b]) => a.localeCompare(b))
   .map(([name, digest]) => digest + '  ' + name).join('\n') + '\n');
 
-console.log('E8.5 verification PASS:', Object.keys(hashes).length, 'files · 6/6 + 2 variant World RGBA exact · ownerDiffVsX113=' + ownerDiffVsX113);
+console.log('E8.5 verification PASS:', Object.keys(hashes).length, 'files · 6/6 + 2 variant World RGBA exact · ownerDiffVsX113=' + ownerDiffVsX113,
+  skipScreenCaptures ? '· on-screen HUD NOT_RUN' : '');
