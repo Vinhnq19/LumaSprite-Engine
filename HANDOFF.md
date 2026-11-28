@@ -1,4 +1,16 @@
-# Engine Handoff · E10.0 Closeout và E10.1 Art Reference Foundation
+# Engine Handoff · v1 Release Readiness
+
+**`ENGINE_V1_READY_FOR_OWNER_ACCEPTANCE`** · 2026-11-28 ICT · nhánh cục bộ `codex/e10-v1-release-readiness`. [Báo cáo HTML tự chứa](docs/reports/LUMASPRITE-ENGINE-V1-RELEASE-READINESS.html)
+
+`ENGINE_V1_SCOPE_FROZEN` và `ENGINE_V1_TECHNICALLY_READY` đã đạt. Checkpoint gốc `c60d03736d0597fc44673223a08873756229dce8`. Commit build `c919d4aee3c55df6f1e61519f6fa83826ad8f453`. [Phạm vi](docs/v1-scope.md) · [CLI và API](docs/engine-cli-api.md)
+
+Đã xác minh nhập PNG, mask và nguồn, ghép layer, sửa trong mask, tạo revision, rollback và xuất. Studio tại `471ac90555d3545beff5182146e291ba97b9ae20` được dùng ở chế độ chỉ đọc. Unity E8.5 nhập sprite từ Studio với RGBA, pivot và PPU chính xác. Unity Windows Player đạt 6/6 cảnh và 2 biến thể RGBA, tương tác và save/reload. Kiểm bàn phím vật lý và capture HUD mới trên cửa sổ hiển thị vẫn chờ.
+
+87/87 test Engine, 107/107 test Studio, 805 SHA lịch sử và 3.386 dòng manifest benchmark. Giữ nguyên 38 báo cáo cũ, gồm 13 tệp được pin. npm audit có 0 advisory. ZIP nội bộ `.cache/e10-v1/release/LumaSprite-Engine-v1-Windows-RC.zip` đã smoke test ngoài repo. SHA-256 `b0cac7eb889d8f0fd92128a7b9f9275612b52f13d1a7540ad873becf825dc299`.
+
+`ENGINE_V1_OWNER_ACCEPTED` chờ Owner. Duyệt mỹ thuật E10.1, quyền phân phối và chuyển sang AI Training là các quyết định đang chờ. [Giới hạn](docs/known-limitations.md) · [Draft AI contract](docs/ai-integration-contract.md)
+
+## Checkpoint trước đó · E10.0 Closeout và E10.1 Art Reference Foundation
 
 **`E10_1_READY_FOR_OWNER_ART_REFERENCE_REVIEW`** · nhánh `codex/e10-art-directed-foundation`. [Đề xuất kiến trúc](docs/reports/E10-ART-DIRECTED-PRODUCTION-FOUNDATION.md) · [HTML duyệt reference](docs/reports/E10.1-ART-REFERENCE-REVIEW.html) · [Report Index](docs/reports/INDEX.md)
 

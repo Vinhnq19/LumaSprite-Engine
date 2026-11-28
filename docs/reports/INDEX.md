@@ -2,6 +2,7 @@
 
 | Cần xem | Nguồn |
 | --- | --- |
+| Engine v1 · Release Readiness | [HTML tự chứa và phiếu Owner trống](LUMASPRITE-ENGINE-V1-RELEASE-READINESS.html) · [Phạm vi v1](../v1-scope.md) · [Handoff](../../HANDOFF.md) |
 | E10.0 / E10.1 · Art-Directed Production Foundation | [Đề xuất chính](E10-ART-DIRECTED-PRODUCTION-FOUNDATION.md) · [HTML duyệt reference](E10.1-ART-REFERENCE-REVIEW.html) · [Phiếu Owner](../../benchmarks/results/e101/human-review.json) · [QA](../../benchmarks/results/e101/technical-qa.json) · [Audit 38 tệp](../../benchmarks/results/e101/legacy-report-audit.csv) |
 | E9.H1 Closeout · Pose Robustness & Art Decision | [HTML portable](E9-H1-CLOSEOUT-ART-QUALITY-DECISION.html) · [Option B](../../benchmarks/results/e9h1-closeout/decision.json) · [Phiếu duyệt trống](../../benchmarks/results/e9h1-closeout/human-review.json) · [First holdout](../../benchmarks/results/e9h1-closeout/first-attempt.json) · [QA](../../benchmarks/results/e9h1-closeout/technical-qa.json) |
 | E9.H1R · Art-Directed Quality Recovery | [HTML portable](E9-H1R-ART-DIRECTED-QUALITY-REVIEW.html) · [Workflow và nguồn](E9-H1R-WORKFLOW-RESEARCH.md) · [Phiếu trống](../../benchmarks/results/e9h1r/human-review.json) · [First holdout](../../benchmarks/results/e9h1r/first-holdout-attempt.json) · [QA](../../benchmarks/results/e9h1r/technical-qa.json) |
