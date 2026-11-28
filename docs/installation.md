@@ -18,6 +18,8 @@ Compare the ZIP SHA-256 with the readiness report using `Get-FileHash -Algorithm
 
 Use Node.js 24 or newer, npm and Git. A clean checkout runs `npm ci` and `npm run build`. To run the documented checks use `npm test`, `npm run smoke` and `npm run test:studio`. The Studio check needs a compatible sibling checkout or `LUMASPRITE_STUDIO_ROOT`. Keep the Studio checkout read-only for Engine acceptance.
 
+Run `npm run test:e85-studio` for E8.5 integration against a built Studio checkout. This check uses the runtime export in `.cache/e8-adapter-1` and the original Owner ZIP in `.cache/e85-studio-zips`. The offline CI suite uses only the Engine checkout.
+
 To recreate the local ZIP, build the Engine, run `node scripts/verify-v1-workflow.ts` against the pinned Studio checkout, then run `python scripts/package-v1-windows.py` on Windows. This uses the repository's npm cache and a locked, offline installation of the two runtime dependencies. Set `--npm-cache` to an alternate npm cache containing those tarballs. The script prepares a new staging directory and validates the result in a separate OS temporary directory.
 
 The Unity sandbox uses Editor `6000.3.21f1`, Test Framework `1.6.0`, and Windows x64. From a populated E8.5 sandbox, run `scripts/e8-unity/run-e85.ps1` with the installed Editor path. Use the existing Studio scene ZIP manifest. See the [E8.5 report](reports/E8.5-END-TO-END-PRODUCTION-ACCEPTANCE.html) for the fixture lineage and application controls.

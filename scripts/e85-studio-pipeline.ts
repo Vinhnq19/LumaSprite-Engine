@@ -2,8 +2,9 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 import { test } from 'node:test';
+import { pathToFileURL } from 'node:url';
 interface NativeSceneItem {
   id: string;
   studioState: {
@@ -27,19 +28,21 @@ interface PixelStoreLike {
 type WireParseFn = <T = StudioDoc>(text: string) => T;
 type WireStringifyFn = (val: unknown) => string;
 
-const { serveStudio } = (await import(new URL('../../LumaSprite-Studio/dist/node/studio/server.js', import.meta.url).href)) as {
+const studioDist = resolve(process.env.LUMASPRITE_STUDIO_ROOT ?? '../LumaSprite-Studio', 'dist');
+const fromStudio = (path: string) => pathToFileURL(join(studioDist, path)).href;
+const { serveStudio } = (await import(fromStudio('node/studio/server.js'))) as {
   serveStudio: (root: string, opts: { port: number; uiDir: string }) => Promise<{ url: string; close: () => Promise<void> }>;
 };
-const { PixelStore } = (await import(new URL('../../LumaSprite-Studio/dist/node/studio/pixel-store.js', import.meta.url).href)) as {
+const { PixelStore } = (await import(fromStudio('node/studio/pixel-store.js'))) as {
   PixelStore: new (root: string) => PixelStoreLike;
 };
-const { wireParse, wireStringify } = (await import(new URL('../../LumaSprite-Studio/dist/studio/pixel/model.js', import.meta.url).href)) as {
+const { wireParse, wireStringify } = (await import(fromStudio('studio/pixel/model.js'))) as {
   wireParse: WireParseFn;
   wireStringify: WireStringifyFn;
 };
 
-const E8_INPUT = 'D:/LumaSprite-Engine/.cache/e8-adapter-1';
-const OWNER_ZIP = 'D:/LumaSprite-Engine/.cache/e85-studio-zips/e8-mistfen-ferry-landing-day-e84-export.zip';
+const E8_INPUT = resolve('.cache/e8-adapter-1');
+const OWNER_ZIP = resolve('.cache/e85-studio-zips/e8-mistfen-ferry-landing-day-e84-export.zip');
 const sha256 = (d: Uint8Array | string) => createHash('sha256').update(d).digest('hex');
 
 function unzipStored(buf: Buffer): Record<string, Buffer> {
@@ -66,7 +69,7 @@ test('E8.5 Phase A & D: Owner Studio ZIP integrity, protected source guard, STAL
   assert.equal(sidecar.nativeSceneRecord.studioState.actorOverrides.surveyor.x, 117);
 
   const root = mkdtempSync(join(tmpdir(), 'e85-pipeline-test-'));
-  const app = await serveStudio(root, { port: 0, uiDir: 'D:/LumaSprite-Studio/dist/studio' });
+  const app = await serveStudio(root, { port: 0, uiDir: join(studioDist, 'studio') });
   t.after(async () => { await app.close(); rmSync(root, { recursive: true, force: true }); });
   const origin = new URL(app.url).origin;
   const store = new PixelStore(root);
