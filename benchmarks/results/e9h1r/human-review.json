@@ -1,0 +1,154 @@
+{
+  "schema": "lumasprite.e9h1r.human-review.v1",
+  "authority": "PROJECT_OWNER_OR_DESIGNATED_HUMAN_REVIEWER",
+  "state": "UNSIGNED",
+  "reviewer": null,
+  "date": null,
+  "blindKeyOpenedBeforeScoring": null,
+  "allowedChoices": [
+    "A",
+    "B",
+    "Neither",
+    "Revision Required"
+  ],
+  "development": {
+    "choice": null,
+    "x": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "y": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "criticalDefects": [],
+    "notes": null
+  },
+  "diagnostic": {
+    "choice": null,
+    "x": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "y": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "criticalDefects": [],
+    "notes": null
+  },
+  "fresh": {
+    "choice": null,
+    "x": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "y": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "criticalDefects": [],
+    "notes": null
+  },
+  "fullHybrid": {
+    "development": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "diagnostic": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "fresh": {
+      "silhouette": null,
+      "proportions": null,
+      "anatomy": null,
+      "grip": null,
+      "pixelClusters": null,
+      "materials": null,
+      "dayRead": null,
+      "nightRead": null,
+      "styleConsistency": null,
+      "functionalIdentity": null
+    },
+    "notes": null,
+    "criticalDefects": []
+  },
+  "referenceApprovals": {
+    "silhouette": null,
+    "head-face": null,
+    "proportions": null,
+    "garments": null,
+    "hand-tool": null,
+    "material": null,
+    "pixel-clusters": null,
+    "outline": null,
+    "functional-equipment": null
+  },
+  "signature": null,
+  "decision": null
+}

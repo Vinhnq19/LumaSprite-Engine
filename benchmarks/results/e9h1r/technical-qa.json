@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "pilotStatus": "E9_H1R_TECHNICAL_BLOCKED",
+  "historical": 805,
+  "protectedE9": {
+    "e90": 3,
+    "e91": 616,
+    "e91r": 277,
+    "e91s": 189,
+    "e91sr": 79
+  },
+  "previousE9H1": {
+    "deterministicEntries": 101,
+    "studioSamples": 24,
+    "originalHoldoutStillFails": true,
+    "protectedReportSha256": "b0d4b047c78215ac42439f5b6b109fa24580b7e14e6607007a6faf80aa230694"
+  },
+  "deterministicEntries": 172,
+  "firstHoldout": true,
+  "studio": {
+    "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "mode": "PNG_IMPORT_DOCUMENT_SAVE_PNG_EXPORT",
+    "images": [
+      {
+        "file": "development/a0/sprite.png",
+        "pngSha256": "36cb49b20c4ff63b6055362cb2aeb001399a49d7a52fa349cabe1899699ddea0",
+        "rgbaSha256": "4384ce79b86e86bcd7480bec0d7e65e499478c7a9d942bd7bed09b00d4d9be05",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "development/a0/day.png",
+        "pngSha256": "23730b02f0bcce1dc28139c5af6e8956b2a3c4c0f3b8092f0bba6362ce34ecfb",
+        "rgbaSha256": "1288a36e8c7c074bb509e1f6b1c91d41b31b0e79c8778dff472b1e9d1d40ac5c",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "development/a0/night.png",
+        "pngSha256": "d08313742eca018972b66539b2bbb68b5e6d5e5eefd19914f2ba7779839a2fc5",
+        "rgbaSha256": "3457968ad92018bb11d9fbffffc0b1a2f1e6f8c09908de2e1c1fdea78394503b",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "development/matched-refined/sprite.png",
+        "pngSha256": "9507ed13d464c16ec82adb5280bb4718e0a3ea7e5345661664bd73cc09eea411",
+        "rgbaSha256": "9d36b5bb6c9280ffad595e97c0d4ec133607bdfe0955ee5a094b056e29fdc37a",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "development/matched-refined/day.png",
+        "pngSha256": "1ea58df1011cbe9708cd848a461e6a8d8ecca0682be04fedfd6c82220e152ae6",
+        "rgbaSha256": "d6d610724c89c2ac40ad2e38a03cea490afad37613356a3a1a743d8df2262966",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "development/matched-refined/night.png",
+        "pngSha256": "8f42479b9bae1f7e916735845204cc5deaf92a09e2844bc5fd8aae73aa052bf3",
+        "rgbaSha256": "4ab02a4707f31ced2e533fcae816fbddfabc3ec7d4589c21176c17f5b299e73b",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "development/full-refined/sprite.png",
+        "pngSha256": "3239b4c8dc3a8c501fd18dfb088626e1afe422246cf21b53cdaf8713614ba3df",
+        "rgbaSha256": "be496a88417b5c329a535a8f1ca7771864f05b04fbc4fb86f594a5b68d2fffb1",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "development/full-refined/day.png",
+        "pngSha256": "138fc0ad3f4dae0dd4c13cbd9d1b69f20bd060b68e0f3426c36839ad66380246",
+        "rgbaSha256": "d9d0d718013cb993602a51931517ac9ea4a7140faf30548e009ff94834403ca3",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "development/full-refined/night.png",
+        "pngSha256": "0e1a98b5bae30d9f03f4698364fa58a66a9e8379bdb8dbda95bee6ac7c8093d8",
+        "rgbaSha256": "29bd48d346440bf52b8db9a7bdc067ebd0f3478615d491b8b09dc45c66cee2a5",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "edits/visor/before.png",
+        "pngSha256": "3239b4c8dc3a8c501fd18dfb088626e1afe422246cf21b53cdaf8713614ba3df",
+        "rgbaSha256": "be496a88417b5c329a535a8f1ca7771864f05b04fbc4fb86f594a5b68d2fffb1",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "edits/visor/after.png",
+        "pngSha256": "253cab2c78d61b4d60d3b1138bdf74d3be2d1e72b54c0ac8b8bd4005529ec5f1",
+        "rgbaSha256": "71eecc49020e3950b001cd06076c9518806d6c095b9f43cfaeac1f4f2b766811",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "edits/glove/before.png",
+        "pngSha256": "3239b4c8dc3a8c501fd18dfb088626e1afe422246cf21b53cdaf8713614ba3df",
+        "rgbaSha256": "be496a88417b5c329a535a8f1ca7771864f05b04fbc4fb86f594a5b68d2fffb1",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "edits/glove/after.png",
+        "pngSha256": "6a1dcfbe799617827e90fdd5167790e4f1a473f37b590739b0f1088f1a33c2b4",
+        "rgbaSha256": "104c7ac5ad34e9afae574065a9e3a6391f57fc5ed6222b28d6d551d2aeec0483",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "edits/suit-edge/before.png",
+        "pngSha256": "3239b4c8dc3a8c501fd18dfb088626e1afe422246cf21b53cdaf8713614ba3df",
+        "rgbaSha256": "be496a88417b5c329a535a8f1ca7771864f05b04fbc4fb86f594a5b68d2fffb1",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "edits/suit-edge/after.png",
+        "pngSha256": "2bc1a55b93aad9d6541ddbc12d52729029e49bd8e5200060af52f1e0c1de179c",
+        "rgbaSha256": "b30d0311c29d95e6c287c38d14425641beaf05cdc075e51e19f21ed3b12ea8d2",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "diagnostic/a0/sprite.png",
+        "pngSha256": "08da6f0ca0305c087660c983b6a0a78938ee844894764a14f9eb539061687453",
+        "rgbaSha256": "977884e34cec3982bfee33b21655d02d40d2f6c32823dd3d8264573e9863306e",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "diagnostic/a0/day.png",
+        "pngSha256": "4de2dd577e34a3acf17ebb5d215ca3e076b4ddb21d379bab4cec837223033017",
+        "rgbaSha256": "538deffaf381597ee93cfdbca6ea81d9b68e316e59ab7b2e81466d7c822b13b1",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "diagnostic/a0/night.png",
+        "pngSha256": "a2d4e0d7f2a4355fbeeca7261f71c4e311b287d2acbdafa795c6aec950621216",
+        "rgbaSha256": "503b0f5fa73603c8decd86ae77c3d15e26989ab98638da28285559dd15ff34ae",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "diagnostic/matched-refined/sprite.png",
+        "pngSha256": "4d181f2a755a6d6af01926bffafafbd094075836b906b309af8e920f603b24fe",
+        "rgbaSha256": "7c96752a14b46b937f9b5316af4c0594e94a3ca9aefa4ceef9f4c79ded2a1865",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "diagnostic/matched-refined/day.png",
+        "pngSha256": "51ebb37cc999e8582a5be959efcd166cdf01583f69b95111c330a5c161a8af07",
+        "rgbaSha256": "7e683da2e6570747cf30576314f643c9a39ed982abb35d19e47913666f50edbc",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "diagnostic/matched-refined/night.png",
+        "pngSha256": "c021ba8af669eb0b9bfa8bed18fee31eb42d3a2c61c6763976e1d86b6bf36b6a",
+        "rgbaSha256": "3d40ef46de623bdad689e4318a7e16df6832e61943fe960084fd32d8375e0812",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "diagnostic/full-refined/sprite.png",
+        "pngSha256": "428bcb17f5b332711b5fe853fc6c752549a0992fe1d378148c0765ca7e17818e",
+        "rgbaSha256": "b1d1dc03208400bcca1a3fe304a20fc352dd4dac5009bd12fae4b22bc87c712f",
+        "dimensions": [
+          64,
+          64
+        ]
+      },
+      {
+        "file": "diagnostic/full-refined/day.png",
+        "pngSha256": "075bbaa08c558101d58097a6d06fa6fc2a81c67d21cb248fdc833ef24f2569c8",
+        "rgbaSha256": "36eb1ee7381dd7d43528a4c9207474a81d408f619401ca95f237591d44b30791",
+        "dimensions": [
+          320,
+          208
+        ]
+      },
+      {
+        "file": "diagnostic/full-refined/night.png",
+        "pngSha256": "5175b25bae7bf6491250b771a44c23eddae40249fa7e7fd47b7e857287cb7bee",
+        "rgbaSha256": "c4b28c7cfeb00ac254b157ff517f34bee235073da9172ce82808d87bd4755f74",
+        "dimensions": [
+          320,
+          208
+        ]
+      }
+    ]
+  },
+  "unity": "NOT_RUN_STATIC_RESEARCH",
+  "owner": "UNSIGNED"
+}

@@ -1,0 +1,16 @@
+{
+  "sealCommit": "28c58d6f604d8610665d788e5f8eb3f4a3f8cfb4",
+  "exitCode": 1,
+  "output": [
+    "development TECHNICAL_PASS original 21 44 []",
+    "diagnostic TECHNICAL_PASS case-higher 15 42 []",
+    "fresh [",
+    "  {",
+    "    code: 'COMPOSITION_FAILURE',",
+    "    detail: 'Error: Character geometry failed: KNEE_DIRECTION/near'",
+    "  }",
+    "]"
+  ],
+  "benchmarkSha256": "8f6951921da894a635c40e92bd8185c65d6048cb24eb08335418c8f4004d5a6d",
+  "manifestSha256": "6323ac0e8efe0b3ca970c6957b8c21c155f3f3c48686a35c6450b950b2cbd95d"
+}
