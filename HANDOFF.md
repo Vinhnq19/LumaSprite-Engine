@@ -1,5 +1,19 @@
 # Engine Handoff · v1 Release Readiness
 
+## Internal RC closeout · 28/11/2026 ICT
+
+`ENGINE_V1_RC_ACCEPTED_INTERNAL_WITH_EXCEPTIONS` · `ENGINE_V1_CORE_FROZEN`. Quyết định theo chỉ đạo trực tiếp của Owner cho sử dụng nội bộ, QA, chuẩn bị nghiên cứu AI và tích hợp Studio/Unity. Physical keyboard và visible-window HUD giữ `NOT_RUN`. Public Distribution và Game-Ready Art giữ `NOT_APPROVED`. RC gốc khớp SHA-256 cùng 1.119 payload. [Biên bản ghi nhận, Release Notes và PR draft](docs/v1-internal-release.md)
+
+`ASF_RESEARCH_CLOSED` · `AI0_READY_FOR_OWNER_RESEARCH_DECISION` · `AI_TRAINING_NOT_STARTED`. Forge pin `25203d0` giữ hai skill offline đã kiểm drift và MIT notices. Pixel Looks `REJECT_FOR_ENGINE_INTEGRATION`, Hibit `KEEP_AS_AGENT_SKILL_ONLY`. AI Lab riêng có shortlist model, ledger trống và protocol bốn arm trên native 64×64. [Bàn giao v1 → AI](../LumaSprite-Coordination/LUMASPRITE-V1-TO-AI-TRANSITION.md) · [AI Lab](../LumaSprite-AI-Lab/README.md)
+
+## Lịch sử · Owner preparation và Agent Sprite Forge · 28/11/2026 ICT
+
+`ENGINE_V1_OWNER_ACCEPTANCE_PENDING` · `ASF_RESEARCH_READY_FOR_HUMAN_QUALITY_REVIEW` · `AI_TRAINING_NOT_STARTED`. RC khớp SHA-256 đã khóa và qua smoke test lại ngoài repo. Commit sửa CI `923662e` nối tiếp checkpoint báo cáo, PR #6 đã merge phía GitHub và CI main đạt. Bàn phím, HUD hiển thị và phạm vi phân phối chờ Owner. [Checklist Owner](../LumaSprite-Coordination/ENGINE-V1-OWNER-CHECK.md)
+
+Forge `25203d03900b46b444bdd72a75768c33d1895ad6` cài hai skill offline ở Codex. Drift đạt, 65 kiểm thử Forge và 7/7 sprite nghiên cứu qua Engine v1. Pixel Looks `REJECT` cho tích hợp hiện tại. Hibit `KEEP_AS_AGENT_SKILL_ONLY`. [Báo cáo nghiên cứu](../LumaSprite-Coordination/ASF-LUMASPRITE-COMPATIBILITY-REPORT.html) · [Manifest cài đặt](../LumaSprite-Tools/agent-sprite-forge-install.json)
+
+## Checkpoint RC đã khóa
+
 **`ENGINE_V1_READY_FOR_OWNER_ACCEPTANCE`** · 2026-11-28 ICT · nhánh cục bộ `codex/e10-v1-release-readiness`. [Báo cáo HTML tự chứa](docs/reports/LUMASPRITE-ENGINE-V1-RELEASE-READINESS.html)
 
 `ENGINE_V1_SCOPE_FROZEN` và `ENGINE_V1_TECHNICALLY_READY` đã đạt. Checkpoint gốc `c60d03736d0597fc44673223a08873756229dce8`. Commit build `c919d4aee3c55df6f1e61519f6fa83826ad8f453`. [Phạm vi](docs/v1-scope.md) · [CLI và API](docs/engine-cli-api.md)
