@@ -1,0 +1,188 @@
+{
+  "schema": "lumasprite.e91s.study.v1",
+  "e91r": "cb2eb3f046f0f6694100327a1baa29bc67ab7278",
+  "e91rSource": "c33707192550c19a96c4cff58d50597554138810",
+  "style": "weathered-station-v1",
+  "view": "three-quarter-right",
+  "keyLight": "upper-left",
+  "canvas": 64,
+  "pivot": [
+    32,
+    58
+  ],
+  "stages": {
+    "s0": "Frozen E9.1R B3 candidate. Fresh case uses B3 with the matched E7 proxy equipment.",
+    "s1": "Change proportion, neck pitch and garment geometry. Retain tool masks and all hand/leg landmarks.",
+    "s2": "Add brow, nose, cheek and jaw planes within S1 geometry.",
+    "s3": "Change equipment and orient contact surfaces through the same hand sockets. Keep other masks and the Cliffside lantern."
+  },
+  "cases": [
+    {
+      "id": "harbor-lockkeeper",
+      "seed": 24137,
+      "role": "known",
+      "wardrobe": "apron",
+      "archetype": "braced",
+      "outfit": "apron",
+      "tools": "wheel-and-pin",
+      "reference": "recovered-field"
+    },
+    {
+      "id": "marsh-apothecary",
+      "seed": 55271,
+      "role": "known",
+      "wardrobe": "a-line",
+      "archetype": "tapered",
+      "outfit": "shawl",
+      "tools": "vial-rack",
+      "reference": "recovered-field"
+    },
+    {
+      "id": "cliffside-lantern-keeper",
+      "seed": 61947,
+      "role": "known",
+      "wardrobe": "cloak",
+      "archetype": "mantled",
+      "outfit": "cape",
+      "tools": "tether",
+      "reference": "b3-field"
+    }
+  ],
+  "holdout": {
+    "id": "coastal-cartographer",
+    "seed": 73763,
+    "seeds": [
+      73763
+    ],
+    "role": "holdout",
+    "wardrobe": "a-line",
+    "archetype": "tailored",
+    "outfit": "collar",
+    "tools": "survey-kit",
+    "brief": "Coastal field cartographer, 64×64 three-quarter-right. Narrow clear neck and fitted short coat, standing with a sighting compass in the near hand and a folded chart supported in the far hand. Avoid worker proportions and light-emitting tools.",
+    "torso": "narrow",
+    "garment": "a-line",
+    "headwear": "oilskin",
+    "equipment": [
+      "key",
+      "tray"
+    ],
+    "grips": [
+      "overhand",
+      "supporting"
+    ],
+    "legacy": "benchmarks/fixtures/e75r/ridge.json",
+    "pose": {
+      "hip": [
+        34,
+        37
+      ],
+      "lean": 0,
+      "turn": 2,
+      "pivot": [
+        32,
+        58
+      ],
+      "support": "near",
+      "secondaryGroundOffset": -1,
+      "near": {
+        "elbow": [
+          23,
+          35
+        ],
+        "wrist": [
+          21,
+          39
+        ],
+        "palm": [
+          21,
+          41
+        ],
+        "knee": [
+          30,
+          46
+        ],
+        "ankle": [
+          30,
+          53
+        ]
+      },
+      "far": {
+        "elbow": [
+          41,
+          32
+        ],
+        "wrist": [
+          43,
+          34
+        ],
+        "palm": [
+          45,
+          35
+        ],
+        "knee": [
+          42,
+          45
+        ],
+        "ankle": [
+          41,
+          52
+        ]
+      }
+    }
+  },
+  "criteria": {
+    "criticalDefectScope": "Rubric v2 Static Addendum; owner decides by each independent criterion and critical defects.",
+    "stanceVersion": "costume-stance-v2",
+    "minimumLegGapRows": 2,
+    "minimumGripOverlap": 2,
+    "pad": 1,
+    "minimumShaftVisible": 6,
+    "quality": [
+      "silhouetteDistinctiveness",
+      "functionalIdentity",
+      "stylizedAnatomy",
+      "faceReadability",
+      "gripPlausibility",
+      "pixelClusters",
+      "materials",
+      "styleConsistency",
+      "gameplayReadability"
+    ]
+  },
+  "preflight": {
+    "previous": "preflight-r0/candidate-freeze.json",
+    "originalStudySha256": "a077f33579575ca572c02c1594622a649950bb539eaa291aa91879b85da05bd4",
+    "originalFreezeSha256": "9529f2051f56d639ee86989100f4d9d79f7a15bf8e9ef8a9a32f948732339679",
+    "status": "LEGACY_RIG_REJECTED_BEFORE_RASTER",
+    "error": "Joint segment must be 2–20 pixels.",
+    "farWristBefore": [
+      44,
+      34
+    ],
+    "farWristAfter": [
+      43,
+      34
+    ],
+    "farPalm": [
+      45,
+      35
+    ],
+    "explanation": "Corrected fixture coordinates before any Coastal Cartographer raster existed. Seed, rubric, sockets, and renderer unchanged."
+  },
+  "containmentPreflight": {
+    "previous": "preflight-r1/candidate-freeze.json",
+    "originalStudySha256": "ae22e6fb1855853b48877114b04d17fc75a21bad6435b248b60cc0cc2545be7a",
+    "originalFreezeSha256": "aa70d47f976a6b62f02914d6016839be06d64b6c4bbfa9c773c6e7fe3e4a0128",
+    "status": "HEADWEAR_BOUNDS_REJECTED_BEFORE_CANDIDATE_PNG",
+    "hipBefore": [
+      34,
+      36
+    ],
+    "hipAfter": [
+      34,
+      37
+    ],
+    "explanation": "Estimated cap height from the crown landmark and unchanged tailored head rise. No holdout frame was reviewed."
+  }
+}

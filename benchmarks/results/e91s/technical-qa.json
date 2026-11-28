@@ -1,0 +1,632 @@
+{
+  "status": "E9_1S_TECHNICAL_BLOCKED",
+  "historical": 805,
+  "catalogs": {
+    "e76r": 142,
+    "e8": 42,
+    "e83": 52,
+    "e85": 56,
+    "e90": 3,
+    "e91": 616,
+    "e91r": 277
+  },
+  "e90EvidencePngs": 30,
+  "rebuilt": 189,
+  "studio": {
+    "revision": "471ac90555d3545beff5182146e291ba97b9ae20",
+    "mode": "RAW_PNG_ONLY",
+    "samples": [
+      {
+        "file": "harbor-lockkeeper/24137/s0/sprite.png",
+        "sha256": "3eddfb5cf2b0a7e95fa351c7ed6d8c133edb72777e646648fbe7a6ee275063d3",
+        "rgbaSha256": "83c59ee8bd482387ab4c0d9c7479f0dca3dc5f8d10c256877e0f1c28d0ead8ee"
+      },
+      {
+        "file": "harbor-lockkeeper/24137/s3/sprite.png",
+        "sha256": "30a05bc81740d44b6bbbb80bc0c3c7c49cc016bbde7a07e3e76d69ad8e291f0d",
+        "rgbaSha256": "a8d206da8a03290161c7ce34135d5eeff2849f2e724906c7f1639601939c65f8"
+      },
+      {
+        "file": "harbor-lockkeeper/24137/s3/night.png",
+        "sha256": "2600c57960a7504aa1be9a9751ab0bc0209448472d34ad9c873c1d5049fce518",
+        "rgbaSha256": "9af0b0a80d1ec95208ace8f890088f85b6a6e350f1308493a69619f21d3bfe8d"
+      },
+      {
+        "file": "marsh-apothecary/55271/s0/sprite.png",
+        "sha256": "41ac67f3cbeeae93f0bcfe01c800bf9ee1d98616dd644abe078d66fa3f269642",
+        "rgbaSha256": "a0787daf6d2129bfc1021344cc974499de6fa20715dba2bd0875ea21378d39ac"
+      },
+      {
+        "file": "marsh-apothecary/55271/s3/sprite.png",
+        "sha256": "be28037076c4d6179e532d51fcd5e4a1a278863bcc9beeeda3a7b85bfdca37cb",
+        "rgbaSha256": "127565a8da9b9cf6d57c1bf568b2dd7aa0da213782d9c8f91cff286e4ecadd52"
+      },
+      {
+        "file": "marsh-apothecary/55271/s3/night.png",
+        "sha256": "4111cef5c3f17b3cebe04f3b3eee2bb8bfb3f8445023b04cc1cd9e8e3d8739d6",
+        "rgbaSha256": "b911d4ae7d93a0368f13871e36d42600b0de27d9680a713355e2b5dd92287655"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/s0/sprite.png",
+        "sha256": "a5ca5937936dbfe79793a7c94455d50616d347dd37513f86fdb9c3624adb5175",
+        "rgbaSha256": "ff09c3c20d4bf52f6e3325760bc45bea0be5f1db886a82146af9fa2db694b226"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/s3/sprite.png",
+        "sha256": "f0d392bcc7654a8abb4775449de590a6d1218a14dbf439822d34170c604aefc3",
+        "rgbaSha256": "c19b4f5da97ecb0af093fb1c7e613ee54c27926b1ab1c2b57de5419919807ccd"
+      },
+      {
+        "file": "cliffside-lantern-keeper/61947/s3/night.png",
+        "sha256": "692b714844863868f7f26ffa934076ab6fcc31c5aad0564fba5689135621030c",
+        "rgbaSha256": "f027c8d9aaa923bb2d75db17e6c2de64e63df59f8c77cbaeed61bbfe76207986"
+      },
+      {
+        "file": "coastal-cartographer/73763/s0/sprite.png",
+        "sha256": "991e7a3bdbcd2db0e0b12244f53843ededbbaf2f259a822655291ba24254da94",
+        "rgbaSha256": "322498fb579085d61b010fdfedf2c2fc680405328dc844c559057b1f810c73c5"
+      },
+      {
+        "file": "coastal-cartographer/73763/s3/sprite.png",
+        "sha256": "6064f455747f072e8e0b3d8e465f6a6cc37cd91a775c91f5d3587423f1482121",
+        "rgbaSha256": "45a75767ea1dce1376757429e3426ab2d5d9f8ad79c42dd1f85f3f2dcb6d1d40"
+      },
+      {
+        "file": "coastal-cartographer/73763/s3/night.png",
+        "sha256": "0f2a560d1782a34d8ca695738dc77400fac9bba60a08454337235c43146e075a",
+        "rgbaSha256": "8d71b3dbf648c4629fdac43e33acc22a31f5b2302e9cce5f87fd1492bf77ab81"
+      }
+    ]
+  },
+  "staticScenes": 32,
+  "diagnostic": [
+    {
+      "stage": "s0",
+      "bounds": {
+        "top": 2,
+        "left": 10,
+        "right": 52,
+        "bottom": 57
+      },
+      "hat": {
+        "top": 3,
+        "left": 30,
+        "right": 47,
+        "bottom": 13
+      },
+      "topInk": [],
+      "stance": {
+        "rows": [
+          {
+            "y": 48,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 49,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 50,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 51,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 52,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 53,
+            "left": 33,
+            "right": 39,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 54,
+            "left": 35,
+            "right": 39,
+            "mid": 37,
+            "cloth": false,
+            "clear": true
+          }
+        ],
+        "anatomicalGapRows": 7,
+        "visibleGapRows": 7,
+        "feet": [
+          {
+            "left": 28,
+            "right": 36,
+            "contact": 56,
+            "expected": 56,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 8
+          },
+          {
+            "left": 39,
+            "right": 46,
+            "contact": 55,
+            "expected": 55,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 7
+          }
+        ]
+      },
+      "grips": [
+        {
+          "hand": "far-hand",
+          "id": "tray",
+          "overlap": 12,
+          "wristConnection": 9,
+          "socket": [
+            45,
+            35
+          ]
+        },
+        {
+          "hand": "near-hand",
+          "id": "key",
+          "overlap": 10,
+          "wristConnection": 12,
+          "socket": [
+            21,
+            41
+          ]
+        }
+      ],
+      "paddingGate": "PASS",
+      "scope": "independent diagnostics; primary gate and outcome remain unchanged"
+    },
+    {
+      "stage": "s1",
+      "bounds": {
+        "top": 0,
+        "left": 10,
+        "right": 52,
+        "bottom": 57
+      },
+      "hat": {
+        "top": 1,
+        "left": 30,
+        "right": 47,
+        "bottom": 11
+      },
+      "topInk": [
+        [
+          35,
+          606418175
+        ],
+        [
+          36,
+          606418175
+        ],
+        [
+          37,
+          606418175
+        ],
+        [
+          38,
+          606418175
+        ]
+      ],
+      "stance": {
+        "rows": [
+          {
+            "y": 48,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 49,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 50,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 51,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 52,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 53,
+            "left": 33,
+            "right": 39,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 54,
+            "left": 35,
+            "right": 39,
+            "mid": 37,
+            "cloth": false,
+            "clear": true
+          }
+        ],
+        "anatomicalGapRows": 7,
+        "visibleGapRows": 7,
+        "feet": [
+          {
+            "left": 28,
+            "right": 36,
+            "contact": 56,
+            "expected": 56,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 8
+          },
+          {
+            "left": 39,
+            "right": 46,
+            "contact": 55,
+            "expected": 55,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 7
+          }
+        ]
+      },
+      "grips": [
+        {
+          "hand": "far-hand",
+          "id": "tray",
+          "overlap": 12,
+          "wristConnection": 9,
+          "socket": [
+            45,
+            35
+          ]
+        },
+        {
+          "hand": "near-hand",
+          "id": "key",
+          "overlap": 10,
+          "wristConnection": 12,
+          "socket": [
+            21,
+            41
+          ]
+        }
+      ],
+      "paddingGate": "FAIL",
+      "scope": "independent diagnostics; primary gate and outcome remain unchanged"
+    },
+    {
+      "stage": "s2",
+      "bounds": {
+        "top": 0,
+        "left": 10,
+        "right": 52,
+        "bottom": 57
+      },
+      "hat": {
+        "top": 1,
+        "left": 30,
+        "right": 47,
+        "bottom": 11
+      },
+      "topInk": [
+        [
+          35,
+          606418175
+        ],
+        [
+          36,
+          606418175
+        ],
+        [
+          37,
+          606418175
+        ],
+        [
+          38,
+          606418175
+        ]
+      ],
+      "stance": {
+        "rows": [
+          {
+            "y": 48,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 49,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 50,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 51,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 52,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 53,
+            "left": 33,
+            "right": 39,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 54,
+            "left": 35,
+            "right": 39,
+            "mid": 37,
+            "cloth": false,
+            "clear": true
+          }
+        ],
+        "anatomicalGapRows": 7,
+        "visibleGapRows": 7,
+        "feet": [
+          {
+            "left": 28,
+            "right": 36,
+            "contact": 56,
+            "expected": 56,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 8
+          },
+          {
+            "left": 39,
+            "right": 46,
+            "contact": 55,
+            "expected": 55,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 7
+          }
+        ]
+      },
+      "grips": [
+        {
+          "hand": "far-hand",
+          "id": "tray",
+          "overlap": 12,
+          "wristConnection": 9,
+          "socket": [
+            45,
+            35
+          ]
+        },
+        {
+          "hand": "near-hand",
+          "id": "key",
+          "overlap": 10,
+          "wristConnection": 12,
+          "socket": [
+            21,
+            41
+          ]
+        }
+      ],
+      "paddingGate": "FAIL",
+      "scope": "independent diagnostics; primary gate and outcome remain unchanged"
+    },
+    {
+      "stage": "s3",
+      "bounds": {
+        "top": 0,
+        "left": 11,
+        "right": 55,
+        "bottom": 57
+      },
+      "hat": {
+        "top": 1,
+        "left": 30,
+        "right": 47,
+        "bottom": 11
+      },
+      "topInk": [
+        [
+          35,
+          606418175
+        ],
+        [
+          36,
+          606418175
+        ],
+        [
+          37,
+          606418175
+        ],
+        [
+          38,
+          606418175
+        ]
+      ],
+      "stance": {
+        "rows": [
+          {
+            "y": 48,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 49,
+            "left": 32,
+            "right": 40,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 50,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 51,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 52,
+            "left": 32,
+            "right": 39,
+            "mid": 35,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 53,
+            "left": 33,
+            "right": 39,
+            "mid": 36,
+            "cloth": false,
+            "clear": true
+          },
+          {
+            "y": 54,
+            "left": 35,
+            "right": 39,
+            "mid": 37,
+            "cloth": false,
+            "clear": true
+          }
+        ],
+        "anatomicalGapRows": 7,
+        "visibleGapRows": 7,
+        "feet": [
+          {
+            "left": 28,
+            "right": 36,
+            "contact": 56,
+            "expected": 56,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 8
+          },
+          {
+            "left": 39,
+            "right": 46,
+            "contact": 55,
+            "expected": 55,
+            "knee": true,
+            "ankle": true,
+            "shin": true,
+            "exposedSole": 7
+          }
+        ]
+      },
+      "grips": [
+        {
+          "hand": "far-hand",
+          "id": "folded-chart",
+          "overlap": 14,
+          "wristConnection": 9,
+          "socket": [
+            45,
+            35
+          ]
+        },
+        {
+          "hand": "near-hand",
+          "id": "survey-compass",
+          "overlap": 12,
+          "wristConnection": 12,
+          "socket": [
+            21,
+            41
+          ]
+        }
+      ],
+      "paddingGate": "FAIL",
+      "scope": "independent diagnostics; primary gate and outcome remain unchanged"
+    }
+  ],
+  "unityRuntime": "NOT_RUN"
+}

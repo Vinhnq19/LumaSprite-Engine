@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "lumasprite.e91s.static-review.v1",
+  "reviewType": "STATIC_ART_REVIEW",
+  "status": "STATIC_ART_REVIEW_PENDING",
+  "reviewer": "",
+  "reviewedAt": "",
+  "nativeInspectionConfirmed": false,
+  "variantOptions": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "NEITHER",
+    "REQUEST_REVISION"
+  ],
+  "cases": [
+    {
+      "id": "harbor-lockkeeper",
+      "selectedVariant": "",
+      "scores": {
+        "silhouetteDistinctiveness": null,
+        "functionalIdentity": null,
+        "stylizedAnatomy": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "pixelClusters": null,
+        "materials": null,
+        "styleConsistency": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "marsh-apothecary",
+      "selectedVariant": "",
+      "scores": {
+        "silhouetteDistinctiveness": null,
+        "functionalIdentity": null,
+        "stylizedAnatomy": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "pixelClusters": null,
+        "materials": null,
+        "styleConsistency": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "cliffside-lantern-keeper",
+      "selectedVariant": "",
+      "scores": {
+        "silhouetteDistinctiveness": null,
+        "functionalIdentity": null,
+        "stylizedAnatomy": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "pixelClusters": null,
+        "materials": null,
+        "styleConsistency": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    },
+    {
+      "id": "coastal-cartographer",
+      "selectedVariant": "",
+      "scores": {
+        "silhouetteDistinctiveness": null,
+        "functionalIdentity": null,
+        "stylizedAnatomy": null,
+        "faceReadability": null,
+        "gripPlausibility": null,
+        "pixelClusters": null,
+        "materials": null,
+        "styleConsistency": null,
+        "gameplayReadability": null
+      },
+      "criticalDefects": [],
+      "notes": ""
+    }
+  ],
+  "decision": ""
+}
